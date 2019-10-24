@@ -10,8 +10,8 @@ import "../styles/style.scss"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 class="hello">Hi people</h1>
-    <div class="alert alert-success" role="alert">
+    <h1 className="hello">Hi people</h1>
+    <div className="alert alert-success" role="alert">
       A simple success alert—check it out!
     </div>
     <p>Welcome to your new Gatsby site.</p>
