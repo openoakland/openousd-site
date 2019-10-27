@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `OpenOUSD`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Volunteers providing transparent access to Oakland Unified School District budget & data`,
     author: `@OpenOakland`,
   },
   plugins: [
