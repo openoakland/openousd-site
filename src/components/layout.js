@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import logo from '../images/OpenOakland-logo.png'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,9 +37,9 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+            Created by <img src={logo} height="auto" width="30%" alt="OpenOakland"></img>
+            <p>Disclaimer: this site is still in development</p>
+          © {new Date().getFullYear()}
         </footer>
       </div>
     </>
