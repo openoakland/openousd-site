@@ -10,3 +10,4 @@ This single-page Gatsby app is being maintained by:
 
 * [John Baldo](https://github.com/jbaldo)
 * [Alex Engelmann](https://github.com/alex-engelmann)
+* [Josh Holland](https://github.com/halsee)
