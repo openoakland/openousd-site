@@ -1,12 +1,11 @@
 header {
-    .container {
-        background-color: white;
-        height: 50px;
-
-        .menu {
-            .nav-item {
-                padding: 10px;
-            }
-        }
+  #logo {
+    width: 200px;
+  }
+  .menu {
+    height: 80px;
+    .nav-item {
+        padding: 10px;
     }
+  }
 }
