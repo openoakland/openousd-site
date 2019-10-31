@@ -36,25 +36,15 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer className="footer">
-          <div className="group1">
-            <div className="rectangle1">
-            </div>
-            <div className="group2">
-              <div className="createdby">
-                Created by <img className="group218" src={logo} alt="OpenOakland"></img>
-              </div>
-
-            </div>
-            <div className="disclaimerthissit">
-              Disclaimer: This site is in beta. Please report bugs and suggestions to ousdbudget@openoakland.org
-              <br></br>
-              © {new Date().getFullYear()}
-            </div>
-
-          </div>
-        </footer>
       </div>
+        <footer className="footer">
+          <p>Created by <img id="footerlogo" src={logo} alt="OpenOakland"></img></p>
+          <p>Disclaimer: This site is in beta. Please report bugs and suggestions to ousdbudget@openoakland.org</p>
+
+          <p>© {new Date().getFullYear()}</p>
+
+        </footer>
+      
     </>
   )
 }
