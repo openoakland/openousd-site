@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
-import logo from '../images/OpenOakland-logo.png'
+import logo from '../images/logo_open-oakland_white.svg'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      <div className="home"
         style={{
           margin: `0 auto`,
           maxWidth: 960,
@@ -36,10 +36,23 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-            Created by <img src={logo} height="auto" width="30%" alt="OpenOakland"></img>
-            <p>Disclaimer: this site is still in development</p>
-          © {new Date().getFullYear()}
+        <footer className="footer">
+          <div className="group1">
+            <div className="rectangle1">
+            </div>
+            <div className="group2">
+              <div className="createdby">
+                Created by <img className="group218" src={logo} alt="OpenOakland"></img>
+              </div>
+
+            </div>
+            <div className="disclaimerthissit">
+              Disclaimer: This site is in beta. Please report bugs and suggestions to ousdbudget@openoakland.org
+              <br></br>
+              © {new Date().getFullYear()}
+            </div>
+
+          </div>
         </footer>
       </div>
     </>
