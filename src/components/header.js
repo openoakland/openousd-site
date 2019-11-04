@@ -3,61 +3,41 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import "./header.scss"
-import logo from "../images/oo-logo-color.svg"
+import logo from "../images/oo-logo-combined.svg"
 
 
 const Header = ({ siteTitle }) => (
-  <header>
-    <Navbar expand="md" bg="white" variant="light" fixed="top">
-      <Container>
-        <Row>
-          <Col sm={12} lg={6}>
-            <Link to="/"><img id="logo" src={logo} alt="Logo" /></Link>
-          </Col>
-          <Col sm={12} lg={6}>
-            <div>Volunteers providing transparent access to Oakland Unified School District budget & data</div>
-          </Col>
-        </Row>
-        <Row>
-          <Col sm={12}>
+    <header>
+        <Navbar bg="white" variant="light" fixed="top" expand="md">
+            <div className="mx-sm-auto">
+                <Link to="/"><img id="logo" src={logo} alt="Logo" /></Link>
+            </div>
+            <Navbar.Text >
+                <div className="d-none d-lg-block">Volunteers providing transparent access to Oakland Unified School District budget & data</div>
+            </Navbar.Text>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="menu justify-content-center">
-                <Nav.Item>Home</Nav.Item>
-                <Nav.Item>Departments</Nav.Item>
-                <Nav.Item><Link to="/page-2/">Contact</Link></Nav.Item>
-              </Nav>
+            <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1 text-right">
+                <Nav className="menu ml-auto flex-nowrap">
+                    <Nav.Item>Home</Nav.Item>
+                    <Nav.Item>Departments</Nav.Item>
+                    <Nav.Item><Link to="/page-2/">Contact</Link></Nav.Item>
+                </Nav>
             </Navbar.Collapse>
-          </Col>
-        </Row>
-      </Container>
-    </Navbar>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-
-      </h1>
-    </div>
-  </header>
+        </Navbar>
+    </header>
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+    siteTitle: ``,
 }
+
 
 export default Header
