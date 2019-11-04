@@ -12,9 +12,9 @@ import logo from "../images/oo-logo-combined.svg"
 
 const Header = ({ siteTitle }) => (
     <header>
-        <Navbar bg="white" variant="light" fixed="top" expand="md"  className="d-md-flex flex-column">
-                <div id="logo-row" className="d-flex flex-row align-items-center">
-                    <div id="logo" className="mx-auto ml-md-4">
+        <Navbar bg="white" variant="light" fixed="top" expand="md"  className="d-flex flex-column">
+                <div id="logo-row" className="d-flex flex-row align-items-center justify-content-between">
+                    <div id="logo" className="mx-sm-auto ml-lg-4">
                         <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </div>
                     <div id="tagline" className="d-none d-lg-block">
