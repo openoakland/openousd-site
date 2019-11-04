@@ -13,7 +13,7 @@ import logo from "../images/oo-logo-combined.svg"
 const Header = ({ siteTitle }) => (
     <header>
         <Navbar bg="white" variant="light" fixed="top" expand="md"  className="d-md-flex flex-column">
-                <div id="row1" className="d-flex flex-row align-items-center">
+                <div id="logo-row" className="d-flex flex-row align-items-center">
                     <div id="logo" className="mx-auto ml-md-4">
                         <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </div>
@@ -22,9 +22,9 @@ const Header = ({ siteTitle }) => (
                     </div>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 </div>
-                <div id="row2">
+                <div id="menu-row">
                     <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1 text-right">
-                        <Nav className="menu flex-nowrap">
+                        <Nav className="menu mx-auto flex-nowrap">
                             <Nav.Item>Home</Nav.Item>
                             <Nav.Item>Departments</Nav.Item>
                             <Nav.Item><Link to="/page-2/">Contact</Link></Nav.Item>
