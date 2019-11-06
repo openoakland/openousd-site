@@ -14,3 +14,14 @@ header {
     }
   }
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top:50px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
