@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="home"
+      <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           <p>© {new Date().getFullYear()}</p>
 
         </footer>
-      
+
     </>
   )
 }

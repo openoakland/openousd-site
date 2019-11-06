@@ -1,26 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:700,400|Nunito+Sans:900,400,800');
-.home {
-    min-width: 100vw;
-    position: relative;
-    overflow: hidden;
-    margin: 0px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: rgba(255, 255, 255, 1.0);
-}
-
-a {
-    text-decoration: none;
-}
-
-div {
-    -webkit-text-size-adjust: none;
-}
-
 .footer {
     display: block;
     background-color: rgba(0, 66, 230, 1.0);
-    font-family: "Nunito Sans", Helvetica, Arial, serif;
     font-weight: 800;
     font-style: normal;
     font-size: 1rem;
