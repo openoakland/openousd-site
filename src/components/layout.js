@@ -36,6 +36,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+
       </div>
         <footer className="footer">
           <p>Created by <img id="footerlogo" src={logo} alt="OpenOakland"></img></p>
