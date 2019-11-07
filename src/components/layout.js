@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import "./layout.css"
+import logo from '../images/logo_open-oakland_white.svg'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -34,11 +36,16 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-        </footer>
+
       </div>
+        <footer className="footer">
+          <p>Created by <img id="footerlogo" src={logo} alt="OpenOakland"></img></p>
+          <p>Disclaimer: This site is in beta. Please report bugs and suggestions to ousdbudget@openoakland.org</p>
+
+          <p>© {new Date().getFullYear()}</p>
+
+        </footer>
+
     </>
   )
 }
