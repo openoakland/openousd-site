@@ -12,7 +12,14 @@
     padding: 10px;
 }
 .menu {
+    width: 100%;
+    hr {
+        border: 1px solid red;
+        display: block;
+        width: 100%;
+        border-color: #0042E6;
+    }
     .nav-item {
-        padding: 10px;
+        padding: 5px 15px 10px 10px;
     }
 }
