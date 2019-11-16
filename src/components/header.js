@@ -9,7 +9,9 @@ import logo from "../images/oo-logo-combined.svg"
 
 
 const Header = ({ siteTitle }) => (
-    <header>
+    // Nasty, but sticky positioning doesn't work within nonstandard tags?
+    // https://github.com/twbs/bootstrap/issues/21919
+    <>
         <Navbar bg="white" variant="light" expand="md" className="d-flex flex-column">
             <div id="logo-row" className="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
                 <div id="logo" className="mx-sm-auto ml-lg-4">
@@ -30,7 +32,7 @@ const Header = ({ siteTitle }) => (
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-    </header>
+    </>
 )
 
 Header.defaultProps = {
