@@ -9,7 +9,7 @@ import logo from "../images/oo-logo-combined.svg"
 
 
 const Header = ({ siteTitle }) => (
-    // Nasty, but sticky positioning doesn't work within nonstandard tags?
+    // Nasty fragment, but sticky positioning doesn't work within nonstandard tags?
     // https://github.com/twbs/bootstrap/issues/21919
     <>
         <Navbar bg="white" variant="light" expand="md" className="d-flex flex-column">
@@ -22,7 +22,7 @@ const Header = ({ siteTitle }) => (
                 </div>
             </div>
         </Navbar>
-        <Navbar expand="md" sticky="top" id="menu-row">
+        <Navbar bg="white" variant="light" expand="md" sticky="top" id="menu-row">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="sticky-top">
                 <Nav className="menu mx-auto flex-nowrap">
