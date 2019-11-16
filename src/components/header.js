@@ -10,25 +10,25 @@ import logo from "../images/oo-logo-combined.svg"
 
 const Header = ({ siteTitle }) => (
     <header>
-        <Navbar bg="white" variant="light" fixed="top" expand="md"  className="d-flex flex-column">
-                <div id="logo-row" className="d-flex flex-row align-items-center justify-content-between">
-                    <div id="logo" className="mx-sm-auto ml-lg-4">
-                        <Link to="/"><img src={logo} alt="Logo" /></Link>
-                    </div>
-                    <div id="tagline" className="d-none d-lg-block">
-                        Volunteers providing transparent access to Oakland Unified School District budget & data
-                    </div>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar bg="white" variant="light" expand="md" className="d-flex flex-column">
+            <div id="logo-row" className="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
+                <div id="logo" className="mx-sm-auto ml-lg-4">
+                    <Link to="/"><img src={logo} alt="Logo" /></Link>
                 </div>
-                <div id="menu-row">
-                    <Navbar.Collapse id="basic-navbar-nav" className="flex-grow-1 text-right">
-                        <Nav className="menu mx-auto flex-nowrap">
-                            <Nav.Item>Home</Nav.Item>
-                            <Nav.Item>Departments</Nav.Item>
-                            <Nav.Item><Link to="/page-2/">Contact</Link></Nav.Item>
-                        </Nav>
-                    </Navbar.Collapse>
+                <div id="tagline" className="text-center text-lg-right">
+                    Volunteers providing transparent access to Oakland Unified School District budget & data
                 </div>
+            </div>
+        </Navbar>
+        <Navbar expand="md" sticky="top" id="menu-row">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav" className="sticky-top">
+                <Nav className="menu mx-auto flex-nowrap">
+                    <Nav.Item>Home</Nav.Item>
+                    <Nav.Item>Departments</Nav.Item>
+                    <Nav.Item><Link to="/page-2/">Contact</Link></Nav.Item>
+                </Nav>
+            </Navbar.Collapse>
         </Navbar>
     </header>
 )
