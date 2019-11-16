@@ -27,8 +27,8 @@ const Header = ({ siteTitle }) => (
             <Navbar.Collapse id="basic-navbar-nav" className="sticky-top">
                 <Nav className="menu mx-auto flex-nowrap d-flex flex-column">
                     <hr className="d-none d-md-block"/>
-                    <div className="menu-items d-flex flex-column flex-md-row mx-md-auto">
-                        <Nav.Item>Home</Nav.Item>
+                    <div className="menu-items d-flex flex-column flex-md-row mx-md-auto mt-3 mt-md-0">
+                        <Nav.Item><span className="dot d-none d-md-block"><a/></span>Home</Nav.Item>
                         <Nav.Item>Departments</Nav.Item>
                         <Nav.Item><Link to="/page-2/">Contact</Link></Nav.Item>
                     </div>
