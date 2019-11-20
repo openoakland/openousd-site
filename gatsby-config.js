@@ -5,7 +5,12 @@ module.exports = {
         author: `@OpenOakland`,
     },
     plugins: [
-        `gatsby-plugin-sass`,
+        {
+          resolve: 'gatsby-plugin-sass',
+          options: {
+            data: `@import "${__dirname}/src/styles/_variables.scss";`,
+          }
+        },
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -32,7 +37,8 @@ module.exports = {
             resolve: `gatsby-plugin-google-fonts`,
             options: {
                 fonts: [
-                    `Nunito Sans\:400,400i`,
+                    `Nunito Sans\:400,400i,800,900`,
+                    `Roboto Mono\:400,700`
                 ],
                 display: 'swap'
             }
