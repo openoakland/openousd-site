@@ -1,3 +1,27 @@
+
+* {
+    box-sizing: border-box;
+   }
+   *:before,
+   *:after {
+    box-sizing: border-box;
+   }
+
+
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 130px; /* height of your footer */
+}
+
 .footer {
     display: block;
     background-color: rgba(0, 66, 230, 1.0);
@@ -8,10 +32,13 @@
     text-align: center;
     line-height: 1.5rem;
     bottom: 0;
-    height: auto;
+    height: 130px;
     width: 100vw;
     position: absolute;
+    bottom: 0;
     margin: 0;
+    border: 0;
+    padding: 0;
         
     p {
     margin-bottom: 0px;
