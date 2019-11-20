@@ -28,9 +28,9 @@ const Header = ({ siteTitle }) => (
                 <Nav className="menu mx-auto flex-nowrap d-flex flex-column">
                     <hr className="d-none d-md-block"/>
                     <div className="menu-items d-flex flex-column flex-md-row mx-md-auto mt-3 mt-md-0">
-                        <Nav.Item><Link to="/" activeClassName="active"><span className="d-none d-md-block"><a className="dot"/></span>Home</Link></Nav.Item>
-                        <Nav.Item><Link to="/departments" activeClassName="active"><span className="d-none d-md-block"><a className="dot"/></span>Departments</Link></Nav.Item>
-                        <Nav.Item><Link to="/page-2/" activeClassName="active"><span className="d-none d-md-block"><a className="dot"/></span>Contact</Link></Nav.Item>
+                        <Nav.Item><Link to="/" activeClassName="active"><span className="d-none d-md-block"><span className="dot"/></span>Home</Link></Nav.Item>
+                        <Nav.Item><Link to="/departments" activeClassName="active"><span className="d-none d-md-block"><span className="dot"/></span>Departments</Link></Nav.Item>
+                        <Nav.Item><Link to="/page-2/" activeClassName="active"><span className="d-none d-md-block"><span className="dot"/></span>Contact</Link></Nav.Item>
                     </div>
                 </Nav>
             </Navbar.Collapse>

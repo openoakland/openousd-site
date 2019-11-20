@@ -37,7 +37,7 @@
             &.active {
                 color: $theme-blue;
 
-                a.dot {
+                span.dot {
                     box-shadow: inset 0 0 0 3px $theme-blue;
                     background-color: #fff;
                 }
@@ -57,7 +57,7 @@
             left: 0;
             right: 0;
 
-            a.dot {
+            span.dot {
                 top: -19px;
                 left: 0;
                 width: 100%;
