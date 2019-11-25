@@ -36,7 +36,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "refresh": "python scripts/build_json.py"
   },
   "repository": {
     "type": "git",
