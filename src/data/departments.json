@@ -1,1 +1,344 @@
-[{"code": 950, "name": "State and Federal Programs", "spending": "997177.28", "year": 2017}, {"code": 937, "name": "Summer Programs", "spending": "2124447.57", "year": 2017}, {"code": 961, "name": "Pre K-5 Network 1", "spending": "480436.25", "year": 2017}, {"code": 987, "name": "Risk Management", "spending": "14681.36", "year": 2017}, {"code": 995, "name": "Transportation", "spending": "9622245.73", "year": 2017}, {"code": 990, "name": "Procurement & Distribution", "spending": "661411.98", "year": 2017}, {"code": 903, "name": "Office Of Chief Academic Officer", "spending": "1832906.98", "year": 2017}, {"code": 978, "name": "Private Schools Office (Admin)", "spending": "0.00", "year": 2017}, {"code": 958, "name": "Communications", "spending": "2482627.13", "year": 2017}, {"code": 962, "name": "Pre-K-5 Network 2", "spending": "314442.23", "year": 2017}, {"code": 913, "name": "Chief Of Operations", "spending": "1106848.91", "year": 2017}, {"code": 942, "name": "Labor Relations", "spending": "8214.51", "year": 2017}, {"code": 989, "name": "Custodial Services", "spending": "2353081.50", "year": 2017}, {"code": 946, "name": "Legal Counsel", "spending": "1953264.92", "year": 2017}, {"code": 910, "name": "Early Childhood Development", "spending": "826426.86", "year": 2017}, {"code": 906, "name": "Ombudsman", "spending": "262907.95", "year": 2017}, {"code": 983, "name": "Payroll", "spending": "963933.33", "year": 2017}, {"code": 923, "name": "Elementary Network 4", "spending": "358301.02", "year": 2017}, {"code": 975, "name": "Special Education", "spending": "49465712.80", "year": 2017}, {"code": 941, "name": "Office Of The Superintendent", "spending": "2503987.79", "year": 2017}, {"code": 944, "name": "Human Resources Services, Supp", "spending": "4880875.24", "year": 2017}, {"code": 905, "name": "Office Of Sr. Business Officer", "spending": "702927.06", "year": 2017}, {"code": 948, "name": "Research Assessment & Data", "spending": "2126922.92", "year": 2017}, {"code": 902, "name": "Accounts Payable", "spending": "605196.92", "year": 2017}, {"code": 949, "name": "Office Of The Internal Auditor", "spending": "142883.86", "year": 2017}, {"code": 918, "name": "Facilities Planning", "spending": "346794.37", "year": 2017}, {"code": 922, "name": "Comm. Schools & Student Servic", "spending": "18995446.75", "year": 2017}, {"code": 979, "name": "Printing And Mail Services", "spending": "276735.63", "year": 2017}, {"code": 915, "name": "Educator Effectiveness", "spending": "3851040.40", "year": 2017}, {"code": 963, "name": "Pre-K-5 Network 3", "spending": "342848.54", "year": 2017}, {"code": 909, "name": "Teaching & Learning", "spending": "15096268.97", "year": 2017}, {"code": 929, "name": "Office Of Equity", "spending": "1611885.69", "year": 2017}, {"code": 994, "name": "OUSD Police Department", "spending": "3357688.14", "year": 2017}, {"code": 912, "name": "LINKED LEARNING", "spending": "9563276.40", "year": 2017}, {"code": 932, "name": "Jr Reserve Off Training Corp", "spending": "165773.98", "year": 2017}, {"code": 945, "name": "Office Of State Trustee", "spending": "117600.00", "year": 2017}, {"code": 992, "name": "Warehouse Distribution", "spending": "917583.38", "year": 2017}, {"code": 954, "name": "Eng Lang Lrnr/Multilingual Ach", "spending": "2691496.03", "year": 2017}, {"code": 959, "name": "Indian Education", "spending": "34481.00", "year": 2017}, {"code": 968, "name": "Health Services (Nurses)", "spending": "3473876.63", "year": 2017}, {"code": 951, "name": "Budget", "spending": "1841375.53", "year": 2017}, {"code": 980, "name": "Chief Financial Officer", "spending": "379806.66", "year": 2017}, {"code": 936, "name": "Accounting", "spending": "1649120.66", "year": 2017}, {"code": 907, "name": "Student Assignment", "spending": "2166179.41", "year": 2017}, {"code": 964, "name": "High School Network", "spending": "1691988.91", "year": 2017}, {"code": 947, "name": "Charter Schools Office (Admin)", "spending": "747037.12", "year": 2017}, {"code": 965, "name": "Middle School Network", "spending": "365393.88", "year": 2017}, {"code": 976, "name": "Special Ed Local Plan Area", "spending": "464812.16", "year": 2017}, {"code": 999, "name": "Districtwide Expenses", "spending": "11595585.70", "year": 2017}, {"code": 956, "name": "Continuous School Improvement", "spending": "1675984.73", "year": 2017}, {"code": 933, "name": "Oakland Athletic League", "spending": "2250163.05", "year": 2017}, {"code": 924, "name": "Iss Network", "spending": "868947.86", "year": 2017}, {"code": 988, "name": "Buildings & Grounds", "spending": "14638273.81", "year": 2017}, {"code": 940, "name": "Board Of Education", "spending": "789011.41", "year": 2017}, {"code": 957, "name": "Alternative Education", "spending": "3362.92", "year": 2017}, {"code": 986, "name": "Technology Services", "spending": "4627978.52", "year": 2017}, {"code": 998, "name": "School Contingency Funds", "spending": "12823269.44", "year": 2017}]
+[
+  {
+    "code": 950,
+    "name": "State and Federal Programs",
+    "spending": "997177.28",
+    "year": 2017
+  },
+  {
+    "code": 937,
+    "name": "Summer Programs",
+    "spending": "2124447.57",
+    "year": 2017
+  },
+  {
+    "code": 961,
+    "name": "Pre K-5 Network 1",
+    "spending": "480436.25",
+    "year": 2017
+  },
+  {
+    "code": 987,
+    "name": "Risk Management",
+    "spending": "14681.36",
+    "year": 2017
+  },
+  {
+    "code": 995,
+    "name": "Transportation",
+    "spending": "9622245.73",
+    "year": 2017
+  },
+  {
+    "code": 990,
+    "name": "Procurement & Distribution",
+    "spending": "661411.98",
+    "year": 2017
+  },
+  {
+    "code": 903,
+    "name": "Office Of Chief Academic Officer",
+    "spending": "1832906.98",
+    "year": 2017
+  },
+  {
+    "code": 978,
+    "name": "Private Schools Office (Admin)",
+    "spending": "0.00",
+    "year": 2017
+  },
+  {
+    "code": 958,
+    "name": "Communications",
+    "spending": "2482627.13",
+    "year": 2017
+  },
+  {
+    "code": 962,
+    "name": "Pre-K-5 Network 2",
+    "spending": "314442.23",
+    "year": 2017
+  },
+  {
+    "code": 913,
+    "name": "Chief Of Operations",
+    "spending": "1106848.91",
+    "year": 2017
+  },
+  {
+    "code": 942,
+    "name": "Labor Relations",
+    "spending": "8214.51",
+    "year": 2017
+  },
+  {
+    "code": 989,
+    "name": "Custodial Services",
+    "spending": "2353081.50",
+    "year": 2017
+  },
+  {
+    "code": 946,
+    "name": "Legal Counsel",
+    "spending": "1953264.92",
+    "year": 2017
+  },
+  {
+    "code": 910,
+    "name": "Early Childhood Development",
+    "spending": "826426.86",
+    "year": 2017
+  },
+  {
+    "code": 906,
+    "name": "Ombudsman",
+    "spending": "262907.95",
+    "year": 2017
+  },
+  {
+    "code": 983,
+    "name": "Payroll",
+    "spending": "963933.33",
+    "year": 2017
+  },
+  {
+    "code": 923,
+    "name": "Elementary Network 4",
+    "spending": "358301.02",
+    "year": 2017
+  },
+  {
+    "code": 975,
+    "name": "Special Education",
+    "spending": "49465712.80",
+    "year": 2017
+  },
+  {
+    "code": 941,
+    "name": "Office Of The Superintendent",
+    "spending": "2503987.79",
+    "year": 2017
+  },
+  {
+    "code": 944,
+    "name": "Human Resources Services, Supp",
+    "spending": "4880875.24",
+    "year": 2017
+  },
+  {
+    "code": 905,
+    "name": "Office Of Sr. Business Officer",
+    "spending": "702927.06",
+    "year": 2017
+  },
+  {
+    "code": 948,
+    "name": "Research Assessment & Data",
+    "spending": "2126922.92",
+    "year": 2017
+  },
+  {
+    "code": 902,
+    "name": "Accounts Payable",
+    "spending": "605196.92",
+    "year": 2017
+  },
+  {
+    "code": 949,
+    "name": "Office Of The Internal Auditor",
+    "spending": "142883.86",
+    "year": 2017
+  },
+  {
+    "code": 918,
+    "name": "Facilities Planning",
+    "spending": "346794.37",
+    "year": 2017
+  },
+  {
+    "code": 922,
+    "name": "Comm. Schools & Student Servic",
+    "spending": "18995446.75",
+    "year": 2017
+  },
+  {
+    "code": 979,
+    "name": "Printing And Mail Services",
+    "spending": "276735.63",
+    "year": 2017
+  },
+  {
+    "code": 915,
+    "name": "Educator Effectiveness",
+    "spending": "3851040.40",
+    "year": 2017
+  },
+  {
+    "code": 963,
+    "name": "Pre-K-5 Network 3",
+    "spending": "342848.54",
+    "year": 2017
+  },
+  {
+    "code": 909,
+    "name": "Teaching & Learning",
+    "spending": "15096268.97",
+    "year": 2017
+  },
+  {
+    "code": 929,
+    "name": "Office Of Equity",
+    "spending": "1611885.69",
+    "year": 2017
+  },
+  {
+    "code": 994,
+    "name": "OUSD Police Department",
+    "spending": "3357688.14",
+    "year": 2017
+  },
+  {
+    "code": 912,
+    "name": "LINKED LEARNING",
+    "spending": "9563276.40",
+    "year": 2017
+  },
+  {
+    "code": 932,
+    "name": "Jr Reserve Off Training Corp",
+    "spending": "165773.98",
+    "year": 2017
+  },
+  {
+    "code": 945,
+    "name": "Office Of State Trustee",
+    "spending": "117600.00",
+    "year": 2017
+  },
+  {
+    "code": 992,
+    "name": "Warehouse Distribution",
+    "spending": "917583.38",
+    "year": 2017
+  },
+  {
+    "code": 954,
+    "name": "Eng Lang Lrnr/Multilingual Ach",
+    "spending": "2691496.03",
+    "year": 2017
+  },
+  {
+    "code": 959,
+    "name": "Indian Education",
+    "spending": "34481.00",
+    "year": 2017
+  },
+  {
+    "code": 968,
+    "name": "Health Services (Nurses)",
+    "spending": "3473876.63",
+    "year": 2017
+  },
+  {
+    "code": 951,
+    "name": "Budget",
+    "spending": "1841375.53",
+    "year": 2017
+  },
+  {
+    "code": 980,
+    "name": "Chief Financial Officer",
+    "spending": "379806.66",
+    "year": 2017
+  },
+  {
+    "code": 936,
+    "name": "Accounting",
+    "spending": "1649120.66",
+    "year": 2017
+  },
+  {
+    "code": 907,
+    "name": "Student Assignment",
+    "spending": "2166179.41",
+    "year": 2017
+  },
+  {
+    "code": 964,
+    "name": "High School Network",
+    "spending": "1691988.91",
+    "year": 2017
+  },
+  {
+    "code": 947,
+    "name": "Charter Schools Office (Admin)",
+    "spending": "747037.12",
+    "year": 2017
+  },
+  {
+    "code": 965,
+    "name": "Middle School Network",
+    "spending": "365393.88",
+    "year": 2017
+  },
+  {
+    "code": 976,
+    "name": "Special Ed Local Plan Area",
+    "spending": "464812.16",
+    "year": 2017
+  },
+  {
+    "code": 999,
+    "name": "Districtwide Expenses",
+    "spending": "11595585.70",
+    "year": 2017
+  },
+  {
+    "code": 956,
+    "name": "Continuous School Improvement",
+    "spending": "1675984.73",
+    "year": 2017
+  },
+  {
+    "code": 933,
+    "name": "Oakland Athletic League",
+    "spending": "2250163.05",
+    "year": 2017
+  },
+  {
+    "code": 924,
+    "name": "Iss Network",
+    "spending": "868947.86",
+    "year": 2017
+  },
+  {
+    "code": 988,
+    "name": "Buildings & Grounds",
+    "spending": "14638273.81",
+    "year": 2017
+  },
+  {
+    "code": 940,
+    "name": "Board Of Education",
+    "spending": "789011.41",
+    "year": 2017
+  },
+  {
+    "code": 957,
+    "name": "Alternative Education",
+    "spending": "3362.92",
+    "year": 2017
+  },
+  {
+    "code": 986,
+    "name": "Technology Services",
+    "spending": "4627978.52",
+    "year": 2017
+  },
+  {
+    "code": 998,
+    "name": "School Contingency Funds",
+    "spending": "12823269.44",
+    "year": 2017
+  }
+]
