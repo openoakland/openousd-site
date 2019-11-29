@@ -7,7 +7,7 @@ import os
 api_location = "https://us-central1-openousd.cloudfunctions.net/openousd"
 base_path = api_location + "/api"
 
-data_path = os.path.join(os.path.dirname(__file__), "../src/data/")
+data_path = os.path.join(os.path.dirname(__file__), "../data/")
 
 # Get department data
 response = requests.get(base_path + "/departments")
