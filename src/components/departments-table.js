@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
 import React from "react"
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next';
-import paginationFactory from 'react-bootstrap-table2-paginator';
+// import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
 import './departments-table.scss'
 import HelpIcon from './help-icon'
@@ -103,7 +102,7 @@ const Table = ({data}) => {
           />
           <hr />
           <BootstrapTable
-            // turning off pagination for now to help with debug
+            // turning off pagination for now
             // pagination={paginationFactory()}
             classes="table-borderless"
             bordered={false}
