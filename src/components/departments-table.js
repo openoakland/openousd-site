@@ -108,6 +108,7 @@ const Table = ({data}) => {
             bordered={false}
             {...props.baseProps}
             rowClasses={rowClasses}
+            defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
         </div>
       )}
