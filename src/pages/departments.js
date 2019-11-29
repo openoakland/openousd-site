@@ -7,7 +7,7 @@ import { graphql } from "gatsby"
 
 
 const SecondPage = ({ data }) => {
-  const departments = data.allDepartmentsJson.edges;
+  const departments = data.allDepartmentsJson.nodes;
   return (
     <Layout>
       <SEO title="Departments" />
@@ -22,14 +22,12 @@ export default SecondPage
 export const query = graphql`
   query DepartmentList {
     allDepartmentsJson {
-      edges {
-        node {
-          spending
-          budget
-          year
-          name
-          code
-        }
+      nodes {
+        name
+        budget
+        spending
+        year
+        code
       }
     }
   }

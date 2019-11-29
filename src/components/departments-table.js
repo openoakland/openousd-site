@@ -17,31 +17,31 @@ const formatToUSD = amount => {
 }
 
 const createFirstRow = data => {
-  const initialObject = {node: {name: 'Total for All Departments', spending: 0, budget: 0, staff: 0}}
+  const initialObject = {name: 'Total for All Departments', spending: 0, budget: 0, staff: 0}
   return data.reduce((returnObject, currentItem) => {
-    returnObject.node.spending += +currentItem.node.spending;
-    returnObject.node.budget += +currentItem.node.budget;
-    returnObject.node.staff += +currentItem.node.staff;
+    returnObject.spending += +currentItem.spending;
+    returnObject.budget += +currentItem.budget;
+    returnObject.staff += +currentItem.staff;
     return returnObject
   }, initialObject)
 }
 
 const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   if (rowIndex === 0) {
-    return (<span className="strong">{row.node.name}</span>)
+    return (<span className="strong">{row.name}</span>)
   }
-  return (<span>{row.node.name}</span>)
+  return (<span>{row.name}</span>)
 }
 
 const columns = [{
   formatter: columnsFormatter,
-  dataField: 'node.name',
+  dataField: 'name',
   text: 'Department',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department</div>)},
   sort: true
 }, {
-  dataField: 'node.spending',
-  formatter: (cell, row) => formatToUSD(row.node.spending),
+  dataField: 'spending',
+  formatter: (cell, row) => formatToUSD(row.spending),
   text: 'Spending',
   // TODO improve tooltip text for all of these
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
@@ -50,8 +50,8 @@ const columns = [{
   type: 'number',
   align: 'right'
 }, {
-  dataField: 'node.budget',
-  formatter: (cell, row) => formatToUSD(row.node.budget),
+  dataField: 'budget',
+  formatter: (cell, row) => formatToUSD(row.budget),
   text: 'Budget',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
   searchable: false,
@@ -59,12 +59,13 @@ const columns = [{
   type: 'number',
   align: 'right'
 }, {
-  dataField: 'node.staff',
+  dataField: 'staff',
   text: 'Staff',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Staff <HelpIcon tooltipText="Number of staff"/></div>)},
   searchable: false,
   sort: true,
   type: 'number',
+  align: 'right',
   hidden: true,
 }];
 
@@ -80,7 +81,7 @@ const Table = ({data}) => {
   data.unshift(firstRow);
   return (
     <ToolkitProvider
-      keyField="node.code"
+      keyField="code"
       data={data}
       columns={columns}
       bootstrap4
