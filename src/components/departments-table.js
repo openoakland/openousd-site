@@ -17,49 +17,55 @@ const formatToUSD = amount => {
 }
 
 const createFirstRow = data => {
-  const initialObject = {name: 'Total for All Departments', spending: 0, budget: 0, staff: 0}
+  const initialObject = {node: {name: 'Total for All Departments', spending: 0, budget: 0, staff: 0}}
   return data.reduce((returnObject, currentItem) => {
-    returnObject.spending += +currentItem.spending;
-    returnObject.budget += +currentItem.budget;
-    returnObject.staff += +currentItem.staff;
+    returnObject.node.spending += +currentItem.node.spending;
+    returnObject.node.budget += +currentItem.node.budget;
+    returnObject.node.staff += +currentItem.node.staff;
     return returnObject
   }, initialObject)
 }
 
 const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   if (rowIndex === 0) {
-    return (<span className="strong">{row.name}</span>)
+    return (<span className="strong">{row.node.name}</span>)
   }
-  return (<Link to={row.url}>{row.name}</Link>)
+  return (<span>{row.node.name}</span>)
 }
 
 const columns = [{
   formatter: columnsFormatter,
-  dataField: 'name',
+  dataField: 'node.name',
   text: 'Department',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department</div>)},
   sort: true
 }, {
-  dataField: 'spending',
-  formatter: (cell, row) => formatToUSD(row.spending),
+  dataField: 'node.spending',
+  formatter: (cell, row) => formatToUSD(row.node.spending),
   text: 'Spending',
   // TODO improve tooltip text for all of these
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
   searchable: false,
-  sort: true
+  sort: true,
+  type: 'number',
+  align: 'right'
 }, {
-  dataField: 'budget',
-  formatter: (cell, row) => formatToUSD(row.budget),
+  dataField: 'node.budget',
+  formatter: (cell, row) => formatToUSD(row.node.budget),
   text: 'Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
   searchable: false,
-  sort: true
+  sort: true,
+  type: 'number',
+  align: 'right'
 }, {
-  dataField: 'staff',
+  dataField: 'node.staff',
   text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Staff <HelpIcon tooltipText="Number of staff"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Staff <HelpIcon tooltipText="Number of staff"/></div>)},
   searchable: false,
-  sort: true
+  sort: true,
+  type: 'number',
+  hidden: true,
 }];
 
 const rowClasses = (row, rowIndex) => {
@@ -74,8 +80,7 @@ const Table = ({data}) => {
   data.unshift(firstRow);
   return (
     <ToolkitProvider
-      // TODO is name unique?
-      keyField="name"
+      keyField="node.code"
       data={data}
       columns={columns}
       bootstrap4
@@ -97,7 +102,8 @@ const Table = ({data}) => {
           />
           <hr />
           <BootstrapTable
-            pagination={paginationFactory()}
+            // turning off pagination for now to help with debug
+            // pagination={paginationFactory()}
             classes="table-borderless"
             bordered={false}
             {...props.baseProps}
