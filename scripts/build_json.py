@@ -11,7 +11,5 @@ data_path = os.path.join(os.path.dirname(__file__), "../data/")
 
 # Get department data
 response = requests.get(base_path + "/departments")
-f = open(data_path + "departments.json","w+")
-# f.write(response.json())
-json.dump(response.json(),f, indent=2)
-f.close()
+with open(data_path + "departments.json","w+") as f:
+    json.dump(response.json(),f, indent=2)
