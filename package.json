@@ -42,7 +42,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "refresh": "python scripts/build_json.py"
+    "refreshData": "python scripts/build_json.py"
   },
   "repository": {
     "type": "git",
