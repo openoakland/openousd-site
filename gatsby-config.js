@@ -19,6 +19,12 @@ module.exports = {
                 path: `${__dirname}/src/images`,
             },
         },
+        {
+            resolve: "gatsby-source-filesystem",
+            options: {
+                path: `${__dirname}/data/`,
+            },
+        },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
@@ -43,6 +49,7 @@ module.exports = {
                 display: 'swap'
             }
         },
+        "gatsby-transformer-json",
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,
