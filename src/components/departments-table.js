@@ -7,6 +7,7 @@ import './departments-table.scss'
 import HelpIcon from './help-icon'
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
+const TOTAL_FOR_ALL_DEPARTMENTS = 'Total for All Departments';
 
 
 const formatToUSD = amount => {
@@ -16,7 +17,7 @@ const formatToUSD = amount => {
 }
 
 const createFirstRow = data => {
-  const initialObject = {name: 'Total for All Departments', spending: 0, budget: 0, staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_DEPARTMENTS, spending: 0, budget: 0, staff: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending;
     returnObject.budget += +currentItem.budget;
@@ -32,12 +33,30 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   return (<span>{row.name}</span>)
 }
 
+const sort = (a, b, order, dataField, rowA, rowB) => {
+  if (rowA.name === TOTAL_FOR_ALL_DEPARTMENTS) {
+    return -1
+  }
+  if (rowB.name === TOTAL_FOR_ALL_DEPARTMENTS) {
+    return 1
+  }
+  if (order === "asc") {
+    if (a < b) { return -1 }
+    if (a > b) { return 1 }
+    return 0
+  }
+  if (a > b) { return -1 }
+  if (a < b) { return 1 }
+  return 0
+}
+
 const columns = [{
   formatter: columnsFormatter,
   dataField: 'name',
   text: 'Department',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department</div>)},
-  sort: true
+  sort: true,
+  sortFunc: sort
 }, {
   dataField: 'spending',
   formatter: (cell, row) => formatToUSD(row.spending),
@@ -46,6 +65,7 @@ const columns = [{
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
   searchable: false,
   sort: true,
+  sortFunc: sort,
   type: 'number',
   align: 'right'
 }, {
@@ -55,6 +75,7 @@ const columns = [{
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
   searchable: false,
   sort: true,
+  sortFunc: sort,
   type: 'number',
   align: 'right'
 }, {
@@ -63,6 +84,7 @@ const columns = [{
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Staff <HelpIcon tooltipText="Number of staff"/></div>)},
   searchable: false,
   sort: true,
+  sortFunc: sort,
   type: 'number',
   align: 'right',
   hidden: true,
