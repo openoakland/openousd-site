@@ -5,6 +5,8 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
 import './departments-table.scss'
 import HelpIcon from './help-icon'
+import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
+import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
 const TOTAL_FOR_ALL_DEPARTMENTS = 'Total for All Departments';
@@ -50,11 +52,24 @@ const sort = (a, b, order, dataField, rowA, rowB) => {
   return 0
 }
 
+const getSortCaret = (order, column) => {
+  if (order === 'asc') {
+    return (<ArrowDropUp className="text-dark" />)
+  } 
+  if (order === 'desc') {
+    return (<ArrowDropDown className="text-dark" />)
+  }
+  // invisible icon used as a spaceholder so that
+  // when an icon does render it does not shift the table column
+  return (<ArrowDropDown className="invisible"/>)
+}
+
 const columns = [{
   formatter: columnsFormatter,
   dataField: 'name',
   text: 'Department',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department</div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department {components.sortElement}</div>)},
+  sortCaret: getSortCaret,
   sort: true,
   sortFunc: sort
 }, {
@@ -62,7 +77,8 @@ const columns = [{
   formatter: (cell, row) => formatToUSD(row.spending),
   text: 'Spending',
   // TODO improve tooltip text for all of these
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
+  sortCaret: getSortCaret,
   searchable: false,
   sort: true,
   sortFunc: sort,
@@ -72,7 +88,8 @@ const columns = [{
   dataField: 'budget',
   formatter: (cell, row) => formatToUSD(row.budget),
   text: 'Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
+  sortCaret: getSortCaret,
   searchable: false,
   sort: true,
   sortFunc: sort,
@@ -81,7 +98,8 @@ const columns = [{
 }, {
   dataField: 'staff',
   text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Staff <HelpIcon tooltipText="Number of staff"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff <HelpIcon tooltipText="Number of staff"/></div>)},
+  sortCaret: getSortCaret,
   searchable: false,
   sort: true,
   sortFunc: sort,
