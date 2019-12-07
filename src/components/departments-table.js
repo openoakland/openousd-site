@@ -99,7 +99,8 @@ const rowClasses = (row, rowIndex) => {
 
 const Table = ({data}) => {
   const firstRow = createFirstRow(data);
-  data.unshift(firstRow);
+  // creates new array
+  data = data.concat([firstRow]);
   return (
     <ToolkitProvider
       keyField="code"
