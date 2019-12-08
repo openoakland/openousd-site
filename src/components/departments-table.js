@@ -7,6 +7,7 @@ import './departments-table.scss'
 import HelpIcon from './help-icon'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+import { Link } from "gatsby"
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
 const TOTAL_FOR_ALL_DEPARTMENTS = 'Total for All Departments';
@@ -32,7 +33,8 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
   }
-  return (<span>{row.name}</span>)
+  const url = encodeURI(`department/${row.name}`)
+  return (<Link to={url}>{row.name}</Link>)
 }
 
 const sort = (a, b, order, dataField, rowA, rowB) => {
