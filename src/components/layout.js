@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Container } from 'react-bootstrap';
 
 import Header from "./header"
 
@@ -26,14 +27,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className='main-container'>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div>
-          <main >{children}</main>
+    <Header siteTitle={data.site.siteMetadata.title} />
+    <Container className='main-container'>
+      <div>
+        <main >{children}</main>
 
-        </div>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
+    </Container>
     </>
   )
 }
