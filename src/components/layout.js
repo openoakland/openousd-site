@@ -31,10 +31,9 @@ const Layout = ({ children }) => {
     <Container className='main-container'>
       <div>
         <main >{children}</main>
-
       </div>
-      <Footer></Footer>
     </Container>
+    <Footer></Footer>
     </>
   )
 }
