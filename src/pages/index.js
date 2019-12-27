@@ -4,11 +4,12 @@ import { Link } from "gatsby"
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
-import "../components/home.scss"
+import "../styles/pages/index.scss"
+
 import { Container, Col, Row, Button } from 'react-bootstrap';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageClassName="index">
     <SEO title="Home" />
 
         <div className="hero mx-auto">
