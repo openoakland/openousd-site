@@ -8,7 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Container, Row, Col} from 'react-bootstrap';
 
 import Header from "./header"
 
@@ -28,7 +27,7 @@ const Layout = ({ children, pageClassName }) => {
   return (
     <>
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div className={`${pageClassName} main-container`}>
+    <div className={`${pageClassName} main-container mx-auto`}>
       <main >{children}</main>
     </div>
     <Footer></Footer>
