@@ -9,7 +9,7 @@ import { graphql } from "gatsby"
 const SecondPage = ({ data }) => {
   const departments = data.allDepartmentsJson.nodes;
   return (
-    <Layout>
+    <Layout pageClassName="departments">
       <SEO title="Departments" />
       <h1>Departments</h1>
       <Table data={departments} />
