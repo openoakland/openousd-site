@@ -1,8 +1,15 @@
-#logo {
-    width: 400px;
+.container.header{
+    margin-bottom:0;
+    padding:0;
+}
+
+#logo img{
+    width:100%;
+    max-width: 400px;
 }
 #tagline {
-    width: 400px;
+    width:100%;
+    max-width: 400px;
     color: #4A4A4A;
     font-family: 'Nunito Sans', sans-serif;
     font-style: italic;
