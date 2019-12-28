@@ -6,7 +6,7 @@ import Table from "../components/departments-table"
 import Sankey from "../components/sankey-chart"
 import { graphql } from "gatsby"
 
-
+import "../styles/pages/departments.scss"
 
 const DepartmentsPage = ({ data }) => {
     const sankeyData = {
