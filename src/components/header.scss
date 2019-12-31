@@ -17,6 +17,10 @@
 #logo-row, #menu-row {
     width: 100%;
     padding: 10px 0px;
+
+    .navbar-toggler {
+        border-color: white;
+    }
 }
 #menu-row {
     box-shadow:  $box-shadow;

@@ -37,5 +37,27 @@
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-// Pages
-@import "pages/index";
+// Global Styles
+
+.main-container {
+    max-width: 1140px;
+}
+
+body{
+    font-family: "nunito sans", arial, sans-serif;
+}
+
+h1{
+    font-family: "nunito sans", arial, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+p{
+    line-height:28px;
+}
+button{
+    font-family: "nunito sans", arial, sans-serif;
+    font-weight: 800 !important;
+    font-size: 1rem !important;
+}
