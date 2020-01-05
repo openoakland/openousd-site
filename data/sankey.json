@@ -1,0 +1,357 @@
+{
+  "links": [
+    {
+      "source": "General (Base)",
+      "target": "Administrative Offices",
+      "value": 24710109.73
+    },
+    {
+      "source": "Parcel Taxes",
+      "target": "Instructional Programs",
+      "value": 3935739.79
+    },
+    {
+      "source": "General (Base)",
+      "target": "Student Services",
+      "value": 12896559.69
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Other",
+      "value": 4722297.59
+    },
+    {
+      "source": "State",
+      "target": "Other",
+      "value": 112314127.97
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Student Services",
+      "value": 8907973.22
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Administrative Offices",
+      "value": 2113963.87
+    },
+    {
+      "source": "Federal",
+      "target": "People Operations",
+      "value": 1541058.3
+    },
+    {
+      "source": "General (Base)",
+      "target": "Facilities",
+      "value": 3226288.62
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Special Education",
+      "value": 1896567.86
+    },
+    {
+      "source": "State",
+      "target": "Special Education",
+      "value": 90827748.55
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Police",
+      "value": 124408.38
+    },
+    {
+      "source": "Parcel Taxes",
+      "target": "Other",
+      "value": 12340609.94
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Instructional Programs",
+      "value": 17135132.08
+    },
+    {
+      "source": "State",
+      "target": "Instructional Programs",
+      "value": 15883332.12
+    },
+    {
+      "source": "Federal",
+      "target": "Financial Operations",
+      "value": 181074.33
+    },
+    {
+      "source": "Federal",
+      "target": "Special Education",
+      "value": 6522346.65
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Instructional Programs",
+      "value": 1161102.25
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Police",
+      "value": 231507.91
+    },
+    {
+      "source": "Parcel Taxes",
+      "target": "People Operations",
+      "value": 1654389.58
+    },
+    {
+      "source": "General (Base)",
+      "target": "Other Operations",
+      "value": 16845395.82
+    },
+    {
+      "source": "State",
+      "target": "Financial Operations",
+      "value": 137599.84
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Other Operations",
+      "value": 3666240.11
+    },
+    {
+      "source": "Federal",
+      "target": "Instructional Programs",
+      "value": 13443323.87
+    },
+    {
+      "source": "State",
+      "target": "People Operations",
+      "value": 240327.16
+    },
+    {
+      "source": "Federal",
+      "target": "Other",
+      "value": 5736853.72
+    },
+    {
+      "source": "Bonds",
+      "target": "Financial Operations",
+      "value": 193584.39
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Other",
+      "value": 1884148.83
+    },
+    {
+      "source": "State",
+      "target": "Facilities",
+      "value": 37970886.78
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Facilities",
+      "value": 228213.4
+    },
+    {
+      "source": "State",
+      "target": "Administrative Offices",
+      "value": 621984.84
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Student Services",
+      "value": 10534533.92
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Administrative Offices",
+      "value": 2515042.68
+    },
+    {
+      "source": "State",
+      "target": "Student Services",
+      "value": 30537092.63
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Other",
+      "value": 3260866.09
+    },
+    {
+      "source": "Parcel Taxes",
+      "target": "Student Services",
+      "value": 269351.43
+    },
+    {
+      "source": "General (Base)",
+      "target": "Instructional Programs",
+      "value": 7984772.7
+    },
+    {
+      "source": "Bonds",
+      "target": "Facilities",
+      "value": 8958071.94
+    },
+    {
+      "source": "Federal",
+      "target": "Other Operations",
+      "value": 669636.55
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Instructional Programs",
+      "value": 17056302.03
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Special Education",
+      "value": 913380.35
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Other Operations",
+      "value": 242460.19
+    },
+    {
+      "source": "General (Base)",
+      "target": "Special Education",
+      "value": 224652
+    },
+    {
+      "source": "General (Base)",
+      "target": "Financial Operations",
+      "value": 12194596.44
+    },
+    {
+      "source": "General (Base)",
+      "target": "Police",
+      "value": 4861851.04
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Other Operations",
+      "value": 160978.56
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Administrative Offices",
+      "value": 3281589.98
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Student Services",
+      "value": 593956.23
+    },
+    {
+      "source": "Bonds",
+      "target": "Other Operations",
+      "value": 1010744.69
+    },
+    {
+      "source": "General (Base)",
+      "target": "People Operations",
+      "value": 6719863.22
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Facilities",
+      "value": 166034.74
+    },
+    {
+      "source": "Health Benefits Governance Board (HBGB)",
+      "target": "Administrative Offices",
+      "value": 56954452.72
+    },
+    {
+      "source": "Federal",
+      "target": "Student Services",
+      "value": 15301532.59
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "People Operations",
+      "value": 1864040.33
+    },
+    {
+      "source": "Federal",
+      "target": "Administrative Offices",
+      "value": 3117830.66
+    }
+  ],
+  "nodes": [
+    {
+      "id": "General (Base)",
+      "type": "resource"
+    },
+    {
+      "id": "Parcel Taxes",
+      "type": "resource"
+    },
+    {
+      "id": "Other Revenue",
+      "type": "resource"
+    },
+    {
+      "id": "Supplemental & Concentration",
+      "type": "resource"
+    },
+    {
+      "id": "Federal",
+      "type": "resource"
+    },
+    {
+      "id": "State",
+      "type": "resource"
+    },
+    {
+      "id": "Philanthropy / Grants",
+      "type": "resource"
+    },
+    {
+      "id": "Bonds",
+      "type": "resource"
+    },
+    {
+      "id": "Health Benefits Governance Board (HBGB)",
+      "type": "resource"
+    },
+    {
+      "id": "Administrative Offices",
+      "type": "site"
+    },
+    {
+      "id": "Facilities",
+      "type": "site"
+    },
+    {
+      "id": "Financial Operations",
+      "type": "site"
+    },
+    {
+      "id": "Instructional Programs",
+      "type": "site"
+    },
+    {
+      "id": "Other",
+      "type": "site"
+    },
+    {
+      "id": "Other Operations",
+      "type": "site"
+    },
+    {
+      "id": "People Operations",
+      "type": "site"
+    },
+    {
+      "id": "Police",
+      "type": "site"
+    },
+    {
+      "id": "Special Education",
+      "type": "site"
+    },
+    {
+      "id": "Student Services",
+      "type": "site"
+    }
+  ]
+}
