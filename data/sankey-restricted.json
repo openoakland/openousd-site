@@ -1,0 +1,250 @@
+{
+  "links": [
+    {
+      "source": "Unrestricted",
+      "target": "Instructional Programs",
+      "value": 26095094.32
+    },
+    {
+      "source": "Restricted",
+      "target": "Instructional Programs",
+      "value": 50504610.52
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Special Education",
+      "value": 1138032.35
+    },
+    {
+      "source": "Restricted",
+      "target": "Special Education",
+      "value": 99246663.06
+    },
+    {
+      "source": "Restricted",
+      "target": "People Operations",
+      "value": 2625486.91
+    },
+    {
+      "source": "Unrestricted",
+      "target": "People Operations",
+      "value": 9445114.47
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Police",
+      "value": 4612682.53
+    },
+    {
+      "source": "Restricted",
+      "target": "Police",
+      "value": 355916.29
+    },
+    {
+      "source": "Restricted",
+      "target": "Administrative Offices",
+      "value": 6254858.18
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Student Services",
+      "value": 48159262.64
+    },
+    {
+      "source": "Restricted",
+      "target": "Financial Operations",
+      "value": 571862.97
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Administrative Offices",
+      "value": 87060116.3
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Financial Operations",
+      "value": 12197751.45
+    },
+    {
+      "source": "Restricted",
+      "target": "Student Services",
+      "value": 30881737.07
+    },
+    {
+      "source": "Restricted",
+      "target": "Facilities",
+      "value": 47200342.46
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Facilities",
+      "value": 3349153.02
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Other",
+      "value": 44183181
+    },
+    {
+      "source": "Restricted",
+      "target": "Other",
+      "value": 19685069.05
+    },
+    {
+      "source": "Restricted",
+      "target": "Other Operations",
+      "value": 2117883.39
+    },
+    {
+      "source": "Unrestricted",
+      "target": "Other Operations",
+      "value": 20511635.93
+    },
+    {
+      "source": "Bonds",
+      "target": "Restricted",
+      "value": 10162401.02
+    },
+    {
+      "source": "Philanthropy / Grants",
+      "target": "Restricted",
+      "value": 37431493.09
+    },
+    {
+      "source": "Health Benefits Governance Board (HBGB)",
+      "target": "Unrestricted",
+      "value": 56954452.72
+    },
+    {
+      "source": "State",
+      "target": "Unrestricted",
+      "value": 139508578.76
+    },
+    {
+      "source": "State",
+      "target": "Restricted",
+      "value": 149058663.53
+    },
+    {
+      "source": "Federal",
+      "target": "Restricted",
+      "value": 46513656.67
+    },
+    {
+      "source": "Parcel Taxes",
+      "target": "Unrestricted",
+      "value": 4173351.06
+    },
+    {
+      "source": "Parcel Taxes",
+      "target": "Restricted",
+      "value": 14026739.68
+    },
+    {
+      "source": "General (Base)",
+      "target": "Unrestricted",
+      "value": 13273435.17
+    },
+    {
+      "source": "Supplemental & Concentration",
+      "target": "Unrestricted",
+      "value": 37533518.49
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Restricted",
+      "value": 2251475.91
+    },
+    {
+      "source": "Other Revenue",
+      "target": "Unrestricted",
+      "value": 5308687.81
+    }
+  ],
+  "nodes": [
+    {
+      "id": "General (Base)",
+      "type": "resource"
+    },
+    {
+      "id": "Parcel Taxes",
+      "type": "resource"
+    },
+    {
+      "id": "Other Revenue",
+      "type": "resource"
+    },
+    {
+      "id": "Supplemental & Concentration",
+      "type": "resource"
+    },
+    {
+      "id": "Federal",
+      "type": "resource"
+    },
+    {
+      "id": "State",
+      "type": "resource"
+    },
+    {
+      "id": "Philanthropy / Grants",
+      "type": "resource"
+    },
+    {
+      "id": "Bonds",
+      "type": "resource"
+    },
+    {
+      "id": "Health Benefits Governance Board (HBGB)",
+      "type": "resource"
+    },
+    {
+      "id": "Administrative Offices",
+      "type": "site"
+    },
+    {
+      "id": "Facilities",
+      "type": "site"
+    },
+    {
+      "id": "Financial Operations",
+      "type": "site"
+    },
+    {
+      "id": "Instructional Programs",
+      "type": "site"
+    },
+    {
+      "id": "Other",
+      "type": "site"
+    },
+    {
+      "id": "Other Operations",
+      "type": "site"
+    },
+    {
+      "id": "People Operations",
+      "type": "site"
+    },
+    {
+      "id": "Police",
+      "type": "site"
+    },
+    {
+      "id": "Special Education",
+      "type": "site"
+    },
+    {
+      "id": "Student Services",
+      "type": "site"
+    },
+    {
+      "id": "Restricted",
+      "type": "resource_type"
+    },
+    {
+      "id": "Unrestricted",
+      "type": "resource_type"
+    }
+  ]
+}

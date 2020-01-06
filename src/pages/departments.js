@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import Table from "../components/departments-table"
 import Sankey from "../components/sankey-chart"
 import { graphql } from "gatsby"
-import sankeyData from "../../data/sankey.json"
+import sankeyData from "../../data/sankey-restricted.json"
 
 import "../styles/pages/departments.scss"
 

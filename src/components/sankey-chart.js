@@ -11,10 +11,10 @@ const Sankey = ({ data /* see data tab */ }) => (
     <ResponsiveSankey
         data={data}
         margin={{ top: 20, right: 200, bottom: 20, left: 240 }}
-        sort="auto"
+        sort="descending"
         align="justify"
         colors={{ scheme: 'category10' }}
-        nodeOpacity={1}
+        nodeOpacity={0.8}
         nodeThickness={25}
         nodeInnerPadding={3}
         nodeSpacing={10}
@@ -25,9 +25,9 @@ const Sankey = ({ data /* see data tab */ }) => (
         enableLinkGradient={true}
         labelPosition="outside"
         labelOrientation="horizontal"
-        labelPadding={16}
+        labelPadding={10}
         labelTextColor={{ from: 'color', modifiers: [ [ 'darker', 1 ] ] }}
-        animate={false}
+        animate={true}
         motionStiffness={140}
         motionDamping={13}
         tooltipFormat={value =>
