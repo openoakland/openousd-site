@@ -5,7 +5,9 @@ import SEO from "../components/seo"
 import Table from "../components/departments-table"
 import Sankey from "../components/sankey-chart"
 import { graphql } from "gatsby"
-import sankeyData from "../../data/sankey-restricted.json"
+import sankeyData from "../../data/sankey.json"
+import sankeyRestrictedData from "../../data/sankey-restricted.json"
+
 
 import "../styles/pages/departments.scss"
 
@@ -16,9 +18,7 @@ const DepartmentsPage = ({ data }) => {
     <Layout pageClassName="departments-page">
       <SEO title="Departments" />
       <h1>Departments</h1>
-      <div id="sankey-chart">
-        <Sankey data={sankeyData} />
-      </div>
+      <Sankey data={sankeyData} restrictedData={sankeyRestrictedData} />
       <Table data={departments} />
     </Layout>
   )

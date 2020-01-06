@@ -2,4 +2,18 @@
     #sankey-chart {
         height: 500px;
     }
+
+    button.filter {
+        border-color: $theme-blue;
+
+        &:not(.active) {
+            background-color: white;
+            color: $theme-blue;
+        }
+    }
+
+    span.show {
+        cursor: pointer;
+    }
+
 }
