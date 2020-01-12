@@ -1,6 +1,10 @@
 .departments-page {
     #sankey-chart {
         height: 500px;
+
+        .node-tooltip {
+            font-weight: bold
+        }
     }
 
     button.filter {

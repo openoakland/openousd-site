@@ -6,7 +6,27 @@ import ClearIcon from '@material-ui/icons/Clear';
 
 function Sankey(props) {
 
-    const [groupByRestricted, setGroupByRestricted] = useState(false);
+    const [groupByRestricted, setGroupByRestricted] = useState(false)
+
+    let totalsByNode = {}
+    props.data.nodes.map(node => totalsByNode[node.id] = formatCurrency(node.total))
+
+    function formatCurrency(value) {
+        return Math.floor(Number(value)).toLocaleString("en-US",
+                            {style: "currency",
+                            currency: "USD",
+                            minimumFractionDigits: 0,
+                            maximumFractionDigits: 0})
+    }
+
+    function getNodeTooltip(node) {
+        return (
+            <div className="node-tooltip">
+                <div className="node-name" style={{color: node.color}}>{node.id}</div>
+                <div className="node-total">{totalsByNode[node.id]}</div>
+            </div>
+        )
+    }
 
     return (
         <div>
@@ -45,13 +65,8 @@ function Sankey(props) {
                     animate={true}
                     motionStiffness={140}
                     motionDamping={13}
-                    tooltipFormat={value =>
-                        `${Math.floor(Number(value)).toLocaleString("en-US",
-                            {style: "currency",
-                            currency: "USD",
-                            minimumFractionDigits: 0,
-                            maximumFractionDigits: 0})}`
-                    }
+                    tooltipFormat={value => formatCurrency(value)}
+                    nodeTooltip={node => getNodeTooltip(node)}
                 />
             </div>
         </div>
