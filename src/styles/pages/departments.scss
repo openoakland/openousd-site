@@ -1,0 +1,23 @@
+.departments-page {
+    #sankey-chart {
+        height: 500px;
+
+        .node-tooltip {
+            font-weight: bold
+        }
+    }
+
+    button.filter {
+        border-color: $theme-blue;
+
+        &:not(.active) {
+            background-color: white;
+            color: $theme-blue;
+        }
+    }
+
+    span.show {
+        cursor: pointer;
+    }
+
+}

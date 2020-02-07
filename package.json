@@ -7,6 +7,7 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "@nivo/sankey": "^0.61.1",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.16.1",
     "gatsby-image": "^2.2.29",
