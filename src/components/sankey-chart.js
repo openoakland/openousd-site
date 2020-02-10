@@ -28,6 +28,15 @@ function Sankey(props) {
         )
     }
 
+    const margin = { top: 20, right: 200, bottom: 20, left: 240 }
+
+
+    const overlayStyle = {
+        pointerEvents: "none",
+        marginLeft: margin.left,
+        marginRight: margin.right,
+    }
+
     return (
         <div>
             <div><span>Group By:{' '}</span>
@@ -43,9 +52,13 @@ function Sankey(props) {
                 </span>
             </div>
             <div id="sankey-chart">
+                <div id="overlay" style={overlayStyle}>
+                    <span id="revenue">Revenues</span>
+                    <span id="expenditures">Spending Categories</span>
+                </div>
                 <ResponsiveSankey
                     data={groupByRestricted ? props.restrictedData : props.data}
-                    margin={{ top: 20, right: 200, bottom: 20, left: 240 }}
+                    margin={margin}
                     sort="descending"
                     align="justify"
                     colors={{ scheme: 'category10' }}

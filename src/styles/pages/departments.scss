@@ -1,4 +1,5 @@
 .departments-page {
+
     #sankey-chart {
         height: 500px;
 
@@ -18,6 +19,19 @@
 
     span.show {
         cursor: pointer;
+    }
+
+    #overlay {
+        font-size: 14pt;
+        // width: 100%;
+        #revenue {
+            left: -30px;
+            position: relative;
+        }
+        #expenditures {
+            right: 18%;
+            position: absolute;
+        }
     }
 
 }
