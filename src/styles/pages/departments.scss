@@ -2,23 +2,31 @@
 
     #sankey-chart {
         height: 500px;
+        margin-bottom: 100px;
 
         .node-tooltip {
             font-weight: bold
         }
     }
 
-    button.filter {
-        border-color: $theme-blue;
-
-        &:not(.active) {
-            background-color: white;
-            color: $theme-blue;
+    #sankey-grouping {
+        padding: 20px 0px;
+        .label {
+            padding-right: 10px;
         }
-    }
+        button {
+            font-weight: normal !important;
+            border-color: $theme-blue;
 
-    span.show {
-        cursor: pointer;
+            &.btn-sm {
+                padding: 0.2rem 0.5rem;
+            }
+
+            &:not(.active) {
+                background-color: white;
+                color: $theme-blue;
+            }
+        }
     }
 
     #overlay {

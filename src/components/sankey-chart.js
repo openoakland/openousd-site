@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import { ResponsiveSankey } from '@nivo/sankey'
-import { Button } from 'react-bootstrap';
+import { Button, ButtonGroup } from 'react-bootstrap';
 import ClearIcon from '@material-ui/icons/Clear';
 
 function Sankey(props) {
@@ -39,17 +39,20 @@ function Sankey(props) {
 
     return (
         <div>
-            <div><span>Group By:{' '}</span>
-                <Button className="filter"
-                        size="sm"
-                        onClick={() => setGroupByRestricted(!groupByRestricted)}
-                        active={groupByRestricted}>
-                    Restricted
-                </Button>
-                <span className={groupByRestricted ? "show" : "d-none"}
-                    onClick={() => setGroupByRestricted(!groupByRestricted)}>
-                    <ClearIcon className="text-dark" />
-                </span>
+            <div id="sankey-grouping" className="mx-auto">
+                <span className="label">Grouping:{' '}</span>
+                <ButtonGroup>
+                    <Button size="sm"
+                            onClick={() => setGroupByRestricted(false)}
+                            active={!groupByRestricted}>
+                        None
+                    </Button>
+                    <Button size="sm"
+                            onClick={() => setGroupByRestricted(true)}
+                            active={groupByRestricted}>
+                        Restricted / Unrestricted
+                    </Button>
+                </ButtonGroup>
             </div>
             <div id="sankey-chart">
                 <div id="overlay" style={overlayStyle}>
