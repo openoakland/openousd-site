@@ -9,7 +9,7 @@ import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
-const TOTAL_FOR_ALL_DEPARTMENTS = 'Total for All Departments';
+const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs';
 
 
 const formatToUSD = amount => {
@@ -19,7 +19,7 @@ const formatToUSD = amount => {
 }
 
 const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_DEPARTMENTS, spending: 0, budget: 0, staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, staff: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending;
     returnObject.budget += +currentItem.budget;
@@ -36,10 +36,10 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
 }
 
 const sort = (a, b, order, dataField, rowA, rowB) => {
-  if (rowA.name === TOTAL_FOR_ALL_DEPARTMENTS) {
+  if (rowA.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
     return -1
   }
-  if (rowB.name === TOTAL_FOR_ALL_DEPARTMENTS) {
+  if (rowB.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
     return 1
   }
   if (order === "asc") {
@@ -55,7 +55,7 @@ const sort = (a, b, order, dataField, rowA, rowB) => {
 const getSortCaret = (order, column) => {
   if (order === 'asc') {
     return (<ArrowDropUp className="text-dark" />)
-  } 
+  }
   if (order === 'desc') {
     return (<ArrowDropDown className="text-dark" />)
   }
@@ -130,7 +130,7 @@ const Table = ({data}) => {
       {props => (
         <div>
             {/* TODO can we get the years from the data? */}
-          <h3>Department Data for the 2018-2019 School Year</h3>
+          <h3>Central Programs for the 2018-2019 School Year</h3>
           <div>
             <ExportCSVButton {...props.csvProps} className="btn-link">
               Download Data to CSV

@@ -9,7 +9,7 @@ import sankeyData from "../../data/sankey.json"
 import sankeyRestrictedData from "../../data/sankey-restricted.json"
 
 
-import "../styles/pages/departments.scss"
+import "../styles/pages/central-programs.scss"
 
 const DepartmentsPage = ({ data }) => {
 
@@ -17,7 +17,7 @@ const DepartmentsPage = ({ data }) => {
   return (
     <Layout pageClassName="departments-page">
       <SEO title="Departments" />
-      <h1>Departments</h1>
+      <h1>Central Programs Overview (2018-19)</h1>
       <Sankey data={sankeyData} restrictedData={sankeyRestrictedData} />
       <Table data={departments} />
     </Layout>
