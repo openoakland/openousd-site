@@ -1,4 +1,4 @@
-.departments-page {
+.central-programs-page {
 
     #sankey-chart {
         height: 500px;
@@ -30,16 +30,7 @@
     }
 
     #overlay {
-        font-size: 14pt;
-        // width: 100%;
-        #revenue {
-            left: -30px;
-            position: relative;
-        }
-        #expenditures {
-            right: 18%;
-            position: absolute;
-        }
+        font-size: 1.2rem;
     }
 
 }

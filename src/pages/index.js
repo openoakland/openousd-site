@@ -26,7 +26,7 @@ const IndexPage = () => (
           <Col xs={11} md={5} className="px-md-5 py-md-4 px-3 py-3">
             <h1 className="">What is the OUSD Central Office?</h1>
             <p>The central office is an Oakland city organization comprised of almost 50 different departments whose purposes are to support the 121 schools and 50,000 students within the district of Oakland. </p>
-            <Link to="/departments/"><Button variant="primary" size="lg" className="cta">Explore the Departments</Button></Link>
+            <Link to="/central-programs/"><Button variant="primary" size="lg" className="cta">Explore the Departments</Button></Link>
           </Col>
         </Row>
     </Container>

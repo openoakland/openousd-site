@@ -11,11 +11,11 @@ import sankeyRestrictedData from "../../data/sankey-restricted.json"
 
 import "../styles/pages/central-programs.scss"
 
-const DepartmentsPage = ({ data }) => {
+const CentralProgramsPage = ({ data }) => {
 
   const departments = data.allDepartmentsJson.nodes;
   return (
-    <Layout pageClassName="departments-page">
+    <Layout pageClassName="central-programs-page">
       <SEO title="Departments" />
       <h1>Central Programs Overview (2018-19)</h1>
       <Sankey data={sankeyData} restrictedData={sankeyRestrictedData} />
@@ -24,7 +24,7 @@ const DepartmentsPage = ({ data }) => {
   )
 }
 
-export default DepartmentsPage
+export default CentralProgramsPage
 
 export const query = graphql`
   query DepartmentList {
