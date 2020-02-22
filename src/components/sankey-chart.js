@@ -2,7 +2,6 @@ import React, { useState } from "react"
 
 import { ResponsiveSankey } from '@nivo/sankey'
 import { Button, ButtonGroup } from 'react-bootstrap';
-import ClearIcon from '@material-ui/icons/Clear';
 
 function Sankey(props) {
 
@@ -28,14 +27,20 @@ function Sankey(props) {
         )
     }
 
-    const margin = { top: 20, right: 200, bottom: 20, left: 240 }
+    const margin = { top: 50, right: 200, bottom: 20, left: 240 }
 
+    const xAxisLabels = (props) => {
 
-    const overlayStyle = {
-        pointerEvents: "none",
-        marginLeft: margin.left,
-        marginRight: margin.right,
-    }
+    return (
+      <g transform="translate(0,-30)" id="overlay">
+            <text x={-28}>
+                Revenues
+            </text>
+            <text x={props.width - 70}>
+                Expenditures
+            </text>
+      </g>
+    )};
 
     return (
         <div>
@@ -55,10 +60,6 @@ function Sankey(props) {
                 </ButtonGroup>
             </div>
             <div id="sankey-chart">
-                <div id="overlay" style={overlayStyle}>
-                    <span id="revenue">Revenues</span>
-                    <span id="expenditures">Spending Categories</span>
-                </div>
                 <ResponsiveSankey
                     data={groupByRestricted ? props.restrictedData : props.data}
                     margin={margin}
@@ -83,6 +84,7 @@ function Sankey(props) {
                     motionDamping={13}
                     tooltipFormat={value => formatCurrency(value)}
                     nodeTooltip={node => getNodeTooltip(node)}
+                    layers={['links', 'nodes', 'labels', 'legends', xAxisLabels]}
                 />
             </div>
         </div>
