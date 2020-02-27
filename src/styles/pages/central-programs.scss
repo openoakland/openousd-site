@@ -10,7 +10,12 @@
     }
 
     #sankey-grouping {
-        padding: 20px 0px;
+        text-align: center;
+        .control {
+            display: inline-block;
+            padding: 20px 0px;
+            text-align: center;
+        }
         .label {
             padding-right: 10px;
         }

@@ -29,9 +29,7 @@ function Sankey(props) {
 
     const margin = { top: 50, right: 200, bottom: 20, left: 240 }
 
-    const xAxisLabels = (props) => {
-
-    return (
+    const xAxisLabels = (props) => (
       <g transform="translate(0,-30)" id="overlay">
             <text x={-28}>
                 Revenues
@@ -40,24 +38,26 @@ function Sankey(props) {
                 Expenditures
             </text>
       </g>
-    )};
+    );
 
     return (
         <div>
-            <div id="sankey-grouping" className="mx-auto">
-                <span className="label">Grouping:{' '}</span>
-                <ButtonGroup>
-                    <Button size="sm"
-                            onClick={() => setGroupByRestricted(false)}
-                            active={!groupByRestricted}>
-                        None
-                    </Button>
-                    <Button size="sm"
-                            onClick={() => setGroupByRestricted(true)}
-                            active={groupByRestricted}>
-                        Restricted / Unrestricted
-                    </Button>
-                </ButtonGroup>
+            <div id="sankey-grouping">
+                <div className="control">
+                    <span className="label">Grouping:{' '}</span>
+                    <ButtonGroup>
+                        <Button size="sm"
+                                onClick={() => setGroupByRestricted(false)}
+                                active={!groupByRestricted}>
+                            None
+                        </Button>
+                        <Button size="sm"
+                                onClick={() => setGroupByRestricted(true)}
+                                active={groupByRestricted}>
+                            Restricted / Unrestricted
+                        </Button>
+                    </ButtonGroup>
+                </div>
             </div>
             <div id="sankey-chart">
                 <ResponsiveSankey
