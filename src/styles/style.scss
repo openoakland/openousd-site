@@ -62,3 +62,9 @@ button{
     font-weight: 800 !important;
     font-size: 1rem !important;
 }
+
+.footnote {
+    font-size: $footnote-font-size;
+    font-style: italic;
+    color: $gray;
+}
