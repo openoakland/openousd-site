@@ -48,7 +48,7 @@
     {
       "id": "Administrative Offices",
       "type": "site",
-      "total": 93314974.48
+      "total": 22569332.76
     },
     {
       "id": "Facilities",
@@ -86,6 +86,11 @@
       "total": 4968598.82
     },
     {
+      "id": "Risk Management",
+      "type": "site",
+      "total": 70745641.72
+    },
+    {
       "id": "Special Education",
       "type": "site",
       "total": 100384695.41
@@ -114,6 +119,11 @@
       "value": 50504610.52,
       "target": "Instructional Programs",
       "source": "Restricted"
+    },
+    {
+      "value": 70745641.72,
+      "target": "Risk Management",
+      "source": "Unrestricted"
     },
     {
       "value": 1138032.35,
@@ -161,7 +171,7 @@
       "source": "Restricted"
     },
     {
-      "value": 87060116.3,
+      "value": 16314474.58,
       "target": "Administrative Offices",
       "source": "Unrestricted"
     },
