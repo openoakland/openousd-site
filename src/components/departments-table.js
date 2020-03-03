@@ -130,7 +130,7 @@ const Table = ({data}) => {
       {props => (
         <div>
             {/* TODO can we get the years from the data? */}
-          <h3>Department Data for the 2018-2019 School Year</h3>
+          <h2>Department Data for the 2018-2019 School Year</h2>
           <div>
             <ExportCSVButton {...props.csvProps} className="btn-link">
               Download Data to CSV
