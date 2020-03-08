@@ -30,14 +30,14 @@ function Sankey(props) {
     const margin = { top: 50, right: 200, bottom: 20, left: 240 }
 
     const xAxisLabels = (props) => (
-      <g transform="translate(0,-30)" id="overlay">
+        <g transform="translate(0,-30)" id="overlay">
             <text x={-28}>
                 Revenues
             </text>
             <text x={props.width - 70}>
                 Expenditures
             </text>
-      </g>
+        </g>
     );
 
     return (
@@ -60,6 +60,11 @@ function Sankey(props) {
                 </div>
             </div>
             <div id="sankey-chart">
+                <div id="info">
+                    <div className={"text-center" + (!groupByRestricted ? " d-none" : "")}>
+                        <strong>Restricted</strong> funds must be used for specific purposes.<br/> <strong>Unrestricted</strong> funds are more flexible.
+                    </div>
+                </div>
                 <ResponsiveSankey
                     data={groupByRestricted ? props.restrictedData : props.data}
                     margin={margin}
