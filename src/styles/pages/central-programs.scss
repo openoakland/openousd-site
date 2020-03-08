@@ -5,7 +5,13 @@
         margin-bottom: 100px;
 
         .node-tooltip {
-            font-weight: bold
+            font-weight: bold;
+
+            .node-programs {
+                width: 250px;
+                overflow: wrap;
+                white-space: normal;
+            }
         }
 
         #info {

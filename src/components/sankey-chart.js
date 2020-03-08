@@ -18,11 +18,22 @@ function Sankey(props) {
                             maximumFractionDigits: 0})
     }
 
+    function SubNodes(props) {
+        if(!props.node.subnodes.includes(",")
+            || props.node.type === "resource"){
+            return null
+        }
+        return (
+            <div className="node-programs footnote">Includes: {props.node.subnodes}</div>
+        );
+    }
+
     function getNodeTooltip(node) {
         return (
             <div className="node-tooltip">
                 <div className="node-name" style={{color: node.color}}>{node.id}</div>
                 <div className="node-total">{totalsByNode[node.id]}</div>
+                <SubNodes node={node}/>
             </div>
         )
     }
