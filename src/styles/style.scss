@@ -41,7 +41,15 @@
 
 .main-container {
     padding-top: 50px;
+    padding-bottom: 50px;
     max-width: 1140px;
+}
+
+button.cta{
+    border-radius: 50rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    background-color: $theme-blue;
 }
 
 body{
