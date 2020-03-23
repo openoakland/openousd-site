@@ -12,7 +12,7 @@ const Contact = () => (
     <Container>
         <Row>
             <Col md={6} lg={5} id="contact-form">
-                <h1>Contact us</h1>
+                <h1>Contact Us</h1>
                 <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
                     <Form.Label>Email</Form.Label>
                         <Form.Control type="email" name="email" />
@@ -25,15 +25,15 @@ const Contact = () => (
                             <option>Make a donation</option>
                             <option>Something else</option>
                         </Form.Control>
-                    <Form.Label>Message*</Form.Label>
+                    <Form.Label>Message (required)</Form.Label>
                         <Form.Control as="textarea" rows={5} name="message" />
-                    <Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>
+                    {/*<Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>*/}
                     <Button className="cta" variant="primary" type="submit">Send Message</Button>
                 </Form>
             </Col>
             <Col md={{ span:5, offset: 1 }}>
                 <div id="email-signup">
-                    <h1>Sign up for email updates</h1>
+                    <h1>Sign Up For Email Updates</h1>
                     <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
                         <Form.Label>Be the first to know when new data is released.</Form.Label>
                         <Form.Control type="hidden" name="purpose" value="Email Signup"/>
@@ -43,7 +43,7 @@ const Contact = () => (
                     </Form>
                 </div>
                 <div id="openoakland-meeting">
-                    <h1>Join us in-person</h1>
+                    <h1>Join Us In-Person</h1>
                     <div>OpenOakland meets every Tues,{' '}
                         6:30pm at Oakland City Hall.
                     </div>

@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
                         <Link to="/"><img src={logo} alt="Logo" /></Link>
                     </div>
                     <div id="tagline" className="text-center text-lg-right pt-2">
-                        Volunteers providing transparent access to Oakland Unified School District data
+                        Volunteers providing transparent access to Oakland Unified School District information
                     </div>
                 </div>
             </Navbar>
