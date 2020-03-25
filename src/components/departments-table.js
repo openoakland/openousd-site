@@ -68,7 +68,7 @@ const columns = [{
   formatter: columnsFormatter,
   dataField: 'name',
   text: 'Department',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department {components.sortElement}</div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Central Program {components.sortElement}</div>)},
   sortCaret: getSortCaret,
   sort: true,
   sortFunc: sort
@@ -138,7 +138,7 @@ const Table = ({data}) => {
           </div>
           <SearchBar
             {...props.searchProps}
-            placeholder="Department Search"
+            placeholder="Search programs"
             className="search-bar"
           />
           <hr />
