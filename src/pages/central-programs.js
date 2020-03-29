@@ -32,6 +32,7 @@ export const query = graphql`
       nodes {
         name
         category
+        percent_under_budget
         budget
         spending
         year

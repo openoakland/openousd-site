@@ -18,6 +18,18 @@ const formatToUSD = amount => {
   return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
 }
 
+const formatBudgetPercentCell = (percent, rowIndex) => {
+  let classes = ""
+
+  if(percent < -3) {
+    classes = "over-budget"
+  }
+
+  if(rowIndex !== 0){
+    return <span className={classes}>{percent}%</span>
+  }
+}
+
 const createFirstRow = data => {
   const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, staff: 0}
   return data.reduce((returnObject, currentItem) => {
@@ -115,6 +127,17 @@ const columns = [{
   align: 'right',
   hidden: true,
   csvExport: false
+}, {
+  dataField: 'percent_under_budget',
+  formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
+  text: 'Percent Under Budget',
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Percent Under Budget<HelpIcon tooltipText="Negative indicates over budget"/></div>)},
+  sortCaret: getSortCaret,
+  searchable: false,
+  sort: true,
+  sortFunc: sort,
+  type: 'number',
+  align: 'right'
 }];
 
 const rowClasses = (row, rowIndex) => {

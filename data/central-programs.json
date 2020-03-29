@@ -1,323 +1,12 @@
 [
   {
-    "code": 958,
-    "name": "Communications",
-    "category": "Other Operations",
-    "spending": 4124508.28,
-    "budget": 4538628.24,
-    "year": 2018
-  },
-  {
-    "code": 940,
-    "name": "Board Of Education",
-    "category": "Administrative Offices",
-    "spending": 1538227.12,
-    "budget": 1637911.9,
-    "year": 2018
-  },
-  {
-    "code": 922,
-    "name": "Community Schools & Student Services",
-    "category": "Student Services",
-    "spending": 34314865.94,
-    "budget": 38702222.74,
-    "year": 2018
-  },
-  {
-    "code": 947,
-    "name": "Charter Schools Office (Admin)",
-    "category": "Administrative Offices",
-    "spending": 1555815.87,
-    "budget": 1931292.2,
-    "year": 2018
-  },
-  {
-    "code": 933,
-    "name": "Oakland Athletic League",
-    "category": "Student Services",
-    "spending": 3133984.23,
-    "budget": 3332197.63,
-    "year": 2018
-  },
-  {
-    "code": 956,
-    "name": "Continuous School Improvement",
-    "category": "Administrative Offices",
-    "spending": 1213528.38,
-    "budget": 2219091.63,
-    "year": 2018
-  },
-  {
-    "code": 910,
-    "name": "Early Childhood Development",
-    "category": "Instructional Programs",
-    "spending": 8558197.65,
-    "budget": 9812216.37,
-    "year": 2018
-  },
-  {
-    "code": 923,
-    "name": "Elementary Network 4",
-    "category": "Instructional Programs",
-    "spending": 2429452.41,
-    "budget": 1995237.67,
-    "year": 2018
-  },
-  {
-    "code": 987,
-    "name": "Risk Management",
-    "category": "Risk Management",
-    "spending": 70745641.72,
-    "budget": 83382799,
-    "year": 2018
-  },
-  {
-    "code": 962,
-    "name": "Pre-K-5 Network 2",
-    "category": "Instructional Programs",
-    "spending": 883230.37,
-    "budget": 737100.43,
-    "year": 2018
-  },
-  {
-    "code": 988,
-    "name": "Buildings & Grounds",
-    "category": "Facilities",
-    "spending": 33056172.58,
-    "budget": 34656909.78,
-    "year": 2018
-  },
-  {
-    "code": 945,
-    "name": "Office Of State Trustee",
-    "category": "Administrative Offices",
-    "spending": 202800,
-    "budget": 221409,
-    "year": 2018
-  },
-  {
-    "code": 944,
-    "name": "Human Resources",
-    "category": "People Operations",
-    "spending": 11785397.8,
-    "budget": 14067747.52,
-    "year": 2018
-  },
-  {
-    "code": 907,
-    "name": "Student Assignment",
-    "category": "Student Services",
-    "spending": 3496079.43,
-    "budget": 3612701.96,
-    "year": 2018
-  },
-  {
-    "code": 979,
-    "name": "Printing And Mail Services",
-    "category": "Other Operations",
-    "spending": 546680.32,
-    "budget": 711483.32,
-    "year": 2018
-  },
-  {
-    "code": 994,
-    "name": "OUSD Police Department",
-    "category": "Police",
-    "spending": 4968598.82,
-    "budget": 5559441.32,
-    "year": 2018
-  },
-  {
-    "code": 968,
-    "name": "Health Services (Nurses)",
-    "category": "Student Services",
-    "spending": 4905338.32,
-    "budget": 7191798.5,
-    "year": 2018
-  },
-  {
-    "code": 980,
-    "name": "Chief Financial Officer",
-    "category": "Administrative Offices",
-    "spending": 1324728.1,
-    "budget": 1387129.55,
-    "year": 2018
-  },
-  {
-    "code": 937,
-    "name": "Summer Programs",
-    "category": "Instructional Programs",
-    "spending": 6073755.14,
-    "budget": 5613526.24,
-    "year": 2018
-  },
-  {
-    "code": 961,
-    "name": "Pre K-5 Network 1",
-    "category": "Instructional Programs",
-    "spending": 0,
-    "budget": 36083.89,
-    "year": 2018
-  },
-  {
-    "code": 991,
-    "name": "Food Service",
-    "category": "Student Services",
-    "spending": 4423574.67,
-    "budget": 5199898.31,
-    "year": 2018
-  },
-  {
-    "code": 924,
-    "name": "Instruction Support Specialist Network",
-    "category": "Instructional Programs",
-    "spending": 939605.65,
-    "budget": 836312.47,
-    "year": 2018
-  },
-  {
-    "code": 951,
-    "name": "Budget",
-    "category": "Financial Operations",
-    "spending": 4142351.77,
-    "budget": 4186015.55,
-    "year": 2018
-  },
-  {
-    "code": 928,
-    "name": "OPSR Counseling",
-    "category": "Student Services",
-    "spending": 1824422.63,
-    "budget": 2228542.94,
-    "year": 2018
-  },
-  {
-    "code": 906,
-    "name": "Ombudsman",
-    "category": "People Operations",
-    "spending": 264548.96,
-    "budget": 270975.65,
-    "year": 2018
-  },
-  {
     "code": 936,
     "name": "Accounting",
     "category": "Financial Operations",
     "spending": 3271416.84,
     "budget": 3423582.16,
-    "year": 2018
-  },
-  {
-    "code": 942,
-    "name": "Labor Relations",
-    "category": "People Operations",
-    "spending": 20654.62,
-    "budget": 20000,
-    "year": 2018
-  },
-  {
-    "code": 948,
-    "name": "Research Assessment & Data",
-    "category": "Other Operations",
-    "spending": 5132027.37,
-    "budget": 5311051.53,
-    "year": 2018
-  },
-  {
-    "code": 983,
-    "name": "Payroll",
-    "category": "Financial Operations",
-    "spending": 2597703.03,
-    "budget": 2324296.29,
-    "year": 2018
-  },
-  {
-    "code": 992,
-    "name": "Warehouse Distribution",
-    "category": "Other Operations",
-    "spending": 1983971.34,
-    "budget": 2647408.83,
-    "year": 2018
-  },
-  {
-    "code": 957,
-    "name": "Alternative Education",
-    "category": "Instructional Programs",
-    "spending": 1941.96,
-    "budget": 0,
-    "year": 2018
-  },
-  {
-    "code": 949,
-    "name": "Office Of The Internal Auditor",
-    "category": "Administrative Offices",
-    "spending": 46337.79,
-    "budget": 150000,
-    "year": 2018
-  },
-  {
-    "code": 975,
-    "name": "Special Education",
-    "category": "Special Education",
-    "spending": 100384695.41,
-    "budget": 103712258.19,
-    "year": 2018
-  },
-  {
-    "code": 965,
-    "name": "Middle School Network",
-    "category": "Instructional Programs",
-    "spending": 700318.39,
-    "budget": 5252287.07,
-    "year": 2018
-  },
-  {
-    "code": 999,
-    "name": "Districtwide Expenses",
-    "category": "Other",
-    "spending": 45371576.11,
-    "budget": 41253191.96,
-    "year": 2018
-  },
-  {
-    "code": 964,
-    "name": "High School Network",
-    "category": "Instructional Programs",
-    "spending": 4203528.56,
-    "budget": 4307434.72,
-    "year": 2018
-  },
-  {
-    "code": 946,
-    "name": "Legal Counsel",
-    "category": "Administrative Offices",
-    "spending": 3321320.67,
-    "budget": 3603380.94,
-    "year": 2018
-  },
-  {
-    "code": 901,
-    "name": "CHIEF OF STAFF",
-    "category": "Administrative Offices",
-    "spending": 1984444.2,
-    "budget": 2185281.51,
-    "year": 2018
-  },
-  {
-    "code": 941,
-    "name": "Office Of The Superintendent",
-    "category": "Administrative Offices",
-    "spending": 3201744.53,
-    "budget": 2756964.33,
-    "year": 2018
-  },
-  {
-    "code": 905,
-    "name": "Office Of Sr. Business Officer",
-    "category": "Administrative Offices",
-    "spending": 1446883.41,
-    "budget": 1417181.72,
-    "year": 2018
+    "year": 2018,
+    "percent_under_budget": 4.4
   },
   {
     "code": 902,
@@ -325,63 +14,62 @@
     "category": "Financial Operations",
     "spending": 1577523.28,
     "budget": 1350425.03,
-    "year": 2018
+    "year": 2018,
+    "percent_under_budget": -16.8
   },
   {
-    "code": 978,
-    "name": "Private Schools Office (Admin)",
+    "code": 957,
+    "name": "Alternative Education",
+    "category": "Instructional Programs",
+    "spending": 1941.96,
+    "budget": 0,
+    "year": 2018,
+    "percent_under_budget": null
+  },
+  {
+    "code": 940,
+    "name": "Board Of Education",
     "category": "Administrative Offices",
-    "spending": 0,
-    "budget": 575620,
-    "year": 2018
+    "spending": 1538227.12,
+    "budget": 1637911.9,
+    "year": 2018,
+    "percent_under_budget": 6.1
   },
   {
-    "code": 990,
-    "name": "Procurement & Distribution",
+    "code": 951,
+    "name": "Budget",
     "category": "Financial Operations",
-    "spending": 1180619.5,
-    "budget": 1302847.98,
-    "year": 2018
+    "spending": 4142351.77,
+    "budget": 4186015.55,
+    "year": 2018,
+    "percent_under_budget": 1
   },
   {
-    "code": 959,
-    "name": "Indian Education",
-    "category": "Instructional Programs",
-    "spending": 83822.98,
-    "budget": 43401,
-    "year": 2018
-  },
-  {
-    "code": 921,
-    "name": "Office of Post Secondary Readi",
-    "category": "Instructional Programs",
-    "spending": 971116.95,
-    "budget": 842266,
-    "year": 2018
-  },
-  {
-    "code": 954,
-    "name": "Eng Lang Lrnr/Multilingual Ach",
-    "category": "Instructional Programs",
-    "spending": 8309045.72,
-    "budget": 7227793.91,
-    "year": 2018
-  },
-  {
-    "code": 986,
-    "name": "Technology Services",
-    "category": "Other Operations",
-    "spending": 10842332.01,
-    "budget": 11890355.19,
-    "year": 2018
-  },
-  {
-    "code": 918,
-    "name": "Facilities Planning",
+    "code": 988,
+    "name": "Buildings & Grounds",
     "category": "Facilities",
-    "spending": 16391266.74,
-    "budget": 19297483.81,
-    "year": 2018
+    "spending": 33056172.58,
+    "budget": 34656909.78,
+    "year": 2018,
+    "percent_under_budget": 4.6
+  },
+  {
+    "code": 947,
+    "name": "Charter Schools Office (Admin)",
+    "category": "Administrative Offices",
+    "spending": 1555815.87,
+    "budget": 1931292.2,
+    "year": 2018,
+    "percent_under_budget": 19.4
+  },
+  {
+    "code": 980,
+    "name": "Chief Financial Officer",
+    "category": "Administrative Offices",
+    "spending": 1324728.1,
+    "budget": 1387129.55,
+    "year": 2018,
+    "percent_under_budget": 4.5
   },
   {
     "code": 913,
@@ -389,31 +77,44 @@
     "category": "Administrative Offices",
     "spending": 1434715.16,
     "budget": 1346913.62,
-    "year": 2018
+    "year": 2018,
+    "percent_under_budget": -6.5
   },
   {
-    "code": 950,
-    "name": "State and Federal Programs",
+    "code": 901,
+    "name": "CHIEF OF STAFF",
     "category": "Administrative Offices",
-    "spending": 2562794.15,
-    "budget": 3333777.36,
-    "year": 2018
+    "spending": 1984444.2,
+    "budget": 2185281.51,
+    "year": 2018,
+    "percent_under_budget": 9.2
   },
   {
-    "code": 932,
-    "name": "Jr Reserve Officer Training Corp",
-    "category": "Instructional Programs",
-    "spending": 191832.71,
-    "budget": 142535.01,
-    "year": 2018
+    "code": 958,
+    "name": "Communications",
+    "category": "Other Operations",
+    "spending": 4124508.28,
+    "budget": 4538628.24,
+    "year": 2018,
+    "percent_under_budget": 9.1
   },
   {
-    "code": 915,
-    "name": "Educator Effectiveness",
-    "category": "Instructional Programs",
-    "spending": 2234880.35,
-    "budget": 2330946.1,
-    "year": 2018
+    "code": 922,
+    "name": "Community Schools & Student Services",
+    "category": "Student Services",
+    "spending": 34314865.94,
+    "budget": 38702222.74,
+    "year": 2018,
+    "percent_under_budget": 11.3
+  },
+  {
+    "code": 956,
+    "name": "Continuous School Improvement",
+    "category": "Administrative Offices",
+    "spending": 1213528.38,
+    "budget": 2219091.63,
+    "year": 2018,
+    "percent_under_budget": 45.3
   },
   {
     "code": 989,
@@ -421,23 +122,143 @@
     "category": "Facilities",
     "spending": 1102056.16,
     "budget": 2522931.26,
-    "year": 2018
+    "year": 2018,
+    "percent_under_budget": 56.3
   },
   {
-    "code": 963,
-    "name": "Pre-K-5 Network 3",
-    "category": "Instructional Programs",
-    "spending": 693114.13,
-    "budget": 740234.68,
-    "year": 2018
+    "code": 999,
+    "name": "Districtwide Expenses",
+    "category": "Other",
+    "spending": 45371576.11,
+    "budget": 41253191.96,
+    "year": 2018,
+    "percent_under_budget": -10
   },
   {
-    "code": 929,
-    "name": "Office Of Equity",
+    "code": 910,
+    "name": "Early Childhood Development",
     "category": "Instructional Programs",
-    "spending": 4567882.99,
-    "budget": 4887572.09,
-    "year": 2018
+    "spending": 8558197.65,
+    "budget": 9812216.37,
+    "year": 2018,
+    "percent_under_budget": 12.8
+  },
+  {
+    "code": 915,
+    "name": "Educator Effectiveness",
+    "category": "Instructional Programs",
+    "spending": 2234880.35,
+    "budget": 2330946.1,
+    "year": 2018,
+    "percent_under_budget": 4.1
+  },
+  {
+    "code": 923,
+    "name": "Elementary Network 4",
+    "category": "Instructional Programs",
+    "spending": 2429452.41,
+    "budget": 1995237.67,
+    "year": 2018,
+    "percent_under_budget": -21.8
+  },
+  {
+    "code": 954,
+    "name": "Eng Lang Lrnr/Multilingual Ach",
+    "category": "Instructional Programs",
+    "spending": 8309045.72,
+    "budget": 7227793.91,
+    "year": 2018,
+    "percent_under_budget": -15
+  },
+  {
+    "code": 918,
+    "name": "Facilities Planning",
+    "category": "Facilities",
+    "spending": 16391266.74,
+    "budget": 19297483.81,
+    "year": 2018,
+    "percent_under_budget": 15.1
+  },
+  {
+    "code": 991,
+    "name": "Food Service",
+    "category": "Student Services",
+    "spending": 4423574.67,
+    "budget": 5199898.31,
+    "year": 2018,
+    "percent_under_budget": 14.9
+  },
+  {
+    "code": 968,
+    "name": "Health Services (Nurses)",
+    "category": "Student Services",
+    "spending": 4905338.32,
+    "budget": 7191798.5,
+    "year": 2018,
+    "percent_under_budget": 31.8
+  },
+  {
+    "code": 964,
+    "name": "High School Network",
+    "category": "Instructional Programs",
+    "spending": 4203528.56,
+    "budget": 4307434.72,
+    "year": 2018,
+    "percent_under_budget": 2.4
+  },
+  {
+    "code": 944,
+    "name": "Human Resources",
+    "category": "People Operations",
+    "spending": 11785397.8,
+    "budget": 14067747.52,
+    "year": 2018,
+    "percent_under_budget": 16.2
+  },
+  {
+    "code": 959,
+    "name": "Indian Education",
+    "category": "Instructional Programs",
+    "spending": 83822.98,
+    "budget": 43401,
+    "year": 2018,
+    "percent_under_budget": -93.1
+  },
+  {
+    "code": 924,
+    "name": "Instruction Support Specialist Network",
+    "category": "Instructional Programs",
+    "spending": 939605.65,
+    "budget": 836312.47,
+    "year": 2018,
+    "percent_under_budget": -12.4
+  },
+  {
+    "code": 932,
+    "name": "Jr Reserve Officer Training Corp",
+    "category": "Instructional Programs",
+    "spending": 191832.71,
+    "budget": 142535.01,
+    "year": 2018,
+    "percent_under_budget": -34.6
+  },
+  {
+    "code": 942,
+    "name": "Labor Relations",
+    "category": "People Operations",
+    "spending": 20654.62,
+    "budget": 20000,
+    "year": 2018,
+    "percent_under_budget": -3.3
+  },
+  {
+    "code": 946,
+    "name": "Legal Counsel",
+    "category": "Administrative Offices",
+    "spending": 3321320.67,
+    "budget": 3603380.94,
+    "year": 2018,
+    "percent_under_budget": 7.8
   },
   {
     "code": 912,
@@ -445,23 +266,26 @@
     "category": "Instructional Programs",
     "spending": 14825797.34,
     "budget": 14932212.88,
-    "year": 2018
+    "year": 2018,
+    "percent_under_budget": 0.7
   },
   {
-    "code": 995,
-    "name": "Transportation",
-    "category": "Student Services",
-    "spending": 26942734.49,
-    "budget": 24760727.21,
-    "year": 2018
-  },
-  {
-    "code": 909,
-    "name": "Teaching & Learning",
+    "code": 965,
+    "name": "Middle School Network",
     "category": "Instructional Programs",
-    "spending": 20932181.54,
-    "budget": 23490241.87,
-    "year": 2018
+    "spending": 700318.39,
+    "budget": 5252287.07,
+    "year": 2018,
+    "percent_under_budget": 86.7
+  },
+  {
+    "code": 933,
+    "name": "Oakland Athletic League",
+    "category": "Student Services",
+    "spending": 3133984.23,
+    "budget": 3332197.63,
+    "year": 2018,
+    "percent_under_budget": 5.9
   },
   {
     "code": 903,
@@ -469,6 +293,241 @@
     "category": "Administrative Offices",
     "spending": 2735993.38,
     "budget": 2444344.12,
-    "year": 2018
+    "year": 2018,
+    "percent_under_budget": -11.9
+  },
+  {
+    "code": 929,
+    "name": "Office Of Equity",
+    "category": "Instructional Programs",
+    "spending": 4567882.99,
+    "budget": 4887572.09,
+    "year": 2018,
+    "percent_under_budget": 6.5
+  },
+  {
+    "code": 921,
+    "name": "Office of Post Secondary Readi",
+    "category": "Instructional Programs",
+    "spending": 971116.95,
+    "budget": 842266,
+    "year": 2018,
+    "percent_under_budget": -15.3
+  },
+  {
+    "code": 905,
+    "name": "Office Of Sr. Business Officer",
+    "category": "Administrative Offices",
+    "spending": 1446883.41,
+    "budget": 1417181.72,
+    "year": 2018,
+    "percent_under_budget": -2.1
+  },
+  {
+    "code": 945,
+    "name": "Office Of State Trustee",
+    "category": "Administrative Offices",
+    "spending": 202800,
+    "budget": 221409,
+    "year": 2018,
+    "percent_under_budget": 8.4
+  },
+  {
+    "code": 949,
+    "name": "Office Of The Internal Auditor",
+    "category": "Administrative Offices",
+    "spending": 46337.79,
+    "budget": 150000,
+    "year": 2018,
+    "percent_under_budget": 69.1
+  },
+  {
+    "code": 941,
+    "name": "Office Of The Superintendent",
+    "category": "Administrative Offices",
+    "spending": 3201744.53,
+    "budget": 2756964.33,
+    "year": 2018,
+    "percent_under_budget": -16.1
+  },
+  {
+    "code": 906,
+    "name": "Ombudsman",
+    "category": "People Operations",
+    "spending": 264548.96,
+    "budget": 270975.65,
+    "year": 2018,
+    "percent_under_budget": 2.4
+  },
+  {
+    "code": 928,
+    "name": "OPSR Counseling",
+    "category": "Student Services",
+    "spending": 1824422.63,
+    "budget": 2228542.94,
+    "year": 2018,
+    "percent_under_budget": 18.1
+  },
+  {
+    "code": 994,
+    "name": "OUSD Police Department",
+    "category": "Police",
+    "spending": 4968598.82,
+    "budget": 5559441.32,
+    "year": 2018,
+    "percent_under_budget": 10.6
+  },
+  {
+    "code": 983,
+    "name": "Payroll",
+    "category": "Financial Operations",
+    "spending": 2597703.03,
+    "budget": 2324296.29,
+    "year": 2018,
+    "percent_under_budget": -11.8
+  },
+  {
+    "code": 961,
+    "name": "Pre K-5 Network 1",
+    "category": "Instructional Programs",
+    "spending": 0,
+    "budget": 36083.89,
+    "year": 2018,
+    "percent_under_budget": 100
+  },
+  {
+    "code": 962,
+    "name": "Pre-K-5 Network 2",
+    "category": "Instructional Programs",
+    "spending": 883230.37,
+    "budget": 737100.43,
+    "year": 2018,
+    "percent_under_budget": -19.8
+  },
+  {
+    "code": 963,
+    "name": "Pre-K-5 Network 3",
+    "category": "Instructional Programs",
+    "spending": 693114.13,
+    "budget": 740234.68,
+    "year": 2018,
+    "percent_under_budget": 6.4
+  },
+  {
+    "code": 979,
+    "name": "Printing And Mail Services",
+    "category": "Other Operations",
+    "spending": 546680.32,
+    "budget": 711483.32,
+    "year": 2018,
+    "percent_under_budget": 23.2
+  },
+  {
+    "code": 978,
+    "name": "Private Schools Office (Admin)",
+    "category": "Administrative Offices",
+    "spending": 0,
+    "budget": 575620,
+    "year": 2018,
+    "percent_under_budget": 100
+  },
+  {
+    "code": 990,
+    "name": "Procurement & Distribution",
+    "category": "Financial Operations",
+    "spending": 1180619.5,
+    "budget": 1302847.98,
+    "year": 2018,
+    "percent_under_budget": 9.4
+  },
+  {
+    "code": 948,
+    "name": "Research Assessment & Data",
+    "category": "Other Operations",
+    "spending": 5132027.37,
+    "budget": 5311051.53,
+    "year": 2018,
+    "percent_under_budget": 3.4
+  },
+  {
+    "code": 987,
+    "name": "Risk Management",
+    "category": "Risk Management",
+    "spending": 70745641.72,
+    "budget": 83382799,
+    "year": 2018,
+    "percent_under_budget": 15.2
+  },
+  {
+    "code": 975,
+    "name": "Special Education",
+    "category": "Special Education",
+    "spending": 100384695.41,
+    "budget": 103712258.19,
+    "year": 2018,
+    "percent_under_budget": 3.2
+  },
+  {
+    "code": 950,
+    "name": "State and Federal Programs",
+    "category": "Administrative Offices",
+    "spending": 2562794.15,
+    "budget": 3333777.36,
+    "year": 2018,
+    "percent_under_budget": 23.1
+  },
+  {
+    "code": 907,
+    "name": "Student Assignment",
+    "category": "Student Services",
+    "spending": 3496079.43,
+    "budget": 3612701.96,
+    "year": 2018,
+    "percent_under_budget": 3.2
+  },
+  {
+    "code": 937,
+    "name": "Summer Programs",
+    "category": "Instructional Programs",
+    "spending": 6073755.14,
+    "budget": 5613526.24,
+    "year": 2018,
+    "percent_under_budget": -8.2
+  },
+  {
+    "code": 909,
+    "name": "Teaching & Learning",
+    "category": "Instructional Programs",
+    "spending": 20932181.54,
+    "budget": 23490241.87,
+    "year": 2018,
+    "percent_under_budget": 10.9
+  },
+  {
+    "code": 986,
+    "name": "Technology Services",
+    "category": "Other Operations",
+    "spending": 10842332.01,
+    "budget": 11890355.19,
+    "year": 2018,
+    "percent_under_budget": 8.8
+  },
+  {
+    "code": 995,
+    "name": "Transportation",
+    "category": "Student Services",
+    "spending": 26942734.49,
+    "budget": 24760727.21,
+    "year": 2018,
+    "percent_under_budget": -8.8
+  },
+  {
+    "code": 992,
+    "name": "Warehouse Distribution",
+    "category": "Other Operations",
+    "spending": 1983971.34,
+    "budget": 2647408.83,
+    "year": 2018,
+    "percent_under_budget": 25.1
   }
 ]
