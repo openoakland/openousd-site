@@ -67,11 +67,19 @@ const getSortCaret = (order, column) => {
 const columns = [{
   formatter: columnsFormatter,
   dataField: 'name',
-  text: 'Department',
+  text: 'Program',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Central Program {components.sortElement}</div>)},
   sortCaret: getSortCaret,
   sort: true,
   sortFunc: sort
+},{
+  dataField: 'category',
+  text: 'Category',
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Category {components.sortElement}</div>)},
+  sortCaret: getSortCaret,
+  sort: true,
+  sortFunc: sort,
+  align: 'left'
 }, {
   dataField: 'spending',
   formatter: (cell, row) => formatToUSD(row.spending),
@@ -106,6 +114,7 @@ const columns = [{
   type: 'number',
   align: 'right',
   hidden: true,
+  csvExport: false
 }];
 
 const rowClasses = (row, rowIndex) => {
