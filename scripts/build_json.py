@@ -10,8 +10,8 @@ base_path = api_location + "/api"
 data_path = os.path.join(os.path.dirname(__file__), "../data/")
 
 # Get department data
-response = requests.get(base_path + "/departments")
-with open(data_path + "departments.json","w+") as f:
+response = requests.get(base_path + "/central-programs")
+with open(data_path + "central-programs.json","w+") as f:
     json.dump(response.json(),f, indent=2)
 
 # Get sankey data (no grouping)
