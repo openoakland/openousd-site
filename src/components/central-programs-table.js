@@ -131,7 +131,7 @@ const columns = [{
   dataField: 'percent_under_budget',
   formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
   text: 'Percent Under Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Percent Under Budget<HelpIcon tooltipText="Negative indicates over budget"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Percent Under Budget <HelpIcon tooltipText="Negative indicates over budget"/></div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
