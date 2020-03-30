@@ -1,7 +1,9 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 
 import { ResponsiveSankey } from '@nivo/sankey'
 import { Button, ButtonGroup } from 'react-bootstrap';
+import HelpOutline from '@material-ui/icons/HelpOutline';
 
 function Sankey(props) {
 
@@ -102,6 +104,9 @@ function Sankey(props) {
                     nodeTooltip={node => getNodeTooltip(node)}
                     layers={['links', 'nodes', 'labels', 'legends', xAxisLabels]}
                 />
+                <div className="text-center">
+                    <HelpOutline/> <Link to="/about-categories">Read more about the categories in this chart</Link>
+                </div>
                 <div className="footnote text-center">Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
             </div>
         </div>

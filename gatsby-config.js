@@ -4,6 +4,7 @@ module.exports = {
         title: `OpenOUSD`,
         description: `Volunteers providing transparent access to Oakland Unified School District budget & data`,
         author: `@OpenOakland`,
+        latestSchoolYear: `2018-19`
     },
     plugins: [
         {
