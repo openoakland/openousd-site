@@ -147,7 +147,7 @@ const rowClasses = (row, rowIndex) => {
 };
 
 
-const Table = ({data}) => {
+const CentralProgramsTable = ({data}) => {
   const firstRow = createFirstRow(data);
   // creates new array
   data = data.concat([firstRow]);
@@ -188,12 +188,12 @@ const Table = ({data}) => {
     </ToolkitProvider>
   )}
 
-Table.propTypes = {
+CentralProgramsTable.propTypes = {
     data: PropTypes.arrayOf(PropTypes.object),
 }
 
-Table.defaultProps = {
+CentralProgramsTable.defaultProps = {
     data: [],
 }
 
-export default Table
+export default CentralProgramsTable

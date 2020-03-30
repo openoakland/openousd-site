@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Table from "../components/central-programs-table"
+import CentralProgramsTable from "../components/central-programs-table"
 import Sankey from "../components/sankey-chart"
 import { graphql } from "gatsby"
 import sankeyData from "../../data/sankey.json"
@@ -19,7 +19,7 @@ const CentralProgramsPage = ({ data }) => {
       <SEO title="Central Programs" />
       <h1>Central Programs Overview (2018-19)</h1>
       <Sankey data={sankeyData} restrictedData={sankeyRestrictedData} />
-      <Table data={centralPrograms} />
+      <CentralProgramsTable data={centralPrograms} />
     </Layout>
   )
 }
