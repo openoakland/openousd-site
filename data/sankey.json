@@ -9,13 +9,13 @@
     {
       "id": "Federal",
       "type": "resource",
-      "total": 42526228.39,
-      "subnodes": "Bilingual Education: Discretionary Grants, Title III (14-15), Carol M. White Physical Education Grant, CDC: HIV & STD Prevention, Child Care Food Program (CCFP) and Meal Reimbursements, Child Nutrition School Program, ESSA: School Improvement Funding, ESSA: Title III, Immigrant Education Program, ESSA: Title II, Part A, Supporting Effective Instruction, ESSA: Title I, Part A, Basic Grants Low Income and Neglected, ESSA: Title IV, Part A, Student Support and Academic Enrichment, ESSA: Title IV, Part B, 21st Century Community Learning Centers Program, ESSA: Title IX, Part A, Homeless Assistance Grants, Federal Child Care, Center-based, FCTR, FHUD, Federal ProjectPrevention, Federal School Climate, Full Service Community Schools, Healthy Oakland Teens, Indian Education , Institute of Education Sciences (IES): Leveled Literacy Intervention, Medi-Cal Billing Option, NCLB: Title II, Part A, Administrator Training (14-15), NCLB: Title II, Part B, CA Mathematics and Science Partnerships (17-18), NCLB: Title II, Part D, Enhancing Education Through Technology, Competitive Grants (13-14), NCLB: Title I, School Improvement Grant, Other Federal, Perkins Career and Technical Education, Refugee Children Supplemental Assistance Program (13-14), SE-IDEA BASIC GRANT PL94-142, SERP Institute / NSF TRUmath, SPEC.ED. WORKAB.REHAB, Special Ed: Alternative Dispute Resolution, Special Ed: ARRA IDEA Part B, Sec 611, Local Assistance Early Intervening Services  (11-12), Special Ed: IDEA Early Intervention Grants, Special Ed: IDEA Local Assistance, Part B, Sec 611, Early Intervening Services, Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs, Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611, Special Ed: IDEA Part B, Sec 619, Preschool Grants Early Intervening Services, Special Ed: IDEA Preschool Grants, Part B, Sec 619, Special Ed: IDEA Preschool Local Entitlement, Part B, Sec 611 (17-18), Special Ed: IDEA Preschool Staff Development, Part B, Sec 619, Summer Food Service Program Operations, Transition Partnership Program, USDA: Farm To School"
+      "total": 23077941.13,
+      "subnodes": "Bilingual Education: Discretionary Grants, Title III (14-15), Carol M. White Physical Education Grant, CDC: HIV & STD Prevention, Child Care Food Program (CCFP) and Meal Reimbursements, Child Nutrition School Program, ESSA: School Improvement Funding, ESSA: Title III, Immigrant Education Program, ESSA: Title II, Part A, Supporting Effective Instruction, ESSA: Title I, Part A, Basic Grants Low Income and Neglected, ESSA: Title IV, Part A, Student Support and Academic Enrichment, ESSA: Title IV, Part B, 21st Century Community Learning Centers Program, ESSA: Title IX, Part A, Homeless Assistance Grants, Federal Child Care, Center-based, FCTR, FHUD, Federal ProjectPrevention, Federal School Climate, Full Service Community Schools, Healthy Oakland Teens, Indian Education , Institute of Education Sciences (IES): Leveled Literacy Intervention, Medi-Cal Billing Option, NCLB: Title II, Part B, CA Mathematics and Science Partnerships (17-18), NCLB: Title I, School Improvement Grant, Other Federal, Perkins Career and Technical Education, SE-IDEA BASIC GRANT PL94-142, SERP Institute / NSF TRUmath, SPEC.ED. WORKAB.REHAB, Special Ed: Alternative Dispute Resolution, Special Ed: IDEA Early Intervention Grants, Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs, Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611, Special Ed: IDEA Preschool Grants, Part B, Sec 619, Special Ed: IDEA Preschool Staff Development, Part B, Sec 619, Summer Food Service Program Operations, Transition Partnership Program, USDA: Farm To School"
     },
     {
       "id": "General (Base)",
       "type": "resource",
-      "total": 111796321.03,
+      "total": 64315579.53,
       "subnodes": "General Purpose"
     },
     {
@@ -27,79 +27,79 @@
     {
       "id": "Other Revenue",
       "type": "resource",
-      "total": 7560163.72,
-      "subnodes": "ABT Grant, All Other Local Sources, Allt.Assessment Capstone Project, Altamont Education Advisory, Caesar Chavez SSOs, Cal Newcommer CDSS, Charter School Office, City of Livermore, City of Oakland, City of Oakland PEG funds, Civic Center Rental, ECE Rental Lease, Employees on Loan, FIRST 5 Alameda County (Prop 10), Legal Settlements, Live Scan Fingerprint, Local Recycling, Measure Y - City of Oakland, Microsoft Settle Reimburse, OUSPD Traffic Violations, Prop 39 Charter Repairs, Property Caims, Rebate Programs, Rebates, Various Other, Refugee Transitions, Restorative Justice Fees, Scribbles Software - Transcripts, Staff Development Fees, Stale Dated Warrants, Subsdiaries, SUMS, VIDEO TAPE ROYALTIES"
+      "total": 5070369.39,
+      "subnodes": "All Other Local Sources, Allt.Assessment Capstone Project, Altamont Education Advisory, Caesar Chavez SSOs, Cal Newcommer CDSS, Charter School Office, City of Livermore, City of Oakland, City of Oakland PEG funds, Civic Center Rental, ECE Rental Lease, Employees on Loan, FIRST 5 Alameda County (Prop 10), Legal Settlements, Live Scan Fingerprint, Measure Y - City of Oakland, Microsoft Settle Reimburse, OUSPD Traffic Violations, Prop 39 Charter Repairs, Property Caims, Rebate Programs, Rebates, Various Other, Refugee Transitions, Restorative Justice Fees, Scribbles Software - Transcripts, Staff Development Fees, Stale Dated Warrants, Subsdiaries, SUMS, VIDEO TAPE ROYALTIES"
     },
     {
       "id": "Parcel Taxes",
       "type": "resource",
-      "total": 15224074.03,
+      "total": 9950137.86,
       "subnodes": "Measure G1 - Parcel Tax, Measure G - Parcel Tax, Measure N - Parcel Tax"
     },
     {
       "id": "Philanthropy / Grants",
       "type": "resource",
-      "total": 37431493.09,
-      "subnodes": "AC Waste Management Authority, Alameda County Health Care Services, Alameda County Public Health - Health and Wellness, American Heart Association, Atlantic Philanthropies, BAPHR LGBTQ Support, BECHTEL, Broad Foundation, California Education Partners, Casel Novo Foundation, Chabot Space & Science Center JPA, CODE.ORG, College Board - African American, Community Redevelopment Funds, Connect ED, Department of Justice Police, DONATIONS, East Bay Community Foundation, Frank Jernigan GSA Day, FrontiersUrbanScience Explorat, General Mills Foundation, Hellman Foundation, Hrsa Grnt Mcclymonds Youth/fam, Intel Corperation, Kaiser Health & Wellness w/EBCF, Kenneth Rainin Foundation, Learning Policy Institute, Marcus Foster Education Institute, MDRC Grant, Middle School Athletics Grant, Mills College, Mills Lesson Study Project, Mobile Clinics - Health Service, Mr. October Foundation for Kids, Music Instruments, New Teacher Center - Sidney Frank, North Carolina State, Oakland Ed Fund - AAGLS, Oakland Fund Children & Youth, Oakland Public Education Fund, Oakland Schools Foundation, Oppenheimer Family Foundation, Packard Foundation, PCY 360/365 Grant, Peralta College Foundation, Philanthropic Ventures Foundation, Rockefeller Philanthropy, Rodgers Family Foundation, ROTC, Safeway Netbooks, Salesforce.Org, San Francisco Foundation, SAP Career Ladders Project, Share Our Strength, Shoo the Flu, Silicon Valley Math Initiative, Sills Family Foundation - Alternative Ed, Sirene S Scully Fam Foundation, Southern Poverty Law Center, STEM, Strategic Ed Rsrch Inst, Stuart Foundation, Supported Employment (SEMP) Mental Health / ACOE, Target Corporation, Teaching Channel, The Atlantic Philanthropies - AAMA, UCB: Next Generation Science, UCLA, Wallace Foundation, Walter & Elise Haas Fund, WestEd, W H DONNER FOUNDATION, W K Kellogg Foundation, Workforce Development Plan, Y & H Soda Foundation, Zellerbach Family Foundation"
+      "total": 20865495.61,
+      "subnodes": "AC Waste Management Authority, Alameda County Health Care Services, Alameda County Public Health - Health and Wellness, American Heart Association, Atlantic Philanthropies, BAPHR LGBTQ Support, BECHTEL, Broad Foundation, California Education Partners, Casel Novo Foundation, CODE.ORG, College Board - African American, Community Redevelopment Funds, Connect ED, Department of Justice Police, DONATIONS, East Bay Community Foundation, General Mills Foundation, Hellman Foundation, Hrsa Grnt Mcclymonds Youth/fam, Intel Corperation, Kaiser Health & Wellness w/EBCF, Kenneth Rainin Foundation, Learning Policy Institute, Marcus Foster Education Institute, MDRC Grant, Middle School Athletics Grant, Mills College, Mills Lesson Study Project, Mr. October Foundation for Kids, Music Instruments, New Teacher Center - Sidney Frank, North Carolina State, Oakland Ed Fund - AAGLS, Oakland Fund Children & Youth, Oakland Public Education Fund, Oppenheimer Family Foundation, PCY 360/365 Grant, Peralta College Foundation, Philanthropic Ventures Foundation, Rockefeller Philanthropy, Rodgers Family Foundation, ROTC, Safeway Netbooks, Salesforce.Org, San Francisco Foundation, Share Our Strength, Silicon Valley Math Initiative, Sills Family Foundation - Alternative Ed, Sirene S Scully Fam Foundation, Southern Poverty Law Center, STEM, Strategic Ed Rsrch Inst, Stuart Foundation, Supported Employment (SEMP) Mental Health / ACOE, Target Corporation, Teaching Channel, UCB: Next Generation Science, UCLA, Wallace Foundation, Walter & Elise Haas Fund, WestEd, W H DONNER FOUNDATION, Workforce Development Plan"
     },
     {
       "id": "State",
       "type": "resource",
-      "total": 180561066.12,
-      "subnodes": "Adult Education Program, After School Education and Safety (ASES), After School Kids Code Grant Pilot Program, Arts and Music Block Grants, CAHSEE Intensive Instructional Services, California Career Pathways Trust, California State Preschool Program, CA Partnership Academy: Green and Clean Academies, Career Technical Education (CTE) Incentive Grant Program, College Readiness Block Grant, Educator Effectiveness, Home & Hospital Education, INSTRUCTIONAL MATERIALS, Lottery: Instructional Materials, Low-Performing Students Block Grant, Ongoing & Major Maintenance Account, OTHER STATE, Partnership Academies Program , POST Reimburse Program, Pre-K and Family Literacy Support, PROFESSIONAL DEV BLOCK GRANT, Prop 39 CA Clean Energy Jobs Act, Prop 47: Learning Communities for School Success Program Grants, SB39 State Loan Drawdown, Special Ed: Infant Discretionary Funds, Special Ed: Mental Health Services, Special Ed: Project WorkAbility I LEA, Special Education, State School Facilities Projects, TEACHER CREDENTIAL BLOCK GRANT, Tobacco-Use Prevention Education: Grades 6-12, Tobacco-Use Prevention Education: Prop 56, Unrest Transportation"
+      "total": 103513474.44,
+      "subnodes": "Adult Education Program, After School Education and Safety (ASES), After School Kids Code Grant Pilot Program, California Career Pathways Trust, California State Preschool Program, Career Technical Education (CTE) Incentive Grant Program, College Readiness Block Grant, Home & Hospital Education, Lottery: Instructional Materials, Low-Performing Students Block Grant, Ongoing & Major Maintenance Account, OTHER STATE, Partnership Academies Program , POST Reimburse Program, Pre-K and Family Literacy Support, Prop 39 CA Clean Energy Jobs Act, Prop 47: Learning Communities for School Success Program Grants, SB39 State Loan Drawdown, Special Ed: Infant Discretionary Funds, Special Ed: Mental Health Services, Special Ed: Project WorkAbility I LEA, Special Education, State School Facilities Projects, Tobacco-Use Prevention Education: Grades 6-12, Tobacco-Use Prevention Education: Prop 56, Unrest Transportation"
     },
     {
       "id": "Supplemental & Concentration",
       "type": "resource",
-      "total": 35483579.85,
-      "subnodes": "Central Office Supplemental, One-time Additional Budget, Supplemental Support"
+      "total": 22363586.46,
+      "subnodes": "Central Office Supplemental, One-time Additional Budget"
     },
     {
       "id": "Administrative Offices",
       "type": "site",
-      "total": 22569332.76,
-      "subnodes": "Board Of Education, Charter Schools Office (Admin), Chief Financial Officer, Chief Of Operations, CHIEF OF STAFF, Continuous School Improvement, Legal Counsel, Office Of Chief Academic Officer, Office Of Sr. Business Officer, Office Of State Trustee, Office Of The Internal Auditor, Office Of The Superintendent, Private Schools Office (Admin), State and Federal Programs"
+      "total": 11441964.13,
+      "subnodes": "Board Of Education, Charter Schools Office (Admin), Chief Financial Officer, Chief Of Operations, CHIEF OF STAFF, Continuous School Improvement, Legal Counsel, Office Of Chief Academic Officer, Office Of Sr. Business Officer, Office Of State Trustee, Office Of The Superintendent, State and Federal Programs"
     },
     {
       "id": "Facilities",
       "type": "site",
-      "total": 50549495.48,
+      "total": 36728443.74,
       "subnodes": "Buildings & Grounds, Custodial Services, Facilities Planning"
     },
     {
       "id": "Financial Operations",
       "type": "site",
-      "total": 12769614.42,
+      "total": 6940041.95,
       "subnodes": "Accounting, Accounts Payable, Budget, Payroll, Procurement & Distribution"
     },
     {
       "id": "Instructional Programs",
       "type": "site",
-      "total": 76599704.84,
-      "subnodes": "Alternative Education, Early Childhood Development, Educator Effectiveness, Elementary Network 4, Eng Lang Lrnr/Multilingual Ach, High School Network, Indian Education, Instruction Support Specialist Network, Jr Reserve Officer Training Corp, LINKED LEARNING, Middle School Network, Office Of Equity, Office of Post Secondary Readi, Pre K-5 Network 1, Pre-K-5 Network 2, Pre-K-5 Network 3, Summer Programs, Teaching & Learning"
+      "total": 47079417.64,
+      "subnodes": "Early Childhood Development, Educator Effectiveness, Elementary Network 4, Eng Lang Lrnr/Multilingual Ach, High School Network, Indian Education, Instruction Support Specialist Network, Jr Reserve Officer Training Corp, LINKED LEARNING, Middle School Network, Office Of Equity, Office of Post Secondary Readi, Pre K-5 Network 1, Pre-K-5 Network 2, Pre-K-5 Network 3, Summer Programs, Teaching & Learning"
     },
     {
       "id": "Other",
       "type": "site",
-      "total": 45371576.11,
+      "total": 27366646.43,
       "subnodes": "Districtwide Expenses"
     },
     {
       "id": "Other Operations",
       "type": "site",
-      "total": 22629519.32,
+      "total": 12719770.73,
       "subnodes": "Communications, Printing And Mail Services, Research Assessment & Data, Technology Services, Warehouse Distribution"
     },
     {
       "id": "People Operations",
       "type": "site",
-      "total": 12070601.38,
+      "total": 7491718.5,
       "subnodes": "Human Resources, Labor Relations, Ombudsman"
     },
     {
       "id": "Police",
       "type": "site",
-      "total": 4968598.82,
+      "total": 2924781.83,
       "subnodes": "OUSD Police Department"
     },
     {
@@ -111,29 +111,29 @@
     {
       "id": "Special Education",
       "type": "site",
-      "total": 100384695.41,
+      "total": 51885463.28,
       "subnodes": "Special Education"
     },
     {
       "id": "Student Services",
       "type": "site",
-      "total": 79040999.71,
+      "total": 40949548.21,
       "subnodes": "Community Schools & Student Services, Food Service, Health Services (Nurses), Oakland Athletic League, OPSR Counseling, Student Assignment, Transportation"
     }
   ],
   "links": [
     {
-      "value": 12644527.84,
+      "value": 6282650.54,
       "target": "Administrative Offices",
       "source": "General (Base)"
     },
     {
-      "value": 3935739.79,
+      "value": 3125267.17,
       "target": "Instructional Programs",
       "source": "Parcel Taxes"
     },
     {
-      "value": 12896559.69,
+      "value": 6308554.73,
       "target": "Student Services",
       "source": "General (Base)"
     },
@@ -148,22 +148,22 @@
       "source": "Philanthropy / Grants"
     },
     {
-      "value": 4307951.8,
+      "value": 2094903,
       "target": "Other",
       "source": "State"
     },
     {
-      "value": 8907973.22,
+      "value": 5190067.26,
       "target": "Student Services",
       "source": "Supplemental & Concentration"
     },
     {
-      "value": 2113963.87,
+      "value": 861298.06,
       "target": "Administrative Offices",
       "source": "Supplemental & Concentration"
     },
     {
-      "value": 1541058.3,
+      "value": 529201.24,
       "target": "People Operations",
       "source": "Federal"
     },
@@ -173,92 +173,82 @@
       "source": "Other Revenue"
     },
     {
-      "value": 3226288.62,
+      "value": 1989337.78,
       "target": "Facilities",
       "source": "General (Base)"
     },
     {
-      "value": 1896567.86,
+      "value": 955182.09,
       "target": "Special Education",
       "source": "Philanthropy / Grants"
     },
     {
-      "value": 90827748.55,
+      "value": 47409051.59,
       "target": "Special Education",
       "source": "State"
     },
     {
-      "value": 124408.38,
-      "target": "Police",
-      "source": "Other Revenue"
-    },
-    {
-      "value": 9364593.23,
+      "value": 6009844.89,
       "target": "Other",
       "source": "Parcel Taxes"
     },
     {
-      "value": 17135132.08,
+      "value": 8788014.5,
       "target": "Instructional Programs",
       "source": "Philanthropy / Grants"
     },
     {
-      "value": 15883332.12,
+      "value": 11817775.26,
       "target": "Instructional Programs",
       "source": "State"
     },
     {
-      "value": 181074.33,
+      "value": 103935.17,
       "target": "Financial Operations",
       "source": "Federal"
     },
     {
-      "value": 6522346.65,
+      "value": 2506859.25,
       "target": "Special Education",
       "source": "Federal"
     },
     {
-      "value": 1161102.25,
+      "value": 864474.43,
       "target": "Instructional Programs",
       "source": "Other Revenue"
     },
     {
-      "value": 231507.91,
+      "value": 110897.9,
       "target": "Police",
       "source": "Philanthropy / Grants"
     },
     {
-      "value": 1654389.58,
+      "value": 813181.93,
       "target": "People Operations",
       "source": "Parcel Taxes"
     },
     {
-      "value": 16845395.82,
+      "value": 8362256.04,
       "target": "Other Operations",
       "source": "General (Base)"
     },
     {
-      "value": 137599.84,
-      "target": "Financial Operations",
-      "source": "State"
-    },
-    {
-      "value": 3666240.11,
+      "value": 2748300.22,
       "target": "Other Operations",
       "source": "Supplemental & Concentration"
     },
     {
-      "value": 13443323.87,
+      "value": 8632072.4,
       "target": "Instructional Programs",
       "source": "Federal"
     },
     {
-      "value": 240327.16,
+      "value": 150927.75,
       "target": "People Operations",
       "source": "State"
     },
     {
-      "value": 1749425.44,
+      "value": 773011.83,
       "target": "Other",
       "source": "Federal"
     },
@@ -268,44 +258,39 @@
       "source": "Bonds"
     },
     {
-      "value": 1884148.83,
+      "value": 994944.81,
       "target": "Other",
       "source": "Other Revenue"
     },
     {
-      "value": 37970886.78,
+      "value": 25506231.19,
       "target": "Facilities",
       "source": "State"
     },
     {
-      "value": 228213.4,
+      "value": 132695.9,
       "target": "Facilities",
       "source": "Philanthropy / Grants"
     },
     {
-      "value": 22132231.77,
+      "value": 11560716.86,
       "target": "Other",
       "source": "General (Base)"
     },
     {
-      "value": 621984.84,
-      "target": "Administrative Offices",
-      "source": "State"
-    },
-    {
-      "value": 10534533.92,
+      "value": 4802651.91,
       "target": "Student Services",
       "source": "Philanthropy / Grants"
     },
     {
-      "value": 2515042.68,
-      "target": "Administrative Offices",
-      "source": "Philanthropy / Grants"
-    },
-    {
-      "value": 30537092.63,
+      "value": 16419711.6,
       "target": "Student Services",
       "source": "State"
+    },
+    {
+      "value": 1294213.25,
+      "target": "Administrative Offices",
+      "source": "Philanthropy / Grants"
     },
     {
       "value": 1210927.45,
@@ -313,12 +298,7 @@
       "source": "Supplemental & Concentration"
     },
     {
-      "value": 269351.43,
-      "target": "Student Services",
-      "source": "Parcel Taxes"
-    },
-    {
-      "value": 7984772.7,
+      "value": 3759691.86,
       "target": "Instructional Programs",
       "source": "General (Base)"
     },
@@ -328,12 +308,12 @@
       "source": "Bonds"
     },
     {
-      "value": 669636.55,
+      "value": 425674.22,
       "target": "Other Operations",
       "source": "Federal"
     },
     {
-      "value": 17056302.03,
+      "value": 10092122.02,
       "target": "Instructional Programs",
       "source": "Supplemental & Concentration"
     },
@@ -343,37 +323,32 @@
       "source": "Supplemental & Concentration"
     },
     {
-      "value": 242460.19,
-      "target": "Other Operations",
-      "source": "Other Revenue"
-    },
-    {
-      "value": 224652,
+      "value": 100990,
       "target": "Special Education",
       "source": "General (Base)"
     },
     {
-      "value": 12194596.44,
+      "value": 6516540.05,
       "target": "Financial Operations",
       "source": "General (Base)"
     },
     {
-      "value": 4861851.04,
+      "value": 198504.3,
+      "target": "Police",
+      "source": "Supplemental & Concentration"
+    },
+    {
+      "value": 2552664.4,
       "target": "Police",
       "source": "General (Base)"
     },
     {
-      "value": 160978.56,
-      "target": "Other Operations",
-      "source": "Philanthropy / Grants"
-    },
-    {
-      "value": 1555982.87,
+      "value": 823711.88,
       "target": "Administrative Offices",
       "source": "Other Revenue"
     },
     {
-      "value": 593956.23,
+      "value": 299622.22,
       "target": "Student Services",
       "source": "Other Revenue"
     },
@@ -383,12 +358,12 @@
       "source": "Bonds"
     },
     {
-      "value": 6719863.22,
+      "value": 4816595.38,
       "target": "People Operations",
       "source": "General (Base)"
     },
     {
-      "value": 166034.74,
+      "value": 142106.93,
       "target": "Facilities",
       "source": "Other Revenue"
     },
@@ -398,17 +373,17 @@
       "source": "General (Base)"
     },
     {
-      "value": 15301532.59,
+      "value": 7927096.62,
       "target": "Student Services",
       "source": "Federal"
     },
     {
-      "value": 1864040.33,
+      "value": 1148986.8,
       "target": "People Operations",
       "source": "Supplemental & Concentration"
     },
     {
-      "value": 3117830.66,
+      "value": 2180090.4,
       "target": "Administrative Offices",
       "source": "Federal"
     }
