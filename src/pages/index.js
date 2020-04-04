@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout";
-import Image from "../components/image";
+import MuralImage from "../components/mural-image";
 import SEO from "../components/seo";
 import "../styles/pages/index.scss"
 
@@ -13,7 +13,7 @@ const IndexPage = () => (
     <SEO title="Home" />
 
         <div className="hero mx-auto">
-            <Image />
+            <MuralImage />
             </div>
 
     <Container className="px-0">
@@ -27,6 +27,20 @@ const IndexPage = () => (
             <h1 className="">What Are Central Programs?</h1>
             <p>We define a central program as any activity managed by OUSD's central office rather than individual school sites. For example, a staff member working at a school site but hired by the central office would be considered part of a central program. There are more than 50 centrally managed programs at OUSD.</p>
             <Link to="/central-programs/"><Button variant="primary" size="lg" className="cta">Explore Central Programs</Button></Link>
+          </Col>
+        </Row>
+        <Row>
+          <Col xs={11} sm={10} className="mx-auto mt-3">
+            <div className="footnote">
+              <p>The image above is the Live Learn Love mural at Roosevelt Middle School.</p>
+              <p> "Change will not come if we wait for some other person or{' '}
+                  some other time.<br/>
+                  We are the ones we've been waiting for.<br/>
+                  We are the change the we seek."</p>
+              <p>- B.H. OBAMA</p>
+              <p>Artists: V. Lopez / J. C. Bustamante / B. C. Conner</p>
+              <p>Source: <a href="https://localwiki.org/oakland/Live_Learn_Love_mural">Oakland Wiki</a></p>
+            </div>
           </Col>
         </Row>
     </Container>
