@@ -76,3 +76,23 @@ button{
     font-style: italic;
     color: $gray;
 }
+
+.btn-group {
+    display: inline-block;
+    padding: 20px 0px;
+    text-align: center;
+
+    button {
+        font-weight: normal !important;
+        border-color: $theme-blue;
+
+        &.btn-sm {
+            padding: 0.2rem 0.5rem;
+        }
+
+        &:not(.active) {
+            background-color: white;
+            color: $theme-blue;
+        }
+    }
+}

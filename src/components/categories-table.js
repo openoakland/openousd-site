@@ -55,17 +55,11 @@ const CategoriesTable = ({data, colName}) => {
       {props => (
         <div>
           {/*<h1>Categories</h1>*/}
-          <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link">
-              Download Data to CSV
-            </ExportCSVButton>
-          </div>
           <SearchBar
             {...props.searchProps}
-            placeholder="Search"
+            placeholder={"Search " + colName}
             className="search-bar"
           />
-          <hr />
           <BootstrapTable
             // turning off pagination for now
             // pagination={paginationFactory()}
@@ -74,6 +68,11 @@ const CategoriesTable = ({data, colName}) => {
             {...props.baseProps}
             defaultSorted={[{dataField: 'category', order: 'asc'}]}
           />
+          <div>
+            <ExportCSVButton {...props.csvProps} className="btn-link">
+              Download Data to CSV
+            </ExportCSVButton>
+          </div>
         </div>
       )}
     </ToolkitProvider>

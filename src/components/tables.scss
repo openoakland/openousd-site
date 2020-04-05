@@ -1,12 +1,15 @@
-.search-bar {
-    &::placeholder {
-        color: black;
-    }
-    border-radius: 1rem;
-}
-
 a, .btn-link, .table-header {
     color: $theme-blue;
+}
+
+.table-header {
+    font-size: 1.1rem;
+}
+
+.search-bar {
+    font-style: italic;
+    border-radius: 1rem;
+    width: 300px;
 }
 
 .first-row {

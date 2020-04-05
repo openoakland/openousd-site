@@ -44,11 +44,11 @@ function Sankey(props) {
 
     const xAxisLabels = (props) => (
         <g transform="translate(0,-30)" id="overlay">
-            <text x={-28}>
-                Revenues
+            <text x={-56}>
+                Funding Sources
             </text>
-            <text x={props.width - 70}>
-                Expenditures
+            <text x={props.width - 90}>
+                Program Expenses
             </text>
         </g>
     );

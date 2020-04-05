@@ -164,11 +164,6 @@ const CentralProgramsTable = ({data}) => {
         <div>
             {/* TODO can we get the years from the data? */}
           <h1>Central Programs for the 2018-2019 School Year</h1>
-          <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link">
-              Download Data to CSV
-            </ExportCSVButton>
-          </div>
           <SearchBar
             {...props.searchProps}
             placeholder="Search programs"
@@ -184,7 +179,13 @@ const CentralProgramsTable = ({data}) => {
             rowClasses={rowClasses}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
+          <div>
+            <ExportCSVButton {...props.csvProps} className="btn-link">
+              Download Data to CSV
+            </ExportCSVButton>
+          </div>
         </div>
+
       )}
     </ToolkitProvider>
   )}
