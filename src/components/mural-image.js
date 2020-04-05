@@ -26,7 +26,10 @@ const MuralImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img
+            fluid={data.placeholderImage.childImageSharp.fluid}
+            alt="Live Learn Love mural at Roosevelt Middle School"
+          />
 }
 
 export default MuralImage
