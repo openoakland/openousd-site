@@ -49,6 +49,7 @@ const CategoriesTable = ({data, colName}) => {
       keyField="code"
       data={data}
       columns={columns}
+      exportCSV={{fileName: `openousd-${colName}-categories.csv`}}
       bootstrap4
       search
     >
@@ -58,7 +59,7 @@ const CategoriesTable = ({data, colName}) => {
           <SearchBar
             {...props.searchProps}
             placeholder={"Search " + colName}
-            className="search-bar"
+            className="search-bar my-3"
           />
           <BootstrapTable
             // turning off pagination for now

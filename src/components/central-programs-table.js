@@ -132,7 +132,7 @@ const columns = [{
   dataField: 'percent_under_budget',
   formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
   text: 'Percent Under Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Percent Under Budget <HelpIcon tooltipText="Negative indicates over budget"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget <HelpIcon tooltipText="Negative indicates over budget"/></div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -157,30 +157,29 @@ const CentralProgramsTable = ({data}) => {
       keyField="code"
       data={data}
       columns={columns}
+      exportCSV={{fileName: "openousd-central-programs.csv"}}
       bootstrap4
       search
     >
       {props => (
         <div>
-            {/* TODO can we get the years from the data? */}
-          <h1>Central Programs for the 2018-2019 School Year</h1>
           <SearchBar
             {...props.searchProps}
             placeholder="Search programs"
-            className="search-bar"
+            className="search-bar mb-4"
           />
-          <hr />
           <BootstrapTable
             // turning off pagination for now
             // pagination={paginationFactory()}
-            classes="table-borderless"
+            wrapperClasses="table-responsive"
+            classes=""
             bordered={false}
             {...props.baseProps}
             rowClasses={rowClasses}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
           <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link">
+            <ExportCSVButton {...props.csvProps} className="btn-link" filename>
               Download Data to CSV
             </ExportCSVButton>
           </div>

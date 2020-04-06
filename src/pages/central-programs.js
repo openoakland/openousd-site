@@ -1,10 +1,15 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import CentralProgramsTable from "../components/central-programs-table"
 import Sankey from "../components/sankey-chart"
-import { graphql } from "gatsby"
+
 import sankeyData from "../../data/sankey.json"
 import sankeyRestrictedData from "../../data/sankey-restricted.json"
 
@@ -17,9 +22,22 @@ const CentralProgramsPage = ({ data }) => {
   return (
     <Layout pageClassName="central-programs-page">
       <SEO title="Central Programs" />
-      <h1>Central Programs Overview (2018-19)</h1>
+      <Container>
+        <Row>
+          <Col>
+            <h1>Central Spending By Category ({data.site.siteMetadata.latestSchoolYear})</h1>
+          </Col>
+        </Row>
+      </Container>
       <Sankey data={sankeyData} restrictedData={sankeyRestrictedData} />
-      <CentralProgramsTable data={centralPrograms} />
+      <Container id="programs-section">
+        <Row>
+          <Col>
+            <h1 className="pb-3">All Central Programs for the {data.site.siteMetadata.latestSchoolYear} School Year</h1>
+            <CentralProgramsTable data={centralPrograms} />
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }
@@ -27,7 +45,12 @@ const CentralProgramsPage = ({ data }) => {
 export default CentralProgramsPage
 
 export const query = graphql`
-  query CentralProgramsList {
+  query CentralProgramsPage {
+    site {
+        siteMetadata {
+          latestSchoolYear
+        }
+    }
     allCentralProgramsJson {
       nodes {
         name

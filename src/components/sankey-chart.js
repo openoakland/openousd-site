@@ -105,9 +105,9 @@ function Sankey(props) {
                     layers={['links', 'nodes', 'labels', 'legends', xAxisLabels]}
                 />
                 <div className="text-center">
+                    <div className="footnote mb-3">Note: Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
                     <HelpOutline/> <Link to="/about-categories">Read more about the categories in this chart</Link>
                 </div>
-                <div className="footnote text-center">Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
             </div>
         </div>
     )
