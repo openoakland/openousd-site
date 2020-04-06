@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import RequestRotateDeviceMessage from "../components/request-rotate-device-message"
+import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import Sankey from "../components/sankey-chart"
 
@@ -27,13 +27,14 @@ const CentralProgramsPage = ({ data }) => {
         <Row>
           <Col>
             <h1>Central Spending By Category ({data.site.siteMetadata.latestSchoolYear})</h1>
-            <RequestRotateDeviceMessage showUpToScreenSize={"sm"}/>
           </Col>
         </Row>
       </Container>
-      <Sankey
-        data={sankeyData}
-        restrictedData={sankeyRestrictedData}/>
+      <RequireWideScreen minScreenWidth={"sm"}>
+        <Sankey
+          data={sankeyData}
+          restrictedData={sankeyRestrictedData}/>
+      </RequireWideScreen>
       <Container id="programs-section">
         <Row>
           <Col>

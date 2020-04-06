@@ -54,7 +54,7 @@ function Sankey(props) {
     );
 
     return (
-        <div className="d-none d-sm-block">
+        <div>
             <div id="sankey-grouping">
                 <div className="control">
                     <span className="label">Grouping:{' '}</span>
