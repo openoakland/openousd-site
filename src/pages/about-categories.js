@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import { Container, Row, Col, Tab } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
