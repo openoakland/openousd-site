@@ -23,5 +23,8 @@ gh-pages -d . \
     -m "staging promoted at commit $(git rev-parse --short HEAD) $(date +%m-%d-%Y_%H:%M:%S)" \
     -r git@github.com:openoakland/openousd-site-prod.git
 
+echo "removing CNAME file"
+rm CNAME
+
 echo "returning to ${STARTING_BRANCH} branch"
 git checkout ${STARTING_BRANCH}
