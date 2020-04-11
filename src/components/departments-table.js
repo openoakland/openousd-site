@@ -55,7 +55,7 @@ const sort = (a, b, order, dataField, rowA, rowB) => {
 const getSortCaret = (order, column) => {
   if (order === 'asc') {
     return (<ArrowDropUp className="text-dark" />)
-  } 
+  }
   if (order === 'desc') {
     return (<ArrowDropDown className="text-dark" />)
   }
