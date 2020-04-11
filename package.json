@@ -44,7 +44,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deployStaging": "gatsby build && echo 'staging.openousd.org' > public/CNAME && gh-pages -d public",
     "promoteStaging": "./scripts/promote_staging.sh",
     "refreshData": "python scripts/build_json.py"
   },

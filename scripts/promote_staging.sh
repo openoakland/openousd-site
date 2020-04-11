@@ -1,3 +1,5 @@
+set -e
+
 # store starting branch so we can return to it
 STARTING_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 
@@ -5,7 +7,7 @@ STARTING_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 git fetch
 
 # checkout the staging branch
-git checkout origin/gh-pages
+git checkout -q origin/gh-pages
 
 echo "removing the staging.openousd.org domain"
 rm CNAME
