@@ -16,7 +16,8 @@ echo 'openousd.org' > 'CNAME'
 
 # push it to the production hosting repo
 echo "running gh-pages"
-gh-pages -b master \
+gh-pages -d . \
+    -b master \
     -m "staging promoted at commit $(git rev-parse --short HEAD) $(date +%m-%d-%Y_%H:%M:%S)" \
     -r git@github.com:openoakland/openousd-site-prod.git
 
