@@ -55,7 +55,7 @@ const sort = (a, b, order, dataField, rowA, rowB) => {
 const getSortCaret = (order, column) => {
   if (order === 'asc') {
     return (<ArrowDropUp className="text-dark" />)
-  } 
+  }
   if (order === 'desc') {
     return (<ArrowDropDown className="text-dark" />)
   }
@@ -130,7 +130,7 @@ const Table = ({data}) => {
       {props => (
         <div>
             {/* TODO can we get the years from the data? */}
-          <h2>Department Data for the 2018-2019 School Year</h2>
+          <h3>Department Data for the 2018-2019 School Year</h3>
           <div>
             <ExportCSVButton {...props.csvProps} className="btn-link">
               Download Data to CSV
