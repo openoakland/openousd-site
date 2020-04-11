@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
             <Navbar bg="white" variant="light" expand="md" className="d-flex flex-column">
                 <div id="logo-row" className="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
                     <div id="logo">
-                        <Link to="/"><img src={logo} alt="Logo" /></Link>
+                        <Link to="/"><img src={logo} alt="Open OUSD and OpenOakland logos" /></Link>
                     </div>
                     <div id="tagline" className="text-center text-lg-right pt-2">
                         Volunteers providing transparent access to Oakland Unified School District information

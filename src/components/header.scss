@@ -48,6 +48,7 @@
 
             &.active {
                 color: $theme-blue;
+                pointer-events: none;
 
                 span.dot {
                     box-shadow: inset 0 0 0 3px $theme-blue;
