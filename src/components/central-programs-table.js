@@ -179,7 +179,7 @@ const CentralProgramsTable = ({data}) => {
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
           <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link" filename>
+            <ExportCSVButton {...props.csvProps} className="btn-link">
               Download Data to CSV
             </ExportCSVButton>
           </div>
