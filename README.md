@@ -1,6 +1,6 @@
-### Overview
+## Overview
 
-The goal of this project is to explain to school communities what the Oakland Unified School District’s central office does and help them weigh in on what its function should be in the future. Let’s reimagine what OUSD district office can look like!
+This is the repo for the OpenOUSD project located at [openousd.org](https://openousd.org). Read the front page for a description of the project. All contributors are volunteers and the project has no private or public funders.
 
 We welcome new team members, especially if they are skilled in Gatsby.js, GraphQL, or PostgreSQL (or are willing to learn).
 
@@ -27,12 +27,12 @@ npm run deployStaging
 
 This runs some commands listed in `package.json` which essentially:
 1. run a production `gatsby build`
-2. creates the `CNAME` files for GitHub Pages
+2. creates the `CNAME` file for GitHub Pages
 3. Pushes to the `gh-pages` branch using [`gh-pages`](https://github.com/tschaub/gh-pages)
 
 ### Promote Staging to Production
 
-Only a select members of the group and OO GitHub admins can publish what's at [staging.openousd.org](staging.openousd.org).
+Only a few members of the group and OO GitHub admins can publish [staging.openousd.org](staging.openousd.org) to [openousd.org](openousd.org).
 
 Please be careful. If you have those permissions, you can run this command from any branch:
 
