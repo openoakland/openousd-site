@@ -13,10 +13,10 @@ import Img from "gatsby-image"
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const MuralImage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "img_children.jpg" }) {
+      placeholderImage: file(relativePath: { eq: "mural.png" }) {
         childImageSharp {
           fluid(maxWidth: 1500) {
             ...GatsbyImageSharpFluid
@@ -26,7 +26,10 @@ const Image = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img
+            fluid={data.placeholderImage.childImageSharp.fluid}
+            alt="Live Learn Love mural at Roosevelt Middle School"
+          />
 }
 
-export default Image
+export default MuralImage

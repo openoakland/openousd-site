@@ -1,8 +1,9 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 
 import { ResponsiveSankey } from '@nivo/sankey'
-import { Button } from 'react-bootstrap';
-import ClearIcon from '@material-ui/icons/Clear';
+import { Button, ButtonGroup } from 'react-bootstrap';
+import HelpOutline from '@material-ui/icons/HelpOutline';
 
 function Sankey(props) {
 
@@ -19,33 +20,67 @@ function Sankey(props) {
                             maximumFractionDigits: 0})
     }
 
+    function SubNodes(props) {
+        if(!props.node.subnodes.includes(",")
+            || props.node.type === "resource"){
+            return null
+        }
+        return (
+            <div className="node-programs footnote">Includes: {props.node.subnodes}</div>
+        );
+    }
+
     function getNodeTooltip(node) {
         return (
             <div className="node-tooltip">
                 <div className="node-name" style={{color: node.color}}>{node.id}</div>
                 <div className="node-total">{totalsByNode[node.id]}</div>
+                <SubNodes node={node}/>
             </div>
         )
     }
 
+    const margin = { top: 50, right: 200, bottom: 20, left: 240 }
+
+    const xAxisLabels = (props) => (
+        <g transform="translate(0,-30)" id="overlay">
+            <text x={-56}>
+                Funding Sources
+            </text>
+            <text x={props.width - 90}>
+                Program Expenses
+            </text>
+        </g>
+    );
+
     return (
         <div>
-            <div><span>Group By:{' '}</span>
-                <Button className="filter"
-                        size="sm"
-                        onClick={() => setGroupByRestricted(!groupByRestricted)}
-                        active={groupByRestricted}>
-                    Restricted
-                </Button>
-                <span className={groupByRestricted ? "show" : "d-none"}
-                    onClick={() => setGroupByRestricted(!groupByRestricted)}>
-                    <ClearIcon className="text-dark" />
-                </span>
+            <div id="sankey-grouping">
+                <div className="control">
+                    <span className="label">Grouping:{' '}</span>
+                    <ButtonGroup>
+                        <Button size="sm"
+                                onClick={() => setGroupByRestricted(false)}
+                                active={!groupByRestricted}>
+                            None
+                        </Button>
+                        <Button size="sm"
+                                onClick={() => setGroupByRestricted(true)}
+                                active={groupByRestricted}>
+                            Restricted / Unrestricted
+                        </Button>
+                    </ButtonGroup>
+                </div>
             </div>
             <div id="sankey-chart">
+                <div id="info">
+                    <div className={"text-center" + (!groupByRestricted ? " d-none" : "")}>
+                        <strong>Restricted</strong> funds must be used for specific purposes.<br/> <strong>Unrestricted</strong> funds are more flexible.
+                    </div>
+                </div>
                 <ResponsiveSankey
                     data={groupByRestricted ? props.restrictedData : props.data}
-                    margin={{ top: 20, right: 200, bottom: 20, left: 240 }}
+                    margin={margin}
                     sort="descending"
                     align="justify"
                     colors={{ scheme: 'category10' }}
@@ -67,7 +102,12 @@ function Sankey(props) {
                     motionDamping={13}
                     tooltipFormat={value => formatCurrency(value)}
                     nodeTooltip={node => getNodeTooltip(node)}
+                    layers={['links', 'nodes', 'labels', 'legends', xAxisLabels]}
                 />
+                <div className="text-center">
+                    <div className="footnote mb-3">Note: Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
+                    <HelpOutline/> <Link to="/about-categories">Read more about the categories in this chart</Link>
+                </div>
             </div>
         </div>
     )

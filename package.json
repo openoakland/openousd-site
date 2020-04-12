@@ -7,9 +7,9 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
-    "@nivo/sankey": "^0.61.1",
+    "@nivo/sankey": "^0.61.2",
     "bootstrap": "^4.3.1",
-    "gatsby": "^2.16.1",
+    "gatsby": "^2.19.32",
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.2.23",
@@ -20,7 +20,7 @@
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-json": "^2.2.20",
     "gatsby-transformer-sharp": "^2.2.23",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
@@ -44,7 +44,8 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deployStaging": "gatsby build && echo 'staging.openousd.org' > public/CNAME && gh-pages -d public",
+    "promoteStaging": "./scripts/promote_staging.sh",
     "refreshData": "python scripts/build_json.py"
   },
   "repository": {

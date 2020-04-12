@@ -3,13 +3,13 @@ import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next';
 // import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
-import './departments-table.scss'
+import './tables.scss'
 import HelpIcon from './help-icon'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
-const TOTAL_FOR_ALL_DEPARTMENTS = 'Total for All Departments';
+const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs';
 
 
 const formatToUSD = amount => {
@@ -18,8 +18,20 @@ const formatToUSD = amount => {
   return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
 }
 
+const formatBudgetPercentCell = (percent, rowIndex) => {
+  let classes = ""
+
+  if(percent < -3) {
+    classes = "over-budget"
+  }
+
+  if(rowIndex !== 0){
+    return <span className={classes}>{percent}%</span>
+  }
+}
+
 const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_DEPARTMENTS, spending: 0, budget: 0, staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, staff: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending;
     returnObject.budget += +currentItem.budget;
@@ -36,10 +48,10 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
 }
 
 const sort = (a, b, order, dataField, rowA, rowB) => {
-  if (rowA.name === TOTAL_FOR_ALL_DEPARTMENTS) {
+  if (rowA.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
     return -1
   }
-  if (rowB.name === TOTAL_FOR_ALL_DEPARTMENTS) {
+  if (rowB.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
     return 1
   }
   if (order === "asc") {
@@ -67,11 +79,20 @@ const getSortCaret = (order, column) => {
 const columns = [{
   formatter: columnsFormatter,
   dataField: 'name',
-  text: 'Department',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Department {components.sortElement}</div>)},
+  text: 'Program',
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Central Program {components.sortElement}</div>)},
   sortCaret: getSortCaret,
   sort: true,
   sortFunc: sort
+},{
+  dataField: 'category',
+  text: 'Category',
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Category {components.sortElement}</div>)},
+  sortCaret: getSortCaret,
+  sort: true,
+  sortFunc: sort,
+  hidden: true,
+  align: 'left'
 }, {
   dataField: 'spending',
   formatter: (cell, row) => formatToUSD(row.spending),
@@ -106,6 +127,18 @@ const columns = [{
   type: 'number',
   align: 'right',
   hidden: true,
+  csvExport: false
+}, {
+  dataField: 'percent_under_budget',
+  formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
+  text: 'Percent Under Budget',
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget <HelpIcon tooltipText="Negative indicates over budget"/></div>)},
+  sortCaret: getSortCaret,
+  searchable: false,
+  sort: true,
+  sortFunc: sort,
+  type: 'number',
+  align: 'right'
 }];
 
 const rowClasses = (row, rowIndex) => {
@@ -115,7 +148,7 @@ const rowClasses = (row, rowIndex) => {
 };
 
 
-const Table = ({data}) => {
+const CentralProgramsTable = ({data}) => {
   const firstRow = createFirstRow(data);
   // creates new array
   data = data.concat([firstRow]);
@@ -124,44 +157,44 @@ const Table = ({data}) => {
       keyField="code"
       data={data}
       columns={columns}
+      exportCSV={{fileName: "openousd-central-programs.csv"}}
       bootstrap4
       search
     >
       {props => (
         <div>
-            {/* TODO can we get the years from the data? */}
-          <h3>Department Data for the 2018-2019 School Year</h3>
-          <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link">
-              Download Data to CSV
-            </ExportCSVButton>
-          </div>
           <SearchBar
             {...props.searchProps}
-            placeholder="Department Search"
-            className="search-bar"
+            placeholder="Search programs"
+            className="search-bar mb-4"
           />
-          <hr />
           <BootstrapTable
             // turning off pagination for now
             // pagination={paginationFactory()}
-            classes="table-borderless"
+            wrapperClasses="table-responsive"
+            classes=""
             bordered={false}
             {...props.baseProps}
             rowClasses={rowClasses}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
+          <div>
+            <ExportCSVButton {...props.csvProps} className="btn-link" filename>
+              Download Data to CSV
+            </ExportCSVButton>
+          </div>
         </div>
+
       )}
     </ToolkitProvider>
   )}
 
-Table.propTypes = {
+CentralProgramsTable.propTypes = {
     data: PropTypes.arrayOf(PropTypes.object),
 }
 
-Table.defaultProps = {
+CentralProgramsTable.defaultProps = {
     data: [],
 }
 
-export default Table
+export default CentralProgramsTable

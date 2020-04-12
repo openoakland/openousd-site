@@ -16,7 +16,7 @@
 }
 #logo-row, #menu-row {
     width: 100%;
-    padding: 10px 0px;
+    padding:10px 0 5px 0;
 
     .navbar-toggler {
         border-color: white;
@@ -37,6 +37,7 @@
         width: 100%;
         border-color: $theme-blue;
         margin: 0;
+        box-sizing:inherit;
     }
     .nav-item {
         padding: 10px 20px;

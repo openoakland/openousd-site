@@ -4,6 +4,7 @@ module.exports = {
         title: `OpenOUSD`,
         description: `Volunteers providing transparent access to Oakland Unified School District budget & data`,
         author: `@OpenOakland`,
+        latestSchoolYear: `2018-19`
     },
     plugins: [
         {
@@ -31,13 +32,13 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `OpenOUSD`,
+                short_name: `OpenOUSD`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
-                display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                background_color: `#0042E6`,
+                theme_color: `#0042E6`,
+                display: `browser`,
+                icon: `src/images/favicon.png`, // This path is relative to the root of the site.
             }
         },
         {

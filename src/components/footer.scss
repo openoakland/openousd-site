@@ -1,18 +1,3 @@
-
-* {
-    box-sizing: border-box;
-   }
-   *:before,
-   *:after {
-    box-sizing: border-box;
-   }
-
-
-html,
-body {
- height: 100%;
-}
-
 .footer {
     display: block;
     background-color: rgba(0, 66, 230, 1.0);
@@ -22,9 +7,14 @@ body {
     color: rgba(249, 246, 246, 1.0);
     text-align: center;
     padding: 3rem 0;
-        
+
+    a {
+      color: white;
+      font-weight: bold;
+    }
+
     p {
-    margin-bottom: 0px;
+      margin-bottom: 0px;
     }
 }
 
