@@ -2,7 +2,16 @@
 
 This is the repo for the OpenOUSD project located at [openousd.org](https://openousd.org). Read the front page for a description of the project. All contributors are volunteers and the project has no private or public funders.
 
-We welcome new team members, especially if they are skilled in Gatsby.js, GraphQL, or PostgreSQL (or are willing to learn).
+We welcome new team members!
+
+## Technology
+
+OpenOUSD uses several technologies:
+* [Gatsby](https://www.gatsbyjs.org/), a static site generator built on React
+* Postgres to store public datasets
+* Node.js to serve that data as JSON through a light API (see [openousd-api](https://github.com/openoakland/openousd-api/))
+
+Since this is a static site, the data is fetched once and stored in static JSON files in the `/data` directory. The live site does not require any API or database.
 
 
 ## Setting Up The Project Locally
