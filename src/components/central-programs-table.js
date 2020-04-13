@@ -4,7 +4,6 @@ import BootstrapTable from 'react-bootstrap-table-next';
 // import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
 import './tables.scss'
-import HelpIcon from './help-icon'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import DownloadIcon from '@material-ui/icons/SaveAlt';
