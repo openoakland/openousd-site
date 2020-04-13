@@ -24,3 +24,11 @@ a, .btn-link, .table-header {
 .over-budget {
     color: #E60000;
 }
+
+button.download {
+    vertical-align: middle;
+    svg {
+        padding-right: 4px;
+        padding-bottom: 3px;
+    }
+}

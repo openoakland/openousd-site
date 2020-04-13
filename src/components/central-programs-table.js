@@ -7,6 +7,8 @@ import './tables.scss'
 import HelpIcon from './help-icon'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+import DownloadIcon from '@material-ui/icons/SaveAlt';
+
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
 const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs';
@@ -157,7 +159,8 @@ const CentralProgramsTable = ({data}) => {
       keyField="code"
       data={data}
       columns={columns}
-      exportCSV={{fileName: "openousd-central-programs.csv"}}
+      className="table"
+      exportCSV={{fileName: `openousd-central-programs.csv`}}
       bootstrap4
       search
     >
@@ -179,8 +182,8 @@ const CentralProgramsTable = ({data}) => {
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
           <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link">
-              Download Data to CSV
+            <ExportCSVButton {...props.csvProps} className="btn-link download">
+              <DownloadIcon/>Download Table Data as CSV
             </ExportCSVButton>
           </div>
         </div>
