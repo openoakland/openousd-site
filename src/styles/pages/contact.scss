@@ -22,6 +22,17 @@ $section-padding: 3rem;
             padding-top: 15px;
         }
     }
+
+    #twitter {
+        padding-top: $section-padding;
+
+        #twitter-icon {
+            height: 45px;
+            display: inline-block;
+            padding-bottom: 7px;
+        }
+    }
+
     #openoakland-meeting {
         padding-top: $section-padding;
     }
