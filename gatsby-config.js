@@ -2,8 +2,8 @@ module.exports = {
     pathPrefix: "/openousd-site",
     siteMetadata: {
         title: `OpenOUSD`,
-        description: `Volunteers providing transparent access to Oakland Unified School District budget & data`,
-        author: `@OpenOakland`,
+        description: `OpenOUSD aims to bring greater transparency to the Oakland Unified School District's central office.`,
+        author: `@OpenOUSD`,
         latestSchoolYear: `2018-19`
     },
     plugins: [

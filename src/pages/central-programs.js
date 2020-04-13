@@ -22,7 +22,7 @@ const CentralProgramsPage = ({ data }) => {
   const centralPrograms = data.allCentralProgramsJson.nodes;
   return (
     <Layout pageClassName="central-programs-page">
-      <SEO title="Central Programs" />
+      <SEO title="Central Programs Overview" />
       <Container>
         <Row>
           <Col>
