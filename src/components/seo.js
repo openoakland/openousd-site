@@ -53,15 +53,23 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
         },
         {
-          name: `twitter:creator`,
+          name: `twitter:image`,
+          content: `https://openousd.org/sankey-twitter.png`,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: `diagram showing OUSD central programs spending`,
+        },
+        {
+          name: `twitter:site`,
           content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | OpenOUSD`,
         },
         {
           name: `twitter:description`,

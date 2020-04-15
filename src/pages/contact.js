@@ -2,6 +2,7 @@ import React from "react"
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 import LaunchIcon from '@material-ui/icons/Launch';
+import twitterIcon from '../images/icons/twitter-icon-blue.svg'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/pages/contact.scss"
@@ -41,6 +42,13 @@ const Contact = () => (
                         <Form.Control type="hidden" name="email-opt-in" value="on"/>
                         <Button className="cta" variant="primary" type="submit">Sign Up</Button>
                     </Form>
+                </div>
+                <div id="twitter">
+                    <h1>Get Updates On Twitter <img src={twitterIcon} id="twitter-icon" alt="twitter icon"/></h1>
+                    <div>Follow <a href="https://twitter.com/OpenOUSD" target="_blank" rel="noopener noreferrer">
+                        @OpenOUSD</a> or <a href="https://twitter.com/OAKEDUretweets" target="_blank" rel="noopener noreferrer">
+                        @OAKEDUretweets</a> for updates.
+                    </div>
                 </div>
                 <div id="openoakland-meeting">
                     <h1>Join Us In-Person</h1>

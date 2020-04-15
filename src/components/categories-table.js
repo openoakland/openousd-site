@@ -6,6 +6,8 @@ import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolk
 import './tables.scss'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+import DownloadIcon from '@material-ui/icons/SaveAlt';
+
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
 
@@ -70,8 +72,8 @@ const CategoriesTable = ({data, colName}) => {
             defaultSorted={[{dataField: 'category', order: 'asc'}]}
           />
           <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link">
-              Download Data to CSV
+            <ExportCSVButton {...props.csvProps} className="btn-link download">
+              <DownloadIcon/>Download Table Data as CSV
             </ExportCSVButton>
           </div>
         </div>

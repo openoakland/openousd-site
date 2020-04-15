@@ -71,6 +71,13 @@ button{
     font-size: 1rem !important;
 }
 
+button.download, a {
+    svg {
+        padding-right: 4px;
+        padding-bottom: 3px;
+    }
+}
+
 .footnote {
     font-size: $footnote-font-size;
     font-style: italic;

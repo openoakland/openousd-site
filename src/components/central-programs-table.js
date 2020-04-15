@@ -4,9 +4,10 @@ import BootstrapTable from 'react-bootstrap-table-next';
 // import paginationFactory from 'react-bootstrap-table2-paginator';
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
 import './tables.scss'
-import HelpIcon from './help-icon'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
+import DownloadIcon from '@material-ui/icons/SaveAlt';
+
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
 const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs';
@@ -98,7 +99,7 @@ const columns = [{
   formatter: (cell, row) => formatToUSD(row.spending),
   text: 'Spending',
   // TODO improve tooltip text for all of these
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Spending <HelpIcon tooltipText="Amount spent" /> </div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Spending</div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -109,7 +110,7 @@ const columns = [{
   dataField: 'budget',
   formatter: (cell, row) => formatToUSD(row.budget),
   text: 'Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Budget <HelpIcon tooltipText="Budget allocated"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Budget</div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -119,7 +120,7 @@ const columns = [{
 }, {
   dataField: 'staff',
   text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff <HelpIcon tooltipText="Number of staff"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff</div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -132,7 +133,7 @@ const columns = [{
   dataField: 'percent_under_budget',
   formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
   text: 'Percent Under Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget <HelpIcon tooltipText="Negative indicates over budget"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget</div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -157,7 +158,8 @@ const CentralProgramsTable = ({data}) => {
       keyField="code"
       data={data}
       columns={columns}
-      exportCSV={{fileName: "openousd-central-programs.csv"}}
+      className="table"
+      exportCSV={{fileName: `openousd-central-programs.csv`}}
       bootstrap4
       search
     >
@@ -179,8 +181,8 @@ const CentralProgramsTable = ({data}) => {
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
           <div>
-            <ExportCSVButton {...props.csvProps} className="btn-link" filename>
-              Download Data to CSV
+            <ExportCSVButton {...props.csvProps} className="btn-link download">
+              <DownloadIcon/>Download Table Data as CSV
             </ExportCSVButton>
           </div>
         </div>
