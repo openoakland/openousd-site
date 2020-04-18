@@ -9,7 +9,8 @@ const Footer = () => (
     <footer className="footer">
         <p><strong>Created by</strong> <img id="footerlogo" src={logo} alt="OpenOakland logo"></img></p>
         <p className="py-3">OpenOUSD is an ongoing project.{' '}
-        Please report problems and share feedback on the <Link to="/contact/">contact page</Link></p>
+        Please report problems and share feedback on the <Link to="/contact/">contact page</Link>.</p>
+        <p className="pb-2"><Link to="/about-data/">View OpenOUSD data and code.</Link></p>
 
         <p>© {new Date().getFullYear()}</p>
 
