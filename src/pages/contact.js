@@ -25,7 +25,6 @@ const Contact = () => (
                             <option>Offer feedback</option>
                             <option>Ask a question</option>
                             <option>Get involved</option>
-                            <option>Make a donation</option>
                             <option>Something else</option>
                         </Form.Control>
                     <Form.Label>Message (required)</Form.Label>
