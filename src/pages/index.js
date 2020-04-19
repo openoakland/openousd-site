@@ -16,8 +16,8 @@ const IndexPage = () => (
             <MuralImage />
             </div>
 
-    <Container className="px-0">
-        <Row className="descriptions justify-content-center mx-0">
+    <Container>
+        <Row className="descriptions justify-content-center">
           <Col xs={11} md={5} className="px-md-5 py-md-4 px-3 py-3">
             <h1 className="">What Is OpenOUSD?</h1>
             <p>OpenOUSD is a project created out of OpenOakland, a volunteer run group with the mission of increasing access to government through technology. OpenOUSD aims to bring greater transparency to the Oakland Unified School District's central office so that the community can fully participate in discussions about how it can best serve our students.</p>
