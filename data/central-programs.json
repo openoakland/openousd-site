@@ -73,7 +73,7 @@
   },
   {
     "code": 901,
-    "name": "CHIEF OF STAFF",
+    "name": "Chief Of Staff",
     "category": "Administrative Offices",
     "spending": 1324555.57,
     "budget": 1351792.38,
@@ -154,7 +154,7 @@
   },
   {
     "code": 954,
-    "name": "Eng Lang Lrnr/Multilingual Ach",
+    "name": "English Language Learner / Multilingual Achievement",
     "category": "Instructional Programs",
     "spending": 4300131.87,
     "budget": 4805140.84,
@@ -253,7 +253,7 @@
   },
   {
     "code": 912,
-    "name": "LINKED LEARNING",
+    "name": "Linked Learning",
     "category": "Instructional Programs",
     "spending": 9160918.77,
     "budget": 10633941.34,
@@ -298,7 +298,7 @@
   },
   {
     "code": 921,
-    "name": "Office of Post Secondary Readi",
+    "name": "Office Of Post Secondary Readiness",
     "category": "Instructional Programs",
     "spending": -627.13,
     "budget": 56,
