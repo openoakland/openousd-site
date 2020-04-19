@@ -8,6 +8,14 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackingId: "UA-69150718-3",
+                // Defines where to place the tracking script - `true` in the head and `false` in the body
+                head: false,
+            },
+        },
+        {
           resolve: 'gatsby-plugin-sass',
           options: {
             data: `@import "./src/styles/_variables.scss";`,
@@ -52,8 +60,5 @@ module.exports = {
             }
         },
         "gatsby-transformer-json",
-        // this (optional) plugin enables Progressive Web App + Offline functionality
-        // To learn more, visit: https://gatsby.dev/offline
-        // `gatsby-plugin-offline`,
     ],
 }
