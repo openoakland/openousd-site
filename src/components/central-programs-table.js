@@ -7,6 +7,7 @@ import './tables.scss'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import DownloadIcon from '@material-ui/icons/SaveAlt';
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
@@ -77,6 +78,24 @@ const getSortCaret = (order, column) => {
   return (<ArrowDropDown className="invisible"/>)
 }
 
+const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {
+  if(columnIndex === 0){
+    trackCustomEvent({
+        category: "Central Programs Table",
+        action: "Click Program",
+        label: row.name
+    })
+  }
+}
+
+const trackSortEvent = (fieldName) => {
+  trackCustomEvent({
+      category: "Central Programs Table",
+      action: "Sort Column",
+      label: fieldName
+  })
+}
+
 const columns = [{
   formatter: columnsFormatter,
   dataField: 'name',
@@ -84,13 +103,18 @@ const columns = [{
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Central Program {components.sortElement}</div>)},
   sortCaret: getSortCaret,
   sort: true,
-  sortFunc: sort
+  onSort: (field,order) => trackSortEvent(field),
+  sortFunc: sort,
+  events: {
+    onClick: (e, column, columnIndex, row, rowIndex) => trackTableCellClickEvent(e, column, columnIndex, row, rowIndex)
+  }
 },{
   dataField: 'category',
   text: 'Category',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Category {components.sortElement}</div>)},
   sortCaret: getSortCaret,
   sort: true,
+  onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   hidden: true,
   align: 'left'
@@ -103,6 +127,7 @@ const columns = [{
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
+  onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   type: 'number',
   align: 'right'
@@ -114,6 +139,7 @@ const columns = [{
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
+  onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   type: 'number',
   align: 'right'
@@ -124,6 +150,7 @@ const columns = [{
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
+  onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   type: 'number',
   align: 'right',
@@ -137,6 +164,7 @@ const columns = [{
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
+  onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   type: 'number',
   align: 'right'

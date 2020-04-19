@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 import { ResponsiveSankey } from '@nivo/sankey'
 import { Button, ButtonGroup } from 'react-bootstrap';
@@ -60,12 +61,26 @@ function Sankey(props) {
                     <span className="label">Grouping:{' '}</span>
                     <ButtonGroup>
                         <Button size="sm"
-                                onClick={() => setGroupByRestricted(false)}
+                                onClick={() => {
+                                    setGroupByRestricted(false)
+                                    trackCustomEvent({
+                                        category: "Sankey - Overview",
+                                        action: "Change Grouping",
+                                        label: "None"
+                                    })
+                                }}
                                 active={!groupByRestricted}>
                             None
                         </Button>
                         <Button size="sm"
-                                onClick={() => setGroupByRestricted(true)}
+                                onClick={() => {
+                                    setGroupByRestricted(true)
+                                    trackCustomEvent({
+                                        category: "Sankey - Overview",
+                                        action: "Change Grouping",
+                                        label: "Restricted / Unrestricted"
+                                    })
+                                }}
                                 active={groupByRestricted}>
                             Restricted / Unrestricted
                         </Button>
@@ -103,6 +118,13 @@ function Sankey(props) {
                     tooltipFormat={value => formatCurrency(value)}
                     nodeTooltip={node => getNodeTooltip(node)}
                     layers={['links', 'nodes', 'labels', 'legends', xAxisLabels]}
+                    onClick={(data, event) => {
+                        if("id" in data){
+                            trackCustomEvent({category: "Sankey - Overview",
+                                action: "Click Node",
+                                label: data.id})
+                        }
+                    }}
                 />
                 <div className="text-center">
                     <div className="footnote mb-3">Note: Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>

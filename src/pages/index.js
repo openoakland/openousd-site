@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 import Layout from "../components/layout";
 import MuralImage from "../components/mural-image";
@@ -26,7 +27,18 @@ const IndexPage = () => (
           <Col xs={11} md={5} className="px-md-5 py-md-4 px-3 py-3">
             <h1 className="">What Are Central Programs?</h1>
             <p>We define a central program as any activity managed by OUSD's central office rather than individual school sites. For example, a staff member working at a school site but hired by the central office would be considered part of a central program. There are more than 50 centrally managed programs at OUSD.</p>
-            <Link to="/central-programs/"><Button variant="primary" size="lg" className="cta">Explore Central Programs</Button></Link>
+            <Link to="/central-programs/">
+              <Button
+                variant="primary"
+                size="lg"
+                className="cta"
+                onClick={e => trackCustomEvent({category: "Home Card",
+                                                action: "Explore Central Programs",
+                                                label:" What Are Central Programs?"})}
+              >
+                Explore Central Programs
+              </Button>
+            </Link>
           </Col>
         </Row>
         <Row>
