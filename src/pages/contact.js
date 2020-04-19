@@ -17,9 +17,9 @@ const Contact = () => (
                 <h1>Contact Us</h1>
                 <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
                     <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" name="email" />
+                        <Form.Control type="email" name="email" autocomplete="email"/>
                     <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" name="name" />
+                        <Form.Control type="text" name="name" autocomplete="name"/>
                     <Form.Label>I'm contacting you to...</Form.Label>
                         <Form.Control as="select" name="purpose">
                             <option>Offer feedback</option>
@@ -40,7 +40,7 @@ const Contact = () => (
                     <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
                         <Form.Label>Be the first to know when new data is released.</Form.Label>
                         <Form.Control type="hidden" name="purpose" value="Email Signup"/>
-                        <Form.Control type="email" name="email" placeholder="Email" />
+                        <Form.Control type="email" name="email" autocomplete="email" placeholder="Email" />
                         <Form.Control type="hidden" name="email-opt-in" value="on"/>
                         <Button className="cta" variant="primary" type="submit">Sign Up</Button>
                     </Form>
