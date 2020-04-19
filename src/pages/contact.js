@@ -17,9 +17,9 @@ const Contact = () => (
                 <h1>Contact Us</h1>
                 <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
                     <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" name="email" autocomplete="email"/>
+                        <Form.Control type="email" name="email" autoComplete="email"/>
                     <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" name="name" autocomplete="name"/>
+                        <Form.Control type="text" name="name" autoComplete="name"/>
                     <Form.Label>I'm contacting you to...</Form.Label>
                         <Form.Control as="select" name="purpose">
                             <option>Offer feedback</option>
