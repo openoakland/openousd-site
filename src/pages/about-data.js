@@ -40,7 +40,7 @@ const AboutDataPage = ({data}) => {
                                     </a>
                                 </li>
                             </ul>
-                            <p><Link to="/contact">Contact us</Link> to report an inaccuracy, offer feedback, or ask a question.</p>
+                            <p><Link to="/contact/">Contact us</Link> to report an inaccuracy, offer feedback, or ask a question.</p>
                         </div>
                     </Col>
                 </Row>
@@ -67,7 +67,7 @@ const AboutDataPage = ({data}) => {
                                     {' '}(this API is not live, but shows how the data is queried)
                                 </li>
                             </ul>
-                            <p><Link to="/contact">Contact us</Link> about making contributions to the project.</p>
+                            <p><Link to="/contact/">Contact us</Link> about making contributions to the project.</p>
                         </div>
                     </Col>
                 </Row>
