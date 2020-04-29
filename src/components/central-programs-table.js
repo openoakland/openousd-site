@@ -8,6 +8,7 @@ import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import DownloadIcon from '@material-ui/icons/SaveAlt';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
+import { Button, ButtonGroup } from 'react-bootstrap';
 
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
@@ -159,7 +160,7 @@ const columns = [{
 }, {
   dataField: 'percent_under_budget',
   formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
-  text: 'Percent Under Budget',
+  text: '% Within Budget',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget</div>)},
   sortCaret: getSortCaret,
   searchable: false,
@@ -176,6 +177,44 @@ const rowClasses = (row, rowIndex) => {
   }
 };
 
+const CustomToggleList = ({
+  columns,
+  onColumnToggle,
+  toggles
+}) => (
+  <div>
+    <div className="strong">Show / Hide Columns:</div>
+    <ButtonGroup className="flex-wrap">
+      {
+        columns
+          .map(column => ({
+            ...column,
+            toggle: toggles[column.dataField]
+          }))
+          .map((column) => {
+
+            if (column.text !== "Program") {
+              return (
+                <Button
+                  type="button"
+                  key={ column.dataField }
+                  className={ `btn ${column.toggle ? 'active' : ''}` }
+                  data-toggle="button"
+                  aria-pressed={ column.toggle ? 'true' : 'false' }
+                  onClick={ () => onColumnToggle(column.dataField) }
+                >
+                  { column.text }
+                </Button>
+              )
+            } else {
+              return false
+            }
+        })
+      }
+    </ButtonGroup>
+  </div>
+);
+
 
 const CentralProgramsTable = ({data}) => {
   const firstRow = createFirstRow(data);
@@ -190,6 +229,7 @@ const CentralProgramsTable = ({data}) => {
       exportCSV={{fileName: `openousd-central-programs.csv`}}
       bootstrap4
       search
+      columnToggle
     >
       {props => (
         <div>
@@ -198,6 +238,7 @@ const CentralProgramsTable = ({data}) => {
             placeholder="Search programs"
             className="search-bar mb-4"
           />
+          <CustomToggleList { ...props.columnToggleProps } />
           <BootstrapTable
             // turning off pagination for now
             // pagination={paginationFactory()}
