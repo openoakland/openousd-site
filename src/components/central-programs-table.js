@@ -184,7 +184,7 @@ const CustomToggleList = ({
 }) => (
   <div>
     <div className="strong">Show / Hide Columns:</div>
-    <ButtonGroup className="flex-wrap">
+    <ButtonGroup>
       {
         columns
           .map(column => ({
