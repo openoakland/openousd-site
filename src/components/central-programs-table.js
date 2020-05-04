@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next';
 // import paginationFactory from 'react-bootstrap-table2-paginator';
@@ -7,8 +7,11 @@ import './tables.scss'
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
 import DownloadIcon from '@material-ui/icons/SaveAlt';
+import CreateIcon from '@material-ui/icons/Create';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
-import { Button, ButtonGroup } from 'react-bootstrap';
+import { Button, Modal, Row, Col } from 'react-bootstrap';
 
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
@@ -177,43 +180,68 @@ const rowClasses = (row, rowIndex) => {
   }
 };
 
-const CustomToggleList = ({
+const ModalColumnToggle = ({
   columns,
   onColumnToggle,
   toggles
-}) => (
-  <div>
-    <div className="strong">Show / Hide Columns:</div>
-    <ButtonGroup>
-      {
-        columns
-          .map(column => ({
-            ...column,
-            toggle: toggles[column.dataField]
-          }))
-          .map((column) => {
+}) => {
 
-            if (column.text !== "Program") {
-              return (
-                <Button
-                  type="button"
-                  key={ column.dataField }
-                  className={ `btn ${column.toggle ? 'active' : ''}` }
-                  data-toggle="button"
-                  aria-pressed={ column.toggle ? 'true' : 'false' }
-                  onClick={ () => onColumnToggle(column.dataField) }
-                >
-                  { column.text }
-                </Button>
-              )
-            } else {
-              return false
-            }
-        })
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  let columnsGroupedBy = {'visible': [], 'hidden': []}
+
+  columns
+    .reduce((r, col) => {
+      if (col.text !== "Program") {
+        col.toggle = toggles[col.dataField]
+        if(col.toggle) { r.visible.push(col) }
+        else {r.hidden.push(col)}
       }
-    </ButtonGroup>
-  </div>
-);
+      return r
+    }, columnsGroupedBy)
+
+  const ColumnOption = ({column}) => (
+    <div className={`column-option py-3 py-md-2 ${column.toggle ? "visible" : "hidden"}`}
+      key={ column.dataField }
+      data-toggle="button"
+      onClick={ () => onColumnToggle(column.dataField) }
+    >
+      { column.toggle ? <RemoveCircleOutlineIcon/> : <AddCircleOutlineIcon/> }
+      <span className="ml-2">{ column.text }</span>
+    </div>
+  )
+
+  return (
+    <div>
+      <div className="strong py-3 btn-link d-md-flex justify-content-end" onClick={handleShow} >
+        <CreateIcon className="pr-1"/>Edit Columns
+      </div>
+      <Modal show={show} onHide={handleClose} id="show-hide-columns-modal" size="sm" centered>
+        <Modal.Header closeButton/>
+        <Modal.Body className="py-1 pl-5">
+          <div className={`heading strong py-2 ${columnsGroupedBy.visible.length > 0 ? "" : "d-none"}`}>Current Columns</div>
+          {
+            columnsGroupedBy.visible
+              .map((column) => (<ColumnOption column={column}/>))
+          }
+          <div className={`heading strong py-2 ${columnsGroupedBy.hidden.length > 0 ? "" : "d-none"}`}>Columns Not Shown</div>
+          {
+            columnsGroupedBy.hidden
+              .map((column) => (<ColumnOption column={column}/>))
+          }
+        </Modal.Body>
+        <Modal.Footer className="pt-3 pr-4 ">
+          <Button variant="primary" className="cta" size="sm" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  )
+};
 
 
 const CentralProgramsTable = ({data}) => {
@@ -233,12 +261,18 @@ const CentralProgramsTable = ({data}) => {
     >
       {props => (
         <div>
-          <SearchBar
-            {...props.searchProps}
-            placeholder="Search programs"
-            className="search-bar mb-4"
-          />
-          <CustomToggleList { ...props.columnToggleProps } />
+          <Row>
+            <Col md={9}>
+              <SearchBar
+                {...props.searchProps}
+                placeholder="Search programs"
+                className="search-bar mb-4"
+              />
+            </Col>
+            <Col>
+              <ModalColumnToggle { ...props.columnToggleProps } />
+            </Col>
+          </Row>
           <BootstrapTable
             // turning off pagination for now
             // pagination={paginationFactory()}
