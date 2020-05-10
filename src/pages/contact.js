@@ -56,13 +56,19 @@ const Contact = () => (
                     <div>OpenOakland meets every Tues,{' '}
                         6:30pm at Oakland City Hall.
                     </div>
+                    <a href="https://www.meetup.com/OpenOakland/events/" target="_blank" rel="noopener noreferrer">
+                        RSVP on Meetup <LaunchIcon/>
+                    </a>
                 </div>
-                <a href="https://www.meetup.com/OpenOakland/events/" target="_blank" rel="noopener noreferrer">
-                    RSVP on Meetup <LaunchIcon/>
-                </a>
+
                 <div className="pt-5">
                     <h1>Looking for data?</h1>
                     <p><Link to="/about-data/">View OpenOUSD data and code.</Link></p>
+                    <div className="mt-3 strong">Check out other education-related OpenOakland projects:</div>
+                    <ul>
+                        <li><a href="https://www.opendisclosure.io/" target="_blank" rel="noopener noreferrer">Open Disclosure Oakland</a> - Campaign contributions for school board elections</li>
+                        <li><a href="https://trackg.org" target="_blank" rel="noopener noreferrer">trackg.org</a> - Measure G parcel tax spending</li>
+                    </ul>
                 </div>
             </Col>
         </Row>
