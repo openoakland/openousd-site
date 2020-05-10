@@ -31,7 +31,7 @@ a, .btn-link, .table-header {
     .modal-header {
         border-bottom: 0px;
         .close {
-            font-size: 1.8em !important;
+            font-size: 2em !important;
         }
     }
     .modal-body {
@@ -39,7 +39,18 @@ a, .btn-link, .table-header {
             font-size: 1.1em;
         }
         .column-option {
-            cursor: pointer;
+            background-color: white;
+            border: 0px;
+            display: block;
+            margin-bottom: 3px;
+
+            span {
+                font-weight: normal;
+            }
+
+            &:hover {
+                background-color: #f8f9fa;
+            }
 
             &.visible svg {
                 fill: rgb(182,46,61);

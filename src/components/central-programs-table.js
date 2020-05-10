@@ -164,7 +164,7 @@ const columns = [{
 }, {
   dataField: 'remaining_budget_percent',
   formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.remaining_budget_percent, rowIndex),
-  text: '% Within Budget',
+  text: 'Remaining Budget',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Remaining Budget</div>)},
   sortCaret: getSortCaret,
   searchable: false,
@@ -205,21 +205,22 @@ const ModalColumnToggle = ({
     }, columnsGroupedBy)
 
   const ColumnOption = ({column}) => (
-    <div className={`column-option py-3 py-md-2 ${column.toggle ? "visible" : "hidden"}`}
+    <Button className={`column-option py-3 py-md-2 ${column.toggle ? "visible" : "hidden"}`}
+      variant="light"
       key={ column.dataField }
       data-toggle="button"
       onClick={ () => onColumnToggle(column.dataField) }
     >
       { column.toggle ? <RemoveCircleOutlineIcon/> : <AddCircleOutlineIcon/> }
       <span className="ml-2">{ column.text }</span>
-    </div>
+    </Button>
   )
 
   return (
-    <div>
-      <div className="strong py-3 btn-link d-md-flex justify-content-end" onClick={handleShow} >
+    <div className="d-md-flex justify-content-end">
+      <Button className="cta mb-3 my-md-0" onClick={handleShow} >
         <CreateIcon className="pr-1"/>Edit Columns
-      </div>
+      </Button>
       <Modal show={show} onHide={handleClose} id="show-hide-columns-modal" size="sm" centered>
         <Modal.Header closeButton/>
         <Modal.Body className="py-1 pl-5">
@@ -234,10 +235,10 @@ const ModalColumnToggle = ({
               .map((column) => (<ColumnOption column={column}/>))
           }
         </Modal.Body>
-        <Modal.Footer className="pt-3 pr-4 ">
-          <Button variant="primary" className="cta" size="sm" onClick={handleClose}>
-            Close
-          </Button>
+        <Modal.Footer className="pt-3 pr-4">
+          {/*<Button variant="primary" className="cta" size="sm" onClick={handleClose}>
+                      Close
+                    </Button>*/}
         </Modal.Footer>
       </Modal>
     </div>
@@ -263,7 +264,7 @@ const CentralProgramsTable = ({data}) => {
       {props => (
         <div>
           <Row>
-            <Col md={9}>
+            <Col md={8}>
               <SearchBar
                 {...props.searchProps}
                 placeholder="Search programs"

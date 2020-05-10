@@ -30,7 +30,7 @@ const Contact = () => (
                     <Form.Label>Message (required)</Form.Label>
                         <Form.Control as="textarea" rows={5} name="message" />
                     {/*<Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>*/}
-                    <Button className="cta" variant="primary" type="submit">Send Message</Button>
+                    <Button className="cta mt-3" variant="primary" type="submit">Send Message</Button>
                 </Form>
             </Col>
             <Col md={{ span:5, offset: 1 }}>
@@ -41,7 +41,7 @@ const Contact = () => (
                         <Form.Control type="hidden" name="purpose" value="Email Signup"/>
                         <Form.Control type="email" name="email" autocomplete="email" placeholder="Email" />
                         <Form.Control type="hidden" name="email-opt-in" value="on"/>
-                        <Button className="cta" variant="primary" type="submit">Sign Up</Button>
+                        <Button className="cta mt-3" variant="primary" type="submit">Sign Up</Button>
                     </Form>
                 </div>
                 <div className="pt-5">
