@@ -1,22 +1,22 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
-import BootstrapTable from 'react-bootstrap-table-next';
-// import paginationFactory from 'react-bootstrap-table2-paginator';
-import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
+import BootstrapTable from 'react-bootstrap-table-next'
+// import paginationFactory from 'react-bootstrap-table2-paginator'
+import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit'
 import './tables.scss'
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
-import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
-import DownloadIcon from '@material-ui/icons/SaveAlt';
-import CreateIcon from '@material-ui/icons/Create';
-import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
+import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
+import ArrowDropUp from '@material-ui/icons/ArrowDropUp'
+import DownloadIcon from '@material-ui/icons/SaveAlt'
+import CreateIcon from '@material-ui/icons/Create'
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline'
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
-import { Button, Modal, Row, Col } from 'react-bootstrap';
+import { Button, Modal, Row, Col } from 'react-bootstrap'
 import HelpIcon from "./help-icon"
 
-const { SearchBar } = Search;
-const { ExportCSVButton } = CSVExport;
-const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs';
+const { SearchBar } = Search
+const { ExportCSVButton } = CSVExport
+const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs'
 
 
 const formatToUSD = amount => {
@@ -49,9 +49,9 @@ const formatFTE = (fte) => {
 const createFirstRow = data => {
   const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, staff: 0}
   return data.reduce((returnObject, currentItem) => {
-    returnObject.spending += +currentItem.spending;
-    returnObject.budget += +currentItem.budget;
-    returnObject.staff += +currentItem.staff;
+    returnObject.spending += +currentItem.spending
+    returnObject.budget += +currentItem.budget
+    returnObject.staff += +currentItem.staff
     return returnObject
   }, initialObject)
 }
@@ -183,13 +183,13 @@ const columns = [{
   sortFunc: sort,
   type: 'number',
   align: 'right'
-}];
+}]
 
 const rowClasses = (row, rowIndex) => {
   if (rowIndex === 0) {
     return 'first-row'
   }
-};
+}
 
 const ModalColumnToggle = ({
   columns,
@@ -197,10 +197,10 @@ const ModalColumnToggle = ({
   toggles
 }) => {
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false)
+  const handleShow = () => setShow(true)
 
   let columnsGroupedBy = {'visible': [], 'hidden': []}
 
@@ -253,13 +253,13 @@ const ModalColumnToggle = ({
       </Modal>
     </div>
   )
-};
+}
 
 
 const CentralProgramsTable = ({data}) => {
-  const firstRow = createFirstRow(data);
+  const firstRow = createFirstRow(data)
   // creates new array
-  data = data.concat([firstRow]);
+  data = data.concat([firstRow])
   return (
     <ToolkitProvider
       keyField="code"
