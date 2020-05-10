@@ -330,16 +330,6 @@
     "remaining_budget_percent": 10.3
   },
   {
-    "code": 921,
-    "name": "Office Of Post Secondary Readiness",
-    "category": "Instructional Programs",
-    "spending": -627.13,
-    "budget": 56,
-    "year": 2018,
-    "eoy_total_staff": null,
-    "remaining_budget_percent": 1219.9
-  },
-  {
     "code": 905,
     "name": "Office Of Sr. Business Officer",
     "category": "Administrative Offices",

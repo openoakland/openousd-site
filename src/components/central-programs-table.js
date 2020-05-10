@@ -25,7 +25,7 @@ const formatToUSD = amount => {
   return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
 }
 
-const formatBudgetPercentCell = (percent, rowIndex) => {
+const formatRemainingBudgetCell = (percent, rowIndex) => {
   let classes = ""
 
   if(percent < -3) {
@@ -35,6 +35,15 @@ const formatBudgetPercentCell = (percent, rowIndex) => {
   if(rowIndex !== 0){
     return <span className={classes}>{percent}%</span>
   }
+}
+
+const formatFTE = (fte) => {
+  if(fte){
+    // Round but don't add trailing zeroes
+    fte = +fte.toFixed(2)
+  }
+
+  return <span>{fte}</span>
 }
 
 const createFirstRow = data => {
@@ -151,6 +160,7 @@ const columns = [{
   align: 'right'
 }, {
   dataField: 'eoy_total_staff',
+  formatter: (cell,row) => formatFTE(row.eoy_total_staff),
   text: 'Staff',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff <HelpIcon tooltipText="Full Time Equivalent (FTE) measured at the end of the school year." placement="right"/></div>)},
   sortCaret: getSortCaret,
@@ -163,7 +173,7 @@ const columns = [{
   csvExport: false
 }, {
   dataField: 'remaining_budget_percent',
-  formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.remaining_budget_percent, rowIndex),
+  formatter: (cell, row, rowIndex) => formatRemainingBudgetCell(row.remaining_budget_percent, rowIndex),
   text: 'Remaining Budget',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Remaining Budget</div>)},
   sortCaret: getSortCaret,
