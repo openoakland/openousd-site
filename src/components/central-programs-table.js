@@ -47,11 +47,12 @@ const formatFTE = (fte) => {
 }
 
 const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_staff: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending
     returnObject.budget += +currentItem.budget
     returnObject.staff += +currentItem.staff
+    returnObject.eoy_total_staff += +currentItem.eoy_total_staff
     return returnObject
   }, initialObject)
 }
