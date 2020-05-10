@@ -6,7 +6,8 @@
     "spending": 1740442.23,
     "budget": 1720738.16,
     "year": 2018,
-    "percent_under_budget": -1.1
+    "eoy_total_staff": 11.4,
+    "remaining_budget_percent": -1.1
   },
   {
     "code": 902,
@@ -15,7 +16,8 @@
     "spending": 765519.5,
     "budget": 734049.38,
     "year": 2018,
-    "percent_under_budget": -4.3
+    "eoy_total_staff": 7,
+    "remaining_budget_percent": -4.3
   },
   {
     "code": 940,
@@ -24,7 +26,8 @@
     "spending": 763126.04,
     "budget": 810055,
     "year": 2018,
-    "percent_under_budget": 5.8
+    "eoy_total_staff": 10,
+    "remaining_budget_percent": 5.8
   },
   {
     "code": 951,
@@ -33,7 +36,8 @@
     "spending": 2515366.92,
     "budget": 2662185.57,
     "year": 2018,
-    "percent_under_budget": 5.5
+    "eoy_total_staff": 20.9,
+    "remaining_budget_percent": 5.5
   },
   {
     "code": 988,
@@ -42,7 +46,8 @@
     "spending": 20215328.04,
     "budget": 20529279.12,
     "year": 2018,
-    "percent_under_budget": 1.5
+    "eoy_total_staff": 100,
+    "remaining_budget_percent": 1.5
   },
   {
     "code": 947,
@@ -51,7 +56,8 @@
     "spending": 823544.88,
     "budget": 1069793,
     "year": 2018,
-    "percent_under_budget": 23
+    "eoy_total_staff": 5,
+    "remaining_budget_percent": 23
   },
   {
     "code": 980,
@@ -60,7 +66,8 @@
     "spending": 1043900.65,
     "budget": 1173543.91,
     "year": 2018,
-    "percent_under_budget": 11
+    "eoy_total_staff": 1,
+    "remaining_budget_percent": 11
   },
   {
     "code": 913,
@@ -69,7 +76,8 @@
     "spending": 65246,
     "budget": 65246.39,
     "year": 2018,
-    "percent_under_budget": 0
+    "eoy_total_staff": 4,
+    "remaining_budget_percent": 0
   },
   {
     "code": 901,
@@ -78,7 +86,8 @@
     "spending": 1324555.57,
     "budget": 1351792.38,
     "year": 2018,
-    "percent_under_budget": 2
+    "eoy_total_staff": 5,
+    "remaining_budget_percent": 2
   },
   {
     "code": 958,
@@ -87,7 +96,8 @@
     "spending": 2115962.37,
     "budget": 2373031.76,
     "year": 2018,
-    "percent_under_budget": 10.8
+    "eoy_total_staff": 18.45,
+    "remaining_budget_percent": 10.8
   },
   {
     "code": 922,
@@ -96,7 +106,8 @@
     "spending": 16666577.59,
     "budget": 19033069.22,
     "year": 2018,
-    "percent_under_budget": 12.4
+    "eoy_total_staff": 118.634,
+    "remaining_budget_percent": 12.4
   },
   {
     "code": 956,
@@ -105,7 +116,8 @@
     "spending": 48823.22,
     "budget": 2662.3,
     "year": 2018,
-    "percent_under_budget": -1733.9
+    "eoy_total_staff": 1.25,
+    "remaining_budget_percent": -1733.9
   },
   {
     "code": 989,
@@ -114,7 +126,8 @@
     "spending": 958652.52,
     "budget": 1201584.85,
     "year": 2018,
-    "percent_under_budget": 20.2
+    "eoy_total_staff": 228.34998,
+    "remaining_budget_percent": 20.2
   },
   {
     "code": 999,
@@ -123,7 +136,8 @@
     "spending": 27366646.43,
     "budget": 29309956.87,
     "year": 2018,
-    "percent_under_budget": 6.6
+    "eoy_total_staff": 3,
+    "remaining_budget_percent": 6.6
   },
   {
     "code": 910,
@@ -132,7 +146,8 @@
     "spending": 7813420.95,
     "budget": 9099376,
     "year": 2018,
-    "percent_under_budget": 14.1
+    "eoy_total_staff": 56.2,
+    "remaining_budget_percent": 14.1
   },
   {
     "code": 915,
@@ -141,7 +156,8 @@
     "spending": 660.56,
     "budget": 0,
     "year": 2018,
-    "percent_under_budget": null
+    "eoy_total_staff": null,
+    "remaining_budget_percent": null
   },
   {
     "code": 923,
@@ -150,7 +166,8 @@
     "spending": 1499671.93,
     "budget": 1717930.29,
     "year": 2018,
-    "percent_under_budget": 12.7
+    "eoy_total_staff": 7,
+    "remaining_budget_percent": 12.7
   },
   {
     "code": 954,
@@ -159,7 +176,8 @@
     "spending": 4300131.87,
     "budget": 4805140.84,
     "year": 2018,
-    "percent_under_budget": 10.5
+    "eoy_total_staff": 33.55,
+    "remaining_budget_percent": 10.5
   },
   {
     "code": 918,
@@ -168,7 +186,8 @@
     "spending": 15554463.18,
     "budget": 19123095.8,
     "year": 2018,
-    "percent_under_budget": 18.7
+    "eoy_total_staff": 24.55,
+    "remaining_budget_percent": 18.7
   },
   {
     "code": 991,
@@ -177,7 +196,8 @@
     "spending": 4423574.67,
     "budget": 5199898.31,
     "year": 2018,
-    "percent_under_budget": 14.9
+    "eoy_total_staff": 13.25002,
+    "remaining_budget_percent": 14.9
   },
   {
     "code": 968,
@@ -186,7 +206,8 @@
     "spending": 2285013.37,
     "budget": 3492187,
     "year": 2018,
-    "percent_under_budget": 34.6
+    "eoy_total_staff": 38.8,
+    "remaining_budget_percent": 34.6
   },
   {
     "code": 964,
@@ -195,7 +216,8 @@
     "spending": 2889130.46,
     "budget": 3156551.5,
     "year": 2018,
-    "percent_under_budget": 8.5
+    "eoy_total_staff": 19.7,
+    "remaining_budget_percent": 8.5
   },
   {
     "code": 944,
@@ -204,7 +226,8 @@
     "spending": 7486705.14,
     "budget": 9402025.97,
     "year": 2018,
-    "percent_under_budget": 20.4
+    "eoy_total_staff": 42.5,
+    "remaining_budget_percent": 20.4
   },
   {
     "code": 959,
@@ -213,7 +236,8 @@
     "spending": 43401,
     "budget": 43401,
     "year": 2018,
-    "percent_under_budget": 0
+    "eoy_total_staff": null,
+    "remaining_budget_percent": 0
   },
   {
     "code": 924,
@@ -222,7 +246,8 @@
     "spending": 68399.45,
     "budget": 62284.46,
     "year": 2018,
-    "percent_under_budget": -9.8
+    "eoy_total_staff": null,
+    "remaining_budget_percent": -9.8
   },
   {
     "code": 932,
@@ -231,7 +256,8 @@
     "spending": 19821.54,
     "budget": 17074.9,
     "year": 2018,
-    "percent_under_budget": -16.1
+    "eoy_total_staff": 0.25,
+    "remaining_budget_percent": -16.1
   },
   {
     "code": 942,
@@ -240,7 +266,8 @@
     "spending": 3579.69,
     "budget": 20000,
     "year": 2018,
-    "percent_under_budget": 82.1
+    "eoy_total_staff": null,
+    "remaining_budget_percent": 82.1
   },
   {
     "code": 946,
@@ -249,7 +276,8 @@
     "spending": 1703757.66,
     "budget": 1830974,
     "year": 2018,
-    "percent_under_budget": 6.9
+    "eoy_total_staff": 10,
+    "remaining_budget_percent": 6.9
   },
   {
     "code": 912,
@@ -258,7 +286,8 @@
     "spending": 9160918.77,
     "budget": 10633941.34,
     "year": 2018,
-    "percent_under_budget": 13.9
+    "eoy_total_staff": 44.8,
+    "remaining_budget_percent": 13.9
   },
   {
     "code": 965,
@@ -267,7 +296,8 @@
     "spending": 431979.96,
     "budget": 4941630.06,
     "year": 2018,
-    "percent_under_budget": 91.3
+    "eoy_total_staff": 2,
+    "remaining_budget_percent": 91.3
   },
   {
     "code": 933,
@@ -276,7 +306,8 @@
     "spending": 1539296.56,
     "budget": 1887380.68,
     "year": 2018,
-    "percent_under_budget": 18.4
+    "eoy_total_staff": 2,
+    "remaining_budget_percent": 18.4
   },
   {
     "code": 903,
@@ -285,7 +316,8 @@
     "spending": 1470381.47,
     "budget": 1925326.65,
     "year": 2018,
-    "percent_under_budget": 23.6
+    "eoy_total_staff": 4,
+    "remaining_budget_percent": 23.6
   },
   {
     "code": 929,
@@ -294,7 +326,8 @@
     "spending": 2570848.76,
     "budget": 2865198.07,
     "year": 2018,
-    "percent_under_budget": 10.3
+    "eoy_total_staff": 25.25,
+    "remaining_budget_percent": 10.3
   },
   {
     "code": 921,
@@ -303,7 +336,8 @@
     "spending": -627.13,
     "budget": 56,
     "year": 2018,
-    "percent_under_budget": 1219.9
+    "eoy_total_staff": null,
+    "remaining_budget_percent": 1219.9
   },
   {
     "code": 905,
@@ -312,7 +346,8 @@
     "spending": 915117.82,
     "budget": 922210,
     "year": 2018,
-    "percent_under_budget": 0.8
+    "eoy_total_staff": 2,
+    "remaining_budget_percent": 0.8
   },
   {
     "code": 945,
@@ -321,7 +356,8 @@
     "spending": 107880,
     "budget": 107880,
     "year": 2018,
-    "percent_under_budget": 0
+    "eoy_total_staff": null,
+    "remaining_budget_percent": 0
   },
   {
     "code": 941,
@@ -330,7 +366,8 @@
     "spending": 1594162.44,
     "budget": 2010909.88,
     "year": 2018,
-    "percent_under_budget": 20.7
+    "eoy_total_staff": 5,
+    "remaining_budget_percent": 20.7
   },
   {
     "code": 906,
@@ -339,7 +376,8 @@
     "spending": 1433.67,
     "budget": 1436,
     "year": 2018,
-    "percent_under_budget": 0.2
+    "eoy_total_staff": null,
+    "remaining_budget_percent": 0.2
   },
   {
     "code": 928,
@@ -348,7 +386,8 @@
     "spending": 26678.71,
     "budget": 82760.79,
     "year": 2018,
-    "percent_under_budget": 67.8
+    "eoy_total_staff": 42.5,
+    "remaining_budget_percent": 67.8
   },
   {
     "code": 994,
@@ -357,7 +396,8 @@
     "spending": 2924781.83,
     "budget": 3104985.72,
     "year": 2018,
-    "percent_under_budget": 5.8
+    "eoy_total_staff": 102,
+    "remaining_budget_percent": 5.8
   },
   {
     "code": 983,
@@ -366,7 +406,8 @@
     "spending": 1383784.29,
     "budget": 1361784.55,
     "year": 2018,
-    "percent_under_budget": -1.6
+    "eoy_total_staff": 10,
+    "remaining_budget_percent": -1.6
   },
   {
     "code": 961,
@@ -375,7 +416,8 @@
     "spending": 0,
     "budget": 7096,
     "year": 2018,
-    "percent_under_budget": 100
+    "eoy_total_staff": null,
+    "remaining_budget_percent": 100
   },
   {
     "code": 962,
@@ -384,7 +426,8 @@
     "spending": 459776.34,
     "budget": 465842.5,
     "year": 2018,
-    "percent_under_budget": 1.3
+    "eoy_total_staff": 2.5,
+    "remaining_budget_percent": 1.3
   },
   {
     "code": 963,
@@ -393,7 +436,8 @@
     "spending": 467599.22,
     "budget": 467220.02,
     "year": 2018,
-    "percent_under_budget": -0.1
+    "eoy_total_staff": 2.5,
+    "remaining_budget_percent": -0.1
   },
   {
     "code": 979,
@@ -402,7 +446,8 @@
     "spending": 313302.14,
     "budget": 355691,
     "year": 2018,
-    "percent_under_budget": 11.9
+    "eoy_total_staff": 3,
+    "remaining_budget_percent": 11.9
   },
   {
     "code": 990,
@@ -411,7 +456,8 @@
     "spending": 534929.01,
     "budget": 642833.97,
     "year": 2018,
-    "percent_under_budget": 16.8
+    "eoy_total_staff": 3,
+    "remaining_budget_percent": 16.8
   },
   {
     "code": 948,
@@ -420,7 +466,8 @@
     "spending": 2859186.77,
     "budget": 2974307.65,
     "year": 2018,
-    "percent_under_budget": 3.9
+    "eoy_total_staff": 17.3,
+    "remaining_budget_percent": 3.9
   },
   {
     "code": 987,
@@ -429,7 +476,8 @@
     "spending": 70745641.72,
     "budget": 83382799,
     "year": 2018,
-    "percent_under_budget": 15.2
+    "eoy_total_staff": 13,
+    "remaining_budget_percent": 15.2
   },
   {
     "code": 975,
@@ -438,7 +486,8 @@
     "spending": 51885463.28,
     "budget": 55214642.21,
     "year": 2018,
-    "percent_under_budget": 6
+    "eoy_total_staff": 237.5,
+    "remaining_budget_percent": 6
   },
   {
     "code": 950,
@@ -447,7 +496,8 @@
     "spending": 1581468.38,
     "budget": 2039341.82,
     "year": 2018,
-    "percent_under_budget": 22.5
+    "eoy_total_staff": 8,
+    "remaining_budget_percent": 22.5
   },
   {
     "code": 907,
@@ -456,7 +506,8 @@
     "spending": 1700384.57,
     "budget": 1747551.84,
     "year": 2018,
-    "percent_under_budget": 2.7
+    "eoy_total_staff": 14,
+    "remaining_budget_percent": 2.7
   },
   {
     "code": 937,
@@ -465,7 +516,8 @@
     "spending": 3808516.15,
     "budget": 3421658.04,
     "year": 2018,
-    "percent_under_budget": -11.3
+    "eoy_total_staff": 0.3,
+    "remaining_budget_percent": -11.3
   },
   {
     "code": 909,
@@ -474,7 +526,8 @@
     "spending": 13545767.81,
     "budget": 16295911.95,
     "year": 2018,
-    "percent_under_budget": 16.9
+    "eoy_total_staff": 93.945,
+    "remaining_budget_percent": 16.9
   },
   {
     "code": 986,
@@ -483,7 +536,8 @@
     "spending": 6295103.7,
     "budget": 7227529.78,
     "year": 2018,
-    "percent_under_budget": 12.9
+    "eoy_total_staff": 31.5,
+    "remaining_budget_percent": 12.9
   },
   {
     "code": 995,
@@ -492,7 +546,8 @@
     "spending": 14308022.74,
     "budget": 14348152.21,
     "year": 2018,
-    "percent_under_budget": 0.3
+    "eoy_total_staff": 3,
+    "remaining_budget_percent": 0.3
   },
   {
     "code": 992,
@@ -501,6 +556,7 @@
     "spending": 1136215.75,
     "budget": 1646076.01,
     "year": 2018,
-    "percent_under_budget": 31
+    "eoy_total_staff": 12,
+    "remaining_budget_percent": 31
   }
 ]

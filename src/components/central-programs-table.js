@@ -12,6 +12,7 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Button, Modal, Row, Col } from 'react-bootstrap';
+import HelpIcon from "./help-icon"
 
 const { SearchBar } = Search;
 const { ExportCSVButton } = CSVExport;
@@ -143,14 +144,15 @@ const columns = [{
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
+  hidden: true,
   onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   type: 'number',
   align: 'right'
 }, {
-  dataField: 'staff',
+  dataField: 'eoy_total_staff',
   text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff</div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff <HelpIcon tooltipText="Full Time Equivalent (FTE) measured at the end of the school year." placement="right"/></div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -158,13 +160,12 @@ const columns = [{
   sortFunc: sort,
   type: 'number',
   align: 'right',
-  hidden: true,
   csvExport: false
 }, {
-  dataField: 'percent_under_budget',
-  formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
+  dataField: 'remaining_budget_percent',
+  formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.remaining_budget_percent, rowIndex),
   text: '% Within Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget</div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Remaining Budget</div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
