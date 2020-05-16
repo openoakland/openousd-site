@@ -201,7 +201,26 @@ const ModalColumnToggle = ({
   const [show, setShow] = useState(false)
 
   const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
+  const handleShow = () => {
+    setShow(true)
+    trackCustomEvent({
+      category: "Central Programs Table",
+      action: "Edit Columns",
+      label: "Open"
+    })
+  }
+
+  const handleColumnToggle = (column) => {
+    onColumnToggle(column.dataField)
+
+    const action = column.toggle ? "Hide Column" : "Show Column"
+
+    trackCustomEvent({
+      category: "Central Programs Table",
+      action: action,
+      label: column.text
+    })
+  }
 
   let columnsGroupedBy = {'visible': [], 'hidden': []}
 
@@ -220,7 +239,7 @@ const ModalColumnToggle = ({
       variant="light"
       key={ column.dataField }
       data-toggle="button"
-      onClick={ () => onColumnToggle(column.dataField) }
+      onClick={ () => handleColumnToggle(column) }
     >
       { column.toggle ? <RemoveCircleOutlineIcon/> : <AddCircleOutlineIcon/> }
       <span className="ml-2">{ column.text }</span>
