@@ -38,6 +38,15 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         {
+            resolve: `gatsby-plugin-intl`,
+            options: {
+                path: `${__dirname}/src/translations`,
+                languages: [`en`, `es`],
+                defaultLanguage: `en`,
+                redirect: true,
+            },
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `OpenOUSD`,
