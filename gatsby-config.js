@@ -1,3 +1,12 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development"
+
+console.log(`Using environment config: '${activeEnv}'`)
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
+
 module.exports = {
     pathPrefix: "/openousd-site",
     siteMetadata: {
@@ -45,6 +54,13 @@ module.exports = {
                 defaultLanguage: `en`,
                 redirect: true,
             },
+        },
+        {
+          resolve: `gatsby-source-contentful`,
+          options: {
+            spaceId: `tqd0xcamk1ij`,
+            accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+          },
         },
         {
             resolve: `gatsby-plugin-manifest`,
