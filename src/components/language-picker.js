@@ -1,6 +1,7 @@
 import React from 'react'
 import { IntlContextConsumer, changeLocale } from 'gatsby-plugin-intl'
 import { NavDropdown } from 'react-bootstrap'
+import changeLanguageIcon from '../images/icons/ic_change-language.svg'
 
 
 const languageName = {
@@ -8,13 +9,16 @@ const languageName = {
   es: "Español",
 }
 
-const LanguagePicker = () => {
+const LanguagePicker = (props) => {
+
+    const ChangeLanguageIcon = () =>
+      (<img className="change-language-icon" src={changeLanguageIcon} alt="icon of language characters"/>)
 
     return (
-        <div id="language-picker" className="">
+        <div className={`${props.className} language-picker`}>
             <IntlContextConsumer>
                 {({ languages, language: currentLocale }) => (
-                    <NavDropdown title={languageName[currentLocale]}>
+                    <NavDropdown alignRight title={<span><ChangeLanguageIcon/> {languageName[currentLocale]}</span>}>
                     {languages.map(language => (
                         <NavDropdown.Item
                           key={language}

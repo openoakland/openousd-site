@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import LanguagePicker from './language-picker'
 
 const Layout = ({ children, pageClassName }) => {
   const data = useStaticQuery(graphql`
@@ -27,7 +26,6 @@ const Layout = ({ children, pageClassName }) => {
   return (
     <>
     <Header siteTitle={data.site.siteMetadata.title} />
-    <LanguagePicker/>
     <div className={`${pageClassName} main-container mx-auto`}>
       <main >{children}</main>
     </div>
