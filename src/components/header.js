@@ -33,10 +33,11 @@ const Header = ({ siteTitle }) => (
                         <Nav.Item><Link to="/" activeClassName="active"><span className="d-none d-md-block"><span className="dot"/></span><FormattedMessage id="navigation.index"/></Link></Nav.Item>
                         <Nav.Item><Link to="/central-programs/" activeClassName="active"><span className="d-none d-md-block"><span className="dot"/></span><FormattedMessage id="navigation.central-programs"/></Link></Nav.Item>
                         <Nav.Item><Link to="/contact/" activeClassName="active"><span className="d-none d-md-block"><span className="dot"/></span><FormattedMessage id="navigation.contact"/></Link></Nav.Item>
-                        <LanguagePicker className=""/>
+                        <LanguagePicker className="d-none d-md-block pr-3"/>
                     </div>
                 </Nav>
             </Navbar.Collapse>
+            <LanguagePicker className="d-md-none pr-3"/>
         </Navbar>
     </>
 )

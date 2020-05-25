@@ -15,10 +15,10 @@ const LanguagePicker = (props) => {
       (<img className="change-language-icon" src={changeLanguageIcon} alt="icon of language characters"/>)
 
     return (
-        <div className={`${props.className} language-picker`}>
+        <div className="language-picker">
             <IntlContextConsumer>
                 {({ languages, language: currentLocale }) => (
-                    <NavDropdown alignRight title={<span><ChangeLanguageIcon/> {languageName[currentLocale]}</span>}>
+                    <NavDropdown alignRight className={props.className} title={<span><ChangeLanguageIcon/> {languageName[currentLocale]}</span>}>
                     {languages.map(language => (
                         <NavDropdown.Item
                           key={language}

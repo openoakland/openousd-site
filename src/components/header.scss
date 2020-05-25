@@ -1,3 +1,7 @@
+@import "../styles/bootstrap/functions";
+@import "../styles/bootstrap/variables";
+@import "../styles/bootstrap/mixins/breakpoints";
+
 .container.header{
     margin-bottom:0;
     padding:0;
@@ -25,6 +29,14 @@
 #menu-row {
     box-shadow:  $box-shadow;
 }
+
+.language-picker {
+    a {
+        color: black !important;
+    }
+}
+
+
 .menu {
     width: 100%;
     hr {
@@ -36,15 +48,19 @@
         box-sizing:inherit;
     }
 
-    // this is a hidden psuedo-element to keep the menu items centered
-    #menu-items::before {
-        display: flex;
-        flex: 1;
-        content:"placeholder";
-        margin: 1px auto 1px 1px;
-        visibility: hidden;
-        padding: 5px;
-        background: #ddd;
+    // this is a hidden psuedo-element to keep
+    // the menu items centered and balance with the langauage picker
+    // It's not needed on the mobile menu
+    @include media-breakpoint-up(md) {
+        #menu-items::before {
+            display: flex;
+            flex: 1;
+            content:"placeholder";
+            margin: 1px auto 1px 1px;
+            visibility: hidden;
+            padding: 5px;
+            background: #ddd;
+        }
     }
 
     #menu-items {
@@ -56,9 +72,6 @@
 
             .nav-item {
                 margin-left: auto;
-                a {
-                    color: black;
-                }
             }
         }
 
