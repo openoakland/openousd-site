@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => (
                         <Link to="/"><img src={logo} alt="Open OUSD and OpenOakland logos" /></Link>
                     </div>
                     <div id="tagline" className="text-center text-lg-right pt-2">
-                        Volunteers providing transparent access to the Oakland Unified School District's central office
+                        <FormattedMessage id="navigation.tagline"/>
                     </div>
                 </div>
             </Navbar>
