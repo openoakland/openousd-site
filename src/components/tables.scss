@@ -1,26 +1,28 @@
-a, .btn-link, .table-header {
-    color: $theme-blue;
-}
+.react-bootstrap-table {
+    a, .btn-link, .table-header {
+        color: $theme-blue;
+    }
 
-.table-header {
-    font-size: 1.1rem;
+    .table-header {
+        font-size: 1.1rem;
+    }
+
+    .first-row {
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+    }
+
+    .strong {
+        font-weight: 800;
+    }
+
+    .over-budget {
+        color: #E60000;
+    }
 }
 
 .search-bar {
     font-style: italic;
     border-radius: 1rem;
     width: 300px;
-}
-
-.first-row {
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-}
-
-.strong {
-    font-weight: 800;
-}
-
-.over-budget {
-    color: #E60000;
 }
