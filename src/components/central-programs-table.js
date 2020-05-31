@@ -163,7 +163,7 @@ const columns = [{
   dataField: 'eoy_total_staff',
   formatter: (cell,row) => formatFTE(row.eoy_total_staff),
   text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff <HelpIcon tooltipText="Full Time Equivalent (FTE) measured at the end of the school year." placement="right"/></div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff * <HelpIcon tooltipText="Full Time Equivalent (FTE) rather than people. For example, 2 people working 20 hours a week = 1 FTE." placement="right"/></div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -315,6 +315,7 @@ const CentralProgramsTable = ({data}) => {
             rowClasses={rowClasses}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
+          <div className="footnote mb-3 mt-2">* Staff numbers change throughout the year due to people leaving the district, layoffs, or movement between departments. This count was taken the end of the year, but does not reflect layoffs that may have eliminated positions during the school year. We are working to get data which allows us to display these mid-year changes.</div>
           <div>
             <ExportCSVButton {...props.csvProps} className="btn-link download">
               <DownloadIcon/>Download Table Data as CSV
