@@ -34,9 +34,9 @@ const AboutDataPage = ({data}) => {
                             <ul>
                                 <li>
                                     <a
-                                        href="http://data.openoakland.org/dataset/oakland-unified-school-district-ousd-expenditures"
+                                        href="http://data.openoakland.org/dataset/oakland-unified-school-district-ousd-expenditures-and-staffing"
                                         target="_blank" rel="noopener noreferrer">
-                                        OUSD Expenditure Data
+                                        OUSD Expenditure and Staffing Data
                                     </a>
                                 </li>
                             </ul>
