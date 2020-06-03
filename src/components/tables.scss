@@ -26,3 +26,44 @@
     border-radius: 1rem;
     width: 300px;
 }
+
+// Show / hide columns
+
+#show-hide-columns-modal {
+    .modal-header {
+        border-bottom: 0px;
+        .close {
+            font-size: 2em !important;
+        }
+    }
+    .modal-body {
+        .heading {
+            font-size: 1.1em;
+        }
+        .column-option {
+            background-color: white;
+            border: 0px;
+            display: block;
+            margin-bottom: 3px;
+
+            span {
+                font-weight: normal;
+            }
+
+            &:hover {
+                background-color: #f8f9fa;
+            }
+
+            &.visible svg {
+                fill: rgb(182,46,61);
+            }
+
+            &.hidden svg {
+                fill: $theme-blue;
+            }
+        }
+    }
+    .modal-footer {
+        border-top: 0px;
+    }
+}

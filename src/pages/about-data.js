@@ -34,13 +34,13 @@ const AboutDataPage = ({data}) => {
                             <ul>
                                 <li>
                                     <a
-                                        href="http://data.openoakland.org/dataset/oakland-unified-school-district-ousd-expenditures"
+                                        href="http://data.openoakland.org/dataset/oakland-unified-school-district-ousd-expenditures-and-staffing"
                                         target="_blank" rel="noopener noreferrer">
-                                        OUSD Expenditure Data
+                                        OUSD Expenditure and Staffing Data
                                     </a>
                                 </li>
                             </ul>
-                            <p><Link to="/contact">Contact us</Link> to report an inaccuracy, offer feedback, or ask a question.</p>
+                            <p><Link to="/contact/">Contact us</Link> to report an inaccuracy, offer feedback, or ask a question.</p>
                         </div>
                     </Col>
                 </Row>
@@ -67,7 +67,7 @@ const AboutDataPage = ({data}) => {
                                     {' '}(this API is not live, but shows how the data is queried)
                                 </li>
                             </ul>
-                            <p><Link to="/contact">Contact us</Link> about making contributions to the project.</p>
+                            <p><Link to="/contact/">Contact us</Link> about making contributions to the project.</p>
                         </div>
                     </Col>
                 </Row>
