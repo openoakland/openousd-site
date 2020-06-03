@@ -1,17 +1,22 @@
-import React from "react"
+import React, { useState } from "react"
 import PropTypes from "prop-types"
-import BootstrapTable from 'react-bootstrap-table-next';
-// import paginationFactory from 'react-bootstrap-table2-paginator';
-import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit';
+import BootstrapTable from 'react-bootstrap-table-next'
+// import paginationFactory from 'react-bootstrap-table2-paginator'
+import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit'
 import './tables.scss'
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown';
-import ArrowDropUp from '@material-ui/icons/ArrowDropUp';
-import DownloadIcon from '@material-ui/icons/SaveAlt';
+import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
+import ArrowDropUp from '@material-ui/icons/ArrowDropUp'
+import DownloadIcon from '@material-ui/icons/SaveAlt'
+import CreateIcon from '@material-ui/icons/Create'
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline'
+import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
+import { Button, Modal, Row, Col } from 'react-bootstrap'
+import HelpIcon from "./help-icon"
 
-const { SearchBar } = Search;
-const { ExportCSVButton } = CSVExport;
-const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs';
+const { SearchBar } = Search
+const { ExportCSVButton } = CSVExport
+const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs'
 
 
 const formatToUSD = amount => {
@@ -20,7 +25,7 @@ const formatToUSD = amount => {
   return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
 }
 
-const formatBudgetPercentCell = (percent, rowIndex) => {
+const formatRemainingBudgetCell = (percent, rowIndex) => {
   let classes = ""
 
   if(percent < -3) {
@@ -32,12 +37,22 @@ const formatBudgetPercentCell = (percent, rowIndex) => {
   }
 }
 
+const formatFTE = (fte) => {
+  if(fte){
+    // Round but don't add trailing zeroes
+    fte = +fte.toFixed(2)
+  }
+
+  return <span>{fte}</span>
+}
+
 const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_staff: 0}
   return data.reduce((returnObject, currentItem) => {
-    returnObject.spending += +currentItem.spending;
-    returnObject.budget += +currentItem.budget;
-    returnObject.staff += +currentItem.staff;
+    returnObject.spending += +currentItem.spending
+    returnObject.budget += +currentItem.budget
+    returnObject.staff += +currentItem.staff
+    returnObject.eoy_total_staff += +currentItem.eoy_total_staff
     return returnObject
   }, initialObject)
 }
@@ -139,14 +154,17 @@ const columns = [{
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
+  hidden: true,
   onSort: (field,order) => trackSortEvent(field),
   sortFunc: sort,
   type: 'number',
   align: 'right'
 }, {
-  dataField: 'staff',
+  dataField: 'eoy_total_staff',
+  formatter: (cell,row) => formatFTE(row.eoy_total_staff),
   text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff</div>)},
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff * <HelpIcon tooltipText="Full Time Equivalent (FTE) rather than people. For example, 2 people working 20 hours a week = 1 FTE." placement="bottom"/></div>)},
+  headerStyle: (colum, colIndex) => { return { minWidth: '110px'} },
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -154,13 +172,12 @@ const columns = [{
   sortFunc: sort,
   type: 'number',
   align: 'right',
-  hidden: true,
   csvExport: false
 }, {
-  dataField: 'percent_under_budget',
-  formatter: (cell, row, rowIndex) => formatBudgetPercentCell(row.percent_under_budget, rowIndex),
-  text: 'Percent Under Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} % Within Budget</div>)},
+  dataField: 'remaining_budget_percent',
+  formatter: (cell, row, rowIndex) => formatRemainingBudgetCell(row.remaining_budget_percent, rowIndex),
+  text: 'Remaining Budget',
+  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Remaining Budget</div>)},
   sortCaret: getSortCaret,
   searchable: false,
   sort: true,
@@ -168,19 +185,102 @@ const columns = [{
   sortFunc: sort,
   type: 'number',
   align: 'right'
-}];
+}]
 
 const rowClasses = (row, rowIndex) => {
   if (rowIndex === 0) {
     return 'first-row'
   }
-};
+}
+
+const ModalColumnToggle = ({
+  columns,
+  onColumnToggle,
+  toggles
+}) => {
+
+  const [show, setShow] = useState(false)
+
+  const handleClose = () => setShow(false)
+  const handleShow = () => {
+    setShow(true)
+    trackCustomEvent({
+      category: "Central Programs Table",
+      action: "Edit Columns",
+      label: "Open"
+    })
+  }
+
+  const handleColumnToggle = (column) => {
+    onColumnToggle(column.dataField)
+
+    const action = column.toggle ? "Hide Column" : "Show Column"
+
+    trackCustomEvent({
+      category: "Central Programs Table",
+      action: action,
+      label: column.text
+    })
+  }
+
+  let columnsGroupedBy = {'visible': [], 'hidden': []}
+
+  columns
+    .reduce((r, col) => {
+      if (col.text !== "Program") {
+        col.toggle = toggles[col.dataField]
+        if(col.toggle) { r.visible.push(col) }
+        else {r.hidden.push(col)}
+      }
+      return r
+    }, columnsGroupedBy)
+
+  const ColumnOption = ({column}) => (
+    <Button className={`column-option py-3 py-md-2 ${column.toggle ? "visible" : "hidden"}`}
+      variant="light"
+      key={ column.dataField }
+      data-toggle="button"
+      onClick={ () => handleColumnToggle(column) }
+    >
+      { column.toggle ? <RemoveCircleOutlineIcon/> : <AddCircleOutlineIcon/> }
+      <span className="ml-2">{ column.text }</span>
+    </Button>
+  )
+
+  return (
+    <div className="d-md-flex justify-content-end">
+      <Button className="cta mb-3 my-md-0" onClick={handleShow} >
+        <CreateIcon className="pr-1"/>Edit Columns
+      </Button>
+      <Modal show={show} onHide={handleClose} id="show-hide-columns-modal" size="sm" centered>
+        <Modal.Header closeButton/>
+        <Modal.Body className="py-1 pl-5">
+          <div className={`heading strong py-2 ${columnsGroupedBy.visible.length > 0 ? "" : "d-none"}`}>Current Columns</div>
+          {
+            columnsGroupedBy.visible
+              .map((column) => (<ColumnOption column={column}/>))
+          }
+          <div className={`heading strong py-2 ${columnsGroupedBy.hidden.length > 0 ? "" : "d-none"}`}>Columns Not Shown</div>
+          {
+            columnsGroupedBy.hidden
+              .map((column) => (<ColumnOption column={column}/>))
+          }
+        </Modal.Body>
+        <Modal.Footer className="pt-3 pr-4">
+          {/*<Button variant="primary" className="cta" size="sm" onClick={handleClose}>
+                      Close
+                    </Button>*/}
+        </Modal.Footer>
+      </Modal>
+    </div>
+  )
+}
 
 
 const CentralProgramsTable = ({data}) => {
-  const firstRow = createFirstRow(data);
+  const firstRow = createFirstRow(data)
   // creates new array
-  data = data.concat([firstRow]);
+  data = data.concat([firstRow])
   return (
     <ToolkitProvider
       keyField="code"
@@ -190,14 +290,22 @@ const CentralProgramsTable = ({data}) => {
       exportCSV={{fileName: `openousd-central-programs.csv`}}
       bootstrap4
       search
+      columnToggle
     >
       {props => (
         <div>
-          <SearchBar
-            {...props.searchProps}
-            placeholder="Search programs"
-            className="search-bar mb-4"
-          />
+          <Row>
+            <Col md={8}>
+              <SearchBar
+                {...props.searchProps}
+                placeholder="Search programs"
+                className="search-bar mb-4"
+              />
+            </Col>
+            <Col>
+              <ModalColumnToggle { ...props.columnToggleProps } />
+            </Col>
+          </Row>
           <BootstrapTable
             // turning off pagination for now
             // pagination={paginationFactory()}
@@ -208,6 +316,7 @@ const CentralProgramsTable = ({data}) => {
             rowClasses={rowClasses}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
+          <div className="footnote mb-3 mt-2">* Staff numbers change throughout the year due to people leaving the district, layoffs, or movement between departments. This count was taken the end of the year, but does not reflect layoffs that may have eliminated positions during the school year. We are working to get data which allows us to display these mid-year changes.</div>
           <div>
             <ExportCSVButton {...props.csvProps} className="btn-link download">
               <DownloadIcon/>Download Table Data as CSV
