@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next'
 // import paginationFactory from 'react-bootstrap-table2-paginator'
@@ -53,6 +54,9 @@ const createFirstRow = data => {
 const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
+  }
+  if (row.name === "OUSD Police Department") {
+    return (<span className="strong"><Link to="/central-program/ousd-police-department/">{row.name}</Link></span>)
   }
   return (<span>{row.name}</span>)
 }
