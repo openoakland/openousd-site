@@ -4,8 +4,6 @@ import BootstrapTable from 'react-bootstrap-table-next'
 // import paginationFactory from 'react-bootstrap-table2-paginator'
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit'
 import './tables.scss'
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
-import ArrowDropUp from '@material-ui/icons/ArrowDropUp'
 import DownloadIcon from '@material-ui/icons/SaveAlt'
 import CreateIcon from '@material-ui/icons/Create'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline'
@@ -13,17 +11,12 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Button, Modal, Row, Col } from 'react-bootstrap'
 import HelpIcon from "./help-icon"
+import { getSortCaret, formatToUSD } from './table-utilities'
 
 const { SearchBar } = Search
 const { ExportCSVButton } = CSVExport
 const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs'
 
-
-const formatToUSD = amount => {
-  // it would be better to just useIntl.NumberFormat currency, but that seems to always
-  // add cents ie $2,330.00
-  return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
-}
 
 const formatRemainingBudgetCell = (percent, rowIndex) => {
   let classes = ""
@@ -79,18 +72,6 @@ const sort = (a, b, order, dataField, rowA, rowB) => {
   if (a > b) { return -1 }
   if (a < b) { return 1 }
   return 0
-}
-
-const getSortCaret = (order, column) => {
-  if (order === 'asc') {
-    return (<ArrowDropUp className="text-dark" />)
-  }
-  if (order === 'desc') {
-    return (<ArrowDropDown className="text-dark" />)
-  }
-  // invisible icon used as a spaceholder so that
-  // when an icon does render it does not shift the table column
-  return (<ArrowDropDown className="invisible"/>)
 }
 
 const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {

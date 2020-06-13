@@ -1,66 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import StaffRolesTable from "../components/central-program/staff-roles-table"
 import { graphql } from 'gatsby'
-import BootstrapTable from 'react-bootstrap-table-next';
-import ToolkitProvider from 'react-bootstrap-table2-toolkit';
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
-import ArrowDropUp from '@material-ui/icons/ArrowDropUp'
 
-const getSortCaret = (order, column) => {
-  if (order === 'asc') {
-    return (<ArrowDropUp className="text-dark" />)
-  }
-  if (order === 'desc') {
-    return (<ArrowDropDown className="text-dark" />)
-  }
-  // invisible icon used as a spaceholder so that
-  // when an icon does render it does not shift the table column
-  return (<ArrowDropDown className="invisible"/>)
-}
-
-const getColumns = () =>(
-  [{
-    dataField: 'job_class_description',
-    text: "Job Description",
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Role / Title {components.sortElement}</div>)},
-    sort: true,
-    sortCaret: getSortCaret,
-    searchable: false
-  },{
-    dataField: 'count',
-    text: 'Count',
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Number of Staff {components.sortElement}</div>)},
-    sort: true,
-    sortCaret: getSortCaret,
-    align: 'left',
-    searchable: false
-  }]
-)
-
-const StaffRolesTable = ({data}) => {
-
-  const columns = getColumns()
-
-  return (
-    <ToolkitProvider
-      keyField="job_class_description"
-      data={data}
-      columns={columns}
-      bootstrap4
-    >
-      {props => (
-        <div>
-          <BootstrapTable
-            classes=""
-            bordered={false}
-            {...props.baseProps}
-            defaultSorted={[{dataField: 'count', order: 'desc'}]}
-          />
-        </div>
-      )}
-    </ToolkitProvider>
-  )}
 
 export default ({ data }) => {
   const centralProgram = data.centralProgramsJson
