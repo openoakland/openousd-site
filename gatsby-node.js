@@ -1,6 +1,21 @@
 const path = require(`path`)
 var slugify = require('slugify')
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type CentralProgramsJson implements Node {
+      staff_roles: [StaffRole]
+    }
+
+    type StaffRole {
+      count: Int
+      job_class_description: String
+    }
+  `
+  createTypes(typeDefs)
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`

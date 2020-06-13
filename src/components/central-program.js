@@ -7,19 +7,6 @@ import ToolkitProvider from 'react-bootstrap-table2-toolkit';
 import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
 import ArrowDropUp from '@material-ui/icons/ArrowDropUp'
 
-const sort = (a, b, order, dataField, rowA, rowB) => {
-  a = parseInt(a)
-  b = parseInt(b)
-  if (order === "asc") {
-    if (a < b) { return -1 }
-    if (a > b) { return 1 }
-    return 0
-  }
-  if (a > b) { return -1 }
-  if (a < b) { return 1 }
-  return 0
-}
-
 const getSortCaret = (order, column) => {
   if (order === 'asc') {
     return (<ArrowDropUp className="text-dark" />)
@@ -47,7 +34,6 @@ const getColumns = () =>(
     sort: true,
     sortCaret: getSortCaret,
     align: 'left',
-    sortFunc: sort,
     searchable: false
   }]
 )
