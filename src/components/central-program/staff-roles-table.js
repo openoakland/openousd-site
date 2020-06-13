@@ -16,10 +16,10 @@ const getColumns = () =>(
   },{
     dataField: 'count',
     text: 'Count',
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Number of Staff {components.sortElement}</div>)},
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Number of Staff {components.sortElement}</div>)},
     sort: true,
     sortCaret: getSortCaret,
-    align: 'left',
+    align: 'right',
     searchable: false
   }]
 )
