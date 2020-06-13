@@ -23,14 +23,14 @@ const getColumns = () =>(
   [{
     dataField: 'job_class_description',
     text: "Job Description",
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Job Description {components.sortElement}</div>)},
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Role / Title {components.sortElement}</div>)},
     sort: true,
     sortCaret: getSortCaret,
     searchable: false
   },{
     dataField: 'count',
     text: 'Count',
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Count {components.sortElement}</div>)},
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Number of Staff {components.sortElement}</div>)},
     sort: true,
     sortCaret: getSortCaret,
     align: 'left',
