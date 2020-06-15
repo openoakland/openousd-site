@@ -1,4 +1,6 @@
 import React from "react"
+import PropTypes from "prop-types"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from 'react-bootstrap'
@@ -7,8 +9,7 @@ import StaffRolesTable from "../components/central-program/staff-roles-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import { graphql } from 'gatsby'
 
-
-export default ({ data }) => {
+const CentralProgram= ({ data }) => {
     const centralProgram = data.centralProgramsJson
     console.log(centralProgram.staff_roles)
     return (
@@ -42,3 +43,13 @@ export const query = graphql`
     }
   }
 `
+
+CentralProgram.propTypes = {
+    data: PropTypes.arrayOf(PropTypes.object),
+}
+
+CentralProgram.defaultProps = {
+    data: [],
+}
+
+export default CentralProgram
