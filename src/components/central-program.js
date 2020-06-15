@@ -7,19 +7,20 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
+import "./central-program/central-program.scss"
 import { graphql } from 'gatsby'
 
 const CentralProgram= ({ data }) => {
     const centralProgram = data.centralProgramsJson
-    console.log(centralProgram.staff_roles)
     return (
         <Layout>
         <SEO title={centralProgram.name} />
             <Container>
                 <Row>
                     <Col md={9} xl={6} className="mx-auto">
-                        <div>This is a placeholder for the {centralProgram.name} page.</div>
-                        <ProgramDataOverviewTable/>
+                        <h1>{centralProgram.name}</h1>
+                        <h2>Program Data for the {data.site.siteMetadata.latestSchoolYear} School Year</h2>
+                        <ProgramDataOverviewTable data={data}/>
                         <StaffRolesTable data={centralProgram.staff_roles} />
                     </Col>
                 </Row>
@@ -30,9 +31,15 @@ const CentralProgram= ({ data }) => {
 
 export const query = graphql`
   query($code: Int!) {
+    site {
+        siteMetadata {
+          latestSchoolYear
+        }
+    }
     centralProgramsJson(code: {eq: $code }) {
         name
         budget
+        remaining_budget_percent
         spending
         year
         code
