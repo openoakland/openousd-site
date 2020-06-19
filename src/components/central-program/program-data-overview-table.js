@@ -63,7 +63,7 @@ const SpendingOverview = ({data}) => {
       {props => (
         <div>
           <BootstrapTable
-            classes="spending-overview"
+            classes="overview"
             bordered={false}
             {...props.baseProps}
           />
@@ -115,7 +115,7 @@ const BudgetOverview = ({data}) => {
       {props => (
         <div>
           <BootstrapTable
-            classes="budget-overview"
+            classes="overview"
             bordered={false}
             {...props.baseProps}
           />
@@ -159,7 +159,7 @@ const StaffOverview = ({data}) => {
       {props => (
         <div>
           <BootstrapTable
-            classes="staff-overview"
+            classes="overview"
             bordered={false}
             {...props.baseProps}
           />
@@ -170,8 +170,8 @@ const StaffOverview = ({data}) => {
 }
 
 
-const ProgramDataOverviewTable = ({data}) => (
-    <div className="program-data-overview">
+const ProgramDataOverviewTable = ({data, className}) => (
+    <div className={`program-data-overview ${className}`}>
       <Heading/>
       <SpendingOverview data={data.centralProgramsJson}/>
       <BudgetOverview data={data.centralProgramsJson}/>

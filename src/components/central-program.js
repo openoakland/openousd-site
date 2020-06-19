@@ -19,9 +19,14 @@ const CentralProgram= ({ data }) => {
                 <Row>
                     <Col md={9} xl={6} className="mx-auto">
                         <h1>{centralProgram.name}</h1>
-                        <h2>Program Data for the {data.site.siteMetadata.latestSchoolYear} School Year</h2>
-                        <ProgramDataOverviewTable data={data}/>
-                        <StaffRolesTable data={centralProgram.staff_roles} />
+                        <div className="pt-4">
+                            <h2>Program Data for the {data.site.siteMetadata.latestSchoolYear} School Year</h2>
+                            <ProgramDataOverviewTable data={data} className="pt-2"/>
+                        </div>
+                        <div className="pt-4">
+                            <h2 className="pb-3">{`Program Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                            <StaffRolesTable data={centralProgram.staff_roles} />
+                        </div>
                     </Col>
                 </Row>
             </Container>
