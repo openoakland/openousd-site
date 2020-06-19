@@ -61,7 +61,7 @@ export const query = graphql`
         name
         category
         remaining_budget_percent
-        eoy_total_staff
+        eoy_total_fte
         budget
         spending
         year

@@ -41,12 +41,12 @@ const formatFTE = (fte) => {
 }
 
 const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_fte: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending
     returnObject.budget += +currentItem.budget
     returnObject.staff += +currentItem.staff
-    returnObject.eoy_total_staff += +currentItem.eoy_total_staff
+    returnObject.eoy_total_fte += +currentItem.eoy_total_fte
     return returnObject
   }, initialObject)
 }
@@ -145,8 +145,8 @@ const columns = [{
   type: 'number',
   align: 'right'
 }, {
-  dataField: 'eoy_total_staff',
-  formatter: (cell,row) => formatFTE(row.eoy_total_staff),
+  dataField: 'eoy_total_fte',
+  formatter: (cell,row) => formatFTE(row.eoy_total_fte),
   text: 'Staff',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff * <HelpIcon tooltipText="Full Time Equivalent (FTE) rather than people. For example, 2 people working 20 hours a week = 1 FTE." placement="bottom"/></div>)},
   headerStyle: (colum, colIndex) => { return { minWidth: '110px'} },

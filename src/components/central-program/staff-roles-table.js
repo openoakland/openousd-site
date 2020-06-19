@@ -7,14 +7,14 @@ import { getSortCaret } from '../table-utilities'
 
 const getColumns = () =>(
   [{
-    dataField: 'job_class_description',
+    dataField: 'role_description',
     text: "Job Description",
     headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Role / Title {components.sortElement}</div>)},
     sort: true,
     sortCaret: getSortCaret,
     searchable: false
   },{
-    dataField: 'count',
+    dataField: 'eoy_total_positions_for_role',
     text: 'Count',
     headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Number of Staff {components.sortElement}</div>)},
     sort: true,
@@ -30,7 +30,7 @@ const StaffRolesTable = ({data}) => {
 
   return (
     <ToolkitProvider
-      keyField="job_class_description"
+      keyField="role_description"
       data={data}
       columns={columns}
       bootstrap4

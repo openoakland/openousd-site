@@ -125,12 +125,57 @@ const BudgetOverview = ({data}) => {
   )
 }
 
+const StaffOverview = ({data}) => {
+
+  const columns = [{
+    dataField: 'description',
+    text: "Description",
+    headerFormatter: (column, colIndex, components) => { return (<div>Staff</div>)},
+  },{
+    dataField: 'value',
+    text: 'Value',
+    align: 'right',
+    headerFormatter: (column, colIndex, components) => {
+      return (
+        <div className="text-right">{data.eoy_total_positions}</div>
+      )
+    },
+  }]
+
+  const rows = [
+    {
+      description: "Full time equivalent (FTE)",
+      value: `${data.eoy_total_fte}`
+    }
+  ]
+
+  return (
+    <ToolkitProvider
+      keyField="description"
+      data={rows}
+      columns={columns}
+      bootstrap4
+    >
+      {props => (
+        <div>
+          <BootstrapTable
+            classes="staff-overview"
+            bordered={false}
+            {...props.baseProps}
+          />
+        </div>
+      )}
+    </ToolkitProvider>
+  )
+}
+
 
 const ProgramDataOverviewTable = ({data}) => (
     <div className="program-data-overview">
       <Heading/>
       <SpendingOverview data={data.centralProgramsJson}/>
       <BudgetOverview data={data.centralProgramsJson}/>
+      <StaffOverview data={data.centralProgramsJson}/>
     </div>
 )
 

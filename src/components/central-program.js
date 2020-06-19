@@ -40,12 +40,14 @@ export const query = graphql`
         name
         budget
         remaining_budget_percent
+        eoy_total_fte
+        eoy_total_positions
         spending
         year
         code
         staff_roles {
-          count
-          job_class_description
+          eoy_total_positions_for_role
+          role_description
         }
     }
   }
