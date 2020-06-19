@@ -8,14 +8,14 @@ import { getSortCaret } from '../table-utilities'
 const getColumns = () =>(
   [{
     dataField: 'role_description',
-    text: "Job Description",
+    text: "Role / Title",
     headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Role / Title {components.sortElement}</div>)},
     sort: true,
     sortCaret: getSortCaret,
     searchable: false
   },{
     dataField: 'eoy_total_positions_for_role',
-    text: 'Count',
+    text: 'Number of Staff',
     headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Number of Staff {components.sortElement}</div>)},
     sort: true,
     sortCaret: getSortCaret,
@@ -41,7 +41,7 @@ const StaffRolesTable = ({data}) => {
             classes=""
             bordered={false}
             {...props.baseProps}
-            defaultSorted={[{dataField: 'count', order: 'desc'}]}
+            defaultSorted={[{dataField: 'eoy_total_positions_for_role', order: 'desc'}]}
           />
         </div>
       )}

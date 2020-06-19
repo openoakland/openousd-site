@@ -9,8 +9,8 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type StaffRole {
-      count: Int
-      job_class_description: String
+      eoy_total_positions_for_role: Int
+      role_description: String
     }
   `
   createTypes(typeDefs)
