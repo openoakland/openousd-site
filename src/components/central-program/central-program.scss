@@ -15,5 +15,9 @@ $overview-table-bg-color: rgba(245,247,254,1);
         td, th {
             border: 0px;
         }
+
+        div.value {
+            font-weight: normal;
+        }
     }
 }

@@ -48,7 +48,7 @@ const SpendingOverview = ({data}) => {
     text: 'Value',
     headerFormatter: (column, colIndex, components) => {
       return (
-        <div className="text-right">{formatToUSD(data.spending)}</div>
+        <div className="text-right value">{formatToUSD(data.spending)}</div>
       )
     },
   }]
@@ -85,7 +85,7 @@ const BudgetOverview = ({data}) => {
     align: 'right',
     headerFormatter: (column, colIndex, components) => {
       return (
-        <div className="text-right">{formatToUSD(data.budget)}</div>
+        <div className="text-right value">{formatToUSD(data.budget)}</div>
       )
     },
   }]
@@ -137,7 +137,7 @@ const StaffOverview = ({data}) => {
     align: 'right',
     headerFormatter: (column, colIndex, components) => {
       return (
-        <div className="text-right">{data.eoy_total_positions}</div>
+        <div className="text-right value">{data.eoy_total_positions}</div>
       )
     },
   }]

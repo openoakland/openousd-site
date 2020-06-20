@@ -2,6 +2,16 @@ a, .btn-link, .table-header {
     color: $theme-blue;
 }
 
+th {
+    &:focus {
+        outline: none !important;
+    }
+
+    &.sortable {
+        cursor: pointer;
+    }
+}
+
 .table-header {
     font-size: 1.1rem;
 }
