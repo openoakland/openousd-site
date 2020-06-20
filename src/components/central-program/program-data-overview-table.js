@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider from 'react-bootstrap-table2-toolkit';
-import { formatToUSD, sort } from '../table-utilities'
+import { formatToUSD, formatFTE } from '../table-utilities'
 
 
 const Heading = () => {
@@ -145,7 +145,7 @@ const StaffOverview = ({data}) => {
   const rows = [
     {
       description: "Full time equivalent (FTE)",
-      value: `${data.eoy_total_fte}`
+      value: `${formatFTE(data.eoy_total_fte)}`
     }
   ]
 

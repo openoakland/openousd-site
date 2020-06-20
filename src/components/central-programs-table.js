@@ -12,7 +12,7 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Button, Modal, Row, Col } from 'react-bootstrap'
 import HelpIcon from "./help-icon"
-import { getSortCaret, formatToUSD, sort } from './table-utilities'
+import { getSortCaret, formatToUSD, formatFTE, sort } from './table-utilities'
 
 const { SearchBar } = Search
 const { ExportCSVButton } = CSVExport
@@ -29,15 +29,6 @@ const formatRemainingBudgetCell = (percent, rowIndex) => {
   if(rowIndex !== 0){
     return <span className={classes}>{percent}%</span>
   }
-}
-
-const formatFTE = (fte) => {
-  if(fte){
-    // Round but don't add trailing zeroes
-    fte = +fte.toFixed(2)
-  }
-
-  return <span>{fte}</span>
 }
 
 const createFirstRow = data => {
@@ -62,7 +53,7 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
 }
 
 const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
-  return sort(a, b, order, dataField, rowA, rowB, TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
+  return sort(a, b, order, dataField, rowA, rowB, 'name', TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
 }
 
 const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {

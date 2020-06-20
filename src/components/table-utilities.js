@@ -21,11 +21,11 @@ export const formatToUSD = amount => {
 }
 
 
-export const sort = (a, b, order, dataField, rowA, rowB, totalRowName) => {
-  if (rowA.name === totalRowName) {
+export const sort = (a, b, order, dataField, rowA, rowB, firstColDatafield, totalRowName) => {
+  if (rowA[firstColDatafield] === totalRowName) {
     return -1
   }
-  if (rowB.name === totalRowName) {
+  if (rowB[firstColDatafield] === totalRowName) {
     return 1
   }
   if (order === "asc") {
@@ -36,4 +36,13 @@ export const sort = (a, b, order, dataField, rowA, rowB, totalRowName) => {
   if (a > b) { return -1 }
   if (a < b) { return 1 }
   return 0
+}
+
+export const formatFTE = (fte) => {
+  if(fte){
+    // Round but don't add trailing zeroes
+    fte = +fte.toFixed(2)
+  }
+
+  return fte
 }
