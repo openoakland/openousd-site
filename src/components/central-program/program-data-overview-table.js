@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider from 'react-bootstrap-table2-toolkit';
-import { formatToUSD } from '../table-utilities'
+import { formatToUSD, sort } from '../table-utilities'
 
 
 const Heading = () => {

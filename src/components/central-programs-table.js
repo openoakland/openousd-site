@@ -12,7 +12,7 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Button, Modal, Row, Col } from 'react-bootstrap'
 import HelpIcon from "./help-icon"
-import { getSortCaret, formatToUSD } from './table-utilities'
+import { getSortCaret, formatToUSD, sort } from './table-utilities'
 
 const { SearchBar } = Search
 const { ExportCSVButton } = CSVExport
@@ -61,21 +61,8 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   return (<span>{row.name}</span>)
 }
 
-const sort = (a, b, order, dataField, rowA, rowB) => {
-  if (rowA.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
-    return -1
-  }
-  if (rowB.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
-    return 1
-  }
-  if (order === "asc") {
-    if (a < b) { return -1 }
-    if (a > b) { return 1 }
-    return 0
-  }
-  if (a > b) { return -1 }
-  if (a < b) { return 1 }
-  return 0
+const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
+  return sort(a, b, order, dataField, rowA, rowB, TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
 }
 
 const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {
@@ -104,7 +91,7 @@ const columns = [{
   sortCaret: getSortCaret,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   events: {
     onClick: (e, column, columnIndex, row, rowIndex) => trackTableCellClickEvent(e, column, columnIndex, row, rowIndex)
   }
@@ -115,7 +102,7 @@ const columns = [{
   sortCaret: getSortCaret,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   hidden: true,
   align: 'left'
 }, {
@@ -128,7 +115,7 @@ const columns = [{
   searchable: false,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right'
 }, {
@@ -141,7 +128,7 @@ const columns = [{
   sort: true,
   hidden: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right'
 }, {
@@ -154,7 +141,7 @@ const columns = [{
   searchable: false,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right',
   csvExport: false
@@ -167,7 +154,7 @@ const columns = [{
   searchable: false,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right'
 }]

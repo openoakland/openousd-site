@@ -19,3 +19,21 @@ export const formatToUSD = amount => {
   // add cents ie $2,330.00
   return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
 }
+
+
+export const sort = (a, b, order, dataField, rowA, rowB, totalRowName) => {
+  if (rowA.name === totalRowName) {
+    return -1
+  }
+  if (rowB.name === totalRowName) {
+    return 1
+  }
+  if (order === "asc") {
+    if (a < b) { return -1 }
+    if (a > b) { return 1 }
+    return 0
+  }
+  if (a > b) { return -1 }
+  if (a < b) { return 1 }
+  return 0
+}
