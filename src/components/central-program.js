@@ -8,6 +8,8 @@ import { Container, Row, Col } from 'react-bootstrap'
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnitsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
+import HorizontalChart from "../components/central-program/horizontal-chart"
+
 import "./central-program/central-program.scss"
 import { graphql } from 'gatsby'
 
@@ -30,6 +32,7 @@ const CentralProgram= ({ data }) => {
                         </div>
                         <div className="pt-4">
                             <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                            <HorizontalChart data={centralProgram.staff_bargaining_units}/>
                             <StaffLaborUnitsTable data={centralProgram.staff_bargaining_units} />
                         </div>
                     </Col>

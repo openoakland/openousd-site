@@ -9,8 +9,9 @@ const StaffLaborUnionsTable = ({data}) => {
   const columns = [{
     dataField: 'description',
     text: "Labor Union",
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Labor Union</div>)},
-    sort: false,
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Labor Union {components.sortElement}</div>)},
+    sort: true,
+    sortCaret: getSortCaret,
     searchable: false
   },{
     dataField: 'eoy_total_positions_for_bu',
