@@ -6,11 +6,18 @@ exports.createSchemaCustomization = ({ actions }) => {
   const typeDefs = `
     type CentralProgramsJson implements Node {
       staff_roles: [StaffRole]
+      staff_bargaining_units: [StaffBargainingUnit]
     }
 
     type StaffRole {
       eoy_total_positions_for_role: Int
       role_description: String
+    }
+
+    type StaffBargainingUnit {
+      abbreviation: String
+      description: String
+      eoy_total_positions_for_bu: Int
     }
   `
   createTypes(typeDefs)

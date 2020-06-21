@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import { Container, Row, Col } from 'react-bootstrap'
 
 import StaffRolesTable from "../components/central-program/staff-roles-table"
+import StaffLaborUnitsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import "./central-program/central-program.scss"
 import { graphql } from 'gatsby'
@@ -26,6 +27,10 @@ const CentralProgram= ({ data }) => {
                         <div className="pt-4">
                             <h2 className="pb-3">{`Program Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                             <StaffRolesTable data={centralProgram.staff_roles} />
+                        </div>
+                        <div className="pt-4">
+                            <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                            <StaffLaborUnitsTable data={centralProgram.staff_bargaining_units} />
                         </div>
                     </Col>
                 </Row>
@@ -51,8 +56,13 @@ export const query = graphql`
         year
         code
         staff_roles {
-          eoy_total_positions_for_role
-          role_description
+            eoy_total_positions_for_role
+            role_description
+        }
+        staff_bargaining_units {
+            eoy_total_positions_for_bu
+            description
+            abbreviation
         }
     }
   }

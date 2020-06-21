@@ -9,6 +9,9 @@ th {
 
     &.sortable {
         cursor: pointer;
+        &:hover {
+            background-color: $hover-highlight;
+        }
     }
 }
 
@@ -59,7 +62,7 @@ th {
             }
 
             &:hover {
-                background-color: #f8f9fa;
+                background-color: $hover-highlight;
             }
 
             &.visible svg {

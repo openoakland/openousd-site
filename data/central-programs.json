@@ -20,11 +20,11 @@
       },
       {
         "role_description": "Financial Accountant III",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 5
       },
       {
         "role_description": "Manager Program Accounting",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Mgr Central Office Accounting",
@@ -41,6 +41,23 @@
       {
         "role_description": "Senior Computer Operator",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 8
       }
     ]
   },
@@ -67,6 +84,23 @@
         "role_description": "Manager Accounts Payable",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 5
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
+      }
     ]
   },
   {
@@ -92,6 +126,18 @@
         "role_description": "Executive Assistant Board",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 3
+      },
+      {
+        "abbreviation": "None",
+        "description": "None",
+        "eoy_total_positions_for_bu": 7
+      }
     ]
   },
   {
@@ -115,7 +161,7 @@
       },
       {
         "role_description": "Financial Analyst",
-        "eoy_total_positions_for_role": 15
+        "eoy_total_positions_for_role": 11
       },
       {
         "role_description": "Financial Officer Budget Devel",
@@ -148,6 +194,23 @@
       {
         "role_description": "Sr Financial Analyst",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 8
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 12
       }
     ]
   },
@@ -278,6 +341,28 @@
         "role_description": "Technician Telecommunications",
         "eoy_total_positions_for_role": 4
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "BCTC",
+        "description": "Building and Construction Trades Council",
+        "eoy_total_positions_for_bu": 88
+      },
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 9
+      }
     ]
   },
   {
@@ -311,6 +396,23 @@
         "role_description": "Specialist Charter School Comp",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
+      }
     ]
   },
   {
@@ -327,6 +429,13 @@
       {
         "role_description": "Chief Financial Officer",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   },
@@ -357,6 +466,18 @@
         "role_description": "Project Manager",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
+      }
     ]
   },
   {
@@ -376,7 +497,7 @@
       },
       {
         "role_description": "Coordinator Classified",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Dir AA Girls & Young Women Ach",
@@ -389,6 +510,18 @@
       {
         "role_description": "Ombudsperson",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 3
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 2
       }
     ]
   },
@@ -425,7 +558,7 @@
       },
       {
         "role_description": "Mgr Publications",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Operations Engineer",
@@ -453,7 +586,7 @@
       },
       {
         "role_description": "Specialist Translator-Chinese",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "SpecialistTranslator-Spanish",
@@ -461,11 +594,33 @@
       },
       {
         "role_description": "Specialist Translator-Vietname",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Video Technician",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 5
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 11
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
       }
     ]
   },
@@ -482,7 +637,7 @@
     "staff_roles": [
       {
         "role_description": "Administrative Assistant III",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Administrative Assist I Bil",
@@ -514,7 +669,7 @@
       },
       {
         "role_description": "Clinic Liaison",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Commnty Coord/Program Assist",
@@ -526,7 +681,7 @@
       },
       {
         "role_description": "Coord After School Program",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coord Attendance Discipline",
@@ -534,7 +689,7 @@
       },
       {
         "role_description": "Coord Community School Leader",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coordinator Health Services",
@@ -542,11 +697,11 @@
       },
       {
         "role_description": "Coordinator Wellness",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coord Juvenile Justice Center",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coord Restorative Justice",
@@ -558,11 +713,11 @@
       },
       {
         "role_description": "Dir Behavior Hlth Initiatives",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Director Health and Wellness",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Exec Dir Community Schools",
@@ -574,7 +729,7 @@
       },
       {
         "role_description": "Manager Community Partnership",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Noon Supervisor",
@@ -598,15 +753,15 @@
       },
       {
         "role_description": "Prog Mgr Restorative Justice",
-        "eoy_total_positions_for_role": 7
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "Program Assistant III",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Program Manager After School",
-        "eoy_total_positions_for_role": 8
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Program Manager Certificated",
@@ -622,11 +777,11 @@
       },
       {
         "role_description": "Program Mgr Behavioral Health",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 5
       },
       {
         "role_description": "Program Mgr Community School",
-        "eoy_total_positions_for_role": 39
+        "eoy_total_positions_for_role": 24
       },
       {
         "role_description": "Program Mgr HIV/STD Prevention",
@@ -638,7 +793,7 @@
       },
       {
         "role_description": "Program Specialist-Health Educ",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Prog Specialist TSA 11 Months",
@@ -650,7 +805,7 @@
       },
       {
         "role_description": "Restorative Justic Facilitator",
-        "eoy_total_positions_for_role": 21
+        "eoy_total_positions_for_role": 20
       },
       {
         "role_description": "Social Worker",
@@ -658,7 +813,7 @@
       },
       {
         "role_description": "Spec CSSS Data & Sys Mgmt",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Spec Homeless Youth Prog",
@@ -670,11 +825,33 @@
       },
       {
         "role_description": "Specialist Wellness",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Teacher Education Enhancement",
         "eoy_total_positions_for_role": 8
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 15
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 54
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 55
       }
     ]
   },
@@ -696,6 +873,13 @@
       {
         "role_description": "Program Mgr Community School",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 2
       }
     ]
   },
@@ -762,6 +946,28 @@
         "role_description": "Sweeper Operator",
         "eoy_total_positions_for_role": 2
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "AFSCME",
+        "description": "American Federation of State, County and Municipal Employees",
+        "eoy_total_positions_for_bu": 220
+      },
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 6
+      }
     ]
   },
   {
@@ -783,6 +989,18 @@
         "role_description": "Teacher Structured Eng Immersn",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 2
+      }
     ]
   },
   {
@@ -798,11 +1016,11 @@
     "staff_roles": [
       {
         "role_description": "Administrative Assist II Bil",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "CDC Site Administrator",
-        "eoy_total_positions_for_role": 12
+        "eoy_total_positions_for_role": 6
       },
       {
         "role_description": "Classroom TSA 11 Months",
@@ -810,15 +1028,15 @@
       },
       {
         "role_description": "Director ECE",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Director Enh Prof Development",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Financial Accountant II",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Prog Specialist TSA 11 Months",
@@ -826,7 +1044,7 @@
       },
       {
         "role_description": "Specialist Enrollment ECE",
-        "eoy_total_positions_for_role": 16
+        "eoy_total_positions_for_role": 8
       },
       {
         "role_description": "Teacher TSA 11 Month - 12 Pay",
@@ -834,7 +1052,29 @@
       },
       {
         "role_description": "Trans Kinder Reading Tutor",
-        "eoy_total_positions_for_role": 91
+        "eoy_total_positions_for_role": 61
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 13
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 70
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 7
       }
     ]
   },
@@ -848,7 +1088,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": null,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 923,
@@ -867,7 +1108,7 @@
       },
       {
         "role_description": "Executive Office Assistant",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Liaison Family Parent",
@@ -879,11 +1120,28 @@
       },
       {
         "role_description": "Partner Network",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Program Manager Grants",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 4
       }
     ]
   },
@@ -908,19 +1166,19 @@
       },
       {
         "role_description": "Classroom TSA 11 Months",
-        "eoy_total_positions_for_role": 9
+        "eoy_total_positions_for_role": 7
       },
       {
         "role_description": "Coord English Lang Dev Svc",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coordinator Classified",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coord Multilingual Pathway",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Counselor",
@@ -954,6 +1212,23 @@
         "role_description": "Spec Unaccompanied Immig Child",
         "eoy_total_positions_for_role": 7
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 12
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 15
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 8
+      }
     ]
   },
   {
@@ -985,7 +1260,7 @@
       },
       {
         "role_description": "Deputy Chief Facilities",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Director Community Engagement",
@@ -1019,6 +1294,23 @@
         "role_description": "Special Community Engagement",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 5
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 5
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 15
+      }
     ]
   },
   {
@@ -1034,7 +1326,7 @@
     "staff_roles": [
       {
         "role_description": "Accountant I",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Administrative Assistant I",
@@ -1042,11 +1334,11 @@
       },
       {
         "role_description": "Administrative Assist I Bil",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Assistant Dir Food Service",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Exec Dir Nutrition Services",
@@ -1054,11 +1346,11 @@
       },
       {
         "role_description": "Financial Accountant I",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Financial Accountant II",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Manager Sustainability",
@@ -1066,7 +1358,7 @@
       },
       {
         "role_description": "Nutrition Svc Field Supervisor",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Specialist Nutrtn Svc Support",
@@ -1074,7 +1366,24 @@
       },
       {
         "role_description": "Supervisor Menu Planning",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 5
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 7
       }
     ]
   },
@@ -1107,7 +1416,7 @@
       },
       {
         "role_description": "Nurse",
-        "eoy_total_positions_for_role": 26
+        "eoy_total_positions_for_role": 25
       },
       {
         "role_description": "Program Manager Health Service",
@@ -1116,6 +1425,28 @@
       {
         "role_description": "Technician Aide 10 Mos",
         "eoy_total_positions_for_role": 2
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "AFSCME",
+        "description": "American Federation of State, County and Municipal Employees",
+        "eoy_total_positions_for_bu": 9
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 25
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 4
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   },
@@ -1140,7 +1471,7 @@
       },
       {
         "role_description": "Executive Director Instruction",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Network Superintendent HS",
@@ -1152,7 +1483,7 @@
       },
       {
         "role_description": "Program Mgr Home and Hospital",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Teacher Home/Hospital",
@@ -1161,6 +1492,23 @@
       {
         "role_description": "Teacher Tap",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 5
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 14
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 2
       }
     ]
   },
@@ -1193,7 +1541,7 @@
       },
       {
         "role_description": "Associate Credentials",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Associate Systems",
@@ -1201,7 +1549,7 @@
       },
       {
         "role_description": "Associate Talent Development",
-        "eoy_total_positions_for_role": 5
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Business Manager HR",
@@ -1213,11 +1561,11 @@
       },
       {
         "role_description": "Coordinator Benefits Mgmt",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coordinator Certificated",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Deputy Chief Talent Management",
@@ -1261,7 +1609,7 @@
       },
       {
         "role_description": "Partner School",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Regional Staff Analyst II HR",
@@ -1269,7 +1617,7 @@
       },
       {
         "role_description": "Regional Staffing Analyst I HR",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Secretary HRSS",
@@ -1291,6 +1639,28 @@
         "role_description": "Teacher Consulting Peer",
         "eoy_total_positions_for_role": 4
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 36
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 4
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
+      }
     ]
   },
   {
@@ -1303,7 +1673,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": 0,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 924,
@@ -1315,7 +1686,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": -9.8,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 932,
@@ -1332,6 +1704,13 @@
         "role_description": "Teacher ROTC",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 1
+      }
     ]
   },
   {
@@ -1344,7 +1723,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": 82.1,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 946,
@@ -1397,6 +1777,13 @@
         "role_description": "Staff Attorney",
         "eoy_total_positions_for_role": 2
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 11
+      }
     ]
   },
   {
@@ -1412,7 +1799,7 @@
     "staff_roles": [
       {
         "role_description": "Administrative Assistant I",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Business Mgr Central Office",
@@ -1424,7 +1811,7 @@
       },
       {
         "role_description": "Coach College/Career Pathways",
-        "eoy_total_positions_for_role": 14
+        "eoy_total_positions_for_role": 9
       },
       {
         "role_description": "Commnty Coord/Program Assist",
@@ -1456,7 +1843,7 @@
       },
       {
         "role_description": "Director Comprehensive Comm HS",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Mgr CTE C&C Pathways Sec Sch",
@@ -1482,6 +1869,28 @@
         "role_description": "Teacher Structured Eng Immersn",
         "eoy_total_positions_for_role": 12
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 13
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 14
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 21
+      }
     ]
   },
   {
@@ -1501,7 +1910,19 @@
       },
       {
         "role_description": "Partner Network",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   },
@@ -1523,6 +1944,13 @@
       {
         "role_description": "Manager Athletics & Activities",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 2
       }
     ]
   },
@@ -1552,6 +1980,18 @@
       {
         "role_description": "Sr Exec Asst Superintendent",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 2
       }
     ]
   },
@@ -1626,6 +2066,28 @@
         "role_description": "Teacher Structured Eng Immersn",
         "eoy_total_positions_for_role": 10
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 10
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 8
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 9
+      }
     ]
   },
   {
@@ -1647,6 +2109,18 @@
         "role_description": "Coordinator Classified",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
+      }
     ]
   },
   {
@@ -1659,7 +2133,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": 0,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 941,
@@ -1692,6 +2167,13 @@
         "role_description": "Superintendent",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 5
+      }
     ]
   },
   {
@@ -1704,7 +2186,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": 0.2,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 928,
@@ -1731,7 +2214,19 @@
       },
       {
         "role_description": "Mgr Master Sched Comp Stud Sup",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 40
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
       }
     ]
   },
@@ -1752,7 +2247,7 @@
       },
       {
         "role_description": "School Security Officer Coordinator",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Fingerprint Technician",
@@ -1786,6 +2281,28 @@
         "role_description": "Security and Safety Dispatcher",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "CSEA",
+        "description": "California School Employees Association",
+        "eoy_total_positions_for_bu": 9
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 86
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 6
+      }
     ]
   },
   {
@@ -1811,6 +2328,18 @@
         "role_description": "Prog Mgr Payroll Customer Svc",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 8
+      }
     ]
   },
   {
@@ -1823,7 +2352,8 @@
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": 100,
-    "staff_roles": []
+    "staff_roles": [],
+    "staff_bargaining_units": []
   },
   {
     "code": 962,
@@ -1847,6 +2377,18 @@
       {
         "role_description": "Partner Network",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   },
@@ -1873,6 +2415,18 @@
         "role_description": "Partner Network",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
+      }
     ]
   },
   {
@@ -1898,6 +2452,13 @@
         "role_description": "Mail Services Clerk",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 3
+      }
     ]
   },
   {
@@ -1922,6 +2483,23 @@
       {
         "role_description": "Operations Officer",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   },
@@ -1970,11 +2548,11 @@
       },
       {
         "role_description": "Research Assoc Disproportion",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Research Assoc Early Child",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Spec Human Capital Reporting",
@@ -1990,7 +2568,29 @@
       },
       {
         "role_description": "Strategic Fellow/Resident",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 3
+      },
+      {
+        "abbreviation": "None",
+        "description": "None",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 9
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 5
       }
     ]
   },
@@ -2057,6 +2657,28 @@
         "role_description": "Specialist Benefit",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 7
+      },
+      {
+        "abbreviation": "LEGL",
+        "description": null,
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 3
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
+      }
     ]
   },
   {
@@ -2084,7 +2706,7 @@
       },
       {
         "role_description": "Case Manager 24",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "Classroom TSA 10 Months",
@@ -2092,7 +2714,7 @@
       },
       {
         "role_description": "Community Relations Asst II",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Community Service Worker I",
@@ -2100,7 +2722,7 @@
       },
       {
         "role_description": "Coordinator Certificated",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Coordinator Special Education",
@@ -2152,7 +2774,7 @@
       },
       {
         "role_description": "Psychologist",
-        "eoy_total_positions_for_role": 49
+        "eoy_total_positions_for_role": 48
       },
       {
         "role_description": "Social Worker",
@@ -2206,6 +2828,33 @@
         "role_description": "Teacher Visually Impaired",
         "eoy_total_positions_for_role": 3
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "AFSCME",
+        "description": "American Federation of State, County and Municipal Employees",
+        "eoy_total_positions_for_bu": 41
+      },
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 3
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 171
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 37
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 7
+      }
     ]
   },
   {
@@ -2221,15 +2870,27 @@
     "staff_roles": [
       {
         "role_description": "Coordinator Compliance",
-        "eoy_total_positions_for_role": 5
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Officer Accountability Part",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Program Manager Compliance",
-        "eoy_total_positions_for_role": 12
+        "eoy_total_positions_for_role": 5
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 7
       }
     ]
   },
@@ -2262,7 +2923,24 @@
       },
       {
         "role_description": "Student Assignment Counselor",
-        "eoy_total_positions_for_role": 14
+        "eoy_total_positions_for_role": 10
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 10
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
       }
     ]
   },
@@ -2280,6 +2958,13 @@
       {
         "role_description": "Program Mgr Kinder Readiness",
         "eoy_total_positions_for_role": 1
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   },
@@ -2304,7 +2989,7 @@
       },
       {
         "role_description": "Classroom TSA 11 Months",
-        "eoy_total_positions_for_role": 46
+        "eoy_total_positions_for_role": 45
       },
       {
         "role_description": "Classroom TSA 12 Months",
@@ -2312,7 +2997,7 @@
       },
       {
         "role_description": "Coordinator Certificated",
-        "eoy_total_positions_for_role": 14
+        "eoy_total_positions_for_role": 7
       },
       {
         "role_description": "Coordinator Classified",
@@ -2336,11 +3021,11 @@
       },
       {
         "role_description": "Coord Social Emotional Learn",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Dir Continuous Sch Improvement",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Director Pre-K12 Science",
@@ -2400,7 +3085,7 @@
       },
       {
         "role_description": "Spec Instructional Materials",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Stock Clerk",
@@ -2409,6 +3094,33 @@
       {
         "role_description": "Teacher Structured Eng Immersn",
         "eoy_total_positions_for_role": 13
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "OEA",
+        "description": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 65
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 26
+      },
+      {
+        "abbreviation": "Teamsters",
+        "description": "Teamsters Local 70",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 27
       }
     ]
   },
@@ -2487,6 +3199,23 @@
         "role_description": "Technology Information Officer",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 27
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 3
+      }
     ]
   },
   {
@@ -2512,6 +3241,18 @@
         "role_description": "Specialist Transportation",
         "eoy_total_positions_for_role": 1
       }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Confidential",
+        "description": "Confidential",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "SEIU",
+        "description": "Service Employees International Union",
+        "eoy_total_positions_for_bu": 1
+      }
     ]
   },
   {
@@ -2531,15 +3272,32 @@
       },
       {
         "role_description": "Lead Truck Driver",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Stock Clerk",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Truck Driver I",
-        "eoy_total_positions_for_role": 12
+        "eoy_total_positions_for_role": 8
+      }
+    ],
+    "staff_bargaining_units": [
+      {
+        "abbreviation": "Teamsters",
+        "description": "Teamsters Local 70",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
+        "abbreviation": "Teamsters",
+        "description": "Teamsters Local 853",
+        "eoy_total_positions_for_bu": 9
+      },
+      {
+        "abbreviation": "UAOS",
+        "description": "United Administrators of Oakland Schools",
+        "eoy_total_positions_for_bu": 1
       }
     ]
   }
