@@ -44,7 +44,7 @@ const StaffRolesTable = ({data}) => {
   const columns = getColumns()
 
   const firstRow = createFirstRow(data)
-  data = data.concat([firstRow])
+  // data = data.concat([firstRow])
 
   return (
     <ToolkitProvider
