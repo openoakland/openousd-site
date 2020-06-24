@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
@@ -9,15 +10,18 @@ import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
+import SankeyChart from "../components/sankey-chart"
+import RequireWideScreen from "../components/require-wide-screen"
 
 import "./central-program/central-program.scss"
-import { graphql } from 'gatsby'
+
 
 const CentralProgram= ({ data }) => {
     const centralProgram = data.centralProgramsJson
     return (
         <Layout>
         <SEO title={centralProgram.name} />
+        <div className="central-program-page-template">
             <Container>
                 <Row>
                     <Col md={9} xl={6} className="mx-auto">
@@ -26,8 +30,21 @@ const CentralProgram= ({ data }) => {
                             <h2>Program Data for the {data.site.siteMetadata.latestSchoolYear} School Year</h2>
                             <ProgramDataOverviewTable data={data} className="pt-2"/>
                         </div>
-                        <div className="pt-4">
-                            <h2 className="pb-3">{`Program Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                    </Col>
+                </Row>
+            </Container>
+            <RequireWideScreen minScreenWidth={"sm"}>
+                <SankeyChart
+                    data={data.centralProgramsSankeyJson}
+                    margin={{top: 50, right: 240, bottom: 20, left: 200}}
+                    gaEventCategory="Central Program - Resourcing"
+                    includeCategoriesLink={false}/>
+            </RequireWideScreen>
+            <Container>
+                <Row>
+                    <Col md={9} xl={6} className="mx-auto">
+                        <div className="pt-4 pt-sm-2">
+                            <h2 className="pb-3 pt-sm-3 pt-md-0">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                             <StaffRolesTable data={centralProgram.staff_roles} />
                         </div>
                         <div className="pt-4">
@@ -38,6 +55,7 @@ const CentralProgram= ({ data }) => {
                     </Col>
                 </Row>
             </Container>
+        </div>
         </Layout>
     )
 }
@@ -68,15 +86,27 @@ export const query = graphql`
             abbreviation
         }
     }
+    centralProgramsSankeyJson(site_code: {eq: $code}) {
+        nodes {
+            total
+            type
+            id
+        }
+        links {
+            source
+            target
+            value
+        }
+    }
   }
 `
 
 CentralProgram.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.object),
+    data: PropTypes.object,
 }
 
 CentralProgram.defaultProps = {
-    data: [],
+    data: {},
 }
 
 export default CentralProgram

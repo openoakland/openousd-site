@@ -1,16 +1,14 @@
 import React, { useState } from "react"
 import { Link } from 'gatsby'
-import PropTypes from "prop-types"
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 import { ResponsiveSankey } from '@nivo/sankey'
 import { Button, ButtonGroup } from 'react-bootstrap';
 import HelpOutline from '@material-ui/icons/HelpOutline';
 
-function SankeyChart(props) {
+function ResourceChart(props) {
 
     const [groupByRestricted, setGroupByRestricted] = useState(false)
-    let includeCategoriesLink = props.includeCategoriesLink // defaults to true
 
     let totalsByNode = {}
     props.data.nodes.map(node => totalsByNode[node.id] = formatCurrency(node.total))
@@ -38,10 +36,12 @@ function SankeyChart(props) {
             <div className="node-tooltip">
                 <div className="node-name" style={{color: node.color}}>{node.id}</div>
                 <div className="node-total">{totalsByNode[node.id]}</div>
-                { node.subnodes && <SubNodes node={node}/> }
+                <SubNodes node={node}/>
             </div>
         )
     }
+
+    const margin = { top: 50, right: 200, bottom: 20, left: 240 }
 
     const xAxisLabels = (props) => (
         <g transform="translate(0,-30)" id="overlay">
@@ -55,40 +55,38 @@ function SankeyChart(props) {
     );
 
     return (
-        <div className="sankey-chart">
-            {props.restrictedData && // hide control component if there is no data to group by
-                <div id="sankey-grouping">
-                    <div className="control">
-                        <span className="label">Grouping:{' '}</span>
-                        <ButtonGroup>
-                            <Button size="sm"
-                                    onClick={() => {
-                                        setGroupByRestricted(false)
-                                        trackCustomEvent({
-                                            category: `Sankey - ${props.gaEventCategory}`,
-                                            action: "Change Grouping",
-                                            label: "None"
-                                        })
-                                    }}
-                                    active={!groupByRestricted}>
-                                None
-                            </Button>
-                            <Button size="sm"
-                                    onClick={() => {
-                                        setGroupByRestricted(true)
-                                        trackCustomEvent({
-                                            category: `Sankey - ${props.gaEventCategory}`,
-                                            action: "Change Grouping",
-                                            label: "Restricted / Unrestricted"
-                                        })
-                                    }}
-                                    active={groupByRestricted}>
-                                Restricted / Unrestricted
-                            </Button>
-                        </ButtonGroup>
-                    </div>
+        <div>
+            <div id="sankey-grouping">
+                <div className="control">
+                    <span className="label">Grouping:{' '}</span>
+                    <ButtonGroup>
+                        <Button size="sm"
+                                onClick={() => {
+                                    setGroupByRestricted(false)
+                                    trackCustomEvent({
+                                        category: "Sankey - Overview",
+                                        action: "Change Grouping",
+                                        label: "None"
+                                    })
+                                }}
+                                active={!groupByRestricted}>
+                            None
+                        </Button>
+                        <Button size="sm"
+                                onClick={() => {
+                                    setGroupByRestricted(true)
+                                    trackCustomEvent({
+                                        category: "Sankey - Overview",
+                                        action: "Change Grouping",
+                                        label: "Restricted / Unrestricted"
+                                    })
+                                }}
+                                active={groupByRestricted}>
+                            Restricted / Unrestricted
+                        </Button>
+                    </ButtonGroup>
                 </div>
-            }
+            </div>
             <div id="sankey-chart">
                 <div id="info">
                     <div className={"text-center" + (!groupByRestricted ? " d-none" : "")}>
@@ -97,7 +95,7 @@ function SankeyChart(props) {
                 </div>
                 <ResponsiveSankey
                     data={groupByRestricted ? props.restrictedData : props.data}
-                    margin={props.margin}
+                    margin={margin}
                     sort="descending"
                     align="justify"
                     colors={{ scheme: 'category10' }}
@@ -122,31 +120,19 @@ function SankeyChart(props) {
                     layers={['links', 'nodes', 'labels', 'legends', xAxisLabels]}
                     onClick={(data, event) => {
                         if("id" in data){
-                            trackCustomEvent({category: `Sankey - ${props.gaEventCategory}`,
+                            trackCustomEvent({category: "Sankey - Overview",
                                 action: "Click Node",
                                 label: data.id})
                         }
                     }}
                 />
                 <div className="text-center">
-                    <div className="footnote">Note: Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
-                    {includeCategoriesLink &&
-                        <div className="mt-3">
-                            <HelpOutline/> <Link to="/about-categories">Read more about the categories in this chart</Link>
-                        </div>
-                    }
+                    <div className="footnote mb-3">Note: Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
+                    <HelpOutline/> <Link to="/about-categories">Read more about the categories in this chart</Link>
                 </div>
             </div>
         </div>
     )
 }
 
-SankeyChart.propTypes = {
-    includeCategoriesLink: PropTypes.bool,
-}
-
-SankeyChart.defaultProps = {
-    includeCategoriesLink: true,
-}
-
-export default SankeyChart
+export default ResourceChart

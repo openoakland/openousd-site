@@ -180,11 +180,11 @@ const ProgramDataOverviewTable = ({data, className}) => (
 )
 
 ProgramDataOverviewTable.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.object),
+    data: PropTypes.object,
 }
 
 ProgramDataOverviewTable.defaultProps = {
-    data: [],
+    data: {},
 }
 
 export default ProgramDataOverviewTable
