@@ -3,6 +3,9 @@ var slugify = require('slugify')
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
+
+  // Defining types because Gatsby is making soem Int values String
+  // which breaks sortign and computation
   const typeDefs = `
     type CentralProgramsJson implements Node {
       staff_roles: [StaffRole]
@@ -25,6 +28,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
+  // code is the site code / OUSD identifier for program
   const result = await graphql(`
     query {
       allCentralProgramsJson {
@@ -36,6 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  // Some program names include parentheses, remove those so they don't end up in path
   const options = {
     remove: /[*+~.()'"!:@/]/g,
     lower: true

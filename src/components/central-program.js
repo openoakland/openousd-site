@@ -10,9 +10,6 @@ import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
-import SankeyChart from "../components/sankey-chart"
-import RequireWideScreen from "../components/require-wide-screen"
-
 import "./central-program/central-program.scss"
 
 
@@ -33,7 +30,7 @@ const CentralProgram= ({ data }) => {
                     </Col>
                 </Row>
             </Container>
-            {/*
+            {/* // TODO Figure out how to present large negative numbers in program expenditures
             {data.centralProgramsSankeyJson &&
                 <RequireWideScreen minScreenWidth={"sm"}>
                     <SankeyChart
