@@ -33,18 +33,22 @@ const CentralProgram= ({ data }) => {
                     </Col>
                 </Row>
             </Container>
-            <RequireWideScreen minScreenWidth={"sm"}>
-                <SankeyChart
-                    data={data.centralProgramsSankeyJson}
-                    margin={{top: 50, right: 240, bottom: 20, left: 200}}
-                    gaEventCategory="Central Program - Resourcing"
-                    includeCategoriesLink={false}/>
-            </RequireWideScreen>
+            {/*
+            {data.centralProgramsSankeyJson &&
+                <RequireWideScreen minScreenWidth={"sm"}>
+                    <SankeyChart
+                        data={data.centralProgramsSankeyJson}
+                        margin={{top: 50, right: 240, bottom: 20, left: 200}}
+                        gaEventCategory="Central Program - Resourcing"
+                        includeCategoriesLink={false}/>
+                </RequireWideScreen>
+            }
+            */}
             <Container>
                 <Row>
                     <Col md={9} xl={6} className="mx-auto">
-                        <div className="pt-4 pt-sm-2">
-                            <h2 className="pb-3 pt-sm-3 pt-md-0">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                        <div className="pt-4 pt-sm-4">
+                            <h2 className="pb-3 pt-sm-3 pt-md-2">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                             <StaffRolesTable data={centralProgram.staff_roles} />
                         </div>
                         <div className="pt-4">

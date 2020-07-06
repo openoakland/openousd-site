@@ -3,19 +3,14 @@
     "site_code": 901,
     "nodes": [
       {
-        "id": "Kaiser Health & Wellness w/EBCF",
-        "type": "resource",
-        "total": 570843.39
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 565434.77
       },
       {
-        "id": "Oakland Ed Fund - AAGLS",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 128363.25
+        "total": 759120.8
       },
       {
         "id": "PERS CLASSIFIED",
@@ -37,17 +32,17 @@
       {
         "value": 134950,
         "target": "CONSULTANTS",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 395702.12,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 216079.6,
+        "value": 349848.56,
         "target": "SUPV&ADM SALARIES",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "source": "Philanthropy / Grants"
       }
     ]
   },
@@ -55,7 +50,7 @@
     "site_code": 902,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 765519.5
       },
@@ -74,12 +69,12 @@
       {
         "value": 330476.74,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 126317.93,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -87,24 +82,19 @@
     "site_code": 903,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 329741.84
-      },
-      {
-        "id": "ESSA: Title IV, Part A, Student Support and Academic Enrichment",
-        "type": "resource",
-        "total": 248957.87
-      },
-      {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
-        "type": "resource",
-        "total": 354385.35
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 479374.03
+      },
+      {
+        "id": "Federal",
+        "type": "resource",
+        "total": 647057.6
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 343949.84
       },
       {
         "id": "Books and Other Reference Materials",
@@ -136,27 +126,27 @@
       {
         "value": 150000.25,
         "target": "Books and Other Reference Materials",
-        "source": "ESSA: Title IV, Part A, Student Support and Academic Enrichment"
+        "source": "Federal"
       },
       {
-        "value": 105242.56,
+        "value": 123956.94,
         "target": "Subagreements for Services",
-        "source": "ESSA: Title II, Part A, Supporting Effective Instruction"
+        "source": "Federal"
       },
       {
         "value": 264876.08,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 211321.63,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 105625.27,
+        "value": 135855.45,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "ESSA: Title II, Part A, Supporting Effective Instruction"
+        "source": "Federal"
       }
     ]
   },
@@ -164,7 +154,7 @@
     "site_code": 905,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 915117.82
       },
@@ -178,7 +168,7 @@
       {
         "value": 675739.75,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -186,12 +176,12 @@
     "site_code": 907,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 833954.77
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 797870.85
       },
@@ -220,17 +210,17 @@
       {
         "value": 514019.65,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 123250.8,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 437580.78,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -238,64 +228,34 @@
     "site_code": 909,
     "nodes": [
       {
-        "id": "WestEd",
-        "type": "resource",
-        "total": 276114.92
-      },
-      {
-        "id": "SERP Institute / NSF TRUmath",
-        "type": "resource",
-        "total": 136789.72
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1140418.4
       },
       {
-        "id": "BECHTEL",
+        "id": "Federal",
         "type": "resource",
-        "total": 386673.03
+        "total": 3044660.56
       },
       {
-        "id": "Kaiser Health & Wellness w/EBCF",
-        "type": "resource",
-        "total": 226482.48
-      },
-      {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 2867746.37
-      },
-      {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
-        "type": "resource",
-        "total": 100141.21
-      },
-      {
-        "id": "Measure G - Parcel Tax",
+        "id": "Parcel Taxes",
         "type": "resource",
         "total": 2646805.93
       },
       {
-        "id": "Lottery: Instructional Materials",
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 1567970.18
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 2867746.37
+      },
+      {
+        "id": "State",
         "type": "resource",
         "total": 2278166.37
-      },
-      {
-        "id": "Hellman Foundation",
-        "type": "resource",
-        "total": 136644.41
-      },
-      {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 2807729.63
-      },
-      {
-        "id": "Salesforce.Org",
-        "type": "resource",
-        "total": 327645.99
       },
       {
         "id": "PERS CLASSIFIED",
@@ -380,129 +340,134 @@
     ],
     "links": [
       {
-        "value": 233954.71,
+        "value": 382740.47,
         "target": "Approved Textbooks and Core Curricula Materials",
-        "source": "BECHTEL"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 1431545.31,
         "target": "Approved Textbooks and Core Curricula Materials",
-        "source": "Lottery: Instructional Materials"
+        "source": "State"
       },
       {
         "value": 846046.06,
         "target": "Books and Other Reference Materials",
-        "source": "Lottery: Instructional Materials"
+        "source": "State"
       },
       {
         "value": 497212.39,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
-        "value": 319708.38,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Central Office Supplemental"
+        "value": 114860.08,
+        "target": "EXTERNAL WORK ORDER SERVICES",
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 384513.73,
+        "value": 430541.73,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
         "value": 234594.49,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 319708.38,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 183937.2,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
         "value": 109537.14,
         "target": "PERS CLASSIFIED",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
         "value": 200220.03,
         "target": "PUPILSUPPT SALARIES",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
-        "value": 279903.57,
+        "value": 342571.21,
         "target": "STRS CERTIFICATED",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 318283.89,
-        "target": "STRS CERTIFICATED",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
         "value": 161471.12,
         "target": "STRS CERTIFICATED",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
-        "value": 1052417.2,
-        "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Central Office Supplemental"
+        "value": 279903.57,
+        "target": "STRS CERTIFICATED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 407022.75,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 249824.9,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "value": 1052417.2,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 342971.75,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 137564.16,
         "target": "SUPV&ADM SALARIES",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
-        "value": 1955053.63,
+        "value": 249824.9,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 2102402.8,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
-        "value": 159146.38,
+        "value": 188772.58,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Salesforce.Org"
-      },
-      {
-        "value": 598218.01,
-        "target": "TEACHERS SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 723539.76,
         "target": "TEACHERS SALARIES",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
-        "value": 190449.15,
+        "value": 598218.01,
+        "target": "TEACHERS SALARIES",
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 311917.5,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "WestEd"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 126295.34,
+        "target": "WORKERS COMP CERTIFICATED",
+        "source": "Federal"
       },
       {
         "value": 103687.85,
         "target": "WORKERS COMP CERTIFICATED",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 117303.4,
-        "target": "WORKERS COMP CERTIFICATED",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -510,24 +475,24 @@
     "site_code": 910,
     "nodes": [
       {
-        "id": "Federal Child Care, Center-based, FCTR, FHUD",
+        "id": "Federal",
         "type": "resource",
         "total": 471005.18
       },
       {
-        "id": "Kenneth Rainin Foundation",
+        "id": "State",
         "type": "resource",
-        "total": 1958447.79
+        "total": 5006588.75
       },
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 255897.27
       },
       {
-        "id": "California State Preschool Program",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 4999088.75
+        "total": 2008974.89
       },
       {
         "id": "Subagreements for Services",
@@ -627,104 +592,104 @@
     ],
     "links": [
       {
-        "value": 186109.26,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
         "value": 317811.42,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Kenneth Rainin Foundation"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 186109.26,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 344531.59,
         "target": "CLERICAL SALARIES",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 148172.25,
         "target": "CONSULTANTS",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 116834.74,
         "target": "GAS-HEATING-ELECTRICITY",
-        "source": "California State Preschool Program"
-      },
-      {
-        "value": 105404.84,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 157197.94,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Kenneth Rainin Foundation"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 105404.84,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "State"
       },
       {
         "value": 112822.66,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 725918,
         "target": "INTERFUND",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 298856.34,
         "target": "Interfund - Food Srvs Claims",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 147455.03,
         "target": "PUPILSUPPT SALARIES",
-        "source": "California State Preschool Program"
+        "source": "State"
+      },
+      {
+        "value": 143539.47,
+        "target": "STRS CERTIFICATED",
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 155420.95,
         "target": "STRS CERTIFICATED",
-        "source": "California State Preschool Program"
-      },
-      {
-        "value": 142862.93,
-        "target": "STRS CERTIFICATED",
-        "source": "Kenneth Rainin Foundation"
+        "source": "State"
       },
       {
         "value": 257576.81,
         "target": "Subagreements for Services",
-        "source": "California State Preschool Program"
-      },
-      {
-        "value": 766604.77,
-        "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 171613.4,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Federal Child Care, Center-based, FCTR, FHUD"
+        "source": "Federal"
+      },
+      {
+        "value": 766604.77,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "State"
       },
       {
         "value": 191426.88,
         "target": "SUPV&ADM SALARIES",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
         "value": 920733.88,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Kenneth Rainin Foundation"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 279833.31,
         "target": "TEACHERS SUBSTITUTES",
-        "source": "California State Preschool Program"
+        "source": "State"
       },
       {
-        "value": 464680.82,
+        "value": 464967.82,
         "target": "Transfers of Indirect Costs - Interfund",
-        "source": "California State Preschool Program"
+        "source": "State"
       }
     ]
   },
@@ -732,49 +697,34 @@
     "site_code": 912,
     "nodes": [
       {
-        "id": "Perkins Career and Technical Education",
-        "type": "resource",
-        "total": 474334
-      },
-      {
-        "id": "Salesforce.Org",
-        "type": "resource",
-        "total": 957639.25
-      },
-      {
-        "id": "Career Technical Education (CTE) Incentive Grant Program",
-        "type": "resource",
-        "total": 2844812.69
-      },
-      {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 1539073.47
-      },
-      {
-        "id": "Oakland Fund Children & Youth",
-        "type": "resource",
-        "total": 167786.17
-      },
-      {
-        "id": "Measure N - Parcel Tax",
-        "type": "resource",
-        "total": 438877.23
-      },
-      {
-        "id": "Atlantic Philanthropies",
-        "type": "resource",
-        "total": 1890983.48
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 280400.14
       },
       {
-        "id": "California Career Pathways Trust",
+        "id": "Federal",
         "type": "resource",
-        "total": 322951.52
+        "total": 474334
+      },
+      {
+        "id": "Parcel Taxes",
+        "type": "resource",
+        "total": 438877.23
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 3183517.72
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 1539073.47
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 3244716.21
       },
       {
         "id": "Transfers of Indirect Costs",
@@ -876,117 +826,117 @@
       {
         "value": 166794.43,
         "target": "CLASSSUPPT SALARIES",
-        "source": "California Career Pathways Trust"
+        "source": "State"
       },
       {
         "value": 426108.67,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 241052.78,
-        "target": "Computer $500-4,999",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 203697.01,
         "target": "Computer $500-4,999",
-        "source": "Perkins Career and Technical Education"
+        "source": "Federal"
       },
       {
-        "value": 158521.5,
+        "value": 261963.63,
+        "target": "Computer $500-4,999",
+        "source": "State"
+      },
+      {
+        "value": 376087.67,
         "target": "CONSULTANTS",
-        "source": "Atlantic Philanthropies"
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 133650,
+        "value": 168650,
         "target": "CONSULTANTS",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "State"
       },
       {
-        "value": 167786.17,
-        "target": "CONSULTANTS",
-        "source": "Oakland Fund Children & Youth"
-      },
-      {
-        "value": 105358.27,
+        "value": 151070.48,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "State"
       },
       {
         "value": 143888.97,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 698000,
         "target": "Other Construction",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "State"
       },
       {
         "value": 119338.15,
         "target": "PERS CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 100650.86,
+        "value": 107980.87,
+        "target": "STRS CERTIFICATED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 109729.25,
         "target": "STRS CLASSIFIED",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "State"
       },
       {
-        "value": 638440,
+        "value": 640940,
         "target": "Subagreements for Services",
-        "source": "Atlantic Philanthropies"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 132330.6,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 470631.37,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Atlantic Philanthropies"
-      },
-      {
-        "value": 639892.57,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
-      },
-      {
-        "value": 435123.64,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 118921.21,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 191103.73,
         "target": "SUPV&ADM SALARIES",
-        "source": "Measure N - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
-        "value": 110989.32,
+        "value": 581620.69,
         "target": "SUPV&ADM SALARIES",
-        "source": "Salesforce.Org"
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 521337.1,
+        "value": 639892.57,
+        "target": "SUPV&ADM SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 435123.64,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 544456.6,
         "target": "TEACHERS SALARIES",
-        "source": "Salesforce.Org"
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 421813.56,
+        "value": 157556.6,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 101554.2,
+        "value": 436793.55,
+        "target": "TEACHERS SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 124506.2,
         "target": "Transfers of Indirect Costs",
-        "source": "Career Technical Education (CTE) Incentive Grant Program"
+        "source": "State"
       }
     ]
   },
@@ -994,34 +944,24 @@
     "site_code": 918,
     "nodes": [
       {
-        "id": "State School Facilities Projects",
+        "id": "Bonds",
         "type": "resource",
-        "total": 126152.91
+        "total": 8958071.94
       },
       {
-        "id": "Prop 39 Charter Repairs",
-        "type": "resource",
-        "total": 122864.4
-      },
-      {
-        "id": "Prop 39 CA Clean Energy Jobs Act",
-        "type": "resource",
-        "total": 6099478.73
-      },
-      {
-        "id": "Measure J - General Obligation Bond",
-        "type": "resource",
-        "total": 1814602.91
-      },
-      {
-        "id": "Measure J - General Obligation Series 2015a",
-        "type": "resource",
-        "total": 7128107.31
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 197891.97
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 6225631.64
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 134444.9
       },
       {
         "id": "Other Construction",
@@ -1083,72 +1023,62 @@
       {
         "value": 292690.46,
         "target": "CLERICAL SALARIES",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 162509.51,
         "target": "Computer $500-4,999",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
-        "value": 197873.35,
+        "value": 1047340.62,
         "target": "Consultant Expense",
-        "source": "Measure J - General Obligation Bond"
+        "source": "Bonds"
       },
       {
-        "value": 849467.27,
-        "target": "Consultant Expense",
-        "source": "Measure J - General Obligation Series 2015a"
-      },
-      {
-        "value": 1729354.97,
+        "value": 1859148.63,
         "target": "CONSULTANTS",
-        "source": "Measure J - General Obligation Bond"
-      },
-      {
-        "value": 129793.66,
-        "target": "CONSULTANTS",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 299350.51,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 150884.92,
         "target": "Main Construction",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 6099478.73,
         "target": "Main Construction",
-        "source": "Prop 39 CA Clean Energy Jobs Act"
+        "source": "State"
       },
       {
-        "value": 2404403.79,
+        "value": 2203486.13,
         "target": "Other Construction",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 369394.86,
         "target": "PERS CLASSIFIED",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 133736.65,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 2001786.05,
         "target": "SUPV&ADM SALARIES",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       },
       {
         "value": 138566.28,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
       }
     ]
   },
@@ -1156,104 +1086,34 @@
     "site_code": 922,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "Other Revenue",
         "type": "resource",
-        "total": 781599.27
+        "total": 289839.21
       },
       {
-        "id": "Carol M. White Physical Education Grant",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 740522.81
+        "total": 4453134.75
       },
       {
-        "id": "FIRST 5 Alameda County (Prop 10)",
+        "id": "State",
         "type": "resource",
-        "total": 199759.4
+        "total": 2320662.32
       },
       {
-        "id": "Full Service Community Schools",
-        "type": "resource",
-        "total": 313442.37
-      },
-      {
-        "id": "Tobacco-Use Prevention Education: Grades 6-12",
-        "type": "resource",
-        "total": 262066.36
-      },
-      {
-        "id": "Prop 47: Learning Communities for School Success Program Grants",
-        "type": "resource",
-        "total": 808100.67
-      },
-      {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 3572290.24
       },
       {
-        "id": "Kaiser Health & Wellness w/EBCF",
+        "id": "Federal",
         "type": "resource",
-        "total": 3320396.31
+        "total": 5249051.8
       },
       {
-        "id": "After School Education and Safety (ASES)",
+        "id": "General (Base)",
         "type": "resource",
-        "total": 1193753.84
-      },
-      {
-        "id": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program",
-        "type": "resource",
-        "total": 1359385.95
-      },
-      {
-        "id": "Healthy Oakland Teens",
-        "type": "resource",
-        "total": 314938.27
-      },
-      {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
-        "type": "resource",
-        "total": 123315.34
-      },
-      {
-        "id": "Alameda County Public Health - Health and Wellness",
-        "type": "resource",
-        "total": 439322.77
-      },
-      {
-        "id": "Salesforce.Org",
-        "type": "resource",
-        "total": 120432.98
-      },
-      {
-        "id": "Wallace Foundation",
-        "type": "resource",
-        "total": 120312.95
-      },
-      {
-        "id": "Federal ProjectPrevention",
-        "type": "resource",
-        "total": 705280.26
-      },
-      {
-        "id": "Federal School Climate",
-        "type": "resource",
-        "total": 586496.6
-      },
-      {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 585638.55
-      },
-      {
-        "id": "Medi-Cal Billing Option",
-        "type": "resource",
-        "total": 443628.01
-      },
-      {
-        "id": "San Francisco Foundation",
-        "type": "resource",
-        "total": 313890.48
+        "total": 781599.27
       },
       {
         "id": "AFTERSCHOOL CUSTODIAL INTERPRO",
@@ -1368,214 +1228,204 @@
     ],
     "links": [
       {
-        "value": 462862.34,
-        "target": "AFTERSCHOOL CUSTODIAL INTERPRO",
-        "source": "After School Education and Safety (ASES)"
-      },
-      {
         "value": 229326.68,
         "target": "AFTERSCHOOL CUSTODIAL INTERPRO",
-        "source": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program"
+        "source": "Federal"
       },
       {
-        "value": 147871.6,
+        "value": 462862.34,
+        "target": "AFTERSCHOOL CUSTODIAL INTERPRO",
+        "source": "State"
+      },
+      {
+        "value": 156940,
         "target": "AUDIT EXPENSES",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
+      },
+      {
+        "value": 394694.23,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "Federal"
+      },
+      {
+        "value": 134872.72,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 1245050.88,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 103992.29,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Federal ProjectPrevention"
-      },
-      {
-        "value": 233946.31,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Federal School Climate"
-      },
-      {
-        "value": 375566.98,
+        "value": 235831.12,
         "target": "CLERICAL SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 140272.7,
-        "target": "CLERICAL SALARIES",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
         "value": 135619.02,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 566649.6,
-        "target": "CONSULTANTS",
-        "source": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program"
+        "value": 103282.76,
+        "target": "CLERICAL SALARIES",
+        "source": "State"
       },
       {
-        "value": 129780.03,
-        "target": "CONSULTANTS",
-        "source": "Federal ProjectPrevention"
+        "value": 375566.98,
+        "target": "CLERICAL SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 363620.73,
+        "value": 925807.48,
         "target": "CONSULTANTS",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "source": "Federal"
       },
       {
-        "value": 132547.37,
+        "value": 542235.73,
         "target": "CONSULTANTS",
-        "source": "Tobacco-Use Prevention Education: Grades 6-12"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 228079.97,
+        "target": "CONSULTANTS",
+        "source": "State"
+      },
+      {
+        "value": 213962.76,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "Federal"
+      },
+      {
+        "value": 237858.02,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 136492.08,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "State"
       },
       {
         "value": 606212.53,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 189826.78,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "value": 233270.07,
+        "target": "PERS CLASSIFIED",
+        "source": "Federal"
+      },
+      {
+        "value": 262740.19,
+        "target": "PERS CLASSIFIED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 134392.07,
+        "target": "PERS CLASSIFIED",
+        "source": "State"
       },
       {
         "value": 541272.93,
         "target": "PERS CLASSIFIED",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 196682.91,
-        "target": "PERS CLASSIFIED",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 163339.47,
         "target": "PUPILSUPPT SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 188032.79,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 120326.25,
+        "value": 700632.56,
         "target": "Subagreements for Services",
-        "source": "Carol M. White Physical Education Grant"
+        "source": "Federal"
       },
       {
-        "value": 221733.27,
+        "value": 1187685.41,
         "target": "Subagreements for Services",
-        "source": "Federal ProjectPrevention"
-      },
-      {
-        "value": 105323.04,
-        "target": "Subagreements for Services",
-        "source": "Full Service Community Schools"
-      },
-      {
-        "value": 1088340.1,
-        "target": "Subagreements for Services",
-        "source": "Kaiser Health & Wellness w/EBCF"
-      },
-      {
-        "value": 191250,
-        "target": "Subagreements for Services",
-        "source": "Medi-Cal Billing Option"
-      },
-      {
-        "value": 127443.97,
-        "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Central Office Supplemental"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 203905.15,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 277358.53,
-        "target": "SUPV&ADM SALARIES",
-        "source": "After School Education and Safety (ASES)"
+        "value": 127443.97,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 1899283.48,
+        "value": 887440.12,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 118940.04,
-        "target": "SUPV&ADM SALARIES",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
-      },
-      {
-        "value": 229532.4,
-        "target": "SUPV&ADM SALARIES",
-        "source": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program"
-      },
-      {
-        "value": 118357.56,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Federal ProjectPrevention"
-      },
-      {
-        "value": 113379.78,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Federal School Climate"
+        "source": "Federal"
       },
       {
         "value": 185645.85,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 103208.28,
+        "value": 133802.38,
         "target": "SUPV&ADM SALARIES",
-        "source": "Healthy Oakland Teens"
+        "source": "Other Revenue"
       },
       {
-        "value": 1054520.75,
+        "value": 1379541.96,
         "target": "SUPV&ADM SALARIES",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 127179.45,
+        "value": 673291.05,
         "target": "SUPV&ADM SALARIES",
-        "source": "Medi-Cal Billing Option"
+        "source": "State"
       },
       {
-        "value": 395932.52,
+        "value": 1899283.48,
         "target": "SUPV&ADM SALARIES",
-        "source": "Prop 47: Learning Communities for School Success Program Grants"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 204388.2,
-        "target": "SUPV&ADM SALARIES",
-        "source": "San Francisco Foundation"
+        "value": 118399.51,
+        "target": "TEACHER ON SPEC ASSIN SCHOOL",
+        "source": "Federal"
       },
       {
         "value": 101068.38,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Alameda County Public Health - Health and Wellness"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 313465.1,
         "target": "TEACHERS SALARIES",
-        "source": "Carol M. White Physical Education Grant"
+        "source": "Federal"
       },
       {
-        "value": 120756.53,
+        "value": 101366.9,
+        "target": "TEACHERS SALARIES STIPENDS",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 194380.31,
         "target": "Transfers of Indirect Costs",
-        "source": "After School Education and Safety (ASES)"
+        "source": "Federal"
+      },
+      {
+        "value": 162235.42,
+        "target": "Transfers of Indirect Costs",
+        "source": "State"
       },
       {
         "value": 212863.34,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -1583,19 +1433,19 @@
     "site_code": 923,
     "nodes": [
       {
-        "id": "NCLB: Title I, School Improvement Grant",
-        "type": "resource",
-        "total": 1001336.76
-      },
-      {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 184302.3
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 314032.87
+      },
+      {
+        "id": "Federal",
+        "type": "resource",
+        "total": 1001336.76
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
@@ -1622,22 +1472,22 @@
       {
         "value": 224440,
         "target": "Subagreements for Services",
-        "source": "NCLB: Title I, School Improvement Grant"
+        "source": "Federal"
       },
       {
         "value": 194358.3,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
-      },
-      {
-        "value": 131884.2,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "General (Base)"
       },
       {
         "value": 327497.1,
         "target": "SUPV&ADM SALARIES",
-        "source": "NCLB: Title I, School Improvement Grant"
+        "source": "Federal"
+      },
+      {
+        "value": 131884.2,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -1672,44 +1522,44 @@
     ],
     "links": [
       {
-        "value": 144895.98,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Central Office Supplemental"
-      },
-      {
         "value": 296468.38,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 1000017.9,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Central Office Supplemental"
+        "value": 144895.98,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 1856611.71,
         "target": "PUPILSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 152698.22,
-        "target": "STRS CERTIFICATED",
-        "source": "Central Office Supplemental"
+        "value": 1000017.9,
+        "target": "PUPILSUPPT SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 204064.43,
         "target": "STRS CERTIFICATED",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 152698.22,
+        "target": "STRS CERTIFICATED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 318213.97,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 111470.89,
         "target": "WORKERS COMP CERTIFICATED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -1717,24 +1567,24 @@
     "site_code": 929,
     "nodes": [
       {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 214870.72
+        "total": 441685.93
       },
       {
-        "id": "General Purpose",
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 1547828.32
+      },
+      {
+        "id": "General (Base)",
         "type": "resource",
         "total": 356422.4
       },
       {
-        "id": "Kaiser Health & Wellness w/EBCF",
+        "id": "Federal",
         "type": "resource",
-        "total": 440362.31
-      },
-      {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 1547828.32
+        "total": 224912.11
       },
       {
         "id": "CLERICAL SALARIES",
@@ -1776,42 +1626,42 @@
       {
         "value": 390746.67,
         "target": "CLERICAL SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 200000,
         "target": "CONSULTANTS",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 142323.07,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 146182.69,
         "target": "PERS CLASSIFIED",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 443727.61,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 247354.94,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 211794.83,
-        "target": "TEACHERS SALARIES",
-        "source": "Central Office Supplemental"
+        "value": 443727.61,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 209561.23,
         "target": "TEACHERS SALARIES",
-        "source": "Kaiser Health & Wellness w/EBCF"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 211794.83,
+        "target": "TEACHERS SALARIES",
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -1819,7 +1669,12 @@
     "site_code": 933,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 158898.73
+      },
+      {
+        "id": "General (Base)",
         "type": "resource",
         "total": 1311389.79
       },
@@ -1853,22 +1708,22 @@
       {
         "value": 180367.71,
         "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 697529.96,
         "target": "CONSULTANTS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 105205.11,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 117067.35,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -1876,14 +1731,14 @@
     "site_code": 936,
     "nodes": [
       {
-        "id": "Measure J - General Obligation Series 2015a",
-        "type": "resource",
-        "total": 149467.77
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1515341.33
+      },
+      {
+        "id": "Bonds",
+        "type": "resource",
+        "total": 149467.77
       },
       {
         "id": "PERS CLASSIFIED",
@@ -1905,22 +1760,22 @@
       {
         "value": 151126.54,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 162367.02,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
-      },
-      {
-        "value": 949165.29,
-        "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 106385.42,
         "target": "SUPV&ADM SALARIES",
-        "source": "Measure J - General Obligation Series 2015a"
+        "source": "Bonds"
+      },
+      {
+        "value": 949165.29,
+        "target": "SUPV&ADM SALARIES",
+        "source": "General (Base)"
       }
     ]
   },
@@ -1928,24 +1783,19 @@
     "site_code": 937,
     "nodes": [
       {
-        "id": "Oakland Fund Children & Youth",
+        "id": "Federal",
         "type": "resource",
-        "total": 123000.81
+        "total": 1054711.51
       },
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 2378221.13
       },
       {
-        "id": "Oakland Public Education Fund",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 193616.29
-      },
-      {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 1054711.51
+        "total": 375583.51
       },
       {
         "id": "WORKERS COMP CERTIFICATED",
@@ -1992,37 +1842,42 @@
       {
         "value": 182722.74,
         "target": "CLASSSUPPT SALARIES OVERTIME",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 379109.75,
         "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 187019.77,
-        "target": "STRS CERTIFICATED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 111956.09,
         "target": "STRS CERTIFICATED",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
+      },
+      {
+        "value": 187019.77,
+        "target": "STRS CERTIFICATED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 441707.21,
         "target": "SUPV&ADM SALARIES STIPENDS",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 745130.5,
-        "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 736076.08,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
+      },
+      {
+        "value": 134276.71,
+        "target": "TEACHERS SALARIES STIPENDS",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 745130.5,
+        "target": "TEACHERS SALARIES STIPENDS",
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -2030,7 +1885,7 @@
     "site_code": 940,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 762959.04
       },
@@ -2049,12 +1904,12 @@
       {
         "value": 166425.11,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 319314.84,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -2062,17 +1917,12 @@
     "site_code": 941,
     "nodes": [
       {
-        "id": "Kenneth Rainin Foundation",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 100000
+        "total": 493242.45
       },
       {
-        "id": "Silicon Valley Math Initiative",
-        "type": "resource",
-        "total": 301683.44
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1100919.99
       },
@@ -2099,29 +1949,24 @@
     ],
     "links": [
       {
-        "value": 100000,
+        "value": 416683.44,
         "target": "CONSULTANTS",
-        "source": "Kenneth Rainin Foundation"
-      },
-      {
-        "value": 301683.44,
-        "target": "CONSULTANTS",
-        "source": "Silicon Valley Math Initiative"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 167601,
         "target": "DUES & MEMBERSHIPS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 122524.22,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 538857.89,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -2129,34 +1974,29 @@
     "site_code": 944,
     "nodes": [
       {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 256694.84
-      },
-      {
-        "id": "OTHER STATE",
-        "type": "resource",
-        "total": 150927.75
-      },
-      {
-        "id": "General Purpose",
-        "type": "resource",
-        "total": 4815161.71
-      },
-      {
-        "id": "Measure G - Parcel Tax",
-        "type": "resource",
-        "total": 813181.93
-      },
-      {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 1148986.8
       },
       {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
+        "id": "State",
         "type": "resource",
-        "total": 272506.4
+        "total": 150927.75
+      },
+      {
+        "id": "Federal",
+        "type": "resource",
+        "total": 529201.24
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 4815161.71
+      },
+      {
+        "id": "Parcel Taxes",
+        "type": "resource",
+        "total": 813181.93
       },
       {
         "id": "OTHERCERT SALARIES",
@@ -2233,72 +2073,72 @@
       {
         "value": 195584.91,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 213146.96,
         "target": "CLERICAL SUBSTITUTES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 174000,
         "target": "CONSULTANTS",
-        "source": "ESSA: Title II, Part A, Supporting Effective Instruction"
+        "source": "Federal"
       },
       {
         "value": 396270.97,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 302300.15,
         "target": "OTHERCERT SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 425961.79,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 152486.48,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 414648.45,
+        "value": 245596.06,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 179336.76,
-        "target": "SUPV&ADM SALARIES",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
         "value": 2335110.75,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 560100.7,
         "target": "SUPV&ADM SALARIES",
-        "source": "Measure G - Parcel Tax"
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 414648.45,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 126494.66,
         "target": "TEACHERS SALARIES EXTRA COMP",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 338083.36,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 164631.02,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -2306,7 +2146,7 @@
     "site_code": 945,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 107880
       },
@@ -2320,7 +2160,7 @@
       {
         "value": 107880,
         "target": "CONSULTANTS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -2328,7 +2168,7 @@
     "site_code": 946,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1703757.66
       },
@@ -2352,17 +2192,17 @@
       {
         "value": 128535.29,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 187339.51,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1188822.91,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -2370,7 +2210,7 @@
     "site_code": 947,
     "nodes": [
       {
-        "id": "Charter School Office",
+        "id": "Other Revenue",
         "type": "resource",
         "total": 823544.88
       },
@@ -2384,7 +2224,7 @@
       {
         "value": 407981.47,
         "target": "SUPV&ADM SALARIES",
-        "source": "Charter School Office"
+        "source": "Other Revenue"
       }
     ]
   },
@@ -2392,14 +2232,14 @@
     "site_code": 948,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 1107738.17
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1661390.33
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 1107738.17
       },
       {
         "id": "CLERICAL SALARIES",
@@ -2434,39 +2274,39 @@
     ],
     "links": [
       {
-        "value": 495324.58,
-        "target": "CLERICAL SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
         "value": 397868.04,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 495324.58,
+        "target": "CLERICAL SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 128401.15,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
-      },
-      {
-        "value": 131716.81,
-        "target": "PERS CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "General (Base)"
       },
       {
         "value": 168636.52,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 255760.99,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "value": 131716.81,
+        "target": "PERS CLASSIFIED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 677859.95,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 255760.99,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -2474,14 +2314,9 @@
     "site_code": 950,
     "nodes": [
       {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
+        "id": "Federal",
         "type": "resource",
-        "total": 222450
-      },
-      {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 1211180.08
+        "total": 1533032.8
       },
       {
         "id": "PERS CLASSIFIED",
@@ -2501,24 +2336,19 @@
     ],
     "links": [
       {
-        "value": 111999.4,
+        "value": 133323.94,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
-        "value": 108255.68,
+        "value": 132073.65,
         "target": "PERS CLASSIFIED",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
-        "value": 129611.43,
+        "value": 921629.17,
         "target": "SUPV&ADM SALARIES",
-        "source": "ESSA: Title II, Part A, Supporting Effective Instruction"
-      },
-      {
-        "value": 768461.77,
-        "target": "SUPV&ADM SALARIES",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       }
     ]
   },
@@ -2526,7 +2356,7 @@
     "site_code": 951,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 2361838.04
       },
@@ -2560,22 +2390,22 @@
       {
         "value": 198169.1,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 260736.36,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 101183.34,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1622273.47,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -2583,44 +2413,29 @@
     "site_code": 954,
     "nodes": [
       {
-        "id": "Salesforce.Org",
-        "type": "resource",
-        "total": 1091913.02
-      },
-      {
-        "id": "Bilingual Education: Discretionary Grants, Title III (14-15)",
-        "type": "resource",
-        "total": 1079977.44
-      },
-      {
-        "id": "General Purpose",
-        "type": "resource",
-        "total": 125206.45
-      },
-      {
-        "id": "Cal Newcommer CDSS",
-        "type": "resource",
-        "total": 616071.37
-      },
-      {
-        "id": "ESSA: Title III, Immigrant Education Program",
-        "type": "resource",
-        "total": 416981.38
-      },
-      {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
-        "type": "resource",
-        "total": 197729.2
-      },
-      {
-        "id": "Other Federal",
-        "type": "resource",
-        "total": 186237.29
-      },
-      {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 461988.67
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 641550.71
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 1190460.73
+      },
+      {
+        "id": "Federal",
+        "type": "resource",
+        "total": 1880925.31
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 125206.45
       },
       {
         "id": "SUPV&ADM SALARIES",
@@ -2685,44 +2500,64 @@
     ],
     "links": [
       {
-        "value": 235787.86,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Cal Newcommer CDSS"
-      },
-      {
         "value": 108829.98,
         "target": "CLASSSUPPT SALARIES",
-        "source": "ESSA: Title III, Immigrant Education Program"
+        "source": "Federal"
+      },
+      {
+        "value": 235787.86,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "Other Revenue"
       },
       {
         "value": 390021.3,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Salesforce.Org"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 133752,
+        "target": "CONSULTANTS",
+        "source": "Federal"
+      },
+      {
+        "value": 110825.03,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "Federal"
       },
       {
         "value": 247263.34,
         "target": "PUPILSUPPT SALARIES",
-        "source": "Salesforce.Org"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 130970.62,
+        "target": "STRS CERTIFICATED",
+        "source": "Federal"
       },
       {
         "value": 266448.59,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 107543.56,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Federal"
       },
       {
         "value": 108279.12,
         "target": "SUPV&ADM SALARIES",
-        "source": "Salesforce.Org"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 462971.33,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Bilingual Education: Discretionary Grants, Title III (14-15)"
+        "source": "Federal"
       },
       {
-        "value": 196237.88,
+        "value": 325051.84,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Bilingual Education: Discretionary Grants, Title III (14-15)"
+        "source": "Federal"
       }
     ]
   },
@@ -2730,12 +2565,12 @@
     "site_code": 958,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 941167.84
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1090059.56
       },
@@ -2769,32 +2604,32 @@
       {
         "value": 309173.32,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 163217.76,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
-      },
-      {
-        "value": 100597.34,
-        "target": "PERS CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "General (Base)"
       },
       {
         "value": 111607.38,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 297456.11,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "value": 100597.34,
+        "target": "PERS CLASSIFIED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 464002.43,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 297456.11,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -2802,12 +2637,12 @@
     "site_code": 962,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 147702.16
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 312074.18
       },
@@ -2826,12 +2661,12 @@
       {
         "value": 162800.04,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 109041.57,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -2839,12 +2674,12 @@
     "site_code": 963,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 184009.37
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 283589.85
       },
@@ -2863,12 +2698,12 @@
       {
         "value": 172691.4,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 125784.24,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -2876,39 +2711,29 @@
     "site_code": 964,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "Federal",
+        "type": "resource",
+        "total": 278449.45
+      },
+      {
+        "id": "General (Base)",
         "type": "resource",
         "total": 651028.93
       },
       {
-        "id": "Special Education",
-        "type": "resource",
-        "total": 453758.84
-      },
-      {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 448424.43
-      },
-      {
-        "id": "ESSA: Title IV, Part A, Student Support and Academic Enrichment",
-        "type": "resource",
-        "total": 177097.64
-      },
-      {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 100000
-      },
-      {
-        "id": "Measure Y - City of Oakland",
+        "id": "Other Revenue",
         "type": "resource",
         "total": 222923.72
       },
       {
-        "id": "Home & Hospital Education",
+        "id": "State",
         "type": "resource",
-        "total": 834545.09
+        "total": 1288303.93
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 448424.43
       },
       {
         "id": "TEACHERS SALARIES",
@@ -2948,39 +2773,44 @@
     ],
     "links": [
       {
-        "value": 108684.95,
+        "value": 162044.95,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Home & Hospital Education"
+        "source": "State"
+      },
+      {
+        "value": 133772.76,
+        "target": "STRS CERTIFICATED",
+        "source": "State"
+      },
+      {
+        "value": 142960,
+        "target": "Subagreements for Services",
+        "source": "Federal"
       },
       {
         "value": 155400,
         "target": "Subagreements for Services",
-        "source": "Measure Y - City of Oakland"
-      },
-      {
-        "value": 133305.73,
-        "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Central Office Supplemental"
+        "source": "Other Revenue"
       },
       {
         "value": 470193.51,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 133305.73,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 105896.64,
         "target": "SUPV&ADM SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
-        "value": 539155.87,
+        "value": 862151.54,
         "target": "TEACHERS SALARIES",
-        "source": "Home & Hospital Education"
-      },
-      {
-        "value": 322995.67,
-        "target": "TEACHERS SALARIES",
-        "source": "Special Education"
+        "source": "State"
       }
     ]
   },
@@ -2988,12 +2818,12 @@
     "site_code": 965,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 226190.91
       },
       {
-        "id": "ESSA: Title II, Part A, Supporting Effective Instruction",
+        "id": "Federal",
         "type": "resource",
         "total": 158336.52
       },
@@ -3012,12 +2842,12 @@
       {
         "value": 160680,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 108627.36,
         "target": "SUPV&ADM SALARIES",
-        "source": "ESSA: Title II, Part A, Supporting Effective Instruction"
+        "source": "Federal"
       }
     ]
   },
@@ -3025,17 +2855,17 @@
     "site_code": 968,
     "nodes": [
       {
-        "id": "Medi-Cal Billing Option",
-        "type": "resource",
-        "total": 245399.22
-      },
-      {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 699405.04
       },
       {
-        "id": "General Purpose",
+        "id": "Federal",
+        "type": "resource",
+        "total": 245399.22
+      },
+      {
+        "id": "General (Base)",
         "type": "resource",
         "total": 1340209.11
       },
@@ -3079,42 +2909,42 @@
       {
         "value": 471679.46,
         "target": "CLASSSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 174233.33,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 173760.08,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 120920.74,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
-      },
-      {
-        "value": 493881.75,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 960358.02,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 183308.8,
         "target": "PUPILSUPPT SALARIES",
-        "source": "Medi-Cal Billing Option"
+        "source": "Federal"
+      },
+      {
+        "value": 960358.02,
+        "target": "PUPILSUPPT SALARIES",
+        "source": "General (Base)"
+      },
+      {
+        "value": 493881.75,
+        "target": "PUPILSUPPT SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 105779.16,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -3122,64 +2952,29 @@
     "site_code": 975,
     "nodes": [
       {
-        "id": "SE-IDEA BASIC GRANT PL94-142",
-        "type": "resource",
-        "total": 1190733.83
-      },
-      {
-        "id": "SPEC.ED. WORKAB.REHAB",
-        "type": "resource",
-        "total": 142456.23
-      },
-      {
-        "id": "Supported Employment (SEMP) Mental Health / ACOE",
+        "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 955182.09
       },
       {
-        "id": "Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611",
-        "type": "resource",
-        "total": 430758
-      },
-      {
-        "id": "Transition Partnership Program",
-        "type": "resource",
-        "total": 391639
-      },
-      {
-        "id": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs",
-        "type": "resource",
-        "total": 107824
-      },
-      {
-        "id": "Medi-Cal Billing Option",
-        "type": "resource",
-        "total": 205092.19
-      },
-      {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 913380.35
       },
       {
-        "id": "Special Ed: Project WorkAbility I LEA",
+        "id": "State",
         "type": "resource",
-        "total": 318420
+        "total": 47409051.59
       },
       {
-        "id": "Special Ed: Mental Health Services",
-        "type": "resource",
-        "total": 2172764
-      },
-      {
-        "id": "Special Education",
-        "type": "resource",
-        "total": 44913506.59
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 100990
+      },
+      {
+        "id": "Federal",
+        "type": "resource",
+        "total": 2506859.25
       },
       {
         "id": "PERS CERTIFICATED",
@@ -3354,244 +3149,229 @@
     ],
     "links": [
       {
-        "value": 134450.64,
+        "value": 1511108.37,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Special Ed: Project WorkAbility I LEA"
+        "source": "State"
       },
       {
-        "value": 1376657.73,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Special Education"
-      },
-      {
-        "value": 265055.13,
+        "value": 270892.46,
         "target": "CLERICAL SALARIES",
-        "source": "Special Education"
+        "source": "Federal"
       },
       {
-        "value": 195804.4,
+        "value": 343261.98,
         "target": "CLERICAL SALARIES",
-        "source": "Transition Partnership Program"
+        "source": "State"
       },
       {
         "value": 1313879.59,
         "target": "CONTRACTED SERVICES",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 111638.58,
         "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "Special Education"
-      },
-      {
-        "value": 132242.66,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 232755.99,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Special Ed: Mental Health Services"
-      },
-      {
-        "value": 1783314.16,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 156715.3,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Supported Employment (SEMP) Mental Health / ACOE"
+        "source": "Philanthropy / Grants"
       },
       {
-        "value": 194136.42,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "SE-IDEA BASIC GRANT PL94-142"
+        "value": 2017722.14,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "State"
       },
       {
-        "value": 753319.57,
+        "value": 132242.66,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 248912.74,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Special Education"
+        "source": "Federal"
+      },
+      {
+        "value": 792639.5,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "State"
       },
       {
         "value": 484397.03,
         "target": "INSTRAIDES SALARIES",
-        "source": "SE-IDEA BASIC GRANT PL94-142"
+        "source": "Federal"
       },
       {
         "value": 1227419.06,
         "target": "INSTRAIDES SALARIES",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 453601.11,
         "target": "INSTRAIDES SALARIES STIPENDS",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 968281,
         "target": "INTERPGM-NURSING SERVICES",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 164666,
         "target": "INTERPROGRAM",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 1083421.08,
         "target": "LEGAL EXPENSE",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 170683.62,
+        "value": 191904.6,
         "target": "MEDICARE CERTIFICATED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 10958981.15,
         "target": "NON-PUBLIC AGENCY CONTRACTS",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 414271,
         "target": "NON-PUBLIC SCHL CONTRACTS",
-        "source": "Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611"
+        "source": "Federal"
       },
       {
         "value": 8028842.73,
         "target": "NON-PUBLIC SCHL CONTRACTS",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 145791.37,
+        "value": 157332.38,
         "target": "OTHER BENEFITS CLASSIFIED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 107001.73,
+        "value": 120525.8,
         "target": "PERS CERTIFICATED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 621118.57,
+        "value": 134749.28,
         "target": "PERS CLASSIFIED",
-        "source": "Special Education"
+        "source": "Federal"
       },
       {
-        "value": 491834.23,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Central Office Supplemental"
+        "value": 657915.38,
+        "target": "PERS CLASSIFIED",
+        "source": "State"
       },
       {
-        "value": 162241.16,
+        "value": 210250.57,
         "target": "PUPILSUPPT SALARIES",
-        "source": "Medi-Cal Billing Option"
-      },
-      {
-        "value": 1418874.31,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Special Ed: Mental Health Services"
-      },
-      {
-        "value": 2770505.45,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Special Education"
+        "source": "Federal"
       },
       {
         "value": 638329.39,
         "target": "PUPILSUPPT SALARIES",
-        "source": "Supported Employment (SEMP) Mental Health / ACOE"
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 4222017.96,
+        "target": "PUPILSUPPT SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 491834.23,
+        "target": "PUPILSUPPT SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 145037.2,
         "target": "PUPILSUPPT SALARIES EXTRA COMP",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 589462.58,
         "target": "PUPILSUPPT SALARIES STIPENDS",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 222015.13,
+        "value": 235199.86,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 100990,
         "target": "State Special Schools",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 218803.14,
+        "value": 2032626.61,
         "target": "STRS CERTIFICATED",
-        "source": "Special Ed: Mental Health Services"
-      },
-      {
-        "value": 1808551.02,
-        "target": "STRS CERTIFICATED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 636693.42,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 239830.46,
         "target": "SUPV&ADM SALARIES",
-        "source": "Special Education"
-      },
-      {
-        "value": 115434.66,
-        "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Central Office Supplemental"
+        "source": "State"
       },
       {
         "value": 289649.91,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Special Education"
+        "source": "State"
+      },
+      {
+        "value": 115434.66,
+        "target": "TEACHER ON SPEC ASSIN SCHOOL",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 6268748.38,
         "target": "TEACHERS SALARIES",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 117161.11,
         "target": "TEACHERS SALARIES EXTRA COMP",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 766299.2,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 541502.2,
         "target": "TEACHERS SUBSTITUTES",
-        "source": "Special Education"
+        "source": "State"
       },
       {
         "value": 115513.12,
         "target": "TESTING MATERIALS",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 325182.99,
+        "value": 391699.21,
         "target": "Transfers of Indirect Costs",
-        "source": "SE-IDEA BASIC GRANT PL94-142"
+        "source": "Federal"
       },
       {
-        "value": 724885.43,
+        "value": 813074.43,
         "target": "WORKERS COMP CERTIFICATED",
-        "source": "Special Education"
+        "source": "State"
       },
       {
-        "value": 228256.68,
+        "value": 242407.25,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "Special Education"
+        "source": "State"
       }
     ]
   },
@@ -3599,7 +3379,7 @@
     "site_code": 979,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 313302.14
       },
@@ -3618,12 +3398,12 @@
       {
         "value": 127130.49,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 168523.99,
         "target": "POSTAGE",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -3631,12 +3411,12 @@
     "site_code": 980,
     "nodes": [
       {
-        "id": "One-time Additional Budget",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 468525
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 575375.65
       },
@@ -3655,12 +3435,12 @@
       {
         "value": 453525,
         "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "One-time Additional Budget"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 390604.37,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -3668,7 +3448,7 @@
     "site_code": 983,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1383784.29
       },
@@ -3702,27 +3482,27 @@
       {
         "value": 527816.24,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 188571.91,
         "target": "CLERICAL SALARIES OVERTIME",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 101349.27,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 114567.08,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 168748.26,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -3730,24 +3510,19 @@
     "site_code": 986,
     "nodes": [
       {
-        "id": "Central Office Supplemental",
-        "type": "resource",
-        "total": 289516.04
-      },
-      {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 4576944.81
       },
       {
-        "id": "CA - General Obligation Bond Series 2016a",
+        "id": "Bonds",
         "type": "resource",
         "total": 1010744.69
       },
       {
-        "id": "One-time Additional Budget",
+        "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 409878.17
+        "total": 699394.21
       },
       {
         "id": "OTHER BENEFITS CLASSIFIED",
@@ -3814,67 +3589,67 @@
       {
         "value": 352143.75,
         "target": "CLASSSUPPT SALARIES",
-        "source": "General Purpose"
-      },
-      {
-        "value": 110755.24,
-        "target": "CLERICAL SALARIES",
-        "source": "Central Office Supplemental"
+        "source": "General (Base)"
       },
       {
         "value": 1823650.69,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 110755.24,
+        "target": "CLERICAL SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 286640.56,
         "target": "Computer $500-4,999",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 409878.17,
         "target": "Computer $500-4,999",
-        "source": "One-time Additional Budget"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 376570.23,
         "target": "COMPUTERS  >= $5,000",
-        "source": "CA - General Obligation Bond Series 2016a"
+        "source": "Bonds"
       },
       {
         "value": 159360,
         "target": "CONSULTANTS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 509412.75,
         "target": "Equipment $500-4,999",
-        "source": "CA - General Obligation Bond Series 2016a"
+        "source": "Bonds"
       },
       {
         "value": 414369.33,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 485952.06,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 165869.88,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 646062.19,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 171175.91,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -3882,19 +3657,19 @@
     "site_code": 987,
     "nodes": [
       {
-        "id": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit",
+        "id": "Health Benefits Governance Board (HBGB)",
         "type": "resource",
         "total": 56954452.72
       },
       {
-        "id": "General Purpose",
+        "id": "Other Revenue",
         "type": "resource",
-        "total": 12065581.89
+        "total": 1725607.11
       },
       {
-        "id": "Legal Settlements",
+        "id": "General (Base)",
         "type": "resource",
-        "total": 1658503.14
+        "total": 12065581.89
       },
       {
         "id": "HBGB Life",
@@ -3976,82 +3751,82 @@
       {
         "value": 176282.5,
         "target": "CONSULTANTS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 203164.5,
         "target": "CONSULTANTS",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 338075,
         "target": "COST OF BOND ISSUANCE",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 247952.71,
         "target": "ELECTIONS",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 7650781.91,
         "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1430034.46,
         "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "Legal Settlements"
+        "source": "Other Revenue"
       },
       {
         "value": 4880997.12,
         "target": "HBGB Dental",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 152128.88,
         "target": "HBGB Life",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 50674174.39,
         "target": "HBGB Medical",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 457960.12,
         "target": "HBGB Vision",
-        "source": "Health Benefits Governance Board (HBGB) Health & Welfare Benefit"
+        "source": "Health Benefits Governance Board (HBGB)"
       },
       {
         "value": 138325.15,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 128421.3,
         "target": "Other Authorized Interfund Transfers Out",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 2256453,
         "target": "Other Insurance",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 184022.59,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 131397.88,
         "target": "Student Insurance",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1055631.45,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -4059,12 +3834,12 @@
     "site_code": 988,
     "nodes": [
       {
-        "id": "Ongoing & Major Maintenance Account",
+        "id": "State",
         "type": "resource",
         "total": 19280599.55
       },
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 930598.3
       },
@@ -4148,87 +3923,87 @@
       {
         "value": 2497963.5,
         "target": "Building & Grounds Supplies",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 502667.37,
         "target": "CLASSSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 5004731.42,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 173031.43,
         "target": "CLASSSUPPT SALARIES OVERTIME",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 184314.16,
         "target": "EQUIPMENT >= $5,000",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 1464334.72,
         "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 158739.65,
         "target": "GASOLINE",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 123088.38,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1213308.32,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 211542.91,
         "target": "OTHER BENEFITS CLASSIFIED",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 1092613.02,
         "target": "PERS CLASSIFIED",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 4691344.96,
         "target": "REPAIRS CONT",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 182747.3,
         "target": "REPAIRS CONT ",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 383708.28,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 992177.73,
         "target": "SUPV&ADM SALARIES",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 429914.02,
         "target": "VEHICLE PURCHASE >= $5,000",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       },
       {
         "value": 378914.9,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "Ongoing & Major Maintenance Account"
+        "source": "State"
       }
     ]
   },
@@ -4236,7 +4011,7 @@
     "site_code": 989,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 860847.51
       },
@@ -4310,67 +4085,67 @@
       {
         "value": 7713116.37,
         "target": "CLASSSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 580273.73,
         "target": "CLASSSUPPT SALARIES OVERTIME",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 805487.75,
         "target": "CLASSSUPPT SUBSTITUTES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 119569.33,
         "target": "CLERICAL SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 683085.8,
         "target": "Custodial Supplies",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 2961598.17,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 142275.94,
         "target": "MEDICARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 575330.8,
         "target": "OTHER BENEFITS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1492760.76,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 191589.05,
         "target": "REPAIRS CONT ",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 546578.2,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 576882.82,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 587202.49,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -4378,7 +4153,7 @@
     "site_code": 990,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 490056.89
       },
@@ -4392,7 +4167,7 @@
       {
         "value": 257309.68,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -4400,24 +4175,19 @@
     "site_code": 991,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 1830105.54
       },
       {
-        "id": "Share Our Strength",
+        "id": "Federal",
         "type": "resource",
-        "total": 109109.5
+        "total": 2364086.65
       },
       {
-        "id": "Child Care Food Program (CCFP) and Meal Reimbursements",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 425169.48
-      },
-      {
-        "id": "Child Nutrition School Program",
-        "type": "resource",
-        "total": 1899039.45
+        "total": 188670.81
       },
       {
         "id": "PERS CLASSIFIED",
@@ -4484,67 +4254,62 @@
       {
         "value": 369699.29,
         "target": "CLASSSUPPT SALARIES EXTRA COMP",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 274954.34,
         "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 553761.39,
         "target": "CLASSSUPPT SUBSTITUTES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 236612.92,
+        "value": 273669.01,
         "target": "CLERICAL SALARIES",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
-        "value": 110224.8,
+        "value": 154605.87,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
         "value": 109777,
         "target": "INTERFUND",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
         "value": 206843,
         "target": "Other Authorized Interfund Transfers Out",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 107510.3,
+        "value": 151289.2,
         "target": "PERS CLASSIFIED",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
-        "value": 101570.54,
+        "value": 114070.79,
         "target": "REPAIRS CONT",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
-        "value": 174466.08,
+        "value": 569856.41,
         "target": "SUPV&ADM SALARIES",
-        "source": "Child Care Food Program (CCFP) and Meal Reimbursements"
-      },
-      {
-        "value": 376409.45,
-        "target": "SUPV&ADM SALARIES",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
         "value": 269793.23,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 506816.26,
+        "value": 603374.7,
         "target": "Transfers of Indirect Costs - Interfund",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       }
     ]
   },
@@ -4552,12 +4317,12 @@
     "site_code": 992,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 720559.2
       },
       {
-        "id": "Child Nutrition School Program",
+        "id": "Federal",
         "type": "resource",
         "total": 381593.15
       },
@@ -4586,22 +4351,22 @@
       {
         "value": 209559.59,
         "target": "CLASSSUPPT SALARIES",
-        "source": "Child Nutrition School Program"
+        "source": "Federal"
       },
       {
         "value": 258952.1,
         "target": "CLASSSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 128189.97,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 100700.28,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   },
@@ -4609,14 +4374,19 @@
     "site_code": 994,
     "nodes": [
       {
-        "id": "General Purpose",
+        "id": "General (Base)",
         "type": "resource",
         "total": 2552664.4
       },
       {
-        "id": "Central Office Supplemental",
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 198504.3
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 110897.9
       },
       {
         "id": "PERS CLASSIFIED",
@@ -4676,69 +4446,69 @@
     ],
     "links": [
       {
-        "value": 2442093.33,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Central Office Supplemental"
-      },
-      {
         "value": 795060.6,
         "target": "CLASSSUPPT SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 2442093.33,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 156452.81,
         "target": "CLASSSUPPT SALARIES OVERTIME",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 289600,
         "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 171046.72,
         "target": "CONSULTANTS",
-        "source": "General Purpose"
-      },
-      {
-        "value": 982979.02,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "General (Base)"
       },
       {
         "value": 145192.33,
         "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 982979.02,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 139469.89,
         "target": "OTHER BENEFITS CLASSIFIED",
-        "source": "Central Office Supplemental"
-      },
-      {
-        "value": 466762.69,
-        "target": "PERS CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 225947.85,
         "target": "PERS CLASSIFIED",
-        "source": "General Purpose"
+        "source": "General (Base)"
+      },
+      {
+        "value": 466762.69,
+        "target": "PERS CLASSIFIED",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 167691.21,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 670430.45,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 172813.01,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -4746,14 +4516,14 @@
     "site_code": 995,
     "nodes": [
       {
-        "id": "General Purpose",
-        "type": "resource",
-        "total": 309425.46
-      },
-      {
-        "id": "Unrest Transportation",
+        "id": "State",
         "type": "resource",
         "total": 13998597.28
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 309425.46
       },
       {
         "id": "TRANSPORTATION-CONTRACTED",
@@ -4785,27 +4555,27 @@
       {
         "value": 352621.7,
         "target": "AUDIT EXPENSES",
-        "source": "Unrest Transportation"
+        "source": "State"
       },
       {
         "value": 2558726.46,
         "target": "CONTRACTED SERVICES",
-        "source": "Unrest Transportation"
+        "source": "State"
       },
       {
         "value": 489187,
         "target": "PYMTS TO PARENTS IN LIEU OF",
-        "source": "Unrest Transportation"
+        "source": "State"
       },
       {
         "value": 148958.15,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 10594386.49,
         "target": "TRANSPORTATION-CONTRACTED",
-        "source": "Unrest Transportation"
+        "source": "State"
       }
     ]
   },
@@ -4813,59 +4583,39 @@
     "site_code": 999,
     "nodes": [
       {
-        "id": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
-        "type": "resource",
-        "total": 648099.82
-      },
-      {
-        "id": "Civic Center Rental",
-        "type": "resource",
-        "total": 660814.42
-      },
-      {
-        "id": "Measure G1 - Parcel Tax",
-        "type": "resource",
-        "total": 3229788.15
-      },
-      {
-        "id": "SB39 State Loan Drawdown",
-        "type": "resource",
-        "total": 2094903
-      },
-      {
-        "id": "General Purpose",
-        "type": "resource",
-        "total": 11560716.86
-      },
-      {
-        "id": "Legal Settlements",
-        "type": "resource",
-        "total": 128421.3
-      },
-      {
-        "id": "Measure N - Parcel Tax",
-        "type": "resource",
-        "total": 2433983.13
-      },
-      {
-        "id": "Employees on Loan",
-        "type": "resource",
-        "total": 205709.09
-      },
-      {
-        "id": "Community Redevelopment Funds",
+        "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 4722297.59
       },
       {
-        "id": "Measure G - Parcel Tax",
+        "id": "Other Revenue",
         "type": "resource",
-        "total": 346073.61
+        "total": 994944.81
       },
       {
-        "id": "Central Office Supplemental",
+        "id": "State",
+        "type": "resource",
+        "total": 2094903
+      },
+      {
+        "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 1210927.45
+      },
+      {
+        "id": "Parcel Taxes",
+        "type": "resource",
+        "total": 6009844.89
+      },
+      {
+        "id": "Federal",
+        "type": "resource",
+        "total": 773011.83
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 11560716.86
       },
       {
         "id": "CONSULTANTS",
@@ -4982,142 +4732,127 @@
       {
         "value": 3033324.32,
         "target": "All Other Transfers to County Offices",
-        "source": "Measure G1 - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
         "value": 2235350.02,
         "target": "All Other Transfers to Districts or Charter Schools",
-        "source": "Measure N - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
         "value": 529317.53,
         "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "Civic Center Rental"
+        "source": "Other Revenue"
       },
       {
         "value": 244778.07,
         "target": "CONSULTANTS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 287381.34,
         "target": "Debt Service - Interest",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 275484,
         "target": "Debt Service - Interest",
-        "source": "SB39 State Loan Drawdown"
+        "source": "State"
       },
       {
         "value": 265445.48,
         "target": "DISPOSAL SERVICES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 175673.24,
         "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1828041.38,
         "target": "FEDERAL PAYROLL TAX PENALTY",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1210927.45,
         "target": "From General Fund to Cafeteria Fund",
-        "source": "Central Office Supplemental"
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 436902.1,
         "target": "GAS-HEATING-ELECTRICITY",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 312083.68,
         "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 3712208.84,
         "target": "LICENSING AGREEMENTS",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1174476.55,
         "target": "OPEB, Allocated, certificated positions",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 4722297.59,
         "target": "Other Authorized Interfund Transfers Out",
-        "source": "Community Redevelopment Funds"
+        "source": "Philanthropy / Grants"
       },
       {
         "value": 3562375,
         "target": "Other Debt Service - Principal",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 1819419,
         "target": "Other Debt Service - Principal",
-        "source": "SB39 State Loan Drawdown"
+        "source": "State"
       },
       {
-        "value": 196463.83,
+        "value": 739001.27,
         "target": "OTH SERVICES & OPERATING EXPS",
-        "source": "Measure G1 - Parcel Tax"
-      },
-      {
-        "value": 346073.61,
-        "target": "OTH SERVICES & OPERATING EXPS",
-        "source": "Measure G - Parcel Tax"
-      },
-      {
-        "value": 196463.83,
-        "target": "OTH SERVICES & OPERATING EXPS",
-        "source": "Measure N - Parcel Tax"
+        "source": "Parcel Taxes"
       },
       {
         "value": 161751.9,
         "target": "STATE UNEMPLOYMNT-LEC CHARGE",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 530798.65,
         "target": "SUPV&ADM SALARIES",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 152152.89,
+        "value": 259785.2,
         "target": "TEACHERS SALARIES",
-        "source": "Employees on Loan"
-      },
-      {
-        "value": 107632.31,
-        "target": "TEACHERS SALARIES",
-        "source": "Legal Settlements"
+        "source": "Other Revenue"
       },
       {
         "value": 285669.09,
         "target": "Teachers' Salaries-Emergency",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
         "value": 2721972.34,
         "target": "TELEPHONE",
-        "source": "General Purpose"
+        "source": "General (Base)"
       },
       {
-        "value": 648099.82,
+        "value": 773011.83,
         "target": "Transfers of Indirect Costs",
-        "source": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
+        "source": "Federal"
       },
       {
         "value": 140078.88,
         "target": "WATER/SEWAGE",
-        "source": "General Purpose"
+        "source": "General (Base)"
       }
     ]
   }
