@@ -1,11 +1,10 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next'
 // import paginationFactory from 'react-bootstrap-table2-paginator'
 import ToolkitProvider, { Search, CSVExport } from 'react-bootstrap-table2-toolkit'
 import './tables.scss'
-import ArrowDropDown from '@material-ui/icons/ArrowDropDown'
-import ArrowDropUp from '@material-ui/icons/ArrowDropUp'
 import DownloadIcon from '@material-ui/icons/SaveAlt'
 import CreateIcon from '@material-ui/icons/Create'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline'
@@ -13,17 +12,12 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Button, Modal, Row, Col } from 'react-bootstrap'
 import HelpIcon from "./help-icon"
+import { getSortCaret, formatToUSD, formatFTE, sort } from './table-utilities'
 
 const { SearchBar } = Search
 const { ExportCSVButton } = CSVExport
 const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs'
 
-
-const formatToUSD = amount => {
-  // it would be better to just useIntl.NumberFormat currency, but that seems to always
-  // add cents ie $2,330.00
-  return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
-}
 
 const formatRemainingBudgetCell = (percent, rowIndex) => {
   let classes = ""
@@ -37,22 +31,13 @@ const formatRemainingBudgetCell = (percent, rowIndex) => {
   }
 }
 
-const formatFTE = (fte) => {
-  if(fte){
-    // Round but don't add trailing zeroes
-    fte = +fte.toFixed(2)
-  }
-
-  return <span>{fte}</span>
-}
-
 const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_staff: 0}
+  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_fte: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending
     returnObject.budget += +currentItem.budget
     returnObject.staff += +currentItem.staff
-    returnObject.eoy_total_staff += +currentItem.eoy_total_staff
+    returnObject.eoy_total_fte += +currentItem.eoy_total_fte
     return returnObject
   }, initialObject)
 }
@@ -61,36 +46,14 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
   }
+  if (row.name === "OUSD Police Department") {
+    return (<span className="strong"><Link to="/central-program/ousd-police-department/">{row.name}</Link></span>)
+  }
   return (<span>{row.name}</span>)
 }
 
-const sort = (a, b, order, dataField, rowA, rowB) => {
-  if (rowA.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
-    return -1
-  }
-  if (rowB.name === TOTAL_FOR_ALL_CENTRAL_PROGRAMS) {
-    return 1
-  }
-  if (order === "asc") {
-    if (a < b) { return -1 }
-    if (a > b) { return 1 }
-    return 0
-  }
-  if (a > b) { return -1 }
-  if (a < b) { return 1 }
-  return 0
-}
-
-const getSortCaret = (order, column) => {
-  if (order === 'asc') {
-    return (<ArrowDropUp className="text-dark" />)
-  }
-  if (order === 'desc') {
-    return (<ArrowDropDown className="text-dark" />)
-  }
-  // invisible icon used as a spaceholder so that
-  // when an icon does render it does not shift the table column
-  return (<ArrowDropDown className="invisible"/>)
+const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
+  return sort(a, b, order, dataField, rowA, rowB, 'name', TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
 }
 
 const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {
@@ -119,7 +82,7 @@ const columns = [{
   sortCaret: getSortCaret,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   events: {
     onClick: (e, column, columnIndex, row, rowIndex) => trackTableCellClickEvent(e, column, columnIndex, row, rowIndex)
   }
@@ -130,7 +93,7 @@ const columns = [{
   sortCaret: getSortCaret,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   hidden: true,
   align: 'left'
 }, {
@@ -143,7 +106,7 @@ const columns = [{
   searchable: false,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right'
 }, {
@@ -156,12 +119,12 @@ const columns = [{
   sort: true,
   hidden: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right'
 }, {
-  dataField: 'eoy_total_staff',
-  formatter: (cell,row) => formatFTE(row.eoy_total_staff),
+  dataField: 'eoy_total_fte',
+  formatter: (cell,row) => formatFTE(row.eoy_total_fte),
   text: 'Staff',
   headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff * <HelpIcon tooltipText="Full Time Equivalent (FTE) rather than people. For example, 2 people working 20 hours a week = 1 FTE." placement="bottom"/></div>)},
   headerStyle: (colum, colIndex) => { return { minWidth: '110px'} },
@@ -169,7 +132,7 @@ const columns = [{
   searchable: false,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right',
   csvExport: false
@@ -182,7 +145,7 @@ const columns = [{
   searchable: false,
   sort: true,
   onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sort,
+  sortFunc: sortPrograms,
   type: 'number',
   align: 'right'
 }]
