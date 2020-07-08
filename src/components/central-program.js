@@ -1,36 +1,40 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from "react-bootstrap"
 
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
+import ScrollWidget from "../components/scroll-widget"
 import "./central-program/central-program.scss"
 
-
-const CentralProgram= ({ data }) => {
-    const centralProgram = data.centralProgramsJson
-    return (
-        <Layout>
-        <SEO title={centralProgram.name} />
-        <div className="central-program-page-template">
-            <Container>
-                <Row>
-                    <Col md={9} xl={6} className="mx-auto">
-                        <h1>{centralProgram.name}</h1>
-                        <div className="pt-4">
-                            <h2>Program Data for the {data.site.siteMetadata.latestSchoolYear} School Year</h2>
-                            <ProgramDataOverviewTable data={data} className="pt-2"/>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-            {/* // TODO Figure out how to present large negative numbers in program expenditures
+const CentralProgram = ({ data }) => {
+  const centralProgram = data.centralProgramsJson
+  return (
+    <Layout>
+      <SEO title={centralProgram.name} />
+      <ScrollWidget className="scroll-widget" numSections={3} />
+      <div className="central-program-page-template">
+        <Container>
+          <Row>
+            <Col md={9} xl={6} className="mx-auto">
+              <h1>{centralProgram.name}</h1>
+              <div className="pt-4">
+                <h2>
+                  Program Data for the {data.site.siteMetadata.latestSchoolYear}{" "}
+                  School Year
+                </h2>
+                <ProgramDataOverviewTable data={data} className="pt-2" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+        {/* // TODO Figure out how to present large negative numbers in program expenditures
             {data.centralProgramsSankeyJson &&
                 <RequireWideScreen minScreenWidth={"sm"}>
                     <SankeyChart
@@ -41,73 +45,77 @@ const CentralProgram= ({ data }) => {
                 </RequireWideScreen>
             }
             */}
-            <Container>
-                <Row>
-                    <Col md={9} xl={6} className="mx-auto">
-                        <div className="pt-4 pt-sm-4">
-                            <h2 className="pb-3 pt-sm-3 pt-md-2">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
-                            <StaffRolesTable data={centralProgram.staff_roles} />
-                        </div>
-                        <div className="pt-4">
-                            <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
-                            <StaffLaborUnionsChart data={centralProgram.staff_bargaining_units}/>
-                            <StaffLaborUnionsTable data={centralProgram.staff_bargaining_units} />
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-        </Layout>
-    )
+        <Container>
+          <Row>
+            <Col md={9} xl={6} className="mx-auto">
+              <div className="pt-4 pt-sm-4">
+                <h2 className="pb-3 pt-sm-3 pt-md-2">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                <StaffRolesTable data={centralProgram.staff_roles} />
+              </div>
+              <div className="pt-4">
+                <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                <StaffLaborUnionsChart
+                  data={centralProgram.staff_bargaining_units}
+                />
+                <StaffLaborUnionsTable
+                  data={centralProgram.staff_bargaining_units}
+                />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+    </Layout>
+  )
 }
 
 export const query = graphql`
   query($code: Int!) {
     site {
-        siteMetadata {
-          latestSchoolYear
-        }
+      siteMetadata {
+        latestSchoolYear
+      }
     }
-    centralProgramsJson(code: {eq: $code }) {
-        name
-        budget
-        remaining_budget_percent
-        eoy_total_fte
-        eoy_total_positions
-        spending
-        year
-        code
-        staff_roles {
-            eoy_total_positions_for_role
-            role_description
-        }
-        staff_bargaining_units {
-            eoy_total_positions_for_bu
-            description
-            abbreviation
-        }
+    centralProgramsJson(code: { eq: $code }) {
+      name
+      budget
+      remaining_budget_percent
+      eoy_total_fte
+      eoy_total_positions
+      spending
+      year
+      code
+      staff_roles {
+        eoy_total_positions_for_role
+        role_description
+      }
+      staff_bargaining_units {
+        eoy_total_positions_for_bu
+        description
+        abbreviation
+      }
     }
-    centralProgramsSankeyJson(site_code: {eq: $code}) {
-        nodes {
-            total
-            type
-            id
-        }
-        links {
-            source
-            target
-            value
-        }
+    centralProgramsSankeyJson(site_code: { eq: $code }) {
+      nodes {
+        total
+        type
+        id
+      }
+      links {
+        source
+        target
+        value
+      }
     }
   }
 `
 
 CentralProgram.propTypes = {
-    data: PropTypes.object,
+  data: PropTypes.object,
 }
 
 CentralProgram.defaultProps = {
-    data: {},
+  data: {},
 }
 
 export default CentralProgram
