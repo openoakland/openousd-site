@@ -1,0 +1,26 @@
+.whats-new-page {
+    #left-dates {
+        position: fixed;
+        left: auto;
+
+        width: 100%;
+        // max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        // width: calc(48px + ((90% - 264px) / 12 * 3));
+        max-width: calc(48px + ((90% - 264px) / 12 * 3));
+        -ms-flex-preferred-size: calc(48px + ((100% - 264px) / 12 * 3));
+        flex-basis: calc(48px + ((100% - 264px) / 12 * 3));
+        margin-right: 24px;
+         button {
+            outline: 0;
+         }
+    }
+
+    #right-content {
+        float: right;
+        left: 33%;
+        height: 100%;
+    }
+
+}

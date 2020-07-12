@@ -28,7 +28,8 @@
     "react-bootstrap-table2-paginator": "^2.1.0",
     "react-bootstrap-table2-toolkit": "^2.1.0",
     "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-scroll": "^1.7.16"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
