@@ -13,18 +13,24 @@ import StaffLaborUnionsChart from "../components/central-program/staff-labor-uni
 import ScrollWidget from "../components/scroll-widget"
 import "./central-program/central-program.scss"
 
+const ELEMENT_NAME_PREFIX = "program-section"
+
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
   return (
     <Layout>
       <SEO title={centralProgram.name} />
-      <ScrollWidget className="scroll-widget" numSections={3} />
+      <ScrollWidget
+        className="scroll-widget"
+        sectionIdPrefix={ELEMENT_NAME_PREFIX}
+        numSections={3}
+      />
       <div className="central-program-page-template">
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
               <h1>{centralProgram.name}</h1>
-              <div className="pt-4">
+              <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h2>
                   Program Data for the {data.site.siteMetadata.latestSchoolYear}{" "}
                   School Year
@@ -48,11 +54,11 @@ const CentralProgram = ({ data }) => {
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <div className="pt-4 pt-sm-4">
+              <div id={`${ELEMENT_NAME_PREFIX}-1`} className="pt-4 pt-sm-4">
                 <h2 className="pb-3 pt-sm-3 pt-md-2">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                 <StaffRolesTable data={centralProgram.staff_roles} />
               </div>
-              <div className="pt-4">
+              <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4">
                 <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                 <StaffLaborUnionsChart
                   data={centralProgram.staff_bargaining_units}
