@@ -2,8 +2,8 @@ import React from "react"
 import { number, string } from "prop-types"
 
 import { Link } from "react-scroll"
-
 import "./scroll-widget.scss"
+
 function ScrollWidget(props) {
   const { numSections } = props
   if (numSections <= 0) {

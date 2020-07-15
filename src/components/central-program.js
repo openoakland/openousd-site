@@ -20,11 +20,13 @@ const CentralProgram = ({ data }) => {
   return (
     <Layout>
       <SEO title={centralProgram.name} />
-      <ScrollWidget
-        className="scroll-widget"
-        sectionIdPrefix={ELEMENT_NAME_PREFIX}
-        numSections={3}
-      />
+      <div className="d-none d-lg-block">
+        <ScrollWidget
+          className="scroll-widget"
+          sectionIdPrefix={ELEMENT_NAME_PREFIX}
+          numSections={3}
+        />
+      </div>
       <div className="central-program-page-template">
         <Container>
           <Row>
