@@ -50,7 +50,7 @@ const CentralProgramsPage = ({ data }) => {
 export default CentralProgramsPage
 
 export const query = graphql`
-  query CentralProgramsPage {
+  query CentralProgramsPage($language: String) {
     site {
         siteMetadata {
           latestSchoolYear
@@ -67,6 +67,47 @@ export const query = graphql`
         year
         code
       }
+    }
+
+    contentfulPage(slug: {eq: "central-programs"}, node_locale: {eq: $language}) {
+      content {
+        ... on ContentfulCentralProgramsOverviewPageContent {
+          spendingSankeyChart {
+            groupingLabel
+            groupingOptions {
+              optionLabel
+              childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode {
+                json
+              }
+            }
+            rightLabel
+            leftLabel
+            readMoreLink
+            footnote {
+              footnote
+            }
+          }
+          programsTable {
+            heading
+            columns {
+              displayName
+              dataFieldName
+              helperText {
+                helperText
+              }
+            }
+            labels {
+              columnsNotShownLabel
+              currentlyShownColumnsLabel
+              downloadDataLabel
+              showHideColumnsLabel
+              searchLabel
+            }
+          }
+        }
+      }
+      slug
+      title
     }
   }
 `
