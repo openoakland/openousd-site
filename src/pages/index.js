@@ -58,22 +58,25 @@ const IndexPage = ({data}) => (
 export const query = graphql`
   query HomePageQuery($language: String) {
     contentfulPage(slug: {eq: "index"}, node_locale: {eq: $language}) {
-      id
-      title
       content {
-        card02Title
-        card01Title
-        exploreCentralProgramsButton
-        card02Content {
-          json
-        }
-        card01Content {
-          json
-        }
-        heroImageAttribution {
-          json
-        }
+            ... on ContentfulHomePageContent {
+              id
+              card01Content {
+                json
+              }
+              card01Title
+              card02Content {
+                json
+              }
+              card02Title
+              exploreCentralProgramsButton
+              heroImageAttribution {
+                json
+              }
+            }
       }
+      slug
+      title
     }
 }
 `
