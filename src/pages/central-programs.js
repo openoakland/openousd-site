@@ -11,8 +11,8 @@ import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
 
-import sankeyData from "../../data/sankey.json"
-import sankeyRestrictedData from "../../data/sankey-restricted.json"
+import sankeyProgramData from "../../data/sankey.json"
+import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 
 import "../components/sankey-chart.scss"
 
@@ -20,20 +20,23 @@ import "../components/sankey-chart.scss"
 const CentralProgramsPage = ({ data }) => {
 
   const centralPrograms = data.allCentralProgramsJson.nodes;
+  const content = data.contentfulPage.content
+  console.log(content)
   return (
     <Layout pageClassName="central-programs-page">
-      <SEO title="Central Programs Overview" />
+      <SEO title={data.contentfulPage.title} />
       <Container>
         <Row>
           <Col>
-            <h1>Central Spending By Category ({data.site.siteMetadata.latestSchoolYear})</h1>
+            <h1>{content.spendingSankeyChart.heading} ({data.site.siteMetadata.latestSchoolYear})</h1>
           </Col>
         </Row>
       </Container>
       <RequireWideScreen minScreenWidth={"sm"}>
         <SankeyChart
-          data={sankeyData}
-          restrictedData={sankeyRestrictedData}
+          data={sankeyProgramData}
+          restrictedData={sankeyRestrictedProgramData}
+          labelContent={content.spendingSankeyChart}
           margin={{top: 50, right: 200, bottom: 20, left: 240}}
           gaEventCategory="Overview"/>
       </RequireWideScreen>
@@ -75,8 +78,10 @@ export const query = graphql`
       content {
         ... on ContentfulCentralProgramsOverviewPageContent {
           spendingSankeyChart {
+            heading
             groupingLabel
             groupingOptions {
+              optionId
               optionLabel
               childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode {
                 json

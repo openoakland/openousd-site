@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Link } from 'gatsby-plugin-intl'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Layout from "../components/layout";
 import MuralImage from "../components/mural-image";
