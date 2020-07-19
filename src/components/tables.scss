@@ -19,14 +19,33 @@
     .over-budget {
         color: #E60000;
     }
+
+    th {
+        &:focus {
+            outline: none !important;
+        }
+
+        &.sortable {
+            cursor: pointer;
+            &:hover {
+                background-color: $hover-highlight;
+            }
+        }
+    }
+
+    .table-header {
+        font-size: 1.1rem;
+    }
+
+
+
 }
 
-.search-bar {
+.table-search-bar {
     font-style: italic;
     border-radius: 1rem;
     width: 300px;
 }
-
 // Show / hide columns
 
 #show-hide-columns-modal {
@@ -51,7 +70,7 @@
             }
 
             &:hover {
-                background-color: #f8f9fa;
+                background-color: $hover-highlight;
             }
 
             &.visible svg {

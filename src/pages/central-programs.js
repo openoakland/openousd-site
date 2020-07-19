@@ -9,13 +9,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
-import Sankey from "../components/sankey-chart"
+import SankeyChart from "../components/sankey-chart"
 
 import sankeyData from "../../data/sankey.json"
 import sankeyRestrictedData from "../../data/sankey-restricted.json"
 
+import "../components/sankey-chart.scss"
 
-import "../styles/pages/central-programs.scss"
 
 const CentralProgramsPage = ({ data }) => {
 
@@ -31,14 +31,16 @@ const CentralProgramsPage = ({ data }) => {
         </Row>
       </Container>
       <RequireWideScreen minScreenWidth={"sm"}>
-        <Sankey
+        <SankeyChart
           data={sankeyData}
-          restrictedData={sankeyRestrictedData}/>
+          restrictedData={sankeyRestrictedData}
+          margin={{top: 50, right: 200, bottom: 20, left: 240}}
+          gaEventCategory="Overview"/>
       </RequireWideScreen>
       <Container id="programs-section">
         <Row>
           <Col>
-            <h1 className="pb-3">All Central Programs for the {data.site.siteMetadata.latestSchoolYear} School Year</h1>
+            <h1 className="pb-3 pt-5">All Central Programs for the {data.site.siteMetadata.latestSchoolYear} School Year</h1>
             <CentralProgramsTable data={centralPrograms} />
           </Col>
         </Row>
@@ -61,7 +63,7 @@ export const query = graphql`
         name
         category
         remaining_budget_percent
-        eoy_total_staff
+        eoy_total_fte
         budget
         spending
         year
