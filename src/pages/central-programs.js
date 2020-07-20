@@ -43,8 +43,10 @@ const CentralProgramsPage = ({ data }) => {
       <Container id="programs-section">
         <Row>
           <Col>
-            <h1 className="pb-3 pt-5">All Central Programs for the {data.site.siteMetadata.latestSchoolYear} School Year</h1>
-            <CentralProgramsTable data={centralPrograms} />
+            <h1 className="pb-3 pt-5">{content.programsTable.heading} ({data.site.siteMetadata.latestSchoolYear})</h1>
+            <CentralProgramsTable
+              data={centralPrograms}
+              labelContent={content.programsTable}/>
           </Col>
         </Row>
       </Container>
@@ -109,6 +111,9 @@ export const query = graphql`
               downloadDataLabel
               showHideColumnsLabel
               searchLabel
+            }
+            footnote {
+              footnote
             }
           }
         }

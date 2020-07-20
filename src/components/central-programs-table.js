@@ -74,82 +74,6 @@ const trackSortEvent = (fieldName) => {
   })
 }
 
-const columns = [{
-  formatter: columnsFormatter,
-  dataField: 'name',
-  text: 'Program',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Central Program {components.sortElement}</div>)},
-  sortCaret: getSortCaret,
-  sort: true,
-  onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sortPrograms,
-  events: {
-    onClick: (e, column, columnIndex, row, rowIndex) => trackTableCellClickEvent(e, column, columnIndex, row, rowIndex)
-  }
-},{
-  dataField: 'category',
-  text: 'Category',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">Category {components.sortElement}</div>)},
-  sortCaret: getSortCaret,
-  sort: true,
-  onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sortPrograms,
-  hidden: true,
-  align: 'left'
-}, {
-  dataField: 'spending',
-  formatter: (cell, row) => formatToUSD(row.spending),
-  text: 'Spending',
-  // TODO improve tooltip text for all of these
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Spending</div>)},
-  sortCaret: getSortCaret,
-  searchable: false,
-  sort: true,
-  onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sortPrograms,
-  type: 'number',
-  align: 'right'
-}, {
-  dataField: 'budget',
-  formatter: (cell, row) => formatToUSD(row.budget),
-  text: 'Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Budget</div>)},
-  sortCaret: getSortCaret,
-  searchable: false,
-  sort: true,
-  hidden: true,
-  onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sortPrograms,
-  type: 'number',
-  align: 'right'
-}, {
-  dataField: 'eoy_total_fte',
-  formatter: (cell,row) => formatFTE(row.eoy_total_fte),
-  text: 'Staff',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Staff * <HelpIcon tooltipText="Full Time Equivalent (FTE) rather than people. For example, 2 people working 20 hours a week = 1 FTE." placement="bottom"/></div>)},
-  headerStyle: (colum, colIndex) => { return { minWidth: '110px'} },
-  sortCaret: getSortCaret,
-  searchable: false,
-  sort: true,
-  onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sortPrograms,
-  type: 'number',
-  align: 'right',
-  csvExport: false
-}, {
-  dataField: 'remaining_budget_percent',
-  formatter: (cell, row, rowIndex) => formatRemainingBudgetCell(row.remaining_budget_percent, rowIndex),
-  text: 'Remaining Budget',
-  headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} Remaining Budget</div>)},
-  sortCaret: getSortCaret,
-  searchable: false,
-  sort: true,
-  onSort: (field,order) => trackSortEvent(field),
-  sortFunc: sortPrograms,
-  type: 'number',
-  align: 'right'
-}]
-
 const rowClasses = (row, rowIndex) => {
   if (rowIndex === 0) {
     return 'first-row'
@@ -159,7 +83,9 @@ const rowClasses = (row, rowIndex) => {
 const ModalColumnToggle = ({
   columns,
   onColumnToggle,
-  toggles
+  toggles,
+  labelContent,
+  columnLabels
 }) => {
 
   const [show, setShow] = useState(false)
@@ -206,24 +132,24 @@ const ModalColumnToggle = ({
       onClick={ () => handleColumnToggle(column) }
     >
       { column.toggle ? <RemoveCircleOutlineIcon/> : <AddCircleOutlineIcon/> }
-      <span className="ml-2">{ column.text }</span>
+      <span className="ml-2">{ columnLabels[column.dataField].displayName }</span>
     </Button>
   )
 
   return (
     <div className="d-md-flex justify-content-end">
       <Button className="cta mb-3 my-md-0" onClick={handleShow} >
-        <CreateIcon className="pr-1"/>Edit Columns
+        <CreateIcon className="pr-1"/>{labelContent.labels.showHideColumnsLabel}
       </Button>
       <Modal show={show} onHide={handleClose} id="show-hide-columns-modal" size="sm" centered>
         <Modal.Header closeButton/>
         <Modal.Body className="py-1 pl-5">
-          <div className={`heading strong py-2 ${columnsGroupedBy.visible.length > 0 ? "" : "d-none"}`}>Current Columns</div>
+          <div className={`heading strong py-2 ${columnsGroupedBy.visible.length > 0 ? "" : "d-none"}`}>{labelContent.labels.currentlyShownColumnsLabel}</div>
           {
             columnsGroupedBy.visible
               .map((column) => (<ColumnOption column={column}/>))
           }
-          <div className={`heading strong py-2 ${columnsGroupedBy.hidden.length > 0 ? "" : "d-none"}`}>Columns Not Shown</div>
+          <div className={`heading strong py-2 ${columnsGroupedBy.hidden.length > 0 ? "" : "d-none"}`}>{labelContent.labels.columnsNotShownLabel}</div>
           {
             columnsGroupedBy.hidden
               .map((column) => (<ColumnOption column={column}/>))
@@ -240,10 +166,93 @@ const ModalColumnToggle = ({
 }
 
 
-const CentralProgramsTable = ({data}) => {
+const CentralProgramsTable = ({data, labelContent}) => {
   const firstRow = createFirstRow(data)
+
+  //per-sort column data so we don't need to search the array every time
+  let columnLabelsByDatafield = {}
+  labelContent.columns.forEach(c => {
+    columnLabelsByDatafield[c.dataFieldName] = c
+  })
+
   // creates new array
   data = data.concat([firstRow])
+
+  const columns = [{
+    formatter: columnsFormatter,
+    dataField: 'name',
+    text: 'Program',
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">{columnLabelsByDatafield[column.dataField].displayName} {components.sortElement}</div>)},
+    sortCaret: getSortCaret,
+    sort: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: sortPrograms,
+    events: {
+      onClick: (e, column, columnIndex, row, rowIndex) => trackTableCellClickEvent(e, column, columnIndex, row, rowIndex)
+    }
+  },{
+    dataField: 'category',
+    text: 'Category',
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-left">{columnLabelsByDatafield[column.dataField].displayName} {components.sortElement}</div>)},
+    sortCaret: getSortCaret,
+    sort: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: sortPrograms,
+    hidden: true,
+    align: 'left'
+  }, {
+    dataField: 'spending',
+    formatter: (cell, row) => formatToUSD(row.spending),
+    text: 'Spending',
+    // TODO improve tooltip text for all of these
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} {columnLabelsByDatafield[column.dataField].displayName}</div>)},
+    sortCaret: getSortCaret,
+    searchable: false,
+    sort: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: sortPrograms,
+    type: 'number',
+    align: 'right'
+  }, {
+    dataField: 'budget',
+    formatter: (cell, row) => formatToUSD(row.budget),
+    text: 'Budget',
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} {columnLabelsByDatafield[column.dataField].displayName}</div>)},
+    sortCaret: getSortCaret,
+    searchable: false,
+    sort: true,
+    hidden: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: sortPrograms,
+    type: 'number',
+    align: 'right'
+  }, {
+    dataField: 'eoy_total_fte',
+    formatter: (cell,row) => formatFTE(row.eoy_total_fte),
+    text: 'Staff',
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} {columnLabelsByDatafield[column.dataField].displayName} * <HelpIcon tooltipText={columnLabelsByDatafield[column.dataField].helperText.helperText} placement="bottom"/></div>)},
+    headerStyle: (colum, colIndex) => { return { minWidth: '110px'} },
+    sortCaret: getSortCaret,
+    searchable: false,
+    sort: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: sortPrograms,
+    type: 'number',
+    align: 'right',
+    csvExport: false
+  }, {
+    dataField: 'remaining_budget_percent',
+    formatter: (cell, row, rowIndex) => formatRemainingBudgetCell(row.remaining_budget_percent, rowIndex),
+    text: 'Remaining Budget',
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} {columnLabelsByDatafield[column.dataField].displayName}</div>)},
+    sortCaret: getSortCaret,
+    searchable: false,
+    sort: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: sortPrograms,
+    type: 'number',
+    align: 'right'
+  }]
   return (
     <ToolkitProvider
       keyField="code"
@@ -261,12 +270,15 @@ const CentralProgramsTable = ({data}) => {
             <Col md={8}>
               <SearchBar
                 {...props.searchProps}
-                placeholder="Search programs"
+                placeholder= {`${labelContent.labels.searchLabel}`}
                 className="table-search-bar mb-4"
               />
             </Col>
             <Col>
-              <ModalColumnToggle { ...props.columnToggleProps } />
+              <ModalColumnToggle
+                labelContent={labelContent}
+                columnLabels={columnLabelsByDatafield}
+                {...props.columnToggleProps } />
             </Col>
           </Row>
           <BootstrapTable
@@ -279,10 +291,10 @@ const CentralProgramsTable = ({data}) => {
             rowClasses={rowClasses}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
-          <div className="footnote mb-3 mt-2">* Staff numbers change throughout the year due to people leaving the district, layoffs, or movement between departments. This count was taken the end of the year, but does not reflect layoffs that may have eliminated positions during the school year. We are working to get data which allows us to display these mid-year changes.</div>
+          <div className="footnote mb-3 mt-2">{labelContent.footnote.footnote}</div>
           <div>
             <ExportCSVButton {...props.csvProps} className="btn-link download">
-              <DownloadIcon/>Download Table Data as CSV
+              <DownloadIcon/>{labelContent.labels.downloadDataLabel}
             </ExportCSVButton>
           </div>
         </div>

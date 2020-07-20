@@ -77,7 +77,7 @@ function SankeyChart(props) {
                                                 trackCustomEvent({
                                                     category: `Sankey - ${props.gaEventCategory}`,
                                                     action: "Change Grouping",
-                                                    label: `${option.optionLabel}`
+                                                    label: `${option.optionId}`
                                                 })
                                             }}
                                             active={(groupBy === option.optionId)}>
