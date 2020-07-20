@@ -52,8 +52,7 @@ function SankeyChart(props) {
         )
     }
 
-    const xAxisLabels = (props) => {console.log(props)
-        return (
+    const xAxisLabels = (props) => (
             <g transform="translate(0,-30)" id="overlay">
                 <text x={leftLabel.length * -4}>
                     {leftLabel}
@@ -62,7 +61,7 @@ function SankeyChart(props) {
                     {rightLabel}
                 </text>
             </g>
-        )};
+        );
 
     return (
         <div className="sankey-chart">
