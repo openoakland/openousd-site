@@ -6,7 +6,8 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
-    "@nivo/sankey": "^0.61.2",
+    "@nivo/bar": "^0.62.0",
+    "@nivo/sankey": "^0.62.0",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.19.32",
     "gatsby-image": "^2.2.29",
@@ -29,7 +30,8 @@
     "react-bootstrap-table2-toolkit": "^2.1.0",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
-    "react-scroll": "^1.7.16"
+    "react-scroll": "^1.7.16",
+    "slugify": "^1.4.0"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",

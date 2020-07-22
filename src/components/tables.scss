@@ -2,6 +2,19 @@ a, .btn-link, .table-header {
     color: $theme-blue;
 }
 
+th {
+    &:focus {
+        outline: none !important;
+    }
+
+    &.sortable {
+        cursor: pointer;
+        &:hover {
+            background-color: $hover-highlight;
+        }
+    }
+}
+
 .table-header {
     font-size: 1.1rem;
 }
@@ -49,7 +62,7 @@ a, .btn-link, .table-header {
             }
 
             &:hover {
-                background-color: #f8f9fa;
+                background-color: $hover-highlight;
             }
 
             &.visible svg {
