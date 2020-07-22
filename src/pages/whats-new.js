@@ -19,8 +19,8 @@ const WhatsNew = () => (
     <SEO title="What's New" />
     <Container>
     {/*<Row><Col><h2>What's New</h2></Col></Row>*/}
-        <Row>
-            <Col md={4} id="left-dates">
+        <Row className="d-flex bd-highlight">
+            <Col md={4} className="d-none d-sm-block p-2 w-100 bd-highlight" id="left-dates">
                 <ListGroup variant="flush" className="mt-3">
                 {
                     newFeaturesData.map(feature => (
@@ -39,7 +39,7 @@ const WhatsNew = () => (
                 }
                 </ListGroup>
             </Col>
-            <Col md={8} id="right-content">
+            <Col md={8} className="px-3 flex-shrink-1 bd-highlight" id="right-content">
                 {
                     newFeaturesData.map(feature => (
                         <Element name={dateToDivID(feature.date)}  style={{marginBottom: '80px'}}>
