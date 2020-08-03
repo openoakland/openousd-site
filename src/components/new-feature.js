@@ -11,7 +11,7 @@ const NewFeature = (props) => {
         <div className="mt-4">
             <h3>{props.heading}</h3>
             <div>{props.date}</div>
-            <img src={props.image} className="mw-100 pt-3"/>
+            {/* <img src={props.image} className="mw-100 pt-3"/> */}
             <div className="pt-3">{props.description}</div>
             <div className="pt-3"><Link to={props.path}>See it in action <ArrowRightAlt/></Link></div>
         </div>

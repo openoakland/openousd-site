@@ -24,17 +24,18 @@ const WhatsNew = () => (
                 <ListGroup variant="flush" className="mt-3">
                 {
                     newFeaturesData.map(feature => (
-                        <ListGroup.Item action >
-                            <Link
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={-150}
-                            duration= {550} 
-                            to={dateToDivID(feature.date)}>
+                        <Link
+                        className="btn"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-150}
+                        duration= {550} 
+                        to={dateToDivID(feature.date)}>
+                            <ListGroup.Item action >
                                 {feature.date}
-                            </Link>
-                        </ListGroup.Item>
+                            </ListGroup.Item>
+                        </Link>
                     ))
                 }
                 </ListGroup>
