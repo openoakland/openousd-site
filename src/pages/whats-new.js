@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { Link, Element } from "react-scroll";
 
-import twitterIcon from '../images/icons/twitter-icon-blue.svg'
+// import twitterIcon from '../images/icons/twitter-icon-blue.svg'
 import NewFeature from "../components/new-feature"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,13 +12,14 @@ import image from "../images/feature-june.gif"
 
 import "../styles/pages/whats-new.scss"
 
+// formatting the date into an id that react scroll can reference 
 const dateToDivID = (date) => {return "#" + date.replace(/[\W_]+/g, '-').toLowerCase()}
 
 const WhatsNew = () => (
   <Layout pageClassName="whats-new-page">
     <SEO title="What's New" />
     <Container>
-    {/*<Row><Col><h2>What's New</h2></Col></Row>*/}
+    <Row><Col><h1>What's New</h1></Col></Row>
         <Row className="d-flex bd-highlight">
             <Col md={4} className="d-none d-sm-block p-2 w-100 bd-highlight" id="left-dates">
                 <ListGroup variant="flush" className="mt-3">
