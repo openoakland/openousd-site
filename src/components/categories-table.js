@@ -61,7 +61,7 @@ const CategoriesTable = ({data, colName}) => {
           <SearchBar
             {...props.searchProps}
             placeholder={"Search " + colName}
-            className="search-bar my-3"
+            className="table-search-bar my-3"
           />
           <BootstrapTable
             // turning off pagination for now

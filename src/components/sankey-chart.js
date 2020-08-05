@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from 'gatsby'
 import PropTypes from "prop-types"
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import { ResponsiveSankey } from '@nivo/sankey'
 import { Button, ButtonGroup } from 'react-bootstrap';
@@ -9,7 +10,15 @@ import HelpOutline from '@material-ui/icons/HelpOutline';
 
 function SankeyChart(props) {
 
-    const [groupByRestricted, setGroupByRestricted] = useState(false)
+    const NONE = "none"
+    const RESTRICTED = "restricted"
+    const [groupBy, setGroupBy] = useState(NONE)
+    let groupByRestricted = (groupBy === RESTRICTED)
+    const restrictedOption = props.labelContent.groupingOptions.find(o => o.optionId ==="restricted")
+
+    const leftLabel = props.labelContent.leftLabel
+    const rightLabel = props.labelContent.rightLabel
+
     let includeCategoriesLink = props.includeCategoriesLink // defaults to true
 
     let totalsByNode = {}
@@ -44,47 +53,38 @@ function SankeyChart(props) {
     }
 
     const xAxisLabels = (props) => (
-        <g transform="translate(0,-30)" id="overlay">
-            <text x={-56}>
-                Funding Sources
-            </text>
-            <text x={props.width - 90}>
-                Program Expenses
-            </text>
-        </g>
-    );
+            <g transform="translate(0,-30)" id="overlay">
+                <text x={leftLabel.length * -4}>
+                    {leftLabel}
+                </text>
+                <text x={props.width - 90}>
+                    {rightLabel}
+                </text>
+            </g>
+        );
 
     return (
         <div className="sankey-chart">
             {props.restrictedData && // hide control component if there is no data to group by
                 <div id="sankey-grouping">
                     <div className="control">
-                        <span className="label">Grouping:{' '}</span>
+                        <span className="label">{props.labelContent.groupingLabel}{' '}</span>
                         <ButtonGroup>
-                            <Button size="sm"
-                                    onClick={() => {
-                                        setGroupByRestricted(false)
-                                        trackCustomEvent({
-                                            category: `Sankey - ${props.gaEventCategory}`,
-                                            action: "Change Grouping",
-                                            label: "None"
-                                        })
-                                    }}
-                                    active={!groupByRestricted}>
-                                None
-                            </Button>
-                            <Button size="sm"
-                                    onClick={() => {
-                                        setGroupByRestricted(true)
-                                        trackCustomEvent({
-                                            category: `Sankey - ${props.gaEventCategory}`,
-                                            action: "Change Grouping",
-                                            label: "Restricted / Unrestricted"
-                                        })
-                                    }}
-                                    active={groupByRestricted}>
-                                Restricted / Unrestricted
-                            </Button>
+                            {props.labelContent.groupingOptions.map( option => (
+                                    <Button size="sm"
+                                            onClick={() => {
+                                                setGroupBy(option.optionId)
+                                                trackCustomEvent({
+                                                    category: `Sankey - ${props.gaEventCategory}`,
+                                                    action: "Change Grouping",
+                                                    label: `${option.optionId}`
+                                                })
+                                            }}
+                                            active={(groupBy === option.optionId)}>
+                                        {option.optionLabel}
+                                    </Button>
+                                )
+                            )}
                         </ButtonGroup>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ function SankeyChart(props) {
             <div id="sankey-chart">
                 <div id="info">
                     <div className={"text-center" + (!groupByRestricted ? " d-none" : "")}>
-                        <strong>Restricted</strong> funds must be used for specific purposes.<br/> <strong>Unrestricted</strong> funds are more flexible.
+                        {documentToReactComponents(restrictedOption.childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode.json)}
                     </div>
                 </div>
                 <ResponsiveSankey
@@ -129,10 +129,10 @@ function SankeyChart(props) {
                     }}
                 />
                 <div className="text-center">
-                    <div className="footnote">Note: Links (lines in the chart) only appear for spending of at least $100,000. For this reason, the sum of the links may be less than the totals.</div>
+                    <div className="footnote">{props.labelContent.footnote.footnote}</div>
                     {includeCategoriesLink &&
                         <div className="mt-3">
-                            <HelpOutline/> <Link to="/about-categories">Read more about the categories in this chart</Link>
+                            <HelpOutline/> <Link to="/about-categories">{props.labelContent.readMoreLink}</Link>
                         </div>
                     }
                 </div>

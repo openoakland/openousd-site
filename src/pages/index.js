@@ -1,6 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
+import { Link } from 'gatsby-plugin-intl'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 
 import Layout from "../components/layout";
 import MuralImage from "../components/mural-image";
@@ -9,7 +11,7 @@ import "../styles/pages/index.scss"
 
 import { Container, Col, Row, Button } from 'react-bootstrap';
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout pageClassName="index-page">
     <SEO title="Home" />
 
@@ -19,14 +21,14 @@ const IndexPage = () => (
 
     <Container>
         <Row className="descriptions justify-content-center">
-          <Col xs={11} md={5} className="px-md-5 py-md-4 px-3 py-3">
-            <h1 className="">What Is OpenOUSD?</h1>
-            <p>OpenOUSD aims to bring greater transparency to the Oakland Unified School District's central office so that the community can fully participate in discussions about how it can best serve our students. OpenOUSD is a project of OpenOakland, a volunteer run group with the mission of increasing access to government through technology. OpenOUSD receives no public or private funds and is not an official OUSD website.</p>
+          <Col xs={11} lg={5} className="px-lg-5 py-lg-4 px-3 py-3">
+            <h1 className="">{data.contentfulPage.content.card01Title}</h1>
+            {documentToReactComponents(data.contentfulPage.content.card01Content.json)}
           </Col>
 
-          <Col xs={11} md={5} className="px-md-5 py-md-4 px-3 py-3">
-            <h1 className="">What Are Central Programs?</h1>
-            <p>We define a central program as any activity managed by OUSD's central office rather than individual school sites. For example, a staff member working at a school site but hired by the central office would be considered part of a central program. There are more than 50 centrally managed programs at OUSD.</p>
+          <Col xs={11} lg={5} className="px-lg-5 py-lg-4 px-3 py-3">
+            <h1 className="">{data.contentfulPage.content.card02Title}</h1>
+            {documentToReactComponents(data.contentfulPage.content.card02Content.json)}
             <Link to="/central-programs/">
               <Button
                 variant="primary"
@@ -36,22 +38,15 @@ const IndexPage = () => (
                                                 action: "Explore Central Programs",
                                                 label:" What Are Central Programs?"})}
               >
-                Explore Central Programs
+                {data.contentfulPage.content.exploreCentralProgramsButton}
               </Button>
             </Link>
           </Col>
         </Row>
         <Row>
-          <Col xs={11} sm={10} className="mx-auto mt-3">
+          <Col xs={11} lg={5} className="mx-auto ml-lg-5 mt-3">
             <div className="footnote">
-              <p>The image above is the Live Learn Love mural at Roosevelt Middle School.</p>
-              <p> "Change will not come if we wait for some other person or{' '}
-                  some other time.<br/>
-                  We are the ones we've been waiting for.<br/>
-                  We are the change the we seek."</p>
-              <p>- B.H. OBAMA</p>
-              <p>Artists: V. Lopez / J. C. Bustamante / B. C. Conner</p>
-              <p>Source: <a href="https://localwiki.org/oakland/Live_Learn_Love_mural">Oakland Wiki</a></p>
+              {documentToReactComponents(data.contentfulPage.content.heroImageAttribution.json)}
             </div>
           </Col>
         </Row>
@@ -59,5 +54,31 @@ const IndexPage = () => (
   </Layout>
 
 )
+
+export const query = graphql`
+  query HomePageQuery($language: String) {
+    contentfulPage(slug: {eq: "index"}, node_locale: {eq: $language}) {
+      content {
+            ... on ContentfulHomePageContent {
+              id
+              card01Content {
+                json
+              }
+              card01Title
+              card02Content {
+                json
+              }
+              card02Title
+              exploreCentralProgramsButton
+              heroImageAttribution {
+                json
+              }
+            }
+      }
+      slug
+      title
+    }
+}
+`
 
 export default IndexPage

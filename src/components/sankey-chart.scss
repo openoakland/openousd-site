@@ -17,6 +17,10 @@
         #info {
             height: 50px;
         }
+
+        p {
+            margin-bottom: 0px;
+        }
     }
 
     #sankey-grouping {
@@ -25,7 +29,6 @@
         .label {
             padding-right: 10px;
         }
-
     }
 
     #overlay {
