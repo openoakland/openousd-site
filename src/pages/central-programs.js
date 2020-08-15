@@ -72,6 +72,9 @@ export const query = graphql`
         spending
         year
         code
+        fields {
+          slug
+        }
       }
     }
   }

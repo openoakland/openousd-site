@@ -26,6 +26,26 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(typeDefs)
 }
 
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  if (node.internal.type === `CentralProgramsJson`) {
+    const { createNodeField } = actions
+
+    // Some program names include parentheses, remove those so they don't end up in path
+    const slugifyOptions = {
+      remove: /[*+~.()'"!:@/]/g,
+      lower: true
+    }
+
+    const slug = slugify(node.name, slugifyOptions)
+
+    // Add a slug field which can be used later to generate page slug
+    createNodeField({
+      name: `slug`,
+      node,
+      value: slug,
+    })
+  }}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   // code is the site code / OUSD identifier for program
@@ -35,21 +55,17 @@ exports.createPages = async ({ graphql, actions }) => {
         nodes {
           name
           code
+          fields {
+            slug
+          }
         }
       }
     }
   `)
 
-  // Some program names include parentheses, remove those so they don't end up in path
-  const options = {
-    remove: /[*+~.()'"!:@/]/g,
-    lower: true
-  }
-
   result.data.allCentralProgramsJson.nodes.forEach(node => {
-    const slug = slugify(node.name, options)
     createPage({
-      path: `central-program/${slug}`,
+      path: `central-programs/${node.fields.slug}`,
       component: path.resolve(`./src/components/central-program.js`),
       context: {
         // Data passed to context is available
