@@ -13,7 +13,7 @@ const NewFeature = (props) => {
             <div>{props.date}</div>
             {/* <img src={props.image} className="mw-100 pt-3"/> */}
             <div className="pt-3">{props.description}</div>
-            <div className="pt-3"><Link to={props.path}>See it in action <ArrowRightAlt/></Link></div>
+            <div className="pt-3"><Link to={props.pagePath}>See it in action <ArrowRightAlt/></Link></div>
         </div>
     )
 }
