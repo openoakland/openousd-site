@@ -9,12 +9,9 @@ import NewFeature from "../components/new-feature"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import newFeaturesData from "../../data/new-features.json"
-import image from "../images/feature-june.gif"
-
 import "../styles/pages/whats-new.scss"
 
-//  2020-06-03 => June 3, 2020
+//  formatting date from Contenful, 2020-06-03 => June 3, 2020
 const dateToString = (date) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
@@ -25,16 +22,16 @@ const dateToString = (date) => {
 // formatting the date (June 3, 2020) into an id that react scroll can reference (#june-3-2020)
 const dateToDivID = (date) => {return "#" + date.replace(/[\W_]+/g, '-').toLowerCase()}
 
+// options to replace formatting for rich text
 const options = {
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => children,
+    [BLOCKS.PARAGRAPH]: (node, children) =>  children,
   },
 }
 
 const WhatsNewPage = ({data}) => {
 
   const changelog = data.allContentfulChangelogContent.nodes;
-  console.log(changelog);
 
   return (
   <Layout pageClassName="whats-new-page">
@@ -68,30 +65,14 @@ const WhatsNewPage = ({data}) => {
                     changelog.map(feature => (
                         <Element name={dateToDivID(dateToString(feature.date))}  style={{marginBottom: '80px'}}>
                             <React.Fragment>
-                              {console.log(documentToReactComponents(feature.description.json))}
                               <NewFeature
                                 heading={feature.heading}
                                 date={dateToString(feature.date)}
                                 description={documentToReactComponents(feature.description.json, options)}
                                 pagePath={feature.pagePath}
-                                image={image}
+                                image={feature.imagechangelog}
                             />
-                            
                             </React.Fragment>
-                            
-                        </Element>
-                    ))}
-
-                    {
-                      newFeaturesData.map(feature => (
-                        <Element name={dateToDivID(feature.date)}  style={{marginBottom: '80px'}}>
-                            <NewFeature
-                                heading={feature.heading}
-                                date={feature.date}
-                                description={feature.description}
-                                pagePath={feature.page_path}
-                                image={image}
-                            />
                         </Element>
                     ))}
             </Col>
