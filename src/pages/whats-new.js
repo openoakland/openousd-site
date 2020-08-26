@@ -11,6 +11,13 @@ import SEO from "../components/seo"
 
 import "../styles/pages/whats-new.scss"
 
+// https://dev.to/flexdinesh/accessing-nested-objects-in-javascript--9m4
+//  Access Nested Objects Using Array Reduce 
+const getNestedObject = (nestedObj, pathArr) => {
+  return pathArr.reduce((obj, key) =>
+      (obj && obj[key] !== 'undefined') ? obj[key] : undefined, nestedObj);
+}
+
 //  formatting date from Contenful, 2020-06-03 => June 3, 2020
 const dateToString = (date) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -32,7 +39,7 @@ const options = {
 const WhatsNewPage = ({data}) => {
 
   const changelog = data.allContentfulChangelogContent.nodes;
-
+  console.log(data)
   return (
   <Layout pageClassName="whats-new-page">
     <SEO title="What's New" />
@@ -70,7 +77,8 @@ const WhatsNewPage = ({data}) => {
                                 date={dateToString(feature.date)}
                                 description={documentToReactComponents(feature.description.json, options)}
                                 pagePath={feature.pagePath}
-                                image={feature.imagechangelog}
+                                image={feature.imageChangelog ? 'https:' + getNestedObject(feature.imageChangelog, ['file', 'url']): ''}
+                                image_title={feature.imageChangelog ? getNestedObject(feature.imageChangelog, ['file', 'title']): ''}
                             />
                             </React.Fragment>
                         </Element>
@@ -82,8 +90,6 @@ const WhatsNewPage = ({data}) => {
 )}
 
 export default WhatsNewPage
-
-
 
 export const query = graphql`
 query WhatsNewPage($language: String) {
@@ -105,9 +111,15 @@ query WhatsNewPage($language: String) {
       date
       id
       tweetId
-      pagePath
       description {
         json
+      }
+      pagePath
+      imageChangelog {
+        title
+        file {
+          url
+        }
       }
     }
   }
