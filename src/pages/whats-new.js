@@ -36,13 +36,15 @@ const options = {
   },
 }
 
+const title = data.contentfulPage.title
+
+
 const WhatsNewPage = ({data}) => {
 
   const changelog = data.allContentfulChangelogContent.nodes;
-  console.log(data)
   return (
   <Layout pageClassName="whats-new-page">
-    <SEO title="What's New" />
+    <SEO title={title} />
     <Container>
     <Row><Col><h1>{data.contentfulPage.title}</h1></Col></Row>
         <Row className="d-flex bd-highlight">
