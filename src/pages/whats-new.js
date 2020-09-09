@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { Link, Element } from "react-scroll";
 import { BLOCKS } from "@contentful/rich-text-types"
@@ -35,6 +36,7 @@ const dateToString = (date, locale) => {
 const dateToDivID = (date) => {return "#" + date.replace(/[\W_]+/g, '-').toLowerCase()}
 
 // options to replace formatting for rich text
+// rendering rich text with `documentToReactComponents` wraps it in a `<p>` so this removes it
 const options = {
     renderNode: {
         [BLOCKS.PARAGRAPH]: (node, children) =>  children,
@@ -81,6 +83,7 @@ const WhatsNewPage = ({data}) => {
                                     date={dateToString(feature.date,node_locale)}
                                     description={documentToReactComponents(feature.description.json, options)}
                                     pagePath={feature.pagePath}
+                                    pagePathLinkName={feature.pagePathLinkName}
                                     image={feature.imageChangelog ? 'https:' + getNestedObject(feature.imageChangelog, ['file', 'url']): ''}
                                     image_title={feature.imageChangelog ? getNestedObject(feature.imageChangelog, ['file', 'title']): ''}
                                 />
@@ -97,17 +100,12 @@ export default WhatsNewPage
 
 export const query = graphql`
 query WhatsNewPage($language: String) {
-    site(siteMetadata: {}) {
-      siteMetadata {
-        latestSchoolYear
-      }
-    }
     contentfulPage(slug: {eq: "whats-new"}, node_locale: {eq: $language}) {
       slug
       title
       node_locale
     }
-    allContentfulChangelogContent(filter: {node_locale: {eq: $language}}) {
+    allContentfulChangelogContent(filter: {node_locale: {eq: $language}}, sort: {fields: date, order: DESC}) {
       totalCount
       nodes {
         node_locale
@@ -118,6 +116,7 @@ query WhatsNewPage($language: String) {
         description {
           json
         }
+        pagePathLinkName
         pagePath
         imageChangelog {
           title
