@@ -34,8 +34,6 @@ const AboutCategoriesPage = ({ data }) => {
   const fundingSources = getBlockWithId("funding-sources")
   const programExpenses = getBlockWithId("program-expenses")
 
-  console.log(categoriesTable.columns)
-
   const getColumnWithDataFieldName = dataFieldName =>
     categoriesTable.columns.find(
       column => column.dataFieldName === dataFieldName
@@ -95,6 +93,7 @@ const AboutCategoriesPage = ({ data }) => {
                   <CategoriesTable
                     data={revenueCategories}
                     colName={fundingSourcesColumn.displayName}
+                    tableInfo={categoriesTable}
                   />
                 </Col>
               </Row>
@@ -115,6 +114,7 @@ const AboutCategoriesPage = ({ data }) => {
                   <CategoriesTable
                     data={expenditureCategories}
                     colName={centralProgramColumn.displayName}
+                    tableInfo={categoriesTable}
                   />
                 </Col>
               </Row>
@@ -152,6 +152,10 @@ export const query = graphql`
             columns {
               displayName
               dataFieldName
+            }
+            labels {
+              searchLabel
+              downloadDataLabel
             }
           }
         }
