@@ -11,13 +11,13 @@ export const getSortCaret = (order, column) => {
   }
   // invisible icon used as a spaceholder so that
   // when an icon does render it does not shift the table column
-  return (<ArrowDropDown className="invisible"/>)
+  return (<ArrowDropDown className="invisible" />)
 }
 
 export const formatToUSD = amount => {
   // it would be better to just useIntl.NumberFormat currency, but that seems to always
   // add cents ie $2,330.00
-  return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0}).format(amount)
+  return '$' + new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(amount)
 }
 
 
@@ -38,11 +38,7 @@ export const sort = (a, b, order, dataField, rowA, rowB, firstColDatafield, tota
   return 0
 }
 
-export const formatFTE = (fte) => {
-  if(fte){
-    // Round but don't add trailing zeroes
-    fte = +fte.toFixed(2)
-  }
 
-  return fte
-}
+
+// Convert null to zero & Round without trailing zeroes
+export const formatFTE = fte => (!fte ? 0 : +fte.toFixed(2))
