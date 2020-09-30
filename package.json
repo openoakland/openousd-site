@@ -33,6 +33,7 @@
     "react-bootstrap-table2-toolkit": "^2.1.0",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
+    "react-scroll": "^1.8.1",
     "slugify": "^1.4.0"
   },
   "devDependencies": {
