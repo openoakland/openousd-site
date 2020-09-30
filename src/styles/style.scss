@@ -40,52 +40,53 @@
 // Global Styles
 
 .main-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    max-width: 1140px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1140px;
 }
 
-button.cta{
-    border-radius: 50rem;
-    padding: .75rem 1.5rem;
-    background-color: $theme-blue;
+button.cta {
+  border-radius: 50rem;
+  padding: 0.75rem 1.5rem;
+  background-color: $theme-blue;
 }
 
-body{
-    font-family: "nunito sans", arial, sans-serif;
+body {
+  font-family: "nunito sans", arial, sans-serif;
 }
 
-h1{
-    font-family: "nunito sans", arial, sans-serif;
-    font-weight: 900;
-    font-size: 24px;
+h1 {
+  font-family: "nunito sans", arial, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
 }
 
-h2{
-    font-family: "nunito sans", arial, sans-serif;
-    font-weight: 900;
-    font-size: 18px;
+h2 {
+  font-family: "nunito sans", arial, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
 }
 
-p{
-    line-height:28px;
+p {
+  line-height: 28px;
 }
-button{
-    font-weight: 800 !important;
-    font-size: 1rem !important;
+button {
+  font-weight: 800 !important;
+  font-size: 1rem !important;
 }
 
-button.download, a {
-    svg {
-        padding-right: 4px;
-        padding-bottom: 3px;
-    }
+button.download,
+a {
+  svg {
+    padding-right: 4px;
+    padding-bottom: 3px;
+  }
 }
 
 .footnote {
-    font-size: $footnote-font-size;
-    font-style: italic;
-    color: $gray;
+  font-size: $footnote-font-size;
+  font-style: italic;
+  color: $gray;
 }
 
 .strong {
@@ -93,21 +94,21 @@ button.download, a {
 }
 
 .btn-group {
-    display: inline-block;
-    padding: 20px 0px;
-    text-align: center;
+  display: inline-block;
+  padding: 20px 0px;
+  text-align: center;
 
-    button {
-        font-weight: normal !important;
-        border-color: $theme-blue;
+  button {
+    font-weight: normal !important;
+    border-color: $theme-blue;
 
-        &.btn-sm {
-            padding: 0.2rem 0.5rem;
-        }
-
-        &:not(.active) {
-            background-color: white;
-            color: $theme-blue;
-        }
+    &.btn-sm {
+      padding: 0.2rem 0.5rem;
     }
+
+    &:not(.active) {
+      background-color: white;
+      color: $theme-blue;
+    }
+  }
 }
