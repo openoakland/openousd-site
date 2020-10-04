@@ -60,15 +60,21 @@ const CentralProgram = ({ data }) => {
                 <h2 className="pb-3 pt-sm-3 pt-md-2">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                 <StaffRolesTable data={centralProgram.staff_roles} />
               </div>
-              <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4">
-                <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
-                <StaffLaborUnionsChart
-                  data={centralProgram.staff_bargaining_units}
-                />
-                <StaffLaborUnionsTable
-                  data={centralProgram.staff_bargaining_units}
-                />
-              </div>
+              {/* if staff_bargaining_units array is 0 length or 0 value
+                return Staff Labor Union section null
+              */}
+              {centralProgram.staff_bargaining_units.length === 0 ||
+                centralProgram.staff_bargaining_units.includes(0) ? null : (
+                  <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4">
+                    <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                    <StaffLaborUnionsChart
+                      data={centralProgram.staff_bargaining_units}
+                    />
+                    <StaffLaborUnionsTable
+                      data={centralProgram.staff_bargaining_units}
+                    />
+                  </div>
+                )}
             </Col>
           </Row>
         </Container>
