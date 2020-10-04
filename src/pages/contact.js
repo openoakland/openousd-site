@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from 'gatsby'
 import { Link } from "gatsby-plugin-intl"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
