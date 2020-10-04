@@ -1,84 +1,165 @@
 import React from "react"
-import { Link } from "gatsby"
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { graphql } from 'gatsby'
+import { Link } from "gatsby-plugin-intl"
+import { Container, Row, Col, Form, Button } from "react-bootstrap"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import LaunchIcon from '@material-ui/icons/Launch';
-import twitterIcon from '../images/icons/twitter-icon-blue.svg'
+import LaunchIcon from "@material-ui/icons/Launch"
+import twitterIcon from "../images/icons/twitter-icon-blue.svg"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/pages/contact.scss"
 
-const Contact = () => (
-  <Layout pageClassName="contact-page">
-    <SEO title="Contact" />
-    <Container>
-        <Row>
-            <Col md={6} lg={5} id="contact-form">
-                <h1>Contact Us</h1>
-                <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
-                    <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" name="email" autoComplete="email"/>
-                    <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" name="name" autoComplete="name"/>
-                    <Form.Label>I'm contacting you to...</Form.Label>
-                        <Form.Control as="select" name="purpose">
-                            <option>Offer feedback</option>
-                            <option>Ask a question</option>
-                            <option>Get involved</option>
-                            <option>Something else</option>
-                        </Form.Control>
-                    <Form.Label>Message (required)</Form.Label>
-                        <Form.Control as="textarea" rows={5} name="message" />
-                    {/*<Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>*/}
-                    <Button className="cta mt-3" variant="primary" type="submit">Send Message</Button>
-                </Form>
-            </Col>
-            <Col md={{ span:5, offset: 1 }}>
-                <div id="email-signup" className="pt-5 pt-md-0">
-                    <h1>Sign Up For Email Updates</h1>
-                    <Form method="post" action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3">
-                        <Form.Label>Be the first to know when new data is released.</Form.Label>
-                        <Form.Control type="hidden" name="purpose" value="Email Signup"/>
-                        <Form.Control type="email" name="email" autocomplete="email" placeholder="Email" />
-                        <Form.Control type="hidden" name="email-opt-in" value="on"/>
-                        <Button className="cta mt-3" variant="primary" type="submit">Sign Up</Button>
-                    </Form>
-                </div>
-                <div className="pt-5">
-                    <h1>Get Updates On Twitter <img src={twitterIcon} id="twitter-icon" alt="twitter icon"/></h1>
-                    <div>Follow <a href="https://twitter.com/OpenOUSD" target="_blank" rel="noopener noreferrer">
-                        @OpenOUSD</a> or <a href="https://twitter.com/OAKEDUretweets" target="_blank" rel="noopener noreferrer">
-                        @OAKEDUretweets</a> for updates.
-                    </div>
-                </div>
-                <div className="pt-5">
-                    <h1>Join Us In-Person</h1>
-                    <div>OpenOakland meets every Tues,{' '}
-                        6:30pm at Oakland City Hall.
-                    </div>
-                    <a href="https://www.meetup.com/OpenOakland/events/" target="_blank" rel="noopener noreferrer">
-                        RSVP on Meetup <LaunchIcon/>
-                    </a>
-                </div>
+const Contact = ({ data }) => {
+  const { title, content } = data.contentfulPage
 
-                <div className="pt-5">
-                    <h1>Looking for data?</h1>
-                    <p><Link to="/about-data/">View OpenOUSD data and code.</Link></p>
-                    <div className="mt-3 strong">Check out other education-related OpenOakland projects:</div>
-                    <ul>
-                        <li><a href="https://www.opendisclosure.io/" target="_blank" rel="noopener noreferrer">Open Disclosure Oakland</a> - Campaign contributions for school board elections</li>
-                        <li><a href="https://trackg.org" target="_blank" rel="noopener noreferrer">trackg.org</a> - Measure G parcel tax spending</li>
-                    </ul>
-                </div>
-            </Col>
-        </Row>
-        <Row>
+  const {
+    contactUs,
+    signUpForUpdates,
+    submitButton,
+    signUpButton,
+    formInputs,
+    contentBlocks,
+    meetupRsvpLink,
+    viewDataLink,
+  } = content
 
+  const formInputForName = name => formInputs.find(input => input.name === name)
+  const emailFormInput = formInputForName("email")
+  const nameFormInput = formInputForName("name")
+  const purposeFormInput = formInputForName("purpose")
+  const messageFormInput = formInputForName("message")
+  const signUpForUpdatesFormInput = formInputForName("signUpForUpdates")
+
+  const contentBlockForID = id =>
+    contentBlocks.find(contentBlock => contentBlock.blockId === id)
+  const twitterContentBlock = contentBlockForID("twitter")
+  const meetupContentBlock = contentBlockForID("meetup")
+  const dataSourceContentBlock = contentBlockForID("dataSource")
+
+  return (
+    <Layout pageClassName="contact-page">
+      <SEO title={title} />
+      <Container>
+        <Row>
+          <Col md={6} lg={5} id="contact-form">
+            <h1>{contactUs}</h1>
+            <Form
+              method="post"
+              action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3"
+            >
+              <Form.Label>{emailFormInput.label}</Form.Label>
+              <Form.Control type="email" name="email" autoComplete="email" />
+              <Form.Label>{nameFormInput.label}</Form.Label>
+              <Form.Control type="text" name="name" autoComplete="name" />
+              <Form.Label>{purposeFormInput.label}</Form.Label>
+              <Form.Control as="select" name="purpose">
+                {purposeFormInput.selectOptions.map(option => (
+                  <option>{option}</option>
+                ))}
+              </Form.Control>
+              <Form.Label>{messageFormInput.label}</Form.Label>
+              <Form.Control as="textarea" rows={5} name="message" />
+              {/*<Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>*/}
+              <Button className="cta mt-3" variant="primary" type="submit">
+                {submitButton}
+              </Button>
+            </Form>
+          </Col>
+          <Col md={{ span: 5, offset: 1 }}>
+            <div id="email-signup" className="pt-5 pt-md-0">
+              <h1>{signUpForUpdates}</h1>
+              <Form
+                method="post"
+                action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3"
+              >
+                <Form.Label>{signUpForUpdatesFormInput.label}</Form.Label>
+                <Form.Control
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder={signUpForUpdatesFormInput.placeholderText}
+                />
+                <Form.Control type="hidden" name="email-opt-in" value="on" />
+                <Button className="cta mt-3" variant="primary" type="submit">
+                  {signUpButton}
+                </Button>
+              </Form>
+            </div>
+            <div className="pt-5">
+              <div>
+                <h1>
+                  {twitterContentBlock.heading}{" "}
+                  <img src={twitterIcon} id="twitter-icon" alt="twitter icon" />
+                </h1>
+                <div>
+                  {documentToReactComponents(twitterContentBlock.content.json)}
+                </div>
+              </div>
+              <div className="pt-4">
+                <h1>{meetupContentBlock.heading}</h1>
+                <div>
+                  {documentToReactComponents(meetupContentBlock.content.json)}
+                  <a
+                    href="https://www.meetup.com/OpenOakland/events/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {meetupRsvpLink} <LaunchIcon />
+                  </a>
+                </div>
+              </div>
+              <div className="pt-4">
+                <h1>{dataSourceContentBlock.heading}</h1>
+                <p>
+                  <Link to="/about-data/">{viewDataLink}</Link>
+                </p>
+                <div>
+                  {documentToReactComponents(
+                    dataSourceContentBlock.content.json
+                  )}
+                </div>
+              </div>
+            </div>
+          </Col>
         </Row>
         <Row></Row>
-    </Container>
-
-  </Layout>
-)
+        <Row></Row>
+      </Container>
+    </Layout>
+  )
+}
 
 export default Contact
+
+// https://app.contentful.com/spaces/tqd0xcamk1ij/entries/41a8uyVvOiMFBBdqG2G6sU
+export const query = graphql`
+  query ContactPage($language: String) {
+    contentfulPage(slug: { eq: "contact" }, node_locale: { eq: $language }) {
+      title
+      content {
+        ... on ContentfulContactPageContent {
+          contactUs
+          signUpForUpdates
+          submitButton
+          signUpButton
+          viewDataLink
+          meetupRsvpLink
+          formInputs {
+            name
+            label
+            selectOptions
+            placeholderText
+          }
+          contentBlocks {
+            blockId
+            heading
+            content {
+              json
+            }
+          }
+        }
+      }
+    }
+  }
+`

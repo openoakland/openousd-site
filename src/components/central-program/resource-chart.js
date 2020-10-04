@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby-plugin-intl"
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 import { ResponsiveSankey } from '@nivo/sankey'

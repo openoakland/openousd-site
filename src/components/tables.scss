@@ -1,43 +1,47 @@
-a, .btn-link, .table-header {
-    color: $theme-blue;
-}
-
-th {
-    &:focus {
-        outline: none !important;
+.react-bootstrap-table {
+    a, .btn-link, .table-header {
+        color: $theme-blue;
     }
 
-    &.sortable {
-        cursor: pointer;
-        &:hover {
-            background-color: $hover-highlight;
+    .table-header {
+        font-size: 1.1rem;
+    }
+
+    .first-row {
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+    }
+
+    .over-budget {
+        color: #E60000;
+    }
+
+    th {
+        &:focus {
+            outline: none !important;
+        }
+
+        &.sortable {
+            cursor: pointer;
+            &:hover {
+                background-color: $hover-highlight;
+            }
         }
     }
+
+    .table-header {
+        font-size: 1.1rem;
+    }
+
+
+
 }
 
-.table-header {
-    font-size: 1.1rem;
-}
-
-.search-bar {
+.table-search-bar {
     font-style: italic;
     border-radius: 1rem;
-    width: 300px;
+    width: 250px;
 }
-
-.first-row {
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-}
-
-.strong {
-    font-weight: 800;
-}
-
-.over-budget {
-    color: #E60000;
-}
-
 // Show / hide columns
 
 #show-hide-columns-modal {
