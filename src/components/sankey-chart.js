@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-intl'
 import PropTypes from "prop-types"
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'

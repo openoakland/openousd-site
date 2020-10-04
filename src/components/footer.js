@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby-plugin-intl"
 
 import "./footer.scss"
 import logo from '../images/logo_open-oakland_white.svg'

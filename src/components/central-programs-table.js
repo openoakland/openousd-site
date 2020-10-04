@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Link } from 'gatsby'
+import { Link } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next'
 // import paginationFactory from 'react-bootstrap-table2-paginator'
