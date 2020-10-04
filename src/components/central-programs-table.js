@@ -46,10 +46,7 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
   }
-  if (row.name === "OUSD Police Department") {
-    return (<span className="strong"><Link to="/central-program/ousd-police-department/">{row.name}</Link></span>)
-  }
-  return (<span>{row.name}</span>)
+  return (<span><Link to={row.fields.slug}>{row.name}</Link></span>)
 }
 
 const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
