@@ -42,3 +42,11 @@ export const sort = (a, b, order, dataField, rowA, rowB, firstColDatafield, tota
 
 // Convert null to zero & Round without trailing zeroes
 export const formatFTE = fte => (!fte ? 0 : +fte.toFixed(2))
+
+
+//underline first row style
+export const rowUnderline = (row, rowIndex) => {
+  if (rowIndex === 0) {
+    return "first-row"
+  }
+}
