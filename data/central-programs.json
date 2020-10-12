@@ -6,8 +6,8 @@
     "spending": 1740442.23,
     "budget": 1720738.16,
     "year": 2018,
-    "eoy_total_fte": 11.4,
-    "eoy_total_positions": 12,
+    "eoy_total_fte": 13.4,
+    "eoy_total_positions": 14,
     "remaining_budget_percent": -1.1,
     "staff_roles": [
       {
@@ -59,7 +59,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 8
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 11.4
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 13.4
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 12
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 14
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 2,
+      "eoy_total_positions": 2
+    }
   },
   {
     "code": 902,
@@ -68,8 +93,8 @@
     "spending": 765519.5,
     "budget": 734049.38,
     "year": 2018,
-    "eoy_total_fte": 7,
-    "eoy_total_positions": 7,
+    "eoy_total_fte": 5,
+    "eoy_total_positions": 5,
     "remaining_budget_percent": -4.3,
     "staff_roles": [
       {
@@ -101,7 +126,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 7
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 5
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 7
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 5
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -2,
+      "eoy_total_positions": -2
+    }
   },
   {
     "code": 940,
@@ -138,7 +188,32 @@
         "description": "None",
         "eoy_total_positions_for_bu": 7
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 10
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 10
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 10
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 10
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0
+    }
   },
   {
     "code": 951,
@@ -147,8 +222,8 @@
     "spending": 2515366.92,
     "budget": 2662185.57,
     "year": 2018,
-    "eoy_total_fte": 20.9,
-    "eoy_total_positions": 22,
+    "eoy_total_fte": 11.9,
+    "eoy_total_positions": 13,
     "remaining_budget_percent": 5.5,
     "staff_roles": [
       {
@@ -212,7 +287,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 12
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 20.9
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 11.9
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 22
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 13
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -8.999999999999998,
+      "eoy_total_positions": -9
+    }
   },
   {
     "code": 988,
@@ -221,8 +321,8 @@
     "spending": 20215328.04,
     "budget": 20529279.12,
     "year": 2018,
-    "eoy_total_fte": 100,
-    "eoy_total_positions": 100,
+    "eoy_total_fte": 101,
+    "eoy_total_positions": 101,
     "remaining_budget_percent": 1.5,
     "staff_roles": [
       {
@@ -363,7 +463,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 9
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 100
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 101
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 100
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 101
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 947,
@@ -372,8 +497,8 @@
     "spending": 823544.88,
     "budget": 1069793,
     "year": 2018,
-    "eoy_total_fte": 5,
-    "eoy_total_positions": 5,
+    "eoy_total_fte": 6,
+    "eoy_total_positions": 6,
     "remaining_budget_percent": 23,
     "staff_roles": [
       {
@@ -413,7 +538,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 6
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 5
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 6
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 980,
@@ -422,8 +572,8 @@
     "spending": 1043900.65,
     "budget": 1173543.91,
     "year": 2018,
-    "eoy_total_fte": 1,
-    "eoy_total_positions": 1,
+    "eoy_total_fte": 2,
+    "eoy_total_positions": 2,
     "remaining_budget_percent": 11,
     "staff_roles": [
       {
@@ -437,7 +587,32 @@
         "description": "Confidential",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 1
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 2
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 1
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 2
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 913,
@@ -446,8 +621,8 @@
     "spending": 65246,
     "budget": 65246.39,
     "year": 2018,
-    "eoy_total_fte": 4,
-    "eoy_total_positions": 4,
+    "eoy_total_fte": null,
+    "eoy_total_positions": null,
     "remaining_budget_percent": 0,
     "staff_roles": [
       {
@@ -478,7 +653,24 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 4
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 4
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -4,
+      "eoy_total_positions": -4
+    }
   },
   {
     "code": 901,
@@ -487,8 +679,8 @@
     "spending": 1324555.57,
     "budget": 1351792.38,
     "year": 2018,
-    "eoy_total_fte": 5,
-    "eoy_total_positions": 5,
+    "eoy_total_fte": 5.8,
+    "eoy_total_positions": 6,
     "remaining_budget_percent": 2,
     "staff_roles": [
       {
@@ -523,7 +715,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 5.8
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 5
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 6
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0.7999999999999998,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 958,
@@ -532,8 +749,8 @@
     "spending": 2115962.37,
     "budget": 2373031.76,
     "year": 2018,
-    "eoy_total_fte": 18.45,
-    "eoy_total_positions": 20,
+    "eoy_total_fte": 14.334,
+    "eoy_total_positions": 16,
     "remaining_budget_percent": 10.8,
     "staff_roles": [
       {
@@ -622,7 +839,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 18.45
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 14.334
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 20
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 16
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -4.116,
+      "eoy_total_positions": -4
+    }
   },
   {
     "code": 922,
@@ -631,8 +873,8 @@
     "spending": 16666577.59,
     "budget": 19033069.22,
     "year": 2018,
-    "eoy_total_fte": 118.634,
-    "eoy_total_positions": 126,
+    "eoy_total_fte": 100.8,
+    "eoy_total_positions": 107,
     "remaining_budget_percent": 12.4,
     "staff_roles": [
       {
@@ -853,7 +1095,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 55
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 118.634
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 100.8
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 126
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 107
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -17.834000000000003,
+      "eoy_total_positions": -19
+    }
   },
   {
     "code": 956,
@@ -862,8 +1129,8 @@
     "spending": 48823.22,
     "budget": 2662.3,
     "year": 2018,
-    "eoy_total_fte": 1.25,
-    "eoy_total_positions": 2,
+    "eoy_total_fte": 2.5,
+    "eoy_total_positions": 3,
     "remaining_budget_percent": -1733.9,
     "staff_roles": [
       {
@@ -881,7 +1148,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 1.25
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 2.5
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 3
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1.25,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 989,
@@ -890,8 +1182,8 @@
     "spending": 958652.52,
     "budget": 1201584.85,
     "year": 2018,
-    "eoy_total_fte": 228.34998,
-    "eoy_total_positions": 229,
+    "eoy_total_fte": 227.34998,
+    "eoy_total_positions": 228,
     "remaining_budget_percent": 20.2,
     "staff_roles": [
       {
@@ -968,7 +1260,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 6
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 228.34998
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 227.34998
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 229
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 228
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -1,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 999,
@@ -977,8 +1294,8 @@
     "spending": 27366646.43,
     "budget": 29309956.87,
     "year": 2018,
-    "eoy_total_fte": 3,
-    "eoy_total_positions": 3,
+    "eoy_total_fte": 5,
+    "eoy_total_positions": 5,
     "remaining_budget_percent": 6.6,
     "staff_roles": [
       {
@@ -1001,7 +1318,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 5
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 5
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 2,
+      "eoy_total_positions": 2
+    }
   },
   {
     "code": 910,
@@ -1010,8 +1352,8 @@
     "spending": 7813420.95,
     "budget": 9099376,
     "year": 2018,
-    "eoy_total_fte": 56.2,
-    "eoy_total_positions": 92,
+    "eoy_total_fte": 63.92,
+    "eoy_total_positions": 103,
     "remaining_budget_percent": 14.1,
     "staff_roles": [
       {
@@ -1076,7 +1418,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 56.2
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 63.92
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 92
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 103
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 7.719999999999999,
+      "eoy_total_positions": 11
+    }
   },
   {
     "code": 915,
@@ -1098,8 +1465,8 @@
     "spending": 1499671.93,
     "budget": 1717930.29,
     "year": 2018,
-    "eoy_total_fte": 7,
-    "eoy_total_positions": 7,
+    "eoy_total_fte": 8,
+    "eoy_total_positions": 8,
     "remaining_budget_percent": 12.7,
     "staff_roles": [
       {
@@ -1143,7 +1510,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 4
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 7
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 8
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 7
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 8
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 954,
@@ -1152,8 +1544,8 @@
     "spending": 4300131.87,
     "budget": 4805140.84,
     "year": 2018,
-    "eoy_total_fte": 33.55,
-    "eoy_total_positions": 35,
+    "eoy_total_fte": 29.7,
+    "eoy_total_positions": 32,
     "remaining_budget_percent": 10.5,
     "staff_roles": [
       {
@@ -1229,7 +1621,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 8
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 33.55
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 29.7
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 35
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 32
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -3.849999999999998,
+      "eoy_total_positions": -3
+    }
   },
   {
     "code": 918,
@@ -1238,8 +1655,8 @@
     "spending": 15554463.18,
     "budget": 19123095.8,
     "year": 2018,
-    "eoy_total_fte": 24.55,
-    "eoy_total_positions": 25,
+    "eoy_total_fte": 21,
+    "eoy_total_positions": 21,
     "remaining_budget_percent": 18.7,
     "staff_roles": [
       {
@@ -1311,7 +1728,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 15
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 24.55
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 21
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 25
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 21
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -3.5500000000000007,
+      "eoy_total_positions": -4
+    }
   },
   {
     "code": 991,
@@ -1320,8 +1762,8 @@
     "spending": 4423574.67,
     "budget": 5199898.31,
     "year": 2018,
-    "eoy_total_fte": 13.25002,
-    "eoy_total_positions": 14,
+    "eoy_total_fte": 11.25002,
+    "eoy_total_positions": 12,
     "remaining_budget_percent": 14.9,
     "staff_roles": [
       {
@@ -1385,7 +1827,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 13.25002
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 11.25002
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 14
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 12
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -2,
+      "eoy_total_positions": -2
+    }
   },
   {
     "code": 968,
@@ -1394,8 +1861,8 @@
     "spending": 2285013.37,
     "budget": 3492187,
     "year": 2018,
-    "eoy_total_fte": 38.8,
-    "eoy_total_positions": 39,
+    "eoy_total_fte": 43.8,
+    "eoy_total_positions": 44,
     "remaining_budget_percent": 34.6,
     "staff_roles": [
       {
@@ -1448,7 +1915,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 38.8
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 43.8
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 39
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 44
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 5,
+      "eoy_total_positions": 5
+    }
   },
   {
     "code": 964,
@@ -1457,8 +1949,8 @@
     "spending": 2889130.46,
     "budget": 3156551.5,
     "year": 2018,
-    "eoy_total_fte": 19.7,
-    "eoy_total_positions": 21,
+    "eoy_total_fte": 18.2,
+    "eoy_total_positions": 20,
     "remaining_budget_percent": 8.5,
     "staff_roles": [
       {
@@ -1510,7 +2002,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 19.7
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 18.2
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 21
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 20
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -1.5,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 944,
@@ -1519,7 +2036,7 @@
     "spending": 7486705.14,
     "budget": 9402025.97,
     "year": 2018,
-    "eoy_total_fte": 42.5,
+    "eoy_total_fte": 43,
     "eoy_total_positions": 44,
     "remaining_budget_percent": 20.4,
     "staff_roles": [
@@ -1661,7 +2178,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 42.5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 43
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 44
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 44
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0.5,
+      "eoy_total_positions": 0
+    }
   },
   {
     "code": 959,
@@ -1696,8 +2238,8 @@
     "spending": 19821.54,
     "budget": 17074.9,
     "year": 2018,
-    "eoy_total_fte": 0.25,
-    "eoy_total_positions": 1,
+    "eoy_total_fte": null,
+    "eoy_total_positions": null,
     "remaining_budget_percent": -16.1,
     "staff_roles": [
       {
@@ -1711,7 +2253,24 @@
         "description": "Oakland Education Association",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 0.25
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 1
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -0.25,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 942,
@@ -1733,8 +2292,8 @@
     "spending": 1703757.66,
     "budget": 1830974,
     "year": 2018,
-    "eoy_total_fte": 10,
-    "eoy_total_positions": 11,
+    "eoy_total_fte": 9.5,
+    "eoy_total_positions": 10,
     "remaining_budget_percent": 6.9,
     "staff_roles": [
       {
@@ -1784,7 +2343,32 @@
         "description": "Confidential",
         "eoy_total_positions_for_bu": 11
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 10
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 9.5
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 11
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 10
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -0.5,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 912,
@@ -1793,8 +2377,8 @@
     "spending": 9160918.77,
     "budget": 10633941.34,
     "year": 2018,
-    "eoy_total_fte": 44.8,
-    "eoy_total_positions": 49,
+    "eoy_total_fte": 35.79,
+    "eoy_total_positions": 44,
     "remaining_budget_percent": 13.9,
     "staff_roles": [
       {
@@ -1891,7 +2475,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 21
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 44.8
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 35.79
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 49
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 44
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -9.009999999999998,
+      "eoy_total_positions": -5
+    }
   },
   {
     "code": 965,
@@ -1900,8 +2509,8 @@
     "spending": 431979.96,
     "budget": 4941630.06,
     "year": 2018,
-    "eoy_total_fte": 2,
-    "eoy_total_positions": 2,
+    "eoy_total_fte": 3,
+    "eoy_total_positions": 3,
     "remaining_budget_percent": 91.3,
     "staff_roles": [
       {
@@ -1924,7 +2533,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 3
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 3
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 933,
@@ -1933,8 +2567,8 @@
     "spending": 1539296.56,
     "budget": 1887380.68,
     "year": 2018,
-    "eoy_total_fte": 2,
-    "eoy_total_positions": 2,
+    "eoy_total_fte": 3,
+    "eoy_total_positions": 3,
     "remaining_budget_percent": 18.4,
     "staff_roles": [
       {
@@ -1952,7 +2586,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 3
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 3
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 903,
@@ -1961,8 +2620,8 @@
     "spending": 1470381.47,
     "budget": 1925326.65,
     "year": 2018,
-    "eoy_total_fte": 4,
-    "eoy_total_positions": 4,
+    "eoy_total_fte": 11.7,
+    "eoy_total_positions": 15,
     "remaining_budget_percent": 23.6,
     "staff_roles": [
       {
@@ -1993,7 +2652,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 4
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 11.7
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 4
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 15
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 7.699999999999999,
+      "eoy_total_positions": 11
+    }
   },
   {
     "code": 929,
@@ -2002,8 +2686,8 @@
     "spending": 2570848.76,
     "budget": 2865198.07,
     "year": 2018,
-    "eoy_total_fte": 25.25,
-    "eoy_total_positions": 28,
+    "eoy_total_fte": 24,
+    "eoy_total_positions": 27,
     "remaining_budget_percent": 10.3,
     "staff_roles": [
       {
@@ -2088,7 +2772,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 9
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 25.25
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 24
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 28
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 27
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -1.25,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 905,
@@ -2097,8 +2806,8 @@
     "spending": 915117.82,
     "budget": 922210,
     "year": 2018,
-    "eoy_total_fte": 2,
-    "eoy_total_positions": 2,
+    "eoy_total_fte": 4.333,
+    "eoy_total_positions": 5,
     "remaining_budget_percent": 0.8,
     "staff_roles": [
       {
@@ -2121,7 +2830,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 4.333
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 2
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 5
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 2.333,
+      "eoy_total_positions": 3
+    }
   },
   {
     "code": 945,
@@ -2143,8 +2877,8 @@
     "spending": 1594162.44,
     "budget": 2010909.88,
     "year": 2018,
-    "eoy_total_fte": 5,
-    "eoy_total_positions": 5,
+    "eoy_total_fte": 5.933,
+    "eoy_total_positions": 7,
     "remaining_budget_percent": 20.7,
     "staff_roles": [
       {
@@ -2174,7 +2908,32 @@
         "description": "Confidential",
         "eoy_total_positions_for_bu": 5
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 5.933
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 5
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 7
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0.9329999999999998,
+      "eoy_total_positions": 2
+    }
   },
   {
     "code": 906,
@@ -2196,8 +2955,8 @@
     "spending": 26678.71,
     "budget": 82760.79,
     "year": 2018,
-    "eoy_total_fte": 42.5,
-    "eoy_total_positions": 43,
+    "eoy_total_fte": 46.1,
+    "eoy_total_positions": 47,
     "remaining_budget_percent": 67.8,
     "staff_roles": [
       {
@@ -2228,7 +2987,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 42.5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 46.1
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 43
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 47
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 3.6000000000000014,
+      "eoy_total_positions": 4
+    }
   },
   {
     "code": 994,
@@ -2237,8 +3021,8 @@
     "spending": 2924781.83,
     "budget": 3104985.72,
     "year": 2018,
-    "eoy_total_fte": 102,
-    "eoy_total_positions": 102,
+    "eoy_total_fte": 77,
+    "eoy_total_positions": 77,
     "remaining_budget_percent": 5.8,
     "staff_roles": [
       {
@@ -2303,7 +3087,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 6
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 102
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 77
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 102
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 77
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -25,
+      "eoy_total_positions": -25
+    }
   },
   {
     "code": 983,
@@ -2312,8 +3121,8 @@
     "spending": 1383784.29,
     "budget": 1361784.55,
     "year": 2018,
-    "eoy_total_fte": 10,
-    "eoy_total_positions": 10,
+    "eoy_total_fte": 9,
+    "eoy_total_positions": 9,
     "remaining_budget_percent": -1.6,
     "staff_roles": [
       {
@@ -2340,7 +3149,32 @@
         "description": "Service Employees International Union",
         "eoy_total_positions_for_bu": 8
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 10
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 9
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 10
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 9
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -1,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 961,
@@ -2390,7 +3224,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 2.5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 2.5
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 3
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0
+    }
   },
   {
     "code": 963,
@@ -2427,7 +3286,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 2.5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 2.5
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 3
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0
+    }
   },
   {
     "code": 979,
@@ -2436,8 +3320,8 @@
     "spending": 313302.14,
     "budget": 355691,
     "year": 2018,
-    "eoy_total_fte": 3,
-    "eoy_total_positions": 3,
+    "eoy_total_fte": 2,
+    "eoy_total_positions": 2,
     "remaining_budget_percent": 11.9,
     "staff_roles": [
       {
@@ -2459,7 +3343,32 @@
         "description": "Service Employees International Union",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 2
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 2
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -1,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 990,
@@ -2468,8 +3377,8 @@
     "spending": 534929.01,
     "budget": 642833.97,
     "year": 2018,
-    "eoy_total_fte": 3,
-    "eoy_total_positions": 3,
+    "eoy_total_fte": 4,
+    "eoy_total_positions": 4,
     "remaining_budget_percent": 16.8,
     "staff_roles": [
       {
@@ -2501,7 +3410,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 4
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 4
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 948,
@@ -2510,8 +3444,8 @@
     "spending": 2859186.77,
     "budget": 2974307.65,
     "year": 2018,
-    "eoy_total_fte": 17.3,
-    "eoy_total_positions": 18,
+    "eoy_total_fte": 13.64000001,
+    "eoy_total_positions": 17,
     "remaining_budget_percent": 3.9,
     "staff_roles": [
       {
@@ -2592,7 +3526,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 5
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 17.3
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 13.64000001
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 18
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 17
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -3.659999990000001,
+      "eoy_total_positions": -1
+    }
   },
   {
     "code": 987,
@@ -2601,8 +3560,8 @@
     "spending": 70745641.72,
     "budget": 83382799,
     "year": 2018,
-    "eoy_total_fte": 13,
-    "eoy_total_positions": 14,
+    "eoy_total_fte": 11,
+    "eoy_total_positions": 12,
     "remaining_budget_percent": 15.2,
     "staff_roles": [
       {
@@ -2679,7 +3638,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 13
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 11
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 14
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 12
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -2,
+      "eoy_total_positions": -2
+    }
   },
   {
     "code": 975,
@@ -2688,8 +3672,8 @@
     "spending": 51885463.28,
     "budget": 55214642.21,
     "year": 2018,
-    "eoy_total_fte": 237.5,
-    "eoy_total_positions": 259,
+    "eoy_total_fte": 233.7,
+    "eoy_total_positions": 257,
     "remaining_budget_percent": 6,
     "staff_roles": [
       {
@@ -2855,7 +3839,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 237.5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 233.7
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 259
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 257
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -3.8000000000000114,
+      "eoy_total_positions": -2
+    }
   },
   {
     "code": 950,
@@ -2864,8 +3873,8 @@
     "spending": 1581468.38,
     "budget": 2039341.82,
     "year": 2018,
-    "eoy_total_fte": 8,
-    "eoy_total_positions": 8,
+    "eoy_total_fte": 8.30000002,
+    "eoy_total_positions": 9,
     "remaining_budget_percent": 22.5,
     "staff_roles": [
       {
@@ -2892,7 +3901,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 8
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 8.30000002
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 8
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 9
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0.3000000200000006,
+      "eoy_total_positions": 1
+    }
   },
   {
     "code": 907,
@@ -2901,8 +3935,8 @@
     "spending": 1700384.57,
     "budget": 1747551.84,
     "year": 2018,
-    "eoy_total_fte": 14,
-    "eoy_total_positions": 14,
+    "eoy_total_fte": 15.6,
+    "eoy_total_positions": 16,
     "remaining_budget_percent": 2.7,
     "staff_roles": [
       {
@@ -2942,7 +3976,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 14
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 15.6
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 14
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 16
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 1.5999999999999996,
+      "eoy_total_positions": 2
+    }
   },
   {
     "code": 937,
@@ -2966,7 +4025,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 0.3
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 0.3
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 1
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 1
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0
+    }
   },
   {
     "code": 909,
@@ -2975,8 +4059,8 @@
     "spending": 13545767.81,
     "budget": 16295911.95,
     "year": 2018,
-    "eoy_total_fte": 93.945,
-    "eoy_total_positions": 120,
+    "eoy_total_fte": 45.84,
+    "eoy_total_positions": 53,
     "remaining_budget_percent": 16.9,
     "staff_roles": [
       {
@@ -3122,7 +4206,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 27
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 93.945
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 45.84
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 120
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 53
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -48.10499999999999,
+      "eoy_total_positions": -67
+    }
   },
   {
     "code": 986,
@@ -3131,8 +4240,8 @@
     "spending": 6295103.7,
     "budget": 7227529.78,
     "year": 2018,
-    "eoy_total_fte": 31.5,
-    "eoy_total_positions": 32,
+    "eoy_total_fte": 27,
+    "eoy_total_positions": 27,
     "remaining_budget_percent": 12.9,
     "staff_roles": [
       {
@@ -3216,7 +4325,32 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 31.5
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 27
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 32
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 27
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -4.5,
+      "eoy_total_positions": -5
+    }
   },
   {
     "code": 995,
@@ -3253,7 +4387,32 @@
         "description": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 3
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 3
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 3
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0
+    }
   },
   {
     "code": 992,
@@ -3262,8 +4421,8 @@
     "spending": 1136215.75,
     "budget": 1646076.01,
     "year": 2018,
-    "eoy_total_fte": 12,
-    "eoy_total_positions": 12,
+    "eoy_total_fte": 11,
+    "eoy_total_positions": 11,
     "remaining_budget_percent": 31,
     "staff_roles": [
       {
@@ -3299,6 +4458,31 @@
         "description": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
-    ]
+    ],
+    "eoy_total_fte_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_fte": 12
+      },
+      {
+        "year": 2019,
+        "eoy_total_fte": 11
+      }
+    ],
+    "eoy_total_positions_time_series": [
+      {
+        "year": 2018,
+        "eoy_total_positions": 12
+      },
+      {
+        "year": 2019,
+        "eoy_total_positions": 11
+      }
+    ],
+    "change_from_previous_year": {
+      "previous_year": 2018,
+      "eoy_total_fte": -1,
+      "eoy_total_positions": -1
+    }
   }
 ]
