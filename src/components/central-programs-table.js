@@ -31,7 +31,7 @@ const formatRemainingBudgetCell = (percent, rowIndex) => {
   }
 }
 
-const createFirstRow = data => {
+const createFirstRow = (data) => {
   const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_fte: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending
@@ -43,13 +43,24 @@ const createFirstRow = data => {
 }
 
 const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
+  // https://react-bootstrap-table.github.io/react-bootstrap-table2/docs/column-props.html#columnformatter-function
+  // formatExtraData: It's only used for column.formatter, you can define any value for it and will be passed as 
+  // fourth argument for column.formatter callback function.
+
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
   }
-  return (<span><Link to={"/central-programs/" + row.fields.slug}>{row.name}</Link></span>)
+ 
+  // gets locale
+  const locale = formatExtraData.find(val => val.locale).locale
+  // variable named for multiple locales
+  const otherProgramName = formatExtraData.find(val => val.siteCode === row.code)
+
+  return (<span><Link to={"/central-programs/" + row.fields.slug}> {locale === "en" ? row.name : otherProgramName.programName}</Link></span>)
 }
 
 const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
+  console.log(a, b, order, dataField, rowA, row)
   return sort(a, b, order, dataField, rowA, rowB, 'name', TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
 }
 
@@ -163,7 +174,7 @@ const ModalColumnToggle = ({
 }
 
 
-const CentralProgramsTable = ({data, labelContent}) => {
+const CentralProgramsTable = ({data, labelContent, codes, locale}) => {
   const firstRow = createFirstRow(data)
 
   //per-sort column data so we don't need to search the array every time
@@ -175,8 +186,11 @@ const CentralProgramsTable = ({data, labelContent}) => {
   // creates new array
   data = data.concat([firstRow])
 
+  //added locale to be passed to formatter
+  codes = codes.concat({locale})
+
   const columns = [{
-    formatter: columnsFormatter,
+    formatter: (cell, row, rowIndex) => columnsFormatter( cell, row, rowIndex, codes),
     dataField: 'name',
     text: 'Program',
     headerFormatter: (column, colIndex, components) => { return (<div className="table-header">{columnLabelsByDatafield[column.dataField].displayName} {components.sortElement}</div>)},

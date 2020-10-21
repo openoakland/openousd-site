@@ -16,8 +16,10 @@ import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 import "../components/sankey-chart.scss"
 
 const CentralProgramsPage = ({ data }) => {
+  const locale = data.contentfulPage.node_locale
   const centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
+  const codes = data.allContentfulCentralProgram.nodes
 
   return (
     <Layout pageClassName="central-programs-page">
@@ -51,6 +53,8 @@ const CentralProgramsPage = ({ data }) => {
             <CentralProgramsTable
               data={centralPrograms}
               labelContent={content.programsTable}
+              codes={codes}
+              locale={locale}
             />
           </Col>
         </Row>
@@ -68,6 +72,12 @@ export const query = graphql`
         latestSchoolYear
       }
     }
+    allContentfulCentralProgram(filter: {node_locale: {eq: $language}}) {
+      nodes {
+        programName
+        siteCode
+      }
+  	}
     allCentralProgramsJson {
       nodes {
         name
@@ -131,6 +141,7 @@ export const query = graphql`
       }
       slug
       title
+      node_locale
     }
   }
 `
