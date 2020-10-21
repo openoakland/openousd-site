@@ -60,7 +60,6 @@ const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
 }
 
 const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
-  console.log(a, b, order, dataField, rowA, row)
   return sort(a, b, order, dataField, rowA, rowB, 'name', TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
 }
 
