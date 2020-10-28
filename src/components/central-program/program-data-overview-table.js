@@ -152,24 +152,23 @@ const StaffOverview = ({ data }) => {
     },
     {
       dataField: "value",
-      text: "Value",
       align: "right",
-      headerFormatter: (column, colIndex, components) => {
-        return (
-          <div className="text-right value">{data.eoy_total_positions}</div>
-        )
-      },
     },
   ]
 
   const rows = []
+
+  rows.push({
+    description: "Total positions",
+    value: data.eoy_total_positions || 0,
+  })
 
   if (data.change_from_previous_year) {
     const total_positions_delta =
       data.change_from_previous_year.eoy_total_positions
 
     rows.push({
-      description: "Change in staff from previous year",
+      description: "Change in total positions from previous year",
       value: `${deltaPrefix(total_positions_delta)}${formatFTE(
         Math.abs(total_positions_delta)
       )}`,
