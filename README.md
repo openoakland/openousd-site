@@ -18,8 +18,13 @@ Since this is a static site, the data is fetched once and stored in static JSON 
 
 1. Run `git clone git@github.com:openoakland/openousd-site.git`
 2. `cd openousd-site`
-3. `npm install` (install node if you don't have npm: https://nodejs.org/en/download/)
-4. `gatsby develop`
+3. `npm install` (if you don't have npm, install node via the [node installer](https://nodejs.org/en/download/) or [homebrew (macOS)](https://formulae.brew.sh/formula/node) or [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) if you work on several node projects)
+4. Run `npm install -g gatsby-cli` to install the gastby command line tool globally
+5. Ask a member of the project team on OpenOakland Slack for a Contentful API token. Insert the token into this command and run it to create a file and populate the token as an environment variable.
+```bash
+echo "CONTENTFUL_ACCESS_TOKEN={insert the token here and remove brackets}" > .env.development
+```
+6. `gatsby develop`
 
 Go to `http://localhost:8000` in your browser
 
