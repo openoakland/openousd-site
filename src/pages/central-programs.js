@@ -16,10 +16,13 @@ import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 import "../components/sankey-chart.scss"
 
 const CentralProgramsPage = ({ data }) => {
-  const locale = data.contentfulPage.node_locale
   const centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   const codes = data.allContentfulCentralProgram.nodes
+  //copying codes to centralPrograms
+  const centralProgramsWithCodes = centralPrograms.map(x => Object.assign(x, codes.find(y => y.siteCode == x.code)))
+  //update name to program Name so sorting works in other locales
+  centralProgramsWithCodes.map(x => {x.name=x.programName})
 
   return (
     <Layout pageClassName="central-programs-page">
@@ -51,10 +54,8 @@ const CentralProgramsPage = ({ data }) => {
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
             <CentralProgramsTable
-              data={centralPrograms}
+              data={centralProgramsWithCodes}
               labelContent={content.programsTable}
-              codes={codes}
-              locale={locale}
             />
           </Col>
         </Row>
@@ -132,6 +133,7 @@ export const query = graphql`
               downloadDataLabel
               showHideColumnsLabel
               searchLabel
+              totalLabel
             }
             footnote {
               footnote
