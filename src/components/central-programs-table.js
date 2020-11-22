@@ -40,10 +40,7 @@ const createFirstRow = (data,totalLabel) => {
   }, initialObject)
 }
 
-const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
-  // https://react-bootstrap-table.github.io/react-bootstrap-table2/docs/column-props.html#columnformatter-function
-  // formatExtraData: It's only used for column.formatter, you can define any value for it and will be passed as 
-  // fourth argument for column.formatter callback function.
+const columnsFormatter = (cell, row, rowIndex) => {
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
   }
@@ -177,7 +174,7 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
   data = data.concat([firstRow])
 
   const columns = [{
-    formatter: (cell, row, rowIndex) => columnsFormatter( cell, row, rowIndex, codes),
+    formatter: columnsFormatter,
     dataField: 'name',
     text: 'Program',
     headerFormatter: (column, colIndex, components) => { return (<div className="table-header">{columnLabelsByDatafield[column.dataField].displayName} {components.sortElement}</div>)},
