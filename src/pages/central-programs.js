@@ -20,7 +20,7 @@ const CentralProgramsPage = ({ data }) => {
   const content = data.contentfulPage.content
   const codes = data.allContentfulCentralProgram.nodes
   //copying codes to centralPrograms
-  const centralProgramsWithCodes = centralPrograms.map(x => Object.assign(x, codes.find(y => y.siteCode == x.code)))
+  const centralProgramsWithCodes = centralPrograms.map(x => Object.assign(x, codes.find(y => y.siteCode === x.code)))
   //update name to program Name so sorting works in other locales
   centralProgramsWithCodes.map(x => {x.name=x.programName})
 
