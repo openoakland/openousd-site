@@ -16,8 +16,6 @@ import { getSortCaret, formatToUSD, formatFTE, sort } from './table-utilities'
 
 const { SearchBar } = Search
 const { ExportCSVButton } = CSVExport
-const TOTAL_FOR_ALL_CENTRAL_PROGRAMS = 'Total for All Central Programs'
-
 
 const formatRemainingBudgetCell = (percent, rowIndex) => {
   let classes = ""
@@ -31,8 +29,8 @@ const formatRemainingBudgetCell = (percent, rowIndex) => {
   }
 }
 
-const createFirstRow = data => {
-  const initialObject = {name: TOTAL_FOR_ALL_CENTRAL_PROGRAMS, spending: 0, budget: 0, eoy_total_fte: 0}
+const createFirstRow = (data,totalLabel) => {
+  const initialObject = {name: totalLabel, spending: 0, budget: 0, eoy_total_fte: 0}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending
     returnObject.budget += +currentItem.budget
@@ -42,15 +40,15 @@ const createFirstRow = data => {
   }, initialObject)
 }
 
-const columnsFormatter = (cell, row, rowIndex, formatExtraData) => {
+const columnsFormatter = (cell, row, rowIndex) => {
   if (rowIndex === 0) {
     return (<span className="strong">{row.name}</span>)
   }
-  return (<span><Link to={"/central-programs/" + row.fields.slug}>{row.name}</Link></span>)
+  return (<span><Link to={"/central-programs/"+row.fields.slug}>{row.name}</Link></span>)
 }
 
-const sortPrograms = (a, b, order, dataField, rowA, rowB) => {
-  return sort(a, b, order, dataField, rowA, rowB, 'name', TOTAL_FOR_ALL_CENTRAL_PROGRAMS)
+const sortPrograms = (a, b, order, dataField, rowA, rowB, totalLabel) => {
+  return sort(a, b, order, dataField, rowA, rowB, 'name', totalLabel)
 }
 
 const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {
@@ -162,9 +160,9 @@ const ModalColumnToggle = ({
   )
 }
 
-
-const CentralProgramsTable = ({data, labelContent}) => {
-  const firstRow = createFirstRow(data)
+const CentralProgramsTable = ({data, labelContent, codes}) => {
+  const totalLabel = labelContent.labels.totalLabel
+  const firstRow = createFirstRow(data, totalLabel)
 
   //per-sort column data so we don't need to search the array every time
   let columnLabelsByDatafield = {}
@@ -183,7 +181,7 @@ const CentralProgramsTable = ({data, labelContent}) => {
     sortCaret: getSortCaret,
     sort: true,
     onSort: (field,order) => trackSortEvent(field),
-    sortFunc: sortPrograms,
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB,totalLabel),
     events: {
       onClick: (e, column, columnIndex, row, rowIndex) => trackTableCellClickEvent(e, column, columnIndex, row, rowIndex)
     }
