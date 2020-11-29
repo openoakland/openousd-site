@@ -133,9 +133,34 @@
   ],
   "links": [
     {
-      "value": 3474303.65,
-      "target": "Administrative Offices",
+      "value": 1014370.35,
+      "target": "Special Education",
+      "source": "Unrestricted"
+    },
+    {
+      "value": 15452328.94,
+      "target": "Student Services",
       "source": "Restricted"
+    },
+    {
+      "value": 14686358.97,
+      "target": "Instructional Programs",
+      "source": "Unrestricted"
+    },
+    {
+      "value": 423501.9,
+      "target": "Financial Operations",
+      "source": "Restricted"
+    },
+    {
+      "value": 70745641.72,
+      "target": "Risk Management",
+      "source": "Unrestricted"
+    },
+    {
+      "value": 15861492.12,
+      "target": "Other",
+      "source": "Unrestricted"
     },
     {
       "value": 7967660.48,
@@ -143,9 +168,19 @@
       "source": "Unrestricted"
     },
     {
-      "value": 34616241.56,
-      "target": "Facilities",
+      "value": 1522556.63,
+      "target": "People Operations",
       "source": "Restricted"
+    },
+    {
+      "value": 2751168.7,
+      "target": "Police",
+      "source": "Unrestricted"
+    },
+    {
+      "value": 11110556.26,
+      "target": "Other Operations",
+      "source": "Unrestricted"
     },
     {
       "value": 2112202.18,
@@ -153,8 +188,33 @@
       "source": "Unrestricted"
     },
     {
-      "value": 423501.9,
-      "target": "Financial Operations",
+      "value": 1609214.47,
+      "target": "Other Operations",
+      "source": "Restricted"
+    },
+    {
+      "value": 34616241.56,
+      "target": "Facilities",
+      "source": "Restricted"
+    },
+    {
+      "value": 173613.13,
+      "target": "Police",
+      "source": "Restricted"
+    },
+    {
+      "value": 5969161.87,
+      "target": "People Operations",
+      "source": "Unrestricted"
+    },
+    {
+      "value": 3474303.65,
+      "target": "Administrative Offices",
+      "source": "Restricted"
+    },
+    {
+      "value": 11505154.31,
+      "target": "Other",
       "source": "Restricted"
     },
     {
@@ -168,68 +228,8 @@
       "source": "Restricted"
     },
     {
-      "value": 14686358.97,
-      "target": "Instructional Programs",
-      "source": "Unrestricted"
-    },
-    {
-      "value": 11505154.31,
-      "target": "Other",
-      "source": "Restricted"
-    },
-    {
-      "value": 15861492.12,
-      "target": "Other",
-      "source": "Unrestricted"
-    },
-    {
-      "value": 1609214.47,
-      "target": "Other Operations",
-      "source": "Restricted"
-    },
-    {
-      "value": 11110556.26,
-      "target": "Other Operations",
-      "source": "Unrestricted"
-    },
-    {
-      "value": 1522556.63,
-      "target": "People Operations",
-      "source": "Restricted"
-    },
-    {
-      "value": 5969161.87,
-      "target": "People Operations",
-      "source": "Unrestricted"
-    },
-    {
-      "value": 173613.13,
-      "target": "Police",
-      "source": "Restricted"
-    },
-    {
-      "value": 2751168.7,
-      "target": "Police",
-      "source": "Unrestricted"
-    },
-    {
-      "value": 70745641.72,
-      "target": "Risk Management",
-      "source": "Unrestricted"
-    },
-    {
       "value": 50871092.93,
       "target": "Special Education",
-      "source": "Restricted"
-    },
-    {
-      "value": 1014370.35,
-      "target": "Special Education",
-      "source": "Unrestricted"
-    },
-    {
-      "value": 15452328.94,
-      "target": "Student Services",
       "source": "Restricted"
     },
     {
@@ -238,9 +238,19 @@
       "source": "Unrestricted"
     },
     {
-      "value": 10162401.02,
-      "target": "Restricted",
-      "source": "Bonds"
+      "value": 64315579.53,
+      "target": "Unrestricted",
+      "source": "General (Base)"
+    },
+    {
+      "value": 22363586.46,
+      "target": "Unrestricted",
+      "source": "Supplemental & Concentration"
+    },
+    {
+      "value": 16928045.37,
+      "target": "Unrestricted",
+      "source": "State"
     },
     {
       "value": 23077941.13,
@@ -248,29 +258,9 @@
       "source": "Federal"
     },
     {
-      "value": 64315579.53,
-      "target": "Unrestricted",
-      "source": "General (Base)"
-    },
-    {
-      "value": 56954452.72,
-      "target": "Unrestricted",
-      "source": "Health Benefits Governance Board (HBGB)"
-    },
-    {
       "value": 1399661.5,
       "target": "Restricted",
       "source": "Other Revenue"
-    },
-    {
-      "value": 3670707.89,
-      "target": "Unrestricted",
-      "source": "Other Revenue"
-    },
-    {
-      "value": 9950137.86,
-      "target": "Restricted",
-      "source": "Parcel Taxes"
     },
     {
       "value": 20865495.61,
@@ -283,14 +273,24 @@
       "source": "State"
     },
     {
-      "value": 16928045.37,
-      "target": "Unrestricted",
-      "source": "State"
+      "value": 10162401.02,
+      "target": "Restricted",
+      "source": "Bonds"
     },
     {
-      "value": 22363586.46,
+      "value": 56954452.72,
       "target": "Unrestricted",
-      "source": "Supplemental & Concentration"
+      "source": "Health Benefits Governance Board (HBGB)"
+    },
+    {
+      "value": 9950137.86,
+      "target": "Restricted",
+      "source": "Parcel Taxes"
+    },
+    {
+      "value": 3670707.89,
+      "target": "Unrestricted",
+      "source": "Other Revenue"
     }
   ]
 }
