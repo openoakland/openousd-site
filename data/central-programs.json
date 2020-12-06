@@ -56,30 +56,28 @@
         "eoy_total_positions_for_bu": 10
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 11.4
+        "eoy_total_fte": 11.4,
+        "eoy_total_positions": 12,
+        "spending": 1740442.23,
+        "budget": 1720738.16
       },
       {
         "year": 2019,
-        "eoy_total_fte": 13.4
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 12
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 14
+        "eoy_total_fte": 13.4,
+        "eoy_total_positions": 14,
+        "spending": 1691005.13,
+        "budget": 1692253
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 2,
-      "eoy_total_positions": 2
+      "eoy_total_positions": 2,
+      "spending": -49437.1,
+      "budget": -28485.16
     }
   },
   {
@@ -114,30 +112,28 @@
         "eoy_total_positions_for_bu": 4
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 7
+        "eoy_total_fte": 7,
+        "eoy_total_positions": 7,
+        "spending": 765519.5,
+        "budget": 734049.38
       },
       {
         "year": 2019,
-        "eoy_total_fte": 5
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 7
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 5
+        "eoy_total_fte": 5,
+        "eoy_total_positions": 5,
+        "spending": 777319.17,
+        "budget": 703660.43
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -2,
-      "eoy_total_positions": -2
+      "eoy_total_positions": -2,
+      "spending": 11799.67,
+      "budget": -30388.95
     }
   },
   {
@@ -176,30 +172,28 @@
         "eoy_total_positions_for_bu": 7
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 10
+        "eoy_total_fte": 10,
+        "eoy_total_positions": 10,
+        "spending": 763126.04,
+        "budget": 810055
       },
       {
         "year": 2019,
-        "eoy_total_fte": 10
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 10
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 10
+        "eoy_total_fte": 10,
+        "eoy_total_positions": 10,
+        "spending": 761353.68,
+        "budget": 793634.65
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 0,
-      "eoy_total_positions": 0
+      "eoy_total_positions": 0,
+      "spending": -1772.36,
+      "budget": -16420.35
     }
   },
   {
@@ -255,30 +249,28 @@
         "eoy_total_positions_for_bu": 9
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 20.9
+        "eoy_total_fte": 20.9,
+        "eoy_total_positions": 22,
+        "spending": 2515366.92,
+        "budget": 2662185.57
       },
       {
         "year": 2019,
-        "eoy_total_fte": 11.9
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 22
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 13
+        "eoy_total_fte": 11.9,
+        "eoy_total_positions": 13,
+        "spending": 1889202.51,
+        "budget": 2027912.31
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -8.999999999999998,
-      "eoy_total_positions": -9
+      "eoy_total_fte": -9,
+      "eoy_total_positions": -9,
+      "spending": -626164.41,
+      "budget": -634273.26
     }
   },
   {
@@ -431,30 +423,28 @@
         "eoy_total_positions_for_bu": 9
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 100
+        "eoy_total_fte": 100,
+        "eoy_total_positions": 100,
+        "spending": 20215328.04,
+        "budget": 20529279.12
       },
       {
         "year": 2019,
-        "eoy_total_fte": 101
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 100
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 101
+        "eoy_total_fte": 101,
+        "eoy_total_positions": 101,
+        "spending": 20697876.71,
+        "budget": 20857935.39
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 482548.67,
+      "budget": 328656.27
     }
   },
   {
@@ -506,30 +496,28 @@
         "eoy_total_positions_for_bu": 4
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 5
+        "eoy_total_fte": 5,
+        "eoy_total_positions": 5,
+        "spending": 823544.88,
+        "budget": 1069793
       },
       {
         "year": 2019,
-        "eoy_total_fte": 6
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 5
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 6
+        "eoy_total_fte": 6,
+        "eoy_total_positions": 6,
+        "spending": 1133466.57,
+        "budget": 1699748
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 309921.69,
+      "budget": 629955
     }
   },
   {
@@ -559,30 +547,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 1
+        "eoy_total_fte": 1,
+        "eoy_total_positions": 1,
+        "spending": 1043900.65,
+        "budget": 1173543.91
       },
       {
         "year": 2019,
-        "eoy_total_fte": 2
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 1
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 2
+        "eoy_total_fte": 2,
+        "eoy_total_positions": 2,
+        "spending": 656737.09,
+        "budget": 700490.44
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": -387163.56,
+      "budget": -473053.47
     }
   },
   {
@@ -597,22 +583,21 @@
     "remaining_budget_percent": -138,
     "staff_roles": [],
     "staff_bargaining_units": [],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 4
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 4
+        "eoy_total_fte": 4,
+        "eoy_total_positions": 4,
+        "spending": 65246,
+        "budget": 65246.39
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -4,
-      "eoy_total_positions": -4
+      "eoy_total_positions": -4,
+      "spending": -59130.5,
+      "budget": -62676.39
     }
   },
   {
@@ -663,30 +648,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 5
+        "eoy_total_fte": 5,
+        "eoy_total_positions": 5,
+        "spending": 1324555.57,
+        "budget": 1351792.38
       },
       {
         "year": 2019,
-        "eoy_total_fte": 5.8
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 5
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 6
+        "eoy_total_fte": 5.8,
+        "eoy_total_positions": 6,
+        "spending": 730534.58,
+        "budget": 909511.84
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 0.7999999999999998,
-      "eoy_total_positions": 1
+      "eoy_total_fte": 0.8,
+      "eoy_total_positions": 1,
+      "spending": -594020.99,
+      "budget": -442280.54
     }
   },
   {
@@ -770,30 +753,28 @@
         "eoy_total_positions_for_bu": 3
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 18.45
+        "eoy_total_fte": 18.45,
+        "eoy_total_positions": 20,
+        "spending": 2115962.37,
+        "budget": 2373031.76
       },
       {
         "year": 2019,
-        "eoy_total_fte": 14.334
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 20
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 16
+        "eoy_total_fte": 14.334,
+        "eoy_total_positions": 16,
+        "spending": 1975576.04,
+        "budget": 3340845.06
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -4.116,
-      "eoy_total_positions": -4
+      "eoy_total_fte": -4.12,
+      "eoy_total_positions": -4,
+      "spending": -140386.33,
+      "budget": 967813.3
     }
   },
   {
@@ -1007,30 +988,28 @@
         "eoy_total_positions_for_bu": 55
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 118.634
+        "eoy_total_fte": 118.634,
+        "eoy_total_positions": 126,
+        "spending": 16666577.59,
+        "budget": 19033069.22
       },
       {
         "year": 2019,
-        "eoy_total_fte": 100.8
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 126
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 107
+        "eoy_total_fte": 100.8,
+        "eoy_total_positions": 107,
+        "spending": 15024298.33,
+        "budget": 18942359.99
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -17.834000000000003,
-      "eoy_total_positions": -19
+      "eoy_total_fte": -17.83,
+      "eoy_total_positions": -19,
+      "spending": -1642279.26,
+      "budget": -90709.23
     }
   },
   {
@@ -1074,30 +1053,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 1.25
+        "eoy_total_fte": 1.25,
+        "eoy_total_positions": 2,
+        "spending": 48823.22,
+        "budget": 2662.3
       },
       {
         "year": 2019,
-        "eoy_total_fte": 2.5
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 2
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 3
+        "eoy_total_fte": 2.5,
+        "eoy_total_positions": 3,
+        "spending": 915674.61,
+        "budget": 781926.37
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1.25,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 866851.39,
+      "budget": 779264.07
     }
   },
   {
@@ -1186,30 +1163,28 @@
         "eoy_total_positions_for_bu": 6
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 228.34998
+        "eoy_total_fte": 228.34998,
+        "eoy_total_positions": 229,
+        "spending": 958652.52,
+        "budget": 1201584.85
       },
       {
         "year": 2019,
-        "eoy_total_fte": 227.34998
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 229
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 228
+        "eoy_total_fte": 227.34998,
+        "eoy_total_positions": 228,
+        "spending": 55280.02,
+        "budget": 873661.21
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -1,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -903372.5,
+      "budget": -327923.64
     }
   },
   {
@@ -1243,30 +1218,28 @@
         "eoy_total_positions_for_bu": 5
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 27366646.43,
+        "budget": 29309956.87
       },
       {
         "year": 2019,
-        "eoy_total_fte": 5
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 3
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 5
+        "eoy_total_fte": 5,
+        "eoy_total_positions": 5,
+        "spending": 21347034.23,
+        "budget": 16644439.19
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 2,
-      "eoy_total_positions": 2
+      "eoy_total_positions": 2,
+      "spending": -6019612.2,
+      "budget": -12665517.68
     }
   },
   {
@@ -1368,30 +1341,28 @@
         "eoy_total_positions_for_bu": 8
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 56.2
+        "eoy_total_fte": 56.2,
+        "eoy_total_positions": 92,
+        "spending": 7813420.95,
+        "budget": 9099376
       },
       {
         "year": 2019,
-        "eoy_total_fte": 63.92
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 92
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 103
+        "eoy_total_fte": 63.92,
+        "eoy_total_positions": 103,
+        "spending": 8261107.96,
+        "budget": 10663545.93
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 7.719999999999999,
-      "eoy_total_positions": 11
+      "eoy_total_fte": 7.72,
+      "eoy_total_positions": 11,
+      "spending": 447687.01,
+      "budget": 1564169.93
     }
   },
   {
@@ -1460,30 +1431,28 @@
         "eoy_total_positions_for_bu": 4
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 7
+        "eoy_total_fte": 7,
+        "eoy_total_positions": 7,
+        "spending": 1499671.93,
+        "budget": 1717930.29
       },
       {
         "year": 2019,
-        "eoy_total_fte": 8
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 7
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 8
+        "eoy_total_fte": 8,
+        "eoy_total_positions": 8,
+        "spending": 1520381.12,
+        "budget": 1681178.87
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 20709.19,
+      "budget": -36751.42
     }
   },
   {
@@ -1567,30 +1536,28 @@
         "eoy_total_positions_for_bu": 7
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 33.55
+        "eoy_total_fte": 33.55,
+        "eoy_total_positions": 35,
+        "spending": 4300131.87,
+        "budget": 4805140.84
       },
       {
         "year": 2019,
-        "eoy_total_fte": 29.7
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 35
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 32
+        "eoy_total_fte": 29.7,
+        "eoy_total_positions": 32,
+        "spending": 4270656.26,
+        "budget": 5014196.02
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -3.849999999999998,
-      "eoy_total_positions": -3
+      "eoy_total_fte": -3.85,
+      "eoy_total_positions": -3,
+      "spending": -29475.61,
+      "budget": 209055.18
     }
   },
   {
@@ -1670,30 +1637,28 @@
         "eoy_total_positions_for_bu": 14
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 24.55
+        "eoy_total_fte": 24.55,
+        "eoy_total_positions": 25,
+        "spending": 15554463.18,
+        "budget": 19123095.8
       },
       {
         "year": 2019,
-        "eoy_total_fte": 21
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 25
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 21
+        "eoy_total_fte": 21,
+        "eoy_total_positions": 21,
+        "spending": 13034285.18,
+        "budget": 31716030.45
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -3.5500000000000007,
-      "eoy_total_positions": -4
+      "eoy_total_fte": -3.55,
+      "eoy_total_positions": -4,
+      "spending": -2520178,
+      "budget": 12592934.65
     }
   },
   {
@@ -1753,30 +1718,28 @@
         "eoy_total_positions_for_bu": 7
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 13.25002
+        "eoy_total_fte": 13.25002,
+        "eoy_total_positions": 14,
+        "spending": 4423574.67,
+        "budget": 5199898.31
       },
       {
         "year": 2019,
-        "eoy_total_fte": 11.25002
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 14
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 12
+        "eoy_total_fte": 11.25002,
+        "eoy_total_positions": 12,
+        "spending": 5865832.93,
+        "budget": 6350588.98
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -2,
-      "eoy_total_positions": -2
+      "eoy_total_positions": -2,
+      "spending": 1442258.26,
+      "budget": 1150690.67
     }
   },
   {
@@ -1841,30 +1804,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 38.8
+        "eoy_total_fte": 38.8,
+        "eoy_total_positions": 39,
+        "spending": 2285013.37,
+        "budget": 3492187
       },
       {
         "year": 2019,
-        "eoy_total_fte": 43.8
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 39
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 44
+        "eoy_total_fte": 43.8,
+        "eoy_total_positions": 44,
+        "spending": 4182853.96,
+        "budget": 5918054.9
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 5,
-      "eoy_total_positions": 5
+      "eoy_total_positions": 5,
+      "spending": 1897840.59,
+      "budget": 2425867.9
     }
   },
   {
@@ -1924,30 +1885,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 19.7
+        "eoy_total_fte": 19.7,
+        "eoy_total_positions": 21,
+        "spending": 2889130.46,
+        "budget": 3156551.5
       },
       {
         "year": 2019,
-        "eoy_total_fte": 18.2
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 21
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 20
+        "eoy_total_fte": 18.2,
+        "eoy_total_positions": 20,
+        "spending": 2698208.98,
+        "budget": 3099050.34
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -1.5,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -190921.48,
+      "budget": -57501.16
     }
   },
   {
@@ -2052,30 +2011,28 @@
         "eoy_total_positions_for_bu": 3
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 42.5
+        "eoy_total_fte": 42.5,
+        "eoy_total_positions": 44,
+        "spending": 7486705.14,
+        "budget": 9402025.97
       },
       {
         "year": 2019,
-        "eoy_total_fte": 43
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 44
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 44
+        "eoy_total_fte": 43,
+        "eoy_total_positions": 44,
+        "spending": 8181308.25,
+        "budget": 10044846.91
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 0.5,
-      "eoy_total_positions": 0
+      "eoy_total_positions": 0,
+      "spending": 694603.11,
+      "budget": 642820.94
     }
   },
   {
@@ -2103,22 +2060,21 @@
     "remaining_budget_percent": 100,
     "staff_roles": [],
     "staff_bargaining_units": [],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 0.25
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 1
+        "eoy_total_fte": 0.25,
+        "eoy_total_positions": 1,
+        "spending": 19821.54,
+        "budget": 17074.9
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -0.25,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -19821.54,
+      "budget": 29830.1
     }
   },
   {
@@ -2185,30 +2141,28 @@
         "eoy_total_positions_for_bu": 10
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 10
+        "eoy_total_fte": 10,
+        "eoy_total_positions": 11,
+        "spending": 1703757.66,
+        "budget": 1830974
       },
       {
         "year": 2019,
-        "eoy_total_fte": 9.5
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 11
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 10
+        "eoy_total_fte": 9.5,
+        "eoy_total_positions": 10,
+        "spending": 1514846.34,
+        "budget": 1467128.9
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -0.5,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -188911.32,
+      "budget": -363845.1
     }
   },
   {
@@ -2317,30 +2271,28 @@
         "eoy_total_positions_for_bu": 19
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 44.8
+        "eoy_total_fte": 44.8,
+        "eoy_total_positions": 49,
+        "spending": 9160918.77,
+        "budget": 10633941.34
       },
       {
         "year": 2019,
-        "eoy_total_fte": 35.79
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 49
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 44
+        "eoy_total_fte": 35.79,
+        "eoy_total_positions": 44,
+        "spending": 5959266.78,
+        "budget": 8712592.6
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -9.009999999999998,
-      "eoy_total_positions": -5
+      "eoy_total_fte": -9.01,
+      "eoy_total_positions": -5,
+      "spending": -3201651.99,
+      "budget": -1921348.74
     }
   },
   {
@@ -2375,30 +2327,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 2
+        "eoy_total_fte": 2,
+        "eoy_total_positions": 2,
+        "spending": 431979.96,
+        "budget": 4941630.06
       },
       {
         "year": 2019,
-        "eoy_total_fte": 3
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 2
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 893780.94,
+        "budget": 1049174.95
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 461800.98,
+      "budget": -3892455.11
     }
   },
   {
@@ -2437,30 +2387,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 2
+        "eoy_total_fte": 2,
+        "eoy_total_positions": 2,
+        "spending": 1539296.56,
+        "budget": 1887380.68
       },
       {
         "year": 2019,
-        "eoy_total_fte": 3
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 2
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 1821560.73,
+        "budget": 2007898.35
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 282264.17,
+      "budget": 120517.67
     }
   },
   {
@@ -2524,30 +2472,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 4
+        "eoy_total_fte": 4,
+        "eoy_total_positions": 4,
+        "spending": 1470381.47,
+        "budget": 1925326.65
       },
       {
         "year": 2019,
-        "eoy_total_fte": 11.7
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 4
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 15
+        "eoy_total_fte": 11.7,
+        "eoy_total_positions": 15,
+        "spending": 6464520.97,
+        "budget": 10036057.94
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 7.699999999999999,
-      "eoy_total_positions": 11
+      "eoy_total_fte": 7.7,
+      "eoy_total_positions": 11,
+      "spending": 4994139.5,
+      "budget": 8110731.29
     }
   },
   {
@@ -2644,30 +2590,28 @@
         "eoy_total_positions_for_bu": 7
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 25.25
+        "eoy_total_fte": 25.25,
+        "eoy_total_positions": 28,
+        "spending": 2570848.76,
+        "budget": 2865198.07
       },
       {
         "year": 2019,
-        "eoy_total_fte": 24
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 28
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 27
+        "eoy_total_fte": 24,
+        "eoy_total_positions": 27,
+        "spending": 3232733,
+        "budget": 3594541.03
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -1.25,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": 661884.24,
+      "budget": 729342.96
     }
   },
   {
@@ -2719,30 +2663,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 2
+        "eoy_total_fte": 2,
+        "eoy_total_positions": 2,
+        "spending": 915117.82,
+        "budget": 922210
       },
       {
         "year": 2019,
-        "eoy_total_fte": 4.333
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 2
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 5
+        "eoy_total_fte": 4.333,
+        "eoy_total_positions": 5,
+        "spending": 1303202.38,
+        "budget": 1692314.24
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 2.333,
-      "eoy_total_positions": 3
+      "eoy_total_fte": 2.33,
+      "eoy_total_positions": 3,
+      "spending": 388084.56,
+      "budget": 770104.24
     }
   },
   {
@@ -2802,30 +2744,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 5
+        "eoy_total_fte": 5,
+        "eoy_total_positions": 5,
+        "spending": 1594162.44,
+        "budget": 2010909.88
       },
       {
         "year": 2019,
-        "eoy_total_fte": 5.933
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 5
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 7
+        "eoy_total_fte": 5.933,
+        "eoy_total_positions": 7,
+        "spending": 1376315.98,
+        "budget": 1419333.74
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 0.9329999999999998,
-      "eoy_total_positions": 2
+      "eoy_total_fte": 0.93,
+      "eoy_total_positions": 2,
+      "spending": -217846.46,
+      "budget": -591576.14
     }
   },
   {
@@ -2881,30 +2821,28 @@
         "eoy_total_positions_for_bu": 3
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 42.5
+        "eoy_total_fte": 42.5,
+        "eoy_total_positions": 43,
+        "spending": 26678.71,
+        "budget": 82760.79
       },
       {
         "year": 2019,
-        "eoy_total_fte": 46.1
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 43
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 47
+        "eoy_total_fte": 46.1,
+        "eoy_total_positions": 47,
+        "spending": 884012.61,
+        "budget": 1147214.04
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 3.6000000000000014,
-      "eoy_total_positions": 4
+      "eoy_total_fte": 3.6,
+      "eoy_total_positions": 4,
+      "spending": 857333.9,
+      "budget": 1064453.25
     }
   },
   {
@@ -2981,30 +2919,28 @@
         "eoy_total_positions_for_bu": 6
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 102
+        "eoy_total_fte": 102,
+        "eoy_total_positions": 102,
+        "spending": 2924781.83,
+        "budget": 3104985.72
       },
       {
         "year": 2019,
-        "eoy_total_fte": 77
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 102
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 77
+        "eoy_total_fte": 77,
+        "eoy_total_positions": 77,
+        "spending": 3578687.67,
+        "budget": 3674418.03
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -25,
-      "eoy_total_positions": -25
+      "eoy_total_positions": -25,
+      "spending": 653905.84,
+      "budget": 569432.31
     }
   },
   {
@@ -3035,30 +2971,28 @@
         "eoy_total_positions_for_bu": 8
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 10
+        "eoy_total_fte": 10,
+        "eoy_total_positions": 10,
+        "spending": 1383784.29,
+        "budget": 1361784.55
       },
       {
         "year": 2019,
-        "eoy_total_fte": 9
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 10
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 9
+        "eoy_total_fte": 9,
+        "eoy_total_positions": 9,
+        "spending": 1146239.61,
+        "budget": 1072077
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -1,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -237544.68,
+      "budget": -289707.55
     }
   },
   {
@@ -3110,30 +3044,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 2.5
+        "eoy_total_fte": 2.5,
+        "eoy_total_positions": 3,
+        "spending": 459776.34,
+        "budget": 465842.5
       },
       {
         "year": 2019,
-        "eoy_total_fte": 2.5
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 3
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 3
+        "eoy_total_fte": 2.5,
+        "eoy_total_positions": 3,
+        "spending": 434462.14,
+        "budget": 442743
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 0,
-      "eoy_total_positions": 0
+      "eoy_total_positions": 0,
+      "spending": -25314.2,
+      "budget": -23099.5
     }
   },
   {
@@ -3172,30 +3104,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 2.5
+        "eoy_total_fte": 2.5,
+        "eoy_total_positions": 3,
+        "spending": 467599.22,
+        "budget": 467220.02
       },
       {
         "year": 2019,
-        "eoy_total_fte": 2.5
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 3
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 3
+        "eoy_total_fte": 2.5,
+        "eoy_total_positions": 3,
+        "spending": 467193.8,
+        "budget": 477331
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 0,
-      "eoy_total_positions": 0
+      "eoy_total_positions": 0,
+      "spending": -405.42,
+      "budget": 10110.98
     }
   },
   {
@@ -3225,30 +3155,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 313302.14,
+        "budget": 355691
       },
       {
         "year": 2019,
-        "eoy_total_fte": 2
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 3
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 2
+        "eoy_total_fte": 2,
+        "eoy_total_positions": 2,
+        "spending": 281830.97,
+        "budget": 327159.47
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -1,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -31471.17,
+      "budget": -28531.53
     }
   },
   {
@@ -3305,30 +3233,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 534929.01,
+        "budget": 642833.97
       },
       {
         "year": 2019,
-        "eoy_total_fte": 4
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 3
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 4
+        "eoy_total_fte": 4,
+        "eoy_total_positions": 4,
+        "spending": 543563.63,
+        "budget": 513327.39
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 1,
-      "eoy_total_positions": 1
+      "eoy_total_positions": 1,
+      "spending": 8634.62,
+      "budget": -129506.58
     }
   },
   {
@@ -3417,30 +3343,28 @@
         "eoy_total_positions_for_bu": 5
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 17.3
+        "eoy_total_fte": 17.3,
+        "eoy_total_positions": 18,
+        "spending": 2859186.77,
+        "budget": 2974307.65
       },
       {
         "year": 2019,
-        "eoy_total_fte": 13.64000001
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 18
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 17
+        "eoy_total_fte": 13.64000001,
+        "eoy_total_positions": 17,
+        "spending": 2588086.58,
+        "budget": 2646003.54
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -3.659999990000001,
-      "eoy_total_positions": -1
+      "eoy_total_fte": -3.66,
+      "eoy_total_positions": -1,
+      "spending": -271100.19,
+      "budget": -328304.11
     }
   },
   {
@@ -3521,30 +3445,28 @@
         "eoy_total_positions_for_bu": 2
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 13
+        "eoy_total_fte": 13,
+        "eoy_total_positions": 14,
+        "spending": 70745641.72,
+        "budget": 83382799
       },
       {
         "year": 2019,
-        "eoy_total_fte": 11
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 14
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 12
+        "eoy_total_fte": 11,
+        "eoy_total_positions": 12,
+        "spending": 20491904.23,
+        "budget": 20170398.32
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -2,
-      "eoy_total_positions": -2
+      "eoy_total_positions": -2,
+      "spending": -50253737.49,
+      "budget": -63212400.68
     }
   },
   {
@@ -3714,30 +3636,28 @@
         "eoy_total_positions_for_bu": 8
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 237.5
+        "eoy_total_fte": 237.5,
+        "eoy_total_positions": 259,
+        "spending": 51885463.28,
+        "budget": 55214642.21
       },
       {
         "year": 2019,
-        "eoy_total_fte": 233.7
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 259
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 257
+        "eoy_total_fte": 233.7,
+        "eoy_total_positions": 257,
+        "spending": 54485564.69,
+        "budget": 54354408.88
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -3.8000000000000114,
-      "eoy_total_positions": -2
+      "eoy_total_fte": -3.8,
+      "eoy_total_positions": -2,
+      "spending": 2600101.41,
+      "budget": -860233.33
     }
   },
   {
@@ -3768,30 +3688,28 @@
         "eoy_total_positions_for_bu": 3
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 8
+        "eoy_total_fte": 8,
+        "eoy_total_positions": 8,
+        "spending": 1581468.38,
+        "budget": 2039341.82
       },
       {
         "year": 2019,
-        "eoy_total_fte": 8.30000002
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 8
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 9
+        "eoy_total_fte": 8.30000002,
+        "eoy_total_positions": 9,
+        "spending": 1229727.62,
+        "budget": 2153400.39
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 0.3000000200000006,
-      "eoy_total_positions": 1
+      "eoy_total_fte": 0.3,
+      "eoy_total_positions": 1,
+      "spending": -351740.76,
+      "budget": 114058.57
     }
   },
   {
@@ -3839,30 +3757,28 @@
         "eoy_total_positions_for_bu": 3
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 14
+        "eoy_total_fte": 14,
+        "eoy_total_positions": 14,
+        "spending": 1700384.57,
+        "budget": 1747551.84
       },
       {
         "year": 2019,
-        "eoy_total_fte": 15.6
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 14
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 16
+        "eoy_total_fte": 15.6,
+        "eoy_total_positions": 16,
+        "spending": 1638058.69,
+        "budget": 1740752.45
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": 1.5999999999999996,
-      "eoy_total_positions": 2
+      "eoy_total_fte": 1.6,
+      "eoy_total_positions": 2,
+      "spending": -62325.88,
+      "budget": -6799.39
     }
   },
   {
@@ -3888,30 +3804,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 0.3
+        "eoy_total_fte": 0.3,
+        "eoy_total_positions": 1,
+        "spending": 3808516.15,
+        "budget": 3421658.04
       },
       {
         "year": 2019,
-        "eoy_total_fte": 0.3
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 1
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 1
+        "eoy_total_fte": 0.3,
+        "eoy_total_positions": 1,
+        "spending": 2456347.83,
+        "budget": 3967139.43
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 0,
-      "eoy_total_positions": 0
+      "eoy_total_positions": 0,
+      "spending": -1352168.32,
+      "budget": 545481.39
     }
   },
   {
@@ -4012,30 +3926,28 @@
         "eoy_total_positions_for_bu": 19
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 93.945
+        "eoy_total_fte": 93.945,
+        "eoy_total_positions": 120,
+        "spending": 13545767.81,
+        "budget": 16295911.95
       },
       {
         "year": 2019,
-        "eoy_total_fte": 45.84
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 120
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 53
+        "eoy_total_fte": 45.84,
+        "eoy_total_positions": 53,
+        "spending": 9393147.26,
+        "budget": 10405093.92
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
-      "eoy_total_fte": -48.10499999999999,
-      "eoy_total_positions": -67
+      "eoy_total_fte": -48.1,
+      "eoy_total_positions": -67,
+      "spending": -4152620.55,
+      "budget": -5890818.03
     }
   },
   {
@@ -4114,30 +4026,28 @@
         "eoy_total_positions_for_bu": 25
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 31.5
+        "eoy_total_fte": 31.5,
+        "eoy_total_positions": 32,
+        "spending": 6295103.7,
+        "budget": 7227529.78
       },
       {
         "year": 2019,
-        "eoy_total_fte": 27
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 32
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 27
+        "eoy_total_fte": 27,
+        "eoy_total_positions": 27,
+        "spending": 7486788.48,
+        "budget": 9766729.31
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -4.5,
-      "eoy_total_positions": -5
+      "eoy_total_positions": -5,
+      "spending": 1191684.78,
+      "budget": 2539199.53
     }
   },
   {
@@ -4181,30 +4091,28 @@
         "eoy_total_positions_for_bu": 1
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 14308022.74,
+        "budget": 14348152.21
       },
       {
         "year": 2019,
-        "eoy_total_fte": 3
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 3
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 3
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 12941521.69,
+        "budget": 12962205
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": 0,
-      "eoy_total_positions": 0
+      "eoy_total_positions": 0,
+      "spending": -1366501.05,
+      "budget": -1385947.21
     }
   },
   {
@@ -4243,30 +4151,28 @@
         "eoy_total_positions_for_bu": 9
       }
     ],
-    "eoy_total_fte_time_series": [
+    "time_series": [
       {
         "year": 2018,
-        "eoy_total_fte": 12
+        "eoy_total_fte": 12,
+        "eoy_total_positions": 12,
+        "spending": 1136215.75,
+        "budget": 1646076.01
       },
       {
         "year": 2019,
-        "eoy_total_fte": 11
-      }
-    ],
-    "eoy_total_positions_time_series": [
-      {
-        "year": 2018,
-        "eoy_total_positions": 12
-      },
-      {
-        "year": 2019,
-        "eoy_total_positions": 11
+        "eoy_total_fte": 11,
+        "eoy_total_positions": 11,
+        "spending": 948639.65,
+        "budget": 1272907
       }
     ],
     "change_from_previous_year": {
       "previous_year": 2018,
       "eoy_total_fte": -1,
-      "eoy_total_positions": -1
+      "eoy_total_positions": -1,
+      "spending": -187576.1,
+      "budget": -373169.01
     }
   }
 ]
