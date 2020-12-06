@@ -16,13 +16,20 @@ import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 import "../components/sankey-chart.scss"
 
 const CentralProgramsPage = ({ data }) => {
-  const centralPrograms = data.allCentralProgramsJson.nodes
+  let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
-  const codes = data.allContentfulCentralProgram.nodes
-  //copying codes to centralPrograms
-  const centralProgramsWithCodes = centralPrograms.map(x => Object.assign(x, codes.find(y => y.siteCode === x.code)))
-  //update name to program Name so sorting works in other locales
-  centralProgramsWithCodes.map(x => {x.name=x.programName})
+  const translatedProgramNames = data.allContentfulCentralProgram.nodes
+
+  centralPrograms = centralPrograms.map(program => {
+    try {
+      program.name = translatedProgramNames.find(t => t.siteCode === program.code).programName
+    }
+    catch(e) {
+      console.warn(`Could not find Contentful translation for ${program.name}`)
+      // throw new Error(`Could not find Contentful translation for ${program.name}`)
+    }
+    return program
+  })
 
   return (
     <Layout pageClassName="central-programs-page">
@@ -54,7 +61,7 @@ const CentralProgramsPage = ({ data }) => {
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
             <CentralProgramsTable
-              data={centralProgramsWithCodes}
+              data={centralPrograms}
               labelContent={content.programsTable}
             />
           </Col>
