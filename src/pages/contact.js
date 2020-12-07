@@ -54,8 +54,8 @@ const Contact = ({ data }) => {
               <Form.Control type="text" name="name" autoComplete="name" />
               <Form.Label>{purposeFormInput.label}</Form.Label>
               <Form.Control as="select" name="purpose">
-                {purposeFormInput.selectOptions.map(option => (
-                  <option>{option}</option>
+                {purposeFormInput.selectOptions.map((option,index) => (
+                  <option key={index}>{option}</option>
                 ))}
               </Form.Control>
               <Form.Label>{messageFormInput.label}</Form.Label>
@@ -77,7 +77,7 @@ const Contact = ({ data }) => {
                 <Form.Control
                   type="email"
                   name="email"
-                  autocomplete="email"
+                  autoComplete="email"
                   placeholder={signUpForUpdatesFormInput.placeholderText}
                 />
                 <Form.Control type="hidden" name="email-opt-in" value="on" />
