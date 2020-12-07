@@ -49,7 +49,7 @@ const AboutCategoriesPage = ({ data }) => {
         <Row>
           <Col md={8}>
             <div>
-              <p>{documentToReactComponents(introText.json)}</p>
+              <div>{documentToReactComponents(introText.json)}</div>
             </div>
           </Col>
         </Row>
@@ -82,9 +82,9 @@ const AboutCategoriesPage = ({ data }) => {
                 <Col md={8}>
                   {/* <h1>Revenues</h1> */}
                   <div className="description">
-                    <p>
+                    <div>
                       {documentToReactComponents(fundingSources.content.json)}
-                    </p>
+                    </div>
                   </div>
                 </Col>
               </Row>
@@ -103,9 +103,9 @@ const AboutCategoriesPage = ({ data }) => {
                 <Col md={8}>
                   {/* <h1>Revenues</h1> */}
                   <div className="description">
-                    <p>
+                    <div>
                       {documentToReactComponents(programExpenses.content.json)}
-                    </p>
+                    </div>
                   </div>
                 </Col>
               </Row>

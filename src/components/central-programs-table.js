@@ -30,7 +30,7 @@ const formatRemainingBudgetCell = (percent, rowIndex) => {
 }
 
 const createFirstRow = (data,totalLabel) => {
-  const initialObject = {name: totalLabel, spending: 0, budget: 0, eoy_total_fte: 0}
+  const initialObject = {name: totalLabel, spending: 0, budget: 0, eoy_total_fte: 0, code: null}
   return data.reduce((returnObject, currentItem) => {
     returnObject.spending += +currentItem.spending
     returnObject.budget += +currentItem.budget
@@ -142,12 +142,12 @@ const ModalColumnToggle = ({
           <div className={`heading strong py-2 ${columnsGroupedBy.visible.length > 0 ? "" : "d-none"}`}>{labelContent.labels.currentlyShownColumnsLabel}</div>
           {
             columnsGroupedBy.visible
-              .map((column) => (<ColumnOption column={column}/>))
+              .map((column) => (<ColumnOption column={column} key={column.dataField}/>))
           }
           <div className={`heading strong py-2 ${columnsGroupedBy.hidden.length > 0 ? "" : "d-none"}`}>{labelContent.labels.columnsNotShownLabel}</div>
           {
             columnsGroupedBy.hidden
-              .map((column) => (<ColumnOption column={column}/>))
+              .map((column) => (<ColumnOption column={column} key={column.dataField}/>))
           }
         </Modal.Body>
         <Modal.Footer className="pt-3 pr-4">
@@ -192,7 +192,7 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
     sortCaret: getSortCaret,
     sort: true,
     onSort: (field,order) => trackSortEvent(field),
-    sortFunc: sortPrograms,
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
     hidden: true,
     align: 'left'
   }, {
@@ -205,7 +205,7 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
     searchable: false,
     sort: true,
     onSort: (field,order) => trackSortEvent(field),
-    sortFunc: sortPrograms,
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
     type: 'number',
     align: 'right'
   }, {
@@ -218,7 +218,7 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
     sort: true,
     hidden: true,
     onSort: (field,order) => trackSortEvent(field),
-    sortFunc: sortPrograms,
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
     type: 'number',
     align: 'right'
   }, {
@@ -231,7 +231,7 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
     searchable: false,
     sort: true,
     onSort: (field,order) => trackSortEvent(field),
-    sortFunc: sortPrograms,
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
     type: 'number',
     align: 'right',
     csvExport: false
@@ -244,7 +244,19 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
     searchable: false,
     sort: true,
     onSort: (field,order) => trackSortEvent(field),
-    sortFunc: sortPrograms,
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
+    type: 'number',
+    align: 'right'
+  }, {
+    dataField: 'code',
+    text: 'OUSD Code',
+    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">{components.sortElement} {columnLabelsByDatafield[column.dataField].displayName} <HelpIcon tooltipText={columnLabelsByDatafield[column.dataField].helperText.helperText} placement="bottom"/></div>)},
+    sortCaret: getSortCaret,
+    searchable: true,
+    sort: true,
+    hidden: true,
+    onSort: (field,order) => trackSortEvent(field),
+    sortFunc: (a, b, order, dataField, rowA, rowB) => sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
     type: 'number',
     align: 'right'
   }]

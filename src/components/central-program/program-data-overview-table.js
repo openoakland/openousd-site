@@ -153,6 +153,7 @@ const StaffOverview = ({ data }) => {
     {
       dataField: "value",
       align: "right",
+      text: ""
     },
   ]
 

@@ -22,7 +22,7 @@ const StaffLaborUnionsChart = ({ data }) => {
                     legendPosition: 'middle',
                     legendOffset: -40
                 }}
-                axisBottom={false}
+                axisBottom={null}
                 padding={0.2}
                 enableGridY={false}
                 enableGridX={true}

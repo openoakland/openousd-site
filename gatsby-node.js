@@ -4,7 +4,7 @@ var slugify = require('slugify')
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
-  // Defining types because Gatsby is making soem Int values String
+  // Defining types because Gatsby is making some Int values String
   // which breaks sortign and computation
   const typeDefs = `
     type CentralProgramsJson implements Node {

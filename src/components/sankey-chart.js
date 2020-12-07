@@ -72,6 +72,7 @@ function SankeyChart(props) {
                         <ButtonGroup>
                             {props.labelContent.groupingOptions.map( option => (
                                     <Button size="sm"
+                                            key={option.optionId}
                                             onClick={() => {
                                                 setGroupBy(option.optionId)
                                                 trackCustomEvent({
