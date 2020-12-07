@@ -21,13 +21,14 @@ function ScrollWidget(props) {
         offset={-70}
         duration={550}
         to={`${props.sectionIdPrefix}-${index}`}
+        key={`${props.sectionIdPrefix}-${index}`}
       />
     )
   }
 
   // The line visually connecting two adjacent navigation circles.
-  function navConnector() {
-    return <div id="nav-connector" />
+  function navConnector(i) {
+    return <div id="nav-connector" key={i}/>
   }
 
   // Render the circle corresponding to the first section.
@@ -37,7 +38,7 @@ function ScrollWidget(props) {
   // and a circle for each section. This way, the overall effect will be `numSection` adjoined circles,
   // where each circle has a line connecting it to the previous one.
   for (let i = 1; i < numSections; i++) {
-    navSections.push(navConnector())
+    navSections.push(navConnector(i))
     navSections.push(navCircle({ index: i }))
   }
 
