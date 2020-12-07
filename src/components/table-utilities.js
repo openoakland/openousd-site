@@ -68,3 +68,9 @@ export const deltaPrefix = delta => {
 
   return delta > 0 ? "▲ " : "▼ "
 }
+
+export const rowUnderline = (row, rowIndex) => {
+  if (rowIndex === 0) {
+    return 'sticky-first-row'
+  }
+}

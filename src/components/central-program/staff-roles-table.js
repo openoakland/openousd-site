@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider from 'react-bootstrap-table2-toolkit';
-import { getSortCaret, sort } from '../table-utilities'
+import { getSortCaret, sort, rowUnderline } from '../table-utilities'
 
 const TOTAL_ROW_NAME = 'Total'
 
@@ -58,6 +58,7 @@ const StaffRolesTable = ({data}) => {
           <BootstrapTable
             classes=""
             bordered={false}
+            rowClasses={rowUnderline}
             {...props.baseProps}
             defaultSorted={[{dataField: 'eoy_total_positions_for_role', order: 'desc'}]}
           />
