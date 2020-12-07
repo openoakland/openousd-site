@@ -12,7 +12,7 @@ import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline'
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 import { Button, Modal, Row, Col } from 'react-bootstrap'
 import HelpIcon from "./help-icon"
-import { getSortCaret, formatToUSD, formatFTE, sort } from './table-utilities'
+import { getSortCaret, formatToUSD, formatFTE, sort, rowUnderline } from './table-utilities'
 
 const { SearchBar } = Search
 const { ExportCSVButton } = CSVExport
@@ -67,12 +67,6 @@ const trackSortEvent = (fieldName) => {
       action: "Sort Column",
       label: fieldName
   })
-}
-
-const rowClasses = (row, rowIndex) => {
-  if (rowIndex === 0) {
-    return 'first-row'
-  }
 }
 
 const ModalColumnToggle = ({
@@ -295,7 +289,7 @@ const CentralProgramsTable = ({data, labelContent, codes}) => {
             classes=""
             bordered={false}
             {...props.baseProps}
-            rowClasses={rowClasses}
+            rowClasses={rowUnderline}
             defaultSorted={[{dataField: 'name', order: 'asc'}]}
           />
           <div className="footnote mb-3 mt-2">{labelContent.footnote.footnote}</div>

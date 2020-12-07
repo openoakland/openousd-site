@@ -7,9 +7,10 @@
         font-size: 1.1rem;
     }
 
-    .first-row {
+    .sticky-first-row {
         border-top: 2px solid grey;
         border-bottom: 2px solid grey;
+        font-weight: $bold-weight;
     }
 
     .over-budget {
