@@ -17,9 +17,10 @@ const ELEMENT_NAME_PREFIX = "program-section"
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
+  const translatedProgramName = data.contentfulCentralProgram.programName
   return (
     <Layout>
-      <SEO title={centralProgram.name} />
+      <SEO title={translatedProgramName} />
       <div className="d-none d-lg-block">
         <ScrollWidget
           className="scroll-widget"
@@ -31,7 +32,7 @@ const CentralProgram = ({ data }) => {
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <h1>{centralProgram.name}</h1>
+              <h1>{translatedProgramName}</h1>
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h2>
                   Program Data for the {data.site.siteMetadata.latestSchoolYear}{" "}
@@ -84,11 +85,14 @@ const CentralProgram = ({ data }) => {
 }
 
 export const query = graphql`
-  query($code: Int!) {
+  query($code: Int!, $language: String) {
     site {
       siteMetadata {
         latestSchoolYear
       }
+    }
+    contentfulCentralProgram(siteCode: {eq: $code}, node_locale: {eq: $language}) {
+      programName
     }
     centralProgramsJson(code: { eq: $code }) {
       name
@@ -123,6 +127,34 @@ export const query = graphql`
         source
         target
         value
+      }
+    }
+    contentfulPage(slug: {eq: "central-programs/*"}, node_locale: {eq: $language}) {
+      title
+      content {
+        ... on ContentfulProgramDetailsPageTemplate {
+          programOverviewTable {
+            columns {
+              displayName
+              dataFieldName
+            }
+            heading
+          }
+          staffLaborUnionsTable {
+            columns {
+              displayName
+              dataFieldName
+            }
+            heading
+          }
+          staffRolesTable {
+            columns {
+              displayName
+              dataFieldName
+            }
+            heading
+          }
+        }
       }
     }
   }
