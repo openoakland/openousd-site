@@ -54,6 +54,7 @@ const SpendingOverview = ({ data }) => {
     {
       dataField: "value",
       text: "Value",
+      align: "right",
       headerFormatter: (column, colIndex, components) => {
         return (
           <div className="text-right value">{formatToUSD(data.spending)}</div>
@@ -62,10 +63,23 @@ const SpendingOverview = ({ data }) => {
     },
   ]
 
+  const rows = []
+
+  if (data.change_from_previous_year) {
+    const spending_delta = data.change_from_previous_year.spending
+
+    rows.push({
+      description: "Change in spending from previous year",
+      value: `${deltaPrefix(spending_delta)}${formatToUSD(
+        Math.abs(spending_delta)
+      )}`,
+    })
+  }
+
   return (
     <ToolkitProvider
       keyField="description"
-      data={[]}
+      data={rows}
       columns={columns}
       bootstrap4
     >
@@ -103,6 +117,19 @@ const BudgetOverview = ({ data }) => {
     },
   ]
 
+  const rows = []
+
+  if (data.change_from_previous_year) {
+    const budget_delta = data.change_from_previous_year.budget
+
+    rows.push({
+      description: "Change in budget from previous year",
+      value: `${deltaPrefix(budget_delta)}${formatToUSD(
+        Math.abs(budget_delta)
+      )}`,
+    })
+  }
+
   let overOrUnder = "Over",
     difference
   if (data.spending > data.budget) {
@@ -112,14 +139,12 @@ const BudgetOverview = ({ data }) => {
     difference = data.budget - data.spending
   }
 
-  const rows = [
-    {
-      description: "Over or under budget?",
-      value: `${overOrUnder} by ${formatToUSD(difference)} (${Math.abs(
-        data.remaining_budget_percent
-      )}%)`,
-    },
-  ]
+  rows.push({
+    description: "Over or under budget?",
+    value: `${overOrUnder} by ${formatToUSD(difference)} (${Math.abs(
+      data.remaining_budget_percent
+    )}%)`,
+  })
 
   return (
     <ToolkitProvider
@@ -153,7 +178,7 @@ const StaffOverview = ({ data }) => {
     {
       dataField: "value",
       align: "right",
-      text: ""
+      text: "",
     },
   ]
 
