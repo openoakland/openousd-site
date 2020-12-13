@@ -49,7 +49,7 @@ const Heading = () => {
   )
 }
 
-const SpendingOverview = ({ data, content }) => {
+const SpendingOverview = ({ data }) => {
   const columns = [
     {
       dataField: "description",
