@@ -3,21 +3,28 @@ import PropTypes from "prop-types"
 import BootstrapTable from "react-bootstrap-table-next"
 import ToolkitProvider from "react-bootstrap-table2-toolkit"
 import { formatToUSD, formatFTE, deltaPrefix } from "../table-utilities"
+import { getColumnsByDataField } from "../../utilities/content-utilities"
+
+let columnsByDataField
 
 const Heading = () => {
   const columns = [
     {
       dataField: "description",
-      text: "Description",
+      text: columnsByDataField["description"].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div>Description</div>
+        return <div> {columnsByDataField["description"].displayName} </div>
       },
     },
     {
       dataField: "value",
-      text: "Value",
+      text: columnsByDataField["value"].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div className="text-right">Value</div>
+        return (
+          <div className="text-right">
+            {columnsByDataField["value"].displayName}
+          </div>
+        )
       },
     },
   ]
@@ -42,13 +49,13 @@ const Heading = () => {
   )
 }
 
-const SpendingOverview = ({ data }) => {
+const SpendingOverview = ({ data, content }) => {
   const columns = [
     {
       dataField: "description",
       text: "Description",
       headerFormatter: (column, colIndex, components) => {
-        return <div>Spending</div>
+        return <div>{columnsByDataField["spending"].displayName}</div>
       },
     },
     {
@@ -102,7 +109,7 @@ const BudgetOverview = ({ data }) => {
       dataField: "description",
       text: "Description",
       headerFormatter: (column, colIndex, components) => {
-        return <div>Budget</div>
+        return <div>{columnsByDataField["budget"].displayName}</div>
       },
     },
     {
@@ -172,7 +179,7 @@ const StaffOverview = ({ data }) => {
       dataField: "description",
       text: "Description",
       headerFormatter: (column, colIndex, components) => {
-        return <div>Staff</div>
+        return <div>{columnsByDataField["eoy_total_fte"].displayName}</div>
       },
     },
     {
@@ -237,14 +244,17 @@ const StaffOverview = ({ data }) => {
   )
 }
 
-const ProgramDataOverviewTable = ({ data, className }) => (
-  <div className={`program-data-overview ${className}`}>
-    <Heading />
-    <SpendingOverview data={data.centralProgramsJson} />
-    <BudgetOverview data={data.centralProgramsJson} />
-    <StaffOverview data={data.centralProgramsJson} />
-  </div>
-)
+const ProgramDataOverviewTable = ({ data, content, className }) => {
+  columnsByDataField = getColumnsByDataField(content.columns)
+  return (
+    <div className={`program-data-overview ${className}`}>
+      <Heading content={columnsByDataField} />
+      <SpendingOverview data={data.centralProgramsJson} />
+      <BudgetOverview data={data.centralProgramsJson} />
+      <StaffOverview data={data.centralProgramsJson} />
+    </div>
+  )
+}
 
 ProgramDataOverviewTable.propTypes = {
   data: PropTypes.object,
