@@ -1,13 +1,9 @@
-export const getDisplayNameForColumn = (dataFieldName, columns) => {
-  return columns.find(c => c.dataFieldName === dataFieldName).displayName
-}
-
 export const getColumnsByDataField = columns => {
-  let columnLabelsByDatafield = {}
+	let columnLabelsByDatafield = {}
 
-  columns.forEach(c => {
-    columnLabelsByDatafield[c.dataFieldName] = c
-  })
+	columns.forEach(c => {
+		columnLabelsByDatafield[c.dataFieldName] = c
+	})
 
-  return columnLabelsByDatafield
+	return columnLabelsByDatafield
 }
