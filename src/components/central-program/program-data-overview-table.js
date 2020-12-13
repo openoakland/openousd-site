@@ -223,7 +223,7 @@ const ProgramDataOverviewTable = ({ data, content, className }) => {
   columnsByDataField = getColumnsByDataField(content.columns)
   return (
     <div className={`program-data-overview ${className}`}>
-      <Heading content={columnsByDataField} />
+      <Heading />
       <SpendingOverview data={data.centralProgramsJson} />
       <BudgetOverview data={data.centralProgramsJson} />
       <StaffOverview data={data.centralProgramsJson} />
