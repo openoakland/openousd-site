@@ -109,8 +109,10 @@ export const query = graphql`
         abbreviation
       }
       change_from_previous_year {
+        budget
         eoy_total_fte
         eoy_total_positions
+        spending
       }
     }
     centralProgramsSankeyJson(site_code: { eq: $code }) {
