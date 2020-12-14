@@ -5,24 +5,33 @@ import ToolkitProvider from "react-bootstrap-table2-toolkit"
 import { formatToUSD, formatFTE, deltaPrefix } from "../table-utilities"
 import { getColumnsByDataField } from "../../utilities/content-utilities"
 
+const DESCRIPTION = "description"
+const VALUE = "value"
+
+const CHANGE = "change_from_previous_year"
+const SPENDING = "spending"
+const BUDGET = "budget"
+const STAFF_FTE = "eoy_total_fte"
+const STAFF_POSITIONS = "eoy_total_positions"
+
 let columnsByDataField
 
 const Heading = () => {
   const columns = [
     {
-      dataField: "description",
-      text: columnsByDataField["description"].displayName,
+      dataField: DESCRIPTION,
+      text: columnsByDataField[DESCRIPTION].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div> {columnsByDataField["description"].displayName} </div>
+        return <div> {columnsByDataField[DESCRIPTION].displayName} </div>
       },
     },
     {
-      dataField: "value",
-      text: columnsByDataField["value"].displayName,
+      dataField: VALUE,
+      text: columnsByDataField[VALUE].displayName,
       headerFormatter: (column, colIndex, components) => {
         return (
           <div className="text-right">
-            {columnsByDataField["value"].displayName}
+            {columnsByDataField[VALUE].displayName}
           </div>
         )
       },
@@ -31,7 +40,7 @@ const Heading = () => {
 
   return (
     <ToolkitProvider
-      keyField="description"
+      keyField={DESCRIPTION}
       data={[]}
       columns={columns}
       bootstrap4
@@ -52,19 +61,19 @@ const Heading = () => {
 const SpendingOverview = ({ data }) => {
   const columns = [
     {
-      dataField: "description",
-      text: "Description",
+      dataField: DESCRIPTION,
+      text: columnsByDataField[DESCRIPTION].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div>{columnsByDataField["spending"].displayName}</div>
+        return <div>{columnsByDataField[SPENDING].displayName}</div>
       },
     },
     {
-      dataField: "value",
-      text: "Value",
+      dataField: VALUE,
+      text: columnsByDataField[VALUE].displayName,
       align: "right",
       headerFormatter: (column, colIndex, components) => {
         return (
-          <div className="text-right value">{formatToUSD(data.spending)}</div>
+          <div className="text-right value">{formatToUSD(data[SPENDING])}</div>
         )
       },
     },
@@ -72,11 +81,11 @@ const SpendingOverview = ({ data }) => {
 
   const rows = []
 
-  if (data.change_from_previous_year) {
-    const spending_delta = data.change_from_previous_year.spending
+  if (data[CHANGE]) {
+    const spending_delta = data[CHANGE][SPENDING]
 
     rows.push({
-      description: "Change in spending from previous year",
+      description: columnsByDataField[`${CHANGE}.${SPENDING}`].displayName,
       value: `${deltaPrefix(spending_delta)}${formatToUSD(
         Math.abs(spending_delta)
       )}`,
@@ -85,7 +94,7 @@ const SpendingOverview = ({ data }) => {
 
   return (
     <ToolkitProvider
-      keyField="description"
+      keyField={DESCRIPTION}
       data={rows}
       columns={columns}
       bootstrap4
@@ -106,19 +115,19 @@ const SpendingOverview = ({ data }) => {
 const BudgetOverview = ({ data }) => {
   const columns = [
     {
-      dataField: "description",
-      text: "Description",
+      dataField: DESCRIPTION,
+      text: columnsByDataField[DESCRIPTION].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div>{columnsByDataField["budget"].displayName}</div>
+        return <div>{columnsByDataField[BUDGET].displayName}</div>
       },
     },
     {
-      dataField: "value",
-      text: "Value",
+      dataField: VALUE,
+      text: columnsByDataField[VALUE].displayName,
       align: "right",
       headerFormatter: (column, colIndex, components) => {
         return (
-          <div className="text-right value">{formatToUSD(data.budget)}</div>
+          <div className="text-right value">{formatToUSD(data[BUDGET])}</div>
         )
       },
     },
@@ -126,8 +135,8 @@ const BudgetOverview = ({ data }) => {
 
   const rows = []
 
-  if (data.change_from_previous_year) {
-    const budget_delta = data.change_from_previous_year.budget
+  if (data[CHANGE]) {
+    const budget_delta = data[CHANGE][BUDGET]
 
     rows.push({
       description: "Change in budget from previous year",
@@ -139,11 +148,11 @@ const BudgetOverview = ({ data }) => {
 
   let overOrUnder = "Over",
     difference
-  if (data.spending > data.budget) {
-    difference = data.spending - data.budget
+  if (data[SPENDING] > data[BUDGET]) {
+    difference = data[SPENDING] - data[BUDGET]
   } else {
     overOrUnder = "Under"
-    difference = data.budget - data.spending
+    difference = data[BUDGET] - data[SPENDING]
   }
 
   rows.push({
@@ -155,7 +164,7 @@ const BudgetOverview = ({ data }) => {
 
   return (
     <ToolkitProvider
-      keyField="description"
+      keyField={DESCRIPTION}
       data={rows}
       columns={columns}
       bootstrap4
@@ -176,14 +185,14 @@ const BudgetOverview = ({ data }) => {
 const StaffOverview = ({ data }) => {
   const columns = [
     {
-      dataField: "description",
-      text: "Description",
+      dataField: DESCRIPTION,
+      text: columnsByDataField[DESCRIPTION].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div>{columnsByDataField["eoy_total_fte"].displayName}</div>
+        return <div>{columnsByDataField[STAFF_FTE].displayName}</div>
       },
     },
     {
-      dataField: "value",
+      dataField: VALUE,
       align: "right",
       text: "",
     },
@@ -193,12 +202,11 @@ const StaffOverview = ({ data }) => {
 
   rows.push({
     description: "Total positions",
-    value: data.eoy_total_positions || 0,
+    value: data[STAFF_POSITIONS] || 0,
   })
 
-  if (data.change_from_previous_year) {
-    const total_positions_delta =
-      data.change_from_previous_year.eoy_total_positions
+  if (data[CHANGE]) {
+    const total_positions_delta = data[CHANGE][STAFF_POSITIONS]
 
     rows.push({
       description: "Change in total positions from previous year",
@@ -210,11 +218,11 @@ const StaffOverview = ({ data }) => {
 
   rows.push({
     description: "Full time equivalent (FTE)",
-    value: `${formatFTE(data.eoy_total_fte)}`,
+    value: `${formatFTE(data[STAFF_FTE])}`,
   })
 
-  if (data.change_from_previous_year) {
-    const total_fte_delta = data.change_from_previous_year.eoy_total_fte
+  if (data[CHANGE]) {
+    const total_fte_delta = data[CHANGE][STAFF_FTE]
 
     rows.push({
       description: "Change in FTE from previous year",
@@ -226,7 +234,7 @@ const StaffOverview = ({ data }) => {
 
   return (
     <ToolkitProvider
-      keyField="description"
+      keyField={DESCRIPTION}
       data={rows}
       columns={columns}
       bootstrap4
