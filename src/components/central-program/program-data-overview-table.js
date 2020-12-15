@@ -7,10 +7,12 @@ import { getColumnsByDataField } from "../../utilities/content-utilities"
 
 const DESCRIPTION = "description"
 const VALUE = "value"
+const STAFF = "staff"
 
 const CHANGE = "change_from_previous_year"
 const SPENDING = "spending"
 const BUDGET = "budget"
+const BALANCE = "budget_balance"
 const STAFF_FTE = "eoy_total_fte"
 const STAFF_POSITIONS = "eoy_total_positions"
 
@@ -139,7 +141,7 @@ const BudgetOverview = ({ data }) => {
     const budget_delta = data[CHANGE][BUDGET]
 
     rows.push({
-      description: "Change in budget from previous year",
+      description: columnsByDataField[`${CHANGE}.${BUDGET}`].displayName,
       value: `${deltaPrefix(budget_delta)}${formatToUSD(
         Math.abs(budget_delta)
       )}`,
@@ -147,17 +149,17 @@ const BudgetOverview = ({ data }) => {
   }
 
   let overOrUnder = "Over",
-    difference
+    balance
   if (data[SPENDING] > data[BUDGET]) {
-    difference = data[SPENDING] - data[BUDGET]
+    balance = data[SPENDING] - data[BUDGET]
   } else {
     overOrUnder = "Under"
-    difference = data[BUDGET] - data[SPENDING]
+    balance = data[BUDGET] - data[SPENDING]
   }
 
   rows.push({
-    description: "Over or under budget?",
-    value: `${overOrUnder} by ${formatToUSD(difference)} (${Math.abs(
+    description: columnsByDataField[BALANCE].displayName,
+    value: `${overOrUnder} by ${formatToUSD(balance)} (${Math.abs(
       data.remaining_budget_percent
     )}%)`,
   })
@@ -188,7 +190,7 @@ const StaffOverview = ({ data }) => {
       dataField: DESCRIPTION,
       text: columnsByDataField[DESCRIPTION].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div>{columnsByDataField[STAFF_FTE].displayName}</div>
+        return <div>{columnsByDataField[STAFF].displayName}</div>
       },
     },
     {
@@ -201,7 +203,7 @@ const StaffOverview = ({ data }) => {
   const rows = []
 
   rows.push({
-    description: "Total positions",
+    description: columnsByDataField[STAFF_POSITIONS].displayName,
     value: data[STAFF_POSITIONS] || 0,
   })
 
@@ -209,7 +211,8 @@ const StaffOverview = ({ data }) => {
     const total_positions_delta = data[CHANGE][STAFF_POSITIONS]
 
     rows.push({
-      description: "Change in total positions from previous year",
+      description:
+        columnsByDataField[`${CHANGE}.${STAFF_POSITIONS}`].displayName,
       value: `${deltaPrefix(total_positions_delta)}${formatFTE(
         Math.abs(total_positions_delta)
       )}`,
@@ -217,7 +220,7 @@ const StaffOverview = ({ data }) => {
   }
 
   rows.push({
-    description: "Full time equivalent (FTE)",
+    description: columnsByDataField[STAFF_FTE].displayName,
     value: `${formatFTE(data[STAFF_FTE])}`,
   })
 
@@ -225,7 +228,7 @@ const StaffOverview = ({ data }) => {
     const total_fte_delta = data[CHANGE][STAFF_FTE]
 
     rows.push({
-      description: "Change in FTE from previous year",
+      description: columnsByDataField[`${CHANGE}.${STAFF_FTE}`].displayName,
       value: `${deltaPrefix(total_fte_delta)}${formatFTE(
         Math.abs(total_fte_delta)
       )}`,
