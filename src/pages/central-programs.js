@@ -44,7 +44,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
     return program
   })
 
-  const localizeFields = (fields, object) => {
+  const localizeCategoryFields = (fields, object) => {
     const localizedObject = { ...object }
     for (let field of fields) {
       localizedObject[field] = localizeCategory(
@@ -58,8 +58,8 @@ const CentralProgramsPage = ({ data, pageContext }) => {
 
   const localizeSankeyData = ({ nodes, links }) => {
     return {
-      nodes: nodes.map(localizeFields.bind(null, ["id"])),
-      links: links.map(localizeFields.bind(null, ["target", "source"])),
+      nodes: nodes.map(localizeCategoryFields.bind(null, ["id"])),
+      links: links.map(localizeCategoryFields.bind(null, ["target", "source"])),
     }
   }
 
