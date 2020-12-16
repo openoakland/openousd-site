@@ -21,7 +21,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
-  const categoryLocalizations = [
+  const translatedCategories = [
     ...data.allContentfulCentralProgramCategory.nodes,
     ...data.allContentfulFundingSourceCategory.nodes,
   ]
@@ -38,7 +38,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
     }
     program.category = localizeCategory(
       program.category,
-      categoryLocalizations,
+      translatedCategories,
       nodeLocale
     )
     return program
@@ -49,7 +49,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
     for (let field of fields) {
       localizedObject[field] = localizeCategory(
         object[field],
-        categoryLocalizations,
+        translatedCategories,
         nodeLocale
       )
     }
