@@ -7,17 +7,20 @@ import { getColumnsByDataField } from "../../utilities/content-utilities"
 
 let columnsByDataField
 
+const LABOR_UNION_NAME = "bargaining_unit_name"
+const LABOR_UNION_POSITIONS = "eoy_total_positions_for_bu"
+
 const StaffLaborUnionsTable = ({ data, content }) => {
   columnsByDataField = getColumnsByDataField(content.columns)
 
   const columns = [
     {
-      dataField: "bargaining_unit_name",
-      text: columnsByDataField["bargaining_unit_name"].displayName,
+      dataField: LABOR_UNION_NAME,
+      text: columnsByDataField[LABOR_UNION_NAME].displayName,
       headerFormatter: (column, colIndex, components) => {
         return (
           <div className="table-header">
-            {columnsByDataField["bargaining_unit_name"].displayName}{" "}
+            {columnsByDataField[LABOR_UNION_NAME].displayName}{" "}
             {components.sortElement}
           </div>
         )
@@ -27,13 +30,13 @@ const StaffLaborUnionsTable = ({ data, content }) => {
       searchable: false,
     },
     {
-      dataField: "eoy_total_positions_for_bu",
-      text: columnsByDataField["eoy_total_positions_for_bu"].displayName,
+      dataField: LABOR_UNION_POSITIONS,
+      text: columnsByDataField[LABOR_UNION_POSITIONS].displayName,
       headerFormatter: (column, colIndex, components) => {
         return (
           <div className="table-header text-right">
             {components.sortElement}{" "}
-            {columnsByDataField["eoy_total_positions_for_bu"].displayName}
+            {columnsByDataField[LABOR_UNION_POSITIONS].displayName}
           </div>
         )
       },
@@ -46,7 +49,7 @@ const StaffLaborUnionsTable = ({ data, content }) => {
 
   return (
     <ToolkitProvider
-      keyField="bargaining_unit_name"
+      keyField={LABOR_UNION_NAME}
       data={data}
       columns={columns}
       bootstrap4
@@ -58,7 +61,7 @@ const StaffLaborUnionsTable = ({ data, content }) => {
             bordered={false}
             {...props.baseProps}
             defaultSorted={[
-              { dataField: "eoy_total_positions_for_bu", order: "desc" },
+              { dataField: LABOR_UNION_POSITIONS, order: "desc" },
             ]}
           />
         </div>
