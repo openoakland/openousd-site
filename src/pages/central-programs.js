@@ -21,6 +21,11 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
+  const categoryLocalizations = [
+    ...data.allContentfulCentralProgramCategory.nodes,
+    ...data.allContentfulFundingSourceCategory.nodes,
+  ]
+  const { language: nodeLocale } = pageContext
 
   centralPrograms = centralPrograms.map(program => {
     try {
@@ -31,14 +36,13 @@ const CentralProgramsPage = ({ data, pageContext }) => {
       console.warn(`Could not find Contentful translation for ${program.name}`)
       // throw new Error(`Could not find Contentful translation for ${program.name}`)
     }
+    program.category = localizeCategory(
+      program.category,
+      categoryLocalizations,
+      nodeLocale
+    )
     return program
   })
-
-  const categoryLocalizations = [
-    ...data.allContentfulCentralProgramCategory.nodes,
-    ...data.allContentfulFundingSourceCategory.nodes,
-  ]
-  const { language: nodeLocale } = pageContext
 
   const localizeFields = (fields, object) => {
     const localizedObject = { ...object }
