@@ -1,31 +1,55 @@
 import React from "react"
 import PropTypes from "prop-types"
-import BootstrapTable from 'react-bootstrap-table-next';
-import ToolkitProvider from 'react-bootstrap-table2-toolkit';
-import { getSortCaret } from '../table-utilities'
+import BootstrapTable from "react-bootstrap-table-next"
+import ToolkitProvider from "react-bootstrap-table2-toolkit"
+import { getSortCaret } from "../table-utilities"
+import { getColumnsByDataField } from "../../utilities/content-utilities"
 
+let columnsByDataField
 
-const StaffLaborUnionsTable = ({data}) => {
-  const columns = [{
-    dataField: 'description',
-    text: "Labor Union",
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header">Labor Union {components.sortElement}</div>)},
-    sort: true,
-    sortCaret: getSortCaret,
-    searchable: false
-  },{
-    dataField: 'eoy_total_positions_for_bu',
-    text: 'Number of Staff',
-    headerFormatter: (column, colIndex, components) => { return (<div className="table-header text-right">Number of Staff {components.sortElement}</div>)},
-    sort: true,
-    sortCaret: getSortCaret,
-    align: 'right',
-    searchable: false
-  }]
+const LABOR_UNION_NAME = "bargaining_unit_name"
+const LABOR_UNION_POSITIONS = "eoy_total_positions_for_bu"
+
+const StaffLaborUnionsTable = ({ data, content }) => {
+  columnsByDataField = getColumnsByDataField(content.columns)
+
+  const columns = [
+    {
+      dataField: LABOR_UNION_NAME,
+      text: columnsByDataField[LABOR_UNION_NAME].displayName,
+      headerFormatter: (column, colIndex, components) => {
+        return (
+          <div className="table-header">
+            {columnsByDataField[LABOR_UNION_NAME].displayName}{" "}
+            {components.sortElement}
+          </div>
+        )
+      },
+      sort: true,
+      sortCaret: getSortCaret,
+      searchable: false,
+    },
+    {
+      dataField: LABOR_UNION_POSITIONS,
+      text: columnsByDataField[LABOR_UNION_POSITIONS].displayName,
+      headerFormatter: (column, colIndex, components) => {
+        return (
+          <div className="table-header text-right">
+            {components.sortElement}{" "}
+            {columnsByDataField[LABOR_UNION_POSITIONS].displayName}
+          </div>
+        )
+      },
+      sort: true,
+      sortCaret: getSortCaret,
+      align: "right",
+      searchable: false,
+    },
+  ]
 
   return (
     <ToolkitProvider
-      keyField="description"
+      keyField={LABOR_UNION_NAME}
       data={data}
       columns={columns}
       bootstrap4
@@ -36,19 +60,22 @@ const StaffLaborUnionsTable = ({data}) => {
             classes=""
             bordered={false}
             {...props.baseProps}
-            defaultSorted={[{dataField: 'eoy_total_positions_for_bu', order: 'desc'}]}
+            defaultSorted={[
+              { dataField: LABOR_UNION_POSITIONS, order: "desc" },
+            ]}
           />
         </div>
       )}
     </ToolkitProvider>
-  )}
+  )
+}
 
 StaffLaborUnionsTable.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.object),
+  data: PropTypes.arrayOf(PropTypes.object),
 }
 
 StaffLaborUnionsTable.defaultProps = {
-    data: [],
+  data: [],
 }
 
 export default StaffLaborUnionsTable
