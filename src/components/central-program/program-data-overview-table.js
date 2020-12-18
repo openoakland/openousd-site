@@ -8,6 +8,8 @@ import { getColumnsByDataField } from "../../utilities/content-utilities"
 const DESCRIPTION = "description"
 const VALUE = "value"
 const STAFF = "staff"
+const OVER_BY = "over_by"
+const UNDER_BY = "under_by"
 
 const CHANGE = "change_from_previous_year"
 const SPENDING = "spending"
@@ -148,18 +150,18 @@ const BudgetOverview = ({ data }) => {
     })
   }
 
-  let overOrUnder = "Over",
+  let overOrUnder = columnsByDataField[OVER_BY].displayName,
     balance
   if (data[SPENDING] > data[BUDGET]) {
     balance = data[SPENDING] - data[BUDGET]
   } else {
-    overOrUnder = "Under"
+    overOrUnder = columnsByDataField[UNDER_BY].displayName
     balance = data[BUDGET] - data[SPENDING]
   }
 
   rows.push({
     description: columnsByDataField[BALANCE].displayName,
-    value: `${overOrUnder} by ${formatToUSD(balance)} (${Math.abs(
+    value: `${overOrUnder} ${formatToUSD(balance)} (${Math.abs(
       data.remaining_budget_percent
     )}%)`,
   })
