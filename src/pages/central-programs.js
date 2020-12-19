@@ -13,23 +13,62 @@ import SankeyChart from "../components/sankey-chart"
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 
+import { localizeCategory } from "../utilities/content-utilities"
+
 import "../components/sankey-chart.scss"
 
-const CentralProgramsPage = ({ data }) => {
+const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
+  const translatedCategories = [
+    ...data.allContentfulCentralProgramCategory.nodes,
+    ...data.allContentfulFundingSourceCategory.nodes,
+  ]
+  const { language: nodeLocale } = pageContext
 
+  // Translating content for the table
   centralPrograms = centralPrograms.map(program => {
     try {
-      program.name = translatedProgramNames.find(t => t.siteCode === program.code).programName
-    }
-    catch(e) {
+      program.name = translatedProgramNames.find(
+        t => t.siteCode === program.code
+      ).programName
+    } catch (e) {
       console.warn(`Could not find Contentful translation for ${program.name}`)
       // throw new Error(`Could not find Contentful translation for ${program.name}`)
     }
+    program.category = localizeCategory(
+      program.category,
+      translatedCategories,
+      nodeLocale
+    )
     return program
   })
+
+  // Translating for the sankey chart
+  const localizeCategoryFields = (fields, object) => {
+    const localizedObject = { ...object }
+    for (let field of fields) {
+      localizedObject[field] = localizeCategory(
+        object[field],
+        translatedCategories,
+        nodeLocale
+      )
+    }
+    return localizedObject
+  }
+
+  const localizeSankeyData = ({ nodes, links }) => {
+    return {
+      nodes: nodes.map(localizeCategoryFields.bind(null, ["id"])),
+      links: links.map(localizeCategoryFields.bind(null, ["target", "source"])),
+    }
+  }
+
+  const translatedSankeyProgramData = localizeSankeyData(sankeyProgramData)
+  const translatedSankeyRestrictedProgramData = localizeSankeyData(
+    sankeyRestrictedProgramData
+  )
 
   return (
     <Layout pageClassName="central-programs-page">
@@ -46,8 +85,8 @@ const CentralProgramsPage = ({ data }) => {
       </Container>
       <RequireWideScreen minScreenWidth={"sm"}>
         <SankeyChart
-          data={sankeyProgramData}
-          restrictedData={sankeyRestrictedProgramData}
+          data={translatedSankeyProgramData}
+          restrictedData={translatedSankeyRestrictedProgramData}
           labelContent={content.spendingSankeyChart}
           margin={{ top: 50, right: 200, bottom: 20, left: 240 }}
           gaEventCategory="Overview"
@@ -80,12 +119,12 @@ export const query = graphql`
         latestSchoolYear
       }
     }
-    allContentfulCentralProgram(filter: {node_locale: {eq: $language}}) {
+    allContentfulCentralProgram(filter: { node_locale: { eq: $language } }) {
       nodes {
         programName
         siteCode
       }
-  	}
+    }
     allCentralProgramsJson {
       nodes {
         name
@@ -99,6 +138,20 @@ export const query = graphql`
         fields {
           slug
         }
+      }
+    }
+    allContentfulCentralProgramCategory {
+      nodes {
+        categoryName
+        node_locale
+        contentful_id
+      }
+    }
+    allContentfulFundingSourceCategory {
+      nodes {
+        categoryName
+        node_locale
+        contentful_id
       }
     }
 

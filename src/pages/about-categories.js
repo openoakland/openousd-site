@@ -9,12 +9,14 @@ import CategoriesTable from "../components/categories-table"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import { localizeCategory } from "../utilities/content-utilities"
+
 import "../styles/pages/about-categories.scss"
 
 const AboutCategoriesPage = ({ data, pageContext }) => {
   const [key, setKey] = useState("funding-sources")
 
-  const {language: nodeLocale} = pageContext
+  const { language: nodeLocale } = pageContext
   const {
     allCentralProgramsJson,
     allCentralProgramsResourcesJson,
@@ -23,35 +25,26 @@ const AboutCategoriesPage = ({ data, pageContext }) => {
     contentfulPage,
   } = data
 
-  
-  const localizeCategory = (row, contentfulNodes) => {
-    let localizedCategory = row.category;
-
-    // If we're in a locality other than English, use the fetched English category name to find the corresponding Contentful node in the English locale,
-    // and then use the ID of that Contentful node to find the localized category name by looking up the Contentful node by ID for the given node locale.
-    // This is kind of hacky, but was the quickest way forward given that we don't currently store category IDs in the database.
-    if (nodeLocale !== 'en') {
-      const englishNode = contentfulNodes.find(node => node.categoryName === row.category && node.node_locale === 'en')
-      if (!englishNode) {
-        console.log(`No category found in Contentful with English name ${row.category}; displaying name in English`)
-      } else {
-        const localizedNode = contentfulNodes.find(node => node.contentful_id === englishNode.contentful_id && node.node_locale === nodeLocale)
-        if (!localizedNode) {
-          console.log(`No category found in Contentful with ID ${englishNode.category_id} for node locale ${nodeLocale}; displaying name in English`)
-        } else {
-          localizedCategory = localizedNode.categoryName
-        }
-      }
-    }
-
+  const expenditureCategories = allCentralProgramsJson.nodes.map(node => {
     return {
-      ...row,
-      category: localizedCategory
+      ...node,
+      category: localizeCategory(
+        node.category,
+        allContentfulCentralProgramCategory.nodes,
+        nodeLocale
+      ),
     }
-  }
-
-  const expenditureCategories = allCentralProgramsJson.nodes.map(node => localizeCategory(node, allContentfulCentralProgramCategory.nodes))
-  const revenueCategories = allCentralProgramsResourcesJson.nodes.map(node => localizeCategory(node, allContentfulFundingSourceCategory.nodes))
+  })
+  const revenueCategories = allCentralProgramsResourcesJson.nodes.map(node => {
+    return {
+      ...node,
+      category: localizeCategory(
+        node.category,
+        allContentfulFundingSourceCategory.nodes,
+        nodeLocale
+      ),
+    }
+  })
 
   const {
     introText,
