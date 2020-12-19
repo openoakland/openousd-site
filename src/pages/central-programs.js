@@ -27,6 +27,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   ]
   const { language: nodeLocale } = pageContext
 
+  // Translating content for the table
   centralPrograms = centralPrograms.map(program => {
     try {
       program.name = translatedProgramNames.find(
@@ -44,6 +45,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
     return program
   })
 
+  // Translating for the sankey chart
   const localizeCategoryFields = (fields, object) => {
     const localizedObject = { ...object }
     for (let field of fields) {
