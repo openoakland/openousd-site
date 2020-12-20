@@ -80,6 +80,7 @@ const SpendingOverview = ({ data }) => {
           <div className="text-right value">{formatToUSD(data[SPENDING])}</div>
         )
       },
+      headerStyle: { minWidth: "10em" },
     },
   ]
 
@@ -199,6 +200,7 @@ const StaffOverview = ({ data }) => {
       dataField: VALUE,
       align: "right",
       text: "",
+      headerStyle: { minWidth: "6em" },
     },
   ]
 
