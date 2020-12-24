@@ -11,6 +11,9 @@ import StaffLaborUnionsTable from "../components/central-program/staff-labor-uni
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
 import ScrollWidget from "../components/scroll-widget"
+// Experimental: for commented out Sankey char below
+// import RequireWideScreen from "../components/require-wide-screen.js"
+// import SankeyChart from "../components/sankey-chart.js"
 import "./central-program/central-program.scss"
 
 const ELEMENT_NAME_PREFIX = "program-section"
@@ -36,28 +39,33 @@ const CentralProgram = ({ data }) => {
               <h1>{translatedProgramName}</h1>
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h2>
-                  {content.programOverviewTable.heading}{" "}
-                  ({data.site.siteMetadata.latestSchoolYear})
+                  {content.programOverviewTable.heading} (
+                  {data.site.siteMetadata.latestSchoolYear})
                 </h2>
                 <ProgramDataOverviewTable
                   data={data}
                   content={content.programOverviewTable}
-                  className="pt-2" />
+                  className="pt-2"
+                />
               </div>
             </Col>
           </Row>
         </Container>
-        {/* // TODO Figure out how to present large negative numbers in program expenditures
-            {data.centralProgramsSankeyJson &&
-                <RequireWideScreen minScreenWidth={"sm"}>
-                    <SankeyChart
-                        data={data.centralProgramsSankeyJson}
-                        margin={{top: 50, right: 240, bottom: 20, left: 200}}
-                        gaEventCategory="Central Program - Resourcing"
-                        includeCategoriesLink={false}/>
-                </RequireWideScreen>
-            }
-            */}
+        {/*
+        // Experimental: Sankey chart with Funding Sources > Object Codes for the program
+        // TODO Figure out how to present large negative numbers in program expenditures
+        {data.centralProgramsSankeyJson && (
+          <RequireWideScreen minScreenWidth={"sm"}>
+            <SankeyChart
+              data={data.centralProgramsSankeyJson}
+              labelContent={content.fundingToObjectSpendingSankey}
+              margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
+              gaEventCategory="Central Program - Resourcing"
+              includeCategoriesLink={false}
+            />
+          </RequireWideScreen>
+        )}*/}
+
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
@@ -67,7 +75,8 @@ const CentralProgram = ({ data }) => {
                 </h2>
                 <StaffRolesTable
                   data={centralProgram.staff_roles}
-                  content={content.staffRolesTable} />
+                  content={content.staffRolesTable}
+                />
               </div>
               {/* if staff_bargaining_units array is 0 length or 0 value
                 return Staff Labor Union section null
@@ -100,7 +109,10 @@ export const query = graphql`
         latestSchoolYear
       }
     }
-    contentfulCentralProgram(siteCode: {eq: $code}, node_locale: {eq: $language}) {
+    contentfulCentralProgram(
+      siteCode: { eq: $code }
+      node_locale: { eq: $language }
+    ) {
       programName
     }
     centralProgramsJson(code: { eq: $code }) {
@@ -140,7 +152,10 @@ export const query = graphql`
         value
       }
     }
-    contentfulPage(slug: {eq: "central-programs/*"}, node_locale: {eq: $language}) {
+    contentfulPage(
+      slug: { eq: "central-programs/*" }
+      node_locale: { eq: $language }
+    ) {
       content {
         ... on ContentfulProgramDetailsPageTemplate {
           programOverviewTable {
@@ -163,6 +178,23 @@ export const query = graphql`
               dataFieldName
             }
             heading
+          }
+          fundingToObjectSpendingSankey {
+            heading
+            groupingLabel
+            groupingOptions {
+              optionId
+              optionLabel
+              childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode {
+                json
+              }
+            }
+            rightLabel
+            leftLabel
+            readMoreLink
+            footnote {
+              footnote
+            }
           }
         }
       }

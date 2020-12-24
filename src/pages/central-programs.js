@@ -90,6 +90,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
           labelContent={content.spendingSankeyChart}
           margin={{ top: 50, right: 200, bottom: 20, left: 240 }}
           gaEventCategory="Overview"
+          includeCategoriesLink={true}
         />
       </RequireWideScreen>
       <Container id="programs-section">
