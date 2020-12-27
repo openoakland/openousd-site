@@ -17,9 +17,11 @@ const ELEMENT_NAME_PREFIX = "program-section"
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
+  const translatedProgramName = data.contentfulCentralProgram.programName
+  const content = data.contentfulPage.content
   return (
     <Layout>
-      <SEO title={centralProgram.name} />
+      <SEO title={translatedProgramName} />
       <div className="d-none d-lg-block">
         <ScrollWidget
           className="scroll-widget"
@@ -31,13 +33,16 @@ const CentralProgram = ({ data }) => {
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <h1>{centralProgram.name}</h1>
+              <h1>{translatedProgramName}</h1>
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h2>
-                  Program Data for the {data.site.siteMetadata.latestSchoolYear}{" "}
-                  School Year
+                  {content.programOverviewTable.heading}{" "}
+                  ({data.site.siteMetadata.latestSchoolYear})
                 </h2>
-                <ProgramDataOverviewTable data={data} className="pt-2" />
+                <ProgramDataOverviewTable
+                  data={data}
+                  content={content.programOverviewTable}
+                  className="pt-2" />
               </div>
             </Col>
           </Row>
@@ -57,8 +62,12 @@ const CentralProgram = ({ data }) => {
           <Row>
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-1`} className="pt-4 pt-sm-4">
-                <h2 className="pb-3 pt-sm-3 pt-md-2">{`Staff Roles (${data.site.siteMetadata.latestSchoolYear})`}</h2>
-                <StaffRolesTable data={centralProgram.staff_roles} />
+                <h2 className="pb-3 pt-sm-3 pt-md-2">
+                  {`${content.staffRolesTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}
+                </h2>
+                <StaffRolesTable
+                  data={centralProgram.staff_roles}
+                  content={content.staffRolesTable} />
               </div>
               {/* if staff_bargaining_units array is 0 length or 0 value
                 return Staff Labor Union section null
@@ -66,12 +75,13 @@ const CentralProgram = ({ data }) => {
               {centralProgram.staff_bargaining_units.length === 0 ||
               centralProgram.staff_bargaining_units.includes(0) ? null : (
                 <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4">
-                  <h2 className="pb-3">{`Staff Labor Unions (${data.site.siteMetadata.latestSchoolYear})`}</h2>
+                  <h2 className="pb-3">{`${content.staffLaborUnionsTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                   <StaffLaborUnionsChart
                     data={centralProgram.staff_bargaining_units}
                   />
                   <StaffLaborUnionsTable
                     data={centralProgram.staff_bargaining_units}
+                    content={content.staffLaborUnionsTable}
                   />
                 </div>
               )}
@@ -84,11 +94,14 @@ const CentralProgram = ({ data }) => {
 }
 
 export const query = graphql`
-  query($code: Int!) {
+  query($code: Int!, $language: String) {
     site {
       siteMetadata {
         latestSchoolYear
       }
+    }
+    contentfulCentralProgram(siteCode: {eq: $code}, node_locale: {eq: $language}) {
+      programName
     }
     centralProgramsJson(code: { eq: $code }) {
       name
@@ -105,7 +118,7 @@ export const query = graphql`
       }
       staff_bargaining_units {
         eoy_total_positions_for_bu
-        description
+        bargaining_unit_name
         abbreviation
       }
       change_from_previous_year {
@@ -125,6 +138,33 @@ export const query = graphql`
         source
         target
         value
+      }
+    }
+    contentfulPage(slug: {eq: "central-programs/*"}, node_locale: {eq: $language}) {
+      content {
+        ... on ContentfulProgramDetailsPageTemplate {
+          programOverviewTable {
+            columns {
+              displayName
+              dataFieldName
+            }
+            heading
+          }
+          staffLaborUnionsTable {
+            columns {
+              displayName
+              dataFieldName
+            }
+            heading
+          }
+          staffRolesTable {
+            columns {
+              displayName
+              dataFieldName
+            }
+            heading
+          }
+        }
       }
     }
   }

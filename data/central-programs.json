@@ -42,17 +42,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 10
       }
     ],
@@ -103,12 +103,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 4
       }
     ],
@@ -163,12 +163,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "None",
-        "description": "None",
+        "bargaining_unit_name": "None",
         "eoy_total_positions_for_bu": 7
       }
     ],
@@ -235,17 +235,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 9
       }
     ],
@@ -404,22 +404,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "BCTC",
-        "description": "Building and Construction Trades Council",
+        "bargaining_unit_name": "Building and Construction Trades Council",
         "eoy_total_positions_for_bu": 89
       },
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 9
       }
     ],
@@ -482,17 +482,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 4
       }
     ],
@@ -543,7 +543,7 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -639,12 +639,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 5
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -739,17 +739,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
     ],
@@ -964,27 +964,27 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "None",
-        "description": "None",
+        "bargaining_unit_name": "None",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 8
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 42
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 55
       }
     ],
@@ -1039,17 +1039,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -1144,22 +1144,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "AFSCME",
-        "description": "American Federation of State, County and Municipal Employees",
+        "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
         "eoy_total_positions_for_bu": 219
       },
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 6
       }
     ],
@@ -1214,7 +1214,7 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 5
       }
     ],
@@ -1317,27 +1317,27 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "OCDPA",
-        "description": "Oakland Child Development Paraprofessional Association",
+        "bargaining_unit_name": "Oakland Child Development Paraprofessional Association",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 15
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 77
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 8
       }
     ],
@@ -1417,17 +1417,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 4
       }
     ],
@@ -1522,17 +1522,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 13
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 12
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
     ],
@@ -1623,17 +1623,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 14
       }
     ],
@@ -1704,17 +1704,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
     ],
@@ -1785,22 +1785,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "AFSCME",
-        "description": "American Federation of State, County and Municipal Employees",
+        "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
         "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 29
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -1871,17 +1871,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 15
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -1992,22 +1992,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 36
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
     ],
@@ -2137,7 +2137,7 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 10
       }
     ],
@@ -2252,22 +2252,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 13
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 11
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 19
       }
     ],
@@ -2318,12 +2318,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -2378,12 +2378,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -2458,17 +2458,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 11
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -2571,22 +2571,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 9
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 7
       }
     ],
@@ -2654,12 +2654,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -2735,12 +2735,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 6
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -2812,12 +2812,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 44
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
     ],
@@ -2900,22 +2900,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "CSEA",
-        "description": "California School Employees Association",
+        "bargaining_unit_name": "California School Employees Association",
         "eoy_total_positions_for_bu": 8
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 62
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 6
       }
     ],
@@ -2962,12 +2962,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 8
       }
     ],
@@ -3035,12 +3035,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -3095,12 +3095,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -3151,7 +3151,7 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -3219,17 +3219,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -3324,22 +3324,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "None",
-        "description": "None",
+        "bargaining_unit_name": "None",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 9
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 5
       }
     ],
@@ -3426,22 +3426,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 8
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 2
       }
     ],
@@ -3612,27 +3612,27 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "AFSCME",
-        "description": "American Federation of State, County and Municipal Employees",
+        "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
         "eoy_total_positions_for_bu": 46
       },
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 162
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 39
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 8
       }
     ],
@@ -3679,12 +3679,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 6
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
     ],
@@ -3743,17 +3743,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 5
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 8
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 3
       }
     ],
@@ -3800,7 +3800,7 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -3907,22 +3907,22 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "OEA",
-        "description": "Oakland Education Association",
+        "bargaining_unit_name": "Oakland Education Association",
         "eoy_total_positions_for_bu": 29
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 19
       }
     ],
@@ -4017,12 +4017,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 25
       }
     ],
@@ -4077,17 +4077,17 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
-        "description": "Confidential",
+        "bargaining_unit_name": "Confidential",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "SEIU",
-        "description": "Service Employees International Union",
+        "bargaining_unit_name": "Service Employees International Union",
         "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "UAOS",
-        "description": "United Administrators of Oakland Schools",
+        "bargaining_unit_name": "United Administrators of Oakland Schools",
         "eoy_total_positions_for_bu": 1
       }
     ],
@@ -4142,12 +4142,12 @@
     "staff_bargaining_units": [
       {
         "abbreviation": "Teamsters",
-        "description": "Teamsters Local 70",
+        "bargaining_unit_name": "Teamsters Local 70",
         "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "Teamsters",
-        "description": "Teamsters Local 853",
+        "bargaining_unit_name": "Teamsters Local 853",
         "eoy_total_positions_for_bu": 9
       }
     ],
