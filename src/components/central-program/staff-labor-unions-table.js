@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import BootstrapTable from "react-bootstrap-table-next"
 import ToolkitProvider from "react-bootstrap-table2-toolkit"
@@ -69,6 +70,25 @@ const StaffLaborUnionsTable = ({ data, content }) => {
     </ToolkitProvider>
   )
 }
+
+export const query = graphql`
+  fragment StaffLaborUnionsContent on ContentfulProgramDetailsPageTemplate {
+    staffLaborUnionsTable {
+      columns {
+        displayName
+        dataFieldName
+      }
+      heading
+    }
+  }
+  fragment StaffLaborUnionsData on CentralProgramsJson {
+    staff_bargaining_units {
+      eoy_total_positions_for_bu
+      bargaining_unit_name
+      abbreviation
+    }
+  }
+`
 
 StaffLaborUnionsTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
