@@ -13,7 +13,7 @@ import SankeyChart from "../components/sankey-chart"
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 
-import { localizeCategory } from "../utilities/content-utilities"
+import { useLocalizeCategory } from "../utilities/content-utilities"
 
 import "../components/sankey-chart.scss"
 
@@ -21,11 +21,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
-  const translatedCategories = [
-    ...data.allContentfulCentralProgramCategory.nodes,
-    ...data.allContentfulFundingSourceCategory.nodes,
-  ]
-  const { language: nodeLocale } = pageContext
+  const localizeCategory = useLocalizeCategory(pageContext.language)
 
   // Translating content for the table
   centralPrograms = centralPrograms.map(program => {
@@ -37,11 +33,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
       console.warn(`Could not find Contentful translation for ${program.name}`)
       // throw new Error(`Could not find Contentful translation for ${program.name}`)
     }
-    program.category = localizeCategory(
-      program.category,
-      translatedCategories,
-      nodeLocale
-    )
+    program.category = localizeCategory(program.category)
     return program
   })
 
@@ -49,11 +41,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   const localizeCategoryFields = (fields, object) => {
     const localizedObject = { ...object }
     for (let field of fields) {
-      localizedObject[field] = localizeCategory(
-        object[field],
-        translatedCategories,
-        nodeLocale
-      )
+      localizedObject[field] = localizeCategory(object[field])
     }
     return localizedObject
   }
@@ -140,21 +128,7 @@ export const query = graphql`
         }
       }
     }
-    allContentfulCentralProgramCategory {
-      nodes {
-        categoryName
-        node_locale
-        contentful_id
-      }
-    }
-    allContentfulFundingSourceCategory {
-      nodes {
-        categoryName
-        node_locale
-        contentful_id
-      }
-    }
-
+    
     contentfulPage(
       slug: { eq: "central-programs" }
       node_locale: { eq: $language }
