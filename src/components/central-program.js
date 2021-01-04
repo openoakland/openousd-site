@@ -11,7 +11,7 @@ import StaffLaborUnionsTable from "../components/central-program/staff-labor-uni
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
 import ScrollWidget from "../components/scroll-widget"
-// Experimental: for commented out Sankey char below
+// Experimental: for commented out Sankey chart below
 // import RequireWideScreen from "../components/require-wide-screen.js"
 // import SankeyChart from "../components/sankey-chart.js"
 import "./central-program/central-program.scss"
