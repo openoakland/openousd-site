@@ -99,6 +99,24 @@ const StaffRolesTable = ({ data, content }) => {
   )
 }
 
+export const query = graphql`
+  fragment StaffRolesContent on ContentfulProgramDetailsPageTemplate {
+    staffRolesTable {
+      columns {
+        displayName
+        dataFieldName
+      }
+      heading
+    }
+  }
+  fragment StaffRolesData on CentralProgramsJson {
+    staff_roles {
+      eoy_total_positions_for_role
+      role_description
+    }
+  }
+`
+
 StaffRolesTable.propTypes = {
   data: PropTypes.arrayOf(PropTypes.object),
 }

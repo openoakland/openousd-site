@@ -271,6 +271,34 @@ const ProgramDataOverviewTable = ({ data, content, className }) => {
   )
 }
 
+export const query = graphql`
+  fragment ProgramOverviewContent on ContentfulProgramDetailsPageTemplate {
+    programOverviewTable {
+      columns {
+        displayName
+        dataFieldName
+      }
+      heading
+    }
+  }
+  fragment ProgramOverviewData on CentralProgramsJson {
+    name
+    budget
+    remaining_budget_percent
+    eoy_total_fte
+    eoy_total_positions
+    spending
+    year
+    code
+    change_from_previous_year {
+      budget
+      eoy_total_fte
+      eoy_total_positions
+      spending
+    }
+  }
+`
+
 ProgramDataOverviewTable.propTypes = {
   data: PropTypes.object,
 }

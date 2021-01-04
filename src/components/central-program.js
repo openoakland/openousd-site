@@ -36,13 +36,14 @@ const CentralProgram = ({ data }) => {
               <h1>{translatedProgramName}</h1>
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h2>
-                  {content.programOverviewTable.heading}{" "}
-                  ({data.site.siteMetadata.latestSchoolYear})
+                  {content.programOverviewTable.heading} (
+                  {data.site.siteMetadata.latestSchoolYear})
                 </h2>
                 <ProgramDataOverviewTable
                   data={data}
                   content={content.programOverviewTable}
-                  className="pt-2" />
+                  className="pt-2"
+                />
               </div>
             </Col>
           </Row>
@@ -67,7 +68,8 @@ const CentralProgram = ({ data }) => {
                 </h2>
                 <StaffRolesTable
                   data={centralProgram.staff_roles}
-                  content={content.staffRolesTable} />
+                  content={content.staffRolesTable}
+                />
               </div>
               {/* if staff_bargaining_units array is 0 length or 0 value
                 return Staff Labor Union section null
@@ -100,33 +102,16 @@ export const query = graphql`
         latestSchoolYear
       }
     }
-    contentfulCentralProgram(siteCode: {eq: $code}, node_locale: {eq: $language}) {
+    contentfulCentralProgram(
+      siteCode: { eq: $code }
+      node_locale: { eq: $language }
+    ) {
       programName
     }
     centralProgramsJson(code: { eq: $code }) {
-      name
-      budget
-      remaining_budget_percent
-      eoy_total_fte
-      eoy_total_positions
-      spending
-      year
-      code
-      staff_roles {
-        eoy_total_positions_for_role
-        role_description
-      }
-      staff_bargaining_units {
-        eoy_total_positions_for_bu
-        bargaining_unit_name
-        abbreviation
-      }
-      change_from_previous_year {
-        budget
-        eoy_total_fte
-        eoy_total_positions
-        spending
-      }
+      ...ProgramOverviewData
+      ...StaffRolesData
+      ...StaffLaborUnionsData
     }
     centralProgramsSankeyJson(site_code: { eq: $code }) {
       nodes {
@@ -140,30 +125,15 @@ export const query = graphql`
         value
       }
     }
-    contentfulPage(slug: {eq: "central-programs/*"}, node_locale: {eq: $language}) {
+    contentfulPage(
+      slug: { eq: "central-programs/*" }
+      node_locale: { eq: $language }
+    ) {
       content {
         ... on ContentfulProgramDetailsPageTemplate {
-          programOverviewTable {
-            columns {
-              displayName
-              dataFieldName
-            }
-            heading
-          }
-          staffLaborUnionsTable {
-            columns {
-              displayName
-              dataFieldName
-            }
-            heading
-          }
-          staffRolesTable {
-            columns {
-              displayName
-              dataFieldName
-            }
-            heading
-          }
+          ...ProgramOverviewContent
+          ...StaffLaborUnionsContent
+          ...StaffRolesContent
         }
       }
     }
