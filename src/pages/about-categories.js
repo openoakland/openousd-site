@@ -9,40 +9,29 @@ import CategoriesTable from "../components/categories-table"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { localizeCategory } from "../utilities/content-utilities"
+import { useLocalizeCategory } from "../utilities/content-utilities"
 
 import "../styles/pages/about-categories.scss"
 
 const AboutCategoriesPage = ({ data, pageContext }) => {
   const [key, setKey] = useState("funding-sources")
-
-  const { language: nodeLocale } = pageContext
   const {
     allCentralProgramsJson,
     allCentralProgramsResourcesJson,
-    allContentfulCentralProgramCategory,
-    allContentfulFundingSourceCategory,
     contentfulPage,
   } = data
+  const localizeCategory = useLocalizeCategory(pageContext.language)
 
   const expenditureCategories = allCentralProgramsJson.nodes.map(node => {
     return {
       ...node,
-      category: localizeCategory(
-        node.category,
-        allContentfulCentralProgramCategory.nodes,
-        nodeLocale
-      ),
+      category: localizeCategory(node.category),
     }
   })
   const revenueCategories = allCentralProgramsResourcesJson.nodes.map(node => {
     return {
       ...node,
-      category: localizeCategory(
-        node.category,
-        allContentfulFundingSourceCategory.nodes,
-        nodeLocale
-      ),
+      category: localizeCategory(node.category),
     }
   })
 
@@ -154,20 +143,6 @@ export default AboutCategoriesPage
 // https://app.contentful.com/spaces/tqd0xcamk1ij/entries/6ETIpT6w1rcLlITOAjZU0y
 export const query = graphql`
   query AboutCategoriesPage($language: String) {
-    allContentfulCentralProgramCategory {
-      nodes {
-        categoryName
-        node_locale
-        contentful_id
-      }
-    }
-    allContentfulFundingSourceCategory {
-      nodes {
-        categoryName
-        node_locale
-        contentful_id
-      }
-    }
     contentfulPage(
       slug: { eq: "about-categories" }
       node_locale: { eq: $language }
