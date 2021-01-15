@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
+import PieChart from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
@@ -16,6 +17,15 @@ import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 import { useLocalizeCategory } from "../utilities/content-utilities"
 
 import "../components/sankey-chart.scss"
+
+const pieChartFakeContent = {
+  heading: "OUSD Budget for Central Programs",
+}
+
+const pieChartFakeData = [
+  { id: "Central Programs", value: 259716043 },
+  { id: "Other", value: 324113619 },
+]
 
 const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
@@ -61,6 +71,17 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   return (
     <Layout pageClassName="central-programs-page">
       <SEO title={data.contentfulPage.title} />
+      <Container>
+        <Row>
+          <Col>
+            <h1>
+              {pieChartFakeContent.heading} (
+              {data.site.siteMetadata.latestSchoolYear})
+            </h1>
+          </Col>
+        </Row>
+      </Container>
+      <PieChart data={pieChartFakeData} />
       <Container>
         <Row>
           <Col>
@@ -129,7 +150,7 @@ export const query = graphql`
         }
       }
     }
-    
+
     contentfulPage(
       slug: { eq: "central-programs" }
       node_locale: { eq: $language }
