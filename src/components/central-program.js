@@ -31,16 +31,18 @@ const CentralProgram = ({ data }) => {
         <ScrollWidget
           className="scroll-widget"
           sectionIdPrefix={ELEMENT_NAME_PREFIX}
-          numSections={3}
+          numSections={4}
         />
       </div>
       <div className="central-program-page-template">
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <h1>{translatedProgramName}</h1>
-              {programDescription}
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
+                <h1>{translatedProgramName}</h1>
+                {programDescription}
+              </div>
+              <div id={`${ELEMENT_NAME_PREFIX}-1`} className="pt-4">
                 <h2>
                   {content.programOverviewTable.heading} (
                   {data.site.siteMetadata.latestSchoolYear})
@@ -72,7 +74,7 @@ const CentralProgram = ({ data }) => {
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <div id={`${ELEMENT_NAME_PREFIX}-1`} className="pt-4 pt-sm-4">
+              <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4 pt-sm-4">
                 <h2 className="pb-3 pt-sm-3 pt-md-2">
                   {`${content.staffRolesTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}
                 </h2>
@@ -86,7 +88,7 @@ const CentralProgram = ({ data }) => {
               */}
               {centralProgram.staff_bargaining_units.length === 0 ||
               centralProgram.staff_bargaining_units.includes(0) ? null : (
-                <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4">
+                <div id={`${ELEMENT_NAME_PREFIX}-3`} className="pt-4">
                   <h2 className="pb-3">{`${content.staffLaborUnionsTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                   <StaffLaborUnionsChart
                     data={centralProgram.staff_bargaining_units}
