@@ -21,6 +21,8 @@ const ELEMENT_NAME_PREFIX = "program-section"
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
   const translatedProgramName = data.contentfulCentralProgram.programName
+  const programDescription =
+    data.contentfulCentralProgram.description?.content[0].content[0].value
   const content = data.contentfulPage.content
   return (
     <Layout>
@@ -37,6 +39,7 @@ const CentralProgram = ({ data }) => {
           <Row>
             <Col md={9} xl={6} className="mx-auto">
               <h1>{translatedProgramName}</h1>
+              {programDescription}
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h2>
                   {content.programOverviewTable.heading} (
@@ -114,6 +117,13 @@ export const query = graphql`
       node_locale: { eq: $language }
     ) {
       programName
+      description {
+        content {
+          content {
+            value
+          }
+        }
+      }
     }
     centralProgramsJson(code: { eq: $code }) {
       ...ProgramOverviewData
