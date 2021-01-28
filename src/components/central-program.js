@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
@@ -21,8 +22,8 @@ const ELEMENT_NAME_PREFIX = "program-section"
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
   const translatedProgramName = data.contentfulCentralProgram.programName
-  const programDescription =
-    data.contentfulCentralProgram.description?.content[0].content[0].value
+  const contentfulProgramDescription =
+    data.contentfulCentralProgram.description?.json
   const content = data.contentfulPage.content
   return (
     <Layout>
@@ -40,7 +41,7 @@ const CentralProgram = ({ data }) => {
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h1>{translatedProgramName}</h1>
-                {programDescription}
+                {documentToReactComponents(contentfulProgramDescription)}
               </div>
               <div id={`${ELEMENT_NAME_PREFIX}-1`} className="pt-4">
                 <h2>
@@ -120,11 +121,7 @@ export const query = graphql`
     ) {
       programName
       description {
-        content {
-          content {
-            value
-          }
-        }
+        json
       }
     }
     centralProgramsJson(code: { eq: $code }) {
