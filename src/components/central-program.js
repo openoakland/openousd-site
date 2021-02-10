@@ -12,6 +12,9 @@ import StaffLaborUnionsTable from "../components/central-program/staff-labor-uni
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
 import ScrollWidget from "../components/scroll-widget"
+
+import LaunchIcon from "@material-ui/icons/Launch"
+
 // Experimental: for commented out Sankey chart below
 // import RequireWideScreen from "../components/require-wide-screen.js"
 // import SankeyChart from "../components/sankey-chart.js"
@@ -42,6 +45,19 @@ const CentralProgram = ({ data }) => {
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h1>{translatedProgramName}</h1>
                 {documentToReactComponents(contentfulProgramDescription)}
+                {data.contentfulCentralProgram.OUSDProgramLink ? (
+                  <div className="pt-3">
+                    <a
+                      href={data.contentfulCentralProgram.OUSDProgramLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {content.ousdWebsiteLinkText} <LaunchIcon />
+                    </a>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
               <div id={`${ELEMENT_NAME_PREFIX}-1`} className="pt-4">
                 <h2>
@@ -123,6 +139,7 @@ export const query = graphql`
       description {
         json
       }
+      OUSDProgramLink
     }
     centralProgramsJson(code: { eq: $code }) {
       ...ProgramOverviewData
@@ -147,6 +164,7 @@ export const query = graphql`
     ) {
       content {
         ... on ContentfulProgramDetailsPageTemplate {
+          ousdWebsiteLinkText
           ...ProgramOverviewContent
           ...StaffLaborUnionsContent
           ...StaffRolesContent
