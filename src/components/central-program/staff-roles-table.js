@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import BootstrapTable from "react-bootstrap-table-next"
 import ToolkitProvider from "react-bootstrap-table2-toolkit"
