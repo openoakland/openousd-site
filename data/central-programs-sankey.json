@@ -199,14 +199,14 @@
     "site_code": 905,
     "nodes": [
       {
-        "id": "State",
-        "type": "resource",
-        "total": 188173.72
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 1115028.66
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 188173.72
       },
       {
         "id": "SUPPLIES",
@@ -236,14 +236,14 @@
     "site_code": 907,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 848015.93
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 717694.27
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 848015.93
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -303,24 +303,24 @@
         "total": 430481.59
       },
       {
-        "id": "Parcel Taxes",
-        "type": "resource",
-        "total": 1161545.76
-      },
-      {
-        "id": "State",
-        "type": "resource",
-        "total": 2479940.44
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 391537.88
       },
       {
+        "id": "Parcel Taxes",
+        "type": "resource",
+        "total": 1161545.76
+      },
+      {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 1536720.41
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 2479940.44
       },
       {
         "id": "Supplemental & Concentration",
@@ -475,9 +475,9 @@
     "site_code": 910,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
+        "id": "Federal",
         "type": "resource",
-        "total": 316492.26
+        "total": 474992.67
       },
       {
         "id": "Philanthropy / Grants",
@@ -485,14 +485,14 @@
         "total": 2026351.42
       },
       {
-        "id": "Federal",
-        "type": "resource",
-        "total": 474992.67
-      },
-      {
         "id": "State",
         "type": "resource",
         "total": 5436009.24
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 316492.26
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -702,24 +702,14 @@
     "site_code": 912,
     "nodes": [
       {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 169052.91
-      },
-      {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 1426062
-      },
-      {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 1037974.78
-      },
-      {
         "id": "Federal",
         "type": "resource",
         "total": 451190
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 169052.91
       },
       {
         "id": "Parcel Taxes",
@@ -727,9 +717,19 @@
         "total": 1025692.31
       },
       {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 1426062
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 1834854.68
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 1037974.78
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -1061,24 +1061,9 @@
     "site_code": 922,
     "nodes": [
       {
-        "id": "State",
-        "type": "resource",
-        "total": 2565579.73
-      },
-      {
         "id": "Federal",
         "type": "resource",
         "total": 3114474.03
-      },
-      {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 4792511.86
-      },
-      {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 2272481.35
       },
       {
         "id": "General (Base)",
@@ -1089,6 +1074,21 @@
         "id": "Other Revenue",
         "type": "resource",
         "total": 1761431
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 4792511.86
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 2565579.73
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 2272481.35
       },
       {
         "id": "AFTERSCHOOL CUSTODIAL INTERPRO",
@@ -1403,9 +1403,9 @@
     "site_code": 923,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
+        "id": "Federal",
         "type": "resource",
-        "total": 183530.96
+        "total": 1039502.81
       },
       {
         "id": "General (Base)",
@@ -1413,9 +1413,9 @@
         "total": 297347.35
       },
       {
-        "id": "Federal",
+        "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1039502.81
+        "total": 183530.96
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
@@ -1537,6 +1537,11 @@
     "site_code": 929,
     "nodes": [
       {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 255542.37
+      },
+      {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 856498.3
@@ -1545,11 +1550,6 @@
         "id": "Supplemental & Concentration",
         "type": "resource",
         "total": 2109468.07
-      },
-      {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 255542.37
       },
       {
         "id": "CLERICAL SALARIES",
@@ -1644,14 +1644,14 @@
     "site_code": 933,
     "nodes": [
       {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 173278.88
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 1572645.51
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 173278.88
       },
       {
         "id": "CLASSSUPPT SALARIES STIPENDS",
@@ -1716,14 +1716,14 @@
     "site_code": 936,
     "nodes": [
       {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 1493094.13
-      },
-      {
         "id": "Bonds",
         "type": "resource",
         "total": 141221.15
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 1493094.13
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
@@ -1872,14 +1872,14 @@
     "site_code": 941,
     "nodes": [
       {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 431728.03
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 944587.95
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 431728.03
       },
       {
         "id": "CONSULTANTS",
@@ -1946,14 +1946,9 @@
     "site_code": 944,
     "nodes": [
       {
-        "id": "Philanthropy / Grants",
+        "id": "Federal",
         "type": "resource",
-        "total": 432347.12
-      },
-      {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 1226963.02
+        "total": 453242.81
       },
       {
         "id": "General (Base)",
@@ -1966,19 +1961,24 @@
         "total": 170353.24
       },
       {
+        "id": "Parcel Taxes",
+        "type": "resource",
+        "total": 776928.02
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 432347.12
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 648764.11
       },
       {
-        "id": "Federal",
+        "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 453242.81
-      },
-      {
-        "id": "Parcel Taxes",
-        "type": "resource",
-        "total": 776928.02
+        "total": 1226963.02
       },
       {
         "id": "CLERICAL SALARIES",
@@ -2470,14 +2470,9 @@
     "site_code": 954,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
+        "id": "Federal",
         "type": "resource",
-        "total": 479750.4
-      },
-      {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 1267765.48
+        "total": 1750748.09
       },
       {
         "id": "General (Base)",
@@ -2485,14 +2480,19 @@
         "total": 148450.85
       },
       {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 1267765.48
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 606398.43
       },
       {
-        "id": "Federal",
+        "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1750748.09
+        "total": 479750.4
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -2644,14 +2644,14 @@
     "site_code": 958,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 793870.79
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 1083376.24
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 793870.79
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -2711,14 +2711,14 @@
     "site_code": 962,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 141003.21
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 293458.93
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 141003.21
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
@@ -2748,14 +2748,14 @@
     "site_code": 963,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 183252.17
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 283941.63
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 183252.17
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
@@ -2790,14 +2790,14 @@
         "total": 100000
       },
       {
-        "id": "State",
-        "type": "resource",
-        "total": 1504867.58
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 520579.01
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 1504867.58
       },
       {
         "id": "Supplemental & Concentration",
@@ -2862,24 +2862,24 @@
     "site_code": 965,
     "nodes": [
       {
-        "id": "Parcel Taxes",
-        "type": "resource",
-        "total": 149736.09
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 291318.05
       },
       {
-        "id": "Supplemental & Concentration",
+        "id": "Parcel Taxes",
         "type": "resource",
-        "total": 156726.89
+        "total": 149736.09
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 295999.91
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 156726.89
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
@@ -2909,9 +2909,9 @@
     "site_code": 968,
     "nodes": [
       {
-        "id": "Supplemental & Concentration",
+        "id": "Federal",
         "type": "resource",
-        "total": 768554.46
+        "total": 196850.58
       },
       {
         "id": "General (Base)",
@@ -2919,9 +2919,9 @@
         "total": 3217448.92
       },
       {
-        "id": "Federal",
+        "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 196850.58
+        "total": 768554.46
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -3041,14 +3041,14 @@
     "site_code": 975,
     "nodes": [
       {
+        "id": "Federal",
+        "type": "resource",
+        "total": 1704912.84
+      },
+      {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 1098630.45
-      },
-      {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 1291760.59
       },
       {
         "id": "State",
@@ -3056,9 +3056,9 @@
         "total": 50302355.81
       },
       {
-        "id": "Federal",
+        "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1704912.84
+        "total": 1291760.59
       },
       {
         "id": "CLASSSUPPT SALARIES",
@@ -3574,24 +3574,24 @@
     "site_code": 986,
     "nodes": [
       {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 5033529.59
-      },
-      {
         "id": "Bonds",
         "type": "resource",
         "total": 1554769.34
       },
       {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 228106.49
-      },
-      {
         "id": "Federal",
         "type": "resource",
         "total": 584320.9
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 5033529.59
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 228106.49
       },
       {
         "id": "CLERICAL SALARIES",
@@ -3716,14 +3716,14 @@
     "site_code": 987,
     "nodes": [
       {
-        "id": "Other Revenue",
-        "type": "resource",
-        "total": 20262525.23
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 229379
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 20262525.23
       },
       {
         "id": "Computer $500-4,999",
@@ -4179,14 +4179,14 @@
         "total": 4587922.83
       },
       {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 174191.47
-      },
-      {
         "id": "Other Revenue",
         "type": "resource",
         "total": 1100733.93
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 174191.47
       },
       {
         "id": "CLASSSUPPT SALARIES EXTRA COMP",
@@ -4550,14 +4550,14 @@
     "site_code": 995,
     "nodes": [
       {
-        "id": "State",
-        "type": "resource",
-        "total": 12617808.32
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
         "total": 323713.37
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 12617808.32
       },
       {
         "id": "AUDIT EXPENSES",
@@ -4617,14 +4617,9 @@
     "site_code": 999,
     "nodes": [
       {
-        "id": "Philanthropy / Grants",
+        "id": "Federal",
         "type": "resource",
-        "total": 886044
-      },
-      {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 7754674.29
+        "total": 712995.95
       },
       {
         "id": "General (Base)",
@@ -4637,19 +4632,24 @@
         "total": 805454.1
       },
       {
-        "id": "State",
-        "type": "resource",
-        "total": 2094903
-      },
-      {
         "id": "Parcel Taxes",
         "type": "resource",
         "total": 2685148.64
       },
       {
-        "id": "Federal",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 712995.95
+        "total": 886044
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 2094903
+      },
+      {
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 7754674.29
       },
       {
         "id": "All Other Transfers to Districts or Charter Schools",

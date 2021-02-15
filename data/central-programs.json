@@ -1366,19 +1366,6 @@
     }
   },
   {
-    "code": 915,
-    "name": "Educator Effectiveness",
-    "category": "Instructional Programs",
-    "spending": 0,
-    "budget": 44281.54,
-    "year": 2019,
-    "eoy_total_fte": null,
-    "eoy_total_positions": null,
-    "remaining_budget_percent": 100,
-    "staff_roles": [],
-    "staff_bargaining_units": []
-  },
-  {
     "code": 923,
     "name": "Elementary Network 4",
     "category": "Instructional Programs",
@@ -2047,35 +2034,6 @@
     "remaining_budget_percent": 0,
     "staff_roles": [],
     "staff_bargaining_units": []
-  },
-  {
-    "code": 932,
-    "name": "Jr Reserve Officer Training Corp",
-    "category": "Instructional Programs",
-    "spending": 0,
-    "budget": 46905,
-    "year": 2019,
-    "eoy_total_fte": null,
-    "eoy_total_positions": null,
-    "remaining_budget_percent": 100,
-    "staff_roles": [],
-    "staff_bargaining_units": [],
-    "time_series": [
-      {
-        "year": 2018,
-        "eoy_total_fte": 0.25,
-        "eoy_total_positions": 1,
-        "spending": 19821.54,
-        "budget": 17074.9
-      }
-    ],
-    "change_from_previous_year": {
-      "previous_year": 2018,
-      "eoy_total_fte": -0.25,
-      "eoy_total_positions": -1,
-      "spending": -19821.54,
-      "budget": 29830.1
-    }
   },
   {
     "code": 942,
@@ -3178,19 +3136,6 @@
       "spending": -31471.17,
       "budget": -28531.53
     }
-  },
-  {
-    "code": 978,
-    "name": "Private Schools Office (Admin)",
-    "category": "Administrative Offices",
-    "spending": 0,
-    "budget": 0,
-    "year": 2019,
-    "eoy_total_fte": null,
-    "eoy_total_positions": null,
-    "remaining_budget_percent": null,
-    "staff_roles": [],
-    "staff_bargaining_units": []
   },
   {
     "code": 990,
