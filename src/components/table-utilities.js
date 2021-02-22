@@ -70,7 +70,7 @@ export const deltaPrefix = delta => {
 }
 
 export const rowUnderline = (row, rowIndex) => {
-  if (rowIndex === 0) {
+  if (row.name.includes("Total")) {
     return "sticky-first-row"
   }
 }

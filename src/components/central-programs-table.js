@@ -57,7 +57,7 @@ const createFirstRow = (data, totalLabel) => {
 }
 
 const columnsFormatter = (cell, row, rowIndex) => {
-  if (rowIndex === 0) {
+  if (row.name.includes("Total")) {
     return <span className="strong">{row.name}</span>
   }
   return (
@@ -372,11 +372,20 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
       align: "right",
     },
   ]
+
+  const selectRow = {
+    mode: 'checkbox',
+    clickToSelect: true,
+    nonSelectable: [0],
+    nonSelectableClasses: 'row-index-bigger-than-2101'
+  };
+
   return (
     <ToolkitProvider
       keyField="code"
       data={data}
       columns={columns}
+      selectRow={ selectRow }
       className="table"
       exportCSV={{ fileName: `openousd-central-programs.csv` }}
       bootstrap4
