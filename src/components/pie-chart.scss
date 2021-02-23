@@ -1,32 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
 .pie-chart {
 	height: 300px;
 	user-select: none;
 
-	*{
+	* {
 		transition: fill 0.3s ease-out;
 	}
 
-	.tooltip-container {
-		position: fixed;
-
-		.tooltip {
-			font-weight: bold;
-			white-space: nowrap;
-			
-			padding: 5px 10px;
-			background-color: #fff;
-			border-radius: 2px;
-			box-shadow: 1px 1px 2px #aaa;
-			opacity: 1;
-
-			position: absolute;
-			top: -20px;
-			&[alignment=left]{
-				right: 10px
-			}
-			&[alignment=right]{
-				left: 20px;
-			}
-		}
+	text[text-anchor=middle]{
+		font-weight: bold;
 	}
 }
