@@ -26,42 +26,17 @@ function formatCurrency(value) {
   })
 }
 
-function Tooltip({
-  node: {
-    arc: { startAngle, endAngle },
-    color,
-    label,
-    value,
-  },
-  location,
-  dataTotal,
-}) {
-  const percentValue = `${Math.floor((value / dataTotal) * 100)}%`
-  const centerAngle = (startAngle + endAngle) / 2
-  const alignment = centerAngle > Math.PI ? "left" : "right"
-  return (
-    <div
-      className="tooltip-container"
-      style={{
-        left: `${location.left}px`,
-        top: `${location.top}px`,
-      }}
-    >
-      <div className="tooltip" alignment={alignment}>
-        <div style={{ color }}>{`${label} Spending `}</div>
-        <div>{`${formatCurrency(value)} (${percentValue})`}</div>
-      </div>
-    </div>
-  )
+function getTooltip(total, value) {
+  const percent = `${Math.round((value / total) * 100)}%`
+  return `${formatCurrency(value)} (${percent})`
 }
 
 function PieChart({ data }) {
   const [activeNode, setActiveNode] = useState(null)
-  const [tooltipLocation, setTooltipLocation] = useState(null)
   const dataTotal = data.reduce((total, { value }) => total + value, 0)
 
   data.forEach((data, i) => {
-    const transparency = activeNode && activeNode.data !== data ? "77" : ""
+    const transparency = activeNode && activeNode !== data ? "77" : ""
     data.color = `${COLORS[i]}${transparency}`
   })
 
@@ -69,27 +44,20 @@ function PieChart({ data }) {
     <div className="pie-chart">
       <ResponsivePie
         data={data}
-        colors={{ datum: "data.color" }}
-        innerRadius={0.5}
+        colors={data => data.color}
+        innerRadius={0.3}
         padAngle={1.5}
         cornerRadius={3}
         margin={{ top: 20, bottom: 25 }}
+        radialLabel={data => data.id}
         radialLabelsLinkColor={{ from: "color" }}
         radialLabelsTextColor={{ from: "color", modifiers: [["darker", 0.2]] }}
-        enableSliceLabels={false}
-        onMouseMove={(node, event) => {
-          setActiveNode(node)
-          setTooltipLocation({ top: event.clientY, left: event.clientX })
-        }}
+        sliceLabel={data => formatCurrency(data.value)}
+        slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
+        tooltipFormat={getTooltip.bind(null, dataTotal)}
+        onMouseEnter={data => setActiveNode(data)}
         onMouseLeave={() => setActiveNode(null)}
       />
-      {activeNode ? (
-        <Tooltip
-          node={activeNode}
-          location={tooltipLocation}
-          dataTotal={dataTotal}
-        />
-      ) : null}
     </div>
   )
 }
