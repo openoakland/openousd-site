@@ -20,18 +20,36 @@ import "../components/sankey-chart.scss"
 
 const pieChartFakeContent = {
   heading: "OUSD Budget for Central Programs",
+  central_programs: "Central Programs",
+  school_site_spending: "School Site Spending",
 }
 
-const pieChartFakeData = [
-  { id: "Central Programs", value: 259716043 },
-  { id: "Other", value: 324113619 },
-]
+const CENTRAL_PROGRAMS = "central_programs"
+const SCHOOL_SITE_SPENDING = "school_site_spending"
+const OUSD_TOTAL_SPENDING = 590368576.71
 
 const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
+  Object.assign(content, { spendingPieChart: pieChartFakeContent })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
+
+  //Generating pie chart data
+  const centralProgramsTotalSpending = centralPrograms.reduce(
+    (total, { spending }) => total + spending,
+    0
+  )
+  const translatedPieChartData = [
+    {
+      id: content.spendingPieChart[CENTRAL_PROGRAMS],
+      value: centralProgramsTotalSpending,
+    },
+    {
+      id: content.spendingPieChart[SCHOOL_SITE_SPENDING],
+      value: OUSD_TOTAL_SPENDING - centralProgramsTotalSpending,
+    },
+  ]
 
   // Translating content for the table
   centralPrograms = centralPrograms.map(program => {
@@ -75,13 +93,13 @@ const CentralProgramsPage = ({ data, pageContext }) => {
         <Row>
           <Col>
             <h1>
-              {pieChartFakeContent.heading} (
+              {content.spendingPieChart.heading} (
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
           </Col>
         </Row>
       </Container>
-      <PieChart data={pieChartFakeData} />
+      <PieChart data={translatedPieChartData} />
       <Container>
         <Row>
           <Col>
