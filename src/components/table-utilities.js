@@ -69,8 +69,8 @@ export const deltaPrefix = delta => {
   return delta > 0 ? "▲ " : "▼ "
 }
 
-export const rowUnderline = (row, rowIndex) => {
-  if (row.name.includes("Total")) {
+export const rowUnderline = (row, rowIndex, totalLabel) => {
+  if (row.name === totalLabel) {
     return "sticky-first-row"
   }
 }

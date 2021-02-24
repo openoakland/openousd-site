@@ -56,8 +56,8 @@ const createFirstRow = (data, totalLabel) => {
   }, initialObject)
 }
 
-const columnsFormatter = (cell, row, rowIndex) => {
-  if (row.name.includes("Total")) {
+const columnsFormatter = (cell, row, rowIndex, totalLabel) => {
+  if (cell === totalLabel) {
     return <span className="strong">{row.name}</span>
   }
   return (
@@ -207,7 +207,8 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
 
   const columns = [
     {
-      formatter: columnsFormatter,
+      formatter: (cell, row, rowIndex) => 
+        columnsFormatter(cell, row, rowIndex, totalLabel),
       dataField: "name",
       text: "Program",
       headerFormatter: (column, colIndex, components) => {
@@ -373,19 +374,11 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
     },
   ]
 
-  const selectRow = {
-    mode: 'checkbox',
-    clickToSelect: true,
-    nonSelectable: [0],
-    nonSelectableClasses: 'row-index-bigger-than-2101'
-  };
-
   return (
     <ToolkitProvider
       keyField="code"
       data={data}
       columns={columns}
-      selectRow={ selectRow }
       className="table"
       exportCSV={{ fileName: `openousd-central-programs.csv` }}
       bootstrap4
@@ -417,7 +410,8 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
             classes=""
             bordered={false}
             {...props.baseProps}
-            rowClasses={rowUnderline}
+            rowClasses={(row, rowIndex) =>
+             rowUnderline(row, rowIndex, totalLabel)}
             defaultSorted={[{ dataField: "name", order: "asc" }]}
           />
           <div className="footnote mb-3 mt-2">
