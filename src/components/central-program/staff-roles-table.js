@@ -90,7 +90,9 @@ const StaffRolesTable = ({ data, content }) => {
           <BootstrapTable
             classes=""
             bordered={false}
-            rowClasses={rowUnderline}
+            rowClasses={(row, rowIndex) =>
+              rowUnderline(row, rowIndex, content.labels.totalLabel)
+            }
             {...props.baseProps}
             defaultSorted={[{ dataField: ROLE_TOTAL_POSITIONS, order: "desc" }]}
           />
@@ -108,6 +110,9 @@ export const query = graphql`
         dataFieldName
       }
       heading
+      labels {
+        totalLabel
+      }
     }
   }
   fragment StaffRolesData on CentralProgramsJson {
