@@ -10,49 +10,9 @@ let columnsByDataField
 const ROLE_DESCRIPTION = "role_description"
 const ROLE_TOTAL_POSITIONS = "eoy_total_positions_for_role"
 
-const getColumns = () => [
-  {
-    dataField: ROLE_DESCRIPTION,
-    text: columnsByDataField[ROLE_DESCRIPTION].displayName,
-    headerFormatter: (column, colIndex, components) => {
-      return (
-        <div className="table-header">
-          {columnsByDataField[ROLE_DESCRIPTION].displayName}{" "}
-          {components.sortElement}
-        </div>
-      )
-    },
-    sort: true,
-    sortCaret: getSortCaret,
-    sortFunc: sortStaffRoles,
-    searchable: false,
-  },
-  {
-    dataField: ROLE_TOTAL_POSITIONS,
-    text: columnsByDataField[ROLE_TOTAL_POSITIONS].displayName,
-    headerFormatter: (column, colIndex, components) => {
-      return (
-        <div className="table-header text-right">
-          {components.sortElement}{" "}
-          {columnsByDataField[ROLE_TOTAL_POSITIONS].displayName}
-        </div>
-      )
-    },
-    sort: true,
-    sortCaret: getSortCaret,
-    sortFunc: sortStaffRoles,
-    align: "right",
-    searchable: false,
-  },
-]
-
 const StaffRolesTable = ({ data, content }) => {
   const TOTAL_ROW_NAME = content.labels.totalLabel
   columnsByDataField = getColumnsByDataField(content.columns)
-  const columns = getColumns()
-
-  const firstRow = createFirstRow(data)
-  data = data.concat([firstRow])
 
   const createFirstRow = data => {
     const initialObject = {
@@ -64,6 +24,9 @@ const StaffRolesTable = ({ data, content }) => {
       return returnObject
     }, initialObject)
   }
+
+  const firstRow = createFirstRow(data)
+  data = data.concat([firstRow])
 
   const sortStaffRoles = (a, b, order, dataField, rowA, rowB) => {
     return sort(
@@ -77,6 +40,42 @@ const StaffRolesTable = ({ data, content }) => {
       TOTAL_ROW_NAME
     )
   }
+
+  const columns = [
+    {
+      dataField: ROLE_DESCRIPTION,
+      text: columnsByDataField[ROLE_DESCRIPTION].displayName,
+      headerFormatter: (column, colIndex, components) => {
+        return (
+          <div className="table-header">
+            {columnsByDataField[ROLE_DESCRIPTION].displayName}{" "}
+            {components.sortElement}
+          </div>
+        )
+      },
+      sort: true,
+      sortCaret: getSortCaret,
+      sortFunc: sortStaffRoles,
+      searchable: false,
+    },
+    {
+      dataField: ROLE_TOTAL_POSITIONS,
+      text: columnsByDataField[ROLE_TOTAL_POSITIONS].displayName,
+      headerFormatter: (column, colIndex, components) => {
+        return (
+          <div className="table-header text-right">
+            {components.sortElement}{" "}
+            {columnsByDataField[ROLE_TOTAL_POSITIONS].displayName}
+          </div>
+        )
+      },
+      sort: true,
+      sortCaret: getSortCaret,
+      sortFunc: sortStaffRoles,
+      align: "right",
+      searchable: false,
+    },
+  ]
 
   return (
     <ToolkitProvider
