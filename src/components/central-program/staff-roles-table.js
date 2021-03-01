@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import BootstrapTable from "react-bootstrap-table-next"
 import ToolkitProvider from "react-bootstrap-table2-toolkit"
-import { getSortCaret, sort, rowUnderline } from "../table-utilities"
+import { getSortCaret, sort, totalRowClass } from "../table-utilities"
 import { getColumnsByDataField } from "../../utilities/content-utilities"
 
 let columnsByDataField
@@ -90,7 +90,7 @@ const StaffRolesTable = ({ data, content }) => {
             classes=""
             bordered={false}
             rowClasses={(row, rowIndex) =>
-              rowUnderline(row, rowIndex, content.labels.totalLabel)
+              totalRowClass(row[ROLE_DESCRIPTION], content.labels.totalLabel)
             }
             {...props.baseProps}
             defaultSorted={[{ dataField: ROLE_TOTAL_POSITIONS, order: "desc" }]}
