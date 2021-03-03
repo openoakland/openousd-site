@@ -20,7 +20,7 @@ import {
   formatToUSD,
   formatFTE,
   sort,
-  rowUnderline,
+  totalRowClass,
 } from "./table-utilities"
 import { getColumnsByDataField } from "../utilities/content-utilities"
 
@@ -56,8 +56,8 @@ const createFirstRow = (data, totalLabel) => {
   }, initialObject)
 }
 
-const columnsFormatter = (cell, row, rowIndex) => {
-  if (rowIndex === 0) {
+const columnsFormatter = (cell, row, rowIndex, totalLabel) => {
+  if (cell === totalLabel) {
     return <span className="strong">{row.name}</span>
   }
   return (
@@ -207,7 +207,8 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
 
   const columns = [
     {
-      formatter: columnsFormatter,
+      formatter: (cell, row, rowIndex) =>
+        columnsFormatter(cell, row, rowIndex, totalLabel),
       dataField: "name",
       text: "Program",
       headerFormatter: (column, colIndex, components) => {
@@ -372,6 +373,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
       align: "right",
     },
   ]
+
   return (
     <ToolkitProvider
       keyField="code"
@@ -408,7 +410,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
             classes=""
             bordered={false}
             {...props.baseProps}
-            rowClasses={rowUnderline}
+            rowClasses={(row, rowIndex) => totalRowClass(row.name, totalLabel)}
             defaultSorted={[{ dataField: "name", order: "asc" }]}
           />
           <div className="footnote mb-3 mt-2">
