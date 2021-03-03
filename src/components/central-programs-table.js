@@ -20,7 +20,7 @@ import {
   formatToUSD,
   formatFTE,
   sort,
-  rowUnderline,
+  totalRowClass,
 } from "./table-utilities"
 import { getColumnsByDataField } from "../utilities/content-utilities"
 
@@ -207,7 +207,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
 
   const columns = [
     {
-      formatter: (cell, row, rowIndex) => 
+      formatter: (cell, row, rowIndex) =>
         columnsFormatter(cell, row, rowIndex, totalLabel),
       dataField: "name",
       text: "Program",
@@ -410,8 +410,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
             classes=""
             bordered={false}
             {...props.baseProps}
-            rowClasses={(row, rowIndex) =>
-             rowUnderline(row, rowIndex, totalLabel)}
+            rowClasses={(row, rowIndex) => totalRowClass(row.name, totalLabel)}
             defaultSorted={[{ dataField: "name", order: "asc" }]}
           />
           <div className="footnote mb-3 mt-2">
