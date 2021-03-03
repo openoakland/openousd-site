@@ -11,7 +11,7 @@ import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
 import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
 import DownloadIcon from "@material-ui/icons/SaveAlt"
 
-const { SearchBar } = Search
+const { SearchBar, ClearSearchButton } = Search
 const { ExportCSVButton } = CSVExport
 
 const getSortCaret = (order, column) => {
@@ -83,6 +83,10 @@ const CategoriesTable = ({ data, colName, tableInfo }) => {
               tableInfo.labels.searchLabel + " " + colName.toLowerCase()
             }
             className="table-search-bar my-3"
+          />
+          <ClearSearchButton 
+            { ...props.searchProps } 
+            className="clear-btn"
           />
           <BootstrapTable
             // turning off pagination for now
