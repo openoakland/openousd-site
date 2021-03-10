@@ -24,7 +24,7 @@ import {
 } from "./table-utilities"
 import { getColumnsByDataField } from "../utilities/content-utilities"
 
-const { SearchBar } = Search
+const { SearchBar, ClearSearchButton } = Search
 const { ExportCSVButton } = CSVExport
 
 const formatRemainingBudgetCell = (percent, rowIndex) => {
@@ -393,6 +393,10 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
                 {...props.searchProps}
                 placeholder={`${labelContent.labels.searchLabel}`}
                 className="table-search-bar mb-4"
+              />
+              <ClearSearchButton 
+                { ...props.searchProps } 
+                className="clear-btn"
               />
             </Col>
             <Col>
