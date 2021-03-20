@@ -19,7 +19,7 @@ import { useLocalizeCategory } from "../utilities/content-utilities"
 import "../components/sankey-chart.scss"
 
 const pieChartFakeContent = {
-  heading: "OUSD Budget for Central Programs",
+  heading: "Central Programs in Context",
   central_programs: "Central Programs",
   school_site_spending: "School Site Spending",
 }

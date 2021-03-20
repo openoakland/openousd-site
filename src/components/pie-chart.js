@@ -26,9 +26,21 @@ function formatCurrency(value) {
   })
 }
 
-function getTooltip(total, value) {
-  const percent = `${Math.round((value / total) * 100)}%`
-  return `${formatCurrency(value)} (${percent})`
+const CenteredMetric = ({ dataWithArc, centerX, centerY }) => {
+  return (
+    <text
+      x={centerX}
+      y={centerY}
+      textAnchor="middle"
+      dominantBaseline="central"
+      style={{
+        fontSize: "45px",
+        fontWeight: "600",
+      }}
+    >
+      44%
+    </text>
+  )
 }
 
 function PieChart({ data }) {
@@ -44,19 +56,27 @@ function PieChart({ data }) {
     <div className="pie-chart">
       <ResponsivePie
         data={data}
-        colors={data => data.color}
-        innerRadius={0.3}
+        colors={{ scheme: "nivo" }}
+        innerRadius={0.7}
         padAngle={1.5}
         cornerRadius={3}
         margin={{ top: 20, bottom: 25 }}
         radialLabel={data => data.id}
         radialLabelsLinkColor={{ from: "color" }}
         radialLabelsTextColor={{ from: "color", modifiers: [["darker", 0.2]] }}
+        enableSliceLabels={false}
         sliceLabel={data => formatCurrency(data.value)}
         slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
-        tooltipFormat={getTooltip.bind(null, dataTotal)}
+        valueFormat={value => formatCurrency(value)}
         onMouseEnter={data => setActiveNode(data)}
         onMouseLeave={() => setActiveNode(null)}
+        layers={[
+          "slices",
+          "sliceLabels",
+          "radialLabels",
+          "legends",
+          CenteredMetric,
+        ]}
       />
     </div>
   )
