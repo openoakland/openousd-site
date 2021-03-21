@@ -2,7 +2,8 @@ import React, { useState } from "react"
 
 import { ResponsivePie } from "@nivo/pie"
 
-import moneyIcon from "../images/icons/money.svg"
+import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
+import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
 import "./pie-chart.scss"
 
 const COLORS = [
@@ -29,7 +30,7 @@ function formatCurrency(value) {
 
 const CenteredMetric = ({ dataWithArc, centerX, centerY }) => {
   return (
-    <g>
+    <g transform="translate(0,-8)">
       <svg
         id="moneyIcon"
         viewBox="0 0 511.998 511.998"
@@ -82,31 +83,49 @@ function PieChart({ data }) {
   })
 
   return (
-    <div className="pie-chart">
-      <ResponsivePie
-        data={data}
-        colors={{ scheme: "nivo" }}
-        innerRadius={0.7}
-        padAngle={1.5}
-        cornerRadius={3}
-        margin={{ top: 20, bottom: 25 }}
-        radialLabel={data => data.id}
-        radialLabelsLinkColor={{ from: "color" }}
-        radialLabelsTextColor={{ from: "color", modifiers: [["darker", 0.2]] }}
-        enableSliceLabels={false}
-        sliceLabel={data => formatCurrency(data.value)}
-        slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
-        valueFormat={value => formatCurrency(value)}
-        onMouseEnter={data => setActiveNode(data)}
-        onMouseLeave={() => setActiveNode(null)}
-        layers={[
-          "slices",
-          "sliceLabels",
-          "radialLabels",
-          "legends",
-          CenteredMetric,
-        ]}
-      />
+    <div class="overview-chart">
+      <div className="pie-chart">
+        <ResponsivePie
+          data={data}
+          innerRadius={0.7}
+          padAngle={1.5}
+          cornerRadius={3}
+          margin={{ top: 20, bottom: 25 }}
+          radialLabel={data => data.id}
+          radialLabelsLinkColor={{ from: "color" }}
+          radialLabelsTextColor={{
+            from: "color",
+            modifiers: [["darker", 0.2]],
+          }}
+          radialLabelsLinkDiagonalLength={1}
+          radialLabelsLinkStrokeWidth={2}
+          radialLabelsLinkOffset={0}
+          radialLabelsLinkHorizontalLength={15}
+          enableSliceLabels={false}
+          sliceLabel={data => formatCurrency(data.value)}
+          slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
+          valueFormat={value => formatCurrency(value)}
+          onMouseEnter={data => setActiveNode(data)}
+          onMouseLeave={() => setActiveNode(null)}
+          layers={[
+            "slices",
+            "sliceLabels",
+            "radialLabels",
+            "legends",
+            CenteredMetric,
+          ]}
+        />
+      </div>
+      <div className="description">
+        <div>
+          <strong>44%</strong> of the district's budget is spent on central
+          programs which is a <strong>decrease</strong> of
+        </div>
+        <div className="change">
+          <ArrowDropDown className="arrow" alt="down arrow" /> $23,450,000
+        </div>
+        from the previous year
+      </div>
     </div>
   )
 }

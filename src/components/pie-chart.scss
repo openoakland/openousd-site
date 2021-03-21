@@ -1,14 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+.overview-chart {
+  .pie-chart {
+    height: 300px;
+    user-select: none;
 
-.pie-chart {
-	height: 300px;
-	user-select: none;
+    * {
+      transition: fill 0.3s ease-out;
+    }
 
-	* {
-		transition: fill 0.3s ease-out;
-	}
+    text[text-anchor="middle"] {
+      font-weight: bold;
+    }
+  }
+  .description {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 
-	text[text-anchor=middle]{
-		font-weight: bold;
-	}
+    .change {
+      font-size: 1.8em;
+      margin-left: -15px;
+      .arrow {
+        font-size: 1.8em;
+        margin-top: -10px;
+        margin-right: -10px;
+      }
+    }
+  }
 }

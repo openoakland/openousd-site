@@ -99,11 +99,18 @@ const CentralProgramsPage = ({ data, pageContext }) => {
           </Col>
         </Row>
       </Container>
-      <PieChart data={translatedPieChartData} />
+      <Container>
+        <Row>
+          <Col lg={6}>
+            <PieChart data={translatedPieChartData} />
+          </Col>
+        </Row>
+      </Container>
+
       <Container>
         <Row>
           <Col>
-            <h1>
+            <h1 className="pb-3 pt-5">
               {content.spendingSankeyChart.heading} (
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
