@@ -13,6 +13,7 @@ import PieChart from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
+import centralProgramsOverviewData from "../../data/central-programs-overview.mock.json"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
 
@@ -21,12 +22,19 @@ import "../components/sankey-chart.scss"
 const pieChartFakeContent = {
   heading: "Central Programs in Context",
   central_programs: "Central Programs",
-  school_site_spending: "School Site Spending",
+  school_sites: "School Sites",
+  increase: "increase",
+  decrease: "decrease",
+  stat_descriptor: "of spending",
+  description:
+    "of the district's budget is spent on central programs which is a",
 }
 
-const CENTRAL_PROGRAMS = "central_programs"
-const SCHOOL_SITE_SPENDING = "school_site_spending"
-const OUSD_TOTAL_SPENDING = 590368576.71
+const CENTRAL_PROGRAMS_LABEL = "central_programs"
+const SCHOOL_SITES_LABEL = "school_sites"
+
+const ALL_OUSD_SPENDING = "all_ousd_spending"
+const CENTRAL_PROGRAMS_SPENDING = "spending"
 
 const CentralProgramsPage = ({ data, pageContext }) => {
   let centralPrograms = data.allCentralProgramsJson.nodes
@@ -35,19 +43,16 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
-  //Generating pie chart data
-  const centralProgramsTotalSpending = centralPrograms.reduce(
-    (total, { spending }) => total + spending,
-    0
-  )
   const translatedPieChartData = [
     {
-      id: content.spendingPieChart[CENTRAL_PROGRAMS],
-      value: centralProgramsTotalSpending,
+      id: content.spendingPieChart[CENTRAL_PROGRAMS_LABEL],
+      value: centralProgramsOverviewData[CENTRAL_PROGRAMS_SPENDING],
     },
     {
-      id: content.spendingPieChart[SCHOOL_SITE_SPENDING],
-      value: OUSD_TOTAL_SPENDING - centralProgramsTotalSpending,
+      id: content.spendingPieChart[SCHOOL_SITES_LABEL],
+      value:
+        centralProgramsOverviewData[ALL_OUSD_SPENDING] -
+        centralProgramsOverviewData[CENTRAL_PROGRAMS_SPENDING],
     },
   ]
 
@@ -102,7 +107,10 @@ const CentralProgramsPage = ({ data, pageContext }) => {
       <Container>
         <Row>
           <Col lg={6}>
-            <PieChart data={translatedPieChartData} />
+            <PieChart
+              data={translatedPieChartData}
+              content={content.spendingPieChart}
+            />
           </Col>
         </Row>
       </Container>
