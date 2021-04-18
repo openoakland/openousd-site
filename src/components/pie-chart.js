@@ -29,6 +29,12 @@ const COLORS = [
   "#17becf",
 ]
 
+const getPercentOfTotal = data => {
+  return Math.floor(
+    (data[CENTRAL_PROGRAMS_SPENDING] / data[ALL_OUSD_SPENDING]) * 100
+  )
+}
+
 function PieChart({ data, content }) {
   const [activeNode, setActiveNode] = useState(null)
 
@@ -59,7 +65,7 @@ function PieChart({ data, content }) {
             fontWeight: "600",
           }}
         >
-          44%
+          {getPercentOfTotal(data)}%
         </text>
         <text
           x={centerX}
@@ -130,7 +136,12 @@ function PieChart({ data, content }) {
       </div>
       <div className="description">
         <div className="">
-          <strong>44%</strong> {content[DESCRIPTION]} <strong>decrease</strong>{" "}
+          <strong>{getPercentOfTotal(data)}%</strong> {content[DESCRIPTION]}{" "}
+          <strong>
+            {data[CHANGE][CENTRAL_PROGRAMS_SPENDING] < 0
+              ? "decrease"
+              : "increase"}
+          </strong>{" "}
           of
         </div>
         <div className="change pb-2 pt-2">
