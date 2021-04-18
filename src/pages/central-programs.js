@@ -13,7 +13,6 @@ import PieChart from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
-import centralProgramsOverviewData from "../../data/central-programs-overview.mock.json"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
 
@@ -23,6 +22,7 @@ const pieChartFakeContent = {
   heading: "Central Programs in Context",
   central_programs: "Central Programs",
   school_sites: "School Sites",
+  other_spending: "All Other Spending",
   increase: "increase",
   decrease: "decrease",
   stat_descriptor: "of spending",
@@ -30,31 +30,13 @@ const pieChartFakeContent = {
     "of the district's budget is spent on central programs which is a",
 }
 
-const CENTRAL_PROGRAMS_LABEL = "central_programs"
-const SCHOOL_SITES_LABEL = "school_sites"
-
-const ALL_OUSD_SPENDING = "all_ousd_spending"
-const CENTRAL_PROGRAMS_SPENDING = "spending"
-
 const CentralProgramsPage = ({ data, pageContext }) => {
+  const centralProgramsOverviewData = data.centralProgramsOverviewJson
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   Object.assign(content, { spendingPieChart: pieChartFakeContent })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
-
-  const translatedPieChartData = [
-    {
-      id: content.spendingPieChart[CENTRAL_PROGRAMS_LABEL],
-      value: centralProgramsOverviewData[CENTRAL_PROGRAMS_SPENDING],
-    },
-    {
-      id: content.spendingPieChart[SCHOOL_SITES_LABEL],
-      value:
-        centralProgramsOverviewData[ALL_OUSD_SPENDING] -
-        centralProgramsOverviewData[CENTRAL_PROGRAMS_SPENDING],
-    },
-  ]
 
   // Translating content for the table
   centralPrograms = centralPrograms.map(program => {
@@ -108,7 +90,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
         <Row>
           <Col lg={6}>
             <PieChart
-              data={translatedPieChartData}
+              data={centralProgramsOverviewData}
               content={content.spendingPieChart}
             />
           </Col>
@@ -181,6 +163,20 @@ export const query = graphql`
         fields {
           slug
         }
+      }
+    }
+    centralProgramsOverviewJson {
+      all_ousd_eoy_total_fte
+      all_ousd_eoy_total_positions
+      all_ousd_spending
+      eoy_total_fte
+      eoy_total_positions
+      spending
+      year
+      change_from_previous_year {
+        eoy_total_fte
+        eoy_total_positions
+        spending
       }
     }
 

@@ -4,10 +4,17 @@ import { ResponsivePie } from "@nivo/pie"
 
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
 import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
+import { formatToUSD } from "../components/table-utilities"
 import "./pie-chart.scss"
 
 const STAT_DESCRIPTOR = "stat_descriptor"
 const DESCRIPTION = "description"
+const CENTRAL_PROGRAMS_LABEL = "central_programs"
+const OTHER_SPENDING = "other_spending"
+
+const ALL_OUSD_SPENDING = "all_ousd_spending"
+const CENTRAL_PROGRAMS_SPENDING = "spending"
+const CHANGE = "change_from_previous_year"
 
 const COLORS = [
   "#8c564b",
@@ -21,15 +28,6 @@ const COLORS = [
   "#bcbd22",
   "#17becf",
 ]
-
-function formatCurrency(value) {
-  return Math.floor(Number(value)).toLocaleString("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0,
-  })
-}
 
 function PieChart({ data, content }) {
   const [activeNode, setActiveNode] = useState(null)
@@ -79,7 +77,18 @@ function PieChart({ data, content }) {
     )
   }
 
-  data.forEach((data, i) => {
+  const pieChartData = [
+    {
+      id: content[CENTRAL_PROGRAMS_LABEL],
+      value: data[CENTRAL_PROGRAMS_SPENDING],
+    },
+    {
+      id: content[OTHER_SPENDING],
+      value: data[ALL_OUSD_SPENDING] - data[CENTRAL_PROGRAMS_SPENDING],
+    },
+  ]
+
+  pieChartData.forEach((data, i) => {
     const transparency = activeNode && activeNode !== data ? "77" : ""
     data.color = `${COLORS[i]}${transparency}`
   })
@@ -88,7 +97,7 @@ function PieChart({ data, content }) {
     <div className="overview-chart">
       <div className="pie-chart">
         <ResponsivePie
-          data={data}
+          data={pieChartData}
           color={data => console.log(data.color)}
           innerRadius={0.7}
           padAngle={1.5}
@@ -105,9 +114,9 @@ function PieChart({ data, content }) {
           radialLabelsLinkOffset={0}
           radialLabelsLinkHorizontalLength={15}
           enableSliceLabels={false}
-          sliceLabel={data => formatCurrency(data.value)}
+          sliceLabel={data => formatToUSD(data.value)}
           slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
-          valueFormat={value => formatCurrency(value)}
+          valueFormat={value => formatToUSD(value)}
           onMouseEnter={data => setActiveNode(data)}
           onMouseLeave={() => setActiveNode(null)}
           layers={[
@@ -125,7 +134,12 @@ function PieChart({ data, content }) {
           of
         </div>
         <div className="change pb-2 pt-2">
-          <ArrowDropDown className="arrow" alt="down arrow" /> $23,450,000
+          {data[CHANGE][CENTRAL_PROGRAMS_SPENDING] < 0 ? (
+            <ArrowDropDown className="arrow" alt="down arrow" />
+          ) : (
+            <ArrowDropUp className="arrow" alt="up arrow" />
+          )}{" "}
+          {formatToUSD(Math.abs(data[CHANGE][CENTRAL_PROGRAMS_SPENDING]))}
         </div>
         from the previous year
       </div>
