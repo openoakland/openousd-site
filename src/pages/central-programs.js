@@ -23,8 +23,8 @@ const pieChartFakeContent = {
   central_programs: "Central Programs",
   school_sites: "School Sites",
   other_spending: "All Other Spending",
-  increase: "increase",
-  decrease: "decrease",
+  increase: "an increase of",
+  decrease: "a decrease of",
   stat_descriptor: "of spending",
   description:
     "of the district's budget is spent on central programs which is a",

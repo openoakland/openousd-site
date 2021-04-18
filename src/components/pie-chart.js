@@ -14,6 +14,8 @@ const OTHER_SPENDING = "other_spending"
 
 const ALL_OUSD_SPENDING = "all_ousd_spending"
 const CENTRAL_PROGRAMS_SPENDING = "spending"
+const INCREASE = "increase"
+const DECREASE = "decrease"
 const CHANGE = "change_from_previous_year"
 
 const COLORS = [
@@ -139,10 +141,9 @@ function PieChart({ data, content }) {
           <strong>{getPercentOfTotal(data)}%</strong> {content[DESCRIPTION]}{" "}
           <strong>
             {data[CHANGE][CENTRAL_PROGRAMS_SPENDING] < 0
-              ? "decrease"
-              : "increase"}
+              ? content[DECREASE]
+              : content[INCREASE]}
           </strong>{" "}
-          of
         </div>
         <div className="change pb-2 pt-2">
           {data[CHANGE][CENTRAL_PROGRAMS_SPENDING] < 0 ? (
