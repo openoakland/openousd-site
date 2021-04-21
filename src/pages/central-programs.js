@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
-import PieChart from "../components/pie-chart"
+import {SpendingPieChart, StaffPieChart} from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
@@ -23,18 +23,22 @@ const pieChartFakeContent = {
   central_programs: "Central Programs",
   school_sites: "School Sites",
   other_spending: "All Other Spending",
+  other_staff: "All Other Staff",
   increase: "an increase of",
   decrease: "a decrease of",
-  stat_descriptor: "of spending",
-  description:
-    "of the district's budget is spent on central programs which is a",
+  stat_descriptor_spending: "of spending",
+  stat_descriptor_staff: "of staff",
+  description_spending:
+    "of the district's budget is spent on central programs which is",
+  description_staff:
+    "of district employees work in central programs which is"
 }
 
 const CentralProgramsPage = ({ data, pageContext }) => {
   const centralProgramsOverviewData = data.centralProgramsOverviewJson
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
-  Object.assign(content, { spendingPieChart: pieChartFakeContent })
+  Object.assign(content, { pieCharts: pieChartFakeContent })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
@@ -80,7 +84,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
         <Row>
           <Col>
             <h1>
-              {content.spendingPieChart.heading} (
+              {content.pieCharts.heading} (
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
           </Col>
@@ -89,9 +93,15 @@ const CentralProgramsPage = ({ data, pageContext }) => {
       <Container>
         <Row>
           <Col lg={6}>
-            <PieChart
+            <SpendingPieChart
               data={centralProgramsOverviewData}
-              content={content.spendingPieChart}
+              content={content.pieCharts}
+            />
+          </Col>
+          <Col lg={6}>
+            <StaffPieChart
+              data={centralProgramsOverviewData}
+              content={content.pieCharts}
             />
           </Col>
         </Row>
