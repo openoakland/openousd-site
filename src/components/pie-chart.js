@@ -8,6 +8,33 @@ import Person from "@material-ui/icons/Person"
 import { formatToUSD } from "../components/table-utilities"
 import "./pie-chart.scss"
 
+function getObjValueFromPath(path) {
+  const keyRegex = "[a-zA-Z_$]\\w*"
+  const pathRegex = `^${keyRegex}(\\.${keyRegex})*$`
+  if (!path.match(pathRegex)) {
+    throw new Error(`Invalid path: ${path}`)
+  }
+  const pathArray = path.split(".")
+  return pathArray.reduce((acc, key) => acc?.[key], this)
+}
+
+const parseObject = (objectToParse, paths) => {
+  const result = {}
+  const parse = getObjValueFromPath.bind(objectToParse)
+  for (let key in paths) {
+    result[key] = parse(paths[key])
+  }
+  return result
+}
+
+const useResizeObserverRef = callback => {
+  const resizeObserver = useMemo(() => new ResizeObserver(callback), [])
+  const ref = useCallback(node => {
+    if (node) resizeObserver.observe(node)
+  }, [])
+  return ref
+}
+
 const CenteredMetric = ({ descriptor, icon, percentOfTotal }) => ({
   dataWithArc,
   centerX,
@@ -15,7 +42,7 @@ const CenteredMetric = ({ descriptor, icon, percentOfTotal }) => ({
 }) => {
   return (
     <g transform="translate(0,-8)">
-      {icon(centerX, centerY)}
+      {icon(centerX - 73, centerY - 150)}
       <text
         x={centerX + 20}
         y={centerY}
@@ -44,15 +71,41 @@ const CenteredMetric = ({ descriptor, icon, percentOfTotal }) => ({
   )
 }
 
+const Description = ({ percentOfTotal, data, content, formatValue }) => {
+  return (
+    <div className="description">
+      <div className="">
+        <strong>{percentOfTotal}%</strong> {content.description}{" "}
+        <strong>{data.change < 0 ? content.decrease : content.increase}</strong>{" "}
+      </div>
+      <div className="change pb-2 pt-2">
+        {data.change < 0 ? (
+          <ArrowDropDown className="arrow" alt="down arrow" />
+        ) : (
+          <ArrowDropUp className="arrow" alt="up arrow" />
+        )}{" "}
+        {formatValue(Math.abs(data.change))}
+      </div>
+      {content.previousYearDescriptor}
+    </div>
+  )
+}
+
 const CentralToTotalComparisonPie = ({
   data,
   content,
   formatValue,
   metricIcon,
-  colors,
+  centralProgramsColor,
 }) => {
   const [activeNode, setActiveNode] = useState(null)
   const [showRadialLabels, setShowRadialLabels] = useState(true)
+
+  const labelRef = useResizeObserverRef(([entry]) => {
+    setShowRadialLabels(entry.contentRect.width > 470)
+  })
+
+  const percentOfTotal = Math.floor((data.centralPrograms / data.allOUSD) * 100)
 
   const pieChartData = useMemo(
     () => [
@@ -67,13 +120,11 @@ const CentralToTotalComparisonPie = ({
     ],
     []
   )
-  const resizeObserver = new ResizeObserver(([entry]) => {
-    setShowRadialLabels(entry.contentRect.width > 470)
-  })
-  const labelRef = useCallback(container => {
-    if (container) resizeObserver.observe(container)
-  })
-  const percentOfTotal = Math.floor((data.centralPrograms / data.allOUSD) * 100)
+
+  const colors = {
+    [content.centralProgramsLabel]: centralProgramsColor,
+    [content.otherLabel]: "#e9e9e9",
+  }
 
   pieChartData.forEach((data, i) => {
     const transparency = activeNode && activeNode !== data ? "77" : ""
@@ -120,53 +171,41 @@ const CentralToTotalComparisonPie = ({
           ]}
         />
       </div>
-      <div className="description">
-        <div className="">
-          <strong>{percentOfTotal}%</strong> {content.description}{" "}
-          <strong>
-            {data.change < 0 ? content.decrease : content.increase}
-          </strong>{" "}
-        </div>
-        <div className="change pb-2 pt-2">
-          {data.change < 0 ? (
-            <ArrowDropDown className="arrow" alt="down arrow" />
-          ) : (
-            <ArrowDropUp className="arrow" alt="up arrow" />
-          )}{" "}
-          {formatValue(Math.abs(data.change))}
-        </div>
-        from the previous year
-      </div>
+      <Description
+        percentOfTotal={percentOfTotal}
+        data={data}
+        content={content}
+        formatValue={formatValue}
+      />
     </div>
   )
 }
 
 export const SpendingPieChart = ({ data, content }) => {
-  const parsedData = {
-    centralPrograms: data["spending"],
-    allOUSD: data["all_ousd_spending"],
-    change: data["change_from_previous_year"]["spending"],
+  const dataPaths = {
+    centralPrograms: "spending",
+    allOUSD: "all_ousd_spending",
+    change: "change_from_previous_year.spending",
   }
-  const parsedContent = {
-    centralProgramsLabel: content["central_programs"],
-    otherLabel: content["other_spending"],
-    increase: content["increase"],
-    decrease: content["decrease"],
-    description: content["description_spending"],
-    statDescriptor: content["stat_descriptor_spending"],
+  const contentPaths = {
+    centralProgramsLabel: "central_programs",
+    otherLabel: "other_spending",
+    increase: "increase",
+    decrease: "decrease",
+    description: "description_spending",
+    statDescriptor: "stat_descriptor_spending",
+    previousYearDescriptor: "previous_year_descriptor"
   }
-  const colors = {
-    [parsedContent.centralProgramsLabel]: "#fc8123",
-    [parsedContent.otherLabel]: "#e9e9e9",
-  }
-  const icon = (centerX, centerY) => (
+  const parsedData = parseObject(data, dataPaths)
+  const parsedContent = parseObject(content, contentPaths)
+  const icon = (x, y) => (
     <svg
       id="moneyIcon"
       viewBox="0 0 511.998 511.998"
       width="38"
       xmlns="http://www.w3.org/2000/svg"
-      x={centerX - 73}
-      y={centerY - 150}
+      x={x}
+      y={y}
       alt="icon of coins with a dollar sign on it"
     >
       <g>
@@ -182,32 +221,29 @@ export const SpendingPieChart = ({ data, content }) => {
       content={parsedContent}
       formatValue={formatToUSD}
       metricIcon={icon}
-      colors={colors}
+      centralProgramsColor={"#fc8123"}
     />
   )
 }
 
 export const StaffPieChart = ({ data, content }) => {
-  const parsedData = {
-    centralPrograms: data["eoy_total_positions"],
-    allOUSD: 5000 /*data["all_ousd_eoy_total_positions"]*/,
-    change: data["change_from_previous_year"]["eoy_total_positions"],
+  const dataPaths = {
+    centralPrograms: "eoy_total_positions",
+    allOUSD: "all_ousd_eoy_total_positions",
+    change: "change_from_previous_year.eoy_total_positions",
   }
-  const parsedContent = {
-    centralProgramsLabel: content["central_programs"],
-    otherLabel: content["other_staff"],
-    increase: content["increase"],
-    decrease: content["decrease"],
-    description: content["description_staff"],
-    statDescriptor: content["stat_descriptor_staff"],
+  const contentPaths = {
+    centralProgramsLabel: "central_programs",
+    otherLabel: "other_staff",
+    increase: "increase",
+    decrease: "decrease",
+    description: "description_staff",
+    statDescriptor: "stat_descriptor_staff",
+    previousYearDescriptor: "previous_year_descriptor"
   }
-  const colors = {
-    [parsedContent.centralProgramsLabel]: "#129c9b",
-    [parsedContent.otherLabel]: "#e9e9e9",
-  }
-  const icon = (centerX, centerY) => (
-    <Person x={centerX - 73} y={centerY - 150} width="45" />
-  )
+  const parsedData = parseObject(data, dataPaths)
+  const parsedContent = parseObject(content, contentPaths)
+  const icon = (x, y) => <Person x={x} y={y} width="45" />
 
   return (
     <CentralToTotalComparisonPie
@@ -215,7 +251,7 @@ export const StaffPieChart = ({ data, content }) => {
       content={parsedContent}
       formatValue={value => Math.floor(value)}
       metricIcon={icon}
-      colors={colors}
+      centralProgramsColor={"#129c9b"}
     />
   )
 }
