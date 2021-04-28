@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react"
+import React, { useState, useMemo, useCallback } from "react"
 
 import { ResponsivePie } from "@nivo/pie"
 
@@ -52,6 +52,7 @@ const CentralToTotalComparisonPie = ({
   colors,
 }) => {
   const [activeNode, setActiveNode] = useState(null)
+  const [showRadialLabels, setShowRadialLabels] = useState(true)
 
   const pieChartData = useMemo(
     () => [
@@ -66,6 +67,12 @@ const CentralToTotalComparisonPie = ({
     ],
     []
   )
+  const resizeObserver = new ResizeObserver(([entry]) => {
+    setShowRadialLabels(entry.contentRect.width > 470)
+  })
+  const labelRef = useCallback(container => {
+    if (container) resizeObserver.observe(container)
+  })
   const percentOfTotal = Math.floor((data.centralPrograms / data.allOUSD) * 100)
 
   pieChartData.forEach((data, i) => {
@@ -75,7 +82,7 @@ const CentralToTotalComparisonPie = ({
 
   return (
     <div className="overview-chart">
-      <div className="pie-chart">
+      <div className="pie-chart" ref={labelRef}>
         <ResponsivePie
           data={pieChartData}
           colors={({ data: { color } }) => color}
@@ -83,6 +90,7 @@ const CentralToTotalComparisonPie = ({
           padAngle={1.5}
           cornerRadius={3}
           margin={{ top: 20, bottom: 25 }}
+          enableRadialLabels={showRadialLabels}
           radialLabel={data => data.id}
           radialLabelsLinkColor={{ from: "color" }}
           radialLabelsTextColor={{
@@ -198,11 +206,7 @@ export const StaffPieChart = ({ data, content }) => {
     [parsedContent.otherLabel]: "#60697d",
   }
   const icon = (centerX, centerY) => (
-    <Person
-      x={centerX - 73}
-      y={centerY - 150}
-      width="45"
-    />
+    <Person x={centerX - 73} y={centerY - 150} width="45" />
   )
 
   return (
