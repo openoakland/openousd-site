@@ -95,7 +95,7 @@ const CentralToTotalComparisonPie = ({
           radialLabelsLinkColor={{ from: "color" }}
           radialLabelsTextColor={{
             from: "color",
-            modifiers: [["darker", 0.2]],
+            modifiers: [["darker", 2]],
           }}
           radialLabelsLinkDiagonalLength={1}
           radialLabelsLinkStrokeWidth={2}
@@ -157,7 +157,7 @@ export const SpendingPieChart = ({ data, content }) => {
   }
   const colors = {
     [parsedContent.centralProgramsLabel]: "#fc8123",
-    [parsedContent.otherLabel]: "#60697d",
+    [parsedContent.otherLabel]: "#e9e9e9",
   }
   const icon = (centerX, centerY) => (
     <svg
@@ -203,7 +203,7 @@ export const StaffPieChart = ({ data, content }) => {
   }
   const colors = {
     [parsedContent.centralProgramsLabel]: "#129c9b",
-    [parsedContent.otherLabel]: "#60697d",
+    [parsedContent.otherLabel]: "#e9e9e9",
   }
   const icon = (centerX, centerY) => (
     <Person x={centerX - 73} y={centerY - 150} width="45" />
