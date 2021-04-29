@@ -18,29 +18,12 @@ import { useLocalizeCategory } from "../utilities/content-utilities"
 
 import "../components/sankey-chart.scss"
 
-const pieChartFakeContent = {
-  heading: "Central Programs in Context",
-  central_programs: "Central Programs",
-  school_sites: "School Sites",
-  other_spending: "All Other Spending",
-  other_staff: "All Other Staff",
-  increase: "an increase of",
-  decrease: "a decrease of",
-  stat_descriptor_spending: "of spending",
-  stat_descriptor_staff: "of staff",
-  previous_year_descriptor: "from the previous year",
-  description_spending:
-    "of the district's budget is spent on central programs which is",
-  description_staff:
-    "of district employees work in central programs which is"
-}
-
 const CentralProgramsPage = ({ data, pageContext }) => {
   const centralProgramsOverviewData = data.centralProgramsOverviewJson
   Object.assign(centralProgramsOverviewData, {all_ousd_eoy_total_positions: 5000})
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
-  Object.assign(content, { pieCharts: pieChartFakeContent, contentfulPie: data.allContentfulOverviewPieChart.nodes })
+  Object.assign(content, { contentfulPie: data.allContentfulOverviewPieChart.nodes })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
