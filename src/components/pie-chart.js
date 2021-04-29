@@ -5,6 +5,8 @@ import { ResponsivePie } from "@nivo/pie"
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
 import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
 import Person from "@material-ui/icons/Person"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { formatToUSD } from "../components/table-utilities"
 import "./pie-chart.scss"
 
@@ -28,10 +30,13 @@ const parseObject = (objectToParse, paths) => {
 }
 
 const useResizeObserverRef = callback => {
-  const resizeObserver = useMemo(() => new ResizeObserver(callback), [])
-  const ref = useCallback(node => {
-    if (node) resizeObserver.observe(node)
-  }, [])
+  const resizeObserver = useMemo(() => new ResizeObserver(callback), [callback])
+  const ref = useCallback(
+    node => {
+      if (node) resizeObserver.observe(node)
+    },
+    [resizeObserver]
+  )
   return ref
 }
 
@@ -72,21 +77,42 @@ const CenteredMetric = ({ descriptor, icon, percentOfTotal }) => ({
 }
 
 const Description = ({ percentOfTotal, data, content, formatValue }) => {
+  const renderOptions = {
+    renderMark: {
+      [MARKS.BOLD]: text => {
+        if (text === "**Percent of Total**") {
+          return <strong>{percentOfTotal}%</strong>
+        } else if (text === "**Change Descriptor**") {
+          const changeDescriptor =
+            data.change > 0
+              ? content.increaseDescriptor
+              : content.decreaseDescriptor
+          return <strong>{changeDescriptor}</strong>
+        } else {
+          return <strong>{text}</strong>
+        }
+      },
+    },
+    renderNode: {
+      [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
+        return (
+          <div className="change pb-2 pt-2">
+            {data.change < 0 ? (
+              <ArrowDropDown className="arrow" alt="down arrow" />
+            ) : (
+              <ArrowDropUp className="arrow" alt="up arrow" />
+            )}{" "}
+            {formatValue(Math.abs(data.change))}
+          </div>
+        )
+      },
+    },
+  }
   return (
     <div className="description">
       <div className="">
-        <strong>{percentOfTotal}%</strong> {content.description}{" "}
-        <strong>{data.change < 0 ? content.decrease : content.increase}</strong>{" "}
+        {documentToReactComponents(content.description, renderOptions)}
       </div>
-      <div className="change pb-2 pt-2">
-        {data.change < 0 ? (
-          <ArrowDropDown className="arrow" alt="down arrow" />
-        ) : (
-          <ArrowDropUp className="arrow" alt="up arrow" />
-        )}{" "}
-        {formatValue(Math.abs(data.change))}
-      </div>
-      {content.previousYearDescriptor}
     </div>
   )
 }
@@ -101,9 +127,13 @@ const CentralToTotalComparisonPie = ({
   const [activeNode, setActiveNode] = useState(null)
   const [showRadialLabels, setShowRadialLabels] = useState(true)
 
-  const labelRef = useResizeObserverRef(([entry]) => {
-    setShowRadialLabels(entry.contentRect.width > 470)
-  })
+  const radialLabelSizeCheck = useCallback(
+    ([entry]) => {
+      setShowRadialLabels(entry.contentRect.width > 470)
+    },
+    [setShowRadialLabels]
+  )
+  const labelRef = useResizeObserverRef(radialLabelSizeCheck)
 
   const percentOfTotal = Math.floor((data.centralPrograms / data.allOUSD) * 100)
 
@@ -118,7 +148,7 @@ const CentralToTotalComparisonPie = ({
         value: data.allOUSD - data.centralPrograms,
       },
     ],
-    []
+    [content, data]
   )
 
   const colors = {
@@ -188,16 +218,17 @@ export const SpendingPieChart = ({ data, content }) => {
     change: "change_from_previous_year.spending",
   }
   const contentPaths = {
-    centralProgramsLabel: "central_programs",
-    otherLabel: "other_spending",
-    increase: "increase",
-    decrease: "decrease",
-    description: "description_spending",
-    statDescriptor: "stat_descriptor_spending",
-    previousYearDescriptor: "previous_year_descriptor"
+    centralProgramsLabel: "centralProgramsLabel",
+    otherLabel: "otherLabel",
+    description: "description.json",
+    statDescriptor: "statDescriptor",
+    increaseDescriptor: "increaseDescriptor",
+    decreaseDescriptor: "decreaseDescriptor",
   }
   const parsedData = parseObject(data, dataPaths)
-  const parsedContent = parseObject(content, contentPaths)
+  const contentToParse = content.find(({ heading }) => heading === "Spending")
+  const parsedContent = parseObject(contentToParse, contentPaths)
+
   const icon = (x, y) => (
     <svg
       id="moneyIcon"
@@ -233,16 +264,16 @@ export const StaffPieChart = ({ data, content }) => {
     change: "change_from_previous_year.eoy_total_positions",
   }
   const contentPaths = {
-    centralProgramsLabel: "central_programs",
-    otherLabel: "other_staff",
-    increase: "increase",
-    decrease: "decrease",
-    description: "description_staff",
-    statDescriptor: "stat_descriptor_staff",
-    previousYearDescriptor: "previous_year_descriptor"
+    centralProgramsLabel: "centralProgramsLabel",
+    otherLabel: "otherLabel",
+    description: "description.json",
+    statDescriptor: "statDescriptor",
+    increaseDescriptor: "increaseDescriptor",
+    decreaseDescriptor: "decreaseDescriptor",
   }
+  const contentToParse = content.find(({ heading }) => heading === "Staff")
   const parsedData = parseObject(data, dataPaths)
-  const parsedContent = parseObject(content, contentPaths)
+  const parsedContent = parseObject(contentToParse, contentPaths)
   const icon = (x, y) => <Person x={x} y={y} width="45" />
 
   return (

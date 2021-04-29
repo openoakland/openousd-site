@@ -13,10 +13,11 @@
   }
   .description {
     max-width: 310px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 16px auto;
     text-align: center;
-
+    p{
+      margin: 0;
+    }
     .change {
       font-size: 1.8em;
       margin-left: -15px;

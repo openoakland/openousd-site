@@ -40,7 +40,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   Object.assign(centralProgramsOverviewData, {all_ousd_eoy_total_positions: 5000})
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
-  Object.assign(content, { pieCharts: pieChartFakeContent })
+  Object.assign(content, { pieCharts: pieChartFakeContent, contentfulPie: data.allContentfulOverviewPieChart.nodes })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
@@ -97,13 +97,13 @@ const CentralProgramsPage = ({ data, pageContext }) => {
           <Col lg={6}>
             <SpendingPieChart
               data={centralProgramsOverviewData}
-              content={content.pieCharts}
+              content={content.contentfulPie}
             />
           </Col>
           <Col lg={6}>
             <StaffPieChart
               data={centralProgramsOverviewData}
-              content={content.pieCharts}
+              content={content.contentfulPie}
             />
           </Col>
         </Row>
@@ -160,6 +160,20 @@ export const query = graphql`
       nodes {
         programName
         siteCode
+      }
+    }
+    allContentfulOverviewPieChart(filter: { node_locale: { eq: $language } }) {
+      nodes {
+        centralProgramsLabel
+        description {
+          json
+        }
+        heading
+        otherLabel
+        statDescriptor
+        increaseDescriptor
+        decreaseDescriptor
+        node_locale
       }
     }
     allCentralProgramsJson {
