@@ -226,7 +226,7 @@ export const SpendingPieChart = ({ data, content }) => {
     decreaseDescriptor: "decreaseDescriptor",
   }
   const parsedData = parseObject(data, dataPaths)
-  const contentToParse = content.find(({ heading }) => heading === "Spending")
+  const contentToParse = content.find(({ name }) => name === "Spending")
   const parsedContent = parseObject(contentToParse, contentPaths)
 
   const icon = (x, y) => (
@@ -271,7 +271,7 @@ export const StaffPieChart = ({ data, content }) => {
     increaseDescriptor: "increaseDescriptor",
     decreaseDescriptor: "decreaseDescriptor",
   }
-  const contentToParse = content.find(({ heading }) => heading === "Staff")
+  const contentToParse = content.find(({ name }) => name === "Staff")
   const parsedData = parseObject(data, dataPaths)
   const parsedContent = parseObject(contentToParse, contentPaths)
   const icon = (x, y) => <Person x={x} y={y} width="45" />

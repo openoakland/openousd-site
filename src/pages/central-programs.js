@@ -20,7 +20,6 @@ import "../components/sankey-chart.scss"
 
 const CentralProgramsPage = ({ data, pageContext }) => {
   const centralProgramsOverviewData = data.centralProgramsOverviewJson
-  Object.assign(centralProgramsOverviewData, {all_ousd_eoy_total_positions: 5000})
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
   Object.assign(content, { contentfulPie: data.allContentfulOverviewPieChart.nodes })
@@ -69,7 +68,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
         <Row>
           <Col>
             <h1>
-              {content.pieCharts.heading} (
+              {content.contentfulPie[0].heading} (
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
           </Col>
@@ -147,6 +146,7 @@ export const query = graphql`
     }
     allContentfulOverviewPieChart(filter: { node_locale: { eq: $language } }) {
       nodes {
+        name
         centralProgramsLabel
         description {
           json
