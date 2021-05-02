@@ -1,5 +1,5 @@
 const path = require(`path`)
-var slugify = require('slugify')
+var slugify = require("slugify")
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
@@ -33,7 +33,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     // Some program names include parentheses, remove those so they don't end up in path
     const slugifyOptions = {
       remove: /[*+~.()'"!:@/]/g,
-      lower: true
+      lower: true,
     }
 
     const slug = slugify(node.name, slugifyOptions)
@@ -44,7 +44,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value: slug,
     })
-  }}
+
+    // Use slug in path and create node field so it is queryable
+    createNodeField({
+      name: `path`,
+      node,
+      value: `central-programs/${slug}`,
+    })
+  }
+}
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -56,7 +64,7 @@ exports.createPages = async ({ graphql, actions }) => {
           name
           code
           fields {
-            slug
+            path
           }
         }
       }
@@ -65,7 +73,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allCentralProgramsJson.nodes.forEach(node => {
     createPage({
-      path: `central-programs/${node.fields.slug}`,
+      path: node.fields.path,
       component: path.resolve(`./src/components/central-program.js`),
       context: {
         // Data passed to context is available
@@ -73,4 +81,5 @@ exports.createPages = async ({ graphql, actions }) => {
         code: node.code,
       },
     })
-  })}
+  })
+}

@@ -4,7 +4,7 @@ import { useGetProgramPathBySiteCode } from "../utilities/get-program-path-by-si
 
 const ProgramLink = ({ siteCode, children }) => {
   const getProgramPathBySiteCode = useGetProgramPathBySiteCode()
-  return <Link to={getProgramPathBySiteCode(siteCode)}>{children}</Link>
+  return <Link to={`/${getProgramPathBySiteCode(siteCode)}`}>{children}</Link>
 }
 
 export default ProgramLink

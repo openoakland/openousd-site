@@ -4,16 +4,11 @@ export const useGetProgramPathBySiteCode = () => {
 	const allCentralProgramNodes = useStaticQuery(
 		graphql`
 			query {
-				allSitePage(
-					filter: {
-						context: { language: { eq: "en" }, code: { gt: 0 } }
-						path: { regex: "/^(?!/en.*$).*/" }
-					}
-				) {
+				allCentralProgramsJson {
 					nodes {
-						path
-						context {
-							code
+						code
+						fields {
+							path
 						}
 					}
 				}
@@ -22,8 +17,8 @@ export const useGetProgramPathBySiteCode = () => {
 	)
 	let pathsBySiteCode = {}
 
-	allCentralProgramNodes.allSitePage.nodes.forEach(program => {
-		pathsBySiteCode[program.context.code] = program.path
+	allCentralProgramNodes.allCentralProgramsJson.nodes.forEach(program => {
+		pathsBySiteCode[program.code] = program.fields.path
 	})
 
 	return siteCode => {
