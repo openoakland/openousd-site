@@ -10,6 +10,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
+import ProgramLink from "../components/program-link"
 
 import "../styles/pages/about-categories.scss"
 
@@ -61,6 +62,7 @@ const AboutCategoriesPage = ({ data, pageContext }) => {
         <Row>
           <Col md={8}>
             <div>
+              <ProgramLink siteCode="936">Accounting Program Link</ProgramLink>
               <div>{documentToReactComponents(introText.json)}</div>
             </div>
           </Col>
