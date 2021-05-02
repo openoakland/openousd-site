@@ -6,7 +6,7 @@ export const useGetProgramPathBySiteCode = () => {
 			query {
 				allSitePage(
 					filter: {
-						context: { language: { eq: "en" } }
+						context: { language: { eq: "en" }, code: { gt: 0 } }
 						path: { regex: "/^(?!/en.*$).*/" }
 					}
 				) {
