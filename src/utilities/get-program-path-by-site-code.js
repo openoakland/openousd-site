@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql } from "gatsby"
+import { useMemo } from "react"
 
-export const useGetProgramPathBySiteCode = () => {
+export const useGetProgramPathBySiteCode = siteCode => {
   const allCentralProgramNodes = useStaticQuery(
     graphql`
       query {
@@ -15,13 +16,14 @@ export const useGetProgramPathBySiteCode = () => {
       }
     `
   )
-  let pathsBySiteCode = {}
 
-  allCentralProgramNodes.allCentralProgramsJson.nodes.forEach(program => {
-    pathsBySiteCode[program.code] = program.fields.path
-  })
+  const pathsBySiteCode = useMemo(() => {
+    const paths = {}
+    allCentralProgramNodes.allCentralProgramsJson.nodes.forEach(
+      program => (paths[program.code] = program.fields.path)
+    )
+    return paths
+  }, [allCentralProgramNodes])
 
-  return siteCode => {
-    return pathsBySiteCode[siteCode]
-  }
+  return pathsBySiteCode[siteCode]
 }
