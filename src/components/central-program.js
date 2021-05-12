@@ -6,12 +6,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { INLINES } from "@contentful/rich-text-types"
 
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
 import ScrollWidget from "../components/scroll-widget"
+import ProgramLink from "../components/program-link"
 
 import LaunchIcon from "@material-ui/icons/Launch"
 
@@ -21,6 +23,18 @@ import LaunchIcon from "@material-ui/icons/Launch"
 import "./central-program/central-program.scss"
 
 const ELEMENT_NAME_PREFIX = "program-section"
+
+const descriptionRenderOptions = {
+  renderNode: {
+    [INLINES.ENTRY_HYPERLINK]: (node, children) => {
+      return (
+        <ProgramLink siteCode={node.data.target.fields.siteCode.en}>
+          {children[0]}
+        </ProgramLink>
+      )
+    },
+  },
+}
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
@@ -44,7 +58,10 @@ const CentralProgram = ({ data }) => {
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h1>{translatedProgramName}</h1>
-                {documentToReactComponents(contentfulProgramDescription)}
+                {documentToReactComponents(
+                  contentfulProgramDescription,
+                  descriptionRenderOptions
+                )}
                 {data.contentfulCentralProgram.OUSDProgramLink ? (
                   <div className="pt-3">
                     <a
