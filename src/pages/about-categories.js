@@ -62,7 +62,6 @@ const AboutCategoriesPage = ({ data, pageContext }) => {
         <Row>
           <Col md={8}>
             <div>
-              <ProgramLink siteCode="936">Accounting Program Link</ProgramLink>
               <div>{documentToReactComponents(introText.json)}</div>
             </div>
           </Col>
