@@ -10,7 +10,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
-import ProgramLink from "../components/program-link"
 
 import "../styles/pages/about-categories.scss"
 
