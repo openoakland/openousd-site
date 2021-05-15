@@ -1,6 +1,7 @@
-import React, { useState, useMemo, /*useCallback*/ } from "react"
+import React, { useState, useMemo, useCallback } from "react"
 
 import { ResponsivePie } from "@nivo/pie"
+import ResizeObserver from "resize-observer-polyfill"
 
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
 import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
@@ -29,7 +30,7 @@ const parseObject = (objectToParse, paths) => {
   return result
 }
 
-/*const useResizeObserverRef = callback => {
+const useResizeObserverRef = callback => {
   const resizeObserver = useMemo(() => new ResizeObserver(callback), [callback])
   const ref = useCallback(
     node => {
@@ -38,7 +39,7 @@ const parseObject = (objectToParse, paths) => {
     [resizeObserver]
   )
   return ref
-}*/
+}
 
 const CenteredMetric = ({ descriptor, icon, percentOfTotal }) => ({
   dataWithArc,
@@ -127,13 +128,13 @@ const CentralToTotalComparisonPie = ({
   const [activeNode, setActiveNode] = useState(null)
   const [showRadialLabels, setShowRadialLabels] = useState(true)
 
-/*  const radialLabelSizeCheck = useCallback(
+  const radialLabelSizeCheck = useCallback(
     ([entry]) => {
       setShowRadialLabels(entry.contentRect.width > 470)
     },
     [setShowRadialLabels]
   )
-  const labelRef = useResizeObserverRef(radialLabelSizeCheck)*/
+  const labelRef = useResizeObserverRef(radialLabelSizeCheck)
 
   const percentOfTotal = Math.floor((data.centralPrograms / data.allOUSD) * 100)
 
@@ -163,7 +164,7 @@ const CentralToTotalComparisonPie = ({
 
   return (
     <div className="overview-chart">
-      <div className="pie-chart" /*ref={labelRef}*/>
+      <div className="pie-chart" ref={labelRef}>
         <ResponsivePie
           data={pieChartData}
           colors={({ data: { color } }) => color}

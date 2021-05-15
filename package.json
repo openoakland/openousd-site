@@ -40,7 +40,8 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "keywords": [
     "gatsby"
