@@ -7,9 +7,18 @@ import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
 import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
 import Person from "@material-ui/icons/Person"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
+import { MARKS } from "@contentful/rich-text-types"
 import { formatToUSD } from "../components/table-utilities"
 import "./pie-chart.scss"
+
+const contentPaths = {
+  centralProgramsLabel: "centralProgramsLabel",
+  otherLabel: "otherLabel",
+  description: "description.json",
+  statDescriptor: "statDescriptor",
+  increaseDescriptor: "increaseDescriptor",
+  decreaseDescriptor: "decreaseDescriptor",
+}
 
 function getObjValueFromPath(path) {
   const keyRegex = "[a-zA-Z_$]\\w*"
@@ -89,23 +98,20 @@ const Description = ({ percentOfTotal, data, content, formatValue }) => {
               ? content.increaseDescriptor
               : content.decreaseDescriptor
           return <strong>{changeDescriptor}</strong>
+        } else if (text === "**Change Quantity**") {
+          return (
+            <span className="change pt-2">
+              {data.change < 0 ? (
+                <ArrowDropDown className="arrow" alt="down arrow" />
+              ) : (
+                <ArrowDropUp className="arrow" alt="up arrow" />
+              )}{" "}
+              {formatValue(Math.abs(data.change))}
+            </span>
+          )
         } else {
           return <strong>{text}</strong>
         }
-      },
-    },
-    renderNode: {
-      [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
-        return (
-          <div className="change pb-2 pt-2">
-            {data.change < 0 ? (
-              <ArrowDropDown className="arrow" alt="down arrow" />
-            ) : (
-              <ArrowDropUp className="arrow" alt="up arrow" />
-            )}{" "}
-            {formatValue(Math.abs(data.change))}
-          </div>
-        )
       },
     },
   }
@@ -218,14 +224,7 @@ export const SpendingPieChart = ({ data, content }) => {
     allOUSD: "all_ousd_spending",
     change: "change_from_previous_year.spending",
   }
-  const contentPaths = {
-    centralProgramsLabel: "centralProgramsLabel",
-    otherLabel: "otherLabel",
-    description: "description.json",
-    statDescriptor: "statDescriptor",
-    increaseDescriptor: "increaseDescriptor",
-    decreaseDescriptor: "decreaseDescriptor",
-  }
+
   const parsedData = parseObject(data, dataPaths)
   const contentToParse = content.find(({ name }) => name === "Spending")
   const parsedContent = parseObject(contentToParse, contentPaths)
@@ -264,14 +263,7 @@ export const StaffPieChart = ({ data, content }) => {
     allOUSD: "all_ousd_eoy_total_positions",
     change: "change_from_previous_year.eoy_total_positions",
   }
-  const contentPaths = {
-    centralProgramsLabel: "centralProgramsLabel",
-    otherLabel: "otherLabel",
-    description: "description.json",
-    statDescriptor: "statDescriptor",
-    increaseDescriptor: "increaseDescriptor",
-    decreaseDescriptor: "decreaseDescriptor",
-  }
+
   const contentToParse = content.find(({ name }) => name === "Staff")
   const parsedData = parseObject(data, dataPaths)
   const parsedContent = parseObject(contentToParse, contentPaths)
