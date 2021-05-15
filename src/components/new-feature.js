@@ -9,7 +9,13 @@ const NewFeature = props => {
     <div className="mt-4">
       <h3>{props.heading}</h3>
       <div>{props.date}</div>
-      <img src={props.image} alt={props.image_titles} className="mw-100 pt-3" />
+      <Link to={props.pagePath}>
+        <img
+          src={props.image}
+          alt={props.image_titles}
+          className="mw-100 pt-3 border"
+        />
+      </Link>
       <div className="pt-3">{props.description}</div>
       {props.pagePath ? (
         <div className="pt-3">
