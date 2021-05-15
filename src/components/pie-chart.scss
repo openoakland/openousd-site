@@ -1,0 +1,31 @@
+.overview-chart {
+  .pie-chart {
+    height: 300px;
+    user-select: none;
+
+    * {
+      transition: fill 0.3s ease-out;
+    }
+
+    text[text-anchor="middle"] {
+      font-weight: bold;
+    }
+  }
+  .description {
+    max-width: 310px;
+    margin: 0 auto 16px auto;
+    text-align: center;
+    p{
+      margin: 0;
+    }
+    .change {
+      font-size: 1.8em;
+      margin-left: -15px;
+      .arrow {
+        font-size: 1.8em;
+        margin-top: -10px;
+        margin-right: -10px;
+      }
+    }
+  }
+}

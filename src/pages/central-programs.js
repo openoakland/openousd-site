@@ -9,6 +9,7 @@ import SEO from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
+import {SpendingPieChart, StaffPieChart} from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
@@ -18,8 +19,10 @@ import { useLocalizeCategory } from "../utilities/content-utilities"
 import "../components/sankey-chart.scss"
 
 const CentralProgramsPage = ({ data, pageContext }) => {
+  const centralProgramsOverviewData = data.centralProgramsOverviewJson
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
+  Object.assign(content, { contentfulPie: data.allContentfulOverviewPieChart.nodes })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
@@ -65,6 +68,33 @@ const CentralProgramsPage = ({ data, pageContext }) => {
         <Row>
           <Col>
             <h1>
+              {content.contentfulPie[0].heading} (
+              {data.site.siteMetadata.latestSchoolYear})
+            </h1>
+          </Col>
+        </Row>
+      </Container>
+      <Container>
+        <Row>
+          <Col lg={6}>
+            <SpendingPieChart
+              data={centralProgramsOverviewData}
+              content={content.contentfulPie}
+            />
+          </Col>
+          <Col lg={6}>
+            <StaffPieChart
+              data={centralProgramsOverviewData}
+              content={content.contentfulPie}
+            />
+          </Col>
+        </Row>
+      </Container>
+
+      <Container>
+        <Row>
+          <Col>
+            <h1 className="pb-3 pt-5">
               {content.spendingSankeyChart.heading} (
               {data.site.siteMetadata.latestSchoolYear})
             </h1>
@@ -114,6 +144,21 @@ export const query = graphql`
         siteCode
       }
     }
+    allContentfulOverviewPieChart(filter: { node_locale: { eq: $language } }) {
+      nodes {
+        name
+        centralProgramsLabel
+        description {
+          json
+        }
+        heading
+        otherLabel
+        statDescriptor
+        increaseDescriptor
+        decreaseDescriptor
+        node_locale
+      }
+    }
     allCentralProgramsJson {
       nodes {
         name
@@ -129,7 +174,21 @@ export const query = graphql`
         }
       }
     }
-    
+    centralProgramsOverviewJson {
+      all_ousd_eoy_total_fte
+      all_ousd_eoy_total_positions
+      all_ousd_spending
+      eoy_total_fte
+      eoy_total_positions
+      spending
+      year
+      change_from_previous_year {
+        eoy_total_fte
+        eoy_total_positions
+        spending
+      }
+    }
+
     contentfulPage(
       slug: { eq: "central-programs" }
       node_locale: { eq: $language }

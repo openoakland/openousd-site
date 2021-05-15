@@ -35,3 +35,8 @@ with open(data_path + "sankey-restricted.json","w+") as f:
 response = requests.get(base_path + "/central-programs/sankey")
 with open(data_path + "central-programs-sankey.json","w+") as f:
     json.dump(response.json(),f, indent=2)
+
+# Get overview data for central programs and all of OUSD
+response = requests.get(base_path + "/central-programs/overview")
+with open(data_path + "central-programs-overview.json","w+") as f:
+    json.dump(response.json(),f, indent=2)
