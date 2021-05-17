@@ -31,6 +31,41 @@
         "all_ousd_budget": 971524872.37,
         "all_ousd_eoy_total_fte": 4709.11530856,
         "all_ousd_eoy_total_positions": 5124
+      },
+      {
+        "year": 2013,
+        "spending": 200349018.14,
+        "budget": 176140521.6,
+        "all_ousd_spending": 410954701.2,
+        "all_ousd_budget": 385033931.3
+      },
+      {
+        "year": 2014,
+        "spending": 199928037.54,
+        "budget": 173931379.5,
+        "all_ousd_spending": 424707826.4,
+        "all_ousd_budget": 400177324.7
+      },
+      {
+        "year": 2015,
+        "spending": 228160848.47,
+        "budget": 190373217.4,
+        "all_ousd_spending": 493391802.4,
+        "all_ousd_budget": 432264678.5
+      },
+      {
+        "year": 2016,
+        "spending": 193389680.34,
+        "budget": 168166599.5,
+        "all_ousd_spending": 523922664.4,
+        "all_ousd_budget": 497716165.1
+      },
+      {
+        "year": 2017,
+        "spending": 181426341.81,
+        "budget": 175806540.5,
+        "all_ousd_spending": 513824147.8,
+        "all_ousd_budget": 508308919.6
       }
     ],
     "change_from_previous_year": {
