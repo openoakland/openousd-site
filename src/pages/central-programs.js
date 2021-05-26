@@ -9,7 +9,7 @@ import SEO from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
-import {SpendingPieChart, StaffPieChart} from "../components/pie-chart"
+import { SpendingPieChart, StaffPieChart } from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
@@ -22,7 +22,9 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   const centralProgramsOverviewData = data.centralProgramsOverviewJson
   let centralPrograms = data.allCentralProgramsJson.nodes
   const content = data.contentfulPage.content
-  Object.assign(content, { contentfulPie: data.allContentfulOverviewPieChart.nodes })
+  Object.assign(content, {
+    contentfulPie: data.allContentfulOverviewPieChart.nodes,
+  })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
