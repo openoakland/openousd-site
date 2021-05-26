@@ -20,26 +20,6 @@ const getNestedObject = (nestedObj, pathArr) => {
   )
 }
 
-//  formatting date from Contenful, 2020-06-03 => June 3, 2020
-const dateToString = (date, locale) => {
-  var mydate = new Date(date)
-  const options = { month: "long", day: "numeric" }
-
-  const mydateEN = mydate.toLocaleDateString("en-US", options)
-  const resultES = mydate.toLocaleDateString("es-ES", options)
-
-  //time in ES
-  const mydateES = resultES
-    .replace(/([^\W_]+[^\s-]*) */g, function(txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
-    })
-    .replace(/\bDe\b/g, function(txt) {
-      return txt.toLowerCase()
-    })
-
-  return (locale === "en" ? mydateEN : mydateES) + ", " + mydate.getFullYear()
-}
-
 // formatting the date (June 3, 2020) into an id that react scroll can reference (#june-3-2020)
 const dateToDivID = date => {
   return "#" + date.replace(/[\W_]+/g, "-").toLowerCase()
@@ -53,9 +33,18 @@ const options = {
   },
 }
 
-const WhatsNewPage = ({ data }) => {
+const WhatsNewPage = ({ data, pageContext }) => {
   const { title, node_locale } = data.contentfulPage
   const changelog = data.allContentfulChangelogContent.nodes
+
+  //  formatting date from Contenful, 2020-06-03 => June 3, 2020
+  const dateToString = (date, locale) => {
+    let mydate = new Date(date)
+    const options = { month: "long", day: "numeric", year: "numeric" }
+
+    return mydate.toLocaleDateString(pageContext.language, options)
+  }
+
   return (
     <Layout pageClassName="whats-new-page">
       <SEO title={title} />
