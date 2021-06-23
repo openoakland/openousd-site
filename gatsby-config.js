@@ -81,6 +81,7 @@ module.exports = {
         display: "swap",
       },
     },
-    "gatsby-transformer-json",
+    `gatsby-transformer-json`,
+    `gatsby-plugin-percy`,
   ],
 }

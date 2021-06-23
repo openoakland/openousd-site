@@ -6,11 +6,12 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
-    "@nivo/core": "^0.65.0",
-    "@nivo/tooltip": "^0.66.0",
     "@nivo/bar": "^0.66.0",
+    "@nivo/core": "^0.65.0",
     "@nivo/pie": "^0.66.0",
     "@nivo/sankey": "^0.62.0",
+    "@nivo/tooltip": "^0.66.0",
+    "@percy/agent": "^0.28.6",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.19.32",
     "gatsby-image": "^2.2.29",
@@ -19,6 +20,7 @@
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-offline": "^3.0.16",
+    "gatsby-plugin-percy": "^0.1.4",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.2.31",
@@ -63,5 +65,14 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "percy": {
+    "version": 1,
+    "snapshot": {
+      "widths": [1280]
+    },
+    "static-snapshots": {
+      "snapshot-files": "en/**/*.html,es/**/*.html"
+    }
   }
 }
