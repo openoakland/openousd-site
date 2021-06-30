@@ -60,3 +60,19 @@ This probably needs to be brought into a proper deploy system, but for now this 
 3. replaces the staging `CNAME` file with the production one
 4. pushes the files to [`openousd-site-prod`](https://github.com/openoakland/openousd-site-prod) `master` repo
 5. goes back to the branch you started in
+
+## Testing with Percy
+[Percy](https://percy.io/) is a tool that takes screenshots of web pages across browser types and page widths (mobile, desktop) and does a visual "diff" to see if anthing has changed visually during development. Then you can decide if the changes is desired or not.
+
+[OpenOUSD's Percy project is here](https://percy.io/559d3e9c/openousd).
+
+### Config / Setup
+* Get a Percy project API token from a member of the team
+* Create a file in your local directory called `.env.production`
+* In that file, add a line `PERCY_TOKEN=<Enter Token Here>` to specify the token
+
+### Running Tests
+Note: The free version of Percy allows 5000 screenshots a month. Each page has a screenshot for each language OpenOUSD supports and for desktop and mobile. At the time of writing this, that was ~125 screenshots per run.
+
+* **To run against [Staging](https://staging.openousd.org):** `npm run percyStaging`
+* **To run against [Production](https://openousd.org):** `npm run percyProd`
