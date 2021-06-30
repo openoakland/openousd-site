@@ -1,7 +1,5 @@
-const pages = require("./snapshots.json")
-const STAGING_PATH = "https://staging.openousd.org"
+const pages = require("./page-paths.json")
 
 module.exports = async () => {
-  console.log(pages)
-  return pages.map((page) => ({ url: STAGING_PATH + page.url }))
+  return pages.map((page) => ({ url: page.url }))
 }

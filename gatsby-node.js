@@ -88,7 +88,7 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onPostBuild = async ({ graphql }) => {
   const { data } = await graphql(`
     {
-      pages: allSitePage(filter: { path: { glob: "/en/**" } }) {
+      pages: allSitePage(filter: { path: { regex: "/^/en/|^/es//" } }) {
         nodes {
           path
         }
@@ -97,7 +97,7 @@ exports.onPostBuild = async ({ graphql }) => {
   `)
 
   return fs.writeFile(
-    path.resolve(__dirname, "scripts/testing/snapshots.json"),
+    path.resolve(__dirname, "scripts/testing/page-paths.json"),
     JSON.stringify(
       data.pages.nodes.map((node) => {
         return {
