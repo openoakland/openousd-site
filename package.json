@@ -20,7 +20,6 @@
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-percy": "^0.1.4",
     "gatsby-plugin-react-helmet": "^3.1.13",
     "gatsby-plugin-sass": "^2.1.20",
     "gatsby-plugin-sharp": "^2.2.31",
@@ -41,6 +40,7 @@
     "slugify": "^1.4.0"
   },
   "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.57",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
     "resize-observer-polyfill": "^1.5.1"
@@ -57,7 +57,8 @@
     "serve": "gatsby serve",
     "deployStaging": "gatsby build && echo 'staging.openousd.org' > public/CNAME && gh-pages -d public",
     "promoteStaging": "./scripts/promote_staging.sh",
-    "refreshData": "python scripts/build_json.py"
+    "refreshData": "python scripts/build_json.py",
+    "percy": "PERCY_TOKEN=$(grep PERCY_TOKEN .env.production | cut -d '=' -f2) PERCY_BRANCH=staging percy snapshot scripts/testing/snapshots.js"
   },
   "repository": {
     "type": "git",
@@ -67,12 +68,11 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "percy": {
-    "version": 1,
+    "version": 2,
     "snapshot": {
-      "widths": [1280]
-    },
-    "static-snapshots": {
-      "snapshot-files": "en/**/*.html,es/**/*.html"
+      "widths": [
+        1280
+      ]
     }
   }
 }
