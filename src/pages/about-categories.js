@@ -7,7 +7,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import CategoriesTable from "../components/categories-table"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
 
@@ -22,40 +22,39 @@ const AboutCategoriesPage = ({ data, pageContext }) => {
   } = data
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
-  const expenditureCategories = allCentralProgramsJson.nodes.map(node => {
+  const expenditureCategories = allCentralProgramsJson.nodes.map((node) => {
     return {
       ...node,
       category: localizeCategory(node.category),
     }
   })
-  const revenueCategories = allCentralProgramsResourcesJson.nodes.map(node => {
-    return {
-      ...node,
-      category: localizeCategory(node.category),
+  const revenueCategories = allCentralProgramsResourcesJson.nodes.map(
+    (node) => {
+      return {
+        ...node,
+        category: localizeCategory(node.category),
+      }
     }
-  })
+  )
 
-  const {
-    introText,
-    categoryDescriptions,
-    categoriesTable,
-  } = contentfulPage.content
+  const { introText, categoryDescriptions, categoriesTable } =
+    contentfulPage.content
 
-  const getBlockWithId = blockId =>
-    categoryDescriptions.find(description => description.blockId === blockId)
+  const getBlockWithId = (blockId) =>
+    categoryDescriptions.find((description) => description.blockId === blockId)
   const fundingSources = getBlockWithId("funding-sources")
   const programExpenses = getBlockWithId("program-expenses")
 
-  const getColumnWithDataFieldName = dataFieldName =>
+  const getColumnWithDataFieldName = (dataFieldName) =>
     categoriesTable.columns.find(
-      column => column.dataFieldName === dataFieldName
+      (column) => column.dataFieldName === dataFieldName
     )
   const fundingSourcesColumn = getColumnWithDataFieldName("resourceId")
   const centralProgramColumn = getColumnWithDataFieldName("name")
 
   return (
     <Layout pageClassName="about-categories-page">
-      <SEO title={contentfulPage.title} />
+      <Seo title={contentfulPage.title} />
       <Container>
         <h1>{contentfulPage.title}</h1>
         <Row>

@@ -8,7 +8,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 // import twitterIcon from '../images/icons/twitter-icon-blue.svg'
 import NewFeature from "../components/new-feature"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../styles/pages/whats-new.scss"
 
 // https://dev.to/flexdinesh/accessing-nested-objects-in-javascript--9m4
@@ -21,7 +21,7 @@ const getNestedObject = (nestedObj, pathArr) => {
 }
 
 // formatting the date (June 3, 2020) into an id that react scroll can reference (#june-3-2020)
-const dateToDivID = date => {
+const dateToDivID = (date) => {
   return "#" + date.replace(/[\W_]+/g, "-").toLowerCase()
 }
 
@@ -47,7 +47,7 @@ const WhatsNewPage = ({ data, pageContext }) => {
 
   return (
     <Layout pageClassName="whats-new-page">
-      <SEO title={title} />
+      <Seo title={title} />
       <Container>
         <Row>
           <Col>
@@ -84,7 +84,7 @@ const WhatsNewPage = ({ data, pageContext }) => {
             className="px-3 flex-shrink-1 bd-highlight"
             id="right-content"
           >
-            {changelog.map(feature => (
+            {changelog.map((feature) => (
               <Element
                 name={dateToDivID(dateToString(feature.date, node_locale))}
                 style={{ marginBottom: "80px" }}
