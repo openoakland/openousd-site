@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import { INLINES } from "@contentful/rich-text-types"
@@ -44,7 +44,7 @@ const CentralProgram = ({ data }) => {
   const content = data.contentfulPage.content
   return (
     <Layout>
-      <SEO title={translatedProgramName} />
+      <Seo title={translatedProgramName} />
       <div className="d-none d-lg-block">
         <ScrollWidget
           className="scroll-widget"
@@ -142,7 +142,7 @@ const CentralProgram = ({ data }) => {
 }
 
 export const query = graphql`
-  query($code: Int!, $language: String) {
+  query ($code: Int!, $language: String) {
     site {
       siteMetadata {
         latestSchoolYear

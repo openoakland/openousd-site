@@ -1,25 +1,23 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import "../styles/pages/about-categories.scss"
 
 const AboutDataPage = ({ data }) => {
-  const {
-    title: contentfulTitle,
-    content: contentfulContent,
-  } = data.contentfulPage
+  const { title: contentfulTitle, content: contentfulContent } =
+    data.contentfulPage
 
   return (
     <Layout pageClassName="about-data-page">
-      <SEO title={contentfulTitle} />
+      <Seo title={contentfulTitle} />
       <Container>
         <h1>{contentfulTitle}</h1>
-        {contentfulContent.contentBlocks.map(contentBlock => (
+        {contentfulContent.contentBlocks.map((contentBlock) => (
           <Row key={contentBlock.blockId}>
             <Col md={8}>
               <div>
