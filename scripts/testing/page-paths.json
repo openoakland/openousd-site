@@ -1,0 +1,368 @@
+[
+  {
+    "url": "/en/central-programs/accounting"
+  },
+  {
+    "url": "/es/central-programs/accounting"
+  },
+  {
+    "url": "/en/central-programs/accounts-payable"
+  },
+  {
+    "url": "/es/central-programs/accounts-payable"
+  },
+  {
+    "url": "/en/central-programs/board-of-education"
+  },
+  {
+    "url": "/es/central-programs/board-of-education"
+  },
+  {
+    "url": "/en/central-programs/budget"
+  },
+  {
+    "url": "/es/central-programs/budget"
+  },
+  {
+    "url": "/en/central-programs/buildings-and-grounds"
+  },
+  {
+    "url": "/es/central-programs/buildings-and-grounds"
+  },
+  {
+    "url": "/en/central-programs/charter-schools-office-admin"
+  },
+  {
+    "url": "/es/central-programs/charter-schools-office-admin"
+  },
+  {
+    "url": "/en/central-programs/chief-financial-officer"
+  },
+  {
+    "url": "/es/central-programs/chief-financial-officer"
+  },
+  {
+    "url": "/en/central-programs/chief-of-operations"
+  },
+  {
+    "url": "/es/central-programs/chief-of-operations"
+  },
+  {
+    "url": "/en/central-programs/chief-of-staff"
+  },
+  {
+    "url": "/es/central-programs/chief-of-staff"
+  },
+  {
+    "url": "/en/central-programs/communications"
+  },
+  {
+    "url": "/es/central-programs/communications"
+  },
+  {
+    "url": "/en/central-programs/community-schools-and-student-services"
+  },
+  {
+    "url": "/es/central-programs/community-schools-and-student-services"
+  },
+  {
+    "url": "/en/central-programs/continuous-school-improvement"
+  },
+  {
+    "url": "/es/central-programs/continuous-school-improvement"
+  },
+  {
+    "url": "/en/central-programs/custodial-services"
+  },
+  {
+    "url": "/es/central-programs/custodial-services"
+  },
+  {
+    "url": "/en/central-programs/districtwide-expenses"
+  },
+  {
+    "url": "/es/central-programs/districtwide-expenses"
+  },
+  {
+    "url": "/en/central-programs/early-childhood-development"
+  },
+  {
+    "url": "/es/central-programs/early-childhood-development"
+  },
+  {
+    "url": "/en/central-programs/elementary-network-4"
+  },
+  {
+    "url": "/es/central-programs/elementary-network-4"
+  },
+  {
+    "url": "/en/central-programs/english-language-learner-multilingual-achievement"
+  },
+  {
+    "url": "/es/central-programs/english-language-learner-multilingual-achievement"
+  },
+  {
+    "url": "/en/central-programs/facilities-planning"
+  },
+  {
+    "url": "/es/central-programs/facilities-planning"
+  },
+  {
+    "url": "/en/central-programs/food-service"
+  },
+  {
+    "url": "/es/central-programs/food-service"
+  },
+  {
+    "url": "/en/central-programs/health-services-nurses"
+  },
+  {
+    "url": "/es/central-programs/health-services-nurses"
+  },
+  {
+    "url": "/en/central-programs/high-school-network"
+  },
+  {
+    "url": "/es/central-programs/high-school-network"
+  },
+  {
+    "url": "/en/central-programs/human-resources"
+  },
+  {
+    "url": "/es/central-programs/human-resources"
+  },
+  {
+    "url": "/en/central-programs/indian-education"
+  },
+  {
+    "url": "/es/central-programs/indian-education"
+  },
+  {
+    "url": "/en/central-programs/labor-relations"
+  },
+  {
+    "url": "/es/central-programs/labor-relations"
+  },
+  {
+    "url": "/en/central-programs/legal-counsel"
+  },
+  {
+    "url": "/es/central-programs/legal-counsel"
+  },
+  {
+    "url": "/en/central-programs/linked-learning"
+  },
+  {
+    "url": "/es/central-programs/linked-learning"
+  },
+  {
+    "url": "/en/central-programs/middle-school-network"
+  },
+  {
+    "url": "/es/central-programs/middle-school-network"
+  },
+  {
+    "url": "/en/central-programs/oakland-athletic-league"
+  },
+  {
+    "url": "/es/central-programs/oakland-athletic-league"
+  },
+  {
+    "url": "/en/central-programs/office-of-chief-academic-officer"
+  },
+  {
+    "url": "/es/central-programs/office-of-chief-academic-officer"
+  },
+  {
+    "url": "/en/central-programs/office-of-equity"
+  },
+  {
+    "url": "/es/central-programs/office-of-equity"
+  },
+  {
+    "url": "/en/central-programs/office-of-post-secondary-readiness"
+  },
+  {
+    "url": "/es/central-programs/office-of-post-secondary-readiness"
+  },
+  {
+    "url": "/en/central-programs/office-of-sr-business-officer"
+  },
+  {
+    "url": "/es/central-programs/office-of-sr-business-officer"
+  },
+  {
+    "url": "/en/central-programs/office-of-state-trustee"
+  },
+  {
+    "url": "/es/central-programs/office-of-state-trustee"
+  },
+  {
+    "url": "/en/central-programs/office-of-the-superintendent"
+  },
+  {
+    "url": "/es/central-programs/office-of-the-superintendent"
+  },
+  {
+    "url": "/en/central-programs/ombudsman"
+  },
+  {
+    "url": "/es/central-programs/ombudsman"
+  },
+  {
+    "url": "/en/central-programs/opsr-counseling"
+  },
+  {
+    "url": "/es/central-programs/opsr-counseling"
+  },
+  {
+    "url": "/en/central-programs/ousd-police-department"
+  },
+  {
+    "url": "/es/central-programs/ousd-police-department"
+  },
+  {
+    "url": "/en/central-programs/payroll"
+  },
+  {
+    "url": "/es/central-programs/payroll"
+  },
+  {
+    "url": "/en/central-programs/pre-k-5-network-1"
+  },
+  {
+    "url": "/es/central-programs/pre-k-5-network-1"
+  },
+  {
+    "url": "/en/central-programs/pre-k-5-network-2"
+  },
+  {
+    "url": "/es/central-programs/pre-k-5-network-2"
+  },
+  {
+    "url": "/en/central-programs/pre-k-5-network-3"
+  },
+  {
+    "url": "/es/central-programs/pre-k-5-network-3"
+  },
+  {
+    "url": "/en/central-programs/printing-and-mail-services"
+  },
+  {
+    "url": "/es/central-programs/printing-and-mail-services"
+  },
+  {
+    "url": "/en/central-programs/procurement-and-distribution"
+  },
+  {
+    "url": "/es/central-programs/procurement-and-distribution"
+  },
+  {
+    "url": "/en/central-programs/research-assessment-and-data"
+  },
+  {
+    "url": "/es/central-programs/research-assessment-and-data"
+  },
+  {
+    "url": "/en/central-programs/risk-management"
+  },
+  {
+    "url": "/es/central-programs/risk-management"
+  },
+  {
+    "url": "/en/central-programs/special-education"
+  },
+  {
+    "url": "/es/central-programs/special-education"
+  },
+  {
+    "url": "/en/central-programs/state-and-federal-programs"
+  },
+  {
+    "url": "/es/central-programs/state-and-federal-programs"
+  },
+  {
+    "url": "/en/central-programs/student-assignment"
+  },
+  {
+    "url": "/es/central-programs/student-assignment"
+  },
+  {
+    "url": "/en/central-programs/summer-programs"
+  },
+  {
+    "url": "/es/central-programs/summer-programs"
+  },
+  {
+    "url": "/en/central-programs/teaching-and-learning"
+  },
+  {
+    "url": "/es/central-programs/teaching-and-learning"
+  },
+  {
+    "url": "/en/central-programs/technology-services"
+  },
+  {
+    "url": "/es/central-programs/technology-services"
+  },
+  {
+    "url": "/en/central-programs/transportation"
+  },
+  {
+    "url": "/es/central-programs/transportation"
+  },
+  {
+    "url": "/en/central-programs/warehouse-distribution"
+  },
+  {
+    "url": "/es/central-programs/warehouse-distribution"
+  },
+  {
+    "url": "/en/404/"
+  },
+  {
+    "url": "/es/404/"
+  },
+  {
+    "url": "/en/about-categories/"
+  },
+  {
+    "url": "/es/about-categories/"
+  },
+  {
+    "url": "/en/about-data/"
+  },
+  {
+    "url": "/es/about-data/"
+  },
+  {
+    "url": "/en/central-programs/"
+  },
+  {
+    "url": "/es/central-programs/"
+  },
+  {
+    "url": "/en/contact/"
+  },
+  {
+    "url": "/es/contact/"
+  },
+  {
+    "url": "/en/"
+  },
+  {
+    "url": "/es/"
+  },
+  {
+    "url": "/en/whats-new/"
+  },
+  {
+    "url": "/es/whats-new/"
+  },
+  {
+    "url": "/en/404.html"
+  },
+  {
+    "url": "/es/404.html"
+  }
+]

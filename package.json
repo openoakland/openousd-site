@@ -6,11 +6,11 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
-    "@nivo/core": "^0.65.0",
-    "@nivo/tooltip": "^0.66.0",
     "@nivo/bar": "^0.66.0",
+    "@nivo/core": "^0.65.0",
     "@nivo/pie": "^0.66.0",
     "@nivo/sankey": "^0.62.0",
+    "@nivo/tooltip": "^0.66.0",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.19.32",
     "gatsby-image": "^2.2.29",
@@ -39,6 +39,7 @@
     "slugify": "^1.4.0"
   },
   "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.57",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
     "resize-observer-polyfill": "^1.5.1"
@@ -55,7 +56,9 @@
     "serve": "gatsby serve",
     "deployStaging": "gatsby build && echo 'staging.openousd.org' > public/CNAME && gh-pages -d public",
     "promoteStaging": "./scripts/promote_staging.sh",
-    "refreshData": "python scripts/build_json.py"
+    "refreshData": "python scripts/build_json.py",
+    "percyStaging": "PERCY_TOKEN=$(grep PERCY_TOKEN .env.production | cut -d '=' -f2) PERCY_BRANCH=main percy snapshot --base-url=https://staging.openousd.org  scripts/testing/page-paths.json",
+    "percyProd": "PERCY_TOKEN=$(grep PERCY_TOKEN .env.production | cut -d '=' -f2) PERCY_BRANCH=main percy snapshot --base-url=https://openousd.org scripts/testing/page-paths.json"
   },
   "repository": {
     "type": "git",
@@ -63,5 +66,14 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "percy": {
+    "version": 2,
+    "snapshot": {
+      "widths": [
+        1280,
+        375
+      ]
+    }
   }
 }
