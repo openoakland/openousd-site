@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -24,7 +24,7 @@ const AboutDataPage = ({ data }) => {
                 <p>
                   <strong>{contentBlock.heading}</strong>
                 </p>
-                {documentToReactComponents(contentBlock.content.json)}
+                {renderRichText(contentBlock.content)}
               </div>
             </Col>
           </Row>
@@ -47,7 +47,7 @@ export const query = graphql`
             blockId
             heading
             content {
-              json
+              raw
             }
           }
         }

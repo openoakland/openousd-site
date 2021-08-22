@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby-plugin-intl"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import LaunchIcon from "@material-ui/icons/Launch"
 import twitterIcon from "../images/icons/twitter-icon-blue.svg"
@@ -93,14 +93,12 @@ const Contact = ({ data }) => {
                   {twitterContentBlock.heading}{" "}
                   <img src={twitterIcon} id="twitter-icon" alt="twitter icon" />
                 </h1>
-                <div>
-                  {documentToReactComponents(twitterContentBlock.content.json)}
-                </div>
+                <div>{renderRichText(twitterContentBlock.content)}</div>
               </div>
               <div className="pt-4">
                 <h1>{meetupContentBlock.heading}</h1>
                 <div>
-                  {documentToReactComponents(meetupContentBlock.content.json)}
+                  {renderRichText(meetupContentBlock.content)}
                   <a
                     href="https://www.meetup.com/OpenOakland/events/"
                     target="_blank"
@@ -115,11 +113,7 @@ const Contact = ({ data }) => {
                 <p>
                   <Link to="/about-data/">{viewDataLink}</Link>
                 </p>
-                <div>
-                  {documentToReactComponents(
-                    dataSourceContentBlock.content.json
-                  )}
-                </div>
+                <div>{renderRichText(dataSourceContentBlock.content)}</div>
               </div>
             </div>
           </Col>
@@ -156,7 +150,7 @@ export const query = graphql`
             blockId
             heading
             content {
-              json
+              raw
             }
           }
         }
