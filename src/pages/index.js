@@ -5,7 +5,7 @@ import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import Layout from "../components/layout"
-import MuralImage from "../components/mural-image"
+import { StaticImage } from "gatsby-plugin-image"
 import Seo from "../components/seo"
 import "../styles/pages/index.scss"
 
@@ -16,7 +16,10 @@ const IndexPage = ({ data }) => (
     <Seo title="Home" />
 
     <div className="hero mx-auto">
-      <MuralImage />
+      <StaticImage
+        src="../images/mural.png"
+        alt="Live Learn Love mural at Roosevelt Middle School"
+      />
     </div>
 
     <Container>
