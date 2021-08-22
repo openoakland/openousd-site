@@ -1,3 +1,5 @@
+@use "src/styles/variables" as *;
+
 // Bootstrap
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -90,7 +92,7 @@ a {
 }
 
 .strong {
-    font-weight: $bold-weight;
+  font-weight: $bold-weight;
 }
 
 .btn-group {

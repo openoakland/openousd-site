@@ -21,13 +21,12 @@
     "gatsby-plugin-manifest": "^3.10.0",
     "gatsby-plugin-offline": "^3.0.16",
     "gatsby-plugin-react-helmet": "^3.1.13",
-    "gatsby-plugin-sass": "^2.1.20",
+    "gatsby-plugin-sass": "^4.12.0",
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-source-contentful": "^5.10.0",
     "gatsby-source-filesystem": "^3.12.0",
     "gatsby-transformer-json": "^3.12.0",
     "gatsby-transformer-sharp": "^3.10.0",
-    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
@@ -37,6 +36,7 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-scroll": "^1.8.1",
+    "sass": "^1.38.0",
     "slugify": "^1.4.0"
   },
   "devDependencies": {
