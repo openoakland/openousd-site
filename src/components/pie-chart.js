@@ -6,7 +6,7 @@ import ResizeObserver from "resize-observer-polyfill"
 import ArrowDropDown from "@material-ui/icons/ArrowDropDown"
 import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
 import Person from "@material-ui/icons/Person"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { MARKS } from "@contentful/rich-text-types"
 import { formatToUSD } from "../components/table-utilities"
 import "./pie-chart.scss"
@@ -14,7 +14,7 @@ import "./pie-chart.scss"
 const contentPaths = {
   centralProgramsLabel: "centralProgramsLabel",
   otherLabel: "otherLabel",
-  description: "description.json",
+  description: "description",
   statDescriptor: "statDescriptor",
   increaseDescriptor: "increaseDescriptor",
   decreaseDescriptor: "decreaseDescriptor",
@@ -39,10 +39,10 @@ const parseObject = (objectToParse, paths) => {
   return result
 }
 
-const useResizeObserverRef = callback => {
+const useResizeObserverRef = (callback) => {
   const resizeObserver = useMemo(() => new ResizeObserver(callback), [callback])
   const ref = useCallback(
-    node => {
+    (node) => {
       if (node) resizeObserver.observe(node)
     },
     [resizeObserver]
@@ -50,46 +50,44 @@ const useResizeObserverRef = callback => {
   return ref
 }
 
-const CenteredMetric = ({ descriptor, icon, percentOfTotal }) => ({
-  dataWithArc,
-  centerX,
-  centerY,
-}) => {
-  return (
-    <g transform="translate(0,-8)">
-      {icon(centerX - 73, centerY - 150)}
-      <text
-        x={centerX + 20}
-        y={centerY}
-        textAnchor="middle"
-        dominantBaseline="central"
-        style={{
-          fontSize: "45px",
-          fontWeight: "600",
-        }}
-      >
-        {percentOfTotal}%
-      </text>
-      <text
-        x={centerX}
-        y={centerY + 35}
-        textAnchor="middle"
-        dominantBaseline="central"
-        style={{
-          fontSize: "20px",
-          fontWeight: "200",
-        }}
-      >
-        {descriptor}
-      </text>
-    </g>
-  )
-}
+const CenteredMetric =
+  ({ descriptor, icon, percentOfTotal }) =>
+  ({ dataWithArc, centerX, centerY }) => {
+    return (
+      <g transform="translate(0,-8)">
+        {icon(centerX - 73, centerY - 150)}
+        <text
+          x={centerX + 20}
+          y={centerY}
+          textAnchor="middle"
+          dominantBaseline="central"
+          style={{
+            fontSize: "45px",
+            fontWeight: "600",
+          }}
+        >
+          {percentOfTotal}%
+        </text>
+        <text
+          x={centerX}
+          y={centerY + 35}
+          textAnchor="middle"
+          dominantBaseline="central"
+          style={{
+            fontSize: "20px",
+            fontWeight: "200",
+          }}
+        >
+          {descriptor}
+        </text>
+      </g>
+    )
+  }
 
 const Description = ({ percentOfTotal, data, content, formatValue }) => {
   const renderOptions = {
     renderMark: {
-      [MARKS.BOLD]: text => {
+      [MARKS.BOLD]: (text) => {
         if (text === "**Percent of Total**") {
           return <strong>{percentOfTotal}%</strong>
         } else if (text === "**Change Descriptor**") {
@@ -118,7 +116,7 @@ const Description = ({ percentOfTotal, data, content, formatValue }) => {
   return (
     <div className="description">
       <div className="">
-        {documentToReactComponents(content.description, renderOptions)}
+        {renderRichText(content.description, renderOptions)}
       </div>
     </div>
   )
@@ -179,7 +177,7 @@ const CentralToTotalComparisonPie = ({
           cornerRadius={3}
           margin={{ top: 20, bottom: 25 }}
           enableRadialLabels={showRadialLabels}
-          radialLabel={data => data.id}
+          radialLabel={(data) => data.id}
           radialLabelsLinkColor={{ from: "color" }}
           radialLabelsTextColor={{
             from: "color",
@@ -190,7 +188,7 @@ const CentralToTotalComparisonPie = ({
           radialLabelsLinkOffset={0}
           radialLabelsLinkHorizontalLength={15}
           enableSliceLabels={false}
-          sliceLabel={data => formatValue(data.value)}
+          sliceLabel={(data) => formatValue(data.value)}
           slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
           valueFormat={formatValue}
           onMouseEnter={({ data }) => setActiveNode(data)}
@@ -273,7 +271,7 @@ export const StaffPieChart = ({ data, content }) => {
     <CentralToTotalComparisonPie
       data={parsedData}
       content={parsedContent}
-      formatValue={value => Math.floor(value)}
+      formatValue={(value) => Math.floor(value)}
       metricIcon={icon}
       centralProgramsColor={"#129c9b"}
     />
