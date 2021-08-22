@@ -1,133 +1,132 @@
+@use "src/styles/variables" as *;
+
 @import "../styles/bootstrap/functions";
 @import "../styles/bootstrap/variables";
 @import "../styles/bootstrap/mixins/breakpoints";
 
-.container.header{
-    margin-bottom:0;
-    padding:0;
+.container.header {
+  margin-bottom: 0;
+  padding: 0;
 }
 
-#logo img{
-    width:100%;
-    max-width: 400px;
+#logo img {
+  width: 100%;
+  max-width: 400px;
 }
 #tagline {
-    width:100%;
-    max-width: 400px;
-    color: #4A4A4A;
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: italic;
+  width: 100%;
+  max-width: 400px;
+  color: #4a4a4a;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: italic;
 }
-#logo-row, #menu-row {
-    width: 100%;
-    padding:10px 0 5px 0;
+#logo-row,
+#menu-row {
+  width: 100%;
+  padding: 10px 0 5px 0;
 
-    .navbar-toggler {
-        border-color: white;
-    }
+  .navbar-toggler {
+    border-color: white;
+  }
 }
 #menu-row {
-    box-shadow:  $box-shadow;
+  box-shadow: $box-shadow;
 }
 
 .language-picker {
-    a {
-        color: black !important;
-    }
+  a {
+    color: black !important;
+  }
 }
 
-
 .menu {
+  width: 100%;
+  hr {
+    border: 1px solid red;
+    display: block;
     width: 100%;
-    hr {
-        border: 1px solid red;
+    border-color: $theme-blue;
+    margin: 0;
+    box-sizing: inherit;
+  }
+
+  // this is a hidden psuedo-element to keep
+  // the menu items centered and balance with the langauage picker
+  // It's not needed on the mobile menu
+  @include media-breakpoint-up(md) {
+    #menu-items::before {
+      display: flex;
+      flex: 1;
+      content: "placeholder";
+      margin: 1px auto 1px 1px;
+      visibility: hidden;
+      padding: 5px;
+      background: #ddd;
+    }
+  }
+
+  #menu-items {
+    .language-picker {
+      display: flex;
+      flex: 1;
+      padding-top: 16px;
+
+      .nav-item {
+        margin-left: auto;
+      }
+    }
+
+    & > div.nav-item {
+      padding: 10px 20px;
+      font-family: "Roboto Mono", sans-serif;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      a {
+        color: black;
+        text-decoration: none;
+
+        &.active {
+          color: $theme-blue;
+          pointer-events: none;
+
+          span.dot {
+            box-shadow: inset 0 0 0 3px $theme-blue;
+            background-color: #fff;
+          }
+        }
+      }
+      // to make the dots work
+      // https://tympanus.net/codrops/2014/01/21/dot-navigation-styles/
+      span {
+        position: relative;
         display: block;
-        width: 100%;
-        border-color: $theme-blue;
-        margin: 0;
-        box-sizing:inherit;
-    }
+        margin: 0 16px;
+        width: 16px;
+        height: 16px;
 
-    // this is a hidden psuedo-element to keep
-    // the menu items centered and balance with the langauage picker
-    // It's not needed on the mobile menu
-    @include media-breakpoint-up(md) {
-        #menu-items::before {
-            display: flex;
-            flex: 1;
-            content:"placeholder";
-            margin: 1px auto 1px 1px;
-            visibility: hidden;
-            padding: 5px;
-            background: #ddd;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+
+        span.dot {
+          top: -19px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          outline: none;
+          border-radius: 50%;
+          background-color: transparent;
+          cursor: pointer; /* make the text accessible to screen readers */
+          position: absolute;
+
+          overflow: hidden;
+          box-shadow: none;
+          transition: background 0.3s;
         }
+      }
     }
-
-    #menu-items {
-
-        .language-picker {
-            display: flex;
-            flex: 1;
-            padding-top: 16px;
-
-            .nav-item {
-                margin-left: auto;
-            }
-        }
-
-        & > div.nav-item {
-            padding: 10px 20px;
-            font-family: 'Roboto Mono', sans-serif;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-
-            a {
-                color: black;
-                text-decoration: none;
-
-                &.active {
-                    color: $theme-blue;
-                    pointer-events: none;
-
-                    span.dot {
-                        box-shadow: inset 0 0 0 3px $theme-blue;
-                        background-color: #fff;
-                    }
-                }
-            }
-            // to make the dots work
-            // https://tympanus.net/codrops/2014/01/21/dot-navigation-styles/
-            span {
-                position: relative;
-                display: block;
-                margin: 0 16px;
-                width: 16px;
-                height: 16px;
-
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-
-                span.dot {
-                    top: -19px;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    outline: none;
-                    border-radius: 50%;
-                    background-color: transparent;
-                    cursor: pointer; /* make the text accessible to screen readers */
-                    position: absolute;
-
-                    overflow: hidden;
-                    box-shadow: none;
-                    transition: background 0.3s;
-                }
-            }
-        }
-
-    }
-
+  }
 }

@@ -24,12 +24,7 @@ module.exports = {
         head: false,
       },
     },
-    {
-      resolve: "gatsby-plugin-sass",
-      options: {
-        data: `@import "./src/styles/_variables.scss";`,
-      },
-    },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -1,92 +1,93 @@
+@use "src/styles/variables" as *;
+
 .react-bootstrap-table {
-    a, .btn-link, .table-header {
-        color: $theme-blue;
+  a,
+  .btn-link,
+  .table-header {
+    color: $theme-blue;
+  }
+
+  .table-header {
+    font-size: 1.1rem;
+  }
+
+  .sticky-first-row {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    font-weight: $bold-weight;
+  }
+
+  .over-budget {
+    color: #e60000;
+  }
+
+  th {
+    &:focus {
+      outline: none !important;
     }
 
-    .table-header {
-        font-size: 1.1rem;
+    &.sortable {
+      cursor: pointer;
+      &:hover {
+        background-color: $hover-highlight;
+      }
     }
+  }
 
-    .sticky-first-row {
-        border-top: 2px solid grey;
-        border-bottom: 2px solid grey;
-        font-weight: $bold-weight;
-    }
-
-    .over-budget {
-        color: #E60000;
-    }
-
-    th {
-        &:focus {
-            outline: none !important;
-        }
-
-        &.sortable {
-            cursor: pointer;
-            &:hover {
-                background-color: $hover-highlight;
-            }
-        }
-    }
-
-    .table-header {
-        font-size: 1.1rem;
-    }
-
-
-
+  .table-header {
+    font-size: 1.1rem;
+  }
 }
 
 .table-search-bar {
-    font-style: italic;
-    border-radius: 1rem;
-    width: 250px;
+  font-style: italic;
+  border-radius: 1rem;
+  width: 250px;
 }
 
 .clear-btn {
-    border-color: #ccc;
-    color: #333;
-    border-radius: 1rem;
-    margin-left: 8px;
+  border-color: #ccc;
+  color: #333;
+  border-radius: 1rem;
+  margin-left: 8px;
 }
 // Show / hide columns
 
 #show-hide-columns-modal {
-    .modal-header {
-        border-bottom: 0px;
-        .close {
-            font-size: 2em !important;
-        }
+  .modal-header {
+    border-bottom: 0px;
+    .close {
+      font-size: 2em !important;
     }
-    .modal-body {
-        .heading {
-            font-size: 1.1em;
-        }
-        .column-option {
-            background-color: white;
-            border: 0px;
-            display: block;
-            margin-bottom: 3px;
-
-            span {
-                font-weight: normal;
-            }
-
-            &:hover {
-                background-color: $hover-highlight;
-            }
-
-            &.visible svg {
-                fill: rgb(182,46,61);
-            }
-
-            &.hidden svg {
-                fill: $theme-blue;
-            }
-        }
+  }
+  .modal-body {
+    .heading {
+      font-size: 1.1em;
     }
-    .modal-footer {
-        border-top: 0px;
+    .column-option {
+      background-color: white;
+      border: 0px;
+      display: block;
+      margin-bottom: 3px;
+
+      span {
+        font-weight: normal;
+      }
+
+      &:hover {
+        background-color: $hover-highlight;
+      }
+
+      &.visible svg {
+        fill: rgb(182, 46, 61);
+      }
+
+      &.hidden svg {
+        fill: $theme-blue;
+      }
     }
+  }
+  .modal-footer {
+    border-top: 0px;
+  }
 }
