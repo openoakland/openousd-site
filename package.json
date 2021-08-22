@@ -20,7 +20,7 @@
     "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^3.10.0",
     "gatsby-plugin-offline": "^3.0.16",
-    "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-react-helmet": "^4.12.0",
     "gatsby-plugin-sass": "^4.12.0",
     "gatsby-plugin-sharp": "^3.10.2",
     "gatsby-source-contentful": "^5.10.0",
