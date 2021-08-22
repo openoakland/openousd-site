@@ -40,6 +40,7 @@ const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
   const translatedProgramName = data.contentfulCentralProgram.programName
   const contentfulProgramDescription = data.contentfulCentralProgram.description
+
   const content = data.contentfulPage.content
   return (
     <Layout>
@@ -57,10 +58,11 @@ const CentralProgram = ({ data }) => {
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h1>{translatedProgramName}</h1>
-                {renderRichText(
-                  contentfulProgramDescription,
-                  descriptionRenderOptions
-                )}
+                {contentfulProgramDescription &&
+                  renderRichText(
+                    contentfulProgramDescription,
+                    descriptionRenderOptions
+                  )}
                 {data.contentfulCentralProgram.OUSDProgramLink ? (
                   <div className="pt-3">
                     <a
