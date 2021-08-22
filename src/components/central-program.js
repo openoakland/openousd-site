@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES } from "@contentful/rich-text-types"
 
 import StaffRolesTable from "../components/central-program/staff-roles-table"
@@ -39,8 +39,7 @@ const descriptionRenderOptions = {
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
   const translatedProgramName = data.contentfulCentralProgram.programName
-  const contentfulProgramDescription =
-    data.contentfulCentralProgram.description?.json
+  const contentfulProgramDescription = data.contentfulCentralProgram.description
   const content = data.contentfulPage.content
   return (
     <Layout>
@@ -58,7 +57,7 @@ const CentralProgram = ({ data }) => {
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
                 <h1>{translatedProgramName}</h1>
-                {documentToReactComponents(
+                {renderRichText(
                   contentfulProgramDescription,
                   descriptionRenderOptions
                 )}
@@ -154,7 +153,7 @@ export const query = graphql`
     ) {
       programName
       description {
-        json
+        raw
       }
       OUSDProgramLink
     }
@@ -191,8 +190,8 @@ export const query = graphql`
             groupingOptions {
               optionId
               optionLabel
-              childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode {
-                json
+              helperDescription {
+                raw
               }
             }
             rightLabel

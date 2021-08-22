@@ -151,7 +151,7 @@ export const query = graphql`
         name
         centralProgramsLabel
         description {
-          json
+          raw
         }
         heading
         otherLabel
@@ -203,8 +203,8 @@ export const query = graphql`
             groupingOptions {
               optionId
               optionLabel
-              childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode {
-                json
+              helperDescription {
+                raw
               }
             }
             rightLabel

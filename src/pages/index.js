@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Link } from "gatsby-plugin-intl"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import Layout from "../components/layout"
 import MuralImage from "../components/mural-image"
@@ -23,16 +23,12 @@ const IndexPage = ({ data }) => (
       <Row className="descriptions justify-content-center">
         <Col xs={11} lg={5} className="px-lg-5 py-lg-4 px-3 py-3">
           <h1 className="">{data.contentfulPage.content.card01Title}</h1>
-          {documentToReactComponents(
-            data.contentfulPage.content.card01Content.json
-          )}
+          {renderRichText(data.contentfulPage.content.card01Content)}
         </Col>
 
         <Col xs={11} lg={5} className="px-lg-5 py-lg-4 px-3 py-3">
           <h1 className="">{data.contentfulPage.content.card02Title}</h1>
-          {documentToReactComponents(
-            data.contentfulPage.content.card02Content.json
-          )}
+          {renderRichText(data.contentfulPage.content.card02Content)}
           <Link to="/central-programs/">
             <Button
               variant="primary"
@@ -54,9 +50,7 @@ const IndexPage = ({ data }) => (
       <Row>
         <Col xs={11} lg={5} className="mx-auto ml-lg-5 mt-3">
           <div className="footnote">
-            {documentToReactComponents(
-              data.contentfulPage.content.heroImageAttribution.json
-            )}
+            {renderRichText(data.contentfulPage.content.heroImageAttribution)}
           </div>
         </Col>
       </Row>
@@ -71,16 +65,16 @@ export const query = graphql`
         ... on ContentfulHomePageContent {
           id
           card01Content {
-            json
+            raw
           }
           card01Title
           card02Content {
-            json
+            raw
           }
           card02Title
           exploreCentralProgramsButton
           heroImageAttribution {
-            json
+            raw
           }
         }
       }

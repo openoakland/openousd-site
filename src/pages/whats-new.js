@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Container, Row, Col, ListGroup } from "react-bootstrap"
 import { Link, Element } from "react-scroll"
 import { BLOCKS } from "@contentful/rich-text-types"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 // import twitterIcon from '../images/icons/twitter-icon-blue.svg'
 import NewFeature from "../components/new-feature"
@@ -26,7 +26,7 @@ const dateToDivID = (date) => {
 }
 
 // options to replace formatting for rich text
-// rendering rich text with `documentToReactComponents` wraps it in a `<p>` so this removes it
+// rendering rich text with `renderRIchText` wraps it in a `<p>` so this removes it
 const options = {
   renderNode: {
     [BLOCKS.PARAGRAPH]: (node, children) => children,
@@ -93,10 +93,7 @@ const WhatsNewPage = ({ data, pageContext }) => {
                   <NewFeature
                     heading={feature.heading}
                     date={dateToString(feature.date, node_locale)}
-                    description={documentToReactComponents(
-                      feature.description.json,
-                      options
-                    )}
+                    description={renderRichText(feature.description, options)}
                     pagePath={feature.pagePath}
                     pagePathLinkName={feature.pagePathLinkName}
                     image={
@@ -148,7 +145,7 @@ export const query = graphql`
         id
         tweetId
         description {
-          json
+          raw
         }
         pagePathLinkName
         pagePath
