@@ -85,6 +85,7 @@ exports.createPages = async ({ graphql, actions }) => {
   })
 }
 
+// Generating a list of pages which is used for Percy testing
 exports.onPostBuild = async ({ graphql }) => {
   const { data } = await graphql(`
     {
