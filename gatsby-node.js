@@ -1,5 +1,6 @@
 const path = require(`path`)
 var slugify = require("slugify")
+const fs = require("fs").promises
 
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
@@ -71,7 +72,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allCentralProgramsJson.nodes.forEach(node => {
+  result.data.allCentralProgramsJson.nodes.forEach((node) => {
     createPage({
       path: node.fields.path,
       component: path.resolve(`./src/components/central-program.js`),
@@ -82,4 +83,29 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+}
+
+exports.onPostBuild = async ({ graphql }) => {
+  const { data } = await graphql(`
+    {
+      pages: allSitePage(filter: { path: { regex: "/^/en/|^/es//" } }) {
+        nodes {
+          path
+        }
+      }
+    }
+  `)
+
+  return fs.writeFile(
+    path.resolve(__dirname, "scripts/testing/page-paths.json"),
+    JSON.stringify(
+      data.pages.nodes.map((node) => {
+        return {
+          url: node.path,
+        }
+      }),
+      null,
+      2
+    )
+  )
 }
