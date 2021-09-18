@@ -28,8 +28,8 @@ const descriptionRenderOptions = {
   renderNode: {
     [INLINES.ENTRY_HYPERLINK]: (node, children) => {
       return (
-        <ProgramLink siteCode={node.data.target.fields.siteCode.en}>
-          {children[0]}
+        <ProgramLink siteCode={node.data.target.siteCode}>
+          {node.data.target.programName}
         </ProgramLink>
       )
     },
@@ -156,6 +156,14 @@ export const query = graphql`
       programName
       description {
         raw
+        references {
+          ... on ContentfulCentralProgram {
+            __typename
+            siteCode
+            programName
+            contentful_id
+          }
+        }
       }
       OUSDProgramLink
     }
