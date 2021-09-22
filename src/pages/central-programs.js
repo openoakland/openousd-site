@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
@@ -29,10 +29,10 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
   // Translating content for the table
-  centralPrograms = centralPrograms.map(program => {
+  centralPrograms = centralPrograms.map((program) => {
     try {
       program.name = translatedProgramNames.find(
-        t => t.siteCode === program.code
+        (t) => t.siteCode === program.code
       ).programName
     } catch (e) {
       console.warn(`Could not find Contentful translation for ${program.name}`)
@@ -65,7 +65,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
 
   return (
     <Layout pageClassName="central-programs-page">
-      <SEO title={data.contentfulPage.title} />
+      <Seo title={data.contentfulPage.title} />
       <Container>
         <Row>
           <Col>
@@ -151,7 +151,7 @@ export const query = graphql`
         name
         centralProgramsLabel
         description {
-          json
+          raw
         }
         heading
         otherLabel
@@ -203,8 +203,8 @@ export const query = graphql`
             groupingOptions {
               optionId
               optionLabel
-              childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode {
-                json
+              helperDescription {
+                raw
               }
             }
             rightLabel

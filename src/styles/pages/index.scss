@@ -1,22 +1,21 @@
-.index-page.main-container{
-    padding-top:0;
+.index-page.main-container {
+  padding-top: 0;
 }
 
 .index-page {
+  .container {
+    margin-bottom: 6rem;
+  }
 
-    .container{
-        margin-bottom: 6rem;
-    }
+  .descriptions {
+    margin-top: -6rem;
+  }
 
-    .descriptions{
-        margin-top: -6rem;
-    }
-
-    .descriptions > div{
-        background:#fff;
-        box-shadow: 0 0.5rem 0.75rem 0.4rem rgba(0,0,0,0.2);
-        margin: 1rem 0.8rem;
-        /*padding: 2rem 3rem;*/
-        border-radius: 0.5rem;
-    }
+  .descriptions > div {
+    background: #fff;
+    box-shadow: 0 0.5rem 0.75rem 0.4rem rgba(0, 0, 0, 0.2);
+    margin: 1rem 0.8rem;
+    /*padding: 2rem 3rem;*/
+    border-radius: 0.5rem;
+  }
 }

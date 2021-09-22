@@ -1,13 +1,13 @@
 import React from "react"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import { Link } from "gatsby-plugin-intl"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import LaunchIcon from "@material-ui/icons/Launch"
 import twitterIcon from "../images/icons/twitter-icon-blue.svg"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "../styles/pages/contact.scss"
 
 const Contact = ({ data }) => {
@@ -24,22 +24,23 @@ const Contact = ({ data }) => {
     viewDataLink,
   } = content
 
-  const formInputForName = name => formInputs.find(input => input.name === name)
+  const formInputForName = (name) =>
+    formInputs.find((input) => input.name === name)
   const emailFormInput = formInputForName("email")
   const nameFormInput = formInputForName("name")
   const purposeFormInput = formInputForName("purpose")
   const messageFormInput = formInputForName("message")
   const signUpForUpdatesFormInput = formInputForName("signUpForUpdates")
 
-  const contentBlockForID = id =>
-    contentBlocks.find(contentBlock => contentBlock.blockId === id)
+  const contentBlockForID = (id) =>
+    contentBlocks.find((contentBlock) => contentBlock.blockId === id)
   const twitterContentBlock = contentBlockForID("twitter")
   const meetupContentBlock = contentBlockForID("meetup")
   const dataSourceContentBlock = contentBlockForID("dataSource")
 
   return (
     <Layout pageClassName="contact-page">
-      <SEO title={title} />
+      <Seo title={title} />
       <Container>
         <Row>
           <Col md={6} lg={5} id="contact-form">
@@ -54,7 +55,7 @@ const Contact = ({ data }) => {
               <Form.Control type="text" name="name" autoComplete="name" />
               <Form.Label>{purposeFormInput.label}</Form.Label>
               <Form.Control as="select" name="purpose">
-                {purposeFormInput.selectOptions.map((option,index) => (
+                {purposeFormInput.selectOptions.map((option, index) => (
                   <option key={index}>{option}</option>
                 ))}
               </Form.Control>
@@ -92,14 +93,12 @@ const Contact = ({ data }) => {
                   {twitterContentBlock.heading}{" "}
                   <img src={twitterIcon} id="twitter-icon" alt="twitter icon" />
                 </h1>
-                <div>
-                  {documentToReactComponents(twitterContentBlock.content.json)}
-                </div>
+                <div>{renderRichText(twitterContentBlock.content)}</div>
               </div>
               <div className="pt-4">
                 <h1>{meetupContentBlock.heading}</h1>
                 <div>
-                  {documentToReactComponents(meetupContentBlock.content.json)}
+                  {renderRichText(meetupContentBlock.content)}
                   <a
                     href="https://www.meetup.com/OpenOakland/events/"
                     target="_blank"
@@ -114,11 +113,7 @@ const Contact = ({ data }) => {
                 <p>
                   <Link to="/about-data/">{viewDataLink}</Link>
                 </p>
-                <div>
-                  {documentToReactComponents(
-                    dataSourceContentBlock.content.json
-                  )}
-                </div>
+                <div>{renderRichText(dataSourceContentBlock.content)}</div>
               </div>
             </div>
           </Col>
@@ -155,7 +150,7 @@ export const query = graphql`
             blockId
             heading
             content {
-              json
+              raw
             }
           }
         }

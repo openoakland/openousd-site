@@ -318,6 +318,12 @@
     "url": "/es/central-programs/warehouse-distribution"
   },
   {
+    "url": "/en/404.html"
+  },
+  {
+    "url": "/es/404.html"
+  },
+  {
     "url": "/en/404/"
   },
   {
@@ -358,11 +364,5 @@
   },
   {
     "url": "/es/whats-new/"
-  },
-  {
-    "url": "/en/404.html"
-  },
-  {
-    "url": "/es/404.html"
   }
 ]

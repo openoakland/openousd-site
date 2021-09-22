@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby-plugin-intl"
 import PropTypes from "prop-types"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import { ResponsiveSankey } from "@nivo/sankey"
 import { Button, ButtonGroup } from "react-bootstrap"
@@ -21,14 +21,14 @@ function SankeyChart({
   const [groupBy, setGroupBy] = useState(NONE)
   let groupByRestricted = groupBy === RESTRICTED
   const restrictedOption = labelContent.groupingOptions.find(
-    o => o.optionId === RESTRICTED
+    (o) => o.optionId === RESTRICTED
   )
 
   const leftLabel = labelContent.leftLabel
   const rightLabel = labelContent.rightLabel
 
   let totalsByNode = {}
-  data.nodes.map(node => (totalsByNode[node.id] = formatCurrency(node.total)))
+  data.nodes.map((node) => (totalsByNode[node.id] = formatCurrency(node.total)))
 
   function formatCurrency(value) {
     return Math.floor(Number(value)).toLocaleString("en-US", {
@@ -60,7 +60,7 @@ function SankeyChart({
     )
   }
 
-  const xAxisLabels = props => (
+  const xAxisLabels = (props) => (
     <g transform="translate(0,-30)" id="overlay">
       <text x={leftLabel.length * -4}>{leftLabel}</text>
       <text x={props.width - 90}>{rightLabel}</text>
@@ -74,7 +74,7 @@ function SankeyChart({
           <div className="control">
             <span className="label">{labelContent.groupingLabel} </span>
             <ButtonGroup>
-              {labelContent.groupingOptions.map(option => (
+              {labelContent.groupingOptions.map((option) => (
                 <Button
                   size="sm"
                   key={option.optionId}
@@ -100,11 +100,7 @@ function SankeyChart({
           <div
             className={"text-center" + (!groupByRestricted ? " d-none" : "")}
           >
-            {documentToReactComponents(
-              restrictedOption
-                .childContentfulSankeyGroupingOptionHelperDescriptionRichTextNode
-                .json
-            )}
+            {renderRichText(restrictedOption.helperDescription)}
           </div>
         </div>
         <ResponsiveSankey
@@ -129,8 +125,8 @@ function SankeyChart({
           animate={true}
           motionStiffness={140}
           motionDamping={13}
-          tooltipFormat={value => formatCurrency(value)}
-          nodeTooltip={node => getNodeTooltip(node)}
+          tooltipFormat={(value) => formatCurrency(value)}
+          nodeTooltip={(node) => getNodeTooltip(node)}
           layers={["links", "nodes", "labels", "legends", xAxisLabels]}
           onClick={(data, event) => {
             if ("id" in data) {
