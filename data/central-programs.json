@@ -242,19 +242,6 @@
     }
   },
   {
-    "code": 996,
-    "name": "Budget Plug for Interims",
-    "category": "Other",
-    "spending": 1250,
-    "budget": -16511274,
-    "year": 2020,
-    "eoy_total_fte": null,
-    "eoy_total_positions": null,
-    "remaining_budget_percent": 100,
-    "staff_roles": [],
-    "staff_bargaining_units": []
-  },
-  {
     "code": 988,
     "name": "Buildings & Grounds",
     "category": "Facilities",
