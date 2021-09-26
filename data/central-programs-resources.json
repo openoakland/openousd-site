@@ -3,105 +3,121 @@
     "code": 0,
     "name": "General Purpose",
     "category": "General (Base)",
-    "spending": 44637359.11,
-    "budget": 40440561.96,
-    "year": 2019
+    "spending": 52127625.2,
+    "budget": 34692370.33,
+    "year": 2020
   },
   {
     "code": 2,
     "name": "Supplemental Support",
     "category": "Supplemental & Concentration",
-    "spending": 7754674.29,
-    "budget": 6101508,
-    "year": 2019
+    "spending": 8135588,
+    "budget": 6840414,
+    "year": 2020
+  },
+  {
+    "code": 4,
+    "name": "School Site Approved Appeals",
+    "category": "Supplemental & Concentration",
+    "spending": 0,
+    "budget": -68837,
+    "year": 2020
   },
   {
     "code": 5,
     "name": "Central Office Supplemental",
     "category": "Supplemental & Concentration",
-    "spending": 24230338.91,
-    "budget": 29131664.52,
-    "year": 2019
+    "spending": 24061978.94,
+    "budget": 22006656,
+    "year": 2020
+  },
+  {
+    "code": 10,
+    "name": "GP Cost Avoidance",
+    "category": "Other Revenue",
+    "spending": 4828355.32,
+    "budget": 1079968.63,
+    "year": 2020
   },
   {
     "code": 20,
     "name": "Home & Hospital Education",
     "category": "State",
-    "spending": 951801.07,
-    "budget": 982295,
-    "year": 2019
+    "spending": 880696.1,
+    "budget": 871776,
+    "year": 2020
   },
   {
     "code": 39,
     "name": "Prop 39 Charter Repairs",
     "category": "Other Revenue",
-    "spending": 61221.67,
-    "budget": 334311,
-    "year": 2019
+    "spending": 53194.75,
+    "budget": 54127,
+    "year": 2020
+  },
+  {
+    "code": 40,
+    "name": "Unrestricted AB1840",
+    "category": "State",
+    "spending": 0,
+    "budget": 209160,
+    "year": 2020
   },
   {
     "code": 50,
     "name": "Employees on Loan",
     "category": "Other Revenue",
-    "spending": 315987.02,
-    "budget": 296047.64,
-    "year": 2019
+    "spending": 427417.94,
+    "budget": 419506,
+    "year": 2020
   },
   {
     "code": 60,
     "name": "Stale Dated Warrants",
     "category": "Other Revenue",
     "spending": 0,
-    "budget": 11974.09,
-    "year": 2019
+    "budget": 9746.72,
+    "year": 2020
   },
   {
     "code": 70,
     "name": "Civic Center Rental",
     "category": "Other Revenue",
-    "spending": 430245.83,
-    "budget": 264544,
-    "year": 2019
+    "spending": 79475.35,
+    "budget": 36600,
+    "year": 2020
   },
   {
-    "code": 75,
-    "name": "ECE Rental Lease",
+    "code": 71,
+    "name": "Facilitron Rent",
     "category": "Other Revenue",
-    "spending": 0,
-    "budget": 23876,
-    "year": 2019
+    "spending": 6613.9,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 95,
     "name": "Charter School Office",
     "category": "Other Revenue",
-    "spending": 1072244.9,
-    "budget": 1365437,
-    "year": 2019
+    "spending": 1087275.32,
+    "budget": 1118404,
+    "year": 2020
   },
   {
     "code": 100,
     "name": "All Other Local Sources",
     "category": "Other Revenue",
-    "spending": 0,
-    "budget": 20883,
-    "year": 2019
-  },
-  {
-    "code": 112,
-    "name": "Legal Settlements",
-    "category": "Other Revenue",
-    "spending": 59221.25,
-    "budget": -1.15,
-    "year": 2019
+    "spending": 8115.66,
+    "budget": 10098,
+    "year": 2020
   },
   {
     "code": 720,
     "name": "Unrest Transportation",
     "category": "State",
-    "spending": 12617808.32,
-    "budget": 12636844,
-    "year": 2019
+    "spending": 6329303.82,
+    "budget": 6194655,
+    "year": 2020
   },
   {
     "code": 900,
@@ -109,79 +125,135 @@
     "category": "State",
     "spending": 2094903,
     "budget": 2094903,
-    "year": 2019
+    "year": 2020
+  },
+  {
+    "code": 1100,
+    "name": "State Lottery",
+    "category": "State",
+    "spending": 3393522.21,
+    "budget": 3757681,
+    "year": 2020
   },
   {
     "code": 3010,
     "name": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
     "category": "Federal",
-    "spending": 5763432.93,
-    "budget": 8239170.41,
-    "year": 2019
+    "spending": 2719510.83,
+    "budget": 7843221.87,
+    "year": 2020
   },
   {
     "code": 3180,
     "name": "NCLB: Title I, School Improvement Grant",
     "category": "Federal",
-    "spending": 1039502.81,
-    "budget": 1189888.87,
-    "year": 2019
+    "spending": 1080115.36,
+    "budget": 1090177.41,
+    "year": 2020
   },
   {
     "code": 3182,
     "name": "ESSA: School Improvement Funding",
     "category": "Federal",
-    "spending": 118118.54,
-    "budget": 3634864,
-    "year": 2019
+    "spending": 223814.75,
+    "budget": 714749.19,
+    "year": 2020
+  },
+  {
+    "code": 3210,
+    "name": "Elementary and Secondary School Emergency Relief Fund",
+    "category": "State",
+    "spending": 10548094.56,
+    "budget": 14361486.84,
+    "year": 2020
+  },
+  {
+    "code": 3212,
+    "name": "Elementary and Secondary School Emergency Relief Fund II (ESSER II)",
+    "category": "State",
+    "spending": 2180664.98,
+    "budget": 4550823,
+    "year": 2020
+  },
+  {
+    "code": 3215,
+    "name": "Learning Loss Mitigation Governor's Emergency Education Relief (GEER)",
+    "category": "State",
+    "spending": 2553955.22,
+    "budget": 2600970.8,
+    "year": 2020
+  },
+  {
+    "code": 3220,
+    "name": "Learning Loss Mitigation Covid",
+    "category": "State",
+    "spending": 32769051.62,
+    "budget": 32801816.9,
+    "year": 2020
   },
   {
     "code": 3310,
     "name": "SE-IDEA BASIC GRANT PL94-142",
     "category": "Federal",
-    "spending": 716115.38,
-    "budget": 1747242,
-    "year": 2019
+    "spending": 522548.9,
+    "budget": 552586,
+    "year": 2020
   },
   {
     "code": 3311,
     "name": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs",
     "category": "Federal",
-    "spending": 49333,
+    "spending": 49119,
     "budget": 49333,
-    "year": 2019
+    "year": 2020
+  },
+  {
+    "code": 3312,
+    "name": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Early Intervening Services",
+    "category": "Federal",
+    "spending": 2444.95,
+    "budget": 1281089,
+    "year": 2020
   },
   {
     "code": 3315,
     "name": "Special Ed: IDEA Preschool Grants, Part B, Sec 619",
     "category": "Federal",
-    "spending": 7575.8,
-    "budget": 7605,
-    "year": 2019
+    "spending": 10772,
+    "budget": 10772,
+    "year": 2020
+  },
+  {
+    "code": 3318,
+    "name": "Special Ed: IDEA Part B, Sec 619, Preschool Grants Early Intervening Services",
+    "category": "Federal",
+    "spending": 1883.88,
+    "budget": 1900.98,
+    "year": 2020
   },
   {
     "code": 3327,
     "name": "Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611",
     "category": "Federal",
-    "spending": 400607,
-    "budget": 400607,
-    "year": 2019
+    "spending": 412668,
+    "budget": 412668,
+    "year": 2020
   },
   {
     "code": 3345,
     "name": "Special Ed: IDEA Preschool Staff Development, Part B, Sec 619",
     "category": "Federal",
-    "spending": 2284,
-    "budget": 2284,
-    "year": 2019
+    "spending": 2456,
+    "budget": 2456,
+    "year": 2020
   },
   {
     "code": 3385,
     "name": "Special Ed: IDEA Early Intervention Grants",
     "category": "Federal",
-    "spending": 6465,
-    "budget": 1935,
-    "year": 2019
+    "spending": 10808.46,
+    "budget": 10819,
+    "year": 2020
   },
   {
     "code": 3395,
@@ -189,191 +261,191 @@
     "category": "Federal",
     "spending": 14601,
     "budget": 14601,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 3410,
     "name": "Transition Partnership Program",
     "category": "Federal",
-    "spending": 402213.17,
-    "budget": 402319,
-    "year": 2019
+    "spending": 402319,
+    "budget": 379910,
+    "year": 2020
   },
   {
     "code": 3550,
     "name": "Perkins Career and Technical Education",
     "category": "Federal",
-    "spending": 451190,
-    "budget": 451190,
-    "year": 2019
+    "spending": 260889.18,
+    "budget": 436276,
+    "year": 2020
   },
   {
     "code": 4035,
     "name": "ESSA: Title II, Part A, Supporting Effective Instruction",
     "category": "Federal",
-    "spending": 1750408.08,
-    "budget": 2371415.07,
-    "year": 2019
+    "spending": 1137880.02,
+    "budget": 2142518.86,
+    "year": 2020
   },
   {
     "code": 4050,
     "name": "NCLB: Title II, Part B, CA Mathematics and Science Partnerships (17-18)",
     "category": "Federal",
-    "spending": 314526.18,
-    "budget": 350000,
-    "year": 2019
+    "spending": 0,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 4124,
     "name": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program",
     "category": "Federal",
-    "spending": 1118834.92,
-    "budget": 1219295.52,
-    "year": 2019
+    "spending": 1059747,
+    "budget": 1322447.32,
+    "year": 2020
   },
   {
     "code": 4127,
     "name": "ESSA: Title IV, Part A, Student Support and Academic Enrichment",
     "category": "Federal",
-    "spending": 850005.85,
-    "budget": 1083384,
-    "year": 2019
+    "spending": 381410.49,
+    "budget": 992027.09,
+    "year": 2020
   },
   {
     "code": 4201,
     "name": "ESSA: Title III, Immigrant Education Program",
     "category": "Federal",
-    "spending": 298344.19,
-    "budget": 307623.4,
-    "year": 2019
+    "spending": 333850.07,
+    "budget": 423125.21,
+    "year": 2020
   },
   {
     "code": 4203,
     "name": "Bilingual Education: Discretionary Grants, Title III (14-15)",
     "category": "Federal",
-    "spending": 1475619.3,
-    "budget": 1637496.89,
-    "year": 2019
+    "spending": 802238.58,
+    "budget": 1162595.41,
+    "year": 2020
   },
   {
     "code": 4510,
     "name": "Indian Education ",
     "category": "Federal",
-    "spending": 43860,
-    "budget": 43860,
-    "year": 2019
+    "spending": 34852,
+    "budget": 34852,
+    "year": 2020
   },
   {
     "code": 5025,
     "name": "Federal Child Care, Center-based, FCTR, FHUD",
     "category": "Federal",
-    "spending": 474992.67,
-    "budget": 550654.31,
-    "year": 2019
+    "spending": 596223.65,
+    "budget": 605008,
+    "year": 2020
+  },
+  {
+    "code": 5058,
+    "name": "Child Development Coronavirus Response and Relief Supplemental Appropriations Act (CRRSA) One-Time AB82",
+    "category": "Federal",
+    "spending": 17456.99,
+    "budget": 469113.75,
+    "year": 2020
   },
   {
     "code": 5310,
     "name": "Child Nutrition School Program",
     "category": "Federal",
-    "spending": 4865705.09,
-    "budget": 5339947.28,
-    "year": 2019
+    "spending": 9165538.84,
+    "budget": 29243087.2,
+    "year": 2020
+  },
+  {
+    "code": 5316,
+    "name": "Child Nutrition Covid Coronavirus Aid, Relief, and Economic Security (CARES)",
+    "category": "Federal",
+    "spending": 2283399,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 5320,
     "name": "Child Care Food Program (CCFP) and Meal Reimbursements",
     "category": "Federal",
-    "spending": 91271.58,
-    "budget": 144984.55,
-    "year": 2019
-  },
-  {
-    "code": 5330,
-    "name": "Summer Food Service Program Operations",
-    "category": "Federal",
-    "spending": 0,
-    "budget": 0,
-    "year": 2019
+    "spending": 11243239.51,
+    "budget": 22739072.42,
+    "year": 2020
   },
   {
     "code": 5630,
     "name": "ESSA: Title IX, Part A, Homeless Assistance Grants",
     "category": "Federal",
-    "spending": 53962.81,
-    "budget": 75000,
-    "year": 2019
+    "spending": 94622.41,
+    "budget": 102037.19,
+    "year": 2020
   },
   {
     "code": 5640,
     "name": "Medi-Cal Billing Option",
     "category": "Federal",
-    "spending": 641048.16,
-    "budget": 1357328.9,
-    "year": 2019
+    "spending": 751433.14,
+    "budget": 1247342.25,
+    "year": 2020
   },
   {
     "code": 5810,
     "name": "Other Federal",
     "category": "Federal",
-    "spending": 143700.63,
-    "budget": 165074.69,
-    "year": 2019
+    "spending": 129980.2,
+    "budget": 131374.06,
+    "year": 2020
   },
   {
     "code": 5844,
     "name": "Healthy Oakland Teens",
     "category": "Federal",
-    "spending": 432255.64,
-    "budget": 504812.73,
-    "year": 2019
+    "spending": 491776.58,
+    "budget": 673456.09,
+    "year": 2020
+  },
+  {
+    "code": 5846,
+    "name": "Human Trafficking Prevention",
+    "category": "Federal",
+    "spending": 164759.5,
+    "budget": 507847,
+    "year": 2020
   },
   {
     "code": 5848,
     "name": "Full Service Community Schools",
     "category": "Federal",
-    "spending": 327714.1,
-    "budget": 344384.12,
-    "year": 2019
+    "spending": 16670.02,
+    "budget": 16670.02,
+    "year": 2020
   },
   {
-    "code": 5849,
-    "name": "Federal ProjectPrevention",
+    "code": 5856,
+    "name": "Department of Justice (DOJ) Community Oriented Policing (COPS) School Violence Prevention Program",
     "category": "Federal",
-    "spending": 35759.37,
-    "budget": 38027.42,
-    "year": 2019
-  },
-  {
-    "code": 5850,
-    "name": "Federal School Climate",
-    "category": "Federal",
-    "spending": 31466.32,
-    "budget": 31466.32,
-    "year": 2019
-  },
-  {
-    "code": 5854,
-    "name": "Carol M. White Physical Education Grant",
-    "category": "Federal",
-    "spending": 171913.54,
-    "budget": 180957.68,
-    "year": 2019
+    "spending": 0,
+    "budget": 37000,
+    "year": 2020
   },
   {
     "code": 6010,
     "name": "After School Education and Safety (ASES)",
     "category": "State",
-    "spending": 1095042.75,
-    "budget": 1230371.56,
-    "year": 2019
+    "spending": 833121.47,
+    "budget": 1260571.5,
+    "year": 2020
   },
   {
     "code": 6011,
     "name": "After School Kids Code Grant Pilot Program",
     "category": "State",
-    "spending": 159094.71,
-    "budget": 332000,
-    "year": 2019
+    "spending": 100357.84,
+    "budget": 338905.29,
+    "year": 2020
   },
   {
     "code": 6052,
@@ -381,87 +453,87 @@
     "category": "State",
     "spending": 7500,
     "budget": 7500,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 6105,
     "name": "California State Preschool Program",
     "category": "State",
-    "spending": 5428509.24,
-    "budget": 5831954.64,
-    "year": 2019
-  },
-  {
-    "code": 6130,
-    "name": "Ece-Reserve Account",
-    "category": "State",
-    "spending": 0,
-    "budget": 1636736.19,
-    "year": 2019
-  },
-  {
-    "code": 6230,
-    "name": "Prop 39 CA Clean Energy Jobs Act",
-    "category": "State",
-    "spending": 238.57,
-    "budget": 238.57,
-    "year": 2019
+    "spending": 5258957.25,
+    "budget": 5883667.79,
+    "year": 2020
   },
   {
     "code": 6300,
     "name": "Lottery: Instructional Materials",
     "category": "State",
-    "spending": 2472358.8,
-    "budget": 2499495.67,
-    "year": 2019
+    "spending": 1580191.36,
+    "budget": 1779359.06,
+    "year": 2020
   },
   {
     "code": 6385,
     "name": "CA Partnership Academy (CTE): Riverside Community College",
     "category": "State",
     "spending": 0,
-    "budget": 5435.25,
-    "year": 2019
+    "budget": 1000,
+    "year": 2020
+  },
+  {
+    "code": 6386,
+    "name": "CA Partnership Academy: Green and Clean Academies",
+    "category": "State",
+    "spending": 0,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 6387,
     "name": "Career Technical Education (CTE) Incentive Grant Program",
     "category": "State",
-    "spending": 1147002.13,
-    "budget": 1172847.06,
-    "year": 2019
+    "spending": 1015676.13,
+    "budget": 2191803,
+    "year": 2020
   },
   {
     "code": 6388,
     "name": "K12 Strong Workforce Grant",
     "category": "State",
-    "spending": 671221.99,
-    "budget": 1761375,
-    "year": 2019
+    "spending": 1207135.18,
+    "budget": 3486177,
+    "year": 2020
   },
   {
     "code": 6391,
     "name": "Adult Education Program",
     "category": "State",
-    "spending": 40203.56,
-    "budget": 39857,
-    "year": 2019
+    "spending": 0,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 6500,
     "name": "Special Education",
     "category": "State",
-    "spending": 48198364.31,
-    "budget": 46904775.53,
-    "year": 2019
+    "spending": 51844457.11,
+    "budget": 48020132.23,
+    "year": 2020
   },
   {
     "code": 6512,
     "name": "Special Ed: Mental Health Services",
     "category": "State",
-    "spending": 2307119,
-    "budget": 2239691,
-    "year": 2019
+    "spending": 0,
+    "budget": 0,
+    "year": 2020
+  },
+  {
+    "code": 6515,
+    "name": "Special Ed: Infant Discretionary Funds",
+    "category": "State",
+    "spending": 4629,
+    "budget": 4629,
+    "year": 2020
   },
   {
     "code": 6520,
@@ -469,127 +541,183 @@
     "category": "State",
     "spending": 318420,
     "budget": 318420,
-    "year": 2019
+    "year": 2020
+  },
+  {
+    "code": 6546,
+    "name": "Special Ed: Mental Health Services",
+    "category": "State",
+    "spending": 2278089,
+    "budget": 2278089,
+    "year": 2020
+  },
+  {
+    "code": 6690,
+    "name": "Tobacco-Use Prevention Education: Grades 6-12",
+    "category": "State",
+    "spending": 271171.75,
+    "budget": 308852,
+    "year": 2020
   },
   {
     "code": 6695,
     "name": "Tobacco-Use Prevention Education: Prop 56",
     "category": "State",
-    "spending": 504092.58,
-    "budget": 546676,
-    "year": 2019
+    "spending": 284292.84,
+    "budget": 292325.42,
+    "year": 2020
+  },
+  {
+    "code": 7027,
+    "name": "Child Nutrition State Covid",
+    "category": "State",
+    "spending": 197866.5,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 7085,
     "name": "Prop 47: Learning Communities for School Success Program Grants",
     "category": "State",
-    "spending": 807349.69,
-    "budget": 918271.48,
-    "year": 2019
+    "spending": 185937.94,
+    "budget": 908882.79,
+    "year": 2020
   },
   {
     "code": 7220,
     "name": "Partnership Academies Program ",
     "category": "State",
-    "spending": 16630.56,
-    "budget": 21394,
-    "year": 2019
+    "spending": 35518.5,
+    "budget": 61335.15,
+    "year": 2020
   },
   {
     "code": 7311,
     "name": "Classified School Employee Professional Development Block Grant",
     "category": "State",
-    "spending": 57303.7,
-    "budget": 313034,
-    "year": 2019
+    "spending": 0,
+    "budget": 255730.3,
+    "year": 2020
   },
   {
     "code": 7388,
     "name": "SB 117 COVID-19",
     "category": "State",
-    "spending": 194289.22,
-    "budget": 591360,
-    "year": 2019
+    "spending": 397070.78,
+    "budget": 397070.78,
+    "year": 2020
+  },
+  {
+    "code": 7420,
+    "name": "Learning Loss Mitigation - General Fund",
+    "category": "State",
+    "spending": 3255312,
+    "budget": 3255312,
+    "year": 2020
+  },
+  {
+    "code": 7422,
+    "name": "In-Person Instruction (IPI)",
+    "category": "State",
+    "spending": 3378881.08,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 7510,
     "name": "Low-Performing Students Block Grant",
     "category": "State",
-    "spending": 7581.64,
-    "budget": 944327.4,
-    "year": 2019
+    "spending": 471548.7,
+    "budget": 500736.11,
+    "year": 2020
   },
   {
     "code": 7710,
     "name": "State School Facilities Projects",
     "category": "State",
-    "spending": 58209.2,
-    "budget": 550000,
-    "year": 2019
+    "spending": 89763.82,
+    "budget": 410000,
+    "year": 2020
   },
   {
     "code": 7810,
     "name": "OTHER STATE",
     "category": "State",
-    "spending": 1230377.85,
-    "budget": 2450265.65,
-    "year": 2019
+    "spending": 1385636.51,
+    "budget": 1884992.07,
+    "year": 2020
+  },
+  {
+    "code": 7811,
+    "name": "Refugee Program Bureau - Newcomer Education and Well-Being",
+    "category": "State",
+    "spending": 95512.37,
+    "budget": 500000,
+    "year": 2020
+  },
+  {
+    "code": 7812,
+    "name": "Early Literacy Support Block",
+    "category": "State",
+    "spending": 42608.55,
+    "budget": 5785906,
+    "year": 2020
   },
   {
     "code": 7814,
     "name": "Air Resources Board",
     "category": "State",
-    "spending": 60000,
-    "budget": 105000,
-    "year": 2019
+    "spending": 15000,
+    "budget": 45000,
+    "year": 2020
   },
   {
     "code": 7818,
     "name": "POST Reimburse Program",
     "category": "State",
     "spending": 0,
-    "budget": 8207.19,
-    "year": 2019
+    "budget": 8729.19,
+    "year": 2020
   },
   {
     "code": 8150,
     "name": "Ongoing & Major Maintenance Account",
     "category": "State",
-    "spending": 19645794.57,
-    "budget": 19729457.58,
-    "year": 2019
+    "spending": 18156573.24,
+    "budget": 18181007,
+    "year": 2020
+  },
+  {
+    "code": 8210,
+    "name": "Student Activity Funds",
+    "category": "Other Revenue",
+    "spending": 320889.27,
+    "budget": 0,
+    "year": 2020
   },
   {
     "code": 9001,
     "name": "Wallace Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 97.36,
-    "budget": 785.78,
-    "year": 2019
+    "spending": 121.46,
+    "budget": 688,
+    "year": 2020
   },
   {
     "code": 9003,
     "name": "Live Scan Fingerprint",
     "category": "Other Revenue",
-    "spending": 34115.83,
-    "budget": 61267.57,
-    "year": 2019
+    "spending": 14708.75,
+    "budget": 69571.74,
+    "year": 2020
   },
   {
     "code": 9006,
     "name": "Oakland Public Education Fund",
     "category": "Philanthropy / Grants",
-    "spending": 253347.67,
-    "budget": 499818.3,
-    "year": 2019
-  },
-  {
-    "code": 9007,
-    "name": "Salary Adjustment",
-    "category": "Other Revenue",
-    "spending": 0,
-    "budget": 0,
-    "year": 2019
+    "spending": 195448.03,
+    "budget": 446470.23,
+    "year": 2020
   },
   {
     "code": 9009,
@@ -597,199 +725,239 @@
     "category": "Other Revenue",
     "spending": 0,
     "budget": 212.26,
-    "year": 2019
+    "year": 2020
+  },
+  {
+    "code": 9010,
+    "name": "Other Local Resources",
+    "category": "Other Revenue",
+    "spending": 0,
+    "budget": 5000,
+    "year": 2020
   },
   {
     "code": 9011,
     "name": "DONATIONS",
     "category": "Philanthropy / Grants",
-    "spending": 88157.14,
-    "budget": 475576.73,
-    "year": 2019
-  },
-  {
-    "code": 9015,
-    "name": "Community Redevelopment Funds",
-    "category": "Philanthropy / Grants",
-    "spending": 886044,
-    "budget": 886044,
-    "year": 2019
+    "spending": 51017.74,
+    "budget": 431330.12,
+    "year": 2020
   },
   {
     "code": 9016,
     "name": "American Heart Association",
     "category": "Philanthropy / Grants",
-    "spending": 0,
-    "budget": 2011.19,
-    "year": 2019
+    "spending": 2011.19,
+    "budget": 2011,
+    "year": 2020
   },
   {
     "code": 9017,
     "name": "BECHTEL",
     "category": "Philanthropy / Grants",
-    "spending": 37794.29,
-    "budget": 127332.71,
-    "year": 2019
+    "spending": 20736.26,
+    "budget": 89538.67,
+    "year": 2020
   },
   {
     "code": 9018,
     "name": "Oppenheimer Family Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 3236.44,
-    "budget": 24653.69,
-    "year": 2019
+    "spending": 8360.91,
+    "budget": 21417.25,
+    "year": 2020
   },
   {
     "code": 9019,
     "name": "Cross-Age Mentoring Program",
     "category": "Other Revenue",
-    "spending": 35000,
-    "budget": 390000,
-    "year": 2019
-  },
-  {
-    "code": 9020,
-    "name": "Class Action Settlements",
-    "category": "Other Revenue",
-    "spending": 93359.99,
-    "budget": 93359.99,
-    "year": 2019
+    "spending": 20000,
+    "budget": 355000,
+    "year": 2020
   },
   {
     "code": 9021,
     "name": "Mitigation and Developer Fees",
     "category": "Other Revenue",
     "spending": 0,
-    "budget": 597976.65,
-    "year": 2019
+    "budget": 333646.28,
+    "year": 2020
+  },
+  {
+    "code": 9023,
+    "name": "Walgreens Grant",
+    "category": "Philanthropy / Grants",
+    "spending": 16529.04,
+    "budget": 25000,
+    "year": 2020
+  },
+  {
+    "code": 9024,
+    "name": "Oaklan Public Education Fund - OaklandUndivided",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 207030,
+    "year": 2020
   },
   {
     "code": 9026,
     "name": "San Francisco Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 994.18,
-    "budget": 24330.56,
-    "year": 2019
+    "spending": 53035.98,
+    "budget": 73336.38,
+    "year": 2020
+  },
+  {
+    "code": 9027,
+    "name": "ELD Instruction Program",
+    "category": "Other Revenue",
+    "spending": 44578.31,
+    "budget": 105000,
+    "year": 2020
+  },
+  {
+    "code": 9029,
+    "name": "Risk Management Administrative",
+    "category": "Other Revenue",
+    "spending": 0,
+    "budget": 43927.84,
+    "year": 2020
   },
   {
     "code": 9030,
     "name": "Workers' Comp",
     "category": "Other Revenue",
-    "spending": 15891069.7,
-    "budget": 19863128.32,
-    "year": 2019
+    "spending": 7736149.1,
+    "budget": 10387234.2,
+    "year": 2020
+  },
+  {
+    "code": 9031,
+    "name": "Property & Liability",
+    "category": "Other Revenue",
+    "spending": 5575068.68,
+    "budget": 6859936.88,
+    "year": 2020
   },
   {
     "code": 9032,
     "name": "Dental Self-Insured",
     "category": "Other Revenue",
-    "spending": 4371455.53,
-    "budget": 0,
-    "year": 2019
+    "spending": 5624754.07,
+    "budget": 7318449.46,
+    "year": 2020
   },
   {
-    "code": 9033,
-    "name": "Health & Welfare Benefits",
-    "category": "Other Revenue",
-    "spending": 0,
-    "budget": 0,
-    "year": 2019
-  },
-  {
-    "code": 9041,
-    "name": "ROTC",
+    "code": 9034,
+    "name": "California Collaborative for Educational Excellence",
     "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 46905,
-    "year": 2019
+    "budget": 15800,
+    "year": 2020
+  },
+  {
+    "code": 9043,
+    "name": "Stupski Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 168632.53,
+    "budget": 250000,
+    "year": 2020
   },
   {
     "code": 9044,
     "name": "City of Oakland",
     "category": "Other Revenue",
-    "spending": 2579642.93,
-    "budget": 2612892.74,
-    "year": 2019
+    "spending": 1730374.89,
+    "budget": 2130761,
+    "year": 2020
   },
   {
     "code": 9056,
     "name": "East Bay Community Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 168517.95,
-    "budget": 168838.9,
-    "year": 2019
+    "spending": 0,
+    "budget": 321,
+    "year": 2020
   },
   {
     "code": 9057,
     "name": "East Bay Community Foundation",
     "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 5742.23,
-    "year": 2019
+    "budget": 5742,
+    "year": 2020
   },
   {
     "code": 9058,
     "name": "Staff Development Fees",
     "category": "Other Revenue",
-    "spending": 170353.24,
-    "budget": 172431.3,
-    "year": 2019
+    "spending": 913.04,
+    "budget": 2078,
+    "year": 2020
   },
   {
     "code": 9059,
     "name": "Philanthropic Ventures Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 0,
-    "budget": 3458.12,
-    "year": 2019
+    "spending": 455,
+    "budget": 3913.12,
+    "year": 2020
   },
   {
     "code": 9067,
     "name": "Walter & Elise Haas Fund",
     "category": "Philanthropy / Grants",
-    "spending": 84927.07,
-    "budget": 344122.07,
-    "year": 2019
+    "spending": 90102.37,
+    "budget": 508609.31,
+    "year": 2020
   },
   {
     "code": 9084,
     "name": "UCLA",
     "category": "Philanthropy / Grants",
-    "spending": 442.49,
-    "budget": 2869.99,
-    "year": 2019
+    "spending": 0,
+    "budget": 2427.5,
+    "year": 2020
   },
   {
     "code": 9092,
     "name": "Supported Employment (SEMP) Mental Health / ACOE",
     "category": "Philanthropy / Grants",
-    "spending": 1098630.45,
-    "budget": 1165957.56,
-    "year": 2019
+    "spending": 916920.03,
+    "budget": 980857,
+    "year": 2020
   },
   {
     "code": 9096,
     "name": "Music Instruments",
     "category": "Philanthropy / Grants",
-    "spending": 809.88,
-    "budget": 10836.71,
-    "year": 2019
+    "spending": 8412.11,
+    "budget": 45726.83,
+    "year": 2020
   },
   {
     "code": 9098,
     "name": "Southern Poverty Law Center",
     "category": "Philanthropy / Grants",
-    "spending": 1513.41,
-    "budget": 4175.71,
-    "year": 2019
+    "spending": 2438.77,
+    "budget": 2662,
+    "year": 2020
+  },
+  {
+    "code": 9100,
+    "name": "Silicon Valley Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 181220.89,
+    "budget": 200000,
+    "year": 2020
   },
   {
     "code": 9110,
     "name": "SUMS",
     "category": "Other Revenue",
-    "spending": 16503.52,
-    "budget": 25000,
-    "year": 2019
+    "spending": 0,
+    "budget": 8496,
+    "year": 2020
   },
   {
     "code": 9120,
@@ -797,95 +965,103 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 2617.33,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9121,
     "name": "Oakland Fund Children & Youth",
     "category": "Philanthropy / Grants",
-    "spending": 691940.3,
-    "budget": 834086.61,
-    "year": 2019
+    "spending": 696276.02,
+    "budget": 794126.73,
+    "year": 2020
   },
   {
     "code": 9123,
     "name": "Rebate Programs",
     "category": "Other Revenue",
-    "spending": 22151.3,
-    "budget": 70162.21,
-    "year": 2019
+    "spending": 4734.62,
+    "budget": 48010.91,
+    "year": 2020
   },
   {
     "code": 9134,
     "name": "City of Oakland PEG funds",
     "category": "Other Revenue",
-    "spending": 98329.01,
-    "budget": 985235.33,
-    "year": 2019
+    "spending": 450409.11,
+    "budget": 886906.32,
+    "year": 2020
   },
   {
     "code": 9135,
     "name": "Connect ED",
     "category": "Philanthropy / Grants",
-    "spending": 152423.1,
-    "budget": 156708.01,
-    "year": 2019
+    "spending": 0,
+    "budget": 4284.91,
+    "year": 2020
   },
   {
     "code": 9137,
     "name": "Casel Novo Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 129618.71,
-    "budget": 151005.04,
-    "year": 2019
+    "spending": 128659.28,
+    "budget": 171386.35,
+    "year": 2020
   },
   {
     "code": 9141,
     "name": "Stuart Foundation",
     "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 1844.46,
-    "year": 2019
+    "budget": 1844.09,
+    "year": 2020
   },
   {
     "code": 9149,
     "name": "Alameda County Health Care Services",
     "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 13811.45,
-    "year": 2019
+    "budget": 13811.46,
+    "year": 2020
   },
   {
     "code": 9157,
     "name": "City of Livermore",
     "category": "Other Revenue",
     "spending": 0,
-    "budget": 15915.17,
-    "year": 2019
+    "budget": 31915.17,
+    "year": 2020
   },
   {
     "code": 9161,
     "name": "AC Waste Management Authority",
     "category": "Philanthropy / Grants",
-    "spending": 96195.23,
-    "budget": 214377.73,
-    "year": 2019
+    "spending": 61400.84,
+    "budget": 72156.06,
+    "year": 2020
+  },
+  {
+    "code": 9172,
+    "name": "The California Endowment",
+    "category": "Philanthropy / Grants",
+    "spending": 84500,
+    "budget": 104000,
+    "year": 2020
   },
   {
     "code": 9180,
     "name": "Measure Y - City of Oakland",
     "category": "Other Revenue",
-    "spending": 116287.66,
-    "budget": 131754.34,
-    "year": 2019
+    "spending": 84781.6,
+    "budget": 101699.45,
+    "year": 2020
   },
   {
     "code": 9181,
     "name": "Rebates, Various Other",
     "category": "Other Revenue",
-    "spending": 0,
-    "budget": 0,
-    "year": 2019
+    "spending": 8490.93,
+    "budget": 8490.93,
+    "year": 2020
   },
   {
     "code": 9182,
@@ -893,215 +1069,215 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 13785.31,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9185,
     "name": "FIRST 5 Alameda County (Prop 10)",
     "category": "Other Revenue",
-    "spending": 164777.56,
-    "budget": 270243.5,
-    "year": 2019
+    "spending": 383812.39,
+    "budget": 747572.54,
+    "year": 2020
   },
   {
     "code": 9189,
     "name": "Mr. October Foundation for Kids",
     "category": "Philanthropy / Grants",
-    "spending": 0,
+    "spending": 1497.23,
     "budget": 1497.23,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9196,
     "name": "Atlantic Philanthropies",
     "category": "Philanthropy / Grants",
-    "spending": 31391.99,
-    "budget": 34492.03,
-    "year": 2019
+    "spending": 3100.04,
+    "budget": 3100.04,
+    "year": 2020
+  },
+  {
+    "code": 9201,
+    "name": "Schusterman Family Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 306070.95,
+    "budget": 315709,
+    "year": 2020
   },
   {
     "code": 9206,
     "name": "Alameda County Public Health - Health and Wellness",
     "category": "Philanthropy / Grants",
-    "spending": 434301.64,
-    "budget": 652025.43,
-    "year": 2019
+    "spending": 376472.41,
+    "budget": 582927.61,
+    "year": 2020
   },
   {
     "code": 9209,
     "name": "New Teacher Center - Sidney Frank",
     "category": "Philanthropy / Grants",
-    "spending": 0,
-    "budget": 65716.77,
-    "year": 2019
+    "spending": 15761.88,
+    "budget": 90716.77,
+    "year": 2020
   },
   {
     "code": 9212,
     "name": "California Education Partners",
     "category": "Philanthropy / Grants",
-    "spending": 3166.7,
-    "budget": 7780.36,
-    "year": 2019
-  },
-  {
-    "code": 9216,
-    "name": "Hrsa Grnt Mcclymonds Youth/fam",
-    "category": "Philanthropy / Grants",
-    "spending": 33000,
-    "budget": 33000,
-    "year": 2019
-  },
-  {
-    "code": 9224,
-    "name": "Silicon Valley Math Initiative",
-    "category": "Philanthropy / Grants",
-    "spending": 198316.56,
-    "budget": 198316.56,
-    "year": 2019
+    "spending": 0,
+    "budget": 14613.66,
+    "year": 2020
   },
   {
     "code": 9225,
     "name": "Kaiser Health & Wellness w/EBCF",
     "category": "Philanthropy / Grants",
-    "spending": 4025334.85,
-    "budget": 4841772,
-    "year": 2019
+    "spending": 3663186.9,
+    "budget": 5316437.57,
+    "year": 2020
   },
   {
     "code": 9231,
     "name": "OUSPD Traffic Violations",
     "category": "Other Revenue",
-    "spending": 9326.72,
-    "budget": 11369.32,
-    "year": 2019
+    "spending": 2174.48,
+    "budget": 2174.48,
+    "year": 2020
   },
   {
     "code": 9233,
     "name": "Target Corporation",
     "category": "Philanthropy / Grants",
-    "spending": 4370,
-    "budget": 4810.17,
-    "year": 2019
+    "spending": 440.17,
+    "budget": 440,
+    "year": 2020
   },
   {
     "code": 9235,
     "name": "Altamont Education Advisory",
     "category": "Other Revenue",
-    "spending": 4395.8,
-    "budget": 25998.45,
-    "year": 2019
+    "spending": 10491.64,
+    "budget": 31602.65,
+    "year": 2020
   },
   {
     "code": 9236,
     "name": "Kenneth Rainin Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 1864633.94,
-    "budget": 1891720.48,
-    "year": 2019
+    "spending": 1667563.24,
+    "budget": 1877086.54,
+    "year": 2020
   },
   {
     "code": 9237,
     "name": "Kenneth Rainin Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 114228.15,
-    "budget": 200000,
-    "year": 2019
+    "spending": 284211,
+    "budget": 387771.85,
+    "year": 2020
   },
   {
     "code": 9247,
     "name": "Sirene S Scully Fam Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 0,
+    "spending": 4533.34,
     "budget": 4533.34,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9250,
     "name": "Packard Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 69462.06,
-    "budget": 70000,
-    "year": 2019
+    "spending": 40019.37,
+    "budget": 60537.94,
+    "year": 2020
   },
   {
-    "code": 9259,
-    "name": "California Wellness Foundation",
+    "code": 9255,
+    "name": "Alameda County Unaccompanied Immigrant Youth",
     "category": "Philanthropy / Grants",
-    "spending": 0,
+    "spending": 15000,
     "budget": 15000,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9264,
     "name": "Hellman Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 94600.78,
-    "budget": 106820.42,
-    "year": 2019
+    "spending": 47234.86,
+    "budget": 105219.64,
+    "year": 2020
   },
   {
     "code": 9267,
     "name": "Department of Justice Police",
     "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 37813.45,
-    "year": 2019
+    "budget": 58628.86,
+    "year": 2020
   },
   {
     "code": 9269,
     "name": "WestEd",
     "category": "Philanthropy / Grants",
-    "spending": 152897.4,
-    "budget": 289500.91,
-    "year": 2019
-  },
-  {
-    "code": 9271,
-    "name": "Strategic Ed Rsrch Inst",
-    "category": "Philanthropy / Grants",
-    "spending": 61520.34,
-    "budget": 80000,
-    "year": 2019
+    "spending": 105869.63,
+    "budget": 76457.5,
+    "year": 2020
   },
   {
     "code": 9272,
     "name": "Mills Lesson Study Project",
     "category": "Philanthropy / Grants",
-    "spending": 1829.49,
-    "budget": 10828.73,
-    "year": 2019
+    "spending": 959.97,
+    "budget": 8999.24,
+    "year": 2020
+  },
+  {
+    "code": 9276,
+    "name": "SAP Career Ladders Project",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 896,
+    "year": 2020
   },
   {
     "code": 9277,
     "name": "San Francisco Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 1107191.41,
-    "budget": 1692823.83,
-    "year": 2019
+    "spending": 656029.71,
+    "budget": 965632.42,
+    "year": 2020
+  },
+  {
+    "code": 9278,
+    "name": "Kenneth Rainin Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 9249.17,
+    "year": 2020
   },
   {
     "code": 9279,
     "name": "Middle School Athletics Grant",
     "category": "Philanthropy / Grants",
-    "spending": 4760.93,
-    "budget": 14741.48,
-    "year": 2019
+    "spending": 0,
+    "budget": 9981,
+    "year": 2020
   },
   {
     "code": 9283,
     "name": "Salesforce.Org",
     "category": "Philanthropy / Grants",
-    "spending": 3901465.59,
-    "budget": 4716363.76,
-    "year": 2019
+    "spending": 3112606.04,
+    "budget": 3525702.37,
+    "year": 2020
   },
   {
     "code": 9284,
     "name": "Intel Corperation",
     "category": "Philanthropy / Grants",
-    "spending": 158224.93,
-    "budget": 359075.67,
-    "year": 2019
+    "spending": 170512.72,
+    "budget": 200851,
+    "year": 2020
   },
   {
     "code": 9285,
@@ -1109,47 +1285,55 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 1957,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9286,
     "name": "Scribbles Software - Transcripts",
     "category": "Other Revenue",
-    "spending": 3879.4,
-    "budget": 18592.04,
-    "year": 2019
+    "spending": 2820.21,
+    "budget": 26479.81,
+    "year": 2020
   },
   {
     "code": 9287,
     "name": "Refugee Transitions",
     "category": "Other Revenue",
-    "spending": 17543.01,
-    "budget": 0,
-    "year": 2019
+    "spending": 20481.65,
+    "budget": 20517.65,
+    "year": 2020
   },
   {
     "code": 9289,
     "name": "Oakland Ed Fund - AAGLS",
     "category": "Philanthropy / Grants",
-    "spending": 28826.15,
-    "budget": 57259.87,
-    "year": 2019
+    "spending": 0,
+    "budget": 28434,
+    "year": 2020
   },
   {
     "code": 9290,
     "name": "Peralta College Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 3048.57,
-    "budget": 7217.69,
-    "year": 2019
+    "spending": 160,
+    "budget": 4169.12,
+    "year": 2020
+  },
+  {
+    "code": 9294,
+    "name": "CODE.ORG",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 6440,
+    "year": 2020
   },
   {
     "code": 9295,
     "name": "Share Our Strength",
     "category": "Philanthropy / Grants",
-    "spending": 133872.91,
-    "budget": 136281.39,
-    "year": 2019
+    "spending": 174324.4,
+    "budget": 176808.48,
+    "year": 2020
   },
   {
     "code": 9297,
@@ -1157,39 +1341,39 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 1774.09,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9298,
     "name": "General Mills Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 0,
+    "spending": 16823.75,
     "budget": 16823.75,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9301,
     "name": "Restorative Justice Fees",
     "category": "Other Revenue",
-    "spending": 1240.92,
-    "budget": 29785.19,
-    "year": 2019
+    "spending": 0,
+    "budget": 38659.27,
+    "year": 2020
   },
   {
-    "code": 9302,
-    "name": "Cal Newcommer CDSS",
-    "category": "Other Revenue",
+    "code": 9305,
+    "name": "Educate 78 -Asp.Pri.Prg.",
+    "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 0,
-    "year": 2019
+    "budget": 4578.5,
+    "year": 2020
   },
   {
     "code": 9313,
     "name": "Learning Policy Institute",
     "category": "Philanthropy / Grants",
-    "spending": 21224.82,
-    "budget": 31118.49,
-    "year": 2019
+    "spending": 4369.61,
+    "budget": 9894,
+    "year": 2020
   },
   {
     "code": 9314,
@@ -1197,7 +1381,7 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 308.08,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9315,
@@ -1205,39 +1389,39 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 15000,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9316,
     "name": "PCY 360/365 Grant",
     "category": "Philanthropy / Grants",
-    "spending": 2598,
-    "budget": 9855.15,
-    "year": 2019
+    "spending": 0,
+    "budget": 7257.15,
+    "year": 2020
   },
   {
     "code": 9318,
     "name": "Allt.Assessment Capstone Project",
     "category": "Other Revenue",
-    "spending": 14440.1,
-    "budget": 60000,
-    "year": 2019
+    "spending": 22049.36,
+    "budget": 45559.9,
+    "year": 2020
   },
   {
     "code": 9321,
     "name": "Workforce Development Plan",
     "category": "Philanthropy / Grants",
-    "spending": 18425.73,
-    "budget": 62364.56,
-    "year": 2019
+    "spending": 34192.59,
+    "budget": 73777.11,
+    "year": 2020
   },
   {
-    "code": 9322,
-    "name": "No Kid Hungry Grant",
+    "code": 9323,
+    "name": "Fremont Bank Foundation",
     "category": "Philanthropy / Grants",
     "spending": 0,
-    "budget": 97500,
-    "year": 2019
+    "budget": 30000,
+    "year": 2020
   },
   {
     "code": 9331,
@@ -1245,118 +1429,94 @@
     "category": "Philanthropy / Grants",
     "spending": 0,
     "budget": 1662.61,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9332,
     "name": "Measure G1 - Parcel Tax",
     "category": "Parcel Taxes",
-    "spending": 347104.59,
-    "budget": 369157.25,
-    "year": 2019
+    "spending": 291818.36,
+    "budget": 449016,
+    "year": 2020
   },
   {
     "code": 9333,
     "name": "Measure N - Parcel Tax",
     "category": "Parcel Taxes",
-    "spending": 3160336.21,
-    "budget": 4474506.13,
-    "year": 2019
+    "spending": 3707854.9,
+    "budget": 4626803.23,
+    "year": 2020
   },
   {
     "code": 9334,
     "name": "Measure G - Parcel Tax",
     "category": "Parcel Taxes",
-    "spending": 2291610.02,
-    "budget": 2431871.99,
-    "year": 2019
+    "spending": 3125740.71,
+    "budget": 2599115,
+    "year": 2020
   },
   {
     "code": 9340,
     "name": "Chiling Harmmer Education Fund",
     "category": "Philanthropy / Grants",
-    "spending": 0,
+    "spending": 70000,
     "budget": 70000,
-    "year": 2019
+    "year": 2020
   },
   {
     "code": 9341,
     "name": "Tides Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 13719.64,
-    "budget": 15000,
-    "year": 2019
+    "spending": 0,
+    "budget": 1280,
+    "year": 2020
   },
   {
     "code": 9342,
     "name": "Golden State Worriors Community Foundation",
     "category": "Philanthropy / Grants",
-    "spending": 80303.94,
-    "budget": 170000,
-    "year": 2019
-  },
-  {
-    "code": 9350,
-    "name": "Measure J - General Obligation Bond",
-    "category": "Bonds",
-    "spending": 467773.95,
-    "budget": 619044.21,
-    "year": 2019
+    "spending": 56839.66,
+    "budget": 129696.06,
+    "year": 2020
   },
   {
     "code": 9397,
     "name": "STEM",
     "category": "Philanthropy / Grants",
-    "spending": 84784.45,
-    "budget": 119587.98,
-    "year": 2019
+    "spending": 33344.07,
+    "budget": 34803.5,
+    "year": 2020
   },
   {
     "code": 9399,
     "name": "Build America Bond - Series 2009b",
     "category": "Bonds",
-    "spending": 75268.39,
-    "budget": 81957,
-    "year": 2019
+    "spending": 7125,
+    "budget": 8688.61,
+    "year": 2020
   },
   {
     "code": 9450,
     "name": "Measure J - General Obligation Series 2015a",
     "category": "Bonds",
-    "spending": 907500.8,
-    "budget": 912405.78,
-    "year": 2019
+    "spending": 330,
+    "budget": 3900,
+    "year": 2020
   },
   {
     "code": 9650,
     "name": "Measure J General Obligation Series 2019a",
     "category": "Bonds",
-    "spending": 10844259.65,
-    "budget": 29287233.69,
-    "year": 2019
-  },
-  {
-    "code": 9699,
-    "name": "Measure B - Series 2012b",
-    "category": "Bonds",
-    "spending": 0,
-    "budget": 0,
-    "year": 2019
-  },
-  {
-    "code": 9750,
-    "name": "Measure J General Obligation Series 2019b",
-    "category": "Bonds",
-    "spending": 58280.05,
-    "budget": 58280.05,
-    "year": 2019
+    "spending": 9215265.49,
+    "budget": 14755839.62,
+    "year": 2020
   },
   {
     "code": 9799,
     "name": "CA - General Obligation Bond Series 2016a",
     "category": "Bonds",
-    "spending": 832510.32,
-    "budget": 1400251.1,
-    "year": 2019
+    "spending": 199395.99,
+    "budget": 305970.51,
+    "year": 2020
   }
 ]
