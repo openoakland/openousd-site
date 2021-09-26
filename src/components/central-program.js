@@ -38,13 +38,19 @@ const descriptionRenderOptions = {
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
-  const translatedProgramName = data.contentfulCentralProgram.programName
-  const contentfulProgramDescription = data.contentfulCentralProgram.description
+  if (!data.contentfulCentralProgram)
+    console.warn(
+      `${centralProgram.name} - ${centralProgram.code} not found in Contentful`
+    )
+  const programName =
+    data.contentfulCentralProgram?.programName || centralProgram.name
+  const contentfulProgramDescription =
+    data.contentfulCentralProgram?.description
 
   const content = data.contentfulPage.content
   return (
     <Layout>
-      <Seo title={translatedProgramName} />
+      <Seo title={programName} />
       <div className="d-none d-lg-block">
         <ScrollWidget
           className="scroll-widget"
@@ -57,16 +63,16 @@ const CentralProgram = ({ data }) => {
           <Row>
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
-                <h1>{translatedProgramName}</h1>
+                <h1>{programName}</h1>
                 {contentfulProgramDescription &&
                   renderRichText(
                     contentfulProgramDescription,
                     descriptionRenderOptions
                   )}
-                {data.contentfulCentralProgram.OUSDProgramLink ? (
+                {data.contentfulCentralProgram?.OUSDProgramLink ? (
                   <div className="pt-3">
                     <a
-                      href={data.contentfulCentralProgram.OUSDProgramLink}
+                      href={data.contentfulCentralProgram?.OUSDProgramLink}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -168,6 +174,8 @@ export const query = graphql`
       OUSDProgramLink
     }
     centralProgramsJson(code: { eq: $code }) {
+      name
+      code
       ...ProgramOverviewData
       ...StaffRolesData
       ...StaffLaborUnionsData
