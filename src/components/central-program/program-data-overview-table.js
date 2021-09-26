@@ -50,7 +50,7 @@ const Heading = () => {
       columns={columns}
       bootstrap4
     >
-      {props => (
+      {(props) => (
         <div>
           <BootstrapTable
             classes="heading"
@@ -105,7 +105,7 @@ const SpendingOverview = ({ data }) => {
       columns={columns}
       bootstrap4
     >
-      {props => (
+      {(props) => (
         <div>
           <BootstrapTable
             classes="overview"
@@ -175,7 +175,7 @@ const BudgetOverview = ({ data }) => {
       columns={columns}
       bootstrap4
     >
-      {props => (
+      {(props) => (
         <div>
           <BootstrapTable
             classes="overview"
@@ -247,7 +247,7 @@ const StaffOverview = ({ data }) => {
       columns={columns}
       bootstrap4
     >
-      {props => (
+      {(props) => (
         <div>
           <BootstrapTable
             classes="overview"
@@ -268,6 +268,9 @@ const ProgramDataOverviewTable = ({ data, content, className }) => {
       <SpendingOverview data={data.centralProgramsJson} />
       <BudgetOverview data={data.centralProgramsJson} />
       <StaffOverview data={data.centralProgramsJson} />
+      {!data[CHANGE] ? (
+        <div className="footnote">There is no data for the previous year.</div>
+      ) : null}
     </div>
   )
 }
