@@ -38,10 +38,14 @@ const descriptionRenderOptions = {
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
-  if (!data.contentfulCentralProgram)
+  if (!data.contentfulCentralProgram) {
     console.warn(
       `${centralProgram.name} - ${centralProgram.code} not found in Contentful`
     )
+    throw new Error(
+      `${centralProgram.name} - ${centralProgram.code} not found in Contentful`
+    )
+  }
   const programName =
     data.contentfulCentralProgram?.programName || centralProgram.name
   const contentfulProgramDescription =

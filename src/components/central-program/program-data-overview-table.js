@@ -269,7 +269,7 @@ const ProgramDataOverviewTable = ({ data, content, className }) => {
       <BudgetOverview data={data.centralProgramsJson} />
       <StaffOverview data={data.centralProgramsJson} />
       {!data[CHANGE] ? (
-        <div className="footnote">There is no data for the previous year.</div>
+        <div className="footnote">{content.footnote.footnote}</div>
       ) : null}
     </div>
   )
@@ -283,6 +283,9 @@ export const query = graphql`
         dataFieldName
       }
       heading
+      footnote {
+        footnote
+      }
     }
   }
   fragment ProgramOverviewData on CentralProgramsJson {
