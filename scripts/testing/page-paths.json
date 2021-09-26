@@ -12,16 +12,16 @@
     "url": "/es/central-programs/accounts-payable"
   },
   {
+    "url": "/en/central-programs/associated-student-body-funds"
+  },
+  {
+    "url": "/es/central-programs/associated-student-body-funds"
+  },
+  {
     "url": "/en/central-programs/board-of-education"
   },
   {
     "url": "/es/central-programs/board-of-education"
-  },
-  {
-    "url": "/en/central-programs/budget"
-  },
-  {
-    "url": "/es/central-programs/budget"
   },
   {
     "url": "/en/central-programs/buildings-and-grounds"
@@ -178,12 +178,6 @@
   },
   {
     "url": "/es/central-programs/office-of-equity"
-  },
-  {
-    "url": "/en/central-programs/office-of-post-secondary-readiness"
-  },
-  {
-    "url": "/es/central-programs/office-of-post-secondary-readiness"
   },
   {
     "url": "/en/central-programs/office-of-sr-business-officer"
