@@ -5,27 +5,27 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 234107.61
+        "total": 259853.55
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 496426.97
+        "total": 492208.97
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 475454.13
+        "total": 587393.33
       }
     ],
     "links": [
       {
-        "value": 149579.96,
+        "value": 175274.75,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 325874.17,
+        "value": 302869.53,
         "target": "SUPV&ADM SALARIES",
         "source": "Philanthropy / Grants"
       }
@@ -37,28 +37,18 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 777319.17
+        "total": 482704.51
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 247108.01
-      },
-      {
-        "id": "SUPV&ADM SALARIES",
-        "type": "object",
-        "total": 186276.56
+        "total": 255015.99
       }
     ],
     "links": [
       {
-        "value": 247108.01,
+        "value": 255015.99,
         "target": "CLERICAL SALARIES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 186276.56,
-        "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       }
     ]
@@ -69,129 +59,149 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 2641073.62
+        "total": 312374.09
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 486845.81
+        "total": 485844.9
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 5712260.43
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 3336420.54
+        "total": 1946562.74
       },
       {
         "id": "Approved Textbooks and Core Curricula Materials",
         "type": "object",
-        "total": 2554676.17
+        "total": 2588318.67
       },
       {
-        "id": "Computer $500-4,999",
+        "id": "Books and Other Reference Materials",
         "type": "object",
-        "total": 998611.11
+        "total": 189129.79
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 891637.79
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 191565.31
+        "total": 360747.92
+      },
+      {
+        "id": "EXTERNAL WORK ORDER SERVICES",
+        "type": "object",
+        "total": 158074.27
+      },
+      {
+        "id": "LICENSING AGREEMENTS",
+        "type": "object",
+        "total": 409274.8
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 169716.34
+        "total": 336207.95
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 343000
+        "total": 503963
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 252000
+        "total": 276600
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 185712.69
-      },
-      {
-        "id": "SUPV&ADM SUBSTITUTES",
-        "type": "object",
-        "total": 106493.07
-      },
-      {
-        "id": "TEACHER ON SPEC ASSIN SCHOOL",
-        "type": "object",
-        "total": 168096.62
-      },
-      {
-        "id": "TEACHERS SALARIES",
-        "type": "object",
-        "total": 300740.87
+        "total": 199398.88
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 564690.82
+        "total": 1857478.3
+      },
+      {
+        "id": "WORKERS COMP CERTIFICATED",
+        "type": "object",
+        "total": 124825.38
       }
     ],
     "links": [
       {
-        "value": 2554676.17,
+        "value": 867714.84,
+        "target": "Approved Textbooks and Core Curricula Materials",
+        "source": "State"
+      },
+      {
+        "value": 1720603.83,
         "target": "Approved Textbooks and Core Curricula Materials",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 998611.11,
-        "target": "Computer $500-4,999",
-        "source": "Federal"
+        "value": 184431.25,
+        "target": "Books and Other Reference Materials",
+        "source": "State"
       },
       {
-        "value": 101537.14,
+        "value": 891637.79,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 179942.92,
+        "target": "CONSULTANTS",
+        "source": "State"
+      },
+      {
+        "value": 152899.27,
+        "target": "EXTERNAL WORK ORDER SERVICES",
+        "source": "State"
+      },
+      {
+        "value": 409274.8,
+        "target": "LICENSING AGREEMENTS",
+        "source": "State"
+      },
+      {
+        "value": 280174.84,
         "target": "STRS CERTIFICATED",
-        "source": "Federal"
+        "source": "State"
       },
       {
-        "value": 343000,
+        "value": 175000,
         "target": "Subagreements for Services",
         "source": "Federal"
       },
       {
-        "value": 252000,
+        "value": 328963,
+        "target": "Subagreements for Services",
+        "source": "State"
+      },
+      {
+        "value": 276600,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 109102.41,
-        "target": "SUPV&ADM SALARIES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 106493.07,
-        "target": "SUPV&ADM SUBSTITUTES",
-        "source": "Federal"
-      },
-      {
-        "value": 110489.59,
-        "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Federal"
-      },
-      {
-        "value": 270348.12,
-        "target": "TEACHERS SALARIES",
-        "source": "Federal"
-      },
-      {
-        "value": 329720,
+        "value": 1765384.75,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Federal"
+        "source": "State"
       },
       {
-        "value": 234970.82,
-        "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Supplemental & Concentration"
+        "value": 102834.17,
+        "target": "WORKERS COMP CERTIFICATED",
+        "source": "State"
       }
     ]
   },
@@ -201,36 +211,57 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1115028.66
+        "total": 1330549.6
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 188173.72
+        "total": 306931.8
       },
       {
-        "id": "SUPPLIES",
+        "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 188173.72
+        "total": 115474.36
+      },
+      {
+        "id": "PERS CLASSIFIED",
+        "type": "object",
+        "total": 125197.81
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 702694.79
+        "total": 1036506.81
       }
     ],
     "links": [
       {
-        "value": 188173.72,
-        "target": "SUPPLIES",
-        "source": "State"
+        "value": 117307.13,
+        "target": "PERS CLASSIFIED",
+        "source": "General (Base)"
       },
       {
-        "value": 702694.79,
+        "value": 856619.6,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
+      },
+      {
+        "value": 170187.18,
+        "target": "SUPV&ADM SALARIES",
+        "source": "State"
       }
     ]
+  },
+  {
+    "site_code": 906,
+    "nodes": [
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 129686.26
+      }
+    ],
+    "links": []
   },
   {
     "site_code": 907,
@@ -238,59 +269,71 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 717694.27
+        "total": 586705.94
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 848015.93
-      },
-      {
-        "id": "CLASSSUPPT SALARIES",
-        "type": "object",
-        "total": 380855.17
+        "total": 855224.35
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 141562.73
+        "total": 509894.13
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 169828.45
+        "total": 201303.96
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 147176.72
+        "total": 145602.04
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 393151.02
+        "total": 470377.7
       }
     ],
     "links": [
       {
-        "value": 331020.81,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 124083.85,
+        "value": 442061.53,
         "target": "CLERICAL SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 116387.96,
+        "value": 130001.76,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 315525.3,
+        "value": 345073.05,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
+      }
+    ]
+  },
+  {
+    "site_code": 908,
+    "nodes": [
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 320889.27
+      },
+      {
+        "id": "Materials and Supplies",
+        "type": "object",
+        "total": 269931.71
+      }
+    ],
+    "links": [
+      {
+        "value": 269931.71,
+        "target": "Materials and Supplies",
+        "source": "Other Revenue"
       }
     ]
   },
@@ -300,174 +343,244 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 430481.59
+        "total": 107236.67
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 391537.88
+        "total": 554849.99
       },
       {
         "id": "Parcel Taxes",
         "type": "resource",
-        "total": 1161545.76
+        "total": 1878835.46
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 1536720.41
+        "total": 2692510.91
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 2479940.44
+        "total": 3908345.14
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 3392921.18
+        "total": 2414740.27
       },
       {
         "id": "Approved Textbooks and Core Curricula Materials",
         "type": "object",
-        "total": 2561053.69
+        "total": 2946181.34
+      },
+      {
+        "id": "Books and Other Reference Materials",
+        "type": "object",
+        "total": 165568.75
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 126717.47
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 175075.09
+        "total": 237403.25
+      },
+      {
+        "id": "CONSULTANTS",
+        "type": "object",
+        "total": 100000
       },
       {
         "id": "EXTERNAL WORK ORDER SERVICES",
         "type": "object",
-        "total": 229976.43
+        "total": 198386.85
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 646792.62
+        "total": 689148.33
+      },
+      {
+        "id": "INSTRAIDES SALARIES",
+        "type": "object",
+        "total": 387066.08
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 559524.17
+        "total": 653744.83
+      },
+      {
+        "id": "Subagreements for Services",
+        "type": "object",
+        "total": 234404.5
+      },
+      {
+        "id": "SUPPLIES",
+        "type": "object",
+        "total": 110137.38
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 1469868.91
+        "total": 1754728.67
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 672684.04
+        "total": 398413.19
       },
       {
         "id": "TEACHER ON SPEC ASSIN SCHOOL",
         "type": "object",
-        "total": 407364.32
+        "total": 605636.04
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 1427245.06
+        "total": 1413544.25
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 199744.36
+        "total": 619582.19
       },
       {
         "id": "WORKERS COMP CERTIFICATED",
         "type": "object",
-        "total": 212997.62
+        "total": 258689.95
       }
     ],
     "links": [
       {
-        "value": 111000,
-        "target": "Approved Textbooks and Core Curricula Materials",
-        "source": "Federal"
-      },
-      {
-        "value": 2449107.15,
+        "value": 2941257.16,
         "target": "Approved Textbooks and Core Curricula Materials",
         "source": "State"
       },
       {
-        "value": 132462.9,
+        "value": 165568.75,
+        "target": "Books and Other Reference Materials",
+        "source": "State"
+      },
+      {
+        "value": 126717.47,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 131794.56,
         "target": "CLERICAL SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 169887.19,
-        "target": "EXTERNAL WORK ORDER SERVICES",
+        "value": 100000,
+        "target": "CONSULTANTS",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 171567.57,
+        "value": 260685.9,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "Parcel Taxes"
       },
       {
-        "value": 359137.86,
+        "value": 152457.26,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 227454.12,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 130121.56,
+        "value": 387066.08,
+        "target": "INSTRAIDES SALARIES",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 210505.49,
         "target": "STRS CERTIFICATED",
         "source": "Parcel Taxes"
       },
       {
-        "value": 331451.96,
+        "value": 149393.69,
+        "target": "STRS CERTIFICATED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 221388.36,
         "target": "STRS CERTIFICATED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 134047.24,
+        "value": 234404.5,
+        "target": "Subagreements for Services",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 109177.41,
+        "target": "SUPPLIES",
+        "source": "State"
+      },
+      {
+        "value": 136233.86,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 1314058.71,
+        "value": 241127.05,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 1349035.89,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 293447.15,
+        "value": 182366.57,
         "target": "SUPV&ADM SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 263628.49,
+        "value": 104426.57,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 301895.55,
+        "value": 503094.4,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 782774.65,
+        "value": 1306059.28,
         "target": "TEACHERS SALARIES",
         "source": "Parcel Taxes"
       },
       {
-        "value": 644470.41,
+        "value": 107484.97,
         "target": "TEACHERS SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 126707.95,
+        "value": 251406.98,
+        "target": "TEACHERS SALARIES STIPENDS",
+        "source": "General (Base)"
+      },
+      {
+        "value": 236241.25,
         "target": "TEACHERS SALARIES STIPENDS",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 120733.8,
-        "target": "WORKERS COMP CERTIFICATED",
-        "source": "Supplemental & Concentration"
+        "value": 127660.46,
+        "target": "TEACHERS SALARIES STIPENDS",
+        "source": "State"
       }
     ]
   },
@@ -477,57 +590,57 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 474992.67
+        "total": 613680.64
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 403789.87
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 2026351.42
+        "total": 986692.07
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 5436009.24
+        "total": 5488742.83
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 316492.26
+        "total": 358454.7
       },
       {
-        "id": "CLASSSUPPT SALARIES",
+        "id": "CLASSSUPPT SALARIES STIPENDS",
         "type": "object",
-        "total": 448155.83
+        "total": 143896.84
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 539087.14
+        "total": 661383.32
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 111392.22
-      },
-      {
-        "id": "GAS-HEATING-ELECTRICITY",
-        "type": "object",
-        "total": 116174.58
+        "total": 187910.5
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 345905.01
+        "total": 163889.4
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 296055.41
+        "total": 398745.27
       },
       {
         "id": "INSTRAIDES SALARIES",
         "type": "object",
-        "total": 223924.72
+        "total": 664062.28
       },
       {
         "id": "INTERFUND",
@@ -535,101 +648,96 @@
         "total": 773769
       },
       {
-        "id": "Interfund - Food Srvs Claims",
+        "id": "Other Authorized Interfund Transfers Out",
         "type": "object",
-        "total": 224882.67
+        "total": 228896
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 230206.35
+        "total": 318918.07
       },
       {
-        "id": "PUPILSUPPT SALARIES",
+        "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 337812.79
+        "total": 104401.4
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 358820.34
+        "total": 200236.61
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 540297.08
+        "total": 718987.33
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 952422.21
+        "total": 950548.09
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 349077.82
+        "total": 492011.64
       },
       {
         "id": "TEACHER ON SPEC ASSIN SCHOOL",
         "type": "object",
-        "total": 986570.84
+        "total": 205112.2
+      },
+      {
+        "id": "TEACHERS SALARIES STIPENDS",
+        "type": "object",
+        "total": 136455.29
       },
       {
         "id": "Transfers of Indirect Costs - Interfund",
         "type": "object",
-        "total": 423874.4
+        "total": 701128.68
       },
       {
-        "id": "WORKERS COMP CERTIFICATED",
+        "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 149711.18
+        "total": 115753.11
       }
     ],
     "links": [
       {
-        "value": 251938.04,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Philanthropy / Grants"
+        "value": 143896.84,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
       },
       {
-        "value": 162523.01,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 418562.75,
+        "value": 536561.52,
         "target": "CLERICAL SALARIES",
         "source": "State"
       },
       {
-        "value": 106392.22,
-        "target": "CONSULTANTS",
-        "source": "State"
-      },
-      {
-        "value": 116174.58,
-        "target": "GAS-HEATING-ELECTRICITY",
-        "source": "State"
-      },
-      {
-        "value": 156389.95,
+        "value": 145052.96,
         "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "State"
+      },
+      {
+        "value": 112780.52,
+        "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 165962.41,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "State"
-      },
-      {
-        "value": 150831.8,
+        "value": 178156.63,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 105915.44,
+        "value": 385315.92,
         "target": "INSTRAIDES SALARIES",
         "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 238283.35,
+        "target": "INSTRAIDES SALARIES",
+        "source": "Supplemental & Concentration"
       },
       {
         "value": 773769,
@@ -637,62 +745,52 @@
         "source": "State"
       },
       {
-        "value": 224882.67,
-        "target": "Interfund - Food Srvs Claims",
+        "value": 216307,
+        "target": "Other Authorized Interfund Transfers Out",
         "source": "State"
       },
       {
-        "value": 123749.64,
+        "value": 158338.98,
         "target": "PERS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 337812.79,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "State"
-      },
-      {
-        "value": 145398.62,
-        "target": "STRS CERTIFICATED",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 188392.23,
+        "value": 157286.99,
         "target": "STRS CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 540297.08,
+        "value": 632487.33,
         "target": "Subagreements for Services",
         "source": "State"
       },
       {
-        "value": 175108.19,
+        "value": 216719.5,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "Federal"
       },
       {
-        "value": 777314.02,
+        "value": 733828.59,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "State"
       },
       {
-        "value": 261039.64,
+        "value": 146052.05,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 190468.56,
         "target": "SUPV&ADM SALARIES",
         "source": "State"
       },
       {
-        "value": 852927.08,
-        "target": "TEACHER ON SPEC ASSIN SCHOOL",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 133643.76,
+        "value": 188975.76,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "State"
       },
       {
-        "value": 409046.59,
+        "value": 654216.17,
         "target": "Transfers of Indirect Costs - Interfund",
         "source": "State"
       }
@@ -704,183 +802,255 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 451190
+        "total": 248465.89
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 169052.91
+        "total": 247403.4
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 243418.24
       },
       {
         "id": "Parcel Taxes",
         "type": "resource",
-        "total": 1025692.31
+        "total": 1453087.96
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 1426062
+        "total": 1540772.97
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 1834854.68
+        "total": 2337242.26
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1037974.78
+        "total": 1027617.61
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 548575.88
+        "total": 431943.39
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 128300.64
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 191875.63
-      },
-      {
-        "id": "Computer $500-4,999",
-        "type": "object",
-        "total": 214850.58
+        "total": 214790.52
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 115281.25
+        "total": 273859.72
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 176063.53
+        "total": 231030.04
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 413333.19
+        "total": 414997.25
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 277675.28
+        "total": 277787.16
+      },
+      {
+        "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "type": "object",
+        "total": 107465.16
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 182634.24
+        "total": 233856.88
       },
       {
         "id": "STRS CLASSIFIED",
         "type": "object",
-        "total": 140306.85
+        "total": 182922.67
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 175000
+        "total": 189788.37
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 132330.6
+        "total": 351361.91
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 1545571.98
+        "total": 2200866.22
       },
       {
         "id": "TEACHER ON SPEC ASSIN SCHOOL",
         "type": "object",
-        "total": 228398.73
+        "total": 232579.17
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 497759.7
+        "total": 640048.11
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 300435.49
+        "total": 246628.6
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 137847.97
+        "total": 168952.56
       }
     ],
     "links": [
       {
-        "value": 144270.71,
+        "value": 134928.82,
         "target": "CLASSSUPPT SALARIES",
         "source": "State"
       },
       {
-        "value": 366298.58,
+        "value": 234521.07,
         "target": "CLASSSUPPT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 199679.16,
-        "target": "Computer $500-4,999",
-        "source": "Federal"
+        "value": 128300.64,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
       },
       {
-        "value": 121826.65,
+        "value": 129984.72,
+        "target": "CONSULTANTS",
+        "source": "State"
+      },
+      {
+        "value": 121185.32,
+        "target": "HEALTH & WELFARE CERTIFICATED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 149640.43,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Parcel Taxes"
       },
       {
-        "value": 154756.05,
+        "value": 151344.44,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 175000,
+        "value": 108721.82,
+        "target": "STRS CERTIFICATED",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 164788.37,
         "target": "Subagreements for Services",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 132330.6,
+        "value": 197548.78,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 596808.52,
+        "value": 200861.01,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 894431.87,
         "target": "SUPV&ADM SALARIES",
         "source": "Parcel Taxes"
       },
       {
-        "value": 180736.05,
+        "value": 198616.58,
         "target": "SUPV&ADM SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 620266.3,
+        "value": 702538.06,
         "target": "SUPV&ADM SALARIES",
         "source": "State"
       },
       {
-        "value": 122585.28,
+        "value": 140677.48,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 158005.83,
+        "value": 214502.85,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "State"
       },
       {
-        "value": 497759.7,
+        "value": 640048.11,
         "target": "TEACHERS SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 178638.34,
+        "value": 170108.08,
         "target": "TEACHERS SALARIES STIPENDS",
+        "source": "State"
+      }
+    ]
+  },
+  {
+    "site_code": 913,
+    "nodes": [
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 2704708.44
+      },
+      {
+        "id": "Equipment $500-4,999",
+        "type": "object",
+        "total": 369091.84
+      },
+      {
+        "id": "Subagreements for Services",
+        "type": "object",
+        "total": 122500
+      },
+      {
+        "id": "SUPPLIES",
+        "type": "object",
+        "total": 1857513.13
+      }
+    ],
+    "links": [
+      {
+        "value": 369091.84,
+        "target": "Equipment $500-4,999",
+        "source": "State"
+      },
+      {
+        "value": 122500,
+        "target": "Subagreements for Services",
+        "source": "State"
+      },
+      {
+        "value": 1857513.13,
+        "target": "SUPPLIES",
         "source": "State"
       }
     ]
@@ -891,167 +1061,132 @@
       {
         "id": "Bonds",
         "type": "resource",
-        "total": 11441357.71
+        "total": 8691677.31
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1441479.7
+        "total": 282789.52
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 624060.02
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 118447.77
+        "total": 203129.31
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 260862.74
-      },
-      {
-        "id": "COMPUTERS  >= $5,000",
-        "type": "object",
-        "total": 183351.08
+        "total": 271715.07
       },
       {
         "id": "Consultant Expense",
         "type": "object",
-        "total": 4885970.84
+        "total": 4928589.5
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 519237.26
-      },
-      {
-        "id": "CONTRACTED SERVICES",
-        "type": "object",
-        "total": 1303615.71
+        "total": 599836.36
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 270632.74
-      },
-      {
-        "id": "Main Construction",
-        "type": "object",
-        "total": 1027738.65
+        "total": 262170.92
       },
       {
         "id": "Other Construction",
         "type": "object",
-        "total": 1227105.76
-      },
-      {
-        "id": "Other Planning Costs",
-        "type": "object",
-        "total": 246104.88
+        "total": 190387.73
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 392040.62
-      },
-      {
-        "id": "REPAIRS CONT",
-        "type": "object",
-        "total": 144371.5
+        "total": 399897.48
       },
       {
         "id": "REPAIRS CONT ",
         "type": "object",
-        "total": 286411.18
+        "total": 124332
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 121999.03
+        "total": 151745.14
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 1805838.31
+        "total": 2365706.9
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 124264.31
+        "total": 144721.47
       }
     ],
     "links": [
       {
-        "value": 260862.74,
+        "value": 271715.07,
         "target": "CLERICAL SALARIES",
         "source": "Bonds"
       },
       {
-        "value": 183351.08,
-        "target": "COMPUTERS  >= $5,000",
-        "source": "Bonds"
-      },
-      {
-        "value": 4773470.84,
+        "value": 4896481,
         "target": "Consultant Expense",
         "source": "Bonds"
       },
       {
-        "value": 480114.09,
+        "value": 431662.19,
         "target": "CONSULTANTS",
         "source": "Bonds"
       },
       {
-        "value": 1303615.71,
-        "target": "CONTRACTED SERVICES",
+        "value": 107336.25,
+        "target": "CONSULTANTS",
         "source": "General (Base)"
       },
       {
-        "value": 262608.71,
+        "value": 254548.85,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Bonds"
       },
       {
-        "value": 1027738.65,
-        "target": "Main Construction",
-        "source": "Bonds"
-      },
-      {
-        "value": 1227105.76,
+        "value": 190387.73,
         "target": "Other Construction",
         "source": "Bonds"
       },
       {
-        "value": 246058.95,
-        "target": "Other Planning Costs",
-        "source": "Bonds"
-      },
-      {
-        "value": 381228.84,
+        "value": 390381.78,
         "target": "PERS CLASSIFIED",
         "source": "Bonds"
       },
       {
-        "value": 144371.5,
-        "target": "REPAIRS CONT",
-        "source": "Bonds"
-      },
-      {
-        "value": 286411.18,
+        "value": 124332,
         "target": "REPAIRS CONT ",
         "source": "Bonds"
       },
       {
-        "value": 119273.72,
+        "value": 121405.91,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "source": "Bonds"
       },
       {
-        "value": 1750037.53,
+        "value": 1742215.19,
         "target": "SUPV&ADM SALARIES",
         "source": "Bonds"
       },
       {
-        "value": 120772.69,
+        "value": 568991.95,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 120519.68,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "Bonds"
       }
@@ -1063,337 +1198,297 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 3114474.03
+        "total": 2937823.37
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 517820.36
+        "total": 652033.62
       },
       {
         "id": "Other Revenue",
         "type": "resource",
-        "total": 1761431
+        "total": 1127454.44
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 4792511.86
+        "total": 4087442.95
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 2565579.73
+        "total": 2288364.06
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 2272481.35
-      },
-      {
-        "id": "AFTERSCHOOL CUSTODIAL INTERPRO",
-        "type": "object",
-        "total": 401766.2
+        "total": 3362211.36
       },
       {
         "id": "Central Office Supplies",
         "type": "object",
-        "total": 152879.8
+        "total": 108626.36
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 1493207.18
+        "total": 1350249.15
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 299199.93
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 1138294.83
+        "total": 1072223.51
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 1839523.99
+        "total": 1682158.72
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 121599.49
+        "total": 157610.29
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 1278244.21
-      },
-      {
-        "id": "MEDICARE CLASSIFIED",
-        "type": "object",
-        "total": 109382.99
+        "total": 1050031.72
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 1280495.22
+        "total": 990732.8
       },
       {
         "id": "PUPILSUPPT SALARIES",
         "type": "object",
-        "total": 147013.01
+        "total": 150514.42
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 403315.89
+        "total": 325659.49
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 110589.06
+        "total": 143439.71
       },
       {
         "id": "STRS CLASSIFIED",
         "type": "object",
-        "total": 156957.4
+        "total": 115106.16
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 1392176.15
+        "total": 1498664.81
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 256366.24
+        "total": 384540.48
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 4921425.07
+        "total": 3479891.05
       },
       {
         "id": "TEACHER ON SPEC ASSIN SCHOOL",
         "type": "object",
-        "total": 272737.73
+        "total": 335751.84
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 260932.41
+        "total": 185104.25
       },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object",
-        "total": 250183.17
+        "total": 286302.53
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 455433.19
+        "total": 360438.02
       }
     ],
     "links": [
       {
-        "value": 128945.83,
-        "target": "AFTERSCHOOL CUSTODIAL INTERPRO",
-        "source": "Federal"
-      },
-      {
-        "value": 272820.37,
-        "target": "AFTERSCHOOL CUSTODIAL INTERPRO",
-        "source": "State"
-      },
-      {
-        "value": 519560.9,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 224138.95,
+        "value": 422383.21,
         "target": "CLASSSUPPT SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 638938.36,
+        "value": 764014.05,
         "target": "CLASSSUPPT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 156387.83,
+        "value": 299199.93,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 209301.76,
         "target": "CLERICAL SALARIES",
         "source": "Federal"
       },
       {
-        "value": 181010.5,
+        "value": 202288.46,
         "target": "CLERICAL SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 321605.52,
+        "value": 179910.12,
         "target": "CLERICAL SALARIES",
         "source": "Other Revenue"
       },
       {
-        "value": 113586.4,
-        "target": "CLERICAL SALARIES",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 109753.9,
+        "value": 105308.99,
         "target": "CLERICAL SALARIES",
         "source": "State"
       },
       {
-        "value": 255950.68,
+        "value": 318356.06,
         "target": "CLERICAL SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 804134.29,
+        "value": 588807.23,
         "target": "CONSULTANTS",
         "source": "Federal"
       },
       {
-        "value": 108107.93,
+        "value": 102868.39,
         "target": "CONSULTANTS",
         "source": "Other Revenue"
       },
       {
-        "value": 345794.19,
+        "value": 390536.06,
         "target": "CONSULTANTS",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 545587.58,
+        "value": 540447.04,
         "target": "CONSULTANTS",
         "source": "State"
       },
       {
-        "value": 137893.8,
+        "value": 128221.45,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 193702.16,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 300628.43,
+        "value": 234706.27,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 138146.07,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "State"
-      },
-      {
-        "value": 457427.02,
+        "value": 449775.68,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 164773.2,
+        "value": 173959.83,
         "target": "PERS CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 157463.43,
-        "target": "PERS CLASSIFIED",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 358172.17,
+        "value": 286284.82,
         "target": "PERS CLASSIFIED",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 148986.58,
+        "value": 114279.52,
         "target": "PERS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 412110.63,
+        "value": 308587.19,
         "target": "PERS CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 117357.29,
-        "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 130499.89,
-        "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 143880,
+        "value": 240600,
         "target": "Subagreements for Services",
         "source": "Federal"
       },
       {
-        "value": 1151226.01,
+        "value": 1094322.13,
         "target": "Subagreements for Services",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 213440.95,
+        "value": 103089,
+        "target": "Subagreements for Services",
+        "source": "State"
+      },
+      {
+        "value": 228477.23,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 756241.11,
+        "value": 814012.97,
         "target": "SUPV&ADM SALARIES",
         "source": "Federal"
       },
       {
-        "value": 179981.98,
+        "value": 142942.05,
+        "target": "SUPV&ADM SALARIES",
+        "source": "General (Base)"
+      },
+      {
+        "value": 310568.67,
         "target": "SUPV&ADM SALARIES",
         "source": "Other Revenue"
       },
       {
-        "value": 1573666.86,
+        "value": 1030832.94,
         "target": "SUPV&ADM SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 684103.42,
+        "value": 445979.05,
         "target": "SUPV&ADM SALARIES",
         "source": "State"
       },
       {
-        "value": 1640299.46,
+        "value": 735555.37,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 106013.58,
+        "value": 131758.02,
+        "target": "TEACHER ON SPEC ASSIN SCHOOL",
+        "source": "Federal"
+      },
+      {
+        "value": 106375.92,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 119850.02,
-        "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 100670.27,
+        "value": 129265.02,
         "target": "Transfers of Indirect Costs",
         "source": "Federal"
       },
       {
-        "value": 137924.68,
+        "value": 147534.31,
         "target": "Transfers of Indirect Costs",
         "source": "State"
       },
       {
-        "value": 116568.8,
-        "target": "WORKERS COMP CLASSIFIED",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 150551.86,
+        "value": 108661.33,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "Supplemental & Concentration"
       }
@@ -1405,52 +1500,52 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 1039502.81
+        "total": 1080115.36
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 297347.35
+        "total": 325730.29
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 183530.96
+        "total": 207929.74
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 155628.33
+        "total": 163312
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 172239.6
+        "total": 188683.51
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 595310.93
+        "total": 677641.63
       }
     ],
     "links": [
       {
-        "value": 119518.96,
+        "value": 126282.04,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 172239.6,
+        "value": 188683.51,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 467026.73,
+        "value": 423676.68,
         "target": "SUPV&ADM SALARIES",
         "source": "Federal"
       },
       {
-        "value": 128284.2,
+        "value": 146943.73,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       }
@@ -1460,76 +1555,96 @@
     "site_code": 928,
     "nodes": [
       {
+        "id": "Federal",
+        "type": "resource",
+        "total": 237937.43
+      },
+      {
+        "id": "Philanthropy / Grants",
+        "type": "resource",
+        "total": 168632.53
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 102997.88
+      },
+      {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 2214563.59
+        "total": 4235209.18
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 514637.88
+        "total": 487924.6
       },
       {
         "id": "PUPILSUPPT SALARIES",
         "type": "object",
-        "total": 3171437
+        "total": 2738488.23
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 482423.76
+        "total": 452421.68
+      },
+      {
+        "id": "SUPV, ADMIN, INSTR COACHES SAL",
+        "type": "object",
+        "total": 144165.19
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 296557.08
+        "total": 204493.37
+      },
+      {
+        "id": "TESTING MATERIALS",
+        "type": "object",
+        "total": 167937.43
       },
       {
         "id": "WORKERS COMP CERTIFICATED",
         "type": "object",
-        "total": 191923.14
+        "total": 175572.54
       }
     ],
     "links": [
       {
-        "value": 308673.46,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "General (Base)"
-      },
-      {
-        "value": 205964.42,
+        "value": 487924.6,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 1872594.88,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1298842.12,
+        "value": 2738488.23,
         "target": "PUPILSUPPT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 281527.04,
-        "target": "STRS CERTIFICATED",
-        "source": "General (Base)"
-      },
-      {
-        "value": 200896.72,
+        "value": 447551.57,
         "target": "STRS CERTIFICATED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 296557.08,
+        "value": 144165.19,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 127260.81,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 112355.64,
+        "value": 167937.43,
+        "target": "TESTING MATERIALS",
+        "source": "Federal"
+      },
+      {
+        "value": 172959.19,
         "target": "WORKERS COMP CERTIFICATED",
-        "source": "General (Base)"
+        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -1539,102 +1654,137 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 255542.37
+        "total": 299541.5
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 856498.3
+        "total": 779462.05
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 1029312.33
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 2109468.07
+        "total": 1872646.98
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 490514.67
+        "total": 939533.12
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 259800
+        "total": 465000
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 107444.82
+        "total": 114699.82
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 262844.48
+        "total": 277341.06
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 263438.06
+        "total": 316942.49
+      },
+      {
+        "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "type": "object",
+        "total": 106654.19
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 170000
+        "total": 305476
+      },
+      {
+        "id": "SUPV, ADMIN, INSTR COACHES SAL",
+        "type": "object",
+        "total": 149448.59
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 981141.66
+        "total": 669969.54
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 438954.91
+        "total": 381782.26
+      },
+      {
+        "id": "WORKERS COMP CLASSIFIED",
+        "type": "object",
+        "total": 103349.18
       }
     ],
     "links": [
       {
-        "value": 407161.71,
+        "value": 354216.46,
+        "target": "CLERICAL SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 413210.96,
         "target": "CLERICAL SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 200000,
+        "value": 355000,
         "target": "CONSULTANTS",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 208622.66,
+        "value": 135115.86,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 195900.54,
+        "value": 147188.2,
         "target": "PERS CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 170000,
+        "value": 130476,
         "target": "Subagreements for Services",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 258576.91,
+        "value": 175000,
+        "target": "Subagreements for Services",
+        "source": "State"
+      },
+      {
+        "value": 114762.85,
+        "target": "SUPV, ADMIN, INSTR COACHES SAL",
+        "source": "Supplemental & Concentration"
+      },
+      {
+        "value": 157579.66,
         "target": "SUPV&ADM SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 639968.4,
+        "value": 330196.26,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 148070.11,
+        "value": 133625.35,
         "target": "TEACHERS SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 290884.8,
+        "value": 248156.91,
         "target": "TEACHERS SALARIES",
         "source": "Supplemental & Concentration"
       }
@@ -1646,68 +1796,38 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1572645.51
-      },
-      {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 173278.88
+        "total": 1464821.23
       },
       {
         "id": "CLASSSUPPT SALARIES STIPENDS",
         "type": "object",
-        "total": 178328.58
+        "total": 202797.6
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 589934.5
-      },
-      {
-        "id": "EXTERNAL WORK ORDER SERVICES",
-        "type": "object",
-        "total": 125336.02
-      },
-      {
-        "id": "Subagreements for Services",
-        "type": "object",
-        "total": 114686.8
+        "total": 548167
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 219685.1
-      },
-      {
-        "id": "TEACHERS SALARIES STIPENDS",
-        "type": "object",
-        "total": 207874.57
+        "total": 248605.28
       }
     ],
     "links": [
       {
-        "value": 176426.58,
+        "value": 188367.9,
         "target": "CLASSSUPPT SALARIES STIPENDS",
         "source": "General (Base)"
       },
       {
-        "value": 564934.5,
+        "value": 548167,
         "target": "CONSULTANTS",
         "source": "General (Base)"
       },
       {
-        "value": 114686.8,
-        "target": "Subagreements for Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 169365.21,
+        "value": 174454.64,
         "target": "SUPV&ADM SALARIES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 205446.34,
-        "target": "TEACHERS SALARIES STIPENDS",
         "source": "General (Base)"
       }
     ]
@@ -1718,48 +1838,83 @@
       {
         "id": "Bonds",
         "type": "resource",
-        "total": 141221.15
+        "total": 155105.8
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1493094.13
+        "total": 3095726.37
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 491117.43
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 237917.54
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 178379.74
+        "total": 294938.81
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 188450.04
+        "total": 391346.88
+      },
+      {
+        "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "type": "object",
+        "total": 156734.24
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 1061062.13
+        "total": 2662163.79
+      },
+      {
+        "id": "WORKERS COMP CLASSIFIED",
+        "type": "object",
+        "total": 153482.72
       }
     ],
     "links": [
       {
-        "value": 156157.89,
+        "value": 267302.45,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 181197.72,
+        "value": 365669.23,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 101586.47,
+        "value": 118805.57,
+        "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "source": "General (Base)"
+      },
+      {
+        "value": 115281.84,
         "target": "SUPV&ADM SALARIES",
         "source": "Bonds"
       },
       {
-        "value": 922700.7,
+        "value": 1972983.63,
         "target": "SUPV&ADM SALARIES",
+        "source": "General (Base)"
+      },
+      {
+        "value": 441124.76,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 121521.99,
+        "target": "WORKERS COMP CLASSIFIED",
         "source": "General (Base)"
       }
     ]
@@ -1768,71 +1923,91 @@
     "site_code": 937,
     "nodes": [
       {
-        "id": "Federal",
+        "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 1943007.2
+        "total": 175386.17
       },
       {
-        "id": "Supplemental & Concentration",
+        "id": "State",
         "type": "resource",
-        "total": 440418.33
-      },
-      {
-        "id": "CLASSSUPPT SALARIES OVERTIME",
-        "type": "object",
-        "total": 145553.49
+        "total": 3631604.31
       },
       {
         "id": "CLASSSUPPT SALARIES STIPENDS",
         "type": "object",
-        "total": 175894.04
+        "total": 245576.32
+      },
+      {
+        "id": "CONSULTANTS",
+        "type": "object",
+        "total": 159454
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 210020.42
+        "total": 353621.12
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 226850
+        "total": 378900
       },
       {
         "id": "SUPV&ADM SALARIES STIPENDS",
         "type": "object",
-        "total": 225446.08
+        "total": 381871.58
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 1043473.69
+        "total": 1935577.7
+      },
+      {
+        "id": "WORKERS COMP CERTIFICATED",
+        "type": "object",
+        "total": 107714.85
       }
     ],
     "links": [
       {
-        "value": 145553.49,
-        "target": "CLASSSUPPT SALARIES OVERTIME",
-        "source": "Supplemental & Concentration"
+        "value": 209252.86,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
       },
       {
-        "value": 192070.93,
+        "value": 225720.67,
+        "target": "CONSULTANTS",
+        "source": "State"
+      },
+      {
+        "value": 348220.04,
         "target": "STRS CERTIFICATED",
-        "source": "Federal"
+        "source": "State"
       },
       {
-        "value": 226850,
+        "value": 122900,
         "target": "Subagreements for Services",
         "source": "Federal"
       },
       {
-        "value": 174855.54,
-        "target": "SUPV&ADM SALARIES STIPENDS",
-        "source": "Federal"
+        "value": 236000,
+        "target": "Subagreements for Services",
+        "source": "State"
       },
       {
-        "value": 980562.36,
+        "value": 381871.58,
+        "target": "SUPV&ADM SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 1900089.42,
         "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Federal"
+        "source": "State"
+      },
+      {
+        "value": 105585.65,
+        "target": "WORKERS COMP CERTIFICATED",
+        "source": "State"
       }
     ]
   },
@@ -1842,29 +2017,39 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 761353.68
+        "total": 771080.01
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 397290.9
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 173103.63
+        "total": 147448.5
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 319314.84
+        "total": 718710.08
       }
     ],
     "links": [
       {
-        "value": 173103.63,
+        "value": 147448.5,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 319314.84,
+        "value": 351695.74,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
+      },
+      {
+        "value": 367073.56,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
       }
     ]
   },
@@ -1874,47 +2059,42 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 944587.95
+        "total": 1068057.37
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 431728.03
+        "total": 245478.19
       },
       {
-        "id": "CONSULTANTS",
-        "type": "object",
-        "total": 198316.56
+        "id": "State",
+        "type": "resource",
+        "total": 105074.15
       },
       {
         "id": "DUES & MEMBERSHIPS",
         "type": "object",
-        "total": 201492.5
+        "total": 360751.75
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 642808.97
+        "total": 754035.81
       }
     ],
     "links": [
       {
-        "value": 198316.56,
-        "target": "CONSULTANTS",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 201492.5,
+        "value": 360751.75,
         "target": "DUES & MEMBERSHIPS",
         "source": "General (Base)"
       },
       {
-        "value": 487703.57,
+        "value": 532022.36,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 155105.4,
+        "value": 169168.97,
         "target": "SUPV&ADM SALARIES",
         "source": "Philanthropy / Grants"
       }
@@ -1926,17 +2106,17 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 278294.64
+        "total": 1010336.74
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 221445.87
+        "total": 867281.63
       }
     ],
     "links": [
       {
-        "value": 221445.87,
+        "value": 867281.63,
         "target": "TEACHERS SALARIES",
         "source": "General (Base)"
       }
@@ -1948,250 +2128,223 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 453242.81
+        "total": 439270.23
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 4472709.93
+        "total": 4102366.7
       },
       {
         "id": "Other Revenue",
         "type": "resource",
-        "total": 170353.24
+        "total": 388777.84
       },
       {
         "id": "Parcel Taxes",
         "type": "resource",
-        "total": 776928.02
+        "total": 892902.65
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 432347.12
+        "total": 752916.71
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 648764.11
+        "total": 1960946.65
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1226963.02
+        "total": 1020021.81
       },
       {
-        "id": "CLERICAL SALARIES",
+        "id": "CLASSSUPPT SALARIES STIPENDS",
         "type": "object",
-        "total": 302738.67
-      },
-      {
-        "id": "CLERICAL SUBSTITUTES",
-        "type": "object",
-        "total": 109864.96
+        "total": 135830.2
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 217754.47
+        "total": 253123.73
       },
       {
         "id": "EXTERNAL WORK ORDER SERVICES",
         "type": "object",
-        "total": 243311.17
+        "total": 335518.14
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 551781.59
+        "total": 592176.76
       },
       {
         "id": "OTHERCERT SALARIES",
         "type": "object",
-        "total": 309229.21
+        "total": 154610.75
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 516898.07
+        "total": 580861.04
       },
       {
         "id": "PROFESSIONAL DEVELOPMENT",
         "type": "object",
-        "total": 336893.62
+        "total": 433362.23
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 167093.43
+        "total": 201504.46
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 152100.95
+        "total": 187520.14
       },
       {
         "id": "STRS CLASSIFIED",
         "type": "object",
-        "total": 120179.55
+        "total": 152010.07
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 245016.7
+        "total": 278207.69
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 3305559.5
+        "total": 4258054.77
       },
       {
         "id": "TEACHERS SALARIES EXTRA COMP",
         "type": "object",
-        "total": 218722.99
+        "total": 247961.64
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 584360.08
+        "total": 911476.42
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 223090.44
+        "total": 257936.75
       }
     ],
     "links": [
       {
-        "value": 102480.82,
-        "target": "CLERICAL SALARIES",
-        "source": "General (Base)"
+        "value": 135830.2,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
       },
       {
-        "value": 108937.17,
-        "target": "CLERICAL SALARIES",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 109864.96,
-        "target": "CLERICAL SUBSTITUTES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 105478.47,
+        "value": 137188.5,
         "target": "CONSULTANTS",
         "source": "General (Base)"
       },
       {
-        "value": 141028.04,
+        "value": 162606.17,
+        "target": "EXTERNAL WORK ORDER SERVICES",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 139632.13,
         "target": "EXTERNAL WORK ORDER SERVICES",
         "source": "State"
       },
       {
-        "value": 322986.81,
+        "value": 297420.96,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 309229.21,
+        "value": 105702.77,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 154610.75,
         "target": "OTHERCERT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 392251.56,
+        "value": 367469.58,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 197922.89,
+        "value": 288889.7,
         "target": "PROFESSIONAL DEVELOPMENT",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 138223.14,
+        "value": 141979.25,
         "target": "PROFESSIONAL DEVELOPMENT",
         "source": "State"
       },
       {
-        "value": 128146.46,
+        "value": 106551.53,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 142636.4,
+        "value": 111745.8,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 102380.3,
-        "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 290898.64,
+        "value": 256685.48,
         "target": "SUPV&ADM SALARIES",
         "source": "Federal"
       },
       {
-        "value": 2147209.73,
+        "value": 2030041.8,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 418358.27,
+        "value": 346678.17,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 609172.41,
         "target": "SUPV&ADM SALARIES",
         "source": "Parcel Taxes"
       },
       {
-        "value": 360784.09,
+        "value": 102729.27,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 489733.69,
+        "target": "SUPV&ADM SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 423013.95,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 143360.49,
-        "target": "TEACHERS SALARIES EXTRA COMP",
-        "source": "General (Base)"
-      },
-      {
-        "value": 337779.98,
+        "value": 437310.62,
         "target": "TEACHERS SALARIES STIPENDS",
         "source": "General (Base)"
       },
       {
-        "value": 139580.1,
-        "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 107000,
+        "value": 431318.8,
         "target": "TEACHERS SALARIES STIPENDS",
         "source": "State"
       },
       {
-        "value": 141573.53,
+        "value": 126205.37,
         "target": "WORKERS COMP CLASSIFIED",
-        "source": "General (Base)"
-      }
-    ]
-  },
-  {
-    "site_code": 945,
-    "nodes": [
-      {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 109680
-      },
-      {
-        "id": "CONSULTANTS",
-        "type": "object",
-        "total": 109680
-      }
-    ],
-    "links": [
-      {
-        "value": 109680,
-        "target": "CONSULTANTS",
         "source": "General (Base)"
       }
     ]
@@ -2202,39 +2355,84 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1514846.34
+        "total": 2144156.57
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 131081.44
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 346617.6
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 123238.84
+      },
+      {
+        "id": "CONSULTANTS",
+        "type": "object",
+        "total": 677474.32
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 114690.6
+        "total": 131543.5
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 160885.99
+        "total": 171688.66
+      },
+      {
+        "id": "Subagreements for Services",
+        "type": "object",
+        "total": 139396.19
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 990910.51
+        "total": 1182463.67
       }
     ],
     "links": [
       {
-        "value": 114690.6,
+        "value": 123238.84,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 634261.52,
+        "target": "CONSULTANTS",
+        "source": "General (Base)"
+      },
+      {
+        "value": 129307.3,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 160885.99,
+        "value": 169662.16,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 990910.51,
+        "value": 139396.19,
+        "target": "Subagreements for Services",
+        "source": "State"
+      },
+      {
+        "value": 1047738.18,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
+      },
+      {
+        "value": 116974.34,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
       }
     ]
   },
@@ -2244,47 +2442,47 @@
       {
         "id": "Other Revenue",
         "type": "resource",
-        "total": 1133466.57
+        "total": 1188743.46
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 107129.99
+        "total": 105294
       },
       {
         "id": "EXTERNAL WORK ORDER SERVICES",
         "type": "object",
-        "total": 162699.42
+        "total": 108180.56
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 100012.1
+        "total": 100395.84
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 509501.05
+        "total": 589480.31
       }
     ],
     "links": [
       {
-        "value": 107129.99,
+        "value": 105294,
         "target": "CLERICAL SALARIES",
         "source": "Other Revenue"
       },
       {
-        "value": 162699.42,
+        "value": 108180.56,
         "target": "EXTERNAL WORK ORDER SERVICES",
         "source": "Other Revenue"
       },
       {
-        "value": 100012.1,
+        "value": 100395.84,
         "target": "PERS CLASSIFIED",
         "source": "Other Revenue"
       },
       {
-        "value": 509501.05,
+        "value": 589480.31,
         "target": "SUPV&ADM SALARIES",
         "source": "Other Revenue"
       }
@@ -2296,72 +2494,87 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1401798.27
+        "total": 1461015.93
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 194771.26
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 444736.1
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1146317.6
+        "total": 512960.86
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 771315.79
+        "total": 712789.56
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 192311.85
+        "total": 180822.96
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 280899.69
+        "total": 273035.97
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 928012.52
-      },
-      {
-        "id": "WORKERS COMP CLASSIFIED",
-        "type": "object",
-        "total": 102060.22
+        "total": 979395.26
       }
     ],
     "links": [
       {
-        "value": 348000.56,
+        "value": 356080.28,
         "target": "CLERICAL SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 423337.46,
+        "value": 152800.8,
+        "target": "CLERICAL SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 163343.16,
         "target": "CLERICAL SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 115258.22,
+        "value": 109879.2,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 141608.39,
+        "value": 141907.31,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 139295.32,
-        "target": "PERS CLASSIFIED",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 550134.02,
+        "value": 527397.21,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 377878.5,
+        "value": 173857.24,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 109828.82,
+        "target": "SUPV&ADM SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 168311.99,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       }
@@ -2373,96 +2586,54 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 1132944.35
+        "total": 1460897.22
       },
       {
-        "id": "Supplemental & Concentration",
+        "id": "State",
         "type": "resource",
-        "total": 117689.54
+        "total": 143156.03
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 528863.04
+        "total": 562839.11
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 109949.06
+        "total": 154504.98
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 127751.46
+        "total": 185782.82
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 261646.38
+        "total": 558425.01
       }
     ],
     "links": [
       {
-        "value": 528863.04,
+        "value": 547745.64,
         "target": "CLERICAL SALARIES",
         "source": "Federal"
       },
       {
-        "value": 106153.33,
+        "value": 148183.86,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 111156.18,
+        "value": 162142.78,
         "target": "PERS CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 196771.4,
+        "value": 370378.44,
         "target": "SUPV&ADM SALARIES",
         "source": "Federal"
-      }
-    ]
-  },
-  {
-    "site_code": 951,
-    "nodes": [
-      {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 1798615.08
-      },
-      {
-        "id": "HEALTH & WELFARE CLASSIFIED",
-        "type": "object",
-        "total": 133915.46
-      },
-      {
-        "id": "PERS CLASSIFIED",
-        "type": "object",
-        "total": 226012.16
-      },
-      {
-        "id": "SUPV&ADM SALARIES",
-        "type": "object",
-        "total": 1280330.41
-      }
-    ],
-    "links": [
-      {
-        "value": 129013.13,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General (Base)"
-      },
-      {
-        "value": 213851.13,
-        "target": "PERS CLASSIFIED",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1216693.08,
-        "target": "SUPV&ADM SALARIES",
-        "source": "General (Base)"
       }
     ]
   },
@@ -2472,134 +2643,129 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 1750748.09
+        "total": 1017788.34
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 148450.85
+        "total": 196156.62
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 111326.01
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 1267765.48
+        "total": 300787.4
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 606398.43
+        "total": 943495.56
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 479750.4
+        "total": 329755.2
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 786181.22
+        "total": 371932.84
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 167945.5
+        "total": 214550
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 250530.68
+        "total": 133945.2
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 162096.95
+        "total": 125005.23
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 151843.83
-      },
-      {
-        "id": "PUPILSUPPT SALARIES",
-        "type": "object",
-        "total": 354075.66
+        "total": 108009.36
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 266011.23
+        "total": 169599.16
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 164600
+        "total": 121632.19
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 393876.84
+        "total": 314421.27
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 262355.43
+        "total": 249863.5
       },
       {
         "id": "TEACHER ON SPEC ASSIN SCHOOL",
         "type": "object",
-        "total": 608711.75
+        "total": 577333.06
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 275240.8
+        "total": 195404.31
       }
     ],
     "links": [
       {
-        "value": 137318.65,
+        "value": 150544.19,
         "target": "CLASSSUPPT SALARIES",
         "source": "Federal"
       },
       {
-        "value": 433065.17,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 215797.4,
+        "value": 221388.65,
         "target": "CLASSSUPPT SALARIES",
         "source": "State"
       },
       {
-        "value": 122695.46,
-        "target": "HEALTH & WELFARE CERTIFICATED",
-        "source": "Federal"
+        "value": 120000,
+        "target": "CONSULTANTS",
+        "source": "State"
       },
       {
-        "value": 328788.07,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Philanthropy / Grants"
+        "value": 118932.37,
+        "target": "Subagreements for Services",
+        "source": "State"
       },
       {
-        "value": 142132.88,
-        "target": "STRS CERTIFICATED",
-        "source": "Federal"
-      },
-      {
-        "value": 253015.56,
+        "value": 235373.28,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 566089.57,
+        "value": 100592.39,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 388503.85,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "Federal"
       },
       {
-        "value": 204601.9,
-        "target": "TEACHERS SALARIES STIPENDS",
-        "source": "Federal"
+        "value": 188829.21,
+        "target": "TEACHER ON SPEC ASSIN SCHOOL",
+        "source": "State"
       }
     ]
   },
@@ -2607,38 +2773,22 @@
     "site_code": 956,
     "nodes": [
       {
-        "id": "Federal",
-        "type": "resource",
-        "total": 130331.94
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
-        "total": 600983.97
+        "total": 193343.74
       },
       {
-        "id": "SUPV, ADMIN, INSTR COACHES SAL",
-        "type": "object",
-        "total": 196791.64
+        "id": "Supplemental & Concentration",
+        "type": "resource",
+        "total": 177301.5
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 235981.98
+        "total": 132229.78
       }
     ],
-    "links": [
-      {
-        "value": 196791.64,
-        "target": "SUPV, ADMIN, INSTR COACHES SAL",
-        "source": "General (Base)"
-      },
-      {
-        "value": 173707.81,
-        "target": "SUPV&ADM SALARIES",
-        "source": "General (Base)"
-      }
-    ]
+    "links": []
   },
   {
     "site_code": 958,
@@ -2646,62 +2796,77 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1083376.24
+        "total": 495447.42
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 522493.79
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 175256.99
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 793870.79
+        "total": 935865.1
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 412248.73
+        "total": 531439.57
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 264187.1
+        "total": 161610.34
+      },
+      {
+        "id": "Computer $500-4,999",
+        "type": "object",
+        "total": 441868.52
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 177412.9
+        "total": 156082.09
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 226739.16
+        "total": 195861.83
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 520925.83
+        "total": 367454.39
       }
     ],
     "links": [
       {
-        "value": 411493.79,
+        "value": 500677.45,
         "target": "CLASSSUPPT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 225130.23,
+        "value": 115012.8,
         "target": "CLERICAL SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 125562.99,
-        "target": "PERS CLASSIFIED",
-        "source": "General (Base)"
+        "value": 441868.52,
+        "target": "Computer $500-4,999",
+        "source": "Other Revenue"
       },
       {
-        "value": 101176.17,
+        "value": 121728.91,
         "target": "PERS CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 443739.79,
+        "value": 174803.32,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       }
@@ -2713,32 +2878,32 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 293458.93
+        "total": 361220.04
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 141003.21
+        "total": 146284.41
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 147708.31
+        "total": 173218.01
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 128284.2
+        "total": 236612.9
       }
     ],
     "links": [
       {
-        "value": 147708.31,
+        "value": 173218.01,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 102627.36,
+        "value": 107442.72,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       }
@@ -2750,32 +2915,32 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 283941.63
+        "total": 305999.32
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 183252.17
+        "total": 200793.36
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 172691.4
+        "total": 188180.53
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 125784.24
+        "total": 185587.33
       }
     ],
     "links": [
       {
-        "value": 172691.4,
+        "value": 188180.53,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 125784.24,
+        "value": 144443.77,
         "target": "SUPV&ADM SALARIES",
         "source": "Supplemental & Concentration"
       }
@@ -2787,72 +2952,72 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 100000
+        "total": 105000
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 520579.01
+        "total": 508554.97
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 1504867.58
+        "total": 1471613.72
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 521474.73
+        "total": 311623.48
+      },
+      {
+        "id": "CONSULTANTS",
+        "type": "object",
+        "total": 105000
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 262307.24
+        "total": 227052.76
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 281711.5
+        "total": 236715.61
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 663735.85
+        "total": 614293.43
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 1084078.96
-      },
-      {
-        "id": "WORKERS COMP CERTIFICATED",
-        "type": "object",
-        "total": 106676.5
+        "total": 845521.82
       }
     ],
     "links": [
       {
-        "value": 202288.97,
+        "value": 183566.18,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 158457.37,
+        "value": 144209.01,
         "target": "STRS CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 355847.87,
+        "value": 379435.04,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 307887.98,
+        "value": 234858.39,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 1009736.01,
+        "value": 845521.82,
         "target": "TEACHERS SALARIES",
         "source": "State"
       }
@@ -2864,44 +3029,34 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 291318.05
-      },
-      {
-        "id": "Parcel Taxes",
-        "type": "resource",
-        "total": 149736.09
+        "total": 314020.32
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 295999.91
-      },
-      {
-        "id": "Supplemental & Concentration",
-        "type": "resource",
-        "total": 156726.89
+        "total": 185563.41
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 165191.4
+        "total": 162881.48
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 351275.85
+        "total": 260996.95
       }
     ],
     "links": [
       {
-        "value": 165191.4,
+        "value": 162881.48,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "General (Base)"
       },
       {
-        "value": 115933.33,
+        "value": 100602.31,
         "target": "SUPV&ADM SALARIES",
-        "source": "Supplemental & Concentration"
+        "source": "Philanthropy / Grants"
       }
     ]
   },
@@ -2911,127 +3066,112 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 196850.58
+        "total": 256210.71
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 3217448.92
+        "total": 3617911.14
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 760821.12
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 768554.46
+        "total": 558960.43
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 506463.54
-      },
-      {
-        "id": "CLERICAL SALARIES",
-        "type": "object",
-        "total": 106346.97
-      },
-      {
-        "id": "CONSULTANTS",
-        "type": "object",
-        "total": 108976.08
+        "total": 567182.05
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 341292.35
+        "total": 402667.4
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 222590.46
+        "total": 226364.76
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 139485.93
+        "total": 143021.79
       },
       {
         "id": "PUPILSUPPT SALARIES",
         "type": "object",
-        "total": 2852576.8
+        "total": 2906402.79
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 369672.65
+        "total": 395608.97
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 127771.56
+        "total": 101942.09
       },
       {
         "id": "WORKERS COMP CERTIFICATED",
         "type": "object",
-        "total": 171548.57
+        "total": 183800.26
       }
     ],
     "links": [
       {
-        "value": 506463.54,
+        "value": 567182.05,
         "target": "CLASSSUPPT SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 106346.97,
-        "target": "CLERICAL SALARIES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 108976.08,
-        "target": "CONSULTANTS",
-        "source": "General (Base)"
-      },
-      {
-        "value": 230150.25,
+        "value": 233268.95,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "General (Base)"
       },
       {
-        "value": 222590.46,
+        "value": 226364.76,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 139485.93,
+        "value": 143021.79,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 140920.85,
+        "value": 175914.8,
         "target": "PUPILSUPPT SALARIES",
         "source": "Federal"
       },
       {
-        "value": 2165744.2,
+        "value": 1852129.51,
         "target": "PUPILSUPPT SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 545911.75,
+        "value": 476176.41,
+        "target": "PUPILSUPPT SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 402182.07,
         "target": "PUPILSUPPT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 255535.34,
+        "value": 223730.13,
         "target": "STRS CERTIFICATED",
         "source": "General (Base)"
       },
       {
-        "value": 127771.56,
-        "target": "SUPV&ADM SALARIES",
-        "source": "General (Base)"
-      },
-      {
-        "value": 130338.46,
+        "value": 118528.7,
         "target": "WORKERS COMP CERTIFICATED",
         "source": "General (Base)"
       }
@@ -3043,422 +3183,452 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 1704912.84
+        "total": 1511247.53
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 1098630.45
+        "total": 917375.03
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 50302355.81
+        "total": 62982732.71
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 1291760.59
+        "total": 819585.05
+      },
+      {
+        "id": "Books and Other Reference Materials",
+        "type": "object",
+        "total": 251500.73
+      },
+      {
+        "id": "Central Office Supplies",
+        "type": "object",
+        "total": 1209086.9
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 1667270.74
+        "total": 1834066.16
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 343013.81
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 632149.5
+        "total": 713693.25
+      },
+      {
+        "id": "Computer $500-4,999",
+        "type": "object",
+        "total": 832042.7
       },
       {
         "id": "CONTRACTED SERVICES",
         "type": "object",
-        "total": 1444061.79
+        "total": 1173732.42
+      },
+      {
+        "id": "DUPLICAT EQUIPMENT >= $5,000",
+        "type": "object",
+        "total": 235980
+      },
+      {
+        "id": "Equipment $500-4,999",
+        "type": "object",
+        "total": 184026.7
       },
       {
         "id": "EXTERNAL WORK ORDER SERVICES",
         "type": "object",
-        "total": 227864.29
+        "total": 822566.94
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 2392761.13
+        "total": 2598942.08
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 1020584.45
+        "total": 1390888.96
       },
       {
         "id": "INSTRAIDES SALARIES",
         "type": "object",
-        "total": 1720765.59
+        "total": 2385604.51
       },
       {
         "id": "INSTRAIDES SALARIES STIPENDS",
         "type": "object",
-        "total": 159787.58
-      },
-      {
-        "id": "INTERPGM-NURSING SERVICES",
-        "type": "object",
-        "total": 968281
-      },
-      {
-        "id": "INTERPROGRAM",
-        "type": "object",
-        "total": 164666
+        "total": 242189.91
       },
       {
         "id": "LEGAL EXPENSE",
         "type": "object",
-        "total": 380507.96
+        "total": 214180.94
       },
       {
         "id": "Legal Settlements",
         "type": "object",
-        "total": 457075
+        "total": 386240
       },
       {
         "id": "MEDICARE CERTIFICATED",
         "type": "object",
-        "total": 210195.8
+        "total": 233197.4
       },
       {
         "id": "NON-PUBLIC AGENCY CONTRACTS",
         "type": "object",
-        "total": 12581271.65
+        "total": 17774533.64
       },
       {
         "id": "NON-PUBLIC SCHL CONTRACTS",
         "type": "object",
-        "total": 8862305.14
+        "total": 8200008.55
       },
       {
         "id": "OTHER BENEFITS CLASSIFIED",
         "type": "object",
-        "total": 183499.44
+        "total": 230490.89
       },
       {
         "id": "PERS CERTIFICATED",
         "type": "object",
-        "total": 133340.7
+        "total": 208506.85
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 796978.06
+        "total": 1032328.37
       },
       {
         "id": "PUPILSUPPT SALARIES",
         "type": "object",
-        "total": 4994426.03
+        "total": 5009746.56
       },
       {
         "id": "PUPILSUPPT SALARIES EXTRA COMP",
         "type": "object",
-        "total": 109082.07
+        "total": 114200.46
       },
       {
         "id": "PUPILSUPPT SALARIES STIPENDS",
         "type": "object",
-        "total": 175347.14
+        "total": 383876
       },
       {
         "id": "PYMTS TO PARENTS IN LIEU OF",
         "type": "object",
-        "total": 1095703.71
+        "total": 1172220.02
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 260203.77
+        "total": 336097.43
       },
       {
         "id": "STRS CERTIFICATED",
         "type": "object",
-        "total": 2270136.19
+        "total": 2382956.06
+      },
+      {
+        "id": "Subagreements for Services",
+        "type": "object",
+        "total": 1000048.64
       },
       {
         "id": "SUPV, ADMIN, INSTR COACHES SAL",
         "type": "object",
-        "total": 833829.06
+        "total": 931929.35
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 100646.19
+        "total": 172474.17
       },
       {
         "id": "TEACHER ON SPEC ASSIN SCHOOL",
         "type": "object",
-        "total": 714183.23
+        "total": 1428832.72
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 6866266.64
+        "total": 6978077.55
       },
       {
         "id": "TEACHERS SALARIES STIPENDS",
         "type": "object",
-        "total": 433988.85
+        "total": 1213787.98
       },
       {
         "id": "TEACHERS SUBSTITUTES",
         "type": "object",
-        "total": 596144.96
+        "total": 176487.78
       },
       {
         "id": "TESTING MATERIALS",
         "type": "object",
-        "total": 140566.39
+        "total": 226476.44
       },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object",
-        "total": 385904.45
+        "total": 407398.6
       },
       {
         "id": "WORKERS COMP CERTIFICATED",
         "type": "object",
-        "total": 888555.51
+        "total": 953169.19
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 267117.4
+        "total": 336137.73
       }
     ],
     "links": [
       {
-        "value": 1576662.57,
+        "value": 251500.73,
+        "target": "Books and Other Reference Materials",
+        "source": "State"
+      },
+      {
+        "value": 1206304.9,
+        "target": "Central Office Supplies",
+        "source": "State"
+      },
+      {
+        "value": 1788372.45,
         "target": "CLASSSUPPT SALARIES",
         "source": "State"
       },
       {
-        "value": 148500.85,
+        "value": 343013.81,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 231318.02,
         "target": "CLERICAL SALARIES",
         "source": "Federal"
       },
       {
-        "value": 429256.42,
+        "value": 482375.23,
         "target": "CLERICAL SALARIES",
         "source": "State"
       },
       {
-        "value": 104435,
-        "target": "CONTRACTED SERVICES",
-        "source": "Federal"
+        "value": 832042.7,
+        "target": "Computer $500-4,999",
+        "source": "State"
       },
       {
-        "value": 1339626.79,
+        "value": 1156232.42,
         "target": "CONTRACTED SERVICES",
         "source": "State"
       },
       {
-        "value": 227264.29,
+        "value": 235980,
+        "target": "DUPLICAT EQUIPMENT >= $5,000",
+        "source": "State"
+      },
+      {
+        "value": 184026.7,
+        "target": "Equipment $500-4,999",
+        "source": "State"
+      },
+      {
+        "value": 822566.94,
         "target": "EXTERNAL WORK ORDER SERVICES",
         "source": "State"
       },
       {
-        "value": 183154.21,
+        "value": 141942.01,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 2030303.34,
+        "value": 2318153.25,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 178444.15,
+        "value": 138333.04,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 112124,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "Federal"
-      },
-      {
-        "value": 904521.52,
+        "value": 1304504.58,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 279317.78,
+        "value": 125069.97,
         "target": "INSTRAIDES SALARIES",
         "source": "Federal"
       },
       {
-        "value": 1441447.81,
+        "value": 2260534.54,
         "target": "INSTRAIDES SALARIES",
         "source": "State"
       },
       {
-        "value": 159787.58,
+        "value": 242189.91,
         "target": "INSTRAIDES SALARIES STIPENDS",
         "source": "State"
       },
       {
-        "value": 968281,
-        "target": "INTERPGM-NURSING SERVICES",
-        "source": "State"
-      },
-      {
-        "value": 164666,
-        "target": "INTERPROGRAM",
-        "source": "State"
-      },
-      {
-        "value": 366366.56,
+        "value": 200349,
         "target": "LEGAL EXPENSE",
         "source": "State"
       },
       {
-        "value": 457075,
+        "value": 386240,
         "target": "Legal Settlements",
         "source": "State"
       },
       {
-        "value": 173666.19,
+        "value": 214893.44,
         "target": "MEDICARE CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 12581271.65,
+        "value": 17774533.64,
         "target": "NON-PUBLIC AGENCY CONTRACTS",
         "source": "State"
       },
       {
-        "value": 387997.09,
+        "value": 390933,
         "target": "NON-PUBLIC SCHL CONTRACTS",
         "source": "Federal"
       },
       {
-        "value": 8474308.05,
+        "value": 7809075.55,
         "target": "NON-PUBLIC SCHL CONTRACTS",
         "source": "State"
       },
       {
-        "value": 157454.89,
+        "value": 208045.18,
         "target": "OTHER BENEFITS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 133340.7,
+        "value": 208506.85,
         "target": "PERS CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 691943.54,
+        "value": 951160.51,
         "target": "PERS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 660147.25,
+        "value": 579917.76,
         "target": "PUPILSUPPT SALARIES",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 3885239.25,
+        "value": 4438328.8,
         "target": "PUPILSUPPT SALARIES",
         "source": "State"
       },
       {
-        "value": 440343.81,
-        "target": "PUPILSUPPT SALARIES",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 109082.07,
+        "value": 114200.46,
         "target": "PUPILSUPPT SALARIES EXTRA COMP",
         "source": "State"
       },
       {
-        "value": 175347.14,
+        "value": 383876,
         "target": "PUPILSUPPT SALARIES STIPENDS",
         "source": "State"
       },
       {
-        "value": 1047923.5,
+        "value": 1125688.02,
         "target": "PYMTS TO PARENTS IN LIEU OF",
         "source": "State"
       },
       {
-        "value": 226539.11,
+        "value": 309282.66,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 129576.04,
+        "value": 100009.87,
         "target": "STRS CERTIFICATED",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 2000780.14,
+        "value": 2191854.84,
         "target": "STRS CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 137849.41,
-        "target": "STRS CERTIFICATED",
-        "source": "Supplemental & Concentration"
+        "value": 1000048.64,
+        "target": "Subagreements for Services",
+        "source": "State"
       },
       {
-        "value": 762425.18,
+        "value": 872875.08,
         "target": "SUPV, ADMIN, INSTR COACHES SAL",
         "source": "State"
       },
       {
-        "value": 100646.19,
+        "value": 148074.79,
         "target": "SUPV&ADM SALARIES",
         "source": "State"
       },
       {
-        "value": 320031.41,
+        "value": 879699.16,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "State"
       },
       {
-        "value": 394151.82,
+        "value": 549133.56,
         "target": "TEACHER ON SPEC ASSIN SCHOOL",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 6866266.64,
+        "value": 6978077.55,
         "target": "TEACHERS SALARIES",
         "source": "State"
       },
       {
-        "value": 432988.85,
+        "value": 1213787.98,
         "target": "TEACHERS SALARIES STIPENDS",
         "source": "State"
       },
       {
-        "value": 596144.96,
+        "value": 176487.78,
         "target": "TEACHERS SUBSTITUTES",
         "source": "State"
       },
       {
-        "value": 140566.39,
+        "value": 226476.44,
         "target": "TESTING MATERIALS",
         "source": "State"
       },
       {
-        "value": 305500.13,
+        "value": 375930.94,
         "target": "Transfers of Indirect Costs",
         "source": "Federal"
       },
       {
-        "value": 806173.02,
+        "value": 882063.27,
         "target": "WORKERS COMP CERTIFICATED",
         "source": "State"
       },
       {
-        "value": 232759.51,
+        "value": 311000.73,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "State"
       }
@@ -3470,50 +3640,18 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 281830.97
+        "total": 136582.07
       },
       {
         "id": "POSTAGE",
         "type": "object",
-        "total": 102930.04
+        "total": 115311.94
       }
     ],
     "links": [
       {
-        "value": 102930.04,
+        "value": 115311.94,
         "target": "POSTAGE",
-        "source": "General (Base)"
-      }
-    ]
-  },
-  {
-    "site_code": 980,
-    "nodes": [
-      {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 656737.09
-      },
-      {
-        "id": "CONSULTANTS",
-        "type": "object",
-        "total": 398683.44
-      },
-      {
-        "id": "SUPV&ADM SALARIES",
-        "type": "object",
-        "total": 140331.25
-      }
-    ],
-    "links": [
-      {
-        "value": 398683.44,
-        "target": "CONSULTANTS",
-        "source": "General (Base)"
-      },
-      {
-        "value": 140331.25,
-        "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       }
     ]
@@ -3524,47 +3662,37 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1146239.61
+        "total": 1126765.75
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 534505.15
-      },
-      {
-        "id": "HEALTH & WELFARE CLASSIFIED",
-        "type": "object",
-        "total": 111930.71
+        "total": 509916.45
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 131395.94
+        "total": 136299.12
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 160469.78
+        "total": 198783.75
       }
     ],
     "links": [
       {
-        "value": 534505.15,
+        "value": 509916.45,
         "target": "CLERICAL SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 111930.71,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General (Base)"
-      },
-      {
-        "value": 131395.94,
+        "value": 136299.12,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 160469.78,
+        "value": 198783.75,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       }
@@ -3576,137 +3704,167 @@
       {
         "id": "Bonds",
         "type": "resource",
-        "total": 1554769.34
-      },
-      {
-        "id": "Federal",
-        "type": "resource",
-        "total": 584320.9
+        "total": 575409.23
       },
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 5033529.59
+        "total": 5269402.41
       },
       {
-        "id": "Philanthropy / Grants",
+        "id": "State",
         "type": "resource",
-        "total": 228106.49
+        "total": 14897816.25
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 2291353.62
+        "total": 2297134.67
+      },
+      {
+        "id": "Communications",
+        "type": "object",
+        "total": 182052
       },
       {
         "id": "Computer $500-4,999",
         "type": "object",
-        "total": 2241286.91
+        "total": 13879653.35
       },
       {
-        "id": "CONSULTANTS",
+        "id": "COMPUTER SUPPLIES",
         "type": "object",
-        "total": 196075
+        "total": 1034981.98
+      },
+      {
+        "id": "EXTERNAL WORK ORDER SERVICES",
+        "type": "object",
+        "total": 344456.78
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 398204.8
+        "total": 391533.01
       },
       {
         "id": "LICENSING AGREEMENTS",
         "type": "object",
-        "total": 608210.9
-      },
-      {
-        "id": "NETWORK EQUIPMENT",
-        "type": "object",
-        "total": 361658.72
+        "total": 791304.38
       },
       {
         "id": "OTHER BENEFITS CLASSIFIED",
         "type": "object",
-        "total": 109299.33
+        "total": 122537.5
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 468054.73
+        "total": 500434.39
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 152297.98
+        "total": 164102.94
+      },
+      {
+        "id": "SUPPLIES",
+        "type": "object",
+        "total": 308202.5
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 327055.32
+        "total": 407843.66
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 161631.32
+        "total": 166024.97
       }
     ],
     "links": [
       {
-        "value": 2221912.5,
+        "value": 2112887.44,
         "target": "CLERICAL SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 1213795.96,
+        "value": 115080.3,
+        "target": "CLERICAL SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 182052,
+        "target": "Communications",
+        "source": "General (Base)"
+      },
+      {
+        "value": 250427.95,
         "target": "Computer $500-4,999",
         "source": "Bonds"
       },
       {
-        "value": 972562.99,
+        "value": 232367.72,
         "target": "Computer $500-4,999",
         "source": "General (Base)"
       },
       {
-        "value": 124700,
-        "target": "CONSULTANTS",
-        "source": "Philanthropy / Grants"
+        "value": 13396817.26,
+        "target": "Computer $500-4,999",
+        "source": "State"
       },
       {
-        "value": 398204.8,
+        "value": 784978.79,
+        "target": "COMPUTER SUPPLIES",
+        "source": "General (Base)"
+      },
+      {
+        "value": 250003.19,
+        "target": "COMPUTER SUPPLIES",
+        "source": "State"
+      },
+      {
+        "value": 274981.28,
+        "target": "EXTERNAL WORK ORDER SERVICES",
+        "source": "Bonds"
+      },
+      {
+        "value": 385535.97,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 584320.9,
+        "value": 727231.94,
         "target": "LICENSING AGREEMENTS",
-        "source": "Federal"
+        "source": "State"
       },
       {
-        "value": 303769.88,
-        "target": "NETWORK EQUIPMENT",
-        "source": "Bonds"
-      },
-      {
-        "value": 109062.69,
+        "value": 119501.28,
         "target": "OTHER BENEFITS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 468335.95,
+        "value": 476406.1,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 152270.84,
+        "value": 149673.27,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 327055.32,
+        "value": 249075.23,
+        "target": "SUPPLIES",
+        "source": "State"
+      },
+      {
+        "value": 358561.15,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 155928.22,
+        "value": 150792.33,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "General (Base)"
       }
@@ -3718,99 +3876,89 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 229379
+        "total": 659075.22
       },
       {
         "id": "Other Revenue",
         "type": "resource",
-        "total": 20262525.23
-      },
-      {
-        "id": "Computer $500-4,999",
-        "type": "object",
-        "total": 161500
+        "total": 19180926.98
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 704517.77
+        "total": 349572.5
       },
       {
         "id": "EXTERNAL WORK ORDER SERVICES",
         "type": "object",
-        "total": 14736808.72
+        "total": 14105721.62
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 144517.88
+        "total": 149527.08
       },
       {
         "id": "Other Insurance",
         "type": "object",
-        "total": 2794151.11
+        "total": 3024385
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 212920.88
+        "total": 246746.32
       },
       {
         "id": "Student Insurance",
         "type": "object",
-        "total": 130071.96
+        "total": 129654.36
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 1066179.08
+        "total": 1418836.53
       }
     ],
     "links": [
       {
-        "value": 161500,
-        "target": "Computer $500-4,999",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 229186.5,
-        "target": "CONSULTANTS",
-        "source": "General (Base)"
-      },
-      {
-        "value": 475331.27,
+        "value": 349572.5,
         "target": "CONSULTANTS",
         "source": "Other Revenue"
       },
       {
-        "value": 14736808.72,
+        "value": 14060940.19,
         "target": "EXTERNAL WORK ORDER SERVICES",
         "source": "Other Revenue"
       },
       {
-        "value": 144517.88,
+        "value": 139240.98,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Other Revenue"
       },
       {
-        "value": 2794151.11,
+        "value": 3024385,
         "target": "Other Insurance",
         "source": "Other Revenue"
       },
       {
-        "value": 212920.88,
+        "value": 236140.95,
         "target": "PERS CLASSIFIED",
         "source": "Other Revenue"
       },
       {
-        "value": 130071.96,
+        "value": 129654.36,
         "target": "Student Insurance",
         "source": "Other Revenue"
       },
       {
-        "value": 1066179.08,
+        "value": 1367514.8,
         "target": "SUPV&ADM SALARIES",
         "source": "Other Revenue"
+      },
+      {
+        "value": 579793.44,
+        "target": "Transfers of Direct Costs - Interfund",
+        "source": "General (Base)"
       }
     ]
   },
@@ -3820,192 +3968,192 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 1051193.6
+        "total": 1199961.1
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 505068.66
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 19645794.57
+        "total": 18388824.21
       },
       {
         "id": "Building & Grounds Supplies",
         "type": "object",
-        "total": 1741508.66
+        "total": 3838046.35
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 5881778.63
+        "total": 5917986.87
       },
       {
         "id": "CLASSSUPPT SALARIES OVERTIME",
         "type": "object",
-        "total": 333914.13
+        "total": 489517.44
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 302824.83
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 107332.78
-      },
-      {
-        "id": "Equipment $500-4,999",
-        "type": "object",
-        "total": 147228.49
-      },
-      {
-        "id": "EXTERNAL WORK ORDER SERVICES",
-        "type": "object",
-        "total": 1575005.26
+        "total": 169926.52
       },
       {
         "id": "GASOLINE",
         "type": "object",
-        "total": 129075.18
+        "total": 135013.41
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 1504629.11
+        "total": 1513394.68
       },
       {
         "id": "MEDICARE CLASSIFIED",
         "type": "object",
-        "total": 108184.19
+        "total": 116650.33
       },
       {
         "id": "OTHER BENEFITS CLASSIFIED",
         "type": "object",
-        "total": 225237.06
+        "total": 233358.21
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 1382225.1
-      },
-      {
-        "id": "REPAIRS CONT",
-        "type": "object",
-        "total": 4238073.99
+        "total": 1402958.21
       },
       {
         "id": "REPAIRS CONT ",
         "type": "object",
-        "total": 348251.05
+        "total": 3529110.4
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 456416.25
+        "total": 493521.86
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 1148895
+        "total": 1173905.75
       },
       {
         "id": "VEHICLE PURCHASE >= $5,000",
         "type": "object",
-        "total": 702109.25
+        "total": 162726.66
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 453561.11
+        "total": 464582.31
       }
     ],
     "links": [
       {
-        "value": 1741508.66,
+        "value": 3832058.44,
         "target": "Building & Grounds Supplies",
         "source": "State"
       },
       {
-        "value": 552713.71,
+        "value": 625094.8,
         "target": "CLASSSUPPT SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 5329064.92,
+        "value": 288322.83,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 5004569.24,
         "target": "CLASSSUPPT SALARIES",
         "source": "State"
       },
       {
-        "value": 290102.52,
+        "value": 460941.92,
         "target": "CLASSSUPPT SALARIES OVERTIME",
         "source": "State"
       },
       {
-        "value": 107332.78,
+        "value": 302824.83,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 169926.52,
         "target": "CLERICAL SALARIES",
         "source": "State"
       },
       {
-        "value": 147228.49,
-        "target": "Equipment $500-4,999",
-        "source": "State"
-      },
-      {
-        "value": 1492555.26,
-        "target": "EXTERNAL WORK ORDER SERVICES",
-        "source": "State"
-      },
-      {
-        "value": 129075.18,
+        "value": 135013.41,
         "target": "GASOLINE",
         "source": "State"
       },
       {
-        "value": 146942.39,
+        "value": 172683.57,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 1357686.72,
+        "value": 1340711.11,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 196668.76,
+        "value": 100674.88,
+        "target": "MEDICARE CLASSIFIED",
+        "source": "State"
+      },
+      {
+        "value": 206136.62,
         "target": "OTHER BENEFITS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 109213.14,
+        "value": 126045.18,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 1273011.96,
+        "value": 1276913.03,
         "target": "PERS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 4238073.99,
-        "target": "REPAIRS CONT",
-        "source": "State"
-      },
-      {
-        "value": 348251.05,
+        "value": 3439835.4,
         "target": "REPAIRS CONT ",
         "source": "State"
       },
       {
-        "value": 419595.51,
+        "value": 425214.49,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "source": "State"
       },
       {
-        "value": 1148895,
+        "value": 162389.85,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 1011515.9,
         "target": "SUPV&ADM SALARIES",
         "source": "State"
       },
       {
-        "value": 702109.25,
+        "value": 162726.66,
         "target": "VEHICLE PURCHASE >= $5,000",
         "source": "State"
       },
       {
-        "value": 418735.37,
+        "value": 411035.28,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "State"
       }
@@ -4015,136 +4163,201 @@
     "site_code": 989,
     "nodes": [
       {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 13974421.22
+      },
+      {
+        "id": "Other Revenue",
+        "type": "resource",
+        "total": 316543.67
+      },
+      {
+        "id": "State",
+        "type": "resource",
+        "total": 3669865.36
+      },
+      {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 7689221.98
+        "total": 8737505.17
       },
       {
         "id": "CLASSSUPPT SALARIES OVERTIME",
         "type": "object",
-        "total": 614211.97
+        "total": 117215.39
+      },
+      {
+        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "type": "object",
+        "total": 569360.34
       },
       {
         "id": "CLASSSUPPT SUBSTITUTES",
         "type": "object",
-        "total": 681962.42
+        "total": 498856.07
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 139280.1
+        "total": 221589.11
       },
       {
         "id": "Custodial Supplies",
         "type": "object",
-        "total": 629680.86
+        "total": 439784.37
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 3173405.03
+        "total": 3217350.07
       },
       {
         "id": "MEDICARE CLASSIFIED",
         "type": "object",
-        "total": 141476.87
+        "total": 161951.63
       },
       {
         "id": "OTHER BENEFITS CLASSIFIED",
         "type": "object",
-        "total": 526089.68
+        "total": 531274.84
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 1683172.13
+        "total": 1811974.05
       },
       {
         "id": "REPAIRS CONT ",
         "type": "object",
-        "total": 156843.51
+        "total": 183129.74
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 541662.53
+        "total": 615952.34
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 629828.04
+        "total": 1006547.07
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 587186.07
+        "total": 644566.51
       }
     ],
     "links": [
       {
-        "value": 7689221.98,
+        "value": 7153322.24,
         "target": "CLASSSUPPT SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 614211.97,
+        "value": 1584182.93,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 117215.39,
         "target": "CLASSSUPPT SALARIES OVERTIME",
         "source": "General (Base)"
       },
       {
-        "value": 681962.42,
+        "value": 569360.34,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 498856.07,
         "target": "CLASSSUPPT SUBSTITUTES",
         "source": "General (Base)"
       },
       {
-        "value": 139280.1,
+        "value": 196937.17,
         "target": "CLERICAL SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 629680.86,
+        "value": 439784.37,
         "target": "Custodial Supplies",
         "source": "General (Base)"
       },
       {
-        "value": 3165360.35,
+        "value": 2580897.62,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 140946.23,
+        "value": 629625.33,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "State"
+      },
+      {
+        "value": 123899.4,
         "target": "MEDICARE CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 525990.68,
+        "value": 425890.67,
         "target": "OTHER BENEFITS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 1675995.53,
+        "value": 105354.74,
+        "target": "OTHER BENEFITS CLASSIFIED",
+        "source": "State"
+      },
+      {
+        "value": 1456053.59,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 156843.51,
+        "value": 348565.93,
+        "target": "PERS CLASSIFIED",
+        "source": "State"
+      },
+      {
+        "value": 183129.74,
         "target": "REPAIRS CONT ",
         "source": "General (Base)"
       },
       {
-        "value": 539393.21,
+        "value": 473061.02,
         "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 593227.44,
+        "value": 128749.43,
+        "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "source": "State"
+      },
+      {
+        "value": 565026.31,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 584990.07,
+        "value": 288091.87,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 111940.49,
+        "target": "SUPV&ADM SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 510855.66,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "General (Base)"
+      },
+      {
+        "value": 122060.28,
+        "target": "WORKERS COMP CLASSIFIED",
+        "source": "State"
       }
     ]
   },
@@ -4154,17 +4367,27 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 521412.33
+        "total": 481604.24
+      },
+      {
+        "id": "CLERICAL SALARIES",
+        "type": "object",
+        "total": 103128.65
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 321679
+        "total": 301078.91
       }
     ],
     "links": [
       {
-        "value": 321679,
+        "value": 103128.65,
+        "target": "CLERICAL SALARIES",
+        "source": "General (Base)"
+      },
+      {
+        "value": 207457.88,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       }
@@ -4176,187 +4399,257 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 4587922.83
+        "total": 22678344.5
       },
       {
         "id": "Other Revenue",
         "type": "resource",
-        "total": 1100733.93
+        "total": 1038704.16
       },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
-        "total": 174191.47
+        "total": 100808.4
       },
       {
-        "id": "CLASSSUPPT SALARIES EXTRA COMP",
+        "id": "State",
+        "type": "resource",
+        "total": 2502409.51
+      },
+      {
+        "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 483880.15
+        "total": 4099569.65
       },
       {
         "id": "CLASSSUPPT SALARIES STIPENDS",
         "type": "object",
-        "total": 129006.55
-      },
-      {
-        "id": "CLASSSUPPT SUBSTITUTES",
-        "type": "object",
-        "total": 524534.14
+        "total": 663605.12
       },
       {
         "id": "CLERICAL SALARIES",
         "type": "object",
-        "total": 177190.82
+        "total": 282197.59
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 128000
+        "total": 125000
+      },
+      {
+        "id": "EQUIPMENT >= $5,000",
+        "type": "object",
+        "total": 155232.07
       },
       {
         "id": "Food (Cafeteria only)",
         "type": "object",
-        "total": 1797043.2
+        "total": 10529230.93
       },
       {
         "id": "Food Service Supplies",
         "type": "object",
-        "total": 278653.98
+        "total": 1016747.93
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 158536.49
-      },
-      {
-        "id": "INTERFUND",
-        "type": "object",
-        "total": 105897.52
+        "total": 1813978.48
       },
       {
         "id": "LICENSING AGREEMENTS",
         "type": "object",
-        "total": 102046.23
+        "total": 132222.7
+      },
+      {
+        "id": "MEDICARE CLASSIFIED",
+        "type": "object",
+        "total": 100408.73
       },
       {
         "id": "Other Authorized Interfund Transfers Out",
         "type": "object",
-        "total": 206843
+        "total": 827366
+      },
+      {
+        "id": "OTHER BENEFITS CLASSIFIED",
+        "type": "object",
+        "total": 226091.97
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 237371.88
+        "total": 1065810.7
       },
       {
         "id": "REPAIRS CONT",
         "type": "object",
-        "total": 103350.3
+        "total": 113971.99
+      },
+      {
+        "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "type": "object",
+        "total": 358373.44
       },
       {
         "id": "Subagreements for Services",
         "type": "object",
-        "total": 181110.87
+        "total": 1157839.04
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 725222.5
+        "total": 1730596.43
       },
       {
         "id": "Transfers of Indirect Costs - Interfund",
         "type": "object",
-        "total": 338531.16
+        "total": 999496.15
+      },
+      {
+        "id": "VEHICLE PURCHASE >= $5,000",
+        "type": "object",
+        "total": 104371.28
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 124269.04
+        "total": 399604.93
       }
     ],
     "links": [
       {
-        "value": 483880.15,
-        "target": "CLASSSUPPT SALARIES EXTRA COMP",
+        "value": 3477025.65,
+        "target": "CLASSSUPPT SALARIES",
         "source": "Federal"
       },
       {
-        "value": 524534.14,
-        "target": "CLASSSUPPT SUBSTITUTES",
+        "value": 598409.07,
+        "target": "CLASSSUPPT SALARIES",
+        "source": "State"
+      },
+      {
+        "value": 178428.6,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
         "source": "Federal"
       },
       {
-        "value": 177190.82,
+        "value": 445356.66,
+        "target": "CLASSSUPPT SALARIES STIPENDS",
+        "source": "State"
+      },
+      {
+        "value": 251766.59,
         "target": "CLERICAL SALARIES",
         "source": "Federal"
       },
       {
-        "value": 103000,
-        "target": "CONSULTANTS",
-        "source": "Other Revenue"
+        "value": 155232.07,
+        "target": "EQUIPMENT >= $5,000",
+        "source": "State"
       },
       {
-        "value": 1224158.9,
+        "value": 9742748.94,
         "target": "Food (Cafeteria only)",
         "source": "Federal"
       },
       {
-        "value": 571819.65,
+        "value": 497229.3,
         "target": "Food (Cafeteria only)",
         "source": "Other Revenue"
       },
       {
-        "value": 133872.91,
-        "target": "Food Service Supplies",
+        "value": 100808.4,
+        "target": "Food (Cafeteria only)",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 146021.56,
+        "value": 188444.29,
+        "target": "Food (Cafeteria only)",
+        "source": "State"
+      },
+      {
+        "value": 958182.27,
+        "target": "Food Service Supplies",
+        "source": "Federal"
+      },
+      {
+        "value": 1527238.62,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 105897.52,
-        "target": "INTERFUND",
-        "source": "Federal"
+        "value": 261928.39,
+        "target": "HEALTH & WELFARE CLASSIFIED",
+        "source": "State"
       },
       {
-        "value": 102046.23,
+        "value": 328311,
+        "target": "INTERFUND",
+        "source": "State"
+      },
+      {
+        "value": 132222.7,
         "target": "LICENSING AGREEMENTS",
         "source": "Federal"
       },
       {
-        "value": 206843,
+        "value": 827366,
         "target": "Other Authorized Interfund Transfers Out",
         "source": "Federal"
       },
       {
-        "value": 221263.4,
+        "value": 180053.71,
+        "target": "OTHER BENEFITS CLASSIFIED",
+        "source": "Federal"
+      },
+      {
+        "value": 925356.55,
         "target": "PERS CLASSIFIED",
         "source": "Federal"
       },
       {
-        "value": 103350.3,
+        "value": 122857.54,
+        "target": "PERS CLASSIFIED",
+        "source": "State"
+      },
+      {
+        "value": 113971.99,
         "target": "REPAIRS CONT",
         "source": "Federal"
       },
       {
-        "value": 166856.96,
-        "target": "Subagreements for Services",
-        "source": "Other Revenue"
+        "value": 286945.24,
+        "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
+        "source": "Federal"
       },
       {
-        "value": 657623.12,
+        "value": 1093258.04,
+        "target": "Subagreements for Services",
+        "source": "Federal"
+      },
+      {
+        "value": 1452060.34,
         "target": "SUPV&ADM SALARIES",
         "source": "Federal"
       },
       {
-        "value": 338531.16,
+        "value": 242461.86,
+        "target": "SUPV&ADM SALARIES",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 990073.94,
         "target": "Transfers of Indirect Costs - Interfund",
         "source": "Federal"
       },
       {
-        "value": 117523.96,
+        "value": 104371.28,
+        "target": "VEHICLE PURCHASE >= $5,000",
+        "source": "Federal"
+      },
+      {
+        "value": 330318.78,
         "target": "WORKERS COMP CLASSIFIED",
         "source": "Federal"
       }
@@ -4366,39 +4659,29 @@
     "site_code": 992,
     "nodes": [
       {
-        "id": "Federal",
-        "type": "resource",
-        "total": 369053.84
-      },
-      {
         "id": "General (Base)",
         "type": "resource",
-        "total": 579585.81
+        "total": 841844.77
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 434279.6
+        "total": 411154.79
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 167516.65
+        "total": 143909.77
       }
     ],
     "links": [
       {
-        "value": 167753.42,
-        "target": "CLASSSUPPT SALARIES",
-        "source": "Federal"
-      },
-      {
-        "value": 266526.18,
+        "value": 382065.08,
         "target": "CLASSSUPPT SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 108093,
+        "value": 143909.77,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "General (Base)"
       }
@@ -4410,139 +4693,84 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 2537253.81
+        "total": 1738956.81
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 997991.31
+        "total": 2324394.37
       },
       {
         "id": "CLASSSUPPT SALARIES",
         "type": "object",
-        "total": 2596140.75
-      },
-      {
-        "id": "CLASSSUPPT SALARIES OVERTIME",
-        "type": "object",
-        "total": 132705.1
-      },
-      {
-        "id": "CLASSSUPPT SALARIES STIPENDS",
-        "type": "object",
-        "total": 183159.31
-      },
-      {
-        "id": "CLASSSUPPT SUBSTITUTES",
-        "type": "object",
-        "total": 216595.52
+        "total": 1551755.85
       },
       {
         "id": "CONSULTANTS",
         "type": "object",
-        "total": 209268.97
+        "total": 180000
       },
       {
         "id": "HEALTH & WELFARE CLASSIFIED",
         "type": "object",
-        "total": 1001104.28
-      },
-      {
-        "id": "OTHER BENEFITS CLASSIFIED",
-        "type": "object",
-        "total": 128137.88
+        "total": 618640.4
       },
       {
         "id": "PERS CLASSIFIED",
         "type": "object",
-        "total": 656700.94
+        "total": 381531.25
       },
       {
         "id": "SOCSEC,MEDI,ALTSS CLASSIFIED",
         "type": "object",
-        "total": 232362.54
+        "total": 140812.24
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 764815.23
+        "total": 700862
       },
       {
         "id": "WORKERS COMP CLASSIFIED",
         "type": "object",
-        "total": 236929.11
+        "total": 144260.42
       }
     ],
     "links": [
       {
-        "value": 690070.61,
+        "value": 412707.59,
         "target": "CLASSSUPPT SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 1906070.14,
+        "value": 1139048.26,
         "target": "CLASSSUPPT SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 132598.35,
-        "target": "CLASSSUPPT SALARIES OVERTIME",
-        "source": "General (Base)"
-      },
-      {
-        "value": 172712.67,
-        "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 216508.62,
-        "target": "CLASSSUPPT SUBSTITUTES",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 209268.97,
+        "value": 180000,
         "target": "CONSULTANTS",
         "source": "General (Base)"
       },
       {
-        "value": 173977.26,
-        "target": "HEALTH & WELFARE CLASSIFIED",
-        "source": "General (Base)"
-      },
-      {
-        "value": 827127.02,
+        "value": 536446.24,
         "target": "HEALTH & WELFARE CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 117792.58,
-        "target": "OTHER BENEFITS CLASSIFIED",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 234571.59,
+        "value": 121425.25,
         "target": "PERS CLASSIFIED",
         "source": "General (Base)"
       },
       {
-        "value": 422129.35,
+        "value": 256347.89,
         "target": "PERS CLASSIFIED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 142213.52,
-        "target": "SOCSEC,MEDI,ALTSS CLASSIFIED",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 708695.47,
+        "value": 642351.66,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
-      },
-      {
-        "value": 143848.05,
-        "target": "WORKERS COMP CLASSIFIED",
-        "source": "Supplemental & Concentration"
       }
     ]
   },
@@ -4552,63 +4780,63 @@
       {
         "id": "General (Base)",
         "type": "resource",
-        "total": 323713.37
+        "total": 342610.61
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 12617808.32
+        "total": 8893218.92
       },
       {
         "id": "AUDIT EXPENSES",
         "type": "object",
-        "total": 364742
+        "total": 220430
       },
       {
         "id": "CONTRACTED SERVICES",
         "type": "object",
-        "total": 1830550.57
-      },
-      {
-        "id": "PYMTS TO PARENTS IN LIEU OF",
-        "type": "object",
-        "total": 323249.64
+        "total": 1120935.92
       },
       {
         "id": "SUPV&ADM SALARIES",
         "type": "object",
-        "total": 167396.2
+        "total": 295077.18
       },
       {
         "id": "TRANSPORTATION-CONTRACTED",
         "type": "object",
-        "total": 10069825.1
+        "total": 6891364.93
+      },
+      {
+        "id": "VEHICLE PURCHASE >= $5,000",
+        "type": "object",
+        "total": 453548.2
       }
     ],
     "links": [
       {
-        "value": 364742,
+        "value": 220430,
         "target": "AUDIT EXPENSES",
         "source": "State"
       },
       {
-        "value": 1830550.57,
+        "value": 1120935.92,
         "target": "CONTRACTED SERVICES",
         "source": "State"
       },
       {
-        "value": 323249.64,
-        "target": "PYMTS TO PARENTS IN LIEU OF",
-        "source": "State"
-      },
-      {
-        "value": 150680.28,
+        "value": 165448.58,
         "target": "SUPV&ADM SALARIES",
         "source": "General (Base)"
       },
       {
-        "value": 10069825.1,
+        "value": 6891364.93,
         "target": "TRANSPORTATION-CONTRACTED",
+        "source": "State"
+      },
+      {
+        "value": 453548.2,
+        "target": "VEHICLE PURCHASE >= $5,000",
         "source": "State"
       }
     ]
@@ -4619,217 +4847,192 @@
       {
         "id": "Federal",
         "type": "resource",
-        "total": 712995.95
-      },
-      {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 6407814.25
+        "total": 1161133.36
       },
       {
         "id": "Other Revenue",
         "type": "resource",
-        "total": 805454.1
+        "total": 513507.19
       },
       {
         "id": "Parcel Taxes",
         "type": "resource",
-        "total": 2685148.64
-      },
-      {
-        "id": "Philanthropy / Grants",
-        "type": "resource",
-        "total": 886044
+        "total": 2806340.63
       },
       {
         "id": "State",
         "type": "resource",
-        "total": 2094903
+        "total": 7318677.19
       },
       {
         "id": "Supplemental & Concentration",
         "type": "resource",
-        "total": 7754674.29
+        "total": 8135588
       },
       {
         "id": "All Other Transfers to Districts or Charter Schools",
         "type": "object",
-        "total": 1937275.4
+        "total": 2057195.85
       },
       {
         "id": "Audit Expenses",
         "type": "object",
-        "total": 183622
+        "total": 169000
       },
       {
-        "id": "CLASSSUPPT SALARIES STIPENDS",
+        "id": "CONSULTANTS",
         "type": "object",
-        "total": 363577.8
+        "total": 1010857.46
       },
       {
         "id": "Debt Service - Interest",
         "type": "object",
-        "total": 507955
+        "total": 453571.43
       },
       {
         "id": "DISPOSAL SERVICES",
         "type": "object",
-        "total": 379505.94
-      },
-      {
-        "id": "FEDERAL PAYROLL TAX PENALTY",
-        "type": "object",
-        "total": 449285.63
+        "total": 253922.55
       },
       {
         "id": "GAS-HEATING-ELECTRICITY",
         "type": "object",
-        "total": 437362.41
+        "total": 464155.12
       },
       {
         "id": "HEALTH & WELFARE CERTIFICATED",
         "type": "object",
-        "total": 5003475.26
+        "total": 949767.38
       },
       {
         "id": "LICENSING AGREEMENTS",
         "type": "object",
-        "total": 3638879.41
-      },
-      {
-        "id": "Other Authorized Interfund Transfers Out",
-        "type": "object",
-        "total": 886044
+        "total": 3401039.41
       },
       {
         "id": "Other Debt Service - Principal",
         "type": "object",
-        "total": 5420579.16
+        "total": 10302164.37
       },
       {
         "id": "OTH SERVICES & OPERATING EXPS",
         "type": "object",
-        "total": 741873.24
+        "total": 742144.78
       },
       {
         "id": "TEACHERS SALARIES",
         "type": "object",
-        "total": 314494.77
+        "total": 229162.62
       },
       {
         "id": "TELEPHONE",
         "type": "object",
-        "total": 1820121.91
+        "total": 1772193.5
       },
       {
         "id": "WATER/SEWAGE",
         "type": "object",
-        "total": 625293.11
+        "total": 169999.67
       }
     ],
     "links": [
       {
-        "value": 1937275.4,
+        "value": 2057195.85,
         "target": "All Other Transfers to Districts or Charter Schools",
         "source": "Parcel Taxes"
       },
       {
-        "value": 177622,
+        "value": 162000,
         "target": "Audit Expenses",
         "source": "General (Base)"
       },
       {
-        "value": 360799.69,
-        "target": "CLASSSUPPT SALARIES STIPENDS",
-        "source": "Other Revenue"
+        "value": 1010857.46,
+        "target": "CONSULTANTS",
+        "source": "General (Base)"
       },
       {
-        "value": 264820,
+        "value": 243360.43,
         "target": "Debt Service - Interest",
         "source": "General (Base)"
       },
       {
-        "value": 243135,
+        "value": 210211,
         "target": "Debt Service - Interest",
         "source": "State"
       },
       {
-        "value": 379505.94,
+        "value": 253922.55,
         "target": "DISPOSAL SERVICES",
         "source": "General (Base)"
       },
       {
-        "value": 449285.63,
-        "target": "FEDERAL PAYROLL TAX PENALTY",
-        "source": "General (Base)"
-      },
-      {
-        "value": 437362.41,
+        "value": 464155.12,
         "target": "GAS-HEATING-ELECTRICITY",
         "source": "General (Base)"
       },
       {
-        "value": 4964815.43,
+        "value": 902620.76,
         "target": "HEALTH & WELFARE CERTIFICATED",
         "source": "General (Base)"
       },
       {
-        "value": 3638879.41,
+        "value": 3393522.21,
         "target": "LICENSING AGREEMENTS",
-        "source": "General (Base)"
+        "source": "State"
       },
       {
-        "value": 886044,
-        "target": "Other Authorized Interfund Transfers Out",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 3568811.16,
+        "value": 8417472.37,
         "target": "Other Debt Service - Principal",
         "source": "General (Base)"
       },
       {
-        "value": 1851768,
+        "value": 1884692,
         "target": "Other Debt Service - Principal",
         "source": "State"
       },
       {
-        "value": 741873.24,
+        "value": 742144.78,
         "target": "OTH SERVICES & OPERATING EXPS",
         "source": "Parcel Taxes"
       },
       {
-        "value": 1064245.03,
+        "value": 1062164.48,
         "target": "STRS CERTIFICATED",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 274300.98,
+        "value": 229162.62,
         "target": "TEACHERS SALARIES",
         "source": "Other Revenue"
       },
       {
-        "value": 6223655.12,
+        "value": 6576869.86,
         "target": "TEACHERS SALARIES",
         "source": "Supplemental & Concentration"
       },
       {
-        "value": 1820121.91,
+        "value": 1772193.5,
         "target": "TELEPHONE",
         "source": "General (Base)"
       },
       {
-        "value": 712995.95,
+        "value": 1161133.36,
         "target": "Transfers of Indirect Costs",
         "source": "Federal"
       },
       {
-        "value": 625293.11,
+        "value": 1820814.18,
+        "target": "Transfers of Indirect Costs",
+        "source": "State"
+      },
+      {
+        "value": 169999.67,
         "target": "WATER/SEWAGE",
         "source": "General (Base)"
       },
       {
-        "value": 373419.31,
+        "value": 394612.19,
         "target": "WORKERS COMP CERTIFICATED",
         "source": "Supplemental & Concentration"
       }
