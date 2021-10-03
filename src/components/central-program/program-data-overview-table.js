@@ -268,7 +268,7 @@ const ProgramDataOverviewTable = ({ data, content, className }) => {
       <SpendingOverview data={data.centralProgramsJson} />
       <BudgetOverview data={data.centralProgramsJson} />
       <StaffOverview data={data.centralProgramsJson} />
-      {!data[CHANGE] ? (
+      {!data.centralProgramsJson[CHANGE] ? (
         <div className="footnote">{content.footnote.footnote}</div>
       ) : null}
     </div>
