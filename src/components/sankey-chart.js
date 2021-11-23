@@ -71,7 +71,7 @@ function SankeyChart({
   const xAxisLabels = (props) => (
     <g transform="translate(0,-30)" id="overlay">
       <text x={leftLabel.length * -4}>{leftLabel}</text>
-      <text x={props.width - 90}>{rightLabel}</text>
+      <text x={props.width - 535}>{rightLabel}</text>
     </g>
   )
 
