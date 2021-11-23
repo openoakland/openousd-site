@@ -48,9 +48,17 @@ function SankeyChart({
     )
   }
 
-  function getNodeTooltip(node) {
+  function NodeTooltip({ node }) {
     return (
-      <div className="node-tooltip">
+      <div
+        className="node-tooltip"
+        style={{
+          padding: 9,
+          background: "#fff",
+          borderRadius: "2px",
+          boxShadow: "0 2px 2px rgb(0 0 0 / 0.2)",
+        }}
+      >
         <div className="node-name" style={{ color: node.color }}>
           {node.id}
         </div>
@@ -125,8 +133,8 @@ function SankeyChart({
           animate={true}
           motionStiffness={140}
           motionDamping={13}
-          tooltipFormat={(value) => formatCurrency(value)}
-          nodeTooltip={(node) => getNodeTooltip(node)}
+          valueFormat={(value) => formatCurrency(value)}
+          nodeTooltip={({ node }) => <NodeTooltip node={node} />}
           layers={["links", "nodes", "labels", "legends", xAxisLabels]}
           onClick={(data, event) => {
             if ("id" in data) {

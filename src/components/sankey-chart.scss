@@ -1,39 +1,36 @@
 .sankey-chart {
+  #sankey-chart {
+    height: 500px;
+    margin-bottom: 100px;
 
-    #sankey-chart {
-        height: 500px;
-        margin-bottom: 100px;
+    .node-tooltip {
+      font-weight: bold;
 
-        .node-tooltip {
-            font-weight: bold;
-
-            .node-programs {
-                width: 250px;
-                overflow: wrap;
-                white-space: normal;
-            }
-        }
-
-        #info {
-            height: 50px;
-        }
-
-        p {
-            margin-bottom: 0px;
-        }
+      .node-programs {
+        width: 250px;
+        overflow: wrap;
+        white-space: normal;
+      }
     }
 
-    #sankey-grouping {
-        text-align: center;
-
-        .label {
-            padding-right: 10px;
-        }
+    #info {
+      height: 50px;
     }
 
-    #overlay {
-        font-size: 1.2rem;
+    p {
+      margin-bottom: 0px;
     }
+  }
 
+  #sankey-grouping {
+    text-align: center;
 
+    .label {
+      padding-right: 10px;
+    }
+  }
+
+  #overlay {
+    font-size: 1.2rem;
+  }
 }
