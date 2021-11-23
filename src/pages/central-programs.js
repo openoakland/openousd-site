@@ -9,12 +9,14 @@ import Seo from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
 import SankeyChart from "../components/sankey-chart"
+import { LineChart } from "../components/line-chart"
 import { SpendingPieChart, StaffPieChart } from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
+import * as constants from "../utilities/constants"
 
 import "../components/sankey-chart.scss"
 
@@ -89,6 +91,16 @@ const CentralProgramsPage = ({ data, pageContext }) => {
               data={centralProgramsOverviewData}
               content={content.contentfulPie}
             />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <RequireWideScreen minScreenWidth={"sm"}>
+              <LineChart
+                data={centralProgramsOverviewData.time_series}
+                lines={[constants.SPENDING]}
+              />
+            </RequireWideScreen>
           </Col>
         </Row>
       </Container>
@@ -184,6 +196,17 @@ export const query = graphql`
       eoy_total_positions
       spending
       year
+      time_series {
+        year
+        eoy_total_positions
+        eoy_total_fte
+        spending
+        budget
+        all_ousd_spending
+        all_ousd_budget
+        all_ousd_eoy_total_fte
+        all_ousd_eoy_total_positions
+      }
       change_from_previous_year {
         eoy_total_fte
         eoy_total_positions

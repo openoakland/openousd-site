@@ -1,24 +1,24 @@
 .footer {
-    display: block;
-    background-color: rgba(0, 66, 230, 1.0);
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    color: rgba(249, 246, 246, 1.0);
-    text-align: center;
-    padding: 3rem 0;
+  display: block;
+  background-color: rgba(0, 66, 230, 1);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: rgba(249, 246, 246, 1);
+  text-align: center;
+  padding: 3rem 0;
 
-    a {
-      color: white;
-      font-weight: bold;
-    }
+  a {
+    color: white;
+    font-weight: bold;
+  }
 
-    p {
-      margin-bottom: 0px;
-    }
+  p {
+    margin-bottom: 0px;
+  }
 }
 
 #footerlogo {
-    width: 100%;
-    max-width: 16rem;
+  width: 100%;
+  max-width: 16rem;
 }

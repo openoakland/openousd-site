@@ -176,27 +176,27 @@ const CentralToTotalComparisonPie = ({
           padAngle={1.5}
           cornerRadius={3}
           margin={{ top: 20, bottom: 25 }}
-          enableRadialLabels={showRadialLabels}
-          radialLabel={(data) => data.id}
-          radialLabelsLinkColor={{ from: "color" }}
-          radialLabelsTextColor={{
+          enableArcLinkLabels={showRadialLabels}
+          arcLinkLabel={(data) => data.id}
+          arcLinkLabelsColor={{ from: "color" }}
+          arcLinkLabelsTextColor={{
             from: "color",
             modifiers: [["darker", 2]],
           }}
-          radialLabelsLinkDiagonalLength={1}
-          radialLabelsLinkStrokeWidth={2}
-          radialLabelsLinkOffset={0}
-          radialLabelsLinkHorizontalLength={15}
-          enableSliceLabels={false}
-          sliceLabel={(data) => formatValue(data.value)}
-          slicesLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
+          arcLinkLabelsDiagonalLength={1}
+          arcLinkLabelsThickness={2}
+          arcLinkLabelsOffset={0}
+          arcLinkLabelsLinkHorizontalLength={15}
+          enableArcLabels={false}
+          arcLabel={(data) => formatValue(data.value)}
+          arcLabelsTextColor={{ from: "color", modifiers: [["darker", 3]] }}
           valueFormat={formatValue}
           onMouseEnter={({ data }) => setActiveNode(data)}
           onMouseLeave={() => setActiveNode(null)}
           layers={[
-            "slices",
-            "sliceLabels",
-            "radialLabels",
+            "arcs",
+            "arcLabels",
+            "arcLinkLabels",
             "legends",
             CenteredMetric({
               icon: metricIcon,
