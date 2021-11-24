@@ -94,13 +94,12 @@ const CentralProgramsPage = ({ data, pageContext }) => {
           </Col>
         </Row>
         <Row>
-          <Col>
-            <RequireWideScreen minScreenWidth={"sm"}>
-              <LineChart
-                data={centralProgramsOverviewData.time_series}
-                lines={[constants.SPENDING]}
-              />
-            </RequireWideScreen>
+          <Col lg={8} className="mx-auto">
+            <LineChart
+              data={centralProgramsOverviewData.time_series}
+              columns={[constants.SPENDING, constants.BUDGET]}
+              content={content.programsTable.columns}
+            />
           </Col>
         </Row>
       </Container>

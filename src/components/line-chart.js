@@ -4,44 +4,77 @@ import { ResponsiveLine } from "@nivo/line"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { MARKS } from "@contentful/rich-text-types"
 import { formatToUSD } from "../components/table-utilities"
+import * as constants from "../utilities/constants"
+import { getColumnsByDataField } from "../utilities/content-utilities"
 
 import "./line-chart.scss"
 
-const formatDataForNivo = (timeSeries, lines) => {
-  let chartDataByLine = {}
+const formatDataForNivo = (timeSeries, columns, labelMap) => {
+  let chartDataByColumn = {}
 
-  for (const line of lines) {
-    chartDataByLine[line] = { id: line, data: [] }
-  }
-
-  for (const data of timeSeries) {
-    for (const line of lines) {
-      chartDataByLine[line].data.push({ x: data.year, y: data[line] })
+  for (const column of columns) {
+    chartDataByColumn[column] = {
+      id: labelMap[column].displayName,
+      data: [],
     }
   }
 
-  return Object.values(chartDataByLine)
+  for (const data of timeSeries) {
+    for (const column of columns) {
+      chartDataByColumn[column].data.push({ x: data.year, y: data[column] })
+    }
+  }
+
+  return Object.values(chartDataByColumn)
 }
 
-export const LineChart = ({ data, lines }) => {
-  let chartData = formatDataForNivo(data, lines)
-  console.log(chartData)
+function SliceTooltip({ slice }) {
+  return (
+    <div
+      className="slice-tooltip"
+      style={{
+        padding: 9,
+        background: "#fff",
+        borderRadius: "2px",
+        boxShadow: "0 2px 2px rgb(0 0 0 / 0.2)",
+      }}
+    >
+      <div className="school-year">{slice.points[0].data.xFormatted}</div>
+      {slice.points.map((point) => (
+        <div key={point.id}>
+          <span className="column" style={{ color: point.serieColor }}>
+            {point.serieId}
+          </span>{" "}
+          <span className="value">{point.data.yFormatted}</span>
+        </div>
+      ))}
+    </div>
+  )
+}
+
+export const LineChart = ({ data, columns, content }) => {
+  let columnLabelsByDatafield = getColumnsByDataField(content)
+  let chartData = formatDataForNivo(data, columns, columnLabelsByDatafield)
 
   return (
     <div className="overview-chart">
       <div className="line-chart">
         <ResponsiveLine
           data={chartData}
+          colors={{ scheme: "category10" }}
           margin={{ top: 50, right: 110, bottom: 50, left: 150 }}
           xScale={{ type: "point" }}
           yScale={{
             type: "linear",
             min: "auto",
             max: "auto",
-            stacked: true,
+            stacked: false,
             reverse: false,
           }}
-          yFormat=" >-.2f"
+          curve="monotoneX"
+          yFormat={(v) => formatToUSD(v)}
+          xFormat={(v) => constants.schoolYearDisplay[v]}
+          enableGridX={false}
           axisTop={null}
           axisRight={null}
           axisBottom={{
@@ -49,22 +82,32 @@ export const LineChart = ({ data, lines }) => {
             tickSize: 5,
             tickPadding: 5,
             tickRotation: 0,
+            format: (v) => (
+              <tspan className="axis-label">
+                {constants.schoolYearDisplay[v]}
+              </tspan>
+            ),
           }}
           axisLeft={{
             orient: "left",
-            tickSize: 5,
-            tickPadding: 5,
+            tickSize: 10,
+            tickPadding: 10,
+            tickValues: 4,
             tickRotation: 0,
-            legend: "count",
             legendOffset: -40,
             legendPosition: "middle",
+            format: (v) => (
+              <tspan className="axis-label">{formatToUSD(v, true)}</tspan>
+            ),
           }}
           pointSize={10}
-          pointColor={{ theme: "background" }}
-          pointBorderWidth={2}
+          pointColor={{ from: "color", modifiers: [] }}
+          pointBorderWidth={3}
           pointBorderColor={{ from: "serieColor" }}
           pointLabelYOffset={-12}
-          useMesh={true}
+          useMesh={false}
+          enableSlices="x"
+          sliceTooltip={({ slice }) => <SliceTooltip slice={slice} />}
           legends={[
             {
               anchor: "bottom-right",

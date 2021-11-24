@@ -1,5 +1,18 @@
 .overview-chart {
   .line-chart {
     height: 300px;
+    .axis-label {
+      font-size: 1.4em;
+    }
+    .slice-tooltip {
+      .column {
+        font-weight: bold;
+      }
+      .value {
+        float: right;
+        padding-left: 2em;
+        font-weight: bold;
+      }
+    }
   }
 }
