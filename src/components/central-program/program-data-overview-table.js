@@ -3,8 +3,12 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 import BootstrapTable from "react-bootstrap-table-next"
 import ToolkitProvider from "react-bootstrap-table2-toolkit"
-import { formatToUSD, formatFTE, deltaPrefix } from "../table-utilities"
-import { getColumnsByDataField } from "../../utilities/content-utilities"
+import { deltaPrefix } from "../table-utilities"
+import {
+  getColumnsByDataField,
+  formatToUSD,
+  formatFTE,
+} from "../../utilities/content-utilities"
 import * as constants from "../../utilities/constants"
 
 let columnsByDataField
@@ -15,7 +19,9 @@ const Heading = () => {
       dataField: constants.DESCRIPTION,
       text: columnsByDataField[constants.DESCRIPTION].displayName,
       headerFormatter: (column, colIndex, components) => {
-        return <div> {columnsByDataField[constants.DESCRIPTION].displayName} </div>
+        return (
+          <div> {columnsByDataField[constants.DESCRIPTION].displayName} </div>
+        )
       },
     },
     {
@@ -66,7 +72,9 @@ const SpendingOverview = ({ data }) => {
       align: "right",
       headerFormatter: (column, colIndex, components) => {
         return (
-          <div className="text-right value">{formatToUSD(data[constants.SPENDING])}</div>
+          <div className="text-right value">
+            {formatToUSD(data[constants.SPENDING])}
+          </div>
         )
       },
       headerStyle: { minWidth: "10em" },
@@ -79,7 +87,9 @@ const SpendingOverview = ({ data }) => {
     const spending_delta = data[constants.CHANGE][constants.SPENDING]
 
     rows.push({
-      description: columnsByDataField[`${constants.CHANGE}.${constants.SPENDING}`].displayName,
+      description:
+        columnsByDataField[`${constants.CHANGE}.${constants.SPENDING}`]
+          .displayName,
       value: `${deltaPrefix(spending_delta)}${formatToUSD(
         Math.abs(spending_delta)
       )}`,
@@ -121,7 +131,9 @@ const BudgetOverview = ({ data }) => {
       align: "right",
       headerFormatter: (column, colIndex, components) => {
         return (
-          <div className="text-right value">{formatToUSD(data[constants.BUDGET])}</div>
+          <div className="text-right value">
+            {formatToUSD(data[constants.BUDGET])}
+          </div>
         )
       },
     },
@@ -133,7 +145,9 @@ const BudgetOverview = ({ data }) => {
     const budget_delta = data[constants.CHANGE][constants.BUDGET]
 
     rows.push({
-      description: columnsByDataField[`${constants.CHANGE}.${constants.BUDGET}`].displayName,
+      description:
+        columnsByDataField[`${constants.CHANGE}.${constants.BUDGET}`]
+          .displayName,
       value: `${deltaPrefix(budget_delta)}${formatToUSD(
         Math.abs(budget_delta)
       )}`,
@@ -201,11 +215,13 @@ const StaffOverview = ({ data }) => {
   })
 
   if (data[constants.CHANGE]) {
-    const total_positions_delta = data[constants.CHANGE][constants.STAFF_POSITIONS]
+    const total_positions_delta =
+      data[constants.CHANGE][constants.STAFF_POSITIONS]
 
     rows.push({
       description:
-        columnsByDataField[`${constants.CHANGE}.${constants.STAFF_POSITIONS}`].displayName,
+        columnsByDataField[`${constants.CHANGE}.${constants.STAFF_POSITIONS}`]
+          .displayName,
       value: `${deltaPrefix(total_positions_delta)}${formatFTE(
         Math.abs(total_positions_delta)
       )}`,
@@ -221,7 +237,9 @@ const StaffOverview = ({ data }) => {
     const total_fte_delta = data[constants.CHANGE][constants.STAFF_FTE]
 
     rows.push({
-      description: columnsByDataField[`${constants.CHANGE}.${constants.STAFF_FTE}`].displayName,
+      description:
+        columnsByDataField[`${constants.CHANGE}.${constants.STAFF_FTE}`]
+          .displayName,
       value: `${deltaPrefix(total_fte_delta)}${formatFTE(
         Math.abs(total_fte_delta)
       )}`,
