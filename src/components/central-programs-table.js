@@ -81,7 +81,7 @@ const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {
   }
 }
 
-const trackSortEvent = fieldName => {
+const trackSortEvent = (fieldName) => {
   trackCustomEvent({
     category: "Central Programs Table",
     action: "Sort Column",
@@ -108,7 +108,7 @@ const ModalColumnToggle = ({
     })
   }
 
-  const handleColumnToggle = column => {
+  const handleColumnToggle = (column) => {
     onColumnToggle(column.dataField)
 
     const action = column.toggle ? "Hide Column" : "Show Column"
@@ -171,7 +171,7 @@ const ModalColumnToggle = ({
           >
             {labelContent.labels.currentlyShownColumnsLabel}
           </div>
-          {columnsGroupedBy.visible.map(column => (
+          {columnsGroupedBy.visible.map((column) => (
             <ColumnOption column={column} key={column.dataField} />
           ))}
           <div
@@ -181,7 +181,7 @@ const ModalColumnToggle = ({
           >
             {labelContent.labels.columnsNotShownLabel}
           </div>
-          {columnsGroupedBy.hidden.map(column => (
+          {columnsGroupedBy.hidden.map((column) => (
             <ColumnOption column={column} key={column.dataField} />
           ))}
         </Modal.Body>
@@ -385,7 +385,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
       search
       columnToggle
     >
-      {props => (
+      {(props) => (
         <div>
           <Row>
             <Col md={8}>
@@ -394,10 +394,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
                 placeholder={`${labelContent.labels.searchLabel}`}
                 className="table-search-bar mb-4"
               />
-              <ClearSearchButton 
-                { ...props.searchProps } 
-                className="clear-btn"
-              />
+              <ClearSearchButton {...props.searchProps} className="clear-btn" />
             </Col>
             <Col>
               <ModalColumnToggle
