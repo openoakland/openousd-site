@@ -20,6 +20,7 @@ import {
   getColumnsByDataField,
   formatToUSD,
   formatFTE,
+  commaFormattedInteger,
 } from "../utilities/content-utilities"
 
 const { SearchBar, ClearSearchButton } = Search
@@ -43,6 +44,7 @@ const createFirstRow = (data, totalLabel) => {
     spending: 0,
     budget: 0,
     eoy_total_fte: 0,
+    eoy_total_positions: 0,
     code: null,
   }
   return data.reduce((returnObject, currentItem) => {
@@ -50,6 +52,7 @@ const createFirstRow = (data, totalLabel) => {
     returnObject.budget += +currentItem.budget
     returnObject.staff += +currentItem.staff
     returnObject.eoy_total_fte += +currentItem.eoy_total_fte
+    returnObject.eoy_total_positions += +currentItem.eoy_total_positions
     return returnObject
   }, initialObject)
 }
@@ -319,6 +322,38 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
         sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
       type: "number",
       align: "right",
+      csvExport: false,
+    },
+    {
+      dataField: "eoy_total_positions",
+      formatter: (cell, row) => commaFormattedInteger(row.eoy_total_positions),
+      text: "Staff Postions",
+      headerFormatter: (column, colIndex, components) => {
+        return (
+          <div className="table-header text-right">
+            {components.sortElement}{" "}
+            {columnLabelsByDatafield[column.dataField].displayName} *{" "}
+            <HelpIcon
+              tooltipText={
+                columnLabelsByDatafield[column.dataField].helperText.helperText
+              }
+              placement="bottom"
+            />
+          </div>
+        )
+      },
+      headerStyle: (colum, colIndex) => {
+        return { minWidth: "110px" }
+      },
+      sortCaret: getSortCaret,
+      searchable: false,
+      sort: true,
+      onSort: (field, order) => trackSortEvent(field),
+      sortFunc: (a, b, order, dataField, rowA, rowB) =>
+        sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
+      type: "number",
+      align: "right",
+      hidden: true,
       csvExport: false,
     },
     {
