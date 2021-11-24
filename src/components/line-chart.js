@@ -3,9 +3,13 @@ import React, { useState } from "react"
 import { ResponsiveLine } from "@nivo/line"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { MARKS } from "@contentful/rich-text-types"
-import { formatToUSD } from "../components/table-utilities"
 import * as constants from "../utilities/constants"
-import { getColumnsByDataField } from "../utilities/content-utilities"
+import {
+  getColumnsByDataField,
+  hasCurrencyFormat,
+  formatToUSD,
+  commaFormattedInteger,
+} from "../utilities/content-utilities"
 
 import "./line-chart.scss"
 
@@ -56,13 +60,20 @@ export const LineChart = ({ data, columns, content }) => {
   let columnLabelsByDatafield = getColumnsByDataField(content)
   let chartData = formatDataForNivo(data, columns, columnLabelsByDatafield)
 
+  const format = (value, compact = false) => {
+    for (const column of columns) {
+      if (hasCurrencyFormat(column)) return formatToUSD(value, compact)
+    }
+    return commaFormattedInteger(value)
+  }
+
   return (
     <div className="overview-chart">
       <div className="line-chart">
         <ResponsiveLine
           data={chartData}
           colors={{ scheme: "category10" }}
-          margin={{ top: 50, right: 110, bottom: 50, left: 150 }}
+          margin={{ top: 20, right: 110, bottom: 50, left: 150 }}
           xScale={{ type: "point" }}
           yScale={{
             type: "linear",
@@ -72,7 +83,7 @@ export const LineChart = ({ data, columns, content }) => {
             reverse: false,
           }}
           curve="monotoneX"
-          yFormat={(v) => formatToUSD(v)}
+          yFormat={(v) => format(v)}
           xFormat={(v) => constants.schoolYearDisplay[v]}
           enableGridX={false}
           axisTop={null}
@@ -97,7 +108,7 @@ export const LineChart = ({ data, columns, content }) => {
             legendOffset: -40,
             legendPosition: "middle",
             format: (v) => (
-              <tspan className="axis-label">{formatToUSD(v, true)}</tspan>
+              <tspan className="axis-label">{format(v, true)}</tspan>
             ),
           }}
           pointSize={10}
@@ -119,19 +130,10 @@ export const LineChart = ({ data, columns, content }) => {
               itemDirection: "left-to-right",
               itemWidth: 80,
               itemHeight: 20,
-              itemOpacity: 0.75,
+              itemOpacity: 1,
               symbolSize: 12,
               symbolShape: "circle",
               symbolBorderColor: "rgba(0, 0, 0, .5)",
-              effects: [
-                {
-                  on: "hover",
-                  style: {
-                    itemBackground: "rgba(0, 0, 0, .03)",
-                    itemOpacity: 1,
-                  },
-                },
-              ],
             },
           ]}
         />

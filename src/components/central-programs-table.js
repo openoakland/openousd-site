@@ -15,14 +15,12 @@ import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Button, Modal, Row, Col } from "react-bootstrap"
 import HelpIcon from "./help-icon"
+import { getSortCaret, sort, totalRowClass } from "./table-utilities"
 import {
-  getSortCaret,
+  getColumnsByDataField,
   formatToUSD,
   formatFTE,
-  sort,
-  totalRowClass,
-} from "./table-utilities"
-import { getColumnsByDataField } from "../utilities/content-utilities"
+} from "../utilities/content-utilities"
 
 const { SearchBar, ClearSearchButton } = Search
 const { ExportCSVButton } = CSVExport

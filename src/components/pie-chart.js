@@ -8,7 +8,7 @@ import ArrowDropUp from "@material-ui/icons/ArrowDropUp"
 import Person from "@material-ui/icons/Person"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { MARKS } from "@contentful/rich-text-types"
-import { formatToUSD } from "../components/table-utilities"
+import { formatToUSD } from "../utilities/content-utilities"
 import "./pie-chart.scss"
 
 const contentPaths = {
