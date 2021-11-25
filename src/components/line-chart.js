@@ -80,7 +80,7 @@ export const LineChart = ({ data, columns, content }) => {
         <ResponsiveLine
           data={chartData}
           colors={{ datum: "color" }}
-          margin={{ top: 20, right: 110, bottom: 50, left: 150 }}
+          margin={{ top: 20, right: 40, bottom: 60, left: 80 }}
           xScale={{ type: "point" }}
           yScale={{
             type: "linear",
@@ -128,11 +128,11 @@ export const LineChart = ({ data, columns, content }) => {
           sliceTooltip={({ slice }) => <SliceTooltip slice={slice} />}
           legends={[
             {
-              anchor: "bottom-right",
-              direction: "column",
+              anchor: "bottom",
+              direction: "row",
               justify: false,
-              translateX: 100,
-              translateY: 0,
+              translateX: 0,
+              translateY: 60,
               itemsSpacing: 0,
               itemDirection: "left-to-right",
               itemWidth: 80,

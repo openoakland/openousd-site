@@ -93,7 +93,7 @@ const CentralProgramsPage = ({ data, pageContext }) => {
           </Col>
         </Row>
         <Row>
-          <Col lg={8} className="mx-auto">
+          <Col lg={6} className="mx-auto">
             <MultiYearChart
               data={centralProgramsOverviewData.time_series}
               content={content.programsTable.columns}
