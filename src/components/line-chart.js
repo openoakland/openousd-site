@@ -80,7 +80,7 @@ export const LineChart = ({ data, columns, content }) => {
         <ResponsiveLine
           data={chartData}
           colors={{ datum: "color" }}
-          margin={{ top: 20, right: 40, bottom: 60, left: 80 }}
+          margin={{ top: 20, right: 40, bottom: 65, left: 80 }}
           xScale={{ type: "point" }}
           yScale={{
             type: "linear",
@@ -98,7 +98,7 @@ export const LineChart = ({ data, columns, content }) => {
           axisBottom={{
             orient: "bottom",
             tickSize: 5,
-            tickPadding: 5,
+            tickPadding: 15,
             tickRotation: 0,
             format: (v) => (
               <tspan className="axis-label">
@@ -132,7 +132,7 @@ export const LineChart = ({ data, columns, content }) => {
               direction: "row",
               justify: false,
               translateX: 0,
-              translateY: 60,
+              translateY: 65,
               itemsSpacing: 0,
               itemDirection: "left-to-right",
               itemWidth: 80,
