@@ -14,15 +14,6 @@ export const getSortCaret = (order, column) => {
   return <ArrowDropDown className="invisible" />
 }
 
-export const formatToUSD = amount => {
-  // it would be better to just useIntl.NumberFormat currency, but that seems to always
-  // add cents ie $2,330.00
-  return (
-    "$" +
-    new Intl.NumberFormat("en-US", { maximumFractionDigits: 0 }).format(amount)
-  )
-}
-
 export const sort = (
   a,
   b,
@@ -57,11 +48,8 @@ export const sort = (
   return 0
 }
 
-// Convert null to zero & Round without trailing zeroes
-export const formatFTE = fte => (!fte ? 0 : +fte.toFixed(2))
-
 // Construct a prefix to add to the start of a number that is meant to represent a delta.
-export const deltaPrefix = delta => {
+export const deltaPrefix = (delta) => {
   if (delta === 0) {
     return ""
   }

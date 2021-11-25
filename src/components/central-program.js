@@ -8,6 +8,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES } from "@contentful/rich-text-types"
 
+import MultiYearChart from "../components/multi-year-chart"
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
@@ -38,23 +39,13 @@ const descriptionRenderOptions = {
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
-  if (!data.contentfulCentralProgram) {
-    console.warn(
-      `${centralProgram.name} - ${centralProgram.code} not found in Contentful`
-    )
-    throw new Error(
-      `${centralProgram.name} - ${centralProgram.code} not found in Contentful`
-    )
-  }
-  const programName =
-    data.contentfulCentralProgram?.programName || centralProgram.name
-  const contentfulProgramDescription =
-    data.contentfulCentralProgram?.description
-
+  const translatedProgramName = data.contentfulCentralProgram.programName
+  const contentfulProgramDescription = data.contentfulCentralProgram.description
   const content = data.contentfulPage.content
+
   return (
     <Layout>
-      <Seo title={programName} />
+      <Seo title={translatedProgramName} />
       <div className="d-none d-lg-block">
         <ScrollWidget
           className="scroll-widget"
@@ -67,16 +58,16 @@ const CentralProgram = ({ data }) => {
           <Row>
             <Col md={9} xl={6} className="mx-auto">
               <div id={`${ELEMENT_NAME_PREFIX}-0`} className="pt-4">
-                <h1>{programName}</h1>
+                <h1>{translatedProgramName}</h1>
                 {contentfulProgramDescription &&
                   renderRichText(
                     contentfulProgramDescription,
                     descriptionRenderOptions
                   )}
-                {data.contentfulCentralProgram?.OUSDProgramLink ? (
+                {data.contentfulCentralProgram.OUSDProgramLink ? (
                   <div className="pt-3">
                     <a
-                      href={data.contentfulCentralProgram?.OUSDProgramLink}
+                      href={data.contentfulCentralProgram.OUSDProgramLink}
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -97,6 +88,14 @@ const CentralProgram = ({ data }) => {
                   content={content.programOverviewTable}
                   className="pt-2"
                 />
+                {centralProgram.time_series &&
+                centralProgram.time_series.length > 1 ? (
+                  <MultiYearChart
+                    data={centralProgram.time_series}
+                    content={content.programOverviewTable.columns}
+                    gaEventCategory={"Central Program Detail"}
+                  />
+                ) : null}
               </div>
             </Col>
           </Row>
@@ -178,11 +177,16 @@ export const query = graphql`
       OUSDProgramLink
     }
     centralProgramsJson(code: { eq: $code }) {
-      name
-      code
       ...ProgramOverviewData
       ...StaffRolesData
       ...StaffLaborUnionsData
+      time_series {
+        year
+        eoy_total_fte
+        eoy_total_positions
+        spending
+        budget
+      }
     }
     centralProgramsSankeyJson(site_code: { eq: $code }) {
       nodes {
@@ -201,6 +205,17 @@ export const query = graphql`
       node_locale: { eq: $language }
     ) {
       content {
+        ... on ContentfulCentralProgramsOverviewPageContent {
+          programsTable {
+            columns {
+              displayName
+              dataFieldName
+              helperText {
+                helperText
+              }
+            }
+          }
+        }
         ... on ContentfulProgramDetailsPageTemplate {
           ousdWebsiteLinkText
           ...ProgramOverviewContent

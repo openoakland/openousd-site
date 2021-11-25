@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
+import MultiYearChart from "../components/multi-year-chart"
 import SankeyChart from "../components/sankey-chart"
 import { SpendingPieChart, StaffPieChart } from "../components/pie-chart"
 
@@ -91,6 +92,15 @@ const CentralProgramsPage = ({ data, pageContext }) => {
             />
           </Col>
         </Row>
+        <Row>
+          <Col lg={6} className="mx-auto">
+            <MultiYearChart
+              data={centralProgramsOverviewData.time_series}
+              content={content.programsTable.columns}
+              gaEventCategory={"Overview"}
+            />
+          </Col>
+        </Row>
       </Container>
 
       <Container>
@@ -167,6 +177,7 @@ export const query = graphql`
         category
         remaining_budget_percent
         eoy_total_fte
+        eoy_total_positions
         budget
         spending
         year
@@ -184,6 +195,17 @@ export const query = graphql`
       eoy_total_positions
       spending
       year
+      time_series {
+        year
+        eoy_total_positions
+        eoy_total_fte
+        spending
+        budget
+        all_ousd_spending
+        all_ousd_budget
+        all_ousd_eoy_total_fte
+        all_ousd_eoy_total_positions
+      }
       change_from_previous_year {
         eoy_total_fte
         eoy_total_positions

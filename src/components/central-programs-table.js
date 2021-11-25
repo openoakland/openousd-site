@@ -15,14 +15,13 @@ import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline"
 import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 import { Button, Modal, Row, Col } from "react-bootstrap"
 import HelpIcon from "./help-icon"
+import { getSortCaret, sort, totalRowClass } from "./table-utilities"
 import {
-  getSortCaret,
+  getColumnsByDataField,
   formatToUSD,
   formatFTE,
-  sort,
-  totalRowClass,
-} from "./table-utilities"
-import { getColumnsByDataField } from "../utilities/content-utilities"
+  commaFormattedInteger,
+} from "../utilities/content-utilities"
 
 const { SearchBar, ClearSearchButton } = Search
 const { ExportCSVButton } = CSVExport
@@ -45,6 +44,7 @@ const createFirstRow = (data, totalLabel) => {
     spending: 0,
     budget: 0,
     eoy_total_fte: 0,
+    eoy_total_positions: 0,
     code: null,
   }
   return data.reduce((returnObject, currentItem) => {
@@ -52,6 +52,7 @@ const createFirstRow = (data, totalLabel) => {
     returnObject.budget += +currentItem.budget
     returnObject.staff += +currentItem.staff
     returnObject.eoy_total_fte += +currentItem.eoy_total_fte
+    returnObject.eoy_total_positions += +currentItem.eoy_total_positions
     return returnObject
   }, initialObject)
 }
@@ -81,7 +82,7 @@ const trackTableCellClickEvent = (e, column, columnIndex, row, rowIndex) => {
   }
 }
 
-const trackSortEvent = fieldName => {
+const trackSortEvent = (fieldName) => {
   trackCustomEvent({
     category: "Central Programs Table",
     action: "Sort Column",
@@ -108,7 +109,7 @@ const ModalColumnToggle = ({
     })
   }
 
-  const handleColumnToggle = column => {
+  const handleColumnToggle = (column) => {
     onColumnToggle(column.dataField)
 
     const action = column.toggle ? "Hide Column" : "Show Column"
@@ -171,7 +172,7 @@ const ModalColumnToggle = ({
           >
             {labelContent.labels.currentlyShownColumnsLabel}
           </div>
-          {columnsGroupedBy.visible.map(column => (
+          {columnsGroupedBy.visible.map((column) => (
             <ColumnOption column={column} key={column.dataField} />
           ))}
           <div
@@ -181,7 +182,7 @@ const ModalColumnToggle = ({
           >
             {labelContent.labels.columnsNotShownLabel}
           </div>
-          {columnsGroupedBy.hidden.map(column => (
+          {columnsGroupedBy.hidden.map((column) => (
             <ColumnOption column={column} key={column.dataField} />
           ))}
         </Modal.Body>
@@ -324,6 +325,38 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
       csvExport: false,
     },
     {
+      dataField: "eoy_total_positions",
+      formatter: (cell, row) => commaFormattedInteger(row.eoy_total_positions),
+      text: "Staff Postions",
+      headerFormatter: (column, colIndex, components) => {
+        return (
+          <div className="table-header text-right">
+            {components.sortElement}{" "}
+            {columnLabelsByDatafield[column.dataField].displayName} *{" "}
+            <HelpIcon
+              tooltipText={
+                columnLabelsByDatafield[column.dataField].helperText.helperText
+              }
+              placement="bottom"
+            />
+          </div>
+        )
+      },
+      headerStyle: (colum, colIndex) => {
+        return { minWidth: "110px" }
+      },
+      sortCaret: getSortCaret,
+      searchable: false,
+      sort: true,
+      onSort: (field, order) => trackSortEvent(field),
+      sortFunc: (a, b, order, dataField, rowA, rowB) =>
+        sortPrograms(a, b, order, dataField, rowA, rowB, totalLabel),
+      type: "number",
+      align: "right",
+      hidden: true,
+      csvExport: false,
+    },
+    {
       dataField: "remaining_budget_percent",
       formatter: (cell, row, rowIndex) =>
         formatRemainingBudgetCell(row.remaining_budget_percent, rowIndex),
@@ -385,7 +418,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
       search
       columnToggle
     >
-      {props => (
+      {(props) => (
         <div>
           <Row>
             <Col md={8}>
@@ -394,10 +427,7 @@ const CentralProgramsTable = ({ data, labelContent, codes }) => {
                 placeholder={`${labelContent.labels.searchLabel}`}
                 className="table-search-bar mb-4"
               />
-              <ClearSearchButton 
-                { ...props.searchProps } 
-                className="clear-btn"
-              />
+              <ClearSearchButton {...props.searchProps} className="clear-btn" />
             </Col>
             <Col>
               <ModalColumnToggle
