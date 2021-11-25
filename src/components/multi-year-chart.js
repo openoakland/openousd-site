@@ -51,6 +51,8 @@ const MultiYearChart = ({ data, content, gaEventCategory }) => {
 
 MultiYearChart.propTypes = {
   data: PropTypes.array.isRequired,
+  content: PropTypes.array.isRequired,
+  gaEventCategory: PropTypes.string,
 }
 
 export default MultiYearChart
