@@ -205,17 +205,6 @@ export const query = graphql`
       node_locale: { eq: $language }
     ) {
       content {
-        ... on ContentfulCentralProgramsOverviewPageContent {
-          programsTable {
-            columns {
-              displayName
-              dataFieldName
-              helperText {
-                helperText
-              }
-            }
-          }
-        }
         ... on ContentfulProgramDetailsPageTemplate {
           ousdWebsiteLinkText
           ...ProgramOverviewContent
