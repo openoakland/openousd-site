@@ -21,7 +21,10 @@ export const formatToUSD = (amount, compact = false) => {
 
 export const commaFormattedInteger = (amount, compact = false) => {
 	let options = { maximumFractionDigits: 0 }
-	if (compact === true) options.notation = "compact"
+	if (compact === true) {
+		options.notation = "compact"
+		options.minimumSignificantDigits = 2
+	}
 
 	return new Intl.NumberFormat("en-US", options).format(amount)
 }

@@ -8,6 +8,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES } from "@contentful/rich-text-types"
 
+import MultiYearChart from "../components/multi-year-chart"
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
 import ProgramDataOverviewTable from "../components/central-program/program-data-overview-table"
@@ -40,8 +41,8 @@ const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
   const translatedProgramName = data.contentfulCentralProgram.programName
   const contentfulProgramDescription = data.contentfulCentralProgram.description
-
   const content = data.contentfulPage.content
+
   return (
     <Layout>
       <Seo title={translatedProgramName} />
@@ -87,6 +88,14 @@ const CentralProgram = ({ data }) => {
                   content={content.programOverviewTable}
                   className="pt-2"
                 />
+                {centralProgram.time_series &&
+                centralProgram.time_series.length > 1 ? (
+                  <MultiYearChart
+                    data={centralProgram.time_series}
+                    content={content.programOverviewTable.columns}
+                    gaEventCategory={"Central Program Detail"}
+                  />
+                ) : null}
               </div>
             </Col>
           </Row>
@@ -171,6 +180,13 @@ export const query = graphql`
       ...ProgramOverviewData
       ...StaffRolesData
       ...StaffLaborUnionsData
+      time_series {
+        year
+        eoy_total_fte
+        eoy_total_positions
+        spending
+        budget
+      }
     }
     centralProgramsSankeyJson(site_code: { eq: $code }) {
       nodes {
@@ -189,6 +205,17 @@ export const query = graphql`
       node_locale: { eq: $language }
     ) {
       content {
+        ... on ContentfulCentralProgramsOverviewPageContent {
+          programsTable {
+            columns {
+              displayName
+              dataFieldName
+              helperText {
+                helperText
+              }
+            }
+          }
+        }
         ... on ContentfulProgramDetailsPageTemplate {
           ousdWebsiteLinkText
           ...ProgramOverviewContent

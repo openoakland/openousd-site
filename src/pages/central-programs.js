@@ -1,28 +1,21 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
-import Button from "react-bootstrap/Button"
-import ButtonGroup from "react-bootstrap/ButtonGroup"
-import { trackCustomEvent } from "gatsby-plugin-google-analytics"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import RequireWideScreen from "../components/require-wide-screen"
 import CentralProgramsTable from "../components/central-programs-table"
+import MultiYearChart from "../components/multi-year-chart"
 import SankeyChart from "../components/sankey-chart"
-import { LineChart } from "../components/line-chart"
 import { SpendingPieChart, StaffPieChart } from "../components/pie-chart"
 
 import sankeyProgramData from "../../data/sankey.json"
 import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 
-import {
-  useLocalizeCategory,
-  getColumnsByDataField,
-} from "../utilities/content-utilities"
-import * as constants from "../utilities/constants"
+import { useLocalizeCategory } from "../utilities/content-utilities"
 
 import "../components/sankey-chart.scss"
 
@@ -35,14 +28,6 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   })
   const translatedProgramNames = data.allContentfulCentralProgram.nodes
   const localizeCategory = useLocalizeCategory(pageContext.language)
-
-  // Overview multi-year chart selection
-  const [multiYearChartSelection, setmultiYearChartSelection] = useState(
-    constants.SPENDING
-  )
-  const columnLabelsByDatafield = getColumnsByDataField(
-    content.programsTable.columns
-  )
 
   // Translating content for the table
   centralPrograms = centralPrograms.map((program) => {
@@ -109,35 +94,10 @@ const CentralProgramsPage = ({ data, pageContext }) => {
         </Row>
         <Row>
           <Col lg={8} className="mx-auto">
-            <div className="text-center">
-              <ButtonGroup>
-                {[constants.SPENDING, constants.STAFF_FTE].map((option) => (
-                  <Button
-                    size="sm"
-                    key={option}
-                    onClick={() => {
-                      setmultiYearChartSelection(option)
-                      trackCustomEvent({
-                        category: `Overview - Multi-year Chart`,
-                        action: "Change Chart",
-                        label: `${option}`,
-                      })
-                    }}
-                    active={multiYearChartSelection === option}
-                  >
-                    {columnLabelsByDatafield[option].displayName}
-                  </Button>
-                ))}
-              </ButtonGroup>
-            </div>
-            <LineChart
+            <MultiYearChart
               data={centralProgramsOverviewData.time_series}
-              columns={
-                multiYearChartSelection === constants.SPENDING
-                  ? [constants.SPENDING]
-                  : [constants.STAFF_POSITIONS]
-              }
               content={content.programsTable.columns}
+              gaEventCategory={"Overview"}
             />
           </Col>
         </Row>

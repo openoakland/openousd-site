@@ -1,17 +1,22 @@
-import React, { useState } from "react"
+import React from "react"
 
 import { ResponsiveLine } from "@nivo/line"
-import { renderRichText } from "gatsby-source-contentful/rich-text"
-import { MARKS } from "@contentful/rich-text-types"
 import * as constants from "../utilities/constants"
 import {
   getColumnsByDataField,
   hasCurrencyFormat,
   formatToUSD,
+  formatFTE,
   commaFormattedInteger,
 } from "../utilities/content-utilities"
 
 import "./line-chart.scss"
+
+const columnColors = {
+  [constants.SPENDING]: "hsl(26, 97%, 56%)",
+  [constants.BUDGET]: "hsl(271, 39%, 57%)",
+  [constants.STAFF_POSITIONS]: "hsl(180, 76%, 35%)",
+}
 
 const formatDataForNivo = (timeSeries, columns, labelMap) => {
   let chartDataByColumn = {}
@@ -20,6 +25,7 @@ const formatDataForNivo = (timeSeries, columns, labelMap) => {
     chartDataByColumn[column] = {
       id: labelMap[column].displayName,
       data: [],
+      color: columnColors[column],
     }
   }
 
@@ -63,8 +69,9 @@ export const LineChart = ({ data, columns, content }) => {
   const format = (value, compact = false) => {
     for (const column of columns) {
       if (hasCurrencyFormat(column)) return formatToUSD(value, compact)
+      else if (column == constants.STAFF_FTE) return formatFTE(value)
     }
-    return commaFormattedInteger(value)
+    return value > 100 ? commaFormattedInteger(value) : value
   }
 
   return (
@@ -72,7 +79,7 @@ export const LineChart = ({ data, columns, content }) => {
       <div className="line-chart">
         <ResponsiveLine
           data={chartData}
-          colors={{ scheme: "category10" }}
+          colors={{ datum: "color" }}
           margin={{ top: 20, right: 110, bottom: 50, left: 150 }}
           xScale={{ type: "point" }}
           yScale={{
