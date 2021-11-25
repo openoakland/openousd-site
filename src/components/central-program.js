@@ -88,15 +88,19 @@ const CentralProgram = ({ data }) => {
                   content={content.programOverviewTable}
                   className="pt-2"
                 />
-                {centralProgram.time_series &&
-                centralProgram.time_series.length > 1 ? (
-                  <MultiYearChart
-                    data={centralProgram.time_series}
-                    content={content.programOverviewTable.columns}
-                    gaEventCategory={"Central Program Detail"}
-                  />
-                ) : null}
               </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={10} xl={8} className="mx-auto">
+              {centralProgram.time_series &&
+              centralProgram.time_series.length > 1 ? (
+                <MultiYearChart
+                  data={centralProgram.time_series}
+                  content={content.programOverviewTable.columns}
+                  gaEventCategory={"Central Program Detail"}
+                />
+              ) : null}
             </Col>
           </Row>
         </Container>
