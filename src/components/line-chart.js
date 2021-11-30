@@ -69,7 +69,7 @@ export const LineChart = ({ data, columns, content }) => {
   const format = (value, compact = false) => {
     for (const column of columns) {
       if (hasCurrencyFormat(column)) return formatToUSD(value, compact)
-      else if (column == constants.STAFF_FTE) return formatFTE(value)
+      else if (column === constants.STAFF_FTE) return formatFTE(value)
     }
     return value > 100 ? commaFormattedInteger(value) : value
   }

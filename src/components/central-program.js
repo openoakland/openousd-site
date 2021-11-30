@@ -8,6 +8,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES } from "@contentful/rich-text-types"
 
+import RequireWideScreen from "../components/require-wide-screen"
+import SankeyChart from "../components/sankey-chart"
 import MultiYearChart from "../components/multi-year-chart"
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
@@ -100,21 +102,26 @@ const CentralProgram = ({ data }) => {
             </Col>
           </Row>
         </Container>
-        {/*
-        // Experimental: Sankey chart with Funding Sources > Object Codes for the program
-        // TODO Figure out how to present large negative numbers in program expenditures
-        {data.centralProgramsSankeyJson && (
-          <RequireWideScreen minScreenWidth={"sm"}>
-            <SankeyChart
-              data={data.centralProgramsSankeyJson}
-              labelContent={content.fundingToObjectSpendingSankey}
-              margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
-              gaEventCategory="Central Program - Resourcing"
-              includeCategoriesLink={false}
-            />
-          </RequireWideScreen>
-        )}*/}
-
+        {/*Experimental: Sankey chart with Funding Sources > Object Codes for
+        the program TODO Figure out how to present large negative numbers in
+        program expenditures*/}
+        <Container>
+          <Row>
+            <Col xl={10} className="mx-auto">
+              {data.centralProgramsSankeyJson && (
+                <RequireWideScreen minScreenWidth={"sm"}>
+                  <SankeyChart
+                    data={data.centralProgramsSankeyJson}
+                    labelContent={content.fundingToObjectSpendingSankey}
+                    margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
+                    gaEventCategory="Central Program - Resourcing"
+                    includeCategoriesLink={false}
+                  />
+                </RequireWideScreen>
+              )}
+            </Col>
+          </Row>
+        </Container>
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
@@ -193,6 +200,7 @@ export const query = graphql`
         total
         type
         id
+        subnodes
       }
       links {
         source
