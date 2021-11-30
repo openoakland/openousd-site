@@ -104,7 +104,7 @@ function SankeyChart({
         </div>
       )}
       <div id="sankey-chart">
-        <div id="info">
+        <div id="info" className="mb-3">
           <div
             className={"text-center" + (!groupByRestricted ? " d-none" : "")}
           >

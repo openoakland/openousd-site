@@ -52,7 +52,7 @@ const CentralProgram = ({ data }) => {
         <ScrollWidget
           className="scroll-widget"
           sectionIdPrefix={ELEMENT_NAME_PREFIX}
-          numSections={4}
+          numSections={5}
         />
       </div>
       <div className="central-program-page-template">
@@ -104,28 +104,42 @@ const CentralProgram = ({ data }) => {
         </Container>
         {/*Experimental: Sankey chart with Funding Sources > Object Codes for
         the program TODO Figure out how to present large negative numbers in
-        program expenditures*/}
-        <Container>
-          <Row>
-            <Col xl={10} className="mx-auto">
-              {data.centralProgramsSankeyJson && (
+        program expenditures*/}{" "}
+        {data.centralProgramsSankeyJson && (
+          <Container>
+            <Row>
+              <Col
+                md={9}
+                xl={6}
+                id={`${ELEMENT_NAME_PREFIX}-2`}
+                className="mx-auto mt-5"
+              >
+                <h2 className="pb-3">
+                  Spending By Category (
+                  {data.site.siteMetadata.latestSchoolYear})
+                </h2>
+              </Col>
+            </Row>
+            <Row>
+              <Col xl={10} className="mx-auto">
                 <RequireWideScreen minScreenWidth={"sm"}>
                   <SankeyChart
                     data={data.centralProgramsSankeyJson}
+                    restrictedData={data.centralProgramsSankeyRestrictedJson}
                     labelContent={content.fundingToObjectSpendingSankey}
                     margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
                     gaEventCategory="Central Program - Resourcing"
                     includeCategoriesLink={false}
                   />
                 </RequireWideScreen>
-              )}
-            </Col>
-          </Row>
-        </Container>
+              </Col>
+            </Row>
+          </Container>
+        )}
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4 pt-sm-4">
+              <div id={`${ELEMENT_NAME_PREFIX}-3`} className="pt-4 pt-sm-4">
                 <h2 className="pb-3 pt-sm-3 pt-md-2">
                   {`${content.staffRolesTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}
                 </h2>
@@ -139,7 +153,7 @@ const CentralProgram = ({ data }) => {
               */}
               {centralProgram.staff_bargaining_units.length === 0 ||
               centralProgram.staff_bargaining_units.includes(0) ? null : (
-                <div id={`${ELEMENT_NAME_PREFIX}-3`} className="pt-4">
+                <div id={`${ELEMENT_NAME_PREFIX}-4`} className="pt-4">
                   <h2 className="pb-3">{`${content.staffLaborUnionsTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                   <StaffLaborUnionsChart
                     data={centralProgram.staff_bargaining_units}
@@ -196,6 +210,19 @@ export const query = graphql`
       }
     }
     centralProgramsSankeyJson(site_code: { eq: $code }) {
+      nodes {
+        total
+        type
+        id
+        subnodes
+      }
+      links {
+        source
+        target
+        value
+      }
+    }
+    centralProgramsSankeyRestrictedJson(site_code: { eq: $code }) {
       nodes {
         total
         type

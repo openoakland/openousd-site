@@ -3,7 +3,17 @@
     "site_code": 901,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 5897.86,
         "subnodes": "CARRYOVER, Computer $500-4,999, SURPLUS"
@@ -53,11 +63,6 @@
     ],
     "links": [
       {
-        "value": 5897.86,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 345880.49,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -70,6 +75,11 @@
       {
         "value": 119436.01,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 5897.86,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -108,13 +118,23 @@
     "site_code": 902,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 6723.6,
         "subnodes": "In-Person Instruction (IPI), Learning Loss Mitigation Covid"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 18557.57,
         "subnodes": "Computer $500-4,999, Equipment $500-4,999, SUPPLIES"
@@ -156,11 +176,6 @@
         "source": "Restricted"
       },
       {
-        "value": 18557.57,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 263868.19,
         "target": "Classified Salaries",
         "source": "Unrestricted"
@@ -173,6 +188,11 @@
       {
         "value": 142241.15,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 18557.57,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -190,6 +210,16 @@
   {
     "site_code": 903,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
@@ -245,7 +275,7 @@
         "subnodes": "SUPV, ADMIN, INSTR COACHES SAL, SUPV&ADM SALARIES STIPENDS, SUPV&ADM SUBSTITUTES, TEACHER ON SPEC ASSIN SCHOOL, TEACHERS SALARIES, TEACHERS SALARIES STIPENDS, TEACHERS SUBS FOR RELEASETIME, TEACHERS SUBSTITUTES"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 2808622.42,
         "subnodes": "Approved Textbooks and Core Curricula Materials, Books and Other Reference Materials, CARRYOVER, Computer $500-4,999, SUPPLIES, SURPLUS"
@@ -258,11 +288,6 @@
       }
     ],
     "links": [
-      {
-        "value": 1078087.8,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
       {
         "value": 1897090.4,
         "target": "Certificated Salaries",
@@ -284,14 +309,14 @@
         "source": "Restricted"
       },
       {
-        "value": 2656.58,
-        "target": "Transfers of Indirect Costs",
+        "value": 1078087.8,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
-        "value": 1730534.62,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 2656.58,
+        "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
       },
       {
         "value": 376892.44,
@@ -311,6 +336,11 @@
       {
         "value": 144345.55,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1730534.62,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -344,13 +374,23 @@
     "site_code": 905,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Other Revenue",
         "type": "resource",
         "total": 10869.86,
         "subnodes": "GP Cost Avoidance"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 51104.84,
         "subnodes": "Central Office Supplies, Computer $500-4,999, Equipment $500-4,999, MEETING REFRESHMENTS, SUPPLIES"
@@ -388,11 +428,6 @@
     ],
     "links": [
       {
-        "value": 33010.78,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 201268.88,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -403,9 +438,9 @@
         "source": "Restricted"
       },
       {
-        "value": 18094.06,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 33010.78,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 866319.63,
@@ -420,6 +455,11 @@
       {
         "value": 343528.23,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 18094.06,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -442,6 +482,16 @@
   {
     "site_code": 906,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "State",
         "type": "resource",
@@ -515,7 +565,17 @@
     "site_code": 907,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 1472.79,
         "subnodes": "Computer $500-4,999, COPIER/DUPLICATION SUPPLIES, MEETING REFRESHMENTS, SUPPLIES, SURPLUS, TESTING MATERIALS"
@@ -587,11 +647,6 @@
         "source": "Restricted"
       },
       {
-        "value": 1472.79,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 22882.94,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -609,6 +664,11 @@
       {
         "value": 504018.33,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1472.79,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -642,13 +702,23 @@
     "site_code": 908,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 50957.56,
         "subnodes": "BANK FEES, DUES & MEMBERSHIPS"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 269931.71,
         "subnodes": "Materials and Supplies"
@@ -662,13 +732,13 @@
     ],
     "links": [
       {
-        "value": 269931.71,
-        "target": "Books and Supplies",
+        "value": 50957.56,
+        "target": "Consultants and Services",
         "source": "Restricted"
       },
       {
-        "value": 50957.56,
-        "target": "Consultants and Services",
+        "value": 269931.71,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -681,6 +751,16 @@
   {
     "site_code": 909,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -736,7 +816,7 @@
         "subnodes": "BECHTEL, California Education Partners, Casel Novo Foundation, DONATIONS, East Bay Community Foundation, Golden State Worriors Community Foundation, Hellman Foundation, Kaiser Health & Wellness w/EBCF, Kenneth Rainin Foundation, Mills Lesson Study Project, Music Instruments, New Teacher Center - Sidney Frank, Peralta College Foundation, Rockefeller Philanthropy, Rodgers Family Foundation, Salesforce.Org, Schusterman Family Foundation, UCLA, Walgreens Grant, WestEd"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 3264254.29,
         "subnodes": "Approved Textbooks and Core Curricula Materials, Books and Other Reference Materials, CARRYOVER, Central Office Supplies, Classroom Supplies, Computer $500-4,999, COMPUTER SUPPLIES, MEETING REFRESHMENTS, SUPPLIES, SURPLUS"
@@ -756,11 +836,6 @@
     ],
     "links": [
       {
-        "value": 3264254.29,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 2550683.1,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -778,6 +853,11 @@
       {
         "value": 1273691.73,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 3264254.29,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -841,13 +921,23 @@
     "site_code": 910,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "General (Base)",
         "type": "resource",
         "total": 371.01,
         "subnodes": "General Purpose"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 33653.33,
         "subnodes": "CARRYOVER, Central Office Supplies, Classroom Supplies, COMPUTER SUPPLIES, Equipment $500-4,999, SUPPLIES, SURPLUS, Text & Core Curr Materials"
@@ -921,11 +1011,6 @@
     ],
     "links": [
       {
-        "value": 33653.33,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 1403195.83,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -948,6 +1033,11 @@
       {
         "value": 228896,
         "target": "Other Financing",
+        "source": "Restricted"
+      },
+      {
+        "value": 33653.33,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -1006,13 +1096,23 @@
     "site_code": 912,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
         "total": 36800.96,
         "subnodes": "Transfers of Indirect Costs"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 221744.63,
         "subnodes": "Approved Textbooks and Core Curricula Materials, Audio Visual Equip $500-4,999, Books and Other Reference Materials, CARRYOVER, Central Office Supplies, Classroom Supplies, Computer $500-4,999, COMPUTER SUPPLIES, Culinary Class Supplies, Equipment $500-4,999, FURNITURE < $5,000, MEETING REFRESHMENTS, Painting Supplies, Student Incentives, SUPPLIES, SURPLUS, TESTING MATERIALS"
@@ -1086,11 +1186,6 @@
     ],
     "links": [
       {
-        "value": 221235,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 1273069.01,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -1111,14 +1206,14 @@
         "source": "Restricted"
       },
       {
-        "value": 36800.96,
-        "target": "Transfers of Indirect Costs",
+        "value": 221235,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
-        "value": 509.63,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 36800.96,
+        "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
       },
       {
         "value": 220405.11,
@@ -1138,6 +1233,11 @@
       {
         "value": 400832.66,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 509.63,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -1186,6 +1286,16 @@
     "site_code": 913,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Employee Benefits",
         "type": "object_category",
         "total": 13176.08,
@@ -1222,7 +1332,7 @@
         "subnodes": "CONSULTANTS, EXTERNAL WORK ORDER SERVICES, LICENSING AGREEMENTS, PRINTING, REPAIRS CONT, Subagreements for Services"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 2226604.97,
         "subnodes": "Equipment $500-4,999, SUPPLIES"
@@ -1235,11 +1345,6 @@
       }
     ],
     "links": [
-      {
-        "value": 2226604.97,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
       {
         "value": 72874,
         "target": "Capital Expenses",
@@ -1266,6 +1371,11 @@
         "source": "Restricted"
       },
       {
+        "value": 2226604.97,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
         "value": 20914.3,
         "target": "Transfers of Indirect Costs",
         "source": "Restricted"
@@ -1281,7 +1391,17 @@
     "site_code": 918,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 42338.91,
         "subnodes": "CARRYOVER, Computer $500-4,999, COMPUTER SUPPLIES, COPIER/DUPLICATION SUPPLIES, SUPPLIES"
@@ -1337,11 +1457,6 @@
     ],
     "links": [
       {
-        "value": 7032.77,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 5202189.85,
         "target": "Capital Expenses",
         "source": "Restricted"
@@ -1362,9 +1477,9 @@
         "source": "Restricted"
       },
       {
-        "value": 35306.14,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 7032.77,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 50293.07,
@@ -1384,6 +1499,11 @@
       {
         "value": 79534.59,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 35306.14,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -1412,13 +1532,23 @@
     "site_code": 922,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Capital Expenses",
         "type": "object_category",
         "total": 13837.36,
         "subnodes": "FURNITURE >= $5,000"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 176128.68,
         "subnodes": "Books and Other Reference Materials, CARRYOVER, Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES, Copier Paper, Equipment $500-4,999, FURNITURE < $5,000, Materials and Supplies, MEETING REFRESHMENTS, Student Incentives, SUPPLIES, SURPLUS, UNIFORMS"
@@ -1492,11 +1622,6 @@
     ],
     "links": [
       {
-        "value": 164275.89,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 13837.36,
         "target": "Capital Expenses",
         "source": "Restricted"
@@ -1522,14 +1647,14 @@
         "source": "Restricted"
       },
       {
-        "value": 286302.53,
-        "target": "Transfers of Indirect Costs",
+        "value": 164275.89,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
-        "value": 11852.79,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 286302.53,
+        "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
       },
       {
         "value": 495162.64,
@@ -1544,6 +1669,11 @@
       {
         "value": 1469422.32,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 11852.79,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -1587,7 +1717,17 @@
     "site_code": 923,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 34391.24,
         "subnodes": "Books and Other Reference Materials, CARRYOVER, Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES, SUPPLIES"
@@ -1655,11 +1795,6 @@
     ],
     "links": [
       {
-        "value": 34391.24,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 20487.2,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -1677,6 +1812,11 @@
       {
         "value": 297620.64,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 34391.24,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -1735,6 +1875,16 @@
     "site_code": 928,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Other Revenue",
         "type": "resource",
         "total": 2820.21,
@@ -1759,7 +1909,7 @@
         "subnodes": "DONATIONS, Stupski Foundation"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 170757.64,
         "subnodes": "CARRYOVER, SUPPLIES, SURPLUS, TESTING MATERIALS"
@@ -1797,11 +1947,6 @@
     ],
     "links": [
       {
-        "value": 170757.64,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 76555.56,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -1819,6 +1964,11 @@
       {
         "value": 65582.78,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 170757.64,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -1867,13 +2017,23 @@
     "site_code": 929,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
         "total": 4829.35,
         "subnodes": "Transfers of Indirect Costs"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 11167.2,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, SUPPLIES, SURPLUS"
@@ -1941,11 +2101,6 @@
     ],
     "links": [
       {
-        "value": 2661.41,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 192361.59,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -1966,14 +2121,14 @@
         "source": "Restricted"
       },
       {
-        "value": 4829.35,
-        "target": "Transfers of Indirect Costs",
+        "value": 2661.41,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
-        "value": 8505.79,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 4829.35,
+        "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
       },
       {
         "value": 362919.76,
@@ -1993,6 +2148,11 @@
       {
         "value": 671882.86,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 8505.79,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -2031,6 +2191,16 @@
     "site_code": 933,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Other Revenue",
         "type": "resource",
         "total": 9282.87,
@@ -2043,7 +2213,7 @@
         "subnodes": "Elementary and Secondary School Emergency Relief Fund II (ESSER II), In-Person Instruction (IPI)"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 33703.04,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, Equipment $500-4,999, SURPLUS"
@@ -2097,11 +2267,6 @@
         "source": "Restricted"
       },
       {
-        "value": 33703.04,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 98323.64,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -2119,6 +2284,11 @@
       {
         "value": 225957.77,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 33703.04,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -2147,13 +2317,23 @@
     "site_code": 936,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 60,
         "subnodes": "DONATIONS"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 46768.34,
         "subnodes": "Central Office Supplies, Computer $500-4,999, Equipment $500-4,999, MEETING REFRESHMENTS, SUPPLIES"
@@ -2209,11 +2389,6 @@
     ],
     "links": [
       {
-        "value": 60,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 343958.52,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -2224,9 +2399,9 @@
         "source": "Restricted"
       },
       {
-        "value": 46708.34,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 60,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 2454739.55,
@@ -2241,6 +2416,11 @@
       {
         "value": 964424.06,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 46708.34,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -2279,6 +2459,16 @@
     "site_code": 937,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Federal",
         "type": "resource",
         "total": 2339.07,
@@ -2291,7 +2481,7 @@
         "subnodes": "Central Office Supplemental"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 52188.42,
         "subnodes": "CARRYOVER, Central Office Supplies, SURPLUS"
@@ -2335,11 +2525,6 @@
     ],
     "links": [
       {
-        "value": 52188.42,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 2391834.26,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -2357,6 +2542,11 @@
       {
         "value": 593224.59,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 52188.42,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -2400,13 +2590,23 @@
     "site_code": 940,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 13216.51,
         "subnodes": "Elementary and Secondary School Emergency Relief Fund II (ESSER II)"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 16534.26,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, MEETING REFRESHMENTS, SURPLUS"
@@ -2454,11 +2654,6 @@
         "source": "Restricted"
       },
       {
-        "value": 16534.26,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 790575.18,
         "target": "Classified Salaries",
         "source": "Unrestricted"
@@ -2471,6 +2666,11 @@
       {
         "value": 305571.39,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 16534.26,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -2494,7 +2694,17 @@
     "site_code": 941,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 26319.5,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, MEETING REFRESHMENTS, SUPPLIES, SURPLUS"
@@ -2544,11 +2754,6 @@
     ],
     "links": [
       {
-        "value": 1036.69,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 193060.53,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -2564,9 +2769,9 @@
         "source": "Restricted"
       },
       {
-        "value": 25282.81,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 1036.69,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 584866.84,
@@ -2581,6 +2786,11 @@
       {
         "value": 161758.58,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 25282.81,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -2608,6 +2818,16 @@
   {
     "site_code": 942,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Classified Salaries",
         "type": "object_category",
@@ -2687,6 +2907,16 @@
     "site_code": 944,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
         "total": 14183.43,
@@ -2705,7 +2935,7 @@
         "subnodes": "ESSA: Title II, Part A, Supporting Effective Instruction, ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 456393.23,
         "subnodes": "CARRYOVER, Computer $500-4,999, Copier Paper, Fee Reimbursements, MEETING REFRESHMENTS, PROFESSIONAL DEVELOPMENT, SUPPLIES, SURPLUS"
@@ -2767,11 +2997,6 @@
     ],
     "links": [
       {
-        "value": 439006.6,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 732463.74,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -2792,14 +3017,14 @@
         "source": "Restricted"
       },
       {
-        "value": 14183.43,
-        "target": "Transfers of Indirect Costs",
+        "value": 439006.6,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
-        "value": 17386.63,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 14183.43,
+        "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
       },
       {
         "value": 875752.76,
@@ -2819,6 +3044,11 @@
       {
         "value": 1432913.16,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 17386.63,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -2867,16 +3097,26 @@
     "site_code": 945,
     "nodes": [
       {
-        "id": "General (Base)",
-        "type": "resource",
-        "total": 86400,
-        "subnodes": "General Purpose"
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
       },
       {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 86400,
         "subnodes": "CONSULTANTS"
+      },
+      {
+        "id": "General (Base)",
+        "type": "resource",
+        "total": 86400,
+        "subnodes": "General Purpose"
       }
     ],
     "links": [
@@ -2896,13 +3136,23 @@
     "site_code": 946,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Certificated Salaries",
         "type": "object_category",
         "total": 495.72,
         "subnodes": "SUPV, ADMIN, INSTR COACHES SAL"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 7272.69,
         "subnodes": "Central Office Supplies, Computer $500-4,999"
@@ -2961,11 +3211,6 @@
         "source": "Restricted"
       },
       {
-        "value": 7272.69,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 495.72,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -2983,6 +3228,11 @@
       {
         "value": 453435.73,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 7272.69,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3006,7 +3256,17 @@
     "site_code": 947,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 1532.42,
         "subnodes": "Central Office Supplies, Computer $500-4,999, FURNITURE < $5,000, MEETING REFRESHMENTS, SUPPLIES, SURPLUS"
@@ -3060,11 +3320,6 @@
         "source": "Restricted"
       },
       {
-        "value": 1532.42,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 21655,
         "target": "Capital Expenses",
         "source": "Unrestricted"
@@ -3085,6 +3340,11 @@
         "source": "Unrestricted"
       },
       {
+        "value": 1532.42,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
         "value": 1188743.46,
         "target": "Unrestricted",
         "source": "Other Revenue"
@@ -3100,6 +3360,16 @@
     "site_code": 948,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 15204.23,
@@ -3112,7 +3382,7 @@
         "subnodes": "Medi-Cal Billing Option"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 18188.79,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, SURPLUS"
@@ -3178,11 +3448,6 @@
         "source": "Restricted"
       },
       {
-        "value": 18188.79,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 135587.03,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -3200,6 +3465,11 @@
       {
         "value": 606520.89,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 18188.79,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3238,13 +3508,23 @@
     "site_code": 950,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 245,
         "subnodes": "CONFERENCE  EXPENSE, EQUIP MAINTENANCE AGREEMT, MILEAGE/PERSONAL EXP REIMB, POSTAGE, Travel and Conferences"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 1473.91,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES, SUPPLIES, SURPLUS"
@@ -3300,11 +3580,6 @@
     ],
     "links": [
       {
-        "value": 973.91,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 51455.47,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -3325,9 +3600,9 @@
         "source": "Restricted"
       },
       {
-        "value": 500,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 973.91,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 124847.61,
@@ -3337,6 +3612,11 @@
       {
         "value": 35003.98,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 500,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3370,13 +3650,23 @@
     "site_code": 954,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
         "total": 1873.52,
         "subnodes": "Transfers of Indirect Costs"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 28463.54,
         "subnodes": "Approved Textbooks and Core Curricula Materials, Books and Other Reference Materials, CARRYOVER, Classroom Supplies, Computer $500-4,999, COMPUTER SUPPLIES, MEETING REFRESHMENTS, Student Incentives, SUPPLIES, SURPLUS"
@@ -3444,11 +3734,6 @@
     ],
     "links": [
       {
-        "value": 22550.67,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 772737.37,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -3469,14 +3754,14 @@
         "source": "Restricted"
       },
       {
-        "value": 1873.52,
-        "target": "Transfers of Indirect Costs",
+        "value": 22550.67,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
-        "value": 5912.87,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 1873.52,
+        "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
       },
       {
         "value": 314421.27,
@@ -3496,6 +3781,11 @@
       {
         "value": 150024.65,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 5912.87,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3539,7 +3829,17 @@
     "site_code": 956,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 1000,
         "subnodes": "SUPPLIES"
@@ -3616,11 +3916,6 @@
         "source": "Restricted"
       },
       {
-        "value": 1000,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 86659.12,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -3638,6 +3933,11 @@
       {
         "value": 87767.11,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1000,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3671,6 +3971,16 @@
     "site_code": 958,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 66076.65,
@@ -3683,7 +3993,7 @@
         "subnodes": "Elementary and Secondary School Emergency Relief Fund II (ESSER II), In-Person Instruction (IPI), Learning Loss Mitigation Covid"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 447270.96,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, SUPPLIES, SURPLUS"
@@ -3721,11 +4031,6 @@
     ],
     "links": [
       {
-        "value": 446918.08,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 124258.36,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -3741,9 +4046,9 @@
         "source": "Restricted"
       },
       {
-        "value": 352.88,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 446918.08,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 975720.17,
@@ -3758,6 +4063,11 @@
       {
         "value": 464738.53,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 352.88,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3791,6 +4101,16 @@
     "site_code": 959,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Federal",
         "type": "resource",
         "total": 33536,
@@ -3820,22 +4140,32 @@
     "site_code": 961,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
+        "type": "object_category",
+        "total": 774.7,
+        "subnodes": "Approved Textbooks and Core Curricula Materials"
+      },
+      {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 774.7,
         "subnodes": "DONATIONS"
-      },
-      {
-        "id": "Books and Supplies",
-        "type": "object_category",
-        "total": 774.7,
-        "subnodes": "Approved Textbooks and Core Curricula Materials"
       }
     ],
     "links": [
       {
         "value": 774.7,
-        "target": "Books and Supplies",
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -3849,7 +4179,17 @@
     "site_code": 962,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 478.56,
         "subnodes": "Books and Other Reference Materials, Computer $500-4,999, SUPPLIES"
@@ -3914,11 +4254,6 @@
         "source": "Restricted"
       },
       {
-        "value": 478.56,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 188034.53,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -3931,6 +4266,11 @@
       {
         "value": 130306.51,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 478.56,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -3959,7 +4299,17 @@
     "site_code": 963,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 1528.42,
         "subnodes": "Audio Visual Equip $500-4,999, Computer $500-4,999, SUPPLIES"
@@ -4018,11 +4368,6 @@
         "source": "Restricted"
       },
       {
-        "value": 1528.42,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 188180.53,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -4035,6 +4380,11 @@
       {
         "value": 130805.46,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1528.42,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4058,6 +4408,16 @@
     "site_code": 964,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Other Revenue",
         "type": "resource",
         "total": 20000,
@@ -4076,7 +4436,7 @@
         "subnodes": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 110032.24,
         "subnodes": "CARRYOVER, Computer $500-4,999, MEETING REFRESHMENTS, SUPPLIES"
@@ -4135,11 +4495,6 @@
         "source": "Restricted"
       },
       {
-        "value": 110032.24,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 1087216.58,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -4157,6 +4512,11 @@
       {
         "value": 420125.35,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 110032.24,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4195,7 +4555,17 @@
     "site_code": 965,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 4215.34,
         "subnodes": "CARRYOVER, Central Office Supplies, MEETING REFRESHMENTS, SUPPLIES, SURPLUS"
@@ -4257,11 +4627,6 @@
     ],
     "links": [
       {
-        "value": 3039.17,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 26423.72,
         "target": "Certificated Salaries",
         "source": "Restricted"
@@ -4282,9 +4647,9 @@
         "source": "Restricted"
       },
       {
-        "value": 1176.17,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 3039.17,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 162881.48,
@@ -4299,6 +4664,11 @@
       {
         "value": 107406.52,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1176.17,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4332,7 +4702,17 @@
     "site_code": 968,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 1849.41,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES"
@@ -4403,11 +4783,6 @@
         "source": "Restricted"
       },
       {
-        "value": 1849.41,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 2255577.13,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -4420,6 +4795,11 @@
       {
         "value": 1258421.96,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1849.41,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4452,6 +4832,16 @@
   {
     "site_code": 975,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -4501,7 +4891,7 @@
         "subnodes": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected, Medi-Cal Billing Option, SE-IDEA BASIC GRANT PL94-142, Special Ed: Alternative Dispute Resolution, Special Ed: IDEA Early Intervention Grants, Special Ed: IDEA Local Assistance, Part B, Sec 611, Early Intervening Services, Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs, Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611, Special Ed: IDEA Part B, Sec 619, Preschool Grants Early Intervening Services, Special Ed: IDEA Preschool Grants, Part B, Sec 619, Special Ed: IDEA Preschool Staff Development, Part B, Sec 619, Transition Partnership Program"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 2724583.16,
         "subnodes": "Books and Other Reference Materials, CARRYOVER, Central Office Supplies, Computer $500-4,999, Equipment $500-4,999, FURNITURE < $5,000, MEETING REFRESHMENTS, TESTING MATERIALS"
@@ -4539,11 +4929,6 @@
     ],
     "links": [
       {
-        "value": 2724583.16,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 235980,
         "target": "Capital Expenses",
         "source": "Restricted"
@@ -4566,6 +4951,11 @@
       {
         "value": 9685741.13,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 2724583.16,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -4629,13 +5019,23 @@
     "site_code": 979,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 2777.55,
         "subnodes": "Learning Loss Mitigation Covid"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 39885.54,
         "subnodes": "Computer $500-4,999, Equipment $500-4,999, SUPPLIES"
@@ -4656,17 +5056,17 @@
     "links": [
       {
         "value": 2777.55,
-        "target": "Books and Supplies",
+        "target": "Supplies",
         "source": "Restricted"
-      },
-      {
-        "value": 37107.99,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
       },
       {
         "value": 99474.08,
         "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 37107.99,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4685,16 +5085,26 @@
     "site_code": 980,
     "nodes": [
       {
-        "id": "Consultants and Services",
-        "type": "object_category",
-        "total": 50000,
-        "subnodes": "EXTERNAL WORK ORDER SERVICES"
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
       },
       {
         "id": "General (Base)",
         "type": "resource",
         "total": 50000,
         "subnodes": "General Purpose"
+      },
+      {
+        "id": "Consultants and Services",
+        "type": "object_category",
+        "total": 50000,
+        "subnodes": "EXTERNAL WORK ORDER SERVICES"
       }
     ],
     "links": [
@@ -4714,6 +5124,16 @@
     "site_code": 983,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 11934.17,
@@ -4726,7 +5146,7 @@
         "subnodes": "Elementary and Secondary School Emergency Relief Fund II (ESSER II), In-Person Instruction (IPI)"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 32210.51,
         "subnodes": "Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES, SUPPLIES"
@@ -4762,11 +5182,6 @@
         "source": "Restricted"
       },
       {
-        "value": 32210.51,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 737268.41,
         "target": "Classified Salaries",
         "source": "Unrestricted"
@@ -4779,6 +5194,11 @@
       {
         "value": 345352.66,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 32210.51,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4796,6 +5216,16 @@
   {
     "site_code": 986,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
@@ -4857,18 +5287,13 @@
         "subnodes": "Elementary and Secondary School Emergency Relief Fund, Elementary and Secondary School Emergency Relief Fund II (ESSER II), In-Person Instruction (IPI), Learning Loss Mitigation Covid, Learning Loss Mitigation - General Fund"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 15285669.6,
         "subnodes": "Audio Visual Equip $500-4,999, CARRYOVER, Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES, Equipment $500-4,999, GASOLINE, REPRSUPP VEHICLE, SUPPLIES"
       }
     ],
     "links": [
-      {
-        "value": 14196364.05,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
       {
         "value": 188540.35,
         "target": "Classified Salaries",
@@ -4885,9 +5310,9 @@
         "source": "Restricted"
       },
       {
-        "value": 1089305.55,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 14196364.05,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 50480.72,
@@ -4907,6 +5332,11 @@
       {
         "value": 1355929.04,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1089305.55,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -4945,6 +5375,16 @@
     "site_code": 987,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "State",
         "type": "resource",
         "total": 49351.07,
@@ -4957,7 +5397,7 @@
         "subnodes": "Central Office Supplemental"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 102869.49,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, DUPLICATING EQUIP < $5,000, Equipment $500-4,999, MEETING REFRESHMENTS, SUPPLIES"
@@ -4995,11 +5435,6 @@
     ],
     "links": [
       {
-        "value": 85901.79,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 1353771.52,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -5015,9 +5450,9 @@
         "source": "Restricted"
       },
       {
-        "value": 16967.7,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 85901.79,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 271923.34,
@@ -5032,6 +5467,11 @@
       {
         "value": 52313.57,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 16967.7,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -5065,6 +5505,16 @@
     "site_code": 988,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Philanthropy / Grants",
         "type": "resource",
         "total": 5987.91,
@@ -5095,7 +5545,7 @@
         "subnodes": "ADVERTISING - LEGAL, CONFERENCE  EXPENSE, CONSULTANTS, DISPOSAL SERVICES, EQUIP MAINTENANCE AGREEMT, EXTERNAL WORK ORDER SERVICES, INTERFUND, INTERPGM, MILEAGE/PERSONAL EXP REIMB, Moving Expense, POSTAGE, RENTALS, REPAIRS CONT, REPAIRS CONT , TELEPHONE"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 4009264.45,
         "subnodes": "Building & Grounds Supplies, CARRYOVER, Central Office Supplies, Computer $500-4,999, COMPUTER SUPPLIES, Equipment $500-4,999, GASOLINE, MEETING REFRESHMENTS"
@@ -5121,11 +5571,6 @@
     ],
     "links": [
       {
-        "value": 4009264.45,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 200830.01,
         "target": "Capital Expenses",
         "source": "Restricted"
@@ -5143,6 +5588,11 @@
       {
         "value": 3770887.45,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 4009264.45,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -5186,6 +5636,16 @@
     "site_code": 989,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Capital Expenses",
         "type": "object_category",
         "total": 7816.58,
@@ -5204,7 +5664,7 @@
         "subnodes": "Altamont Education Advisory, City of Livermore, GP Cost Avoidance"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 455204.72,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, Custodial Supplies, Equipment $500-4,999, SUPPLIES"
@@ -5246,11 +5706,6 @@
         "source": "Restricted"
       },
       {
-        "value": 455204.72,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 7816.58,
         "target": "Capital Expenses",
         "source": "Unrestricted"
@@ -5263,6 +5718,11 @@
       {
         "value": 5631266.6,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 455204.72,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -5291,13 +5751,23 @@
     "site_code": 990,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Consultants and Services",
         "type": "object_category",
         "total": 5580,
         "subnodes": "CONFERENCE  EXPENSE, CONSULTANTS, EQUIP MAINTENANCE AGREEMT, EXTERNAL WORK ORDER SERVICES, INTERPGM, Travel and Conferences"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 7167.97,
         "subnodes": "CARRYOVER, Central Office Supplies, MEETING REFRESHMENTS, PROFESSIONAL DEVELOPMENT, SUPPLIES"
@@ -5335,11 +5805,6 @@
     ],
     "links": [
       {
-        "value": 4734.62,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 55993.69,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -5350,9 +5815,9 @@
         "source": "Restricted"
       },
       {
-        "value": 2433.35,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 4734.62,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 365837.37,
@@ -5367,6 +5832,11 @@
       {
         "value": 169667.6,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2433.35,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -5394,6 +5864,16 @@
   {
     "site_code": 991,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
@@ -5449,7 +5929,7 @@
         "subnodes": "CLASSSUPPT SALARIES, CLASSSUPPT SALARIES EXTRA COMP, CLASSSUPPT SALARIES OVERTIME, CLASSSUPPT SALARIES STIPENDS, CLASSSUPPT SUBSTITUTES, CLERICAL SALARIES, CLERICAL SALARIES OVERTIME, SUPV&ADM SALARIES"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 11633764.59,
         "subnodes": "CARRYOVER, Computer $500-4,999, COMPUTER SUPPLIES, Equipment $500-4,999, Food (Cafeteria only), Food Service Supplies, GASOLINE, MEETING REFRESHMENTS, SUPPLIES, SURPLUS, UNIFORMS"
@@ -5462,11 +5942,6 @@
       }
     ],
     "links": [
-      {
-        "value": 11633764.59,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
       {
         "value": 275985.4,
         "target": "Capital Expenses",
@@ -5490,6 +5965,11 @@
       {
         "value": 827366,
         "target": "Other Financing",
+        "source": "Restricted"
+      },
+      {
+        "value": 11633764.59,
+        "target": "Supplies",
         "source": "Restricted"
       },
       {
@@ -5538,6 +6018,16 @@
     "site_code": 992,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Federal",
         "type": "resource",
         "total": 13832.85,
@@ -5550,7 +6040,7 @@
         "subnodes": "GP Cost Avoidance"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 46615.68,
         "subnodes": "GASOLINE, SUPPLIES"
@@ -5592,11 +6082,6 @@
         "source": "Restricted"
       },
       {
-        "value": 46615.68,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 462978.54,
         "target": "Classified Salaries",
         "source": "Unrestricted"
@@ -5609,6 +6094,11 @@
       {
         "value": 297025.21,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 46615.68,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -5632,13 +6122,23 @@
     "site_code": 994,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Other Revenue",
         "type": "resource",
         "total": 16883.23,
         "subnodes": "Live Scan Fingerprint, OUSPD Traffic Violations"
       },
       {
-        "id": "Books and Supplies",
+        "id": "Supplies",
         "type": "object_category",
         "total": 33567,
         "subnodes": "CARRYOVER, Central Office Supplies, Computer $500-4,999, Equipment $500-4,999, MEETING REFRESHMENTS, SUPPLIES, UNIFORMS"
@@ -5682,11 +6182,6 @@
     ],
     "links": [
       {
-        "value": 2174.48,
-        "target": "Books and Supplies",
-        "source": "Restricted"
-      },
-      {
         "value": 40865.47,
         "target": "Classified Salaries",
         "source": "Restricted"
@@ -5702,9 +6197,9 @@
         "source": "Restricted"
       },
       {
-        "value": 31392.52,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
+        "value": 2174.48,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 2422976.32,
@@ -5719,6 +6214,11 @@
       {
         "value": 1399765.03,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 31392.52,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -5746,6 +6246,16 @@
   {
     "site_code": 995,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -5856,6 +6366,16 @@
     "site_code": 996,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Federal",
         "type": "resource",
         "total": 1250,
@@ -5885,7 +6405,17 @@
     "site_code": 999,
     "nodes": [
       {
-        "id": "Books and Supplies",
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Supplies",
         "type": "object_category",
         "total": 1200.91,
         "subnodes": "CARRYOVER, Equipment $500-4,999, SUPPLIES, SURPLUS"
@@ -5996,11 +6526,6 @@
         "source": "Restricted"
       },
       {
-        "value": 1200.91,
-        "target": "Books and Supplies",
-        "source": "Unrestricted"
-      },
-      {
         "value": 307021.72,
         "target": "Certificated Salaries",
         "source": "Unrestricted"
@@ -6023,6 +6548,11 @@
       {
         "value": 1005261.6,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1200.91,
+        "target": "Supplies",
         "source": "Unrestricted"
       },
       {
@@ -6066,20 +6596,5 @@
         "source": "Supplemental & Concentration"
       }
     ]
-  },
-  {
-    "nodes": [
-      {
-        "id": "Restricted",
-        "type": "resource_type",
-        "subnodes": ""
-      },
-      {
-        "id": "Unrestricted",
-        "type": "resource_type",
-        "subnodes": ""
-      }
-    ],
-    "links": []
   }
 ]
