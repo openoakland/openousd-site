@@ -103,9 +103,9 @@ const CentralProgram = ({ data }) => {
             </Col>
           </Row>
         </Container>
-        {/*Experimental: Sankey chart with Funding Sources > Object Codes for
+        {/*Sankey chart with Funding Sources > Object Codes for
         the program TODO Figure out how to present large negative numbers in
-        program expenditures*/}{" "}
+        program expenditures. For now, don't display if there's an error*/}{" "}
         {data.centralProgramsSankeyJson && (
           <ErrorBoundary>
             <Container>
