@@ -21,14 +21,14 @@ function SankeyChart({
   const [groupBy, setGroupBy] = useState(NONE)
   let groupByRestricted = groupBy === RESTRICTED
   const restrictedOption = labelContent.groupingOptions.find(
-    (o) => o.optionId === RESTRICTED
+    o => o.optionId === RESTRICTED
   )
 
   const leftLabel = labelContent.leftLabel
   const rightLabel = labelContent.rightLabel
 
   let totalsByNode = {}
-  data.nodes.map((node) => (totalsByNode[node.id] = formatCurrency(node.total)))
+  data.nodes.map(node => (totalsByNode[node.id] = formatCurrency(node.total)))
 
   function formatCurrency(value) {
     return Math.floor(Number(value)).toLocaleString("en-US", {
@@ -68,7 +68,7 @@ function SankeyChart({
     )
   }
 
-  const xAxisLabels = (props) => (
+  const xAxisLabels = props => (
     <g transform="translate(0,-30)" id="overlay">
       <text x={leftLabel.length * -4}>{leftLabel}</text>
       <text x={props.width - 535}>{rightLabel}</text>
@@ -82,7 +82,7 @@ function SankeyChart({
           <div className="control">
             <span className="label">{labelContent.groupingLabel} </span>
             <ButtonGroup>
-              {labelContent.groupingOptions.map((option) => (
+              {labelContent.groupingOptions.map(option => (
                 <Button
                   size="sm"
                   key={option.optionId}
@@ -133,7 +133,7 @@ function SankeyChart({
           animate={true}
           motionStiffness={140}
           motionDamping={13}
-          valueFormat={(value) => formatCurrency(value)}
+          valueFormat={value => formatCurrency(value)}
           nodeTooltip={({ node }) => <NodeTooltip node={node} />}
           layers={["links", "nodes", "labels", "legends", xAxisLabels]}
           onClick={(data, event) => {

@@ -106,20 +106,22 @@ const CentralProgram = ({ data }) => {
         the program TODO Figure out how to present large negative numbers in
         program expenditures*/}{" "}
         {data.centralProgramsSankeyJson && (
-          <Container>
-            <Row>
-              <Col
-                md={9}
-                xl={6}
-                id={`${ELEMENT_NAME_PREFIX}-2`}
-                className="mx-auto mt-5"
-              >
-                <h2 className="pb-3">
-                  Spending By Category (
-                  {data.site.siteMetadata.latestSchoolYear})
-                </h2>
-              </Col>
-            </Row>
+          <React.Fragment>
+            <Container>
+              <Row>
+                <Col
+                  md={9}
+                  xl={6}
+                  id={`${ELEMENT_NAME_PREFIX}-2`}
+                  className="mx-auto mt-5"
+                >
+                  <h2 className="pb-3">
+                    Spending By Category (
+                    {data.site.siteMetadata.latestSchoolYear})
+                  </h2>
+                </Col>
+              </Row>
+            </Container>
             <Row>
               <Col xl={10} className="mx-auto">
                 <RequireWideScreen minScreenWidth={"sm"}>
@@ -134,7 +136,7 @@ const CentralProgram = ({ data }) => {
                 </RequireWideScreen>
               </Col>
             </Row>
-          </Container>
+          </React.Fragment>
         )}
         <Container>
           <Row>
@@ -173,7 +175,7 @@ const CentralProgram = ({ data }) => {
 }
 
 export const query = graphql`
-  query ($code: Int!, $language: String) {
+  query($code: Int!, $language: String) {
     site {
       siteMetadata {
         latestSchoolYear
