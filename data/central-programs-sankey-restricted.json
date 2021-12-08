@@ -3,6 +3,16 @@
     "site_code": 901,
     "nodes": [
       {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
         "id": "Supplies",
         "type": "object_category",
         "total": 5897.86,
@@ -53,58 +63,53 @@
     ],
     "links": [
       {
-        "value": 175274.75,
+        "value": 345880.49,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 84578.8,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 81886.87,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 9875.56,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 302869.53,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 84500,
+        "value": 109500,
         "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
-        "value": 104839.44,
+        "value": 119436.01,
         "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 43010.96,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 25000,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 14596.57,
-        "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 5897.86,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 257161.62,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 94454.36,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 259853.55,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 91762.43,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 492208.97,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 88505.39,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -112,6 +117,16 @@
   {
     "site_code": 902,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "State",
         "type": "resource",
@@ -151,33 +166,43 @@
     ],
     "links": [
       {
-        "value": 263868.19,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 58037.6,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 142241.15,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 18557.57,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
         "value": 6000,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 723.6,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 263868.19,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 58037.6,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 142241.15,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 18557.57,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 482704.51,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 6723.6,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -185,6 +210,16 @@
   {
     "site_code": 903,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
@@ -254,103 +289,83 @@
     ],
     "links": [
       {
-        "value": 11703,
+        "value": 1897090.4,
         "target": "Certificated Salaries",
-        "source": "Federal"
-      },
-      {
-        "value": 298225,
-        "target": "Consultants and Services",
-        "source": "Federal"
-      },
-      {
-        "value": 2446.09,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 276600,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 92299.03,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 948.6,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 115315.65,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 681.62,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 74358.26,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 8967.6,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 1885387.4,
-        "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 980513.42,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 1141333.51,
+        "value": 1439558.51,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 624281.72,
+        "value": 626727.81,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 1078087.8,
         "target": "Supplies",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 2656.58,
         "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
+      },
+      {
+        "value": 376892.44,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 166657.29,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 97303.6,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 144345.55,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1730534.62,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 312374.09,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 485844.9,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 83325.86,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 5712260.43,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 100292.44,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 96355,
-        "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 20062.3,
-        "target": "Employee Benefits",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 1729853,
-        "target": "Supplies",
+        "value": 1946562.74,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -358,6 +373,16 @@
   {
     "site_code": 905,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -403,48 +428,53 @@
     ],
     "links": [
       {
-        "value": 856619.6,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 113477.54,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 342358.4,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 18094.06,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 9700.03,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 1169.83,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
         "value": 201268.88,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 72652.14,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 33010.78,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 866319.63,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 113477.54,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 343528.23,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 18094.06,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1330549.6,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 10869.86,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 306931.8,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -452,6 +482,16 @@
   {
     "site_code": 906,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "State",
         "type": "resource",
@@ -485,33 +525,38 @@
     ],
     "links": [
       {
-        "value": 84775.6,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 44910.66,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 10181.86,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 1227.94,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
         "value": 3327.92,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 401.34,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 94957.46,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 46138.6,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 129686.26,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 11409.8,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 3729.26,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -519,6 +564,16 @@
   {
     "site_code": 907,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -582,68 +637,63 @@
     ],
     "links": [
       {
-        "value": 42440.84,
+        "value": 76871.34,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 32167.22,
+        "value": 37535.24,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 22882.94,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 370464.81,
+        "value": 937830.99,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 24029.36,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 167856.04,
+        "value": 504018.33,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 1472.79,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 74608.06,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 586705.94,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 43162.61,
-        "target": "Classified Salaries",
+        "value": 48304.12,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 5141.51,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 34430.5,
-        "target": "Classified Salaries",
+        "value": 39798.52,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 5368.02,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 524203.57,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 331020.78,
-        "target": "Employee Benefits",
+        "value": 855224.35,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -651,6 +701,16 @@
   {
     "site_code": 908,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -674,11 +734,16 @@
       {
         "value": 50957.56,
         "target": "Consultants and Services",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 269931.71,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 320889.27,
+        "target": "Restricted",
         "source": "Other Revenue"
       }
     ]
@@ -686,6 +751,16 @@
   {
     "site_code": 909,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -761,128 +836,83 @@
     ],
     "links": [
       {
-        "value": 66621.48,
+        "value": 2550683.1,
         "target": "Certificated Salaries",
+        "source": "Restricted"
+      },
+      {
+        "value": 869121.53,
+        "target": "Classified Salaries",
+        "source": "Restricted"
+      },
+      {
+        "value": 629177.53,
+        "target": "Consultants and Services",
+        "source": "Restricted"
+      },
+      {
+        "value": 1273691.73,
+        "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 3264254.29,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 1884355.36,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 282003.28,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 43906.81,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 770632.78,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 107236.67,
+        "target": "Restricted",
         "source": "Federal"
       },
       {
-        "value": 40615.19,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 387640.84,
-        "target": "Certificated Salaries",
+        "value": 554849.99,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 35325.19,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 27407.81,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 104476.15,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 10456.96,
-        "target": "Classified Salaries",
+        "value": 11307.97,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 851.01,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 1306059.28,
-        "target": "Certificated Salaries",
+        "value": 1878835.46,
+        "target": "Restricted",
         "source": "Parcel Taxes"
       },
       {
-        "value": 716.32,
-        "target": "Classified Salaries",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 572059.86,
-        "target": "Employee Benefits",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 1022010.01,
-        "target": "Certificated Salaries",
+        "value": 2692510.91,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 570241.15,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 501228.34,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 550780.44,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 48250.97,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 155992.33,
-        "target": "Certificated Salaries",
+        "value": 3908345.14,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 298164.06,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 127949.19,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 110236.24,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 3216003.32,
-        "target": "Supplies",
-        "source": "State"
-      },
-      {
-        "value": 1496714.52,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 236221.13,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 16499,
-        "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 665305.62,
-        "target": "Employee Benefits",
+        "value": 2414740.27,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -890,6 +920,16 @@
   {
     "site_code": 910,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "General (Base)",
         "type": "resource",
@@ -971,148 +1011,83 @@
     ],
     "links": [
       {
-        "value": 216719.5,
+        "value": 1403195.83,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 160958.98,
+        "value": 1772457.38,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 16537.5,
+        "value": 1930605.17,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 159963.15,
+        "value": 1381875.61,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 12589,
+        "value": 228896,
         "target": "Other Financing",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 46912.51,
+        "value": 33653.33,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 722244.61,
         "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
+      },
+      {
+        "value": 256382.78,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 122420.41,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 613680.64,
+        "target": "Restricted",
         "source": "Federal"
       },
       {
-        "value": 271.94,
-        "target": "Classified Salaries",
+        "value": 371.01,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 99.07,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 60293.24,
-        "target": "Certificated Salaries",
+        "value": 383812.39,
+        "target": "Restricted",
         "source": "Other Revenue"
       },
       {
-        "value": 109536.33,
-        "target": "Classified Salaries",
+        "value": 19977.48,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 149679,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 52480.96,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 16114.12,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 15686.22,
-        "target": "Transfers of Indirect Costs",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 42327.59,
-        "target": "Certificated Salaries",
+        "value": 986692.07,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 605709.94,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 40961,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 287974.67,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 4289.16,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 5429.71,
-        "target": "Transfers of Indirect Costs",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 1083855.5,
-        "target": "Certificated Salaries",
+        "value": 5488742.83,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 914079.62,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 1723427.67,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 883606.82,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 216307,
-        "target": "Other Financing",
-        "source": "State"
-      },
-      {
-        "value": 13250.05,
-        "target": "Supplies",
-        "source": "State"
-      },
-      {
-        "value": 654216.17,
-        "target": "Transfers of Indirect Costs",
-        "source": "State"
-      },
-      {
-        "value": 238283.35,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 120171.35,
-        "target": "Employee Benefits",
+        "value": 358454.7,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -1120,6 +1095,16 @@
   {
     "site_code": 912,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
@@ -1201,168 +1186,98 @@
     ],
     "links": [
       {
-        "value": 26434.3,
+        "value": 1273069.01,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 14477.35,
+        "value": 2154790.6,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 27826.5,
+        "value": 512983.15,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 13938.46,
+        "value": 1402739.72,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 165789.28,
+        "value": 221235,
         "target": "Supplies",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 173611.47,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 73791.93,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 17103.7,
-        "target": "Certificated Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 200861.01,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 920,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 24533.53,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 96772.25,
-        "target": "Certificated Salaries",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 905694.03,
-        "target": "Classified Salaries",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 20464.5,
-        "target": "Consultants and Services",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 429115.62,
-        "target": "Employee Benefits",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 1041.56,
-        "target": "Supplies",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 673030.63,
-        "target": "Certificated Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 198616.58,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 278138.37,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 355583.1,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 34121.83,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 1282.46,
+        "value": 36800.96,
         "target": "Transfers of Indirect Costs",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 459728.13,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 1036002.64,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 185633.78,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 600076.88,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 20282.33,
-        "target": "Supplies",
-        "source": "State"
-      },
-      {
-        "value": 35518.5,
-        "target": "Transfers of Indirect Costs",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 220405.11,
         "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 463770.01,
+        "value": 838242.49,
         "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
         "value": 36400,
         "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 306532.86,
+        "value": 400832.66,
         "target": "Employee Benefits",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
         "value": 509.63,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 248465.89,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 247403.4,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 22049.36,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 221368.88,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 1453087.96,
+        "target": "Restricted",
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 1540772.97,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 2337242.26,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 1027617.61,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -1370,6 +1285,16 @@
   {
     "site_code": 913,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Employee Benefits",
         "type": "object_category",
@@ -1423,36 +1348,41 @@
       {
         "value": 72874,
         "target": "Capital Expenses",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 24540.6,
         "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 54428.9,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 292169.59,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 13176.08,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 2226604.97,
         "target": "Supplies",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 20914.3,
         "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
+      },
+      {
+        "value": 2704708.44,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -1460,6 +1390,16 @@
   {
     "site_code": 918,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -1517,83 +1457,73 @@
     ],
     "links": [
       {
-        "value": 5158263.95,
+        "value": 5202189.85,
         "target": "Capital Expenses",
-        "source": "Bonds"
+        "source": "Restricted"
       },
       {
-        "value": 2013930.26,
+        "value": 2101685.1,
         "target": "Classified Salaries",
-        "source": "Bonds"
+        "source": "Restricted"
       },
       {
-        "value": 574290.07,
+        "value": 635127.99,
         "target": "Consultants and Services",
-        "source": "Bonds"
+        "source": "Restricted"
       },
       {
-        "value": 938160.26,
+        "value": 948770.91,
         "target": "Employee Benefits",
-        "source": "Bonds"
+        "source": "Restricted"
       },
       {
         "value": 7032.77,
         "target": "Supplies",
-        "source": "Bonds"
+        "source": "Restricted"
       },
       {
         "value": 50293.07,
         "target": "Capital Expenses",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 54499.76,
+        "value": 623491.71,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 118224.03,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 24466.52,
+        "value": 79534.59,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 35306.14,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 8691677.31,
+        "target": "Restricted",
+        "source": "Bonds"
+      },
+      {
+        "value": 282789.52,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 568991.95,
-        "target": "Classified Salaries",
+        "value": 624060.02,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 55068.07,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 43925.9,
-        "target": "Capital Expenses",
-        "source": "State"
-      },
-      {
-        "value": 87754.84,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 60837.92,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 10610.65,
-        "target": "Employee Benefits",
+        "value": 203129.31,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -1601,6 +1531,16 @@
   {
     "site_code": 922,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Capital Expenses",
         "type": "object_category",
@@ -1682,163 +1622,93 @@
     ],
     "links": [
       {
-        "value": 199549.37,
+        "value": 13837.36,
+        "target": "Capital Expenses",
+        "source": "Restricted"
+      },
+      {
+        "value": 585788.45,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 1088295.86,
+        "value": 3908509.31,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 946182.64,
+        "value": 3332775.84,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 551761.09,
+        "value": 1967789.13,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 22769.39,
+        "value": 164275.89,
         "target": "Supplies",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 129265.02,
+        "value": 286302.53,
         "target": "Transfers of Indirect Costs",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 169067.51,
+        "value": 495162.64,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 345230.51,
+        "value": 2326723.79,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 251493.06,
+        "value": 1469422.32,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 11852.79,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2937823.37,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 652033.62,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 104789.95,
-        "target": "Certificated Salaries",
+        "value": 945648.13,
+        "target": "Restricted",
         "source": "Other Revenue"
       },
       {
-        "value": 507814.56,
-        "target": "Classified Salaries",
+        "value": 181806.31,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 199564.71,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 237048.64,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 78236.58,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 13837.36,
-        "target": "Capital Expenses",
+        "value": 4087442.95,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 162341.4,
-        "target": "Certificated Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 1530050.9,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 1521363.14,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 810938.2,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 39408.75,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 9503.2,
-        "target": "Transfers of Indirect Costs",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 119107.73,
-        "target": "Certificated Salaries",
+        "value": 2288364.06,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 945915.79,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 665665.35,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 386279.71,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 23861.17,
-        "target": "Supplies",
-        "source": "State"
-      },
-      {
-        "value": 147534.31,
-        "target": "Transfers of Indirect Costs",
-        "source": "State"
-      },
-      {
-        "value": 326095.13,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 1817925.48,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 18500,
-        "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 1199690.75,
-        "target": "Employee Benefits",
+        "value": 3362211.36,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -1846,6 +1716,16 @@
   {
     "site_code": 923,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -1915,93 +1795,78 @@
     ],
     "links": [
       {
-        "value": 15465.6,
+        "value": 20487.2,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 550436.99,
+        "value": 582143.19,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 135973.07,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 290837.33,
+        "value": 297620.64,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 34391.24,
         "target": "Supplies",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 53011.13,
         "target": "Transfers of Indirect Costs",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 188683.51,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 41304.92,
+        "value": 253964.95,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 2000,
+        "value": 5000,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 93741.86,
+        "value": 156643.33,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1080115.36,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 325730.29,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 65716.3,
-        "target": "Classified Salaries",
+        "value": 70631.76,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 4915.46,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 5021.6,
-        "target": "Certificated Salaries",
+        "value": 43511.11,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 31706.2,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 6783.31,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 146943.73,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 3000,
-        "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 57986.01,
-        "target": "Employee Benefits",
+        "value": 207929.74,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -2009,6 +1874,16 @@
   {
     "site_code": 928,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -2072,58 +1947,68 @@
     ],
     "links": [
       {
-        "value": 70000,
-        "target": "Consultants and Services",
-        "source": "Federal"
-      },
-      {
-        "value": 167937.43,
-        "target": "Supplies",
-        "source": "Federal"
-      },
-      {
-        "value": 2820.21,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 115479.39,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 53153.14,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
         "value": 76555.56,
         "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 14012.68,
+        "value": 129492.07,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 12429.64,
+        "value": 70000,
+        "target": "Consultants and Services",
+        "source": "Restricted"
+      },
+      {
+        "value": 65582.78,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
+      },
+      {
+        "value": 170757.64,
+        "target": "Supplies",
+        "source": "Restricted"
       },
       {
         "value": 2882653.42,
         "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
         "value": 127260.81,
         "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
         "value": 1225294.95,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 237937.43,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 2820.21,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 168632.53,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 102997.88,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 4235209.18,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -2131,6 +2016,16 @@
   {
     "site_code": 929,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
@@ -2206,128 +2101,88 @@
     ],
     "links": [
       {
-        "value": 852.5,
+        "value": 192361.59,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 789.66,
+        "value": 754035.41,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 13868.32,
+        "value": 419344.32,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 381.32,
+        "value": 451434.1,
         "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 213789.64,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1159.27,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 81364.87,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 3227.72,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 54222.78,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 6539.27,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 133625.35,
-        "target": "Certificated Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 249088.96,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 205476,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 183780.98,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
         "value": 2661.41,
         "target": "Supplies",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
         "value": 4829.35,
         "target": "Transfers of Indirect Costs",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 57883.74,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 504156.79,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 200000,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 267271.8,
-        "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 362919.76,
         "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 774572.22,
+        "value": 1042584.64,
         "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 145898.21,
+        "value": 147057.48,
         "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 583978.72,
+        "value": 671882.86,
         "target": "Employee Benefits",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 5278.07,
+        "value": 8505.79,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 15891.8,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 299541.5,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 60762.05,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 779462.05,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 1029312.33,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 1872646.98,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -2335,6 +2190,16 @@
   {
     "site_code": 933,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -2392,58 +2257,58 @@
     ],
     "links": [
       {
-        "value": 98323.64,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 519961.57,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 621183.5,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 191649.48,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 33703.04,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 8283.84,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 999.03,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
         "value": 14429.7,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 2346.23,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 98323.64,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 594112.21,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 621183.5,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 225957.77,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 33703.04,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1464821.23,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 9282.87,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 16775.93,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 65866.8,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 33309.26,
-        "target": "Employee Benefits",
+        "value": 99176.06,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -2451,6 +2316,16 @@
   {
     "site_code": 936,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
@@ -2514,68 +2389,68 @@
     ],
     "links": [
       {
-        "value": 115281.84,
+        "value": 343958.52,
         "target": "Classified Salaries",
-        "source": "Bonds"
+        "source": "Restricted"
       },
       {
-        "value": 39823.96,
+        "value": 109911.95,
         "target": "Employee Benefits",
-        "source": "Bonds"
-      },
-      {
-        "value": 39122.28,
-        "target": "Classified Salaries",
-        "source": "Federal"
-      },
-      {
-        "value": 21724.85,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 2013614.79,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 120971.85,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 914431.39,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 46708.34,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 441124.76,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 49992.67,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 60,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 2454739.55,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 120971.85,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 964424.06,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 46708.34,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 155105.8,
+        "target": "Restricted",
+        "source": "Bonds"
+      },
+      {
+        "value": 60847.13,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 3095726.37,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 491117.43,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 60,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 189554.4,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 48363.14,
-        "target": "Employee Benefits",
+        "value": 237917.54,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -2583,6 +2458,16 @@
   {
     "site_code": 937,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Federal",
         "type": "resource",
@@ -2640,78 +2525,63 @@
     ],
     "links": [
       {
-        "value": 1891.68,
+        "value": 2391834.26,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 447.39,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 33596.6,
-        "target": "Certificated Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 20001.71,
+        "value": 234561.61,
         "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
-        "value": 75800,
+        "value": 537520.67,
         "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
-        "value": 10453.29,
+        "value": 593224.59,
         "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
-        "value": 35534.57,
+        "value": 52188.42,
         "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 2356345.98,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 214559.9,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 461720.67,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 582323.91,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 16653.85,
-        "target": "Supplies",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 37134.62,
         "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
         "value": 833.33,
         "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
         "value": 8580.12,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2339.07,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 175386.17,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 3631604.31,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 46548.07,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -2719,6 +2589,16 @@
   {
     "site_code": 940,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "State",
         "type": "resource",
@@ -2764,43 +2644,48 @@
     ],
     "links": [
       {
-        "value": 423501.62,
+        "value": 11734.92,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Restricted"
+      },
+      {
+        "value": 1405.73,
+        "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 790575.18,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
       },
       {
         "value": 55690.08,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 275354.05,
+        "value": 305571.39,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 16534.26,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 771080.01,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 367073.56,
-        "target": "Classified Salaries",
+        "value": 397290.9,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 30217.34,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 11794.14,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 1422.37,
-        "target": "Employee Benefits",
+        "value": 13216.51,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -2808,6 +2693,16 @@
   {
     "site_code": 941,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -2859,73 +2754,63 @@
     ],
     "links": [
       {
-        "value": 532022.36,
+        "value": 193060.53,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 375329.94,
+        "value": 78640.63,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 155385.54,
+        "value": 77814.49,
         "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 5319.53,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 52844.48,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 6373.04,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 19963.28,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 169168.97,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 2390.63,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 73918.59,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 23891.56,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 76250,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 3895.9,
-        "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 1036.69,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 584866.84,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 375329.94,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 161758.58,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 25282.81,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1068057.37,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 79180.8,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 245478.19,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 105074.15,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -2933,6 +2818,16 @@
   {
     "site_code": 942,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Classified Salaries",
         "type": "object_category",
@@ -2972,33 +2867,38 @@
     ],
     "links": [
       {
-        "value": 867281.63,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 143055.11,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 6744.48,
-        "target": "Certificated Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 1371.18,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
         "value": 500,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 60.3,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 874026.11,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 144426.29,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1010336.74,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 8115.66,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 560.3,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -3006,6 +2906,16 @@
   {
     "site_code": 944,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
@@ -3087,148 +2997,98 @@
     ],
     "links": [
       {
-        "value": 42000,
+        "value": 732463.74,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 256685.48,
+        "value": 1594151.05,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 11000,
+        "value": 452608.61,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 129584.75,
+        "value": 814535.85,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 637666.46,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 2108420.98,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 247635.14,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1091257.49,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 17386.63,
+        "value": 439006.6,
         "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 847,
-        "target": "Certificated Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 346678.17,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 41252.67,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 609172.41,
-        "target": "Classified Salaries",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 282530.24,
-        "target": "Employee Benefits",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 1200,
-        "target": "Supplies",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 102481.52,
-        "target": "Certificated Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 102729.27,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 203129.56,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 54561.01,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 290015.35,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 587135.22,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 625563.89,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 238479.05,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 347793.81,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 147791.25,
-        "target": "Supplies",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 14183.43,
         "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
+      },
+      {
+        "value": 875752.76,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2936565.62,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 247635.14,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1432913.16,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 17386.63,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 439270.23,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 4102366.7,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 913.04,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 387864.8,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 892902.65,
+        "target": "Restricted",
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 752916.71,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 1960946.65,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 238086.3,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 481466.47,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 300469.04,
-        "target": "Employee Benefits",
+        "value": 1020021.81,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -3236,6 +3096,16 @@
   {
     "site_code": 945,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -3253,6 +3123,11 @@
       {
         "value": 86400,
         "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 86400,
+        "target": "Unrestricted",
         "source": "General (Base)"
       }
     ]
@@ -3260,6 +3135,16 @@
   {
     "site_code": 946,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Certificated Salaries",
         "type": "object_category",
@@ -3311,53 +3196,58 @@
     ],
     "links": [
       {
-        "value": 495.72,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1047738.18,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 649321.35,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 439328.63,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 7272.69,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 116974.34,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 14107.1,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
         "value": 141589.99,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 182608.99,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 22418.62,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 495.72,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1164712.52,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 649321.35,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 453435.73,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 7272.69,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2144156.57,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 131081.44,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 346617.6,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -3365,6 +3255,16 @@
   {
     "site_code": 947,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -3410,38 +3310,48 @@
     ],
     "links": [
       {
-        "value": 21655,
-        "target": "Capital Expenses",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 694774.31,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 224583.42,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 246198.31,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 1532.42,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
         "value": 20380.38,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 2855.87,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 21655,
+        "target": "Capital Expenses",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 694774.31,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 224583.42,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 246198.31,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1532.42,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1188743.46,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 23236.25,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -3449,6 +3359,16 @@
   {
     "site_code": 948,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -3518,88 +3438,68 @@
     ],
     "links": [
       {
-        "value": 12537.78,
+        "value": 345886.46,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 5334.81,
+        "value": 156759.05,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 135587.03,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 887734.72,
+        "value": 1393247.11,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 8317.23,
+        "value": 15204.23,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 425780.07,
+        "value": 606520.89,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 3596.88,
+        "value": 18188.79,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 17872.59,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 1461015.93,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 173857.24,
-        "target": "Classified Salaries",
+        "value": 194771.26,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 20914.02,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 28027.54,
-        "target": "Classified Salaries",
+        "value": 40036.82,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 12009.28,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 305321.14,
-        "target": "Classified Salaries",
+        "value": 444736.1,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 139414.96,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 331655.15,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 6887,
-        "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 159826.8,
-        "target": "Employee Benefits",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 14591.91,
-        "target": "Supplies",
+        "value": 512960.86,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -3607,6 +3507,16 @@
   {
     "site_code": 950,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -3670,78 +3580,68 @@
     ],
     "links": [
       {
-        "value": 49455.47,
+        "value": 51455.47,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 938245.5,
+        "value": 1050943,
         "target": "Classified Salaries",
-        "source": "Federal"
-      },
-      {
-        "value": 472222.34,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 973.91,
-        "target": "Supplies",
-        "source": "Federal"
-      },
-      {
-        "value": 27060.45,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 7623.1,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 500,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 34434.84,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 2891.95,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 2000,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 112697.5,
-        "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 245,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 28213.53,
+        "value": 500435.87,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 63352.32,
+        "value": 973.91,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 124847.61,
         "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 24488.93,
+        "value": 35003.98,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 500,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1460897.22,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 35183.55,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 37326.79,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 143156.03,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 87841.25,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -3749,6 +3649,16 @@
   {
     "site_code": 954,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Transfers of Indirect Costs",
         "type": "object_category",
@@ -3824,128 +3734,93 @@
     ],
     "links": [
       {
-        "value": 479210.15,
+        "value": 772737.37,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 199410.49,
+        "value": 554962.18,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 58800,
+        "value": 411452.99,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 278093.91,
+        "value": 563554.53,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 400.27,
+        "value": 22550.67,
         "target": "Supplies",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 1873.52,
         "target": "Transfers of Indirect Costs",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 79047.99,
+        "value": 314421.27,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 59117.96,
+        "value": 100404.81,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 1414.27,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 50663.53,
+        "value": 150024.65,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 5912.87,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1017788.34,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 196156.62,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 52768.15,
-        "target": "Certificated Salaries",
+        "value": 65059.96,
+        "target": "Restricted",
         "source": "Other Revenue"
       },
       {
-        "value": 41286.85,
-        "target": "Classified Salaries",
+        "value": 46266.05,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 17271.01,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 16485,
-        "target": "Certificated Salaries",
+        "value": 300787.4,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 102611.89,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 113720.62,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 45819.49,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 22150.4,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 224274.07,
-        "target": "Certificated Salaries",
+        "value": 943495.56,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 252939.8,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 238932.37,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 227349.32,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 235373.28,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 94381.92,
-        "target": "Employee Benefits",
+        "value": 329755.2,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -3953,6 +3828,16 @@
   {
     "site_code": 956,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -4018,76 +3903,66 @@
       {
         "value": 19963.2,
         "target": "Certificated Salaries",
-        "source": "Federal"
-      },
-      {
-        "value": 11363.27,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 78400.87,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 66935.64,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 4086,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 42921.23,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1000,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 2928.5,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 171.61,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 6006.34,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 1321.97,
+        "value": 12685.24,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 8258.25,
+        "value": 86659.12,
         "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 121577.73,
+        "value": 191441.87,
         "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 2791.25,
+        "value": 6877.25,
         "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 44674.27,
+        "value": 87767.11,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1000,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 31326.47,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 193343.74,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 3100.11,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 7328.31,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 177301.5,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4095,6 +3970,16 @@
   {
     "site_code": 958,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -4146,63 +4031,68 @@
     ],
     "links": [
       {
-        "value": 289959.01,
+        "value": 124258.36,
         "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 62585.62,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 142549.91,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 352.88,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 64326.86,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 3491.03,
         "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 7757.82,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 446918.08,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 124258.36,
-        "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 50998.63,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 446918.08,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 975720.17,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 62585.62,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 464738.53,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 352.88,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 495447.42,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 450409.11,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 72084.68,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 175256.99,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 621434.3,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 314430.8,
-        "target": "Employee Benefits",
+        "value": 935865.1,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4210,6 +4100,16 @@
   {
     "site_code": 959,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Federal",
         "type": "resource",
@@ -4227,6 +4127,11 @@
       {
         "value": 33536,
         "target": "Consultants and Services",
+        "source": "Restricted"
+      },
+      {
+        "value": 33536,
+        "target": "Restricted",
         "source": "Federal"
       }
     ]
@@ -4234,6 +4139,16 @@
   {
     "site_code": 961,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -4251,6 +4166,11 @@
       {
         "value": 774.7,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 774.7,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       }
     ]
@@ -4258,6 +4178,16 @@
   {
     "site_code": 962,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -4309,58 +4239,58 @@
     ],
     "links": [
       {
-        "value": 188034.53,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 86092.11,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 86614.84,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 478.56,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 44447.83,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 4849.98,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
         "value": 4763.24,
         "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 9639.36,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 2829.02,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 188034.53,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 237982.66,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 130306.51,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 478.56,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 361220.04,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 49297.81,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 17231.62,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 107442.72,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 38841.69,
-        "target": "Employee Benefits",
+        "value": 146284.41,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4368,6 +4298,16 @@
   {
     "site_code": 963,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -4413,48 +4353,53 @@
     ],
     "links": [
       {
-        "value": 188180.53,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 41834.5,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 74455.87,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1528.42,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
         "value": 4846.1,
         "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 6212.08,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 1430.68,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 188180.53,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 186278.27,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 130805.46,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1528.42,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 305999.32,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 12488.86,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 144443.77,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 56349.59,
-        "target": "Employee Benefits",
+        "value": 200793.36,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4462,6 +4407,16 @@
   {
     "site_code": 964,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -4525,68 +4480,73 @@
     ],
     "links": [
       {
-        "value": 105000,
-        "target": "Consultants and Services",
-        "source": "Federal"
-      },
-      {
-        "value": 379435.04,
+        "value": 426610.63,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 1000,
+        "value": 125000,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 128119.93,
+        "value": 164306.99,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 20000,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 899533.78,
+        "value": 1087216.58,
         "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Unrestricted"
       },
       {
         "value": 30803.38,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Unrestricted"
       },
       {
-        "value": 51697,
+        "value": 52697,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Unrestricted"
       },
       {
-        "value": 401407.29,
+        "value": 420125.35,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 110032.24,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 105000,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 508554.97,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 20000,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 590917.62,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 88172.27,
-        "target": "Supplies",
+        "value": 880696.1,
+        "target": "Unrestricted",
         "source": "State"
       },
       {
-        "value": 234858.39,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 54905.12,
-        "target": "Employee Benefits",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 21859.97,
-        "target": "Supplies",
+        "value": 311623.48,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4594,6 +4554,16 @@
   {
     "site_code": 965,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -4657,88 +4627,73 @@
     ],
     "links": [
       {
-        "value": 162881.48,
+        "value": 26423.72,
         "target": "Certificated Salaries",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 59538.1,
+        "value": 170974.43,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
-        "value": 90424.57,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1176.17,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 55095.29,
-        "target": "Classified Salaries",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 11000,
+        "value": 24996.6,
         "target": "Consultants and Services",
-        "source": "Parcel Taxes"
+        "source": "Restricted"
       },
       {
-        "value": 28151.98,
+        "value": 78176.3,
         "target": "Employee Benefits",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 21741,
-        "target": "Certificated Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 100602.31,
-        "target": "Classified Salaries",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 13996.6,
-        "target": "Consultants and Services",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 46184.33,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
+        "source": "Restricted"
       },
       {
         "value": 3039.17,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 162881.48,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 105299.35,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 107406.52,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1176.17,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 314020.32,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 94247.27,
+        "target": "Restricted",
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 185563.41,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 4682.72,
-        "target": "Certificated Salaries",
+        "value": 23799.54,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 15276.83,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 3839.99,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 45761.25,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 16981.95,
-        "target": "Employee Benefits",
+        "value": 62743.2,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4746,6 +4701,16 @@
   {
     "site_code": 968,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -4803,68 +4768,63 @@
     ],
     "links": [
       {
-        "value": 175914.8,
+        "value": 711236.81,
         "target": "Certificated Salaries",
-        "source": "Federal"
-      },
-      {
-        "value": 80295.91,
-        "target": "Employee Benefits",
-        "source": "Federal"
-      },
-      {
-        "value": 1853395.06,
-        "target": "Certificated Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 731343.94,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1099244.83,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1849.41,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 19890.37,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 2398.77,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 535322.01,
-        "target": "Certificated Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 32503.76,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 192995.35,
+        "value": 273291.26,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 402182.07,
+        "value": 2255577.13,
         "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
       },
       {
-        "value": 156778.36,
+        "value": 751234.31,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1258421.96,
         "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1849.41,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 256210.71,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 3617911.14,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 22289.14,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 760821.12,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 558960.43,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -4872,6 +4832,16 @@
   {
     "site_code": 975,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -4959,108 +4929,88 @@
     ],
     "links": [
       {
-        "value": 12629.76,
+        "value": 235980,
+        "target": "Capital Expenses",
+        "source": "Restricted"
+      },
+      {
+        "value": 15826875.03,
         "target": "Certificated Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 402081.7,
+        "value": 5768184.23,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 468796.94,
+        "value": 30762593.12,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 249481.19,
+        "value": 9685741.13,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 2327,
+        "value": 2724583.16,
         "target": "Supplies",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 375930.94,
+        "value": 407398.6,
         "target": "Transfers of Indirect Costs",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 59772,
-        "target": "Tuition",
-        "source": "General (Base)"
+        "value": 540633.56,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
       },
       {
         "value": 24399.38,
         "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 272895.95,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 59772,
+        "target": "Tuition",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1511247.53,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 50773.9,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 27341.94,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 2942.56,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 626342.27,
-        "target": "Certificated Salaries",
+        "value": 917375.03,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 290577.76,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 455,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 235980,
-        "target": "Capital Expenses",
+        "value": 62982732.71,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 15187903,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 5366102.53,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 30293796.18,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 9145682.18,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 2721801.16,
-        "target": "Supplies",
-        "source": "State"
-      },
-      {
-        "value": 31467.66,
-        "target": "Transfers of Indirect Costs",
-        "source": "State"
-      },
-      {
-        "value": 549133.56,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 270451.49,
-        "target": "Employee Benefits",
+        "value": 819585.05,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -5068,6 +5018,16 @@
   {
     "site_code": 979,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "State",
         "type": "resource",
@@ -5095,18 +5055,28 @@
     ],
     "links": [
       {
+        "value": 2777.55,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
         "value": 99474.08,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 37107.99,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 136582.07,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
         "value": 2777.55,
-        "target": "Supplies",
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -5114,6 +5084,16 @@
   {
     "site_code": 980,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "General (Base)",
         "type": "resource",
@@ -5131,6 +5111,11 @@
       {
         "value": 50000,
         "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 50000,
+        "target": "Unrestricted",
         "source": "General (Base)"
       }
     ]
@@ -5138,6 +5123,16 @@
   {
     "site_code": 983,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -5177,33 +5172,43 @@
     ],
     "links": [
       {
-        "value": 737268.41,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 11934.17,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 345352.66,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 32210.51,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
         "value": 22591.89,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 2787.99,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 737268.41,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 11934.17,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 345352.66,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 32210.51,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1126765.75,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 25379.88,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -5211,6 +5216,16 @@
   {
     "site_code": 986,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
@@ -5280,83 +5295,78 @@
     ],
     "links": [
       {
-        "value": 274981.28,
-        "target": "Consultants and Services",
-        "source": "Bonds"
-      },
-      {
-        "value": 300427.95,
-        "target": "Supplies",
-        "source": "Bonds"
-      },
-      {
-        "value": 50480.72,
-        "target": "Capital Expenses",
-        "source": "General (Base)"
-      },
-      {
-        "value": 2566042.55,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 230199.83,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1333373.76,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1089305.55,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 49282.5,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 5943.48,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 40.42,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
         "value": 188540.35,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 756131.94,
+        "value": 1031113.22,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 57248.28,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 13895895.68,
+        "value": 14196364.05,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 50480.72,
+        "target": "Capital Expenses",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2684491.98,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 230199.83,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1355929.04,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1089305.55,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 575409.23,
+        "target": "Restricted",
+        "source": "Bonds"
+      },
+      {
+        "value": 5269402.41,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 55225.98,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 40.42,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 14897816.25,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 69166.93,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 16611.8,
-        "target": "Employee Benefits",
+        "value": 85778.73,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -5364,6 +5374,16 @@
   {
     "site_code": 987,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "State",
         "type": "resource",
@@ -5415,58 +5435,68 @@
     ],
     "links": [
       {
-        "value": 51321.73,
+        "value": 1353771.52,
         "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 579793.44,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 27960.05,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1530076.1,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 16986002.6,
         "target": "Consultants and Services",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
-        "value": 578946.49,
+        "value": 559647.01,
         "target": "Employee Benefits",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 85901.79,
         "target": "Supplies",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
-        "value": 44297.03,
+        "value": 271923.34,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Unrestricted"
       },
       {
-        "value": 5054.04,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 44781.43,
+        "value": 624574.87,
         "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
+        "source": "Unrestricted"
+      },
+      {
+        "value": 52313.57,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
       },
       {
         "value": 16967.7,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 659075.22,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 18935971.85,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 244955.13,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 49351.07,
+        "target": "Restricted",
+        "source": "State"
+      },
+      {
+        "value": 61749.13,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -5474,6 +5504,16 @@
   {
     "site_code": 988,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
@@ -5531,58 +5571,63 @@
     ],
     "links": [
       {
-        "value": 653670.32,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 130706.4,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 415584.38,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 450712.68,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 54355.98,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 5987.91,
-        "target": "Supplies",
-        "source": "Philanthropy / Grants"
-      },
-      {
         "value": 200830.01,
         "target": "Capital Expenses",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 6949778.41,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 3464051.8,
         "target": "Consultants and Services",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 3770887.45,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 4003276.54,
+        "value": 4009264.45,
         "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 1104383,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 130706.4,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 469940.36,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1199961.1,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 505068.66,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 5987.91,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 18388824.21,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -5590,6 +5635,16 @@
   {
     "site_code": 989,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Capital Expenses",
         "type": "object_category",
@@ -5641,53 +5696,53 @@
     ],
     "links": [
       {
+        "value": 2332124.1,
+        "target": "Classified Salaries",
+        "source": "Restricted"
+      },
+      {
+        "value": 1399142.1,
+        "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
         "value": 7816.58,
         "target": "Capital Expenses",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 8531357.18,
+        "value": 8819449.05,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 5602814.8,
+        "value": 5631266.6,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 455204.72,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 13974421.22,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 288091.87,
-        "target": "Classified Salaries",
+        "value": 316543.67,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
-        "value": 28451.8,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 41488.4,
-        "target": "Classified Salaries",
+        "value": 61400.84,
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 19912.44,
-        "target": "Employee Benefits",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 2290635.7,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 1379229.66,
-        "target": "Employee Benefits",
+        "value": 3669865.36,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -5695,6 +5750,16 @@
   {
     "site_code": 990,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Consultants and Services",
         "type": "object_category",
@@ -5740,48 +5805,58 @@
     ],
     "links": [
       {
-        "value": 310586.53,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 5580,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 163004.36,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 2433.35,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 55250.84,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 6663.24,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 4734.62,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
         "value": 55993.69,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 20094.67,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 4734.62,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 365837.37,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 5580,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 169667.6,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 2433.35,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 481604.24,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 4734.62,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 61914.08,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 76088.36,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -5789,6 +5864,16 @@
   {
     "site_code": 991,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Philanthropy / Grants",
         "type": "resource",
@@ -5858,93 +5943,73 @@
     ],
     "links": [
       {
-        "value": 120753.33,
+        "value": 275985.4,
         "target": "Capital Expenses",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 5478961.4,
+        "value": 6770809.83,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 1109092.99,
+        "value": 1639455.81,
         "target": "Consultants and Services",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 3371870.83,
+        "value": 4023175.56,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 827366,
         "target": "Other Financing",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 10780226.01,
+        "value": 11633764.59,
         "target": "Supplies",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 990073.94,
+        "value": 999496.15,
         "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
+      },
+      {
+        "value": 134153.83,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 16059.4,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 22678344.5,
+        "target": "Restricted",
         "source": "Federal"
       },
       {
-        "value": 346162.3,
-        "target": "Classified Salaries",
+        "value": 888490.93,
+        "target": "Restricted",
         "source": "Other Revenue"
       },
       {
-        "value": 89274.56,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 97547.07,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 505720.23,
-        "target": "Supplies",
+        "value": 150213.23,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       },
       {
         "value": 100808.4,
-        "target": "Supplies",
+        "target": "Restricted",
         "source": "Philanthropy / Grants"
       },
       {
-        "value": 155232.07,
-        "target": "Capital Expenses",
-        "source": "State"
-      },
-      {
-        "value": 1079839.96,
-        "target": "Classified Salaries",
-        "source": "State"
-      },
-      {
-        "value": 441088.26,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 569817.06,
-        "target": "Employee Benefits",
-        "source": "State"
-      },
-      {
-        "value": 247009.95,
-        "target": "Supplies",
-        "source": "State"
-      },
-      {
-        "value": 9422.21,
-        "target": "Transfers of Indirect Costs",
+        "value": 2502409.51,
+        "target": "Restricted",
         "source": "State"
       }
     ]
@@ -5952,6 +6017,16 @@
   {
     "site_code": 992,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Federal",
         "type": "resource",
@@ -5999,41 +6074,46 @@
       {
         "value": 12152.19,
         "target": "Classified Salaries",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
         "value": 1680.66,
         "target": "Employee Benefits",
-        "source": "Federal"
+        "source": "Restricted"
       },
       {
-        "value": 440825.99,
+        "value": 462978.54,
         "target": "Classified Salaries",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 60049.48,
         "target": "Consultants and Services",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
-        "value": 294353.62,
+        "value": 297025.21,
         "target": "Employee Benefits",
-        "source": "General (Base)"
+        "source": "Unrestricted"
       },
       {
         "value": 46615.68,
         "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 13832.85,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 841844.77,
+        "target": "Unrestricted",
         "source": "General (Base)"
       },
       {
-        "value": 22152.55,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 2671.59,
-        "target": "Employee Benefits",
+        "value": 24824.14,
+        "target": "Unrestricted",
         "source": "Other Revenue"
       }
     ]
@@ -6041,6 +6121,16 @@
   {
     "site_code": 994,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -6092,63 +6182,63 @@
     ],
     "links": [
       {
-        "value": 1170159.65,
+        "value": 40865.47,
         "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 208928.31,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 351856.21,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 8012.64,
-        "target": "Supplies",
-        "source": "General (Base)"
+        "source": "Restricted"
       },
       {
         "value": 14708.75,
         "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 2174.48,
-        "target": "Supplies",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 40865.47,
-        "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 13234.5,
         "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 2174.48,
+        "target": "Supplies",
+        "source": "Restricted"
+      },
+      {
+        "value": 2422976.32,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 209217.31,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1399765.03,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 31392.52,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1738956.81,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 16883.23,
+        "target": "Restricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 54099.97,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 1252816.67,
-        "target": "Classified Salaries",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 289,
-        "target": "Consultants and Services",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 1047908.82,
-        "target": "Employee Benefits",
-        "source": "Supplemental & Concentration"
-      },
-      {
-        "value": 23379.88,
-        "target": "Supplies",
+        "value": 2324394.37,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]
@@ -6156,6 +6246,16 @@
   {
     "site_code": 995,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Other Revenue",
         "type": "resource",
@@ -6201,43 +6301,63 @@
     ],
     "links": [
       {
-        "value": 230329.55,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 112281.06,
-        "target": "Employee Benefits",
-        "source": "General (Base)"
-      },
-      {
-        "value": 33423.6,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 4030.88,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 453548.2,
+        "value": 293548.2,
         "target": "Capital Expenses",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 109912.69,
+        "value": 29157.08,
         "target": "Classified Salaries",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 8278596.85,
+        "value": 2231775.11,
         "target": "Consultants and Services",
+        "source": "Restricted"
+      },
+      {
+        "value": 9789.76,
+        "target": "Employee Benefits",
+        "source": "Restricted"
+      },
+      {
+        "value": 160000,
+        "target": "Capital Expenses",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 344508.76,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 6046821.74,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 158038.41,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 342610.61,
+        "target": "Unrestricted",
+        "source": "General (Base)"
+      },
+      {
+        "value": 37454.48,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 2563915.1,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 51516.23,
-        "target": "Employee Benefits",
+        "value": 6329303.82,
+        "target": "Unrestricted",
         "source": "State"
       }
     ]
@@ -6245,6 +6365,16 @@
   {
     "site_code": 996,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Federal",
         "type": "resource",
@@ -6262,6 +6392,11 @@
       {
         "value": 1250,
         "target": "Tuition",
+        "source": "Restricted"
+      },
+      {
+        "value": 1250,
+        "target": "Restricted",
         "source": "Federal"
       }
     ]
@@ -6269,6 +6404,16 @@
   {
     "site_code": 999,
     "nodes": [
+      {
+        "id": "Restricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
+      {
+        "id": "Unrestricted",
+        "type": "resource_type",
+        "subnodes": ""
+      },
       {
         "id": "Supplies",
         "type": "object_category",
@@ -6356,103 +6501,98 @@
     ],
     "links": [
       {
-        "value": 1161133.36,
-        "target": "Transfers of Indirect Costs",
-        "source": "Federal"
-      },
-      {
-        "value": 14668.92,
-        "target": "Classified Salaries",
-        "source": "General (Base)"
-      },
-      {
-        "value": 3802694.83,
-        "target": "Consultants and Services",
-        "source": "General (Base)"
-      },
-      {
-        "value": 8660832.8,
-        "target": "Debt Repayment",
-        "source": "General (Base)"
-      },
-      {
-        "value": 1200.91,
-        "target": "Supplies",
-        "source": "General (Base)"
-      },
-      {
-        "value": 9263,
-        "target": "Tuition",
-        "source": "General (Base)"
-      },
-      {
-        "value": 307021.72,
+        "value": 8000,
         "target": "Certificated Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 66665.51,
-        "target": "Classified Salaries",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 6613.9,
-        "target": "Consultants and Services",
-        "source": "Other Revenue"
-      },
-      {
-        "value": 133206.06,
-        "target": "Employee Benefits",
-        "source": "Other Revenue"
+        "source": "Restricted"
       },
       {
         "value": 749144.78,
         "target": "Consultants and Services",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 2057195.85,
-        "target": "Interagency Transfers Out",
-        "source": "Parcel Taxes"
-      },
-      {
-        "value": 13063.54,
-        "target": "Transfers of Indirect Costs",
-        "source": "Philanthropy / Grants"
-      },
-      {
-        "value": 8000,
-        "target": "Certificated Salaries",
-        "source": "State"
-      },
-      {
-        "value": 3393522.21,
-        "target": "Consultants and Services",
-        "source": "State"
-      },
-      {
-        "value": 2094903,
-        "target": "Debt Repayment",
-        "source": "State"
+        "source": "Restricted"
       },
       {
         "value": 1437.8,
         "target": "Employee Benefits",
-        "source": "State"
+        "source": "Restricted"
       },
       {
-        "value": 1820814.18,
+        "value": 2057195.85,
+        "target": "Interagency Transfers Out",
+        "source": "Restricted"
+      },
+      {
+        "value": 2995011.08,
         "target": "Transfers of Indirect Costs",
+        "source": "Restricted"
+      },
+      {
+        "value": 307021.72,
+        "target": "Certificated Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 81334.43,
+        "target": "Classified Salaries",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 7202830.94,
+        "target": "Consultants and Services",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 10755735.8,
+        "target": "Debt Repayment",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1005261.6,
+        "target": "Employee Benefits",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1200.91,
+        "target": "Supplies",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 9263,
+        "target": "Tuition",
+        "source": "Unrestricted"
+      },
+      {
+        "value": 1161133.36,
+        "target": "Restricted",
+        "source": "Federal"
+      },
+      {
+        "value": 513507.19,
+        "target": "Unrestricted",
+        "source": "Other Revenue"
+      },
+      {
+        "value": 2806340.63,
+        "target": "Restricted",
+        "source": "Parcel Taxes"
+      },
+      {
+        "value": 13063.54,
+        "target": "Restricted",
+        "source": "Philanthropy / Grants"
+      },
+      {
+        "value": 1830251.98,
+        "target": "Restricted",
         "source": "State"
       },
       {
-        "value": 6576869.86,
-        "target": "Certificated Salaries",
-        "source": "Supplemental & Concentration"
+        "value": 5488425.21,
+        "target": "Unrestricted",
+        "source": "State"
       },
       {
-        "value": 1558718.14,
-        "target": "Employee Benefits",
+        "value": 8135588,
+        "target": "Unrestricted",
         "source": "Supplemental & Concentration"
       }
     ]

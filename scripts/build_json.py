@@ -31,9 +31,14 @@ response = requests.get(base_path + "/sankey?groupBy=restricted")
 with open(data_path + "sankey-restricted.json","w+") as f:
     json.dump(response.json(),f, indent=2)
 
-# Get sankey data for each central program
+# Get sankey data for each central program (no grouping)
 response = requests.get(base_path + "/central-programs/sankey")
 with open(data_path + "central-programs-sankey.json","w+") as f:
+    json.dump(response.json(),f, indent=2)
+
+# Get sankey data for each central program (restricted / unrestricted grouping)
+response = requests.get(base_path + "/central-programs/sankey?groupBy=restricted")
+with open(data_path + "central-programs-sankey-restricted.json","w+") as f:
     json.dump(response.json(),f, indent=2)
 
 # Get overview data for central programs and all of OUSD

@@ -8,6 +8,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import { renderRichText } from "gatsby-source-contentful/rich-text"
 import { INLINES } from "@contentful/rich-text-types"
 
+import RequireWideScreen from "../components/require-wide-screen"
+import SankeyChart from "../components/sankey-chart"
 import MultiYearChart from "../components/multi-year-chart"
 import StaffRolesTable from "../components/central-program/staff-roles-table"
 import StaffLaborUnionsTable from "../components/central-program/staff-labor-unions-table"
@@ -15,6 +17,7 @@ import ProgramDataOverviewTable from "../components/central-program/program-data
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
 import ScrollWidget from "../components/scroll-widget"
 import ProgramLink from "../components/program-link"
+import ErrorBoundary from "../components/error-boundary.js"
 
 import LaunchIcon from "@material-ui/icons/Launch"
 
@@ -50,7 +53,7 @@ const CentralProgram = ({ data }) => {
         <ScrollWidget
           className="scroll-widget"
           sectionIdPrefix={ELEMENT_NAME_PREFIX}
-          numSections={4}
+          numSections={5}
         />
       </div>
       <div className="central-program-page-template">
@@ -100,25 +103,46 @@ const CentralProgram = ({ data }) => {
             </Col>
           </Row>
         </Container>
-        {/*
-        // Experimental: Sankey chart with Funding Sources > Object Codes for the program
-        // TODO Figure out how to present large negative numbers in program expenditures
+        {/*Sankey chart with Funding Sources > Object Codes for
+        the program TODO Figure out how to present large negative numbers in
+        program expenditures. For now, don't display if there's an error*/}{" "}
         {data.centralProgramsSankeyJson && (
-          <RequireWideScreen minScreenWidth={"sm"}>
-            <SankeyChart
-              data={data.centralProgramsSankeyJson}
-              labelContent={content.fundingToObjectSpendingSankey}
-              margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
-              gaEventCategory="Central Program - Resourcing"
-              includeCategoriesLink={false}
-            />
-          </RequireWideScreen>
-        )}*/}
-
+          <ErrorBoundary>
+            <Container>
+              <Row>
+                <Col
+                  md={9}
+                  xl={6}
+                  id={`${ELEMENT_NAME_PREFIX}-2`}
+                  className="mx-auto mt-5"
+                >
+                  <h2 className="pb-3">
+                    Spending By Category (
+                    {data.site.siteMetadata.latestSchoolYear})
+                  </h2>
+                </Col>
+              </Row>
+            </Container>
+            <Row>
+              <Col xl={10} className="mx-auto">
+                <RequireWideScreen minScreenWidth={"sm"}>
+                  <SankeyChart
+                    data={data.centralProgramsSankeyJson}
+                    restrictedData={data.centralProgramsSankeyRestrictedJson}
+                    labelContent={content.fundingToObjectSpendingSankey}
+                    margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
+                    gaEventCategory="Central Program - Resourcing"
+                    includeCategoriesLink={false}
+                  />
+                </RequireWideScreen>
+              </Col>
+            </Row>
+          </ErrorBoundary>
+        )}
         <Container>
           <Row>
             <Col md={9} xl={6} className="mx-auto">
-              <div id={`${ELEMENT_NAME_PREFIX}-2`} className="pt-4 pt-sm-4">
+              <div id={`${ELEMENT_NAME_PREFIX}-3`} className="pt-4 pt-sm-4">
                 <h2 className="pb-3 pt-sm-3 pt-md-2">
                   {`${content.staffRolesTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}
                 </h2>
@@ -132,7 +156,7 @@ const CentralProgram = ({ data }) => {
               */}
               {centralProgram.staff_bargaining_units.length === 0 ||
               centralProgram.staff_bargaining_units.includes(0) ? null : (
-                <div id={`${ELEMENT_NAME_PREFIX}-3`} className="pt-4">
+                <div id={`${ELEMENT_NAME_PREFIX}-4`} className="pt-4">
                   <h2 className="pb-3">{`${content.staffLaborUnionsTable.heading} (${data.site.siteMetadata.latestSchoolYear})`}</h2>
                   <StaffLaborUnionsChart
                     data={centralProgram.staff_bargaining_units}
@@ -152,7 +176,7 @@ const CentralProgram = ({ data }) => {
 }
 
 export const query = graphql`
-  query ($code: Int!, $language: String) {
+  query($code: Int!, $language: String) {
     site {
       siteMetadata {
         latestSchoolYear
@@ -193,6 +217,20 @@ export const query = graphql`
         total
         type
         id
+        subnodes
+      }
+      links {
+        source
+        target
+        value
+      }
+    }
+    centralProgramsSankeyRestrictedJson(site_code: { eq: $code }) {
+      nodes {
+        total
+        type
+        id
+        subnodes
       }
       links {
         source
