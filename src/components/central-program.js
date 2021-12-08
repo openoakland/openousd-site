@@ -17,6 +17,7 @@ import ProgramDataOverviewTable from "../components/central-program/program-data
 import StaffLaborUnionsChart from "../components/central-program/staff-labor-unions-chart"
 import ScrollWidget from "../components/scroll-widget"
 import ProgramLink from "../components/program-link"
+import ErrorBoundary from "../components/error-boundary.js"
 
 import LaunchIcon from "@material-ui/icons/Launch"
 
@@ -106,7 +107,7 @@ const CentralProgram = ({ data }) => {
         the program TODO Figure out how to present large negative numbers in
         program expenditures*/}{" "}
         {data.centralProgramsSankeyJson && (
-          <React.Fragment>
+          <ErrorBoundary>
             <Container>
               <Row>
                 <Col
@@ -136,7 +137,7 @@ const CentralProgram = ({ data }) => {
                 </RequireWideScreen>
               </Col>
             </Row>
-          </React.Fragment>
+          </ErrorBoundary>
         )}
         <Container>
           <Row>
