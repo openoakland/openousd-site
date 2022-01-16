@@ -1,6 +1,6 @@
 {
     "componentChunkName": "component---src-pages-404-js",
     "path": "/en/404/",
-    "result": {"pageContext":{"matchPath":"/en/*","language":"en","intl":{"language":"en","languages":["en","es"],"messages":{"content":"none"},"routed":true,"originalPath":"/404/","redirect":true,"defaultLanguage":"en"}}},
+    "result": {"pageContext":{"matchPath":"/en/*","language":"en","intl":{"language":"en","languages":["en","es"],"messages":{"content":"none"},"routed":true,"originalPath":"/404/","redirect":false,"defaultLanguage":"en"}}},
     "staticQueryHashes": ["3649515864","545183596","63159454"],
     "matchPath": "/en/*"}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-404-js",
     "path": "/404/",
-    "result": {"pageContext":{"language":"en","intl":{"language":"en","languages":["en","es"],"messages":{"content":"none"},"routed":false,"originalPath":"/404/","redirect":true,"defaultLanguage":"en"}}},
+    "result": {"pageContext":{"language":"en","intl":{"language":"en","languages":["en","es"],"messages":{"content":"none"},"routed":false,"originalPath":"/404/","redirect":false,"defaultLanguage":"en"}}},
     "staticQueryHashes": ["3649515864","545183596","63159454"]}
