@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import json
 import requests
@@ -44,4 +44,13 @@ with open(data_path + "central-programs-sankey-restricted.json","w+") as f:
 # Get overview data for central programs and all of OUSD
 response = requests.get(base_path + "/central-programs/overview")
 with open(data_path + "central-programs-overview.json","w+") as f:
+    json.dump(response.json(),f, indent=2)
+
+# Get COVID data
+response = requests.get(base_path + "/covid/sites")
+with open(data_path + "/covid/sites.json","w+") as f:
+    json.dump(response.json(),f, indent=2)
+
+response = requests.get(base_path + "/covid/objects")
+with open(data_path + "/covid/objects.json","w+") as f:
     json.dump(response.json(),f, indent=2)

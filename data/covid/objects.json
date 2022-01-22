@@ -1,0 +1,392 @@
+[
+  {
+    "code": 4420,
+    "object": "Computer $500-4,999",
+    "spending": 14267467.36
+  },
+  {
+    "code": 1120,
+    "object": "Teacher Salaries Stipends",
+    "spending": 10698511.27
+  },
+  {
+    "code": 2220,
+    "object": "Classroom Support Stipends",
+    "spending": 6692541.39
+  },
+  {
+    "code": 4100,
+    "object": "Approved Textbooks and Core Curricula Materials",
+    "spending": 2398315.96
+  },
+  {
+    "code": 4710,
+    "object": "Food (Cafeteria only)",
+    "spending": 2363110
+  },
+  {
+    "code": 4307,
+    "object": "Building & Grounds Supplies",
+    "spending": 2342459.25
+  },
+  {
+    "code": 4310,
+    "object": "Supplies",
+    "spending": 2265704.55
+  },
+  {
+    "code": 3101,
+    "object": "State Teachers' Retirement System, certificated positions",
+    "spending": 1795823.09
+  },
+  {
+    "code": 5880,
+    "object": "TRANSPORTATION-CONTRACTED",
+    "spending": 1609945.29
+  },
+  {
+    "code": 7310,
+    "object": "Transfers of Indirect Costs",
+    "spending": 1607324.85
+  },
+  {
+    "code": 2305,
+    "object": "SUPV&ADM SALARIES",
+    "spending": 1563785.88
+  },
+  {
+    "code": 1205,
+    "object": "Pupil Support Salaries",
+    "spending": 1550468.37
+  },
+  {
+    "code": 1105,
+    "object": "Certificated Teachers' Salaries",
+    "spending": 1399329.48
+  },
+  {
+    "code": 5846,
+    "object": "LICENSING AGREEMENTS",
+    "spending": 1167020.42
+  },
+  {
+    "code": 5100,
+    "object": "Subagreements for Services",
+    "spending": 1116240.19
+  },
+  {
+    "code": 5824,
+    "object": "NON-PUBLIC AGENCY CONTRACTS",
+    "spending": 1084154.91
+  },
+  {
+    "code": 2205,
+    "object": "Classroom Support Salaries",
+    "spending": 1049154.35
+  },
+  {
+    "code": 5825,
+    "object": "CONSULTANTS",
+    "spending": 819784.12
+  },
+  {
+    "code": 4318,
+    "object": "Central Office Supplies",
+    "spending": 810454.59
+  },
+  {
+    "code": 2405,
+    "object": "CLERICAL SALARIES",
+    "spending": 809240.35
+  },
+  {
+    "code": 3601,
+    "object": "Workers' Compensation Insurance, certificated positions",
+    "spending": 694745.75
+  },
+  {
+    "code": 5826,
+    "object": "EXTERNAL WORK ORDER SERVICES",
+    "spending": 684175.33
+  },
+  {
+    "code": 3202,
+    "object": "Public Employees' Retirement System, classified positions",
+    "spending": 669064.12
+  },
+  {
+    "code": 3401,
+    "object": "Health & Welfare Benefits, certificated positions",
+    "spending": 638811.33
+  },
+  {
+    "code": 3402,
+    "object": "Health & Welfare Benefits, classified positions",
+    "spending": 625635.81
+  },
+  {
+    "code": 3302,
+    "object": "OASDI/Medicare/Alternative, classified positions",
+    "spending": 542646.31
+  },
+  {
+    "code": 4200,
+    "object": "Books and Other Reference Materials",
+    "spending": 491596.79
+  },
+  {
+    "code": 1119,
+    "object": "Teacher on Special Assignment",
+    "spending": 474762.78
+  },
+  {
+    "code": 3602,
+    "object": "Workers' Compensation Insurance, classified positions",
+    "spending": 458938.38
+  },
+  {
+    "code": 5671,
+    "object": "REPAIRS CONT ",
+    "spending": 450372.46
+  },
+  {
+    "code": 1305,
+    "object": "Supervisor, Administrator Instructional Coach Salaries",
+    "spending": 402948.23
+  },
+  {
+    "code": 5830,
+    "object": "CONTRACTED SERVICES",
+    "spending": 401399.82
+  },
+  {
+    "code": 1320,
+    "object": "SUPV&ADM SALARIES STIPENDS",
+    "spending": 381871.58
+  },
+  {
+    "code": 5758,
+    "object": "INTERFUND",
+    "spending": 328311
+  },
+  {
+    "code": 6460,
+    "object": "VEHICLE PURCHASE >= $5,000",
+    "spending": 293548.2
+  },
+  {
+    "code": 4315,
+    "object": "COMPUTER SUPPLIES",
+    "spending": 257996.43
+  },
+  {
+    "code": 6410,
+    "object": "EQUIPMENT >= $5,000",
+    "spending": 234072.45
+  },
+  {
+    "code": 5820,
+    "object": "AUDIT EXPENSES",
+    "spending": 220430
+  },
+  {
+    "code": 3321,
+    "object": "OASDI/Medicare/Alternative, certificated positions",
+    "spending": 197848.4
+  },
+  {
+    "code": 4410,
+    "object": "Equipment $500-4,999",
+    "spending": 152061.25
+  },
+  {
+    "code": 3322,
+    "object": "OASDI/Medicare/Alternative, classified positions",
+    "spending": 144469.31
+  },
+  {
+    "code": 3102,
+    "object": "State Teachers' Retirement System, classified positions",
+    "spending": 127249.14
+  },
+  {
+    "code": 7350,
+    "object": "Transfers of Indirect Costs - Interfund",
+    "spending": 119074.99
+  },
+  {
+    "code": 5870,
+    "object": "PRINTING",
+    "spending": 99769.48
+  },
+  {
+    "code": 3501,
+    "object": "State Unemployment Insurance, certificated positions",
+    "spending": 97268.05
+  },
+  {
+    "code": 1150,
+    "object": "Teacher Substitutes",
+    "spending": 87502.26
+  },
+  {
+    "code": 3902,
+    "object": "Other Benefits, classified positions",
+    "spending": 86346.88
+  },
+  {
+    "code": 1220,
+    "object": "PUPILSUPPT SALARIES STIPENDS",
+    "spending": 83718.06
+  },
+  {
+    "code": 3301,
+    "object": "OASDI/Medicare/Alternative, certificated positions",
+    "spending": 73442.53
+  },
+  {
+    "code": 3502,
+    "object": "State Unemployment Insurance, classified positions",
+    "spending": 68765
+  },
+  {
+    "code": 4308,
+    "object": "Food Service Supplies",
+    "spending": 58565.66
+  },
+  {
+    "code": 5220,
+    "object": "Conference Expense",
+    "spending": 50671
+  },
+  {
+    "code": 5910,
+    "object": "POSTAGE",
+    "spending": 42442.98
+  },
+  {
+    "code": 4432,
+    "object": "FURNITURE < $5,000",
+    "spending": 35284.52
+  },
+  {
+    "code": 3201,
+    "object": "Public Employees' Retirement System, certificated positions",
+    "spending": 29442.98
+  },
+  {
+    "code": 2450,
+    "object": "CLERICAL SUBSTITUTES",
+    "spending": 28574.56
+  },
+  {
+    "code": 2425,
+    "object": "CLERICAL SALARIES OVERTIME",
+    "spending": 26722.87
+  },
+  {
+    "code": 1122,
+    "object": "Teacher Salaries Extra Compensation",
+    "spending": 25048.75
+  },
+  {
+    "code": 3342,
+    "object": "PARS CLASSIFIED",
+    "spending": 18342.01
+  },
+  {
+    "code": 1350,
+    "object": "Administrator Substitutes",
+    "spending": 16055.82
+  },
+  {
+    "code": 4304,
+    "object": "Classroom Supplies",
+    "spending": 12639.64
+  },
+  {
+    "code": 2225,
+    "object": "CLASSSUPPT SALARIES OVERTIME",
+    "spending": 12482.74
+  },
+  {
+    "code": 1222,
+    "object": "PUPILSUPPT SALARIES EXTRA COMP",
+    "spending": 8757.91
+  },
+  {
+    "code": 2920,
+    "object": "OTHERCLASS SALARIES STIPENDS",
+    "spending": 8414.76
+  },
+  {
+    "code": 5720,
+    "object": "INTERPGM",
+    "spending": 8340
+  },
+  {
+    "code": 3901,
+    "object": "Other Benefits, certificated positions",
+    "spending": 7252.09
+  },
+  {
+    "code": 4396,
+    "object": "PROFESSIONAL DEVELOPMENT",
+    "spending": 7000
+  },
+  {
+    "code": 4375,
+    "object": "TESTING MATERIALS",
+    "spending": 6267.78
+  },
+  {
+    "code": 2122,
+    "object": "INSTRAIDES SALARIES EXTRA COMP",
+    "spending": 3454.16
+  },
+  {
+    "code": 2222,
+    "object": "CLASSSUPPT SALARIES EXTRA COMP",
+    "spending": 3130.44
+  },
+  {
+    "code": 3341,
+    "object": "PARS CERTIFICATED",
+    "spending": 2747.12
+  },
+  {
+    "code": 5300,
+    "object": "Dues and Memberships",
+    "spending": 2330.41
+  },
+  {
+    "code": 3503,
+    "object": "STATE UNEMPLOYMNT-LEC CHARGE",
+    "spending": 1973.79
+  },
+  {
+    "code": 2420,
+    "object": "CLERICAL SALARIES STIPENDS",
+    "spending": 1915.64
+  },
+  {
+    "code": 5610,
+    "object": "EQUIP MAINTENANCE AGREEMT",
+    "spending": 1567.59
+  },
+  {
+    "code": 3504,
+    "object": "SUI-LEC Charge Class",
+    "spending": 1559.63
+  },
+  {
+    "code": 2105,
+    "object": "INSTRAIDES SALARIES",
+    "spending": 1447.32
+  },
+  {
+    "code": 2120,
+    "object": "Instructional Aides Salaries Stipends",
+    "spending": 1306.79
+  }
+]
