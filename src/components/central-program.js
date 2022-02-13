@@ -123,20 +123,16 @@ const CentralProgram = ({ data }) => {
                 </Col>
               </Row>
             </Container>
-            <Row>
-              <Col xl={10} className="mx-auto">
-                <RequireWideScreen minScreenWidth={"sm"}>
-                  <SankeyChart
-                    data={data.centralProgramsSankeyJson}
-                    restrictedData={data.centralProgramsSankeyRestrictedJson}
-                    labelContent={content.fundingToObjectSpendingSankey}
-                    margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
-                    gaEventCategory="Central Program - Resourcing"
-                    includeCategoriesLink={false}
-                  />
-                </RequireWideScreen>
-              </Col>
-            </Row>
+            <RequireWideScreen minScreenWidth={"sm"}>
+              <SankeyChart
+                data={data.centralProgramsSankeyJson}
+                restrictedData={data.centralProgramsSankeyRestrictedJson}
+                labelContent={content.fundingToObjectSpendingSankey}
+                margin={{ top: 50, right: 240, bottom: 20, left: 200 }}
+                gaEventCategory="Central Program - Resourcing"
+                includeCategoriesLink={false}
+              />
+            </RequireWideScreen>
           </ErrorBoundary>
         )}
         <Container>
@@ -176,7 +172,7 @@ const CentralProgram = ({ data }) => {
 }
 
 export const query = graphql`
-  query($code: Int!, $language: String) {
+  query ($code: Int!, $language: String) {
     site {
       siteMetadata {
         latestSchoolYear
