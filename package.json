@@ -57,6 +57,7 @@
     "serve": "gatsby serve",
     "deployStaging": "gatsby build && echo 'staging.openousd.org' > public/CNAME && gh-pages -d public",
     "promoteStaging": "./scripts/promote_staging.sh",
+    "refreshContent": "curl -X POST http://localhost:8000/__refresh",
     "refreshData": "python scripts/build_json.py",
     "percyStaging": "PERCY_TOKEN=$(grep PERCY_TOKEN .env.production | cut -d '=' -f2) PERCY_BRANCH=main percy snapshot --base-url=https://staging.openousd.org  scripts/testing/page-paths.json",
     "percyProd": "PERCY_TOKEN=$(grep PERCY_TOKEN .env.production | cut -d '=' -f2) PERCY_BRANCH=main percy snapshot --base-url=https://openousd.org scripts/testing/page-paths.json"
