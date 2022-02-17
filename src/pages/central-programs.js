@@ -17,6 +17,7 @@ import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
 
 import { useLocalizeCategory } from "../utilities/content-utilities"
 
+import "../styles/pages/central-programs.scss"
 import "../components/sankey-chart.scss"
 
 const CentralProgramsPage = ({ data, pageContext }) => {
@@ -30,10 +31,10 @@ const CentralProgramsPage = ({ data, pageContext }) => {
   const localizeCategory = useLocalizeCategory(pageContext.language)
 
   // Translating content for the table
-  centralPrograms = centralPrograms.map(program => {
+  centralPrograms = centralPrograms.map((program) => {
     try {
       program.name = translatedProgramNames.find(
-        t => t.siteCode === program.code
+        (t) => t.siteCode === program.code
       ).programName
     } catch (e) {
       console.warn(`Could not find Contentful translation for ${program.name}`)
