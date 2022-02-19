@@ -6,31 +6,39 @@ import Row from "react-bootstrap/Row"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import CentralProgramsTable from "../components/central-programs-table"
-
-import sankeyProgramData from "../../data/sankey.json"
-import sankeyRestrictedProgramData from "../../data/sankey-restricted.json"
+import BasicTable from "../components/basic-table"
 
 import "../components/sankey-chart.scss"
 
 const CovidOverviewPage = ({ data, pageContext }) => {
-  // let centralPrograms = data.allCentralProgramsJson.nodes
-  // const content = data.contentfulPage.content
+  let covidObjects = data.allCovidObjectsJson.nodes
+  const content = data.contentfulPage.content
+
+  const objectsColumns = [
+    {
+      dataField: "object",
+      text: "Expense",
+    },
+    {
+      dataField: "spending",
+      text: "Spending",
+    },
+  ]
 
   return (
-    <Layout pageClassName="central-programs-page">
+    <Layout pageClassName="covid-overview-page">
       <Seo title={data.contentfulPage.title} />
       <Container id="programs-section">
         <Row>
           <Col>
             <h1 className="pb-3 pt-5">
-              {content.programsTable.heading} (
-              {data.site.siteMetadata.latestSchoolYear})
+              COVID-19 Funds ({data.site.siteMetadata.latestSchoolYear})
             </h1>
-            <CentralProgramsTable
-              data={centralPrograms}
-              labelContent={content.programsTable}
-            />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <BasicTable data={covidObjects} columns={objectsColumns} />
           </Col>
         </Row>
       </Container>
@@ -47,29 +55,12 @@ export const query = graphql`
         latestSchoolYear
       }
     }
-    centralProgramsOverviewJson {
-      all_ousd_eoy_total_fte
-      all_ousd_eoy_total_positions
-      all_ousd_spending
-      eoy_total_fte
-      eoy_total_positions
-      spending
-      year
-      time_series {
-        year
-        eoy_total_positions
-        eoy_total_fte
+
+    allCovidObjectsJson {
+      nodes {
+        object
         spending
-        budget
-        all_ousd_spending
-        all_ousd_budget
-        all_ousd_eoy_total_fte
-        all_ousd_eoy_total_positions
-      }
-      change_from_previous_year {
-        eoy_total_fte
-        eoy_total_positions
-        spending
+        code
       }
     }
 
