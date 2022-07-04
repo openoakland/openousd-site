@@ -8,6 +8,11 @@ import LaunchIcon from "@material-ui/icons/Launch"
 import twitterIcon from "../images/icons/twitter-icon-blue.svg"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha,
+} from "react-google-recaptcha-v3"
+
 import "../styles/pages/contact.scss"
 
 const Contact = ({ data }) => {
@@ -38,6 +43,10 @@ const Contact = ({ data }) => {
   const meetupContentBlock = contentBlockForID("meetup")
   const dataSourceContentBlock = contentBlockForID("dataSource")
 
+  const handleVerify = (token) => {
+    document.getElementById("captchaResponse").value = token
+  }
+
   return (
     <Layout pageClassName="contact-page">
       <Seo title={title} />
@@ -45,27 +54,35 @@ const Contact = ({ data }) => {
         <Row>
           <Col md={6} lg={5} id="contact-form">
             <h1>{contactUs}</h1>
-            <Form
-              method="post"
-              action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3"
-            >
-              <Form.Label>{emailFormInput.label}</Form.Label>
-              <Form.Control type="email" name="email" autoComplete="email" />
-              <Form.Label>{nameFormInput.label}</Form.Label>
-              <Form.Control type="text" name="name" autoComplete="name" />
-              <Form.Label>{purposeFormInput.label}</Form.Label>
-              <Form.Control as="select" name="purpose">
-                {purposeFormInput.selectOptions.map((option, index) => (
-                  <option key={index}>{option}</option>
-                ))}
-              </Form.Control>
-              <Form.Label>{messageFormInput.label}</Form.Label>
-              <Form.Control as="textarea" rows={5} name="message" />
-              {/*<Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>*/}
-              <Button className="cta mt-3" variant="primary" type="submit">
-                {submitButton}
-              </Button>
-            </Form>
+            <GoogleReCaptchaProvider reCaptchaKey="6Lejob4gAAAAAPHedxWwgA58tZYmPJovUSKrJkrH">
+              <GoogleReCaptcha onVerify={handleVerify} />
+              <Form
+                method="post"
+                action="https://getform.io/f/7fc595e4-0150-4678-bfc2-1dbab05c76f3"
+              >
+                <Form.Label>{emailFormInput.label}</Form.Label>
+                <Form.Control type="email" name="email" autoComplete="email" />
+                <Form.Label>{nameFormInput.label}</Form.Label>
+                <Form.Control type="text" name="name" autoComplete="name" />
+                <Form.Label>{purposeFormInput.label}</Form.Label>
+                <Form.Control as="select" name="purpose">
+                  {purposeFormInput.selectOptions.map((option, index) => (
+                    <option key={index}>{option}</option>
+                  ))}
+                </Form.Control>
+                <Form.Label>{messageFormInput.label}</Form.Label>
+                <Form.Control as="textarea" rows={5} name="message" />
+                <Form.Control
+                  type="hidden"
+                  id="captchaResponse"
+                  name="g-recaptcha-response"
+                />
+                {/*<Form.Check type="checkbox" label="I'd like to know when OpenOUSD is updated" name="email-opt-in"/>*/}
+                <Button className="cta mt-3" variant="primary" type="submit">
+                  {submitButton}
+                </Button>
+              </Form>
+            </GoogleReCaptchaProvider>
           </Col>
           <Col md={{ span: 5, offset: 1 }}>
             <div id="email-signup" className="pt-5 pt-md-0">
