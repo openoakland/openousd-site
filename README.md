@@ -30,14 +30,11 @@ Go to `http://localhost:8000` in your browser
 
 ### Using docker
 
-**Initial setup:**
-1. `docker-compose up`
-2. `docker-compose run gatsby`
-3. `npm install`
+`docker-compose up`
 
-From then on, use
-1. `docker-compose run gatsby`
-2. `npm start`
+TODO: may need to delete the volume and recreate the container if you want to updte package.json / containers or look into using the `--renew-anon-volumes` flag.
+
+See: https://stackoverflow.com/questions/30043872/docker-compose-node-modules-not-present-in-a-volume-after-npm-install-succeeds
 
 ## Deploying
 
