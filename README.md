@@ -28,6 +28,17 @@ echo "CONTENTFUL_ACCESS_TOKEN={insert the token here and remove brackets}" > .en
 
 Go to `http://localhost:8000` in your browser
 
+### Using docker
+
+**Initial setup:**
+1. `docker-compose up`
+2. `docker-compose run gatsby`
+3. `npm install`
+
+From then on, use
+1. `docker-compose run gatsby`
+2. `npm start`
+
 ## Deploying
 
 ### Staging
