@@ -30,11 +30,13 @@ Go to `http://localhost:8000` in your browser
 
 ### Using docker
 
+**Setup**
+
 `docker-compose up`
 
 TODO: may need to delete the volume and recreate the container if you want to updte package.json / containers or look into using the `--renew-anon-volumes` flag.
 
-Cleaning out old containers
+**Cleaning out old containers**
 
 1. run the script `./cleanDocker.sh`
 2. enter `y` to prune volumes when prompted
