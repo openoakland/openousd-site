@@ -42,8 +42,8 @@ const descriptionRenderOptions = {
 
 const CentralProgram = ({ data }) => {
   const centralProgram = data.centralProgramsJson
-  const translatedProgramName = data.contentfulCentralProgram.programName
-  const contentfulProgramDescription = data.contentfulCentralProgram.description
+  const translatedProgramName = data.contentfulCentralProgram?.programName || data.centralProgramsJson.name
+  const contentfulProgramDescription = data.contentfulCentralProgram?.description
   const content = data.contentfulPage.content
 
   return (
@@ -67,7 +67,7 @@ const CentralProgram = ({ data }) => {
                     contentfulProgramDescription,
                     descriptionRenderOptions
                   )}
-                {data.contentfulCentralProgram.OUSDProgramLink ? (
+                {data.contentfulCentralProgram?.OUSDProgramLink ? (
                   <div className="pt-3">
                     <a
                       href={data.contentfulCentralProgram.OUSDProgramLink}
