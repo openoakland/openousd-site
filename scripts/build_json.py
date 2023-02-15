@@ -6,7 +6,7 @@ import os
 
 # hosted GCloud functions no longer have a hosted db connection
 # api_location = "https://us-central1-openousd.cloudfunctions.net/openousd"
-api_location = "http://localhost:8080"
+api_location = "http://host.docker.internal:8080"
 base_path = api_location + "/api"
 
 data_path = os.path.join(os.path.dirname(__file__), "../data/")
