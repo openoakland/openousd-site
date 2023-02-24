@@ -65,6 +65,14 @@
       {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Admin Coordinator Board of Edu"
+      }, 
+      {
+        "eoy_total_positions_for_role": 7, 
+        "role_description": "Board Member"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Executive Assistant Board"
       }
     ], 
     "eoy_total_positions": 10, 
@@ -170,7 +178,47 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 11, 
+        "role_description": "Carpenter"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Buildings/Grounds"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Director Buildings & Grounds"
+      }, 
+      {
+        "eoy_total_positions_for_role": 8, 
+        "role_description": "Electrician"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Equipment Operator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Financial Accountant II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Financial Analyst Constr Bond"
+      }, 
+      {
+        "eoy_total_positions_for_role": 11, 
+        "role_description": "Gardener"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Glazier"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -178,7 +226,19 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Lead Electrician"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Lead Gardener"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Lead Locksmith"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Lead Painter"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -186,7 +246,27 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Lead Steamfitter"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Locksmith"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Maintenance Control Specialist"
+      }, 
+      {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Manager Buildings & Grounds"
+      }, 
+      {
+        "eoy_total_positions_for_role": 11, 
+        "role_description": "Painter"
+      }, 
+      {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Plumber"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -197,8 +277,24 @@
         "role_description": "Project Manager Facilities Pln"
       }, 
       {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Roofer"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Sheetmetal Worker"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Skilled Laborer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Steamfitter"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Technician Alarm"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -277,6 +373,10 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "COMM LIAISON"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Deputy Dir Charter Schools"
       }, 
       {
@@ -342,6 +442,14 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Chief Sys & Serv Officer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Classified"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Exec Asst Superintendent"
       }
     ], 
     "eoy_total_positions": 3, 
@@ -400,8 +508,24 @@
     "budget": 22325544.83, 
     "staff_roles": [
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Chief of Staff"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "MGRINTWEBCOM"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Mgr Publications"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Sr Dir Strategic Projects"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Exec Asst Superintendent"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -474,6 +598,30 @@
     "eoy_total_fte": 7.5, 
     "budget": 1254680.27, 
     "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Director Communications"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Manager KDOL Educational TV"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Mgr Publications"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Operations Engineer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Producer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "SpecialistTranslator-Spanish"
+      }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Specialist Translator-Vietname"
@@ -551,8 +699,44 @@
     "budget": 32974033.17, 
     "staff_roles": [
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assist III Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Case Manager 20"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Case Manager 24"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Classroom TSA 10 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Classroom TSA 11 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Classroom TSA 12 Months"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Clinic Liaison"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "COOD HEAL ED"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -560,7 +744,23 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Attendance Discipline"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Community School Leader"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Coord Education at The Center"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "School Security Officer Coordinator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Juvenile Justice Center"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -571,6 +771,18 @@
         "role_description": "Coord Summer Learning Prog"
       }, 
       {
+        "eoy_total_positions_for_role": 12, 
+        "role_description": "CULT/CLI AMB"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Data Analyst II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Dir Behavior Hlth Initiatives"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Director Health and Wellness"
       }, 
@@ -579,12 +791,28 @@
         "role_description": "Director Programs, The Center"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "DIR STUDSUPP"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Exec Dir Community Schools"
+      }, 
+      {
         "eoy_total_positions_for_role": 5, 
         "role_description": "Liaison, Network Attendance"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Manager Community Partnership"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Noon Supervisor"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PM COM SCH11"
       }, 
       {
         "eoy_total_positions_for_role": 3, 
@@ -596,7 +824,31 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Prog Mgr Medi-Cal/LCL Edu Agnc"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Prog Mgr Restorative Justice"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Program Manager After School"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager Certificated"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager Classified"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Program Manager Foster Youth"
+      }, 
+      {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Program Mgr Behavioral Health"
       }, 
       {
         "eoy_total_positions_for_role": 19, 
@@ -604,11 +856,35 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Mgr HIV/STD Prevention"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Program Specialist-Health Educ"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Receptionist Bilingual"
       }, 
       {
         "eoy_total_positions_for_role": 5, 
         "role_description": "Restorative Justic Facilitator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "SARB FACILIT"
+      }, 
+      {
+        "eoy_total_positions_for_role": 55, 
+        "role_description": "School Security Officer I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "School Security Officer II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Security and Safety Dispatcher"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -620,7 +896,23 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Spec CSSS Data & Sys Mgmt"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Spec Homeless Youth Prog"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Specialist Behavior"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Specialist, LGBTQ Programming"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist Wellness"
       }
     ], 
     "eoy_total_positions": 168, 
@@ -692,6 +984,14 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Coordinator Innova Programs"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "DC CSI (CE)"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "STIP Teacher"
       }
     ], 
     "eoy_total_positions": 3, 
@@ -767,11 +1067,63 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assist II Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Analyst Custodial Svc Faciliti"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Business Mgr Central Office"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "CUS SVE UTTE"
+      }, 
+      {
+        "eoy_total_positions_for_role": 183, 
+        "role_description": "Custodian"
+      }, 
+      {
+        "eoy_total_positions_for_role": 9, 
+        "role_description": "Custodian CDC"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Exec Dir Custodial Svcs Grnds"
+      }, 
+      {
+        "eoy_total_positions_for_role": 15, 
+        "role_description": "Head Custodian 1"
+      }, 
+      {
+        "eoy_total_positions_for_role": 8, 
+        "role_description": "Head Custodian 2"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Head Custodian 3"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Manager Custodial Services"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Manager Sustainability"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Supervisor Custodian Field"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "SW OP UT TEC"
       }
     ], 
     "eoy_total_positions": 235, 
@@ -903,11 +1255,35 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Director ECE"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Director Enh Prof Development"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "DIR KIND RD"
       }, 
       {
         "eoy_total_positions_for_role": 16, 
         "role_description": "Early Literacy Reading Tutor"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "ECE FAM NAV"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Financial Accountant II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Para Educator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager Grants"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -924,6 +1300,10 @@
       {
         "eoy_total_positions_for_role": 8, 
         "role_description": "Specialist Enrollment ECE"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Teacher CDC"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -999,6 +1379,18 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Executive Office Assistant"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Liaison Family Parent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Network Superintendent Pre-K5"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Partner Network"
       }
     ], 
     "eoy_total_positions": 4, 
@@ -1077,8 +1469,24 @@
         "role_description": "Business Mgr Central Office"
       }, 
       {
+        "eoy_total_positions_for_role": 8, 
+        "role_description": "Classroom TSA 11 Months"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Dir Newcomer Eng Lang Lrn Prog"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Executive Director ELL"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Prog Mgr Newcomer & Refuge"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Spec Refugee/Asylee Prog"
       }
     ], 
     "eoy_total_positions": 15, 
@@ -1149,11 +1557,39 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Accounts Payable Technician II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assist III Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Business Mgr Central Office"
       }, 
       {
         "eoy_total_positions_for_role": 3, 
         "role_description": "Coordinator Facilities Mgmt"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Deputy Chief Facilities"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "ED FAC MGT P"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Financial Accountant II"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -1262,8 +1698,24 @@
     "budget": 28199180.27, 
     "staff_roles": [
       {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Administrative Assist I Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "COOD MENU IN"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Coordinator, Nutrition Svcs"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "CUS TECH CK"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "DIR GD FD MP"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1275,11 +1727,79 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Executive Chef/Production Mgr"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Financial Accountant II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 113, 
+        "role_description": "Food Service Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 58, 
+        "role_description": "Food Service Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Food Service Manager III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 16, 
+        "role_description": "Food Service Manager IV"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Food Service Manager VI"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Manager Central Kitch I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Manager Sustainability"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Nutrition Services Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Nutrition Svc Field Supervisor"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PJ PROC IMP"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PROD TECH CK"
+      }, 
+      {
+        "eoy_total_positions_for_role": 18, 
+        "role_description": "Production Assistant10"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Production Cook 10"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Prog Mgr Nutrition Services"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sanitation Utility Technician"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Specialist Nutrtn Svc Support"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Specialist, Receiver/Inventory"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1291,7 +1811,19 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "SR EX NU SVC"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Sup, Centr Kitch Ware & Distri"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "SUP PRODUCT"
+      }, 
+      {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Truck Driver I"
       }
     ], 
     "eoy_total_positions": 254, 
@@ -1409,11 +1941,19 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Executive Director Instruction"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Executive Office Assistant"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Network Superintendent HS"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Partner Network"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1513,7 +2053,23 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "BUSMAN HRSR"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "CHIEF TALENT"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "COOD D&I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Coordinator Benefits Mgmt"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Certificated"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -1524,6 +2080,26 @@
         "role_description": "Coordinator, Residency"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Director HR Operations"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "DIR NEW TEAC"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Dir Tal Devel Recruit&Retent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Fingerprint Technician"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "HR Clerk Confidential"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Manager New Teacher Support"
       }, 
@@ -1532,8 +2108,20 @@
         "role_description": "Manager Strategic Initiatives"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Manager Substitute Services"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Partner Central Office"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Partner School"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PM SPEC PROJ"
       }, 
       {
         "eoy_total_positions_for_role": 5, 
@@ -1541,11 +2129,23 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Spec Employee Retent/Dev"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Special Community Engagement"
+      }, 
+      {
+        "eoy_total_positions_for_role": 9, 
+        "role_description": "Specialist, Employee Support"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Sr Dir Strategic Projects"
+      }, 
+      {
+        "eoy_total_positions_for_role": 7, 
+        "role_description": "STIP Teacher"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1620,6 +2220,10 @@
     "eoy_total_fte": 10, 
     "budget": 1611836.53, 
     "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "COORD LABOR"
+      }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "ED Labor Relat & Alter Dis Res"
@@ -1700,6 +2304,30 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Assistant General Counsel"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "FACILI ATTOR"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "General Counsel"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Legal Asst/Law Clerk III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Legal Office Administrator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Exec Asst Superintendent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Staff Attorney"
       }
     ], 
     "eoy_total_positions": 10, 
@@ -1774,8 +2402,48 @@
     "budget": 14524596.26, 
     "staff_roles": [
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Administrative Assist III Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Classroom TSA 10 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Classroom TSA 12 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Coach Career Tech Ed"
+      }, 
+      {
         "eoy_total_positions_for_role": 7, 
         "role_description": "Coach College/Career Pathways"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Commnty Coord/Program Assist"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Business to School"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Classified"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Literacy"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Work-Base Learning"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -1783,7 +2451,15 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Measure N & Action Res"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Coord Skilled Trades & Apprent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Counselor"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1791,15 +2467,43 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "District Registrar"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Executive Director Counseling"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Mgr CTE C&C Pathways Sec Sch"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PM CTE"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager HS Operations"
       }, 
       {
         "eoy_total_positions_for_role": 5, 
         "role_description": "Spec Career Path Transitions"
       }, 
       {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Spec College/Career Readiness"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Specialist Mstr Schd Developm"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Teacher 11Months 12-Pay"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Teacher If 11 Month - 12 Pay"
       }, 
       {
         "eoy_total_positions_for_role": 11, 
@@ -1875,7 +2579,28 @@
     "spending": 823288.2, 
     "eoy_total_fte": 4.75, 
     "budget": 930012.63, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Classroom TSA 10 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Network Superintendent Middle"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Partner Network"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager MS Operations"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "STIP Teacher"
+      }
+    ], 
     "eoy_total_positions": 5, 
     "remaining_budget_percent": 11.5, 
     "year": 2021, 
@@ -1936,7 +2661,20 @@
     "spending": 2230309.93, 
     "eoy_total_fte": 3, 
     "budget": 2049412.89, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Commissioner OAL"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Manager Athletics & Activities"
+      }
+    ], 
     "eoy_total_positions": 3, 
     "remaining_budget_percent": -8.8, 
     "year": 2021, 
@@ -1997,7 +2735,20 @@
     "spending": 11553420.37, 
     "eoy_total_fte": 4.8, 
     "budget": 37283610.15, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Chief Academic Officer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 7, 
+        "role_description": "Noon Supervisor"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Exec Asst Superintendent"
+      }
+    ], 
     "eoy_total_positions": 9, 
     "remaining_budget_percent": 69, 
     "year": 2021, 
@@ -2071,19 +2822,79 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Case Manager 24"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Social Emotional Learn"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Dir Student Achievement TS"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "ED EQUITY"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Prg Mgr Local Cntrl Acct Engag"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Prog Mgr AA Female Excellence"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Assistant III"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Research Assoc Disproportion"
       }, 
       {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Spec District Family Engage"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Spec Family Community Engage"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist, Student Engagement"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Specialist Translator - Arabic"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist Translator-Cambodia"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Specialist Translator-Chinese"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist Translator - Mam"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "SpecialistTranslator-Spanish"
+      }, 
+      {
         "eoy_total_positions_for_role": 7, 
         "role_description": "Spec Target Stud Grp Intervent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "STIP Teacher"
       }, 
       {
         "eoy_total_positions_for_role": 7, 
@@ -2157,6 +2968,18 @@
     "budget": 6906115.1, 
     "staff_roles": [
       {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Accounts Payable Technician II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Accounts Payable TechnicianIII"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "ANALYSPAYROL"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Analyst, Position Control"
       }, 
@@ -2166,11 +2989,39 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Controller"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Director, Budget and Finance"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Director Payroll"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Director Program Accouting"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Financial Accountant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Financial Accountant II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 7, 
+        "role_description": "Financial Accountant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Mgr Central Office Accounting"
+      }, 
+      {
+        "eoy_total_positions_for_role": 7, 
+        "role_description": "Payroll Technician II"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2179,6 +3030,14 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Sr Dir Strategic Projects"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Exec Asst Superintendent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Sr Financial Analyst"
       }
     ], 
     "eoy_total_positions": 35, 
@@ -2249,7 +3108,16 @@
     "spending": 981446.52, 
     "eoy_total_fte": 2, 
     "budget": 1054560.58, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Exec Asst Superintendent"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Superintendent"
+      }
+    ], 
     "eoy_total_positions": 2, 
     "remaining_budget_percent": 6.9, 
     "year": 2021, 
@@ -2291,7 +3159,16 @@
     "spending": 357892.19, 
     "eoy_total_fte": 2, 
     "budget": 396277.91, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Asst Ombudsperson Intake Bill"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Director, Ombudsperson"
+      }
+    ], 
     "eoy_total_positions": 2, 
     "remaining_budget_percent": 9.7, 
     "year": 2021, 
@@ -2360,6 +3237,14 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assist I Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Asst Principal High School"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Coordinator College Access"
       }, 
       {
@@ -2367,8 +3252,20 @@
         "role_description": "Coord Post Secondary Readi"
       }, 
       {
+        "eoy_total_positions_for_role": 47, 
+        "role_description": "Counselor"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Mgr Master Sched Comp Stud Sup"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Prog Specialist TSA 12 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Spec College/Career Readiness"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2482,6 +3379,14 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Executive Office Assistant"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Network Superintendent Pre-K5"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Partner Network"
       }
     ], 
     "eoy_total_positions": 3, 
@@ -2548,6 +3453,14 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Executive Office Assistant"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Network Superintendent Pre-K5"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Partner Network"
       }
     ], 
     "eoy_total_positions": 3, 
@@ -2614,6 +3527,18 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Analyst Contract"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Buyer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PRO ANALY SR"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Sr Mgr Supp Chain & Logistics"
       }
     ], 
     "eoy_total_positions": 5, 
@@ -2684,15 +3609,39 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Analytics Spec GIS Mapping"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Business Mgr Central Office"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "BUS INT DATA"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Coord State/Local Assessment"
       }, 
       {
+        "eoy_total_positions_for_role": 5, 
+        "role_description": "Data Analyst II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Director State/Loc Assessments"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Executive Director RAD"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Research Assoc Early Child"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist State/Local Testing"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2779,6 +3728,18 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Envirnmntl Health & Safety Mgr"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Financial Accountant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Legal Asst/Law Clerk III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Mgr Fixed Assets & Insur Solu"
       }, 
       {
@@ -2792,6 +3753,10 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Risk Management Officer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Staff Attorney"
       }
     ], 
     "eoy_total_positions": 12, 
@@ -2828,7 +3793,12 @@
     "spending": 87509.78, 
     "eoy_total_fte": 1, 
     "budget": 7596.68, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }
+    ], 
     "eoy_total_positions": 1, 
     "remaining_budget_percent": -1051.9, 
     "year": 2021, 
@@ -2901,7 +3871,31 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant I"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assist III Bil"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Anlyt PEC Financial Operations"
+      }, 
+      {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Case Manager 24"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Classroom TSA 10 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Classroom TSA 11 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Classroom TSA 12 Months"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2916,12 +3910,68 @@
         "role_description": "Coordinator Health Services"
       }, 
       {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Coordinator Special Education"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "DIR SPED SCH"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Exective Director PEC"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Health Assistant"
+      }, 
+      {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Health Assistant Bilingual"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Health Svc Data & Sys Mgt"
+      }, 
+      {
+        "eoy_total_positions_for_role": 6, 
+        "role_description": "Instructional Supp Specialist"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Interpreter For Deaf II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Legal Asst/Law Clerk III"
+      }, 
+      {
         "eoy_total_positions_for_role": 7, 
         "role_description": "Licensed Vocational Nurse"
+      }, 
+      {
+        "eoy_total_positions_for_role": 27, 
+        "role_description": "Nurse"
+      }, 
+      {
+        "eoy_total_positions_for_role": 13, 
+        "role_description": "Occupational Therapist"
+      }, 
+      {
+        "eoy_total_positions_for_role": 40, 
+        "role_description": "Para Educator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Physical Therapist"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "PM NURSING"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "PM PEC SPEC"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2932,12 +3982,40 @@
         "role_description": "Prog Specialist TSA 11 Months"
       }, 
       {
+        "eoy_total_positions_for_role": 54, 
+        "role_description": "Psychologist"
+      }, 
+      {
         "eoy_total_positions_for_role": 17, 
         "role_description": "Social Worker"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Spec District Family Engage"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist Translator-Chinese"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "SpecialistTranslator-Spanish"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist Transportation"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Special SELPA Data Sys Mgt"
+      }, 
+      {
         "eoy_total_positions_for_role": 46, 
         "role_description": "Speech Therapist"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Staff Attorney"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2948,6 +4026,10 @@
         "role_description": "Tchr SDC Severely Handicapped"
       }, 
       {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Teacher Adapted PE"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Teacher Hearing Imparied"
       }, 
@@ -2956,8 +4038,16 @@
         "role_description": "Teacher Orientation/Mobility"
       }, 
       {
+        "eoy_total_positions_for_role": 18, 
+        "role_description": "Teacher RSP"
+      }, 
+      {
         "eoy_total_positions_for_role": 3, 
         "role_description": "Teacher Visually Impaired"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Technician Aide 10 Mos"
       }
     ], 
     "eoy_total_positions": 317, 
@@ -3028,7 +4118,23 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Anlyt SRP Financial Operations"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Business Mgr Central Office"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "COOD COVID"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Local Cntrl Accnt PLA"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -3040,7 +4146,15 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "MGR GRANTS"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Prog Specialist TSA 12 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 7, 
+        "role_description": "Specialist Strat Resource Plan"
       }
     ], 
     "eoy_total_positions": 16, 
@@ -3123,12 +4237,20 @@
         "role_description": "Director Student Assignment"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "MGRINTWEBCOM"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Regional Fam Engage Liaison"
       }, 
       {
         "eoy_total_positions_for_role": 7, 
         "role_description": "Student Assignment Counselor"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "STUDWELC COU"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -3256,19 +4378,63 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Administrative Assistant III"
+      }, 
+      {
+        "eoy_total_positions_for_role": 10, 
+        "role_description": "Classroom TSA 11 Months"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Coordinator Certificated"
+      }, 
+      {
+        "eoy_total_positions_for_role": 4, 
+        "role_description": "Coordinator Literacy"
+      }, 
+      {
+        "eoy_total_positions_for_role": 3, 
+        "role_description": "Coordinator STEM"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "Coord Instruct and Assess Tech"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coord Social Emotional Learn"
       }, 
       {
         "eoy_total_positions_for_role": 3, 
         "role_description": "Director, Instruction PreK-12"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Dir Visual & Performing Arts"
+      }, 
+      {
         "eoy_total_positions_for_role": 89, 
         "role_description": "Early Literacy Reading Tutor"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Executive Director Instruction"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager Classified"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Specialist School Technology"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Spec Instructional Materials"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Stock Clerk"
       }, 
       {
         "eoy_total_positions_for_role": 25, 
@@ -3337,6 +4503,18 @@
     "budget": 16514562.08, 
     "staff_roles": [
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Database Administrator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "ED Technology Services"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Enduser Support Specialist II"
+      }, 
+      {
         "eoy_total_positions_for_role": 2, 
         "role_description": "Info Systems Specialist II"
       }, 
@@ -3349,8 +4527,32 @@
         "role_description": "Network Infrastructure Spec"
       }, 
       {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Senior Computer Operator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Senior Computer Technician"
+      }, 
+      {
         "eoy_total_positions_for_role": 3, 
         "role_description": "Senior Network Administrator"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Senior Network Engineer"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Software Developer II"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Software Developer IV"
+      }, 
+      {
+        "eoy_total_positions_for_role": 9, 
+        "role_description": "Specialist School Technology"
       }, 
       {
         "eoy_total_positions_for_role": 3, 
@@ -3442,7 +4644,15 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator Classified"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
         "role_description": "ED Transportation & Logistics"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Specialist Transportation"
       }
     ], 
     "eoy_total_positions": 3, 
@@ -3505,7 +4715,16 @@
     "spending": 1970557.38, 
     "eoy_total_fte": 9.5, 
     "budget": 2104319.43, 
-    "staff_roles": [], 
+    "staff_roles": [
+      {
+        "eoy_total_positions_for_role": 2, 
+        "role_description": "Stock Clerk"
+      }, 
+      {
+        "eoy_total_positions_for_role": 11, 
+        "role_description": "Truck Driver I"
+      }
+    ], 
     "eoy_total_positions": 13, 
     "remaining_budget_percent": 6.4, 
     "year": 2021, 
