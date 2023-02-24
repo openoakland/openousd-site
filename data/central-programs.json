@@ -373,7 +373,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "COMM LIAISON"
+        "role_description": "Comm Liaison Charter Sch"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -513,7 +513,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "MGRINTWEBCOM"
+        "role_description": "Mgr Internal & Web Communicatn"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -736,10 +736,6 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "COOD HEAL ED"
-      }, 
-      {
-        "eoy_total_positions_for_role": 1, 
         "role_description": "Coord After School Program"
       }, 
       {
@@ -753,6 +749,10 @@
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Coord Education at The Center"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Coordinator, Health Education"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -772,7 +772,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 12, 
-        "role_description": "CULT/CLI AMB"
+        "role_description": "Culture and Climate Ambassador"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -792,7 +792,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "DIR STUDSUPP"
+        "role_description": "Dir Student Support & Safety"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -811,16 +811,16 @@
         "role_description": "Noon Supervisor"
       }, 
       {
-        "eoy_total_positions_for_role": 1, 
-        "role_description": "PM COM SCH11"
-      }, 
-      {
         "eoy_total_positions_for_role": 3, 
         "role_description": "Pos Behav Supp Sys Coach"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Prog Assist McKinney Vento"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Prog Mgr Community Schools11"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -872,7 +872,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "SARB FACILIT"
+        "role_description": "SARB Facilitator"
       }, 
       {
         "eoy_total_positions_for_role": 55, 
@@ -987,7 +987,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "DC CSI (CE)"
+        "role_description": "Dep Chief Schools - CSI (CE)"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1083,7 +1083,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "CUS SVE UTTE"
+        "role_description": "Custodial Svcs, Utility Tech"
       }, 
       {
         "eoy_total_positions_for_role": 183, 
@@ -1123,7 +1123,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 2, 
-        "role_description": "SW OP UT TEC"
+        "role_description": "Sweeper Operator, Utility Tech"
       }
     ], 
     "eoy_total_positions": 235, 
@@ -1263,7 +1263,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "DIR KIND RD"
+        "role_description": "Dir Kindergarten Readiness"
       }, 
       {
         "eoy_total_positions_for_role": 16, 
@@ -1271,7 +1271,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 3, 
-        "role_description": "ECE FAM NAV"
+        "role_description": "ECE Family Navigator"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1585,7 +1585,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "ED FAC MGT P"
+        "role_description": "ED Facilities Mgt Planning"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -1703,19 +1703,19 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "COOD MENU IN"
-      }, 
-      {
-        "eoy_total_positions_for_role": 1, 
         "role_description": "Coordinator, Nutrition Svcs"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "CUS TECH CK"
+        "role_description": "Coord Menu Innovations"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "DIR GD FD MP"
+        "role_description": "Custod Tech, Central Kitchen"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Dir Good Food Man&Pro"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1771,11 +1771,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "PJ PROC IMP"
-      }, 
-      {
-        "eoy_total_positions_for_role": 1, 
-        "role_description": "PROD TECH CK"
+        "role_description": "PJM Process Improv Tech Svc"
       }, 
       {
         "eoy_total_positions_for_role": 18, 
@@ -1784,6 +1780,10 @@
       {
         "eoy_total_positions_for_role": 4, 
         "role_description": "Production Cook 10"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Product Tech, Central Kitchen"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1811,7 +1811,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "SR EX NU SVC"
+        "role_description": "Sr Execu Dir Nutri Svc Ware"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -1819,7 +1819,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "SUP PRODUCT"
+        "role_description": "Supervisor Production NS"
       }, 
       {
         "eoy_total_positions_for_role": 5, 
@@ -2053,15 +2053,15 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "BUSMAN HRSR"
+        "role_description": "Business Manager HRSS Sr"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "CHIEF TALENT"
+        "role_description": "Chief Talent Officer"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
-        "role_description": "COOD D&I"
+        "role_description": "Coord Employee Divers & Inclus"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2085,7 +2085,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "DIR NEW TEAC"
+        "role_description": "Dir New Teach Sup & Develop"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2121,7 +2121,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "PM SPEC PROJ"
+        "role_description": "Program Mgr Special Projects"
       }, 
       {
         "eoy_total_positions_for_role": 5, 
@@ -2222,7 +2222,7 @@
     "staff_roles": [
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "COORD LABOR"
+        "role_description": "Coordinator Labor"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2307,7 +2307,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "FACILI ATTOR"
+        "role_description": "Facilities Attorney"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2479,7 +2479,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "PM CTE"
+        "role_description": "Program Manager CTE"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2838,7 +2838,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "ED EQUITY"
+        "role_description": "Executive Director, Equity"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -2977,7 +2977,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "ANALYSPAYROL"
+        "role_description": "Analyst Payroll"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -3534,7 +3534,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "PRO ANALY SR"
+        "role_description": "Procurement Analyst, Sr"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -3613,11 +3613,11 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "Business Mgr Central Office"
+        "role_description": "Business Intell Data Architect"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "BUS INT DATA"
+        "role_description": "Business Mgr Central Office"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -3915,7 +3915,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "DIR SPED SCH"
+        "role_description": "Dir SPED School Supports"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -3966,16 +3966,16 @@
         "role_description": "Physical Therapist"
       }, 
       {
-        "eoy_total_positions_for_role": 1, 
-        "role_description": "PM NURSING"
-      }, 
-      {
         "eoy_total_positions_for_role": 2, 
-        "role_description": "PM PEC SPEC"
+        "role_description": "Prog Mgr PEC Special Projects"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
         "role_description": "Program Manager Health Service"
+      }, 
+      {
+        "eoy_total_positions_for_role": 1, 
+        "role_description": "Program Manager Nursing"
       }, 
       {
         "eoy_total_positions_for_role": 10, 
@@ -4130,7 +4130,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "COOD COVID"
+        "role_description": "Coord, COVID Grant Admin"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -4146,7 +4146,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "MGR GRANTS"
+        "role_description": "Manager Grants"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
@@ -4238,7 +4238,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 1, 
-        "role_description": "MGRINTWEBCOM"
+        "role_description": "Mgr Internal & Web Communicatn"
       }, 
       {
         "eoy_total_positions_for_role": 2, 
@@ -4250,7 +4250,7 @@
       }, 
       {
         "eoy_total_positions_for_role": 3, 
-        "role_description": "STUDWELC COU"
+        "role_description": "Student Welc Ctr Coun II"
       }, 
       {
         "eoy_total_positions_for_role": 1, 
