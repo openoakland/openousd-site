@@ -1,17 +1,5 @@
 [
   {
-    "url": "/en/central-programs/accounting"
-  },
-  {
-    "url": "/es/central-programs/accounting"
-  },
-  {
-    "url": "/en/central-programs/accounts-payable"
-  },
-  {
-    "url": "/es/central-programs/accounts-payable"
-  },
-  {
     "url": "/en/central-programs/associated-student-body-funds"
   },
   {
@@ -24,6 +12,12 @@
     "url": "/es/central-programs/board-of-education"
   },
   {
+    "url": "/en/central-programs/budget"
+  },
+  {
+    "url": "/es/central-programs/budget"
+  },
+  {
     "url": "/en/central-programs/buildings-and-grounds"
   },
   {
@@ -34,12 +28,6 @@
   },
   {
     "url": "/es/central-programs/charter-schools-office-admin"
-  },
-  {
-    "url": "/en/central-programs/chief-financial-officer"
-  },
-  {
-    "url": "/es/central-programs/chief-financial-officer"
   },
   {
     "url": "/en/central-programs/chief-of-operations"
@@ -216,18 +204,6 @@
     "url": "/es/central-programs/ousd-police-department"
   },
   {
-    "url": "/en/central-programs/payroll"
-  },
-  {
-    "url": "/es/central-programs/payroll"
-  },
-  {
-    "url": "/en/central-programs/pre-k-5-network-1"
-  },
-  {
-    "url": "/es/central-programs/pre-k-5-network-1"
-  },
-  {
     "url": "/en/central-programs/pre-k-5-network-2"
   },
   {
@@ -238,12 +214,6 @@
   },
   {
     "url": "/es/central-programs/pre-k-5-network-3"
-  },
-  {
-    "url": "/en/central-programs/printing-and-mail-services"
-  },
-  {
-    "url": "/es/central-programs/printing-and-mail-services"
   },
   {
     "url": "/en/central-programs/procurement-and-distribution"
@@ -262,6 +232,12 @@
   },
   {
     "url": "/es/central-programs/risk-management"
+  },
+  {
+    "url": "/en/central-programs/special-ed-local-plan-area"
+  },
+  {
+    "url": "/es/central-programs/special-ed-local-plan-area"
   },
   {
     "url": "/en/central-programs/special-education"
@@ -298,6 +274,12 @@
   },
   {
     "url": "/es/central-programs/technology-services"
+  },
+  {
+    "url": "/en/central-programs/transfers-to-charter-schools"
+  },
+  {
+    "url": "/es/central-programs/transfers-to-charter-schools"
   },
   {
     "url": "/en/central-programs/transportation"

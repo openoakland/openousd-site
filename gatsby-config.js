@@ -13,7 +13,7 @@ module.exports = {
     title: `OpenOUSD`,
     description: `OpenOUSD aims to bring greater transparency to the Oakland Unified School District's central office.`,
     author: `@OpenOUSD`,
-    latestSchoolYear: `2020-21`,
+    latestSchoolYear: `2021-22`,
   },
   plugins: [
     {
