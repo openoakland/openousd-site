@@ -12,12 +12,6 @@
     "url": "/es/central-programs/board-of-education"
   },
   {
-    "url": "/en/central-programs/budget"
-  },
-  {
-    "url": "/es/central-programs/budget"
-  },
-  {
     "url": "/en/central-programs/buildings-and-grounds"
   },
   {
@@ -198,12 +192,6 @@
     "url": "/es/central-programs/opsr-counseling"
   },
   {
-    "url": "/en/central-programs/ousd-police-department"
-  },
-  {
-    "url": "/es/central-programs/ousd-police-department"
-  },
-  {
     "url": "/en/central-programs/pre-k-5-network-2"
   },
   {
@@ -214,6 +202,12 @@
   },
   {
     "url": "/es/central-programs/pre-k-5-network-3"
+  },
+  {
+    "url": "/en/central-programs/private-schools-office-admin"
+  },
+  {
+    "url": "/es/central-programs/private-schools-office-admin"
   },
   {
     "url": "/en/central-programs/procurement-and-distribution"

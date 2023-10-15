@@ -10,6 +10,7 @@ services:
     volumes:
       - .:/openousd
       - /openousd/node_modules #https://justlike.medium.com/how-to-avoid-overriding-node-modules-in-docker-for-local-development-20f412444589
+      - ~/.ssh/:/root/.ssh/ # Forward local machine SSH key to docker
     stdin_open: true
     tty: true
     command: "gatsby develop -H 0.0.0.0 -p 8000"
