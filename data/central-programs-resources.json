@@ -1,1570 +1,1578 @@
 [
   {
-    "category": "General (Base)", 
-    "code": 0, 
-    "name": "General Purpose", 
-    "spending": 63020171.99, 
-    "budget": 42383889, 
-    "year": 2021
-  }, 
-  {
-    "category": "Supplemental & Concentration", 
-    "code": 3, 
-    "name": "Concentration Support", 
-    "spending": 0, 
-    "budget": 126554, 
-    "year": 2021
-  }, 
-  {
-    "category": "Supplemental & Concentration", 
-    "code": 4, 
-    "name": "School Site Approved Appeals", 
-    "spending": 0, 
-    "budget": 16838619, 
-    "year": 2021
-  }, 
-  {
-    "category": "Supplemental & Concentration", 
-    "code": 5, 
-    "name": "Central Office Supplemental", 
-    "spending": 31091691.87, 
-    "budget": 14105004.2, 
-    "year": 2021
-  }, 
-  {
-    "category": "Supplemental & Concentration", 
-    "code": 6, 
-    "name": "S&C Carryover", 
-    "spending": 428629.01, 
-    "budget": 2450000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 10, 
-    "name": "GP Cost Avoidance", 
-    "spending": 1757705.04, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 20, 
-    "name": "Home & Hospital Education", 
-    "spending": 770175.19, 
-    "budget": 862119, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 39, 
-    "name": "Prop 39 Charter Repairs", 
-    "spending": 28262.25, 
-    "budget": 51218, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 40, 
-    "name": "Unrestricted AB1840", 
-    "spending": 1659386.23, 
-    "budget": 7299637, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 50, 
-    "name": "Employees on Loan", 
-    "spending": 450140.88, 
-    "budget": 465037, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 70, 
-    "name": "Civic Center Rental", 
-    "spending": 303595.39, 
-    "budget": 222650.1, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 95, 
-    "name": "Charter School Office", 
-    "spending": 1051827.98, 
-    "budget": 1280350, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 100, 
-    "name": "All Other Local Sources", 
-    "spending": 24050.38, 
-    "budget": 17882, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 502, 
-    "name": "Fd14-tier3 Defer Maintenance", 
-    "spending": 0, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 720, 
-    "name": "Unrest Transportation", 
-    "spending": 14217920.51, 
-    "budget": 14314017, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 900, 
-    "name": "SB39 State Loan Drawdown", 
-    "spending": 0, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 1100, 
-    "name": "State Lottery", 
-    "spending": 4925707.78, 
-    "budget": 5527330, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 2600, 
-    "name": "Expanded Learning Opportunities Program (ELOP)", 
-    "spending": 4003117.38, 
-    "budget": 5536591.8, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3010, 
-    "name": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected", 
-    "spending": 7054382.3, 
-    "budget": 10030747.24, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3155, 
-    "name": "ESSA: Consolidated Administrative Funds", 
-    "spending": 0, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3180, 
-    "name": "NCLB: Title I, School Improvement Grant", 
-    "spending": 9511.79, 
-    "budget": 10062.05, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3182, 
-    "name": "ESSA: School Improvement Funding", 
-    "spending": 448364.89, 
-    "budget": 5669930.68, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 3210, 
-    "name": "Elementary and Secondary School Emergency Relief Fund", 
-    "spending": 3195993.37, 
-    "budget": 3850712.43, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3211, 
-    "name": "ESSER - California Community Schools Partnership Program", 
-    "spending": 1527862.95, 
-    "budget": 1660320.96, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 3212, 
-    "name": "Elementary and Secondary School Emergency Relief Fund II (ESSER II)", 
-    "spending": 18344692.27, 
-    "budget": 34318773.82, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3213, 
-    "name": "Elementary and Secondary School Emergency Relief (ESSER) Fund III", 
-    "spending": 14738542.51, 
-    "budget": 34073680.74, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 3215, 
-    "name": "Learning Loss Mitigation Governor's Emergency Education Relief (GEER)", 
-    "spending": 14349.37, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3216, 
-    "name": "Expanded Learning Opportunities (ELO) Grant ESSER II State Reserve", 
-    "spending": 171225, 
-    "budget": 651678, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3226, 
-    "name": "After School Education and Safety (ASES) Rate Increase: ESSER III State Reserve Afterschool programs", 
-    "spending": 1467280.11, 
-    "budget": 1652160.11, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3305, 
-    "name": "Special Ed: ARP IDEA Part B, Sec. 611, Local Assistance Entitlement", 
-    "spending": 0, 
-    "budget": 1507099, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3307, 
-    "name": "Special Ed: ARP IDEA Part B, Sec. 611, Local Assistance Coordinated Early Intervening Services", 
-    "spending": 0, 
-    "budget": 265959, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3308, 
-    "name": "Special Ed: ARP IDEA Part B, Sec. 619, Preschool Grants", 
-    "spending": 0, 
-    "budget": 129135, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3309, 
-    "name": "Special Ed: ARP IDEA Part B, Sec. 619, Preschool Grants Coordinated Early Intervening Services", 
-    "spending": 0, 
-    "budget": 22789, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3310, 
-    "name": "SE-IDEA BASIC GRANT PL94-142", 
-    "spending": 462468.83, 
-    "budget": 1780458, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3311, 
-    "name": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs", 
-    "spending": 57947, 
-    "budget": 57947, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3312, 
-    "name": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Early Intervening Services", 
-    "spending": 899596.86, 
-    "budget": 2605552, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3315, 
-    "name": "Special Ed: IDEA Preschool Grants, Part B, Sec 619", 
-    "spending": 8334, 
-    "budget": 8334, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3318, 
-    "name": "Special Ed: IDEA Part B, Sec 619, Preschool Grants Early Intervening Services", 
-    "spending": 0, 
-    "budget": 36322, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3327, 
-    "name": "Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611", 
-    "spending": 412668, 
-    "budget": 412668, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3345, 
-    "name": "Special Ed: IDEA Preschool Staff Development, Part B, Sec 619", 
-    "spending": 2545, 
-    "budget": 2545, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3385, 
-    "name": "Special Ed: IDEA Early Intervention Grants", 
-    "spending": 8317, 
-    "budget": 8317, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3395, 
-    "name": "Special Ed: Alternative Dispute Resolution", 
-    "spending": 17777, 
-    "budget": 17777, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3410, 
-    "name": "Transition Partnership Program", 
-    "spending": 428931.16, 
-    "budget": 451028, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 3550, 
-    "name": "Perkins Career and Technical Education", 
-    "spending": 134779.88, 
-    "budget": 128741.54, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 4035, 
-    "name": "ESSA: Title II, Part A, Supporting Effective Instruction", 
-    "spending": 2673415.46, 
-    "budget": 2912252.67, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 4124, 
-    "name": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program", 
-    "spending": 1250509.67, 
-    "budget": 1595265.2, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 4127, 
-    "name": "ESSA: Title IV, Part A, Student Support and Academic Enrichment", 
-    "spending": 296302.26, 
-    "budget": 1338285.45, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 4201, 
-    "name": "ESSA: Title III, Immigrant Education Program", 
-    "spending": 89275.14, 
-    "budget": 89275.14, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 4203, 
-    "name": "Bilingual Education: Discretionary Grants, Title III (14-15)", 
-    "spending": 1393119.65, 
-    "budget": 1802528.06, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 4510, 
-    "name": "Indian Education ", 
-    "spending": 38688, 
-    "budget": 38688, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5025, 
-    "name": "Federal Child Care, Center-based, FCTR, FHUD", 
-    "spending": 459689.41, 
-    "budget": 672398.28, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5058, 
-    "name": "Child Development Coronavirus Response and Relief Supplemental Appropriations Act (CRRSA) One-Time AB82", 
-    "spending": 19772.17, 
-    "budget": 451656.76, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 5059, 
-    "name": "hild Development: ARP California State Preschool Program One-time Stipend", 
-    "spending": 0, 
-    "budget": 445200, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5163, 
-    "name": "Child Dev American Rescue Plan Act (ARPA) Funded Stipends", 
-    "spending": 0, 
-    "budget": 241300, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5310, 
-    "name": "Child Nutrition School Program", 
-    "spending": 18962573.79, 
-    "budget": 21709528.42, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5320, 
-    "name": "Child Care Food Program (CCFP) and Meal Reimbursements", 
-    "spending": 2837291.39, 
-    "budget": 4735842, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 5465, 
-    "name": "Child Nutrition: SNP COVID-19 Emergency Operational Costs Reimbursement (ECR)", 
-    "spending": 8970.54, 
-    "budget": 9462.13, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5630, 
-    "name": "ESSA: Title IX, Part A, Homeless Assistance Grants", 
-    "spending": 2042.49, 
-    "budget": 7414.78, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5634, 
-    "name": "American Rescue Plan - Homeless Children and Youth II (ARP HYC II)", 
-    "spending": 36477, 
-    "budget": 397408, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5640, 
-    "name": "Medi-Cal Billing Option", 
-    "spending": 0, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5810, 
-    "name": "Other Federal", 
-    "spending": 111324.13, 
-    "budget": 111393.86, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5820, 
-    "name": "Emergency Connectivity Fund", 
-    "spending": 6315311.06, 
-    "budget": 6351780.88, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5844, 
-    "name": "Healthy Oakland Teens", 
-    "spending": 512066.81, 
-    "budget": 950636.51, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5846, 
-    "name": "Human Trafficking Prevention", 
-    "spending": 377218.42, 
-    "budget": 858554.61, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 5856, 
-    "name": "Department of Justice (DOJ) Community Oriented Policing (COPS) School Violence Prevention Program", 
-    "spending": 41291.67, 
-    "budget": 329336, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6010, 
-    "name": "After School Education and Safety (ASES)", 
-    "spending": 301996.52, 
-    "budget": 301996.52, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6011, 
-    "name": "After School Kids Code Grant Pilot Program", 
-    "spending": 114047.45, 
-    "budget": 155547.45, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6052, 
-    "name": "Pre-K and Family Literacy Support", 
-    "spending": 6253.2, 
-    "budget": 7500, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6105, 
-    "name": "California State Preschool Program", 
-    "spending": 5819691.81, 
-    "budget": 9373664.24, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6127, 
-    "name": "Child Development: California State Preschool Program QRIS Block Grant RFA", 
-    "spending": 22184.37, 
-    "budget": 50000, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6128, 
-    "name": "Inclusive Early Education Expansion Grant", 
-    "spending": 414407.3, 
-    "budget": 743889, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6266, 
-    "name": "Educator Effectiveness", 
-    "spending": 30861.02, 
-    "budget": 181679, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6300, 
-    "name": "Lottery: Instructional Materials", 
-    "spending": 2533793.78, 
-    "budget": 3240284.76, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6385, 
-    "name": "CA Partnership Academy (CTE): Riverside Community College", 
-    "spending": 0, 
-    "budget": 1000, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6387, 
-    "name": "Career Technical Education (CTE) Incentive Grant Program", 
-    "spending": 790373.71, 
-    "budget": 3765766.05, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6388, 
-    "name": "K12 Strong Workforce Grant", 
-    "spending": 2503611.35, 
-    "budget": 5683599, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6500, 
-    "name": "Special Education", 
-    "spending": 63641317.94, 
-    "budget": 67714245.73, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6515, 
-    "name": "Special Ed: Infant Discretionary Funds", 
-    "spending": 7106, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6520, 
-    "name": "Special Ed: Project WorkAbility I LEA", 
-    "spending": 318420, 
-    "budget": 318420, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6536, 
-    "name": "Special Ed: Dispute Prevention and Dispute Resolution", 
-    "spending": 54755.62, 
-    "budget": 731422, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6537, 
-    "name": "Learning Recovery Support", 
-    "spending": 668074.49, 
-    "budget": 3291398, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6546, 
-    "name": "Special Ed: Mental Health Services", 
-    "spending": 2943072, 
-    "budget": 2943072, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6547, 
-    "name": "Special Education Early Intervention Preschool Grant", 
-    "spending": 44755.03, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6690, 
-    "name": "Tobacco-Use Prevention Education: Grades 6-12", 
-    "spending": 258856.37, 
-    "budget": 318527.48, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 6695, 
-    "name": "Tobacco-Use Prevention Education: Prop 56", 
-    "spending": 249091, 
-    "budget": 249091, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7085, 
-    "name": "Prop 47: Learning Communities for School Success Program Grants", 
-    "spending": 409497.09, 
-    "budget": 1341640.85, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7220, 
-    "name": "Partnership Academies Program ", 
-    "spending": 25856, 
-    "budget": 48826.48, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7311, 
-    "name": "Classified School Employee Professional Development Block Grant", 
-    "spending": 85800, 
-    "budget": 255730.3, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7422, 
-    "name": "In-Person Instruction (IPI)", 
-    "spending": 2533.35, 
-    "budget": 3235.4, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7425, 
-    "name": "Expanded Learning Opportunities (ELO) Grant (Prop 98)\t", 
-    "spending": 5156730.43, 
-    "budget": 13583521.32, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7510, 
-    "name": "Low-Performing Students Block Grant", 
-    "spending": 162078.64, 
-    "budget": 152745.24, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7690, 
-    "name": "STRS On-Behalf Pension Contribution", 
-    "spending": 34197, 
-    "budget": 16539, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7710, 
-    "name": "State School Facilities Projects", 
-    "spending": 134786.17, 
-    "budget": 365398.27, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7810, 
-    "name": "OTHER STATE", 
-    "spending": 872513.21, 
-    "budget": 1390459.83, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7811, 
-    "name": "Refugee Program Bureau - Newcomer Education and Well-Being", 
-    "spending": 395297.99, 
-    "budget": 404487.63, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7812, 
-    "name": "Early Literacy Support Block", 
-    "spending": 0, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7813, 
-    "name": "CDFA Farm to School Innovation", 
-    "spending": 109403.43, 
-    "budget": 239463, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7814, 
-    "name": "Air Resources Board", 
-    "spending": 0, 
-    "budget": 168632, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 7816, 
-    "name": "CalNEW Grant CDSS", 
-    "spending": 139684.38, 
-    "budget": 611840, 
-    "year": 2021
-  }, 
-  {
-    "category": "State", 
-    "code": 8150, 
-    "name": "Ongoing & Major Maintenance Account", 
-    "spending": 19592534.36, 
-    "budget": 19807878, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 8210, 
-    "name": "Student Activity Funds", 
-    "spending": 457606.3, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9001, 
-    "name": "Wallace Foundation", 
-    "spending": 0, 
-    "budget": 566.96, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9003, 
-    "name": "Live Scan Fingerprint", 
-    "spending": 61163.5, 
-    "budget": 68241, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9006, 
-    "name": "Oakland Public Education Fund", 
-    "spending": 98299.33, 
-    "budget": 308522.6, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9009, 
-    "name": "Subsdiaries", 
-    "spending": 0, 
-    "budget": 1733.3, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9011, 
-    "name": "DONATIONS", 
-    "spending": 184638.66, 
-    "budget": 563356.94, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9017, 
-    "name": "BECHTEL", 
-    "spending": 65842.09, 
-    "budget": 68802.16, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9018, 
-    "name": "Oppenheimer Family Foundation", 
-    "spending": 1841.45, 
-    "budget": 13056.34, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9019, 
-    "name": "Cross-Age Mentoring Program", 
-    "spending": 25000, 
-    "budget": 340000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9021, 
-    "name": "Mitigation and Developer Fees", 
-    "spending": 624.84, 
-    "budget": 93300, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9023, 
-    "name": "Walgreens Grant", 
-    "spending": 8470.96, 
-    "budget": 8470.96, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9024, 
-    "name": "Oaklan Public Education Fund - OaklandUndivided", 
-    "spending": 6005.83, 
-    "budget": 207030, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9026, 
-    "name": "San Francisco Foundation", 
-    "spending": 58569.34, 
-    "budget": 160300.4, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9027, 
-    "name": "ELD Instruction Program", 
-    "spending": 12917.64, 
-    "budget": 260421.69, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9029, 
-    "name": "Risk Management Administrative", 
-    "spending": 0, 
-    "budget": 0, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9030, 
-    "name": "Workers' Comp", 
-    "spending": 9532215.09, 
-    "budget": 10851100, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9031, 
-    "name": "Property & Liability", 
-    "spending": 7648115.58, 
-    "budget": 7354622.43, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9032, 
-    "name": "Dental Self-Insured", 
-    "spending": 5632040.78, 
-    "budget": 6980000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9034, 
-    "name": "California Collaborative for Educational Excellence", 
-    "spending": 0, 
-    "budget": 21800, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9037, 
-    "name": "National Center for Teacher Residences - Black Educators Initiative", 
-    "spending": 56852.61, 
-    "budget": 120500, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9038, 
-    "name": "Eat Learn Play Foundation - Education Center Program", 
-    "spending": 0, 
-    "budget": 750000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Federal", 
-    "code": 9040, 
-    "name": "LEA Medi-Cal Former 5640", 
-    "spending": 689801.91, 
-    "budget": 830069, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9043, 
-    "name": "Stupski Foundation", 
-    "spending": 240842.11, 
-    "budget": 331367.47, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9044, 
-    "name": "City of Oakland", 
-    "spending": 404979.29, 
-    "budget": 502226.43, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9056, 
-    "name": "East Bay Community Foundation", 
-    "spending": 320.68, 
-    "budget": 320.95, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9057, 
-    "name": "East Bay Community Foundation", 
-    "spending": 0, 
-    "budget": 5742.23, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9058, 
-    "name": "Staff Development Fees", 
-    "spending": 1165.02, 
-    "budget": 1165.02, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9059, 
-    "name": "Philanthropic Ventures Foundation", 
-    "spending": 0, 
-    "budget": 3458.12, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9067, 
-    "name": "Walter & Elise Haas Fund", 
-    "spending": 167061.89, 
-    "budget": 569992.63, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9084, 
-    "name": "UCLA", 
-    "spending": 0, 
-    "budget": 2427.5, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9092, 
-    "name": "Supported Employment (SEMP) Mental Health / ACOE", 
-    "spending": 1656152.94, 
-    "budget": 1673296.42, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9096, 
-    "name": "Music Instruments", 
-    "spending": 3805.98, 
-    "budget": 42444.72, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9098, 
-    "name": "Southern Poverty Law Center", 
-    "spending": 0, 
-    "budget": 223.53, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9110, 
-    "name": "SUMS", 
-    "spending": 0, 
-    "budget": 8496.48, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9120, 
-    "name": "East Bay Community Foundation", 
-    "spending": 0, 
-    "budget": 2617.33, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9121, 
-    "name": "Oakland Fund Children & Youth", 
-    "spending": 572338.41, 
-    "budget": 778023.34, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9123, 
-    "name": "Rebate Programs", 
-    "spending": 11827.91, 
-    "budget": 73126.89, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9134, 
-    "name": "City of Oakland PEG funds", 
-    "spending": 242498.85, 
-    "budget": 437743.6, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9137, 
-    "name": "Casel Novo Foundation", 
-    "spending": 162478.38, 
-    "budget": 192727.05, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9161, 
-    "name": "AC Waste Management Authority", 
-    "spending": 60920.7, 
-    "budget": 345135.19, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9172, 
-    "name": "The California Endowment", 
-    "spending": 1000, 
-    "budget": 19500, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9180, 
-    "name": "Measure Y - City of Oakland", 
-    "spending": 86687.81, 
-    "budget": 101698.55, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9182, 
-    "name": "Rodgers Family Foundation", 
-    "spending": 0, 
-    "budget": 13785.31, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9185, 
-    "name": "FIRST 5 Alameda County (Prop 10)", 
-    "spending": 481387.4, 
-    "budget": 704687.11, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9201, 
-    "name": "Schusterman Family Foundation", 
-    "spending": 674880.66, 
-    "budget": 873177.05, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9206, 
-    "name": "Alameda County Public Health - Health and Wellness", 
-    "spending": 387127.81, 
-    "budget": 643569.67, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9209, 
-    "name": "New Teacher Center - Sidney Frank", 
-    "spending": 0, 
-    "budget": 74954.89, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9212, 
-    "name": "California Education Partners", 
-    "spending": 1569.11, 
-    "budget": 14613.66, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9225, 
-    "name": "Kaiser Health & Wellness w/EBCF", 
-    "spending": 3795674.08, 
-    "budget": 4932177.3, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9235, 
-    "name": "Altamont Education Advisory", 
-    "spending": 21111.01, 
-    "budget": 21111.01, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9236, 
-    "name": "Kenneth Rainin Foundation", 
-    "spending": 877241.96, 
-    "budget": 1384083.6, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9237, 
-    "name": "Kenneth Rainin Foundation", 
-    "spending": 403394.55, 
-    "budget": 712560.85, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9250, 
-    "name": "Packard Foundation", 
-    "spending": 20518.57, 
-    "budget": 20518.57, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9251, 
-    "name": "East Bay Asian Youth Center", 
-    "spending": 0, 
-    "budget": 175000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9255, 
-    "name": "Alameda County Unaccompanied Immigrant Youth", 
-    "spending": 11989.64, 
-    "budget": 20000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9263, 
-    "name": "Harvard Residency Program", 
-    "spending": 70000, 
-    "budget": 70000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9264, 
-    "name": "Hellman Foundation", 
-    "spending": 51669.95, 
-    "budget": 57984.78, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9269, 
-    "name": "WestEd", 
-    "spending": 2436.45, 
-    "budget": 8285.17, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9272, 
-    "name": "Mills Lesson Study Project", 
-    "spending": 4468.02, 
-    "budget": 8039.27, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9273, 
-    "name": "Light Awards Grant (Intrepid)", 
-    "spending": 0, 
-    "budget": 0.32, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9276, 
-    "name": "SAP Career Ladders Project", 
-    "spending": 0, 
-    "budget": 895.84, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9277, 
-    "name": "San Francisco Foundation", 
-    "spending": 402692.33, 
-    "budget": 459602.71, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9278, 
-    "name": "Kenneth Rainin Foundation", 
-    "spending": 0, 
-    "budget": 9249.17, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9279, 
-    "name": "Middle School Athletics Grant", 
-    "spending": 9980, 
-    "budget": 9980.55, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9283, 
-    "name": "Salesforce.Org", 
-    "spending": 2891836.84, 
-    "budget": 3170481.92, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9284, 
-    "name": "Intel Corperation", 
-    "spending": 31605.98, 
-    "budget": 31610.02, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9285, 
-    "name": "Rodgers Family Foundation", 
-    "spending": 0, 
-    "budget": 1957, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9286, 
-    "name": "Scribbles Software - Transcripts", 
-    "spending": 6243.76, 
-    "budget": 36167.39, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9287, 
-    "name": "Refugee Transitions", 
-    "spending": 15151.67, 
-    "budget": 19695, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9289, 
-    "name": "Oakland Ed Fund - AAGLS", 
-    "spending": 5585, 
-    "budget": 28433.72, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9290, 
-    "name": "Peralta College Foundation", 
-    "spending": 3930.32, 
-    "budget": 4009.12, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9294, 
-    "name": "CODE.ORG", 
-    "spending": 6241.02, 
-    "budget": 6439.64, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9295, 
-    "name": "Share Our Strength", 
-    "spending": 121100.54, 
-    "budget": 118984.08, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9297, 
-    "name": "BAPHR LGBTQ Support", 
-    "spending": 0, 
-    "budget": 1774.09, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9298, 
-    "name": "General Mills Foundation", 
-    "spending": 26446.18, 
-    "budget": 43250, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9301, 
-    "name": "Restorative Justice Fees", 
-    "spending": 1601.27, 
-    "budget": 38659.27, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9305, 
-    "name": "Educate 78 -Asp.Pri.Prg.", 
-    "spending": 0, 
-    "budget": 4578.5, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9313, 
-    "name": "Learning Policy Institute", 
-    "spending": 0, 
-    "budget": 5524.06, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9314, 
-    "name": "MDRC Grant", 
-    "spending": 308.08, 
-    "budget": 308.08, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9315, 
-    "name": "North Carolina State", 
-    "spending": 0, 
-    "budget": 15000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9316, 
-    "name": "PCY 360/365 Grant", 
-    "spending": 0, 
-    "budget": 7257.15, 
-    "year": 2021
-  }, 
-  {
-    "category": "Other Revenue", 
-    "code": 9318, 
-    "name": "Allt.Assessment Capstone Project", 
-    "spending": 9252.05, 
-    "budget": 23510.54, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9321, 
-    "name": "Workforce Development Plan", 
-    "spending": 6490, 
-    "budget": 55485.04, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9323, 
-    "name": "Fremont Bank Foundation", 
-    "spending": 30000, 
-    "budget": 30000, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9331, 
-    "name": "Rockefeller Philanthropy", 
-    "spending": 563.9, 
-    "budget": 210149.98, 
-    "year": 2021
-  }, 
-  {
-    "category": "Parcel Taxes", 
-    "code": 9332, 
-    "name": "Measure G1 - Parcel Tax", 
-    "spending": 8659467.02, 
-    "budget": 9306473.73, 
-    "year": 2021
-  }, 
-  {
-    "category": "Parcel Taxes", 
-    "code": 9333, 
-    "name": "Measure N - Parcel Tax", 
-    "spending": 3582347.27, 
-    "budget": 5209223.67, 
-    "year": 2021
-  }, 
-  {
-    "category": "Parcel Taxes", 
-    "code": 9334, 
-    "name": "Measure G - Parcel Tax", 
-    "spending": 3925944.94, 
-    "budget": 2764605, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9341, 
-    "name": "Tides Foundation", 
-    "spending": 0, 
-    "budget": 1280.36, 
-    "year": 2021
-  }, 
-  {
-    "category": "Philanthropy / Grants", 
-    "code": 9342, 
-    "name": "Golden State Worriors Community Foundation", 
-    "spending": 100290.89, 
-    "budget": 133856.4, 
-    "year": 2021
-  }, 
-  {
-    "category": "Bonds", 
-    "code": 9650, 
-    "name": "Measure J General Obligation Series 2019a", 
-    "spending": 9349611.11, 
-    "budget": 13702027.95, 
-    "year": 2021
-  }, 
-  {
-    "category": "Bonds", 
-    "code": 9655, 
-    "name": "Measure Y Series 2021A NonTax", 
-    "spending": 1806690.81, 
-    "budget": 4626121, 
-    "year": 2021
-  }, 
-  {
-    "category": "Bonds", 
-    "code": 9656, 
-    "name": "Measure Y Series 2021B Taxable", 
-    "spending": 677218.94, 
-    "budget": 55371.18, 
-    "year": 2021
-  }, 
-  {
-    "category": "Bonds", 
-    "code": 9799, 
-    "name": "CA - General Obligation Bond Series 2016a", 
-    "spending": 96275, 
-    "budget": 100575, 
-    "year": 2021
-  }, 
-  {
-    "category": "Bonds", 
-    "code": 9914, 
-    "name": "Deferred Maintenance Fund", 
-    "spending": 0, 
-    "budget": 3719560, 
-    "year": 2021
-  }, 
-  {
-    "category": "Bonds", 
-    "code": 9940, 
-    "name": "Reserve for Capital Projects", 
-    "spending": 43516.05, 
-    "budget": 60000, 
-    "year": 2021
+    "code": 0,
+    "name": "General Purpose",
+    "category": "General (Base)",
+    "spending": 68861283.17,
+    "budget": 67740164.24,
+    "year": 2022
+  },
+  {
+    "code": 4,
+    "name": "School Site Approved Appeals",
+    "category": "Supplemental & Concentration",
+    "spending": 994838.17,
+    "budget": 7298568.13,
+    "year": 2022
+  },
+  {
+    "code": 5,
+    "name": "Central Office Supplemental",
+    "category": "Supplemental & Concentration",
+    "spending": 26751946.62,
+    "budget": 45722229.5,
+    "year": 2022
+  },
+  {
+    "code": 6,
+    "name": "S&C Carryover",
+    "category": "Supplemental & Concentration",
+    "spending": 8560352.32,
+    "budget": 16293214.14,
+    "year": 2022
+  },
+  {
+    "code": 7,
+    "name": "One-time Additional Budget",
+    "category": "Supplemental & Concentration",
+    "spending": 2933566.3,
+    "budget": 2957593,
+    "year": 2022
+  },
+  {
+    "code": 20,
+    "name": "Home & Hospital Education",
+    "category": "State",
+    "spending": 760291.1,
+    "budget": 774828,
+    "year": 2022
+  },
+  {
+    "code": 39,
+    "name": "Prop 39 Charter Repairs",
+    "category": "Other Revenue",
+    "spending": 29029,
+    "budget": 51218,
+    "year": 2022
+  },
+  {
+    "code": 40,
+    "name": "Unrestricted AB1840",
+    "category": "State",
+    "spending": 1945591.34,
+    "budget": 3006945.12,
+    "year": 2022
+  },
+  {
+    "code": 41,
+    "name": "AB1840 School Consolidation",
+    "category": "State",
+    "spending": 852734.24,
+    "budget": 2470348.54,
+    "year": 2022
+  },
+  {
+    "code": 50,
+    "name": "Employees on Loan",
+    "category": "Other Revenue",
+    "spending": 335016.23,
+    "budget": 335016.23,
+    "year": 2022
+  },
+  {
+    "code": 70,
+    "name": "Civic Center Rental",
+    "category": "Other Revenue",
+    "spending": 404192.58,
+    "budget": 207104,
+    "year": 2022
+  },
+  {
+    "code": 95,
+    "name": "Charter School Office",
+    "category": "Other Revenue",
+    "spending": 972325.32,
+    "budget": 1299162,
+    "year": 2022
+  },
+  {
+    "code": 100,
+    "name": "All Other Local Sources",
+    "category": "Other Revenue",
+    "spending": 90749.43,
+    "budget": 59788.68,
+    "year": 2022
+  },
+  {
+    "code": 720,
+    "name": "Unrest Transportation",
+    "category": "State",
+    "spending": 15984538.58,
+    "budget": 15990435,
+    "year": 2022
+  },
+  {
+    "code": 901,
+    "name": "1000 Broadway Move",
+    "category": "General (Base)",
+    "spending": 237793.32,
+    "budget": 1572340,
+    "year": 2022
+  },
+  {
+    "code": 1100,
+    "name": "State Lottery",
+    "category": "State",
+    "spending": 1006388.72,
+    "budget": 2965379,
+    "year": 2022
+  },
+  {
+    "code": 2600,
+    "name": "Expanded Learning Opportunities Program (ELOP)",
+    "category": "State",
+    "spending": 17391407.59,
+    "budget": 25860982.02,
+    "year": 2022
+  },
+  {
+    "code": 3010,
+    "name": "ESSA: Title I, Part A, Basic Grants Low Income and Neglected",
+    "category": "Federal",
+    "spending": 8108608.64,
+    "budget": 7466746.87,
+    "year": 2022
+  },
+  {
+    "code": 3155,
+    "name": "ESSA: Consolidated Administrative Funds",
+    "category": "Federal",
+    "spending": 0,
+    "budget": 0,
+    "year": 2022
+  },
+  {
+    "code": 3182,
+    "name": "ESSA: School Improvement Funding",
+    "category": "Federal",
+    "spending": 866041.89,
+    "budget": 1873298.99,
+    "year": 2022
+  },
+  {
+    "code": 3210,
+    "name": "Elementary and Secondary School Emergency Relief Fund",
+    "category": "State",
+    "spending": 726985.77,
+    "budget": 727952.22,
+    "year": 2022
+  },
+  {
+    "code": 3211,
+    "name": "ESSER - California Community Schools Partnership Program",
+    "category": "Federal",
+    "spending": 1459543.95,
+    "budget": 1459543.95,
+    "year": 2022
+  },
+  {
+    "code": 3212,
+    "name": "Elementary and Secondary School Emergency Relief Fund II (ESSER II)",
+    "category": "State",
+    "spending": 19150775.41,
+    "budget": 18748846.72,
+    "year": 2022
+  },
+  {
+    "code": 3213,
+    "name": "Elementary and Secondary School Emergency Relief (ESSER) Fund III",
+    "category": "Federal",
+    "spending": 19057110.6,
+    "budget": 41662207.97,
+    "year": 2022
+  },
+  {
+    "code": 3215,
+    "name": "Learning Loss Mitigation Governor's Emergency Education Relief (GEER)",
+    "category": "State",
+    "spending": 34802.08,
+    "budget": 34868.05,
+    "year": 2022
+  },
+  {
+    "code": 3217,
+    "name": "Expanded Learning GEER II",
+    "category": "Federal",
+    "spending": 677552,
+    "budget": 661417.72,
+    "year": 2022
+  },
+  {
+    "code": 3218,
+    "name": "Expanded Learning Opportunities (ELO) Grant: ESSER III State Reserve Emergency Needs'",
+    "category": "Federal",
+    "spending": 322144.85,
+    "budget": 681805,
+    "year": 2022
+  },
+  {
+    "code": 3219,
+    "name": "Expanded Learning Opportunities (ELO) Grant: ESSER III State Reserve, Learning Loss",
+    "category": "Federal",
+    "spending": 568085.68,
+    "budget": 569017.36,
+    "year": 2022
+  },
+  {
+    "code": 3225,
+    "name": "After School Education and Safety (ASES) Rate Increase: ESSER III State Reserve Summer Learning Programs",
+    "category": "Federal",
+    "spending": 2430624.6,
+    "budget": 3452000,
+    "year": 2022
+  },
+  {
+    "code": 3226,
+    "name": "After School Education and Safety (ASES) Rate Increase: ESSER III State Reserve Afterschool programs",
+    "category": "Federal",
+    "spending": 400458.04,
+    "budget": 400458.04,
+    "year": 2022
+  },
+  {
+    "code": 3305,
+    "name": "Special Ed: ARP IDEA Part B, Sec. 611, Local Assistance Entitlement",
+    "category": "Federal",
+    "spending": 1507099,
+    "budget": 1507099,
+    "year": 2022
+  },
+  {
+    "code": 3307,
+    "name": "Special Ed: ARP IDEA Part B, Sec. 611, Local Assistance Coordinated Early Intervening Services",
+    "category": "Federal",
+    "spending": 86442.4,
+    "budget": 6942,
+    "year": 2022
+  },
+  {
+    "code": 3308,
+    "name": "Special Ed: ARP IDEA Part B, Sec. 619, Preschool Grants",
+    "category": "Federal",
+    "spending": 129135,
+    "budget": 129135,
+    "year": 2022
+  },
+  {
+    "code": 3309,
+    "name": "Special Ed: ARP IDEA Part B, Sec. 619, Preschool Grants Coordinated Early Intervening Services",
+    "category": "Federal",
+    "spending": 22789,
+    "budget": 22789,
+    "year": 2022
+  },
+  {
+    "code": 3310,
+    "name": "SE-IDEA BASIC GRANT PL94-142",
+    "category": "Federal",
+    "spending": 891481.31,
+    "budget": 283526.08,
+    "year": 2022
+  },
+  {
+    "code": 3311,
+    "name": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Private School ISPs",
+    "category": "Federal",
+    "spending": 358622,
+    "budget": 358622,
+    "year": 2022
+  },
+  {
+    "code": 3312,
+    "name": "Special Ed: IDEA Local Assistance, Part B, Sec 611, Early Intervening Services",
+    "category": "Federal",
+    "spending": 1963808.96,
+    "budget": 3023448.19,
+    "year": 2022
+  },
+  {
+    "code": 3315,
+    "name": "Special Ed: IDEA Preschool Grants, Part B, Sec 619",
+    "category": "Federal",
+    "spending": 5315.71,
+    "budget": 5316,
+    "year": 2022
+  },
+  {
+    "code": 3318,
+    "name": "Special Ed: IDEA Part B, Sec 619, Preschool Grants Early Intervening Services",
+    "category": "Federal",
+    "spending": 72263,
+    "budget": 72262.9,
+    "year": 2022
+  },
+  {
+    "code": 3327,
+    "name": "Special Ed: IDEA Mental Health Allocation Plan, Part B, Sec 611",
+    "category": "Federal",
+    "spending": 412668,
+    "budget": 412668,
+    "year": 2022
+  },
+  {
+    "code": 3345,
+    "name": "Special Ed: IDEA Preschool Staff Development, Part B, Sec 619",
+    "category": "Federal",
+    "spending": 1778,
+    "budget": 1778,
+    "year": 2022
+  },
+  {
+    "code": 3385,
+    "name": "Special Ed: IDEA Early Intervention Grants",
+    "category": "Federal",
+    "spending": 5361.33,
+    "budget": 5361,
+    "year": 2022
+  },
+  {
+    "code": 3395,
+    "name": "Special Ed: Alternative Dispute Resolution",
+    "category": "Federal",
+    "spending": 14922,
+    "budget": 14922,
+    "year": 2022
+  },
+  {
+    "code": 3410,
+    "name": "Transition Partnership Program",
+    "category": "Federal",
+    "spending": 416947.78,
+    "budget": 449525,
+    "year": 2022
+  },
+  {
+    "code": 3515,
+    "name": "Strengthening Career and Technical Education, 21st Century (Perkins V): State Leadership, Sec. 124",
+    "category": "Federal",
+    "spending": 0,
+    "budget": 13500,
+    "year": 2022
+  },
+  {
+    "code": 3550,
+    "name": "Perkins Career and Technical Education",
+    "category": "Federal",
+    "spending": 55828.21,
+    "budget": 71838.26,
+    "year": 2022
+  },
+  {
+    "code": 4035,
+    "name": "ESSA: Title II, Part A, Supporting Effective Instruction",
+    "category": "Federal",
+    "spending": 1979714.38,
+    "budget": 2153000.37,
+    "year": 2022
+  },
+  {
+    "code": 4124,
+    "name": "ESSA: Title IV, Part B, 21st Century Community Learning Centers Program",
+    "category": "Federal",
+    "spending": 1051066.54,
+    "budget": 1826469.53,
+    "year": 2022
+  },
+  {
+    "code": 4127,
+    "name": "ESSA: Title IV, Part A, Student Support and Academic Enrichment",
+    "category": "Federal",
+    "spending": 728714.35,
+    "budget": 1801213.74,
+    "year": 2022
+  },
+  {
+    "code": 4203,
+    "name": "Bilingual Education: Discretionary Grants, Title III (14-15)",
+    "category": "Federal",
+    "spending": 1310896.39,
+    "budget": 1972672.33,
+    "year": 2022
+  },
+  {
+    "code": 4510,
+    "name": "Indian Education ",
+    "category": "Federal",
+    "spending": 35204.24,
+    "budget": 38317,
+    "year": 2022
+  },
+  {
+    "code": 5025,
+    "name": "Federal Child Care, Center-based, FCTR, FHUD",
+    "category": "Federal",
+    "spending": 431823.39,
+    "budget": 571577.27,
+    "year": 2022
+  },
+  {
+    "code": 5058,
+    "name": "Child Development Coronavirus Response and Relief Supplemental Appropriations Act (CRRSA) One-Time AB82",
+    "category": "Federal",
+    "spending": 271075.2,
+    "budget": 431884.59,
+    "year": 2022
+  },
+  {
+    "code": 5059,
+    "name": "hild Development: ARP California State Preschool Program One-time Stipend",
+    "category": "State",
+    "spending": 325262.64,
+    "budget": 445200,
+    "year": 2022
+  },
+  {
+    "code": 5161,
+    "name": "Child Dev Prog CCTR PCA 15557",
+    "category": "Federal",
+    "spending": 32552.44,
+    "budget": 47218.6,
+    "year": 2022
+  },
+  {
+    "code": 5162,
+    "name": "Child Dev Prog CCTR PCA 14551",
+    "category": "Federal",
+    "spending": 0,
+    "budget": 1399933,
+    "year": 2022
+  },
+  {
+    "code": 5163,
+    "name": "Child Dev American Rescue Plan Act (ARPA) Funded Stipends",
+    "category": "Federal",
+    "spending": 0,
+    "budget": 241300,
+    "year": 2022
+  },
+  {
+    "code": 5310,
+    "name": "Child Nutrition School Program",
+    "category": "Federal",
+    "spending": 16169087.54,
+    "budget": 21990715.5,
+    "year": 2022
+  },
+  {
+    "code": 5320,
+    "name": "Child Care Food Program (CCFP) and Meal Reimbursements",
+    "category": "Federal",
+    "spending": 5294585.72,
+    "budget": 3291341,
+    "year": 2022
+  },
+  {
+    "code": 5465,
+    "name": "Child Nutrition: SNP COVID-19 Emergency Operational Costs Reimbursement (ECR)",
+    "category": "State",
+    "spending": 491.59,
+    "budget": 491.59,
+    "year": 2022
+  },
+  {
+    "code": 5466,
+    "name": "Supply Chain Assistance (SCA) Funds",
+    "category": "Federal",
+    "spending": 804627.39,
+    "budget": 808163.2,
+    "year": 2022
+  },
+  {
+    "code": 5630,
+    "name": "ESSA: Title IX, Part A, Homeless Assistance Grants",
+    "category": "Federal",
+    "spending": 26656.49,
+    "budget": 30250,
+    "year": 2022
+  },
+  {
+    "code": 5634,
+    "name": "American Rescue Plan - Homeless Children and Youth II (ARP HYC II)",
+    "category": "Federal",
+    "spending": 103867.21,
+    "budget": 360931,
+    "year": 2022
+  },
+  {
+    "code": 5810,
+    "name": "Other Federal",
+    "category": "Federal",
+    "spending": 111315.11,
+    "budget": 169596.76,
+    "year": 2022
+  },
+  {
+    "code": 5844,
+    "name": "Healthy Oakland Teens",
+    "category": "Federal",
+    "spending": 547080.43,
+    "budget": 848569.7,
+    "year": 2022
+  },
+  {
+    "code": 5846,
+    "name": "Human Trafficking Prevention",
+    "category": "Federal",
+    "spending": 473634.77,
+    "budget": 894843,
+    "year": 2022
+  },
+  {
+    "code": 5856,
+    "name": "Department of Justice (DOJ) Community Oriented Policing (COPS) School Violence Prevention Program",
+    "category": "Federal",
+    "spending": 197714.03,
+    "budget": 288044.33,
+    "year": 2022
+  },
+  {
+    "code": 6010,
+    "name": "After School Education and Safety (ASES)",
+    "category": "State",
+    "spending": 1271225.56,
+    "budget": 1339418.73,
+    "year": 2022
+  },
+  {
+    "code": 6052,
+    "name": "Pre-K and Family Literacy Support",
+    "category": "State",
+    "spending": 7500,
+    "budget": 7500,
+    "year": 2022
+  },
+  {
+    "code": 6053,
+    "name": "Child Dev: Universal Prekindergarten Planning & Implementation Grant",
+    "category": "State",
+    "spending": 682413.73,
+    "budget": 681935,
+    "year": 2022
+  },
+  {
+    "code": 6105,
+    "name": "California State Preschool Program",
+    "category": "State",
+    "spending": 7064432.82,
+    "budget": 9683789.92,
+    "year": 2022
+  },
+  {
+    "code": 6127,
+    "name": "Child Development: California State Preschool Program QRIS Block Grant RFA",
+    "category": "State",
+    "spending": 0,
+    "budget": 27815.63,
+    "year": 2022
+  },
+  {
+    "code": 6128,
+    "name": "Inclusive Early Education Expansion Grant",
+    "category": "State",
+    "spending": 323219.99,
+    "budget": 1386061.9,
+    "year": 2022
+  },
+  {
+    "code": 6266,
+    "name": "Educator Effectiveness",
+    "category": "State",
+    "spending": 597853.13,
+    "budget": 1412670.98,
+    "year": 2022
+  },
+  {
+    "code": 6271,
+    "name": "CA National Board Certified Teacher Incentive Program",
+    "category": "State",
+    "spending": 60000,
+    "budget": 60000,
+    "year": 2022
+  },
+  {
+    "code": 6300,
+    "name": "Lottery: Instructional Materials",
+    "category": "State",
+    "spending": 2913578.56,
+    "budget": 3689147.55,
+    "year": 2022
+  },
+  {
+    "code": 6332,
+    "name": "CA Community Schools Partnership Program (CCSPP): Implementation Grant",
+    "category": "State",
+    "spending": 569741.53,
+    "budget": 1425000,
+    "year": 2022
+  },
+  {
+    "code": 6385,
+    "name": "CA Partnership Academy (CTE): Riverside Community College",
+    "category": "State",
+    "spending": 0,
+    "budget": 1000,
+    "year": 2022
+  },
+  {
+    "code": 6387,
+    "name": "Career Technical Education (CTE) Incentive Grant Program",
+    "category": "State",
+    "spending": 907111.35,
+    "budget": 4476014.05,
+    "year": 2022
+  },
+  {
+    "code": 6388,
+    "name": "K12 Strong Workforce Grant",
+    "category": "State",
+    "spending": 4524956.49,
+    "budget": 6766160,
+    "year": 2022
+  },
+  {
+    "code": 6500,
+    "name": "Special Education",
+    "category": "State",
+    "spending": 62765480.64,
+    "budget": 61906167.14,
+    "year": 2022
+  },
+  {
+    "code": 6515,
+    "name": "Special Ed: Infant Discretionary Funds",
+    "category": "State",
+    "spending": 685.76,
+    "budget": 186,
+    "year": 2022
+  },
+  {
+    "code": 6520,
+    "name": "Special Ed: Project WorkAbility I LEA",
+    "category": "State",
+    "spending": 318420,
+    "budget": 318420,
+    "year": 2022
+  },
+  {
+    "code": 6536,
+    "name": "Special Ed: Dispute Prevention and Dispute Resolution",
+    "category": "State",
+    "spending": 676666.38,
+    "budget": 676666.38,
+    "year": 2022
+  },
+  {
+    "code": 6537,
+    "name": "Learning Recovery Support",
+    "category": "State",
+    "spending": 2623323.51,
+    "budget": 2623323.51,
+    "year": 2022
+  },
+  {
+    "code": 6546,
+    "name": "Special Ed: Mental Health Services",
+    "category": "State",
+    "spending": 2525848,
+    "budget": 2525852,
+    "year": 2022
+  },
+  {
+    "code": 6547,
+    "name": "Special Education Early Intervention Preschool Grant",
+    "category": "State",
+    "spending": 420141.24,
+    "budget": 340942.41,
+    "year": 2022
+  },
+  {
+    "code": 6690,
+    "name": "Tobacco-Use Prevention Education: Grades 6-12",
+    "category": "State",
+    "spending": 190938,
+    "budget": 298526.33,
+    "year": 2022
+  },
+  {
+    "code": 6695,
+    "name": "Tobacco-Use Prevention Education: Prop 56",
+    "category": "State",
+    "spending": 208804,
+    "budget": 249091,
+    "year": 2022
+  },
+  {
+    "code": 7028,
+    "name": "Kitchen Infrastructure Upgrade Funds",
+    "category": "State",
+    "spending": 581537.74,
+    "budget": 826909,
+    "year": 2022
+  },
+  {
+    "code": 7029,
+    "name": "Food Service Staff Training",
+    "category": "State",
+    "spending": 111124.59,
+    "budget": 289128,
+    "year": 2022
+  },
+  {
+    "code": 7085,
+    "name": "Prop 47: Learning Communities for School Success Program Grants",
+    "category": "State",
+    "spending": 254581.86,
+    "budget": 1111741.26,
+    "year": 2022
+  },
+  {
+    "code": 7220,
+    "name": "Partnership Academies Program ",
+    "category": "State",
+    "spending": 16901.79,
+    "budget": 38747.23,
+    "year": 2022
+  },
+  {
+    "code": 7311,
+    "name": "Classified School Employee Professional Development Block Grant",
+    "category": "State",
+    "spending": 116251.48,
+    "budget": 169930.3,
+    "year": 2022
+  },
+  {
+    "code": 7412,
+    "name": "A-G Access Grant",
+    "category": "State",
+    "spending": 81592.81,
+    "budget": 214845,
+    "year": 2022
+  },
+  {
+    "code": 7413,
+    "name": "A-G Learning Loss Mitigation",
+    "category": "State",
+    "spending": 25139.67,
+    "budget": 207927,
+    "year": 2022
+  },
+  {
+    "code": 7425,
+    "name": "Expanded Learning Opportunities (ELO) Grant (Prop 98)\t",
+    "category": "State",
+    "spending": 626232.85,
+    "budget": 604694.06,
+    "year": 2022
+  },
+  {
+    "code": 7426,
+    "name": "Expanded Learning Opportunities (ELO) Grant: Paraprofessional Staff",
+    "category": "State",
+    "spending": 44400.26,
+    "budget": 43522.63,
+    "year": 2022
+  },
+  {
+    "code": 7690,
+    "name": "STRS On-Behalf Pension Contribution",
+    "category": "State",
+    "spending": 24732,
+    "budget": 22190,
+    "year": 2022
+  },
+  {
+    "code": 7710,
+    "name": "State School Facilities Projects",
+    "category": "State",
+    "spending": 65665,
+    "budget": 103245,
+    "year": 2022
+  },
+  {
+    "code": 7810,
+    "name": "OTHER STATE",
+    "category": "State",
+    "spending": 915577.52,
+    "budget": 2274050.89,
+    "year": 2022
+  },
+  {
+    "code": 7811,
+    "name": "Refugee Program Bureau - Newcomer Education and Well-Being",
+    "category": "State",
+    "spending": 593763.04,
+    "budget": 609189.64,
+    "year": 2022
+  },
+  {
+    "code": 7813,
+    "name": "CDFA Farm to School Innovation",
+    "category": "State",
+    "spending": 128332.81,
+    "budget": 130059.57,
+    "year": 2022
+  },
+  {
+    "code": 7814,
+    "name": "Air Resources Board",
+    "category": "State",
+    "spending": 175415.9,
+    "budget": 175415.9,
+    "year": 2022
+  },
+  {
+    "code": 7816,
+    "name": "CalNEW Grant CDSS",
+    "category": "State",
+    "spending": 860880.08,
+    "budget": 1083995.62,
+    "year": 2022
+  },
+  {
+    "code": 7819,
+    "name": "Dual Language Immersion",
+    "category": "State",
+    "spending": 96812.45,
+    "budget": 160000,
+    "year": 2022
+  },
+  {
+    "code": 8150,
+    "name": "Ongoing & Major Maintenance Account",
+    "category": "State",
+    "spending": 22217092.79,
+    "budget": 21963153.07,
+    "year": 2022
+  },
+  {
+    "code": 8210,
+    "name": "Student Activity Funds",
+    "category": "Other Revenue",
+    "spending": 801922.27,
+    "budget": 400000,
+    "year": 2022
+  },
+  {
+    "code": 9003,
+    "name": "Live Scan Fingerprint",
+    "category": "Other Revenue",
+    "spending": 11580.25,
+    "budget": 50000,
+    "year": 2022
+  },
+  {
+    "code": 9006,
+    "name": "Oakland Public Education Fund",
+    "category": "Philanthropy / Grants",
+    "spending": 4972.08,
+    "budget": 210223.27,
+    "year": 2022
+  },
+  {
+    "code": 9011,
+    "name": "DONATIONS",
+    "category": "Philanthropy / Grants",
+    "spending": 151375.07,
+    "budget": 697116.21,
+    "year": 2022
+  },
+  {
+    "code": 9017,
+    "name": "BECHTEL",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 2960.07,
+    "year": 2022
+  },
+  {
+    "code": 9018,
+    "name": "Oppenheimer Family Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 11214.89,
+    "year": 2022
+  },
+  {
+    "code": 9019,
+    "name": "Cross-Age Mentoring Program",
+    "category": "Other Revenue",
+    "spending": 53363.3,
+    "budget": 176475,
+    "year": 2022
+  },
+  {
+    "code": 9021,
+    "name": "Mitigation and Developer Fees",
+    "category": "Other Revenue",
+    "spending": 1444.2,
+    "budget": 592244.2,
+    "year": 2022
+  },
+  {
+    "code": 9024,
+    "name": "Oaklan Public Education Fund - OaklandUndivided",
+    "category": "Philanthropy / Grants",
+    "spending": 221777.07,
+    "budget": 367084.44,
+    "year": 2022
+  },
+  {
+    "code": 9026,
+    "name": "San Francisco Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 271353.81,
+    "budget": 280877.49,
+    "year": 2022
+  },
+  {
+    "code": 9027,
+    "name": "ELD Instruction Program",
+    "category": "Other Revenue",
+    "spending": 47213.41,
+    "budget": 247504.05,
+    "year": 2022
+  },
+  {
+    "code": 9029,
+    "name": "Risk Management Administrative",
+    "category": "Other Revenue",
+    "spending": 0,
+    "budget": 0,
+    "year": 2022
+  },
+  {
+    "code": 9030,
+    "name": "Workers' Comp",
+    "category": "Other Revenue",
+    "spending": 8324928.98,
+    "budget": 10817804,
+    "year": 2022
+  },
+  {
+    "code": 9031,
+    "name": "Property & Liability",
+    "category": "Other Revenue",
+    "spending": 8224462.76,
+    "budget": 8913008.94,
+    "year": 2022
+  },
+  {
+    "code": 9032,
+    "name": "Dental Self-Insured",
+    "category": "Other Revenue",
+    "spending": 5546710.49,
+    "budget": 6500715,
+    "year": 2022
+  },
+  {
+    "code": 9034,
+    "name": "California Collaborative for Educational Excellence",
+    "category": "Philanthropy / Grants",
+    "spending": 19705.88,
+    "budget": 21800,
+    "year": 2022
+  },
+  {
+    "code": 9037,
+    "name": "National Center for Teacher Residences - Black Educators Initiative",
+    "category": "Philanthropy / Grants",
+    "spending": 39293.55,
+    "budget": 119647.39,
+    "year": 2022
+  },
+  {
+    "code": 9038,
+    "name": "Eat Learn Play Foundation - Education Center Program",
+    "category": "Philanthropy / Grants",
+    "spending": 72240.44,
+    "budget": 1010000,
+    "year": 2022
+  },
+  {
+    "code": 9040,
+    "name": "LEA Medi-Cal Former 5640",
+    "category": "Federal",
+    "spending": 725094.37,
+    "budget": 985640.72,
+    "year": 2022
+  },
+  {
+    "code": 9043,
+    "name": "Stupski Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 339691.15,
+    "budget": 425525.36,
+    "year": 2022
+  },
+  {
+    "code": 9044,
+    "name": "City of Oakland",
+    "category": "Other Revenue",
+    "spending": 597247.14,
+    "budget": 597247.14,
+    "year": 2022
+  },
+  {
+    "code": 9046,
+    "name": "Schwab Charitable through OPEF",
+    "category": "Philanthropy / Grants",
+    "spending": 6636.71,
+    "budget": 25000,
+    "year": 2022
+  },
+  {
+    "code": 9048,
+    "name": "EatLearnPlay Foundation for OAL",
+    "category": "Philanthropy / Grants",
+    "spending": 96950,
+    "budget": 150000,
+    "year": 2022
+  },
+  {
+    "code": 9059,
+    "name": "Philanthropic Ventures Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 337.44,
+    "budget": 3958.12,
+    "year": 2022
+  },
+  {
+    "code": 9061,
+    "name": "Sutter Health Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 75000,
+    "year": 2022
+  },
+  {
+    "code": 9062,
+    "name": "ConnectED",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 75000,
+    "year": 2022
+  },
+  {
+    "code": 9063,
+    "name": "Gilead via OPEF",
+    "category": "Philanthropy / Grants",
+    "spending": 90836.94,
+    "budget": 126000,
+    "year": 2022
+  },
+  {
+    "code": 9067,
+    "name": "Walter & Elise Haas Fund",
+    "category": "Philanthropy / Grants",
+    "spending": 202622.01,
+    "budget": 402930.74,
+    "year": 2022
+  },
+  {
+    "code": 9084,
+    "name": "UCLA",
+    "category": "Philanthropy / Grants",
+    "spending": 2093.47,
+    "budget": 2427.5,
+    "year": 2022
+  },
+  {
+    "code": 9092,
+    "name": "Supported Employment (SEMP) Mental Health / ACOE",
+    "category": "Philanthropy / Grants",
+    "spending": 1742431.45,
+    "budget": 1813045.85,
+    "year": 2022
+  },
+  {
+    "code": 9096,
+    "name": "Music Instruments",
+    "category": "Philanthropy / Grants",
+    "spending": 85790.64,
+    "budget": 114493.74,
+    "year": 2022
+  },
+  {
+    "code": 9110,
+    "name": "SUMS",
+    "category": "Other Revenue",
+    "spending": 0,
+    "budget": 8496.48,
+    "year": 2022
+  },
+  {
+    "code": 9121,
+    "name": "Oakland Fund Children & Youth",
+    "category": "Philanthropy / Grants",
+    "spending": 508436.11,
+    "budget": 567999.27,
+    "year": 2022
+  },
+  {
+    "code": 9122,
+    "name": "City of Oakland Department of Violence Prevention",
+    "category": "Philanthropy / Grants",
+    "spending": 151582.09,
+    "budget": 200000,
+    "year": 2022
+  },
+  {
+    "code": 9123,
+    "name": "Rebate Programs",
+    "category": "Other Revenue",
+    "spending": 18568.75,
+    "budget": 158492.77,
+    "year": 2022
+  },
+  {
+    "code": 9134,
+    "name": "City of Oakland PEG funds",
+    "category": "Other Revenue",
+    "spending": 11754.88,
+    "budget": 11759.65,
+    "year": 2022
+  },
+  {
+    "code": 9137,
+    "name": "Casel Novo Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 12363.58,
+    "budget": 30248.67,
+    "year": 2022
+  },
+  {
+    "code": 9149,
+    "name": "Alameda County Health Care Services",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 13811.45,
+    "year": 2022
+  },
+  {
+    "code": 9157,
+    "name": "City of Livermore",
+    "category": "Other Revenue",
+    "spending": 31915.17,
+    "budget": 31915.17,
+    "year": 2022
+  },
+  {
+    "code": 9161,
+    "name": "AC Waste Management Authority",
+    "category": "Philanthropy / Grants",
+    "spending": 85913.72,
+    "budget": 552147.76,
+    "year": 2022
+  },
+  {
+    "code": 9172,
+    "name": "The California Endowment",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 18500,
+    "year": 2022
+  },
+  {
+    "code": 9180,
+    "name": "Measure Y - City of Oakland",
+    "category": "Other Revenue",
+    "spending": 85218.4,
+    "budget": 100010.74,
+    "year": 2022
+  },
+  {
+    "code": 9182,
+    "name": "Rodgers Family Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 13785.31,
+    "year": 2022
+  },
+  {
+    "code": 9185,
+    "name": "FIRST 5 Alameda County (Prop 10)",
+    "category": "Other Revenue",
+    "spending": 368479.04,
+    "budget": 430206.87,
+    "year": 2022
+  },
+  {
+    "code": 9186,
+    "name": "\"First 5\" Measure AA",
+    "category": "Other Revenue",
+    "spending": 439432.44,
+    "budget": 0,
+    "year": 2022
+  },
+  {
+    "code": 9201,
+    "name": "Schusterman Family Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 189088.57,
+    "budget": 918296.39,
+    "year": 2022
+  },
+  {
+    "code": 9206,
+    "name": "Alameda County Public Health - Health and Wellness",
+    "category": "Philanthropy / Grants",
+    "spending": 417202.21,
+    "budget": 659328.26,
+    "year": 2022
+  },
+  {
+    "code": 9209,
+    "name": "New Teacher Center - Sidney Frank",
+    "category": "Philanthropy / Grants",
+    "spending": 62907.38,
+    "budget": 99954.89,
+    "year": 2022
+  },
+  {
+    "code": 9212,
+    "name": "California Education Partners",
+    "category": "Philanthropy / Grants",
+    "spending": 12102.35,
+    "budget": 13044.55,
+    "year": 2022
+  },
+  {
+    "code": 9213,
+    "name": "Alameda Alliance for Health",
+    "category": "Philanthropy / Grants",
+    "spending": 4625,
+    "budget": 50000,
+    "year": 2022
+  },
+  {
+    "code": 9216,
+    "name": "Hrsa Grnt Mcclymonds Youth/fam",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 12324.84,
+    "year": 2022
+  },
+  {
+    "code": 9225,
+    "name": "Kaiser Health & Wellness w/EBCF",
+    "category": "Philanthropy / Grants",
+    "spending": 3377270.15,
+    "budget": 5639334.59,
+    "year": 2022
+  },
+  {
+    "code": 9236,
+    "name": "Kenneth Rainin Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 500026.44,
+    "budget": 546327.35,
+    "year": 2022
+  },
+  {
+    "code": 9237,
+    "name": "Kenneth Rainin Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 571031.07,
+    "budget": 839166.3,
+    "year": 2022
+  },
+  {
+    "code": 9250,
+    "name": "Packard Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 29321.99,
+    "budget": 44000,
+    "year": 2022
+  },
+  {
+    "code": 9251,
+    "name": "East Bay Asian Youth Center",
+    "category": "Philanthropy / Grants",
+    "spending": 204049.39,
+    "budget": 204049.39,
+    "year": 2022
+  },
+  {
+    "code": 9255,
+    "name": "Alameda County Unaccompanied Immigrant Youth",
+    "category": "Philanthropy / Grants",
+    "spending": 2493.9,
+    "budget": 28660.36,
+    "year": 2022
+  },
+  {
+    "code": 9263,
+    "name": "Harvard Residency Program",
+    "category": "Philanthropy / Grants",
+    "spending": 70000,
+    "budget": 70000,
+    "year": 2022
+  },
+  {
+    "code": 9269,
+    "name": "WestEd",
+    "category": "Philanthropy / Grants",
+    "spending": 22067.87,
+    "budget": 155849.72,
+    "year": 2022
+  },
+  {
+    "code": 9272,
+    "name": "Mills Lesson Study Project",
+    "category": "Philanthropy / Grants",
+    "spending": 3420.84,
+    "budget": 3571.25,
+    "year": 2022
+  },
+  {
+    "code": 9277,
+    "name": "San Francisco Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 5911.03,
+    "year": 2022
+  },
+  {
+    "code": 9283,
+    "name": "Salesforce.Org",
+    "category": "Philanthropy / Grants",
+    "spending": 2576739.78,
+    "budget": 2857835.61,
+    "year": 2022
+  },
+  {
+    "code": 9286,
+    "name": "Scribbles Software - Transcripts",
+    "category": "Other Revenue",
+    "spending": 10674.39,
+    "budget": 67698.73,
+    "year": 2022
+  },
+  {
+    "code": 9287,
+    "name": "Refugee Transitions",
+    "category": "Other Revenue",
+    "spending": 2656.6,
+    "budget": 4543.33,
+    "year": 2022
+  },
+  {
+    "code": 9289,
+    "name": "Oakland Ed Fund - AAGLS",
+    "category": "Philanthropy / Grants",
+    "spending": 2000,
+    "budget": 22848.72,
+    "year": 2022
+  },
+  {
+    "code": 9291,
+    "name": "Silver Giving Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 20322.48,
+    "budget": 70000,
+    "year": 2022
+  },
+  {
+    "code": 9294,
+    "name": "CODE.ORG",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 198.62,
+    "year": 2022
+  },
+  {
+    "code": 9295,
+    "name": "Share Our Strength",
+    "category": "Philanthropy / Grants",
+    "spending": 90883.54,
+    "budget": 90883.54,
+    "year": 2022
+  },
+  {
+    "code": 9297,
+    "name": "BAPHR LGBTQ Support",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 1774.09,
+    "year": 2022
+  },
+  {
+    "code": 9298,
+    "name": "General Mills Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 2085.7,
+    "budget": 16803.82,
+    "year": 2022
+  },
+  {
+    "code": 9301,
+    "name": "Restorative Justice Fees",
+    "category": "Other Revenue",
+    "spending": 2724.17,
+    "budget": 37058,
+    "year": 2022
+  },
+  {
+    "code": 9305,
+    "name": "Educate 78 -Asp.Pri.Prg.",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 5463.04,
+    "year": 2022
+  },
+  {
+    "code": 9313,
+    "name": "Learning Policy Institute",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 5524.06,
+    "year": 2022
+  },
+  {
+    "code": 9315,
+    "name": "North Carolina State",
+    "category": "Philanthropy / Grants",
+    "spending": 0,
+    "budget": 15000,
+    "year": 2022
+  },
+  {
+    "code": 9316,
+    "name": "PCY 360/365 Grant",
+    "category": "Philanthropy / Grants",
+    "spending": 1907.51,
+    "budget": 7257.15,
+    "year": 2022
+  },
+  {
+    "code": 9318,
+    "name": "Allt.Assessment Capstone Project",
+    "category": "Other Revenue",
+    "spending": 2880.56,
+    "budget": 14258.49,
+    "year": 2022
+  },
+  {
+    "code": 9321,
+    "name": "Workforce Development Plan",
+    "category": "Philanthropy / Grants",
+    "spending": 52221.76,
+    "budget": 62583.21,
+    "year": 2022
+  },
+  {
+    "code": 9331,
+    "name": "Rockefeller Philanthropy",
+    "category": "Philanthropy / Grants",
+    "spending": 201098.71,
+    "budget": 201098.71,
+    "year": 2022
+  },
+  {
+    "code": 9332,
+    "name": "Measure G1 - Parcel Tax",
+    "category": "Parcel Taxes",
+    "spending": 8637860.74,
+    "budget": 9717634.98,
+    "year": 2022
+  },
+  {
+    "code": 9333,
+    "name": "Measure N - Parcel Tax",
+    "category": "Parcel Taxes",
+    "spending": 3758368.58,
+    "budget": 6071137.5,
+    "year": 2022
+  },
+  {
+    "code": 9334,
+    "name": "Measure G - Parcel Tax",
+    "category": "Parcel Taxes",
+    "spending": 6785044.51,
+    "budget": 10274842.72,
+    "year": 2022
+  },
+  {
+    "code": 9342,
+    "name": "Golden State Worriors Community Foundation",
+    "category": "Philanthropy / Grants",
+    "spending": 29328.28,
+    "budget": 214686.12,
+    "year": 2022
+  },
+  {
+    "code": 9399,
+    "name": "Build America Bond - Series 2009b",
+    "category": "Bonds",
+    "spending": 67466,
+    "budget": 150757.58,
+    "year": 2022
+  },
+  {
+    "code": 9650,
+    "name": "Measure J General Obligation Series 2019a",
+    "category": "Bonds",
+    "spending": 658221.6,
+    "budget": 2253808.23,
+    "year": 2022
+  },
+  {
+    "code": 9655,
+    "name": "Measure Y Series 2021A NonTax",
+    "category": "Bonds",
+    "spending": 13108797.51,
+    "budget": 17305077.21,
+    "year": 2022
+  },
+  {
+    "code": 9656,
+    "name": "Measure Y Series 2021B Taxable",
+    "category": "Bonds",
+    "spending": 2894228.37,
+    "budget": 3544628.82,
+    "year": 2022
+  },
+  {
+    "code": 9750,
+    "name": "Measure J General Obligation Series 2019b",
+    "category": "Bonds",
+    "spending": 157000,
+    "budget": 157000,
+    "year": 2022
+  },
+  {
+    "code": 9799,
+    "name": "CA - General Obligation Bond Series 2016a",
+    "category": "Bonds",
+    "spending": 88620.11,
+    "budget": 146006.49,
+    "year": 2022
+  },
+  {
+    "code": 9914,
+    "name": "Deferred Maintenance Fund",
+    "category": "Bonds",
+    "spending": 236382.75,
+    "budget": 236382.75,
+    "year": 2022
+  },
+  {
+    "code": 9940,
+    "name": "Reserve for Capital Projects",
+    "category": "Bonds",
+    "spending": 42584.74,
+    "budget": 108633.49,
+    "year": 2022
   }
 ]
