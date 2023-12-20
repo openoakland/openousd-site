@@ -1,4 +1,4 @@
-FROM node:14-buster
+FROM node:14-bullseye
 
 WORKDIR /openousd
 COPY package*.json ./
