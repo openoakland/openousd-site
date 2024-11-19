@@ -3,12 +3,12 @@
     "code": 908,
     "name": "Associated Student Body Funds",
     "category": "Student Services",
-    "spending": 870026.48,
-    "budget": 400000,
-    "year": 2022,
+    "spending": 753120.33,
+    "budget": 440200,
+    "year": 2023,
     "eoy_total_fte": null,
     "eoy_total_positions": null,
-    "remaining_budget_percent": -117.5,
+    "remaining_budget_percent": -71.1,
     "staff_roles": [],
     "staff_bargaining_units": []
   },
@@ -16,12 +16,12 @@
     "code": 940,
     "name": "Board Of Education",
     "category": "Administrative Offices",
-    "spending": 1706048.86,
-    "budget": 1995776.29,
-    "year": 2022,
+    "spending": 1072447.99,
+    "budget": 1271338.84,
+    "year": 2023,
     "eoy_total_fte": 10,
     "eoy_total_positions": 10,
-    "remaining_budget_percent": 14.5,
+    "remaining_budget_percent": 15.6,
     "staff_roles": [
       {
         "role_description": "Admin Coordinator Board of Edu",
@@ -83,26 +83,33 @@
         "eoy_total_positions": 10,
         "spending": 1706048.86,
         "budget": 1995776.29
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 10,
+        "eoy_total_positions": 10,
+        "spending": 1072447.99,
+        "budget": 1271338.84
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
+      "previous_year": 2022,
       "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": 926111.29,
-      "budget": 996793.29
+      "spending": -633600.87,
+      "budget": -724437.45
     }
   },
   {
     "code": 988,
     "name": "Buildings & Grounds",
     "category": "Facilities",
-    "spending": 21349811.82,
-    "budget": 31270140.16,
-    "year": 2022,
-    "eoy_total_fte": 96,
-    "eoy_total_positions": 98,
-    "remaining_budget_percent": 31.7,
+    "spending": 27336661.63,
+    "budget": 27666451.47,
+    "year": 2023,
+    "eoy_total_fte": 102,
+    "eoy_total_positions": 102,
+    "remaining_budget_percent": 1.2,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant I",
@@ -138,7 +145,7 @@
       },
       {
         "role_description": "Gardener",
-        "eoy_total_positions_for_role": 12
+        "eoy_total_positions_for_role": 14
       },
       {
         "role_description": "Glazier",
@@ -193,7 +200,7 @@
         "eoy_total_positions_for_role": 8
       },
       {
-        "role_description": "Plumber\u2019s Helper",
+        "role_description": "Plumber’s Helper",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -218,18 +225,18 @@
       },
       {
         "role_description": "Technician Alarm",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "Technician Telecommunications",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 3
       }
     ],
     "staff_bargaining_units": [
       {
         "abbreviation": "BCTC",
         "bargaining_unit_name": "Building and Construction Trades Council",
-        "eoy_total_positions_for_bu": 86
+        "eoy_total_positions_for_bu": 90
       },
       {
         "abbreviation": "Confidential",
@@ -282,26 +289,33 @@
         "eoy_total_positions": 98,
         "spending": 21349811.82,
         "budget": 31270140.16
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 102,
+        "eoy_total_positions": 102,
+        "spending": 27336661.63,
+        "budget": 27666451.47
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 2,
+      "previous_year": 2022,
+      "eoy_total_fte": 6,
       "eoy_total_positions": 4,
-      "spending": 2121291.92,
-      "budget": 7976679.73
+      "spending": 5986849.81,
+      "budget": -3603688.69
     }
   },
   {
     "code": 947,
     "name": "Charter Schools Office (Admin)",
     "category": "Administrative Offices",
-    "spending": 1001354.32,
-    "budget": 1350380,
-    "year": 2022,
+    "spending": 1241696.85,
+    "budget": 1638900.07,
+    "year": 2023,
     "eoy_total_fte": 6,
     "eoy_total_positions": 6,
-    "remaining_budget_percent": 25.8,
+    "remaining_budget_percent": 24.2,
     "staff_roles": [
       {
         "role_description": "Analytics Spec Chart Sch",
@@ -380,26 +394,33 @@
         "eoy_total_positions": 6,
         "spending": 1001354.32,
         "budget": 1350380
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 6,
+        "eoy_total_positions": 6,
+        "spending": 1241696.85,
+        "budget": 1638900.07
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 0.67,
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": -124093.48,
-      "budget": -18244.85
+      "spending": 240342.53,
+      "budget": 288520.07
     }
   },
   {
     "code": 913,
     "name": "Chief Of Operations",
     "category": "Administrative Offices",
-    "spending": 4635761.18,
-    "budget": 16829364.7,
-    "year": 2022,
+    "spending": 6791430.52,
+    "budget": 6883963.66,
+    "year": 2023,
     "eoy_total_fte": 7,
     "eoy_total_positions": 7,
-    "remaining_budget_percent": 72.5,
+    "remaining_budget_percent": 1.3,
     "staff_roles": [
       {
         "role_description": "Asst PM Systems & Svcs",
@@ -463,45 +484,44 @@
         "eoy_total_positions": 7,
         "spending": 4635761.18,
         "budget": 16829364.7
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 7,
+        "eoy_total_positions": 7,
+        "spending": 6791430.52,
+        "budget": 6883963.66
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 4,
-      "eoy_total_positions": 4,
-      "spending": -1326284.68,
-      "budget": 4937146.02
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0,
+      "spending": 2155669.34,
+      "budget": -9945401.04
     }
   },
   {
     "code": 901,
     "name": "Chief Of Staff",
     "category": "Administrative Offices",
-    "spending": 1403823.14,
-    "budget": 2728066.98,
-    "year": 2022,
-    "eoy_total_fte": 6,
-    "eoy_total_positions": 6,
-    "remaining_budget_percent": 48.5,
+    "spending": 1483485.96,
+    "budget": 1529827.26,
+    "year": 2023,
+    "eoy_total_fte": 3,
+    "eoy_total_positions": 3,
+    "remaining_budget_percent": 3,
     "staff_roles": [
       {
         "role_description": "Chief of Staff",
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Exec Dir District Strategy",
+        "role_description": "Chief Partnerships Officer",
         "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Sr Dir Strategic Projects",
-        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Sr Exec Asst Superintendent",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Strategic Fellow/Resident",
         "eoy_total_positions_for_role": 1
       }
     ],
@@ -509,12 +529,7 @@
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 5
-      },
-      {
-        "abbreviation": "None",
-        "bargaining_unit_name": "None",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 3
       }
     ],
     "time_series": [
@@ -552,26 +567,33 @@
         "eoy_total_positions": 6,
         "spending": 1403823.14,
         "budget": 2728066.98
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 1483485.96,
+        "budget": 1529827.26
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -2.6,
+      "previous_year": 2022,
+      "eoy_total_fte": -3,
       "eoy_total_positions": -3,
-      "spending": -10703769.24,
-      "budget": -19597477.85
+      "spending": 79662.82,
+      "budget": -1198239.72
     }
   },
   {
     "code": 958,
     "name": "Communications",
     "category": "Other Operations",
-    "spending": 1159180.2,
-    "budget": 1158343.18,
-    "year": 2022,
+    "spending": 1177259.87,
+    "budget": 1078261.41,
+    "year": 2023,
     "eoy_total_fte": 6.5,
     "eoy_total_positions": 7,
-    "remaining_budget_percent": -0.1,
+    "remaining_budget_percent": -9.2,
     "staff_roles": [
       {
         "role_description": "Director Communications",
@@ -650,26 +672,33 @@
         "eoy_total_positions": 7,
         "spending": 1159180.2,
         "budget": 1158343.18
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 6.5,
+        "eoy_total_positions": 7,
+        "spending": 1177259.87,
+        "budget": 1078261.41
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -1,
-      "eoy_total_positions": -1,
-      "spending": 105911.76,
-      "budget": -96337.09
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0,
+      "spending": 18079.67,
+      "budget": -80081.77
     }
   },
   {
     "code": 922,
     "name": "Community Schools & Student Services",
     "category": "Student Services",
-    "spending": 36556081.05,
-    "budget": 55584398.03,
-    "year": 2022,
-    "eoy_total_fte": 144.46,
-    "eoy_total_positions": 148,
-    "remaining_budget_percent": 34.2,
+    "spending": 48219370.85,
+    "budget": 59736755.7,
+    "year": 2023,
+    "eoy_total_fte": 85.66,
+    "eoy_total_positions": 86,
+    "remaining_budget_percent": 19.3,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant I",
@@ -689,7 +718,7 @@
       },
       {
         "role_description": "Central Culture Climate Ambass",
-        "eoy_total_positions_for_role": 5
+        "eoy_total_positions_for_role": 6
       },
       {
         "role_description": "Clinic Liaison",
@@ -713,7 +742,7 @@
       },
       {
         "role_description": "School Security Officer Coordinator",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Coord Juvenile Justice Center",
@@ -728,19 +757,15 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Culture and Climate Ambassador",
-        "eoy_total_positions_for_role": 12
-      },
-      {
-        "role_description": "Culture Keeper",
-        "eoy_total_positions_for_role": 13
-      },
-      {
-        "role_description": "Data Analyst II",
+        "role_description": "Counselor",
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Dir Behavior Hlth Initiatives",
+        "role_description": "Culture Keeper",
+        "eoy_total_positions_for_role": 12
+      },
+      {
+        "role_description": "Data Analyst II",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -761,11 +786,11 @@
       },
       {
         "role_description": "Manager Community Partnership",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "Manager Grants",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "PM Health Access",
@@ -784,10 +809,6 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Prog Mgr Community Schools11",
-        "eoy_total_positions_for_role": 2
-      },
-      {
         "role_description": "Prog Mgr Medi-Cal/LCL Edu Agnc",
         "eoy_total_positions_for_role": 1
       },
@@ -801,14 +822,14 @@
       },
       {
         "role_description": "Program Assistant III",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Program Manager After School",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 7
       },
       {
-        "role_description": "Program Manager Certificated",
+        "role_description": "Program Manager, Attendance and Discipline",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -824,24 +845,12 @@
         "eoy_total_positions_for_role": 3
       },
       {
-        "role_description": "Program Mgr Community School",
-        "eoy_total_positions_for_role": 15
-      },
-      {
-        "role_description": "Receptionist Bilingual",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Restorative Justic Facilitator",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "SARB Facilitator",
         "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "School Security Officer I",
-        "eoy_total_positions_for_role": 39
       },
       {
         "role_description": "Security and Safety Dispatcher",
@@ -849,7 +858,7 @@
       },
       {
         "role_description": "Site-Based Culture Climate Amb",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Social Worker",
@@ -872,27 +881,14 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Strategic Fellow/Resident",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "TSA Classroom 10Mos",
         "eoy_total_positions_for_role": 3
-      },
-      {
-        "role_description": "TSA Classroom 12Mos",
-        "eoy_total_positions_for_role": 1
       }
     ],
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 1
-      },
-      {
-        "abbreviation": "None",
-        "bargaining_unit_name": "None",
         "eoy_total_positions_for_bu": 1
       },
       {
@@ -903,12 +899,12 @@
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 91
+        "eoy_total_positions_for_bu": 43
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 50
+        "eoy_total_positions_for_bu": 37
       }
     ],
     "time_series": [
@@ -946,38 +942,41 @@
         "eoy_total_positions": 148,
         "spending": 36556081.05,
         "budget": 55584398.03
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 85.66,
+        "eoy_total_positions": 86,
+        "spending": 48219370.85,
+        "budget": 59736755.7
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -5.52,
-      "eoy_total_positions": -20,
-      "spending": 11465245.59,
-      "budget": 22610364.86
+      "previous_year": 2022,
+      "eoy_total_fte": -58.8,
+      "eoy_total_positions": -62,
+      "spending": 11663289.8,
+      "budget": 4152357.67
     }
   },
   {
     "code": 956,
     "name": "Continuous School Improvement",
     "category": "Administrative Offices",
-    "spending": 495664,
-    "budget": 2040207.5,
-    "year": 2022,
+    "spending": 797200.3,
+    "budget": 1166381.47,
+    "year": 2023,
     "eoy_total_fte": 3,
     "eoy_total_positions": 3,
-    "remaining_budget_percent": 75.7,
+    "remaining_budget_percent": 31.7,
     "staff_roles": [
-      {
-        "role_description": "Coordinator Innova Programs",
-        "eoy_total_positions_for_role": 1
-      },
       {
         "role_description": "Deputy Chief Schools CSI",
         "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Dir Continuous Sch Improvement",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       }
     ],
     "staff_bargaining_units": [
@@ -1027,26 +1026,33 @@
         "eoy_total_positions": 3,
         "spending": 495664,
         "budget": 2040207.5
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 797200.3,
+        "budget": 1166381.47
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 0.5,
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": -8959.72,
-      "budget": 1299327.05
+      "spending": 301536.3,
+      "budget": -873826.03
     }
   },
   {
     "code": 989,
     "name": "Custodial Services",
     "category": "Facilities",
-    "spending": 21092129.98,
-    "budget": 21480622.84,
-    "year": 2022,
-    "eoy_total_fte": 277.3,
-    "eoy_total_positions": 278,
-    "remaining_budget_percent": 1.8,
+    "spending": 25756577.15,
+    "budget": 25896185.34,
+    "year": 2023,
+    "eoy_total_fte": 237.2,
+    "eoy_total_positions": 238,
+    "remaining_budget_percent": 0.5,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant III",
@@ -1074,7 +1080,7 @@
       },
       {
         "role_description": "Custodian",
-        "eoy_total_positions_for_role": 180
+        "eoy_total_positions_for_role": 136
       },
       {
         "role_description": "Custodian CDC",
@@ -1085,8 +1091,12 @@
         "eoy_total_positions_for_role": 1
       },
       {
+        "role_description": "Executive Leader Transitioning",
+        "eoy_total_positions_for_role": 2
+      },
+      {
         "role_description": "Head Custodian 1",
-        "eoy_total_positions_for_role": 14
+        "eoy_total_positions_for_role": 15
       },
       {
         "role_description": "Head Custodian 2",
@@ -1094,15 +1104,11 @@
       },
       {
         "role_description": "Head Custodian 3",
-        "eoy_total_positions_for_role": 5
+        "eoy_total_positions_for_role": 6
       },
       {
         "role_description": "Lead Custodian",
-        "eoy_total_positions_for_role": 47
-      },
-      {
-        "role_description": "Manager Custodial Services",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 48
       },
       {
         "role_description": "Manager Sustainability",
@@ -1121,12 +1127,12 @@
       {
         "abbreviation": "AFSCME",
         "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
-        "eoy_total_positions_for_bu": 265
+        "eoy_total_positions_for_bu": 224
       },
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "SEIU",
@@ -1136,7 +1142,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 9
+        "eoy_total_positions_for_bu": 8
       }
     ],
     "time_series": [
@@ -1174,26 +1180,33 @@
         "eoy_total_positions": 278,
         "spending": 21092129.98,
         "budget": 21480622.84
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 237.2,
+        "eoy_total_positions": 238,
+        "spending": 25756577.15,
+        "budget": 25896185.34
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 43,
-      "eoy_total_positions": 43,
-      "spending": 1022930.2,
-      "budget": 2772122.45
+      "previous_year": 2022,
+      "eoy_total_fte": -40.1,
+      "eoy_total_positions": -40,
+      "spending": 4664447.17,
+      "budget": 4415562.5
     }
   },
   {
     "code": 999,
     "name": "Districtwide Expenses",
     "category": "Other",
-    "spending": 45307030.88,
-    "budget": 41895323.96,
-    "year": 2022,
+    "spending": 17749620.65,
+    "budget": 16697316.05,
+    "year": 2023,
     "eoy_total_fte": null,
     "eoy_total_positions": null,
-    "remaining_budget_percent": -8.1,
+    "remaining_budget_percent": -6.3,
     "staff_roles": [],
     "staff_bargaining_units": [],
     "time_series": [
@@ -1225,12 +1238,12 @@
     "code": 910,
     "name": "Early Childhood Development",
     "category": "Instructional Programs",
-    "spending": 11107412.04,
-    "budget": 17383563.65,
-    "year": 2022,
-    "eoy_total_fte": 58.85,
-    "eoy_total_positions": 75,
-    "remaining_budget_percent": 36.1,
+    "spending": 18535160.11,
+    "budget": 23758810.97,
+    "year": 2023,
+    "eoy_total_fte": 50.56,
+    "eoy_total_positions": 54,
+    "remaining_budget_percent": 22,
     "staff_roles": [
       {
         "role_description": "Administrative Assist II Bil",
@@ -1238,14 +1251,18 @@
       },
       {
         "role_description": "CDC Site Administrator",
-        "eoy_total_positions_for_role": 7
-      },
-      {
-        "role_description": "Director ECE",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 8
       },
       {
         "role_description": "Director Enh Prof Development",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Director, SPED School Support",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Director Student Assignment",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -1254,11 +1271,11 @@
       },
       {
         "role_description": "Early Literacy Reading Tutor",
-        "eoy_total_positions_for_role": 35
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "ECE Family Navigator",
-        "eoy_total_positions_for_role": 7
+        "eoy_total_positions_for_role": 8
       },
       {
         "role_description": "Exec Dir Early Learning",
@@ -1269,8 +1286,16 @@
         "eoy_total_positions_for_role": 1
       },
       {
+        "role_description": "Instruction Aide CDC Bilingual",
+        "eoy_total_positions_for_role": 2
+      },
+      {
         "role_description": "Instructional Aide CDC",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
+      },
+      {
+        "role_description": "Para Educator",
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Program Manager Grants",
@@ -1285,19 +1310,15 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Specialist Enrollment ECE",
-        "eoy_total_positions_for_role": 4
-      },
-      {
         "role_description": "STIP Teacher",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 5
       },
       {
         "role_description": "Teacher CDC",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 7
       },
       {
-        "role_description": "Teacher Structured Eng Immersn",
+        "role_description": "Teacher State Pre-K 186Day",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -1306,34 +1327,39 @@
       },
       {
         "role_description": "TSA Program Specialist 11Mos",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 4
       }
     ],
     "staff_bargaining_units": [
       {
+        "abbreviation": "AFSCME",
+        "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
+        "eoy_total_positions_for_bu": 2
+      },
+      {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 3
+        "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "OCDPA",
         "bargaining_unit_name": "Oakland Child Development Paraprofessional Association",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 12
+        "eoy_total_positions_for_bu": 18
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 48
+        "eoy_total_positions_for_bu": 14
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 11
+        "eoy_total_positions_for_bu": 14
       }
     ],
     "time_series": [
@@ -1371,26 +1397,33 @@
         "eoy_total_positions": 75,
         "spending": 11107412.04,
         "budget": 17383563.65
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 50.56,
+        "eoy_total_positions": 54,
+        "spending": 18535160.11,
+        "budget": 23758810.97
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 14.55,
-      "eoy_total_positions": 24,
-      "spending": 2830486.01,
-      "budget": 2429831.07
+      "previous_year": 2022,
+      "eoy_total_fte": -8.29,
+      "eoy_total_positions": -21,
+      "spending": 7427748.07,
+      "budget": 6375247.32
     }
   },
   {
     "code": 923,
     "name": "Elementary Network 4",
     "category": "Instructional Programs",
-    "spending": 687035.79,
-    "budget": 678268.33,
-    "year": 2022,
+    "spending": 845675.15,
+    "budget": 758612.75,
+    "year": 2023,
     "eoy_total_fte": 3.5,
     "eoy_total_positions": 4,
-    "remaining_budget_percent": -1.3,
+    "remaining_budget_percent": -11.5,
     "staff_roles": [
       {
         "role_description": "Executive Office Assistant",
@@ -1456,31 +1489,34 @@
         "eoy_total_positions": 4,
         "spending": 687035.79,
         "budget": 678268.33
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3.5,
+        "eoy_total_positions": 4,
+        "spending": 845675.15,
+        "budget": 758612.75
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
+      "previous_year": 2022,
       "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": 150303.18,
-      "budget": 10357.05
+      "spending": 158639.36,
+      "budget": 80344.42
     }
   },
   {
     "code": 954,
     "name": "English Language Learner / Multilingual Achievement",
     "category": "Instructional Programs",
-    "spending": 4190974.82,
-    "budget": 5017121.04,
-    "year": 2022,
-    "eoy_total_fte": 23.65,
-    "eoy_total_positions": 27,
-    "remaining_budget_percent": 16.5,
+    "spending": 5097150.7,
+    "budget": 5837158.46,
+    "year": 2023,
+    "eoy_total_fte": 16.1,
+    "eoy_total_positions": 18,
+    "remaining_budget_percent": 12.7,
     "staff_roles": [
-      {
-        "role_description": "Asst Newcomer Learning Lab",
-        "eoy_total_positions_for_role": 6
-      },
       {
         "role_description": "Business Mgr Central Office",
         "eoy_total_positions_for_role": 1
@@ -1502,16 +1538,12 @@
         "eoy_total_positions_for_role": 2
       },
       {
-        "role_description": "Social Worker",
+        "role_description": "Spec Refugee/Asylee Prog",
         "eoy_total_positions_for_role": 2
       },
       {
-        "role_description": "Social Worker, Psychiatric",
+        "role_description": "TSA Classroom 10Mos",
         "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Spec Refugee/Asylee Prog",
-        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "TSA Classroom 11Mos",
@@ -1531,12 +1563,12 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 12
+        "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 9
+        "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
@@ -1579,26 +1611,33 @@
         "eoy_total_positions": 27,
         "spending": 4190974.82,
         "budget": 5017121.04
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 16.1,
+        "eoy_total_positions": 18,
+        "spending": 5097150.7,
+        "budget": 5837158.46
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 9.95,
-      "eoy_total_positions": 12,
-      "spending": 1102023.75,
-      "budget": 778157.71
+      "previous_year": 2022,
+      "eoy_total_fte": -7.55,
+      "eoy_total_positions": -9,
+      "spending": 906175.88,
+      "budget": 820037.42
     }
   },
   {
     "code": 918,
     "name": "Facilities Planning",
     "category": "Facilities",
-    "spending": 15145447.51,
-    "budget": 23087423.88,
-    "year": 2022,
-    "eoy_total_fte": 21.46667,
-    "eoy_total_positions": 22,
-    "remaining_budget_percent": 34.4,
+    "spending": 19067451.26,
+    "budget": 37306059.49,
+    "year": 2023,
+    "eoy_total_fte": 21,
+    "eoy_total_positions": 21,
+    "remaining_budget_percent": 48.9,
     "staff_roles": [
       {
         "role_description": "Accounts Payable Technician II",
@@ -1606,10 +1645,6 @@
       },
       {
         "role_description": "Administrative Assistant I",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Administrative Assistant II",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -1622,10 +1657,6 @@
       },
       {
         "role_description": "Coordinator Facilities Mgmt",
-        "eoy_total_positions_for_role": 2
-      },
-      {
-        "role_description": "Deputy Chief Facilities",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -1637,12 +1668,20 @@
         "eoy_total_positions_for_role": 1
       },
       {
+        "role_description": "Executive Office Assistant",
+        "eoy_total_positions_for_role": 1
+      },
+      {
         "role_description": "Financial Accountant II",
         "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Financial Analyst Constr Bond",
         "eoy_total_positions_for_role": 2
+      },
+      {
+        "role_description": "Legal Asst/Law Clerk III",
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Project Manager Facilities Pln",
@@ -1661,17 +1700,17 @@
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 5
+        "eoy_total_positions_for_bu": 6
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 4
+        "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 13
+        "eoy_total_positions_for_bu": 12
       }
     ],
     "time_series": [
@@ -1709,27 +1748,38 @@
         "eoy_total_positions": 22,
         "spending": 15145447.51,
         "budget": 23087423.88
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 21,
+        "eoy_total_positions": 21,
+        "spending": 19067451.26,
+        "budget": 37306059.49
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -3.53,
-      "eoy_total_positions": -3,
-      "spending": 3879458.07,
-      "budget": 3739072.86
+      "previous_year": 2022,
+      "eoy_total_fte": -0.47,
+      "eoy_total_positions": -1,
+      "spending": 3922003.75,
+      "budget": 14218635.61
     }
   },
   {
     "code": 991,
     "name": "Food Service",
     "category": "Student Services",
-    "spending": 23973828.7,
-    "budget": 28341208.91,
-    "year": 2022,
-    "eoy_total_fte": 179.13375,
-    "eoy_total_positions": 240,
-    "remaining_budget_percent": 15.4,
+    "spending": 29346157.78,
+    "budget": 43724012.47,
+    "year": 2023,
+    "eoy_total_fte": 191.90038,
+    "eoy_total_positions": 258,
+    "remaining_budget_percent": 32.9,
     "staff_roles": [
+      {
+        "role_description": "Administrative Assistant I",
+        "eoy_total_positions_for_role": 1
+      },
       {
         "role_description": "Administrative Assist I Bil",
         "eoy_total_positions_for_role": 2
@@ -1739,12 +1789,8 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Coord Menu Innovations",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Custod Tech, Central Kitchen",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Dir Good Food Man&Pro",
@@ -1755,16 +1801,20 @@
         "eoy_total_positions_for_role": 1
       },
       {
+        "role_description": "Executive Leader Transitioning",
+        "eoy_total_positions_for_role": 2
+      },
+      {
         "role_description": "Financial Accountant II",
         "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Food Service Assistant I",
-        "eoy_total_positions_for_role": 102
+        "eoy_total_positions_for_role": 92
       },
       {
         "role_description": "Food Service Assistant III",
-        "eoy_total_positions_for_role": 57
+        "eoy_total_positions_for_role": 80
       },
       {
         "role_description": "Food Service Manager III",
@@ -1783,10 +1833,6 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Manager Sustainability",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Nutrition Services Assistant I",
         "eoy_total_positions_for_role": 1
       },
@@ -1796,7 +1842,7 @@
       },
       {
         "role_description": "Production Assistant10",
-        "eoy_total_positions_for_role": 18
+        "eoy_total_positions_for_role": 21
       },
       {
         "role_description": "Production Cook 10",
@@ -1847,12 +1893,17 @@
       {
         "abbreviation": "AFSCME",
         "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
-        "eoy_total_positions_for_bu": 211
+        "eoy_total_positions_for_bu": 228
+      },
+      {
+        "abbreviation": "BCTC",
+        "bargaining_unit_name": "Building and Construction Trades Council",
+        "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 2
+        "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "SEIU",
@@ -1872,7 +1923,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 14
+        "eoy_total_positions_for_bu": 12
       }
     ],
     "time_series": [
@@ -1910,37 +1961,36 @@
         "eoy_total_positions": 240,
         "spending": 23973828.7,
         "budget": 28341208.91
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 191.90038,
+        "eoy_total_positions": 258,
+        "spending": 29346157.78,
+        "budget": 43724012.47
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -7.64,
-      "eoy_total_positions": -14,
-      "spending": 923219.11,
-      "budget": 142028.64
+      "previous_year": 2022,
+      "eoy_total_fte": 12.77,
+      "eoy_total_positions": 18,
+      "spending": 5372329.08,
+      "budget": 15382803.56
     }
   },
   {
     "code": 968,
     "name": "Health Services (Nurses)",
     "category": "Student Services",
-    "spending": 5960302.15,
-    "budget": 6515899.48,
-    "year": 2022,
-    "eoy_total_fte": 44.2,
-    "eoy_total_positions": 45,
-    "remaining_budget_percent": 8.5,
+    "spending": 6575456.44,
+    "budget": 6790555.12,
+    "year": 2023,
+    "eoy_total_fte": 41.8,
+    "eoy_total_positions": 43,
+    "remaining_budget_percent": 3.2,
     "staff_roles": [
       {
-        "role_description": "Administrative Assistant I",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Administrative Assist III Bil",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Coord, Health Services",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -1952,10 +2002,6 @@
         "eoy_total_positions_for_role": 2
       },
       {
-        "role_description": "Health Assistant Bilingual",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Health Svc Data & Sys Mgt",
         "eoy_total_positions_for_role": 1
       },
@@ -1965,7 +2011,7 @@
       },
       {
         "role_description": "Nurse",
-        "eoy_total_positions_for_role": 27
+        "eoy_total_positions_for_role": 28
       },
       {
         "role_description": "Program Manager Health Service",
@@ -1985,17 +2031,17 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 27
+        "eoy_total_positions_for_bu": 28
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 6
+        "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 3
+        "eoy_total_positions_for_bu": 2
       }
     ],
     "time_series": [
@@ -2026,28 +2072,37 @@
         "eoy_total_positions": 45,
         "spending": 5960302.15,
         "budget": 6515899.48
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 41.8,
+        "eoy_total_positions": 43,
+        "spending": 6575456.44,
+        "budget": 6790555.12
       }
     ],
-    "change_from_previous_year": null
+    "change_from_previous_year": {
+      "previous_year": 2022,
+      "eoy_total_fte": -2.4,
+      "eoy_total_positions": -2,
+      "spending": 615154.29,
+      "budget": 274655.64
+    }
   },
   {
     "code": 964,
     "name": "High School Network",
     "category": "Instructional Programs",
-    "spending": 2723160.77,
-    "budget": 3189064.21,
-    "year": 2022,
-    "eoy_total_fte": 18.2,
-    "eoy_total_positions": 23,
-    "remaining_budget_percent": 14.6,
+    "spending": 3084353.69,
+    "budget": 2953702.75,
+    "year": 2023,
+    "eoy_total_fte": 15.8,
+    "eoy_total_positions": 17,
+    "remaining_budget_percent": -4.4,
     "staff_roles": [
       {
-        "role_description": "Case Manager 24",
-        "eoy_total_positions_for_role": 2
-      },
-      {
-        "role_description": "Counselor",
-        "eoy_total_positions_for_role": 3
+        "role_description": "Deputy Network Supt Pre-K5",
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Exec Director, Alternative Ed",
@@ -2075,28 +2130,19 @@
       },
       {
         "role_description": "Teacher Home/Hospital",
-        "eoy_total_positions_for_role": 11
-      },
-      {
-        "role_description": "TSA Program Specialist 11Mos",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 10
       }
     ],
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 3
+        "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 15
-      },
-      {
-        "abbreviation": "SEIU",
-        "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 2
+        "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "UAOS",
@@ -2139,26 +2185,33 @@
         "eoy_total_positions": 23,
         "spending": 2723160.77,
         "budget": 3189064.21
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 15.8,
+        "eoy_total_positions": 17,
+        "spending": 3084353.69,
+        "budget": 2953702.75
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 2.4,
-      "eoy_total_positions": 6,
-      "spending": 308572,
-      "budget": 120315.4
+      "previous_year": 2022,
+      "eoy_total_fte": -2.4,
+      "eoy_total_positions": -6,
+      "spending": 361192.92,
+      "budget": -235361.46
     }
   },
   {
     "code": 944,
     "name": "Human Resources",
     "category": "People Operations",
-    "spending": 13973603.73,
-    "budget": 17456210.43,
-    "year": 2022,
-    "eoy_total_fte": 69.7,
-    "eoy_total_positions": 71,
-    "remaining_budget_percent": 20,
+    "spending": 17032731.21,
+    "budget": 19006502.33,
+    "year": 2023,
+    "eoy_total_fte": 65.5,
+    "eoy_total_positions": 66,
+    "remaining_budget_percent": 10.4,
     "staff_roles": [
       {
         "role_description": "Analyst Empl Info & Mgmt Sys",
@@ -2205,10 +2258,6 @@
         "eoy_total_positions_for_role": 2
       },
       {
-        "role_description": "Director HR Operations",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Director, New Teacher Sp & Dv",
         "eoy_total_positions_for_role": 1
       },
@@ -2233,10 +2282,6 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Manager Substitute Services",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Partner Central Office",
         "eoy_total_positions_for_role": 2
       },
@@ -2246,6 +2291,10 @@
       },
       {
         "role_description": "Program Mgr Special Projects",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Spec Educator Effectiveness",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -2266,7 +2315,7 @@
       },
       {
         "role_description": "STIP Teacher",
-        "eoy_total_positions_for_role": 9
+        "eoy_total_positions_for_role": 6
       },
       {
         "role_description": "Systems Analyst, HRIS",
@@ -2277,10 +2326,6 @@
         "eoy_total_positions_for_role": 2
       },
       {
-        "role_description": "Teacher Structured Eng Immersn",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "TSA Program Specialist 12Mos",
         "eoy_total_positions_for_role": 7
       }
@@ -2289,17 +2334,17 @@
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 48
+        "eoy_total_positions_for_bu": 46
       },
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 19
+        "eoy_total_positions_for_bu": 15
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
@@ -2342,51 +2387,41 @@
         "eoy_total_positions": 71,
         "spending": 13973603.73,
         "budget": 17456210.43
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 65.5,
+        "eoy_total_positions": 66,
+        "spending": 17032731.21,
+        "budget": 19006502.33
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 4.2,
-      "eoy_total_positions": 5,
-      "spending": 1501751.7,
-      "budget": 3668601.54
+      "previous_year": 2022,
+      "eoy_total_fte": -4.2,
+      "eoy_total_positions": -5,
+      "spending": 3059127.48,
+      "budget": 1550291.9
     }
-  },
-  {
-    "code": 959,
-    "name": "Indian Education",
-    "category": "Instructional Programs",
-    "spending": 34534.24,
-    "budget": 37647,
-    "year": 2022,
-    "eoy_total_fte": null,
-    "eoy_total_positions": null,
-    "remaining_budget_percent": 8.3,
-    "staff_roles": [],
-    "staff_bargaining_units": []
   },
   {
     "code": 942,
     "name": "Labor Relations",
     "category": "People Operations",
-    "spending": 1917311.88,
-    "budget": 1994353.21,
-    "year": 2022,
-    "eoy_total_fte": 11,
-    "eoy_total_positions": 11,
-    "remaining_budget_percent": 3.9,
+    "spending": 2224084.36,
+    "budget": 1839915.8,
+    "year": 2023,
+    "eoy_total_fte": 6,
+    "eoy_total_positions": 6,
+    "remaining_budget_percent": -20.9,
     "staff_roles": [
       {
         "role_description": "Coordinator Labor",
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "ED Labor Relat & Alter Dis Res",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Labor Relations Analyst III",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Office Manager Labor/Legal",
@@ -2394,14 +2429,10 @@
       },
       {
         "role_description": "Teacher Replacement",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Teacher Structured Eng Immersn",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "TSA 11Mon 12Pay",
         "eoy_total_positions_for_role": 1
       }
     ],
@@ -2409,12 +2440,12 @@
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 5
+        "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 6
+        "eoy_total_positions_for_bu": 3
       }
     ],
     "time_series": [
@@ -2438,27 +2469,38 @@
         "eoy_total_positions": 11,
         "spending": 1917311.88,
         "budget": 1994353.21
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 6,
+        "eoy_total_positions": 6,
+        "spending": 2224084.36,
+        "budget": 1839915.8
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 1,
-      "eoy_total_positions": 1,
-      "spending": 541237.55,
-      "budget": 382516.68
+      "previous_year": 2022,
+      "eoy_total_fte": -5,
+      "eoy_total_positions": -5,
+      "spending": 306772.48,
+      "budget": -154437.41
     }
   },
   {
     "code": 946,
     "name": "Legal Counsel",
     "category": "Administrative Offices",
-    "spending": 2201970.97,
-    "budget": 3151747.93,
-    "year": 2022,
-    "eoy_total_fte": 5.65,
+    "spending": 2398260.13,
+    "budget": 3321016.66,
+    "year": 2023,
+    "eoy_total_fte": 5.95,
     "eoy_total_positions": 8,
-    "remaining_budget_percent": 30.1,
+    "remaining_budget_percent": 27.8,
     "staff_roles": [
+      {
+        "role_description": "Assistant General Counsel",
+        "eoy_total_positions_for_role": 1
+      },
       {
         "role_description": "Chief Governance Officer",
         "eoy_total_positions_for_role": 1
@@ -2477,7 +2519,7 @@
       },
       {
         "role_description": "Staff Attorney",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       }
     ],
     "staff_bargaining_units": [
@@ -2522,26 +2564,33 @@
         "eoy_total_positions": 8,
         "spending": 2201970.97,
         "budget": 3151747.93
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 5.95,
+        "eoy_total_positions": 8,
+        "spending": 2398260.13,
+        "budget": 3321016.66
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -2,
-      "eoy_total_positions": -2,
-      "spending": -335911.35,
-      "budget": 525988.29
+      "previous_year": 2022,
+      "eoy_total_fte": 0.3,
+      "eoy_total_positions": 0,
+      "spending": 196289.16,
+      "budget": 169268.73
     }
   },
   {
     "code": 912,
     "name": "Linked Learning",
     "category": "Instructional Programs",
-    "spending": 9049623.38,
-    "budget": 16013685.75,
-    "year": 2022,
-    "eoy_total_fte": 43.7,
-    "eoy_total_positions": 58,
-    "remaining_budget_percent": 43.5,
+    "spending": 6006126.75,
+    "budget": 9931376.79,
+    "year": 2023,
+    "eoy_total_fte": 20.5,
+    "eoy_total_positions": 25,
+    "remaining_budget_percent": 39.5,
     "staff_roles": [
       {
         "role_description": "Administrative Assist III Bil",
@@ -2553,11 +2602,7 @@
       },
       {
         "role_description": "Coach College/Career Pathways",
-        "eoy_total_positions_for_role": 7
-      },
-      {
-        "role_description": "Commnty Coord/Program Assist",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "Coordinator Business to School",
@@ -2588,32 +2633,12 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Coord, STEM",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Counselor",
-        "eoy_total_positions_for_role": 3
-      },
-      {
         "role_description": "Director, College Car Pathway",
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "District Registrar",
-        "eoy_total_positions_for_role": 2
-      },
-      {
-        "role_description": "Exec Director, Counseling",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Mgr CTE C&C Pathways Sec Sch",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Program Manager CTE",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Program Manager HS Operations",
@@ -2621,57 +2646,37 @@
       },
       {
         "role_description": "Spec Career Path Transitions",
-        "eoy_total_positions_for_role": 5
-      },
-      {
-        "role_description": "Spec College/Career Readiness",
-        "eoy_total_positions_for_role": 2
-      },
-      {
-        "role_description": "Specialist Mstr Schd Developm",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Teacher 11Mos 12Pay",
         "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Teacher Structured Eng Immersn",
-        "eoy_total_positions_for_role": 12
-      },
-      {
-        "role_description": "TSA 11Mon 12Pay",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "TSA Classroom 10Mos",
         "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "TSA Classroom 12Mos",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       }
     ],
     "staff_bargaining_units": [
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 2
+        "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 21
+        "eoy_total_positions_for_bu": 3
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 12
+        "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 23
+        "eoy_total_positions_for_bu": 19
       }
     ],
     "time_series": [
@@ -2709,41 +2714,48 @@
         "eoy_total_positions": 58,
         "spending": 9049623.38,
         "budget": 16013685.75
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 20.5,
+        "eoy_total_positions": 25,
+        "spending": 6006126.75,
+        "budget": 9931376.79
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -0.66,
-      "eoy_total_positions": 1,
-      "spending": 1946259.96,
-      "budget": 1489089.49
+      "previous_year": 2022,
+      "eoy_total_fte": -23.2,
+      "eoy_total_positions": -33,
+      "spending": -3043496.63,
+      "budget": -6082308.96
     }
   },
   {
     "code": 965,
     "name": "Middle School Network",
     "category": "Instructional Programs",
-    "spending": 1072318.2,
-    "budget": 1446776.12,
-    "year": 2022,
-    "eoy_total_fte": 5.2,
+    "spending": 1846332.69,
+    "budget": 2202719.96,
+    "year": 2023,
+    "eoy_total_fte": 6,
     "eoy_total_positions": 6,
-    "remaining_budget_percent": 25.9,
+    "remaining_budget_percent": 16.2,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant I",
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Coord, Outdoors Environmental",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Manager Grants",
+        "role_description": "Coordinator Outdoors Environment",
         "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Network Superitendent Middle",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Partner Multi-Tiered Systems",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -2807,26 +2819,33 @@
         "eoy_total_positions": 6,
         "spending": 1072318.2,
         "budget": 1446776.12
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 6,
+        "eoy_total_positions": 6,
+        "spending": 1846332.69,
+        "budget": 2202719.96
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 0.45,
-      "eoy_total_positions": 1,
-      "spending": 249030,
-      "budget": 516763.49
+      "previous_year": 2022,
+      "eoy_total_fte": 0.8,
+      "eoy_total_positions": 0,
+      "spending": 774014.49,
+      "budget": 755943.84
     }
   },
   {
     "code": 933,
     "name": "Oakland Athletic League",
     "category": "Student Services",
-    "spending": 2917192.88,
-    "budget": 3226659.34,
-    "year": 2022,
-    "eoy_total_fte": 1.5,
-    "eoy_total_positions": 3,
-    "remaining_budget_percent": 9.6,
+    "spending": 3724693.62,
+    "budget": 3364665.69,
+    "year": 2023,
+    "eoy_total_fte": 2.5,
+    "eoy_total_positions": 4,
+    "remaining_budget_percent": -10.7,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant I",
@@ -2838,7 +2857,7 @@
       },
       {
         "role_description": "Manager Athletics & Activities",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       }
     ],
     "staff_bargaining_units": [
@@ -2850,7 +2869,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 2
+        "eoy_total_positions_for_bu": 3
       }
     ],
     "time_series": [
@@ -2888,31 +2907,34 @@
         "eoy_total_positions": 3,
         "spending": 2917192.88,
         "budget": 3226659.34
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 2.5,
+        "eoy_total_positions": 4,
+        "spending": 3724693.62,
+        "budget": 3364665.69
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -1.5,
-      "eoy_total_positions": 0,
-      "spending": 686882.95,
-      "budget": 1177246.45
+      "previous_year": 2022,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1,
+      "spending": 807500.74,
+      "budget": 138006.35
     }
   },
   {
     "code": 903,
     "name": "Office Of Chief Academic Officer",
     "category": "Administrative Offices",
-    "spending": 12515718.99,
-    "budget": 35592453.28,
-    "year": 2022,
-    "eoy_total_fte": 12,
-    "eoy_total_positions": 12,
-    "remaining_budget_percent": 64.8,
+    "spending": 18934666.76,
+    "budget": 27470437.7,
+    "year": 2023,
+    "eoy_total_fte": 7,
+    "eoy_total_positions": 7,
+    "remaining_budget_percent": 31.1,
     "staff_roles": [
-      {
-        "role_description": "Administrative Assist III Bil",
-        "eoy_total_positions_for_role": 1
-      },
       {
         "role_description": "Chief Academic Officer",
         "eoy_total_positions_for_role": 1
@@ -2927,7 +2949,7 @@
       },
       {
         "role_description": "Teacher Replacement",
-        "eoy_total_positions_for_role": 8
+        "eoy_total_positions_for_role": 4
       }
     ],
     "staff_bargaining_units": [
@@ -2939,12 +2961,7 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 8
-      },
-      {
-        "abbreviation": "SEIU",
-        "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "UAOS",
@@ -2987,31 +3004,34 @@
         "eoy_total_positions": 12,
         "spending": 12515718.99,
         "budget": 35592453.28
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 7,
+        "eoy_total_positions": 7,
+        "spending": 18934666.76,
+        "budget": 27470437.7
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 7.2,
-      "eoy_total_positions": 3,
-      "spending": 962298.62,
-      "budget": -1691156.87
+      "previous_year": 2022,
+      "eoy_total_fte": -5,
+      "eoy_total_positions": -5,
+      "spending": 6418947.77,
+      "budget": -8122015.58
     }
   },
   {
     "code": 929,
     "name": "Office Of Equity",
     "category": "Instructional Programs",
-    "spending": 6015014.59,
-    "budget": 6310560.85,
-    "year": 2022,
-    "eoy_total_fte": 37.25,
-    "eoy_total_positions": 38,
-    "remaining_budget_percent": 4.7,
+    "spending": 6695663.37,
+    "budget": 6537652.56,
+    "year": 2023,
+    "eoy_total_fte": 36,
+    "eoy_total_positions": 37,
+    "remaining_budget_percent": -2.4,
     "staff_roles": [
-      {
-        "role_description": "Administrative Assistant III",
-        "eoy_total_positions_for_role": 1
-      },
       {
         "role_description": "Case Manager 24",
         "eoy_total_positions_for_role": 1
@@ -3030,7 +3050,7 @@
       },
       {
         "role_description": "Facilitator, Manhood Dev Prgm",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Prg Mgr Local Cntrl Acct Engag",
@@ -3054,6 +3074,10 @@
       },
       {
         "role_description": "Spec Family Community Engage",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Specialist, Operations",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -3102,7 +3126,7 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 3
+        "eoy_total_positions_for_bu": 2
       },
       {
         "abbreviation": "SEIU",
@@ -3150,26 +3174,33 @@
         "eoy_total_positions": 38,
         "spending": 6015014.59,
         "budget": 6310560.85
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 36,
+        "eoy_total_positions": 37,
+        "spending": 6695663.37,
+        "budget": 6537652.56
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 0.45,
-      "eoy_total_positions": -2,
-      "spending": 14044.33,
-      "budget": 199719.33
+      "previous_year": 2022,
+      "eoy_total_fte": -1.25,
+      "eoy_total_positions": -1,
+      "spending": 680648.78,
+      "budget": 227091.71
     }
   },
   {
     "code": 905,
     "name": "Office Of Sr. Business Officer",
     "category": "Administrative Offices",
-    "spending": 5868065.21,
-    "budget": 6500903.99,
-    "year": 2022,
-    "eoy_total_fte": 30.8,
-    "eoy_total_positions": 31,
-    "remaining_budget_percent": 9.7,
+    "spending": 7068967.44,
+    "budget": 6495375.31,
+    "year": 2023,
+    "eoy_total_fte": 31.8,
+    "eoy_total_positions": 32,
+    "remaining_budget_percent": -8.8,
     "staff_roles": [
       {
         "role_description": "Accounts Payable Technician II",
@@ -3217,7 +3248,7 @@
       },
       {
         "role_description": "Payroll Technician II",
-        "eoy_total_positions_for_role": 5
+        "eoy_total_positions_for_role": 6
       },
       {
         "role_description": "Receptionist",
@@ -3245,7 +3276,7 @@
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 11
+        "eoy_total_positions_for_bu": 12
       },
       {
         "abbreviation": "UAOS",
@@ -3288,14 +3319,21 @@
         "eoy_total_positions": 31,
         "spending": 5868065.21,
         "budget": 6500903.99
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 31.8,
+        "eoy_total_positions": 32,
+        "spending": 7068967.44,
+        "budget": 6495375.31
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -3.25,
-      "eoy_total_positions": -4,
-      "spending": 22913.74,
-      "budget": -405211.11
+      "previous_year": 2022,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1,
+      "spending": 1200902.23,
+      "budget": -5528.68
     }
   },
   {
@@ -3304,7 +3342,7 @@
     "category": "Administrative Offices",
     "spending": 182460,
     "budget": 182460,
-    "year": 2022,
+    "year": 2023,
     "eoy_total_fte": null,
     "eoy_total_positions": null,
     "remaining_budget_percent": 0,
@@ -3315,12 +3353,12 @@
     "code": 941,
     "name": "Office Of The Superintendent",
     "category": "Administrative Offices",
-    "spending": 940738.43,
-    "budget": 1105430.86,
-    "year": 2022,
+    "spending": 951543.91,
+    "budget": 820182.56,
+    "year": 2023,
     "eoy_total_fte": 2,
     "eoy_total_positions": 2,
-    "remaining_budget_percent": 14.9,
+    "remaining_budget_percent": -16,
     "staff_roles": [
       {
         "role_description": "Sr Exec Asst Superintendent",
@@ -3373,26 +3411,33 @@
         "eoy_total_positions": 2,
         "spending": 940738.43,
         "budget": 1105430.86
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 2,
+        "eoy_total_positions": 2,
+        "spending": 951543.91,
+        "budget": 820182.56
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
+      "previous_year": 2022,
       "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": -40708.09,
-      "budget": 50870.28
+      "spending": 10805.48,
+      "budget": -285248.3
     }
   },
   {
     "code": 906,
     "name": "Ombudsman",
     "category": "People Operations",
-    "spending": 493799.61,
-    "budget": 484557.94,
-    "year": 2022,
+    "spending": 553807.63,
+    "budget": 495178.24,
+    "year": 2023,
     "eoy_total_fte": 3,
     "eoy_total_positions": 3,
-    "remaining_budget_percent": -1.9,
+    "remaining_budget_percent": -11.8,
     "staff_roles": [
       {
         "role_description": "Asst Ombudsperson Intake Bill",
@@ -3435,33 +3480,52 @@
         "eoy_total_positions": 3,
         "spending": 493799.61,
         "budget": 484557.94
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 553807.63,
+        "budget": 495178.24
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 1,
-      "eoy_total_positions": 1,
-      "spending": 135907.42,
-      "budget": 88280.03
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0,
+      "spending": 60008.02,
+      "budget": 10620.3
     }
   },
   {
     "code": 928,
     "name": "OPSR Counseling",
     "category": "Student Services",
-    "spending": 6165583.79,
-    "budget": 6914562.96,
-    "year": 2022,
-    "eoy_total_fte": 44.84,
-    "eoy_total_positions": 54,
-    "remaining_budget_percent": 10.8,
+    "spending": 3108170.41,
+    "budget": 4459243.7,
+    "year": 2023,
+    "eoy_total_fte": 17.8,
+    "eoy_total_positions": 22,
+    "remaining_budget_percent": 30.3,
     "staff_roles": [
       {
         "role_description": "Administrative Assist I Bil",
         "eoy_total_positions_for_role": 1
       },
       {
+        "role_description": "Administrative Assist III Bil",
+        "eoy_total_positions_for_role": 1
+      },
+      {
         "role_description": "Asst Principal High School",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Case Manager 24",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Coach College/Career Pathways",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -3474,18 +3538,34 @@
       },
       {
         "role_description": "Counselor",
-        "eoy_total_positions_for_role": 46
+        "eoy_total_positions_for_role": 6
+      },
+      {
+        "role_description": "District Registrar",
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Manager, Mstr Schd Cmp Stu Sup",
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Spec College/Career Readiness",
+        "role_description": "Mgr CTE C&C Pathways Sec Sch",
         "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Specialist Mstr Schd Developm",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "TSA 11Mon 12Pay",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "TSA Classroom 12Mos",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "TSA Program Specialist 11Mos",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -3497,17 +3577,17 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 47
+        "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 3
+        "eoy_total_positions_for_bu": 6
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 4
+        "eoy_total_positions_for_bu": 6
       }
     ],
     "time_series": [
@@ -3545,26 +3625,33 @@
         "eoy_total_positions": 54,
         "spending": 6165583.79,
         "budget": 6914562.96
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 17.8,
+        "eoy_total_positions": 22,
+        "spending": 3108170.41,
+        "budget": 4459243.7
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -0.26,
-      "eoy_total_positions": -1,
-      "spending": 999669.25,
-      "budget": 1251562.92
+      "previous_year": 2022,
+      "eoy_total_fte": -27.04,
+      "eoy_total_positions": -32,
+      "spending": -3057413.38,
+      "budget": -2455319.26
     }
   },
   {
     "code": 962,
     "name": "Pre-K-5 Network 2",
     "category": "Instructional Programs",
-    "spending": 438700.4,
-    "budget": 446301.04,
-    "year": 2022,
-    "eoy_total_fte": 2.5,
-    "eoy_total_positions": 3,
-    "remaining_budget_percent": 1.7,
+    "spending": 684196.85,
+    "budget": 688189.9,
+    "year": 2023,
+    "eoy_total_fte": 3.5,
+    "eoy_total_positions": 4,
+    "remaining_budget_percent": 0.6,
     "staff_roles": [
       {
         "role_description": "Executive Office Assistant",
@@ -3572,6 +3659,10 @@
       },
       {
         "role_description": "Network Superitendent PreK-5",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Partner Multi-Tiered Systems",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -3588,7 +3679,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 2
       }
     ],
     "time_series": [
@@ -3626,26 +3717,33 @@
         "eoy_total_positions": 3,
         "spending": 438700.4,
         "budget": 446301.04
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3.5,
+        "eoy_total_positions": 4,
+        "spending": 684196.85,
+        "budget": 688189.9
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 0,
-      "eoy_total_positions": 0,
-      "spending": -82307.41,
-      "budget": -69004.39
+      "previous_year": 2022,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1,
+      "spending": 245496.45,
+      "budget": 241888.86
     }
   },
   {
     "code": 963,
     "name": "Pre-K-5 Network 3",
     "category": "Instructional Programs",
-    "spending": 495476.39,
-    "budget": 524731.22,
-    "year": 2022,
-    "eoy_total_fte": 2.5,
-    "eoy_total_positions": 3,
-    "remaining_budget_percent": 5.6,
+    "spending": 716871.73,
+    "budget": 727344.71,
+    "year": 2023,
+    "eoy_total_fte": 3.5,
+    "eoy_total_positions": 4,
+    "remaining_budget_percent": 1.4,
     "staff_roles": [
       {
         "role_description": "Deputy Network Supt Pre-K5",
@@ -3653,6 +3751,10 @@
       },
       {
         "role_description": "Executive Office Assistant",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Partner Multi-Tiered Systems",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -3669,7 +3771,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 1
+        "eoy_total_positions_for_bu": 2
       }
     ],
     "time_series": [
@@ -3707,39 +3809,33 @@
         "eoy_total_positions": 3,
         "spending": 495476.39,
         "budget": 524731.22
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3.5,
+        "eoy_total_positions": 4,
+        "spending": 716871.73,
+        "budget": 727344.71
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 0,
-      "eoy_total_positions": 0,
-      "spending": 191042.99,
-      "budget": 170548.86
+      "previous_year": 2022,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1,
+      "spending": 221395.34,
+      "budget": 202613.49
     }
-  },
-  {
-    "code": 978,
-    "name": "Private Schools Office (Admin)",
-    "category": "Administrative Offices",
-    "spending": 11529.09,
-    "budget": 11570.44,
-    "year": 2022,
-    "eoy_total_fte": null,
-    "eoy_total_positions": null,
-    "remaining_budget_percent": 0.4,
-    "staff_roles": [],
-    "staff_bargaining_units": []
   },
   {
     "code": 990,
     "name": "Procurement & Distribution",
     "category": "Financial Operations",
-    "spending": 818159.39,
-    "budget": 946255.96,
-    "year": 2022,
+    "spending": 986146.04,
+    "budget": 912446.13,
+    "year": 2023,
     "eoy_total_fte": 5,
     "eoy_total_positions": 5,
-    "remaining_budget_percent": 13.5,
+    "remaining_budget_percent": -8.1,
     "staff_roles": [
       {
         "role_description": "Analyst Contract",
@@ -3805,26 +3901,33 @@
         "eoy_total_positions": 5,
         "spending": 818159.39,
         "budget": 946255.96
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 5,
+        "eoy_total_positions": 5,
+        "spending": 986146.04,
+        "budget": 912446.13
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
+      "previous_year": 2022,
       "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": 103190.33,
-      "budget": 223497.94
+      "spending": 167986.65,
+      "budget": -33809.83
     }
   },
   {
     "code": 948,
     "name": "Research Assessment & Data",
     "category": "Other Operations",
-    "spending": 2533628.18,
-    "budget": 2697434.43,
-    "year": 2022,
-    "eoy_total_fte": 11.34,
-    "eoy_total_positions": 12,
-    "remaining_budget_percent": 6.1,
+    "spending": 2983940.88,
+    "budget": 3017696.31,
+    "year": 2023,
+    "eoy_total_fte": 12.34,
+    "eoy_total_positions": 13,
+    "remaining_budget_percent": 1.1,
     "staff_roles": [
       {
         "role_description": "Analytics Spec GIS Mapping",
@@ -3852,7 +3955,7 @@
       },
       {
         "role_description": "Specialist State/Local Testing",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Statistician",
@@ -3868,7 +3971,7 @@
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 9
+        "eoy_total_positions_for_bu": 10
       },
       {
         "abbreviation": "UAOS",
@@ -3911,26 +4014,33 @@
         "eoy_total_positions": 12,
         "spending": 2533628.18,
         "budget": 2697434.43
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 12.34,
+        "eoy_total_positions": 13,
+        "spending": 2983940.88,
+        "budget": 3017696.31
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -1.1,
-      "eoy_total_positions": -2,
-      "spending": 29095.61,
-      "budget": -454419.07
+      "previous_year": 2022,
+      "eoy_total_fte": 1,
+      "eoy_total_positions": 1,
+      "spending": 450312.7,
+      "budget": 320261.88
     }
   },
   {
     "code": 987,
     "name": "Risk Management",
     "category": "Risk Management",
-    "spending": 22585667.25,
-    "budget": 27032186.36,
-    "year": 2022,
+    "spending": 29697278.09,
+    "budget": 32389644.12,
+    "year": 2023,
     "eoy_total_fte": 8.75,
     "eoy_total_positions": 10,
-    "remaining_budget_percent": 16.4,
+    "remaining_budget_percent": 8.3,
     "staff_roles": [
       {
         "role_description": "Assist Risk Management",
@@ -4025,37 +4135,44 @@
         "eoy_total_positions": 10,
         "spending": 22585667.25,
         "budget": 27032186.36
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 8.75,
+        "eoy_total_positions": 10,
+        "spending": 29697278.09,
+        "budget": 32389644.12
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -2,
-      "eoy_total_positions": -2,
-      "spending": -619973.47,
-      "budget": 1164300.78
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0,
+      "spending": 7111610.84,
+      "budget": 5357457.76
     }
   },
   {
     "code": 976,
     "name": "Special Ed Local Plan Area",
     "category": "Special Education",
-    "spending": 17346031.13,
-    "budget": 19575809.21,
-    "year": 2022,
-    "eoy_total_fte": 42.8,
-    "eoy_total_positions": 44,
-    "remaining_budget_percent": 11.4,
+    "spending": 17451736.54,
+    "budget": 18708782.55,
+    "year": 2023,
+    "eoy_total_fte": 46.09,
+    "eoy_total_positions": 48,
+    "remaining_budget_percent": 6.7,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant I",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Administrative Assist III Bil",
-        "eoy_total_positions_for_role": 1
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Anlyt PEC Financial Operations",
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Coordinator Special Education",
         "eoy_total_positions_for_role": 1
       },
       {
@@ -4064,7 +4181,7 @@
       },
       {
         "role_description": "Director, SPED School Support",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 4
       },
       {
         "role_description": "Exec Director, PEC",
@@ -4076,11 +4193,11 @@
       },
       {
         "role_description": "Physical Therapist",
-        "eoy_total_positions_for_role": 3
+        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Prog Mgr PEC Special Projects",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Spec District Family Engage",
@@ -4095,24 +4212,16 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Tchr SDC Non Sevrly Handicapp",
-        "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Teacher RSP",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "TSA Classroom 10Mos",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 7
       },
       {
         "role_description": "TSA Classroom 11Mos",
-        "eoy_total_positions_for_role": 5
+        "eoy_total_positions_for_role": 6
       },
       {
         "role_description": "TSA Program Specialist 11Mos",
-        "eoy_total_positions_for_role": 10
+        "eoy_total_positions_for_role": 12
       }
     ],
     "staff_bargaining_units": [
@@ -4124,17 +4233,17 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 21
+        "eoy_total_positions_for_bu": 25
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 8
+        "eoy_total_positions_for_bu": 7
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 12
+        "eoy_total_positions_for_bu": 13
       }
     ],
     "time_series": [
@@ -4151,34 +4260,37 @@
         "eoy_total_positions": 44,
         "spending": 17346031.13,
         "budget": 19575809.21
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 46.09,
+        "eoy_total_positions": 48,
+        "spending": 17451736.54,
+        "budget": 18708782.55
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 41.8,
-      "eoy_total_positions": 43,
-      "spending": 17258521.35,
-      "budget": 19568212.53
+      "previous_year": 2022,
+      "eoy_total_fte": 3.29,
+      "eoy_total_positions": 4,
+      "spending": 105705.41,
+      "budget": -867026.66
     }
   },
   {
     "code": 975,
     "name": "Special Education",
     "category": "Special Education",
-    "spending": 61330999.93,
-    "budget": 60077435.83,
-    "year": 2022,
-    "eoy_total_fte": 211.2,
-    "eoy_total_positions": 233,
-    "remaining_budget_percent": -2.1,
+    "spending": 88983824.78,
+    "budget": 81489453.07,
+    "year": 2023,
+    "eoy_total_fte": 212.89,
+    "eoy_total_positions": 231,
+    "remaining_budget_percent": -9.2,
     "staff_roles": [
       {
-        "role_description": "Administrative Assistant I",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Case Manager 24",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 8
       },
       {
         "role_description": "Community Service Worker I",
@@ -4190,27 +4302,31 @@
       },
       {
         "role_description": "Instructional Supp Specialist",
-        "eoy_total_positions_for_role": 8
+        "eoy_total_positions_for_role": 3
       },
       {
         "role_description": "Interpreter For Deaf II",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Occupational Therapist",
-        "eoy_total_positions_for_role": 14
+        "eoy_total_positions_for_role": 16
       },
       {
         "role_description": "Para Educator",
-        "eoy_total_positions_for_role": 39
+        "eoy_total_positions_for_role": 37
+      },
+      {
+        "role_description": "Physical Therapist",
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Psychologist",
-        "eoy_total_positions_for_role": 48
+        "eoy_total_positions_for_role": 47
       },
       {
         "role_description": "Social Worker",
-        "eoy_total_positions_for_role": 16
+        "eoy_total_positions_for_role": 19
       },
       {
         "role_description": "Specialist Translator-Chinese",
@@ -4222,19 +4338,19 @@
       },
       {
         "role_description": "Speech Therapist",
-        "eoy_total_positions_for_role": 52
+        "eoy_total_positions_for_role": 56
       },
       {
         "role_description": "Staff Attorney",
-        "eoy_total_positions_for_role": 2
-      },
-      {
-        "role_description": "Tchr SDC Non Sevrly Handicapp",
         "eoy_total_positions_for_role": 1
       },
       {
+        "role_description": "Tchr SDC Non Sevrly Handicapp",
+        "eoy_total_positions_for_role": 3
+      },
+      {
         "role_description": "Tchr SDC Severely Handicapped",
-        "eoy_total_positions_for_role": 15
+        "eoy_total_positions_for_role": 10
       },
       {
         "role_description": "Teacher Adapted PE",
@@ -4242,7 +4358,7 @@
       },
       {
         "role_description": "Teacher Hearing Impaired",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Teacher Orientation/Mobility",
@@ -4250,42 +4366,38 @@
       },
       {
         "role_description": "Teacher RSP",
-        "eoy_total_positions_for_role": 11
+        "eoy_total_positions_for_role": 13
       },
       {
         "role_description": "Teacher Visually Impaired",
-        "eoy_total_positions_for_role": 3
-      },
-      {
-        "role_description": "TSA Program Specialist 11Mos",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 4
       }
     ],
     "staff_bargaining_units": [
       {
         "abbreviation": "AFSCME",
         "bargaining_unit_name": "American Federation of State, County and Municipal Employees",
-        "eoy_total_positions_for_bu": 39
+        "eoy_total_positions_for_bu": 37
       },
       {
         "abbreviation": "Confidential",
         "bargaining_unit_name": "Confidential",
-        "eoy_total_positions_for_bu": 2
+        "eoy_total_positions_for_bu": 1
       },
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 156
+        "eoy_total_positions_for_bu": 158
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 34
+        "eoy_total_positions_for_bu": 32
       },
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 2
+        "eoy_total_positions_for_bu": 3
       }
     ],
     "time_series": [
@@ -4323,26 +4435,33 @@
         "eoy_total_positions": 233,
         "spending": 61330999.93,
         "budget": 60077435.83
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 212.89,
+        "eoy_total_positions": 231,
+        "spending": 88983824.78,
+        "budget": 81489453.07
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -85.4,
-      "eoy_total_positions": -84,
-      "spending": -15793480.46,
-      "budget": -29302911.47
+      "previous_year": 2022,
+      "eoy_total_fte": 1.69,
+      "eoy_total_positions": -2,
+      "spending": 27652824.85,
+      "budget": 21412017.24
     }
   },
   {
     "code": 950,
     "name": "State and Federal Programs",
     "category": "Administrative Offices",
-    "spending": 2631651.54,
-    "budget": 2616958.18,
-    "year": 2022,
-    "eoy_total_fte": 14.55,
-    "eoy_total_positions": 16,
-    "remaining_budget_percent": -0.6,
+    "spending": 2741280.59,
+    "budget": 2795341.67,
+    "year": 2023,
+    "eoy_total_fte": 13.35,
+    "eoy_total_positions": 15,
+    "remaining_budget_percent": 1.9,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant III",
@@ -4373,10 +4492,6 @@
         "eoy_total_positions_for_role": 1
       },
       {
-        "role_description": "Manager Grants",
-        "eoy_total_positions_for_role": 1
-      },
-      {
         "role_description": "Specialist Strat Resource Plan",
         "eoy_total_positions_for_role": 7
       },
@@ -4399,7 +4514,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 7
+        "eoy_total_positions_for_bu": 6
       }
     ],
     "time_series": [
@@ -4437,31 +4552,34 @@
         "eoy_total_positions": 16,
         "spending": 2631651.54,
         "budget": 2616958.18
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 13.35,
+        "eoy_total_positions": 15,
+        "spending": 2741280.59,
+        "budget": 2795341.67
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -0.2,
-      "eoy_total_positions": 0,
-      "spending": 181516.11,
-      "budget": 122459.33
+      "previous_year": 2022,
+      "eoy_total_fte": -1.2,
+      "eoy_total_positions": -1,
+      "spending": 109629.05,
+      "budget": 178383.49
     }
   },
   {
     "code": 907,
     "name": "Student Assignment",
     "category": "Student Services",
-    "spending": 3072532.53,
-    "budget": 3495940.64,
-    "year": 2022,
-    "eoy_total_fte": 19,
-    "eoy_total_positions": 19,
-    "remaining_budget_percent": 12.1,
+    "spending": 4987848.61,
+    "budget": 5576077.47,
+    "year": 2023,
+    "eoy_total_fte": 23.2,
+    "eoy_total_positions": 24,
+    "remaining_budget_percent": 10.5,
     "staff_roles": [
-      {
-        "role_description": "Administrative Assist II Bil",
-        "eoy_total_positions_for_role": 1
-      },
       {
         "role_description": "Administrative Assist III Bil",
         "eoy_total_positions_for_role": 1
@@ -4472,7 +4590,11 @@
       },
       {
         "role_description": "Director Student Assignment",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
+      },
+      {
+        "role_description": "Dir Program Improvement",
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Exec Dir Enroll & Regist Mgt",
@@ -4487,12 +4609,24 @@
         "eoy_total_positions_for_role": 3
       },
       {
+        "role_description": "Specialist Enrollment ECE",
+        "eoy_total_positions_for_role": 3
+      },
+      {
+        "role_description": "Spec Refugee/Asylee Prog",
+        "eoy_total_positions_for_role": 1
+      },
+      {
         "role_description": "Student Assignment Counselor",
         "eoy_total_positions_for_role": 5
       },
       {
         "role_description": "Student Welc Ctr Coun II",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 5
+      },
+      {
+        "role_description": "TSA 11Mon 12Pay",
+        "eoy_total_positions_for_role": 1
       }
     ],
     "staff_bargaining_units": [
@@ -4502,9 +4636,14 @@
         "eoy_total_positions_for_bu": 2
       },
       {
+        "abbreviation": "OEA",
+        "bargaining_unit_name": "Oakland Education Association",
+        "eoy_total_positions_for_bu": 1
+      },
+      {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 14
+        "eoy_total_positions_for_bu": 18
       },
       {
         "abbreviation": "UAOS",
@@ -4547,26 +4686,33 @@
         "eoy_total_positions": 19,
         "spending": 3072532.53,
         "budget": 3495940.64
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 23.2,
+        "eoy_total_positions": 24,
+        "spending": 4987848.61,
+        "budget": 5576077.47
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 2.8,
-      "eoy_total_positions": 2,
-      "spending": 762437.02,
-      "budget": 439354.06
+      "previous_year": 2022,
+      "eoy_total_fte": 4.2,
+      "eoy_total_positions": 5,
+      "spending": 1915316.08,
+      "budget": 2080136.83
     }
   },
   {
     "code": 937,
     "name": "Summer Programs",
     "category": "Instructional Programs",
-    "spending": 6878130.28,
-    "budget": 7841814.68,
-    "year": 2022,
+    "spending": 7445505.53,
+    "budget": 12747671.1,
+    "year": 2023,
     "eoy_total_fte": null,
     "eoy_total_positions": null,
-    "remaining_budget_percent": 12.3,
+    "remaining_budget_percent": 41.6,
     "staff_roles": [],
     "staff_bargaining_units": [],
     "time_series": [
@@ -4598,12 +4744,12 @@
     "code": 909,
     "name": "Teaching & Learning",
     "category": "Instructional Programs",
-    "spending": 9675318.42,
-    "budget": 11432654.53,
-    "year": 2022,
-    "eoy_total_fte": 70.2,
-    "eoy_total_positions": 92,
-    "remaining_budget_percent": 15.4,
+    "spending": 11300054.66,
+    "budget": 11349213.91,
+    "year": 2023,
+    "eoy_total_fte": 68.2,
+    "eoy_total_positions": 77,
+    "remaining_budget_percent": 0.4,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant III",
@@ -4619,7 +4765,7 @@
       },
       {
         "role_description": "Coord, Literacy",
-        "eoy_total_positions_for_role": 6
+        "eoy_total_positions_for_role": 7
       },
       {
         "role_description": "Coord Social Emotional Learn",
@@ -4627,7 +4773,7 @@
       },
       {
         "role_description": "Coord, STEM",
-        "eoy_total_positions_for_role": 4
+        "eoy_total_positions_for_role": 7
       },
       {
         "role_description": "Director, Instruction PreK-12",
@@ -4639,15 +4785,11 @@
       },
       {
         "role_description": "Early Literacy Reading Tutor",
-        "eoy_total_positions_for_role": 28
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Executive Director Instruction",
         "eoy_total_positions_for_role": 1
-      },
-      {
-        "role_description": "Specialist School Technology",
-        "eoy_total_positions_for_role": 2
       },
       {
         "role_description": "Spec Instructional Materials",
@@ -4659,7 +4801,7 @@
       },
       {
         "role_description": "Teacher Structured Eng Immersn",
-        "eoy_total_positions_for_role": 28
+        "eoy_total_positions_for_role": 34
       },
       {
         "role_description": "TSA Classroom 10Mos",
@@ -4667,7 +4809,7 @@
       },
       {
         "role_description": "TSA Classroom 11Mos",
-        "eoy_total_positions_for_role": 9
+        "eoy_total_positions_for_role": 13
       }
     ],
     "staff_bargaining_units": [
@@ -4679,12 +4821,12 @@
       {
         "abbreviation": "OEA",
         "bargaining_unit_name": "Oakland Education Association",
-        "eoy_total_positions_for_bu": 38
+        "eoy_total_positions_for_bu": 48
       },
       {
         "abbreviation": "SEIU",
         "bargaining_unit_name": "Service Employees International Union",
-        "eoy_total_positions_for_bu": 33
+        "eoy_total_positions_for_bu": 4
       },
       {
         "abbreviation": "Teamsters",
@@ -4694,7 +4836,7 @@
       {
         "abbreviation": "UAOS",
         "bargaining_unit_name": "United Administrators of Oakland Schools",
-        "eoy_total_positions_for_bu": 16
+        "eoy_total_positions_for_bu": 20
       }
     ],
     "time_series": [
@@ -4732,26 +4874,33 @@
         "eoy_total_positions": 92,
         "spending": 9675318.42,
         "budget": 11432654.53
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 68.2,
+        "eoy_total_positions": 77,
+        "spending": 11300054.66,
+        "budget": 11349213.91
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": -24.53,
-      "eoy_total_positions": -57,
-      "spending": -3848914.86,
-      "budget": -4047491.71
+      "previous_year": 2022,
+      "eoy_total_fte": -2,
+      "eoy_total_positions": -15,
+      "spending": 1624736.24,
+      "budget": -83440.62
     }
   },
   {
     "code": 986,
     "name": "Technology Services",
     "category": "Other Operations",
-    "spending": 13300145.51,
-    "budget": 24079580.55,
-    "year": 2022,
+    "spending": 16489935.73,
+    "budget": 21390441.31,
+    "year": 2023,
     "eoy_total_fte": 32.6,
     "eoy_total_positions": 33,
-    "remaining_budget_percent": 44.8,
+    "remaining_budget_percent": 22.9,
     "staff_roles": [
       {
         "role_description": "Administrative Assistant III",
@@ -4775,7 +4924,7 @@
       },
       {
         "role_description": "Info Systems Specialist II",
-        "eoy_total_positions_for_role": 2
+        "eoy_total_positions_for_role": 1
       },
       {
         "role_description": "Manager Site Techology",
@@ -4815,7 +4964,7 @@
       },
       {
         "role_description": "Specialist School Technology",
-        "eoy_total_positions_for_role": 9
+        "eoy_total_positions_for_role": 10
       },
       {
         "role_description": "Spec Student Infor Support III",
@@ -4878,26 +5027,33 @@
         "eoy_total_positions": 33,
         "spending": 13300145.51,
         "budget": 24079580.55
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 32.6,
+        "eoy_total_positions": 33,
+        "spending": 16489935.73,
+        "budget": 21390441.31
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
-      "eoy_total_fte": 3.1,
-      "eoy_total_positions": 3,
-      "spending": -1929541.12,
-      "budget": 7565018.47
+      "previous_year": 2022,
+      "eoy_total_fte": 0,
+      "eoy_total_positions": 0,
+      "spending": 3189790.22,
+      "budget": -2689139.24
     }
   },
   {
     "code": 997,
     "name": "Transfers to Charter Schools",
     "category": "Other",
-    "spending": 5899663.13,
-    "budget": 8428505.63,
-    "year": 2022,
+    "spending": 6803717.18,
+    "budget": 8820677.22,
+    "year": 2023,
     "eoy_total_fte": null,
     "eoy_total_positions": null,
-    "remaining_budget_percent": 30,
+    "remaining_budget_percent": 22.9,
     "staff_roles": [],
     "staff_bargaining_units": []
   },
@@ -4905,12 +5061,12 @@
     "code": 995,
     "name": "Transportation",
     "category": "Student Services",
-    "spending": 16374523.41,
-    "budget": 16362502.51,
-    "year": 2022,
+    "spending": 16939965.64,
+    "budget": 16828328.98,
+    "year": 2023,
     "eoy_total_fte": 3,
     "eoy_total_positions": 3,
-    "remaining_budget_percent": -0.1,
+    "remaining_budget_percent": -0.7,
     "staff_roles": [
       {
         "role_description": "Coordinator Classified",
@@ -4977,26 +5133,33 @@
         "eoy_total_positions": 3,
         "spending": 16374523.41,
         "budget": 16362502.51
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 3,
+        "eoy_total_positions": 3,
+        "spending": 16939965.64,
+        "budget": 16828328.98
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
+      "previous_year": 2022,
       "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": 1766448.42,
-      "budget": 1673723.47
+      "spending": 565442.23,
+      "budget": 465826.47
     }
   },
   {
     "code": 992,
     "name": "Warehouse Distribution",
     "category": "Other Operations",
-    "spending": 1529262.86,
-    "budget": 1542173.59,
-    "year": 2022,
+    "spending": 1531794.76,
+    "budget": 1561956.06,
+    "year": 2023,
     "eoy_total_fte": 9.5,
     "eoy_total_positions": 13,
-    "remaining_budget_percent": 0.8,
+    "remaining_budget_percent": 1.9,
     "staff_roles": [
       {
         "role_description": "Stock Clerk",
@@ -5054,14 +5217,21 @@
         "eoy_total_positions": 13,
         "spending": 1529262.86,
         "budget": 1542173.59
+      },
+      {
+        "year": 2023,
+        "eoy_total_fte": 9.5,
+        "eoy_total_positions": 13,
+        "spending": 1531794.76,
+        "budget": 1561956.06
       }
     ],
     "change_from_previous_year": {
-      "previous_year": 2021,
+      "previous_year": 2022,
       "eoy_total_fte": 0,
       "eoy_total_positions": 0,
-      "spending": -441294.52,
-      "budget": -562145.84
+      "spending": 2531.9,
+      "budget": 19782.47
     }
   }
 ]
